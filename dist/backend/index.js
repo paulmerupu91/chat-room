@@ -579,8 +579,14 @@ app.use(bodyParser.urlencoded({
     extended: true
 })) // for parsing application/x-www-form-urlencoded
 ;
+const lastTenMessages = [];
 app.get("/", (req, res)=>{
     res.sendFile(path.resolve($parcel$__dirname + "/../dist/frontend/index.html"));
+});
+app.get("/api/", (req, res)=>{
+    res.json({
+        lastTenMessages
+    });
 });
 app.post("/authenticate", (0, _authentication.loginCheck));
 // app.use(express.static( path.resolve( __dirname + '/../dist/backend') ));
@@ -600,89 +606,14 @@ io.on("connection", (socket)=>{
     });
     // New chat message
     socket.on("chat message", (data)=>{
+        if (lastTenMessages.length > 9) lastTenMessages.shift();
+        lastTenMessages.push(data);
         console.log("message data", data);
         io.emit("chat message", data);
     });
 });
 
-},{"7a2b56c44e27b7bd":"path","818570491c2d1192":"express","7785ffb89647a237":"https","b1ef9fc55475aa0b":"node:fs","c59a704518e8719a":"socket.io","./includes/authentication":"ciHe0","5629d851821f53d5":"body-parser","./includes/db_queries":"Ep6EO"}],"ciHe0":[function(require,module,exports) {
-var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
-parcelHelpers.defineInteropFlag(exports);
-parcelHelpers.export(exports, "loginCheck", ()=>loginCheck);
-var _dbQueries = require("./db_queries");
-var _jwtDecode = require("jwt-decode");
-var _jwtDecodeDefault = parcelHelpers.interopDefault(_jwtDecode);
-async function loginCheck(req, res) {
-    let checkStatus;
-    const { OAuth2Client  } = require("32c191d91cf4ea72");
-    const client = new OAuth2Client("329246443409-t7k2jd2n8vg7uc730uqsk8rr5630huj0.apps.googleusercontent.com");
-    async function verify() {
-        const ticket = await client.verifyIdToken({
-            idToken: req.body.credential,
-            audience: "329246443409-t7k2jd2n8vg7uc730uqsk8rr5630huj0.apps.googleusercontent.com"
-        });
-        let payload;
-        payload = ticket.getPayload();
-        const userid = payload["sub"];
-    }
-    try {
-        verify().catch(console.error);
-        console.log("body", req.body);
-        const cred = req.body.credential;
-        const data = (0, _jwtDecodeDefault.default)(cred);
-        console.log("decoded", data);
-        try {
-            checkStatus = await (0, _dbQueries.createUser)({
-                email: data.email,
-                name: data.name
-            });
-        } catch (err) {}
-        console.log("checkStatus", checkStatus);
-        res.json({
-            email: data.email,
-            name: data.name,
-            picture: data.picture,
-            credential: req.body.credential,
-            checkStatus
-        });
-    } catch (err) {
-        console.log("err", err);
-    } finally{
-        console.log("User authentication process complete.");
-    }
-}
-
-},{"32c191d91cf4ea72":"google-auth-library","@parcel/transformer-js/src/esmodule-helpers.js":"i8bdk","./db_queries":"Ep6EO","jwt-decode":"jwt-decode"}],"i8bdk":[function(require,module,exports) {
-exports.interopDefault = function(a) {
-    return a && a.__esModule ? a : {
-        default: a
-    };
-};
-exports.defineInteropFlag = function(a) {
-    Object.defineProperty(a, "__esModule", {
-        value: true
-    });
-};
-exports.exportAll = function(source, dest) {
-    Object.keys(source).forEach(function(key) {
-        if (key === "default" || key === "__esModule" || dest.hasOwnProperty(key)) return;
-        Object.defineProperty(dest, key, {
-            enumerable: true,
-            get: function() {
-                return source[key];
-            }
-        });
-    });
-    return dest;
-};
-exports.export = function(dest, destName, get) {
-    Object.defineProperty(dest, destName, {
-        enumerable: true,
-        get: get
-    });
-};
-
-},{}],"Ep6EO":[function(require,module,exports) {
+},{"7a2b56c44e27b7bd":"path","818570491c2d1192":"express","7785ffb89647a237":"https","b1ef9fc55475aa0b":"node:fs","5629d851821f53d5":"body-parser","c59a704518e8719a":"socket.io","./includes/db_queries":"Ep6EO","./includes/authentication":"ciHe0"}],"Ep6EO":[function(require,module,exports) {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
 // main()
@@ -756,6 +687,83 @@ async function createUser({ name , email  }) {
     }
 }
 
-},{"@prisma/client":"@prisma/client","@parcel/transformer-js/src/esmodule-helpers.js":"i8bdk"}]},["cClcK","78oAI"], "78oAI", "parcelRequire7763")
+},{"@prisma/client":"@prisma/client","@parcel/transformer-js/src/esmodule-helpers.js":"i8bdk"}],"i8bdk":[function(require,module,exports) {
+exports.interopDefault = function(a) {
+    return a && a.__esModule ? a : {
+        default: a
+    };
+};
+exports.defineInteropFlag = function(a) {
+    Object.defineProperty(a, "__esModule", {
+        value: true
+    });
+};
+exports.exportAll = function(source, dest) {
+    Object.keys(source).forEach(function(key) {
+        if (key === "default" || key === "__esModule" || dest.hasOwnProperty(key)) return;
+        Object.defineProperty(dest, key, {
+            enumerable: true,
+            get: function() {
+                return source[key];
+            }
+        });
+    });
+    return dest;
+};
+exports.export = function(dest, destName, get) {
+    Object.defineProperty(dest, destName, {
+        enumerable: true,
+        get: get
+    });
+};
+
+},{}],"ciHe0":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "loginCheck", ()=>loginCheck);
+var _dbQueries = require("./db_queries");
+var _jwtDecode = require("jwt-decode");
+var _jwtDecodeDefault = parcelHelpers.interopDefault(_jwtDecode);
+async function loginCheck(req, res) {
+    let checkStatus;
+    const { OAuth2Client  } = require("32c191d91cf4ea72");
+    const client = new OAuth2Client("329246443409-t7k2jd2n8vg7uc730uqsk8rr5630huj0.apps.googleusercontent.com");
+    async function verify() {
+        const ticket = await client.verifyIdToken({
+            idToken: req.body.credential,
+            audience: "329246443409-t7k2jd2n8vg7uc730uqsk8rr5630huj0.apps.googleusercontent.com"
+        });
+        let payload;
+        payload = ticket.getPayload();
+        const userid = payload["sub"];
+    }
+    try {
+        verify().catch(console.error);
+        console.log("body", req.body);
+        const cred = req.body.credential;
+        const data = (0, _jwtDecodeDefault.default)(cred);
+        console.log("decoded", data);
+        try {
+            checkStatus = await (0, _dbQueries.createUser)({
+                email: data.email,
+                name: data.name
+            });
+        } catch (err) {}
+        console.log("checkStatus", checkStatus);
+        res.json({
+            email: data.email,
+            name: data.name,
+            picture: data.picture,
+            credential: req.body.credential,
+            checkStatus
+        });
+    } catch (err) {
+        console.log("err", err);
+    } finally{
+        console.log("User authentication process complete.");
+    }
+}
+
+},{"./db_queries":"Ep6EO","jwt-decode":"jwt-decode","32c191d91cf4ea72":"google-auth-library","@parcel/transformer-js/src/esmodule-helpers.js":"i8bdk"}]},["cClcK","78oAI"], "78oAI", "parcelRequire7763")
 
 //# sourceMappingURL=index.js.map

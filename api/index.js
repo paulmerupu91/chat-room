@@ -19,9 +19,16 @@ import { loginCheck } from './includes/authentication';
 app.use(bodyParser.json()) // for parsing application/json
 app.use(bodyParser.urlencoded({ extended: true })) // for parsing application/x-www-form-urlencoded
 
+
+const lastTenMessages = [];
+
 app.get( '/', ( req, res ) => {
     res.sendFile( path.resolve( __dirname + '/../dist/frontend/index.html' ) );
 } );
+
+app.get( '/api/', ( req, res ) => {
+    res.json( {lastTenMessages} );
+} )
 
 app.post( '/authenticate', loginCheck );
 
@@ -33,6 +40,8 @@ const portNumber = 3000;
 server.listen( portNumber, () => {
     console.log( `Listening on *:${portNumber}` );
 } )
+
+
 
 io.on('connection', (socket) => {
     console.log('a user connected');
@@ -47,6 +56,10 @@ io.on('connection', (socket) => {
 
     // New chat message
     socket.on('chat message', (data) => {
+        if( lastTenMessages.length > 9 ){
+            lastTenMessages.shift();
+        }
+        lastTenMessages.push( data );
         console.log( 'message data', data );
         io.emit('chat message', data);
     });

@@ -22,6 +22,7 @@ $custom-colors: (
 
 // Merge the maps
 $theme-colors: map-merge($theme-colors, $custom-colors);
+$enable-negative-margins: true;
 
 // 5. Include remainder of required parts
 @import "../node_modules/bootstrap/scss/maps";
@@ -44,6 +45,10 @@ $theme-colors: map-merge($theme-colors, $custom-colors);
 
 // 8. Add additional custom code here
 
+body, html{
+    height: 100%;
+}
+
 .vh-50{
     height: 50vh;
 }
@@ -51,4 +56,25 @@ $theme-colors: map-merge($theme-colors, $custom-colors);
 
 :root{
     --bs-font-sans-serif: 'Inter', system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", "Noto Sans", "Liberation Sans", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";;
+}
+
+.navbar{
+    backdrop-filter: blur(10px);
+    background-color: rgba(255, 255, 255, .786);
+
+}
+
+.emoji-send{
+    cursor: pointer;
+    
+}
+
+.large-cta{
+    font-size: calc( max( 9vw, 40px ) );
+    line-height: calc( max( 9vw, 40px ) );
+
+    svg{
+        height: calc( max( 15vw, 30px ) );
+        width: calc( max( 15vw, 30px ) );
+    }
 }
