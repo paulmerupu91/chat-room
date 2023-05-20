@@ -1,0 +1,10 @@
+node_modules
+ssl-files
+.env
+# build
+npm-debug.log
+.nyc
+.env
+.DS_Store
+
+.parcel-cache
