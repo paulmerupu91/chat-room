@@ -2931,10 +2931,9 @@ var _appDefault = parcelHelpers.interopDefault(_app);
 var _client = require("react-dom/client");
 const domNode = document.getElementById("app");
 const root = (0, _client.createRoot)(domNode);
-console.log("process.env.SITE_URL", "https://localhost:3000");
 root.render(/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _appDefault.default), {}, void 0, false, {
     fileName: "app/index.js",
-    lineNumber: 9,
+    lineNumber: 7,
     columnNumber: 13
 }, undefined));
 
@@ -5672,6 +5671,10 @@ var _loginWithGoogleButton = require("./components/LoginWithGoogleButton");
 var _loginWithGoogleButtonDefault = parcelHelpers.interopDefault(_loginWithGoogleButton);
 var _reactHotToast = require("react-hot-toast");
 var _reactHotToastDefault = parcelHelpers.interopDefault(_reactHotToast);
+var _githubMarkSvg = require("./images/github-mark.svg");
+var _githubMarkSvgDefault = parcelHelpers.interopDefault(_githubMarkSvg);
+var _bgIconsRandom = require("./components/BgIconsRandom");
+var _bgIconsRandomDefault = parcelHelpers.interopDefault(_bgIconsRandom);
 var _s = $RefreshSig$();
 function toastEnteredTheChat(name) {
     (0, _reactHotToastDefault.default).success(`${name} joined.`);
@@ -5729,14 +5732,14 @@ function App() {
     }, []);
     const LogoutStateComponent = ()=>{
         return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-            className: "py-5",
+            className: "py-5 h-100 overflow-hidden",
             children: [
                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _loginWithGoogleButtonDefault.default), {
                     user: user,
                     setUser: setUser
                 }, void 0, false, {
                     fileName: "app/App.js",
-                    lineNumber: 74,
+                    lineNumber: 75,
                     columnNumber: 17
                 }, this),
                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -5744,53 +5747,96 @@ function App() {
                     children: "Join the chat."
                 }, void 0, false, {
                     fileName: "app/App.js",
-                    lineNumber: 75,
+                    lineNumber: 76,
+                    columnNumber: 17
+                }, this),
+                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _bgIconsRandomDefault.default), {}, void 0, false, {
+                    fileName: "app/App.js",
+                    lineNumber: 82,
                     columnNumber: 17
                 }, this)
             ]
         }, void 0, true, {
             fileName: "app/App.js",
-            lineNumber: 72,
+            lineNumber: 73,
             columnNumber: 13
         }, this);
     };
     return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _jsxDevRuntime.Fragment), {
-        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _userContextDefault.default).Provider, {
-            value: {
-                user,
-                setUser
-            },
-            children: [
-                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _navBarDefault.default), {}, void 0, false, {
+        children: [
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _userContextDefault.default).Provider, {
+                value: {
+                    user,
+                    setUser
+                },
+                children: [
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _navBarDefault.default), {}, void 0, false, {
+                        fileName: "app/App.js",
+                        lineNumber: 93,
+                        columnNumber: 13
+                    }, this),
+                    !user?.email && /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(LogoutStateComponent, {}, void 0, false, {
+                        fileName: "app/App.js",
+                        lineNumber: 95,
+                        columnNumber: 33
+                    }, this),
+                    user?.email && /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _chatContainerDefault.default), {
+                        messages: messages,
+                        setMessages: setMessages
+                    }, void 0, false, {
+                        fileName: "app/App.js",
+                        lineNumber: 96,
+                        columnNumber: 30
+                    }, this),
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactHotToast.Toaster), {}, void 0, false, {
+                        fileName: "app/App.js",
+                        lineNumber: 98,
+                        columnNumber: 13
+                    }, this)
+                ]
+            }, void 0, true, {
+                fileName: "app/App.js",
+                lineNumber: 91,
+                columnNumber: 9
+            }, this),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                className: "container py-2 footer",
+                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("a", {
+                    href: "https://github.com/paulmerupu91/chat-room",
+                    className: "link-muted link-reset link-underline link-underline-opacity-0 d-flex justify-content-end align-items-center",
+                    children: [
+                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
+                            src: (0, _githubMarkSvgDefault.default),
+                            alt: "Github logo",
+                            width: 20,
+                            height: 20,
+                            className: "me-2"
+                        }, void 0, false, {
+                            fileName: "app/App.js",
+                            lineNumber: 103,
+                            columnNumber: 17
+                        }, this),
+                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                            className: "text-small",
+                            children: "Github Repository"
+                        }, void 0, false, {
+                            fileName: "app/App.js",
+                            lineNumber: 104,
+                            columnNumber: 17
+                        }, this)
+                    ]
+                }, void 0, true, {
                     fileName: "app/App.js",
-                    lineNumber: 91,
-                    columnNumber: 13
-                }, this),
-                !user?.email && /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(LogoutStateComponent, {}, void 0, false, {
-                    fileName: "app/App.js",
-                    lineNumber: 93,
-                    columnNumber: 33
-                }, this),
-                user?.email && /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _chatContainerDefault.default), {
-                    messages: messages,
-                    setMessages: setMessages
-                }, void 0, false, {
-                    fileName: "app/App.js",
-                    lineNumber: 94,
-                    columnNumber: 30
-                }, this),
-                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactHotToast.Toaster), {}, void 0, false, {
-                    fileName: "app/App.js",
-                    lineNumber: 96,
+                    lineNumber: 102,
                     columnNumber: 13
                 }, this)
-            ]
-        }, void 0, true, {
-            fileName: "app/App.js",
-            lineNumber: 89,
-            columnNumber: 9
-        }, this)
-    }, void 0, false);
+            }, void 0, false, {
+                fileName: "app/App.js",
+                lineNumber: 101,
+                columnNumber: 9
+            }, this)
+        ]
+    }, void 0, true);
 }
 _s(App, "Fb3hl39k2IZW7tPVFL8oliKXE2U=");
 _c = App;
@@ -5803,7 +5849,7 @@ $RefreshReg$(_c, "App");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","./components/ChatContainer":"fcoSs","./components/ChatRoomSelect":"7ZeDF","./components/NavBar":"l3AoH","./contexts/UserContext":"2hYBu","./components/LoginWithGoogleButton":"2fA1P","react-hot-toast":"gi0hv","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"fcoSs":[function(require,module,exports) {
+},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","./components/ChatContainer":"fcoSs","./components/ChatRoomSelect":"7ZeDF","./components/NavBar":"l3AoH","./contexts/UserContext":"2hYBu","./components/LoginWithGoogleButton":"2fA1P","react-hot-toast":"gi0hv","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","./images/github-mark.svg":"2Kqui","./components/BgIconsRandom":"bKvwO"}],"fcoSs":[function(require,module,exports) {
 var $parcel$ReactRefreshHelpers$f8aa = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
 var prevRefreshReg = window.$RefreshReg$;
 var prevRefreshSig = window.$RefreshSig$;
@@ -5864,7 +5910,7 @@ function ChatContainer({ messages , setMessages  }) {
     return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _jsxDevRuntime.Fragment), {
         children: [
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                className: "container-fluid overflow-scroll h-100",
+                className: "container-fluid overflow-scroll flex-grow-1",
                 ref: refChatContainer,
                 children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
                     className: "chat-container container ",
@@ -5903,45 +5949,52 @@ function ChatContainer({ messages , setMessages  }) {
                                         columnNumber: 25
                                     }, this),
                                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(InsertEmoji, {
-                                        value: "\uD83D\uDE04"
+                                        value: "\uD83D\uDC4D"
                                     }, void 0, false, {
                                         fileName: "app/components/ChatContainer.js",
                                         lineNumber: 70,
                                         columnNumber: 25
                                     }, this),
                                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(InsertEmoji, {
-                                        value: "\uD83D\uDC4F"
+                                        value: "\uD83D\uDE04"
                                     }, void 0, false, {
                                         fileName: "app/components/ChatContainer.js",
                                         lineNumber: 73,
                                         columnNumber: 25
                                     }, this),
                                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(InsertEmoji, {
-                                        value: "\uD83D\uDC9B"
+                                        value: "\uD83D\uDC4F"
                                     }, void 0, false, {
                                         fileName: "app/components/ChatContainer.js",
                                         lineNumber: 76,
                                         columnNumber: 25
                                     }, this),
                                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(InsertEmoji, {
-                                        value: "\uD83D\uDCAF"
+                                        value: "\uD83D\uDC9B"
                                     }, void 0, false, {
                                         fileName: "app/components/ChatContainer.js",
                                         lineNumber: 79,
                                         columnNumber: 25
                                     }, this),
                                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(InsertEmoji, {
-                                        value: "\uD83D\uDE1E"
+                                        value: "\uD83D\uDCAF"
                                     }, void 0, false, {
                                         fileName: "app/components/ChatContainer.js",
                                         lineNumber: 82,
                                         columnNumber: 25
                                     }, this),
                                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(InsertEmoji, {
+                                        value: "\uD83D\uDD25"
+                                    }, void 0, false, {
+                                        fileName: "app/components/ChatContainer.js",
+                                        lineNumber: 88,
+                                        columnNumber: 25
+                                    }, this),
+                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(InsertEmoji, {
                                         value: "\uD83D\uDE4C"
                                     }, void 0, false, {
                                         fileName: "app/components/ChatContainer.js",
-                                        lineNumber: 85,
+                                        lineNumber: 91,
                                         columnNumber: 25
                                     }, this)
                                 ]
@@ -5961,12 +6014,12 @@ function ChatContainer({ messages , setMessages  }) {
                                             onKeyDown: handleKeyDownReturn
                                         }, void 0, false, {
                                             fileName: "app/components/ChatContainer.js",
-                                            lineNumber: 95,
+                                            lineNumber: 101,
                                             columnNumber: 29
                                         }, this)
                                     }, void 0, false, {
                                         fileName: "app/components/ChatContainer.js",
-                                        lineNumber: 93,
+                                        lineNumber: 99,
                                         columnNumber: 25
                                     }, this),
                                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -5978,18 +6031,18 @@ function ChatContainer({ messages , setMessages  }) {
                                             children: "Send"
                                         }, void 0, false, {
                                             fileName: "app/components/ChatContainer.js",
-                                            lineNumber: 99,
+                                            lineNumber: 105,
                                             columnNumber: 29
                                         }, this)
                                     }, void 0, false, {
                                         fileName: "app/components/ChatContainer.js",
-                                        lineNumber: 98,
+                                        lineNumber: 104,
                                         columnNumber: 25
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "app/components/ChatContainer.js",
-                                lineNumber: 91,
+                                lineNumber: 97,
                                 columnNumber: 21
                             }, this),
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _toggleDefault.default), {
@@ -6011,19 +6064,19 @@ function ChatContainer({ messages , setMessages  }) {
                                             d: "M14.5 1.5a.5.5 0 0 1 .5.5v4.8a2.5 2.5 0 0 1-2.5 2.5H2.707l3.347 3.346a.5.5 0 0 1-.708.708l-4.2-4.2a.5.5 0 0 1 0-.708l4-4a.5.5 0 1 1 .708.708L2.707 8.3H12.5A1.5 1.5 0 0 0 14 6.8V2a.5.5 0 0 1 .5-.5z"
                                         }, void 0, false, {
                                             fileName: "app/components/ChatContainer.js",
-                                            lineNumber: 107,
+                                            lineNumber: 113,
                                             columnNumber: 29
                                         }, this)
                                     }, void 0, false, {
                                         fileName: "app/components/ChatContainer.js",
-                                        lineNumber: 106,
+                                        lineNumber: 112,
                                         columnNumber: 25
                                     }, this),
                                     " to send"
                                 ]
                             }, void 0, true, {
                                 fileName: "app/components/ChatContainer.js",
-                                lineNumber: 104,
+                                lineNumber: 110,
                                 columnNumber: 21
                             }, this)
                         ]
@@ -14365,7 +14418,222 @@ function broadCastChatEntrance(name) {
     socket.emit("entered the chat", name);
 }
 
-},{"@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"lOjBx":[function(require,module,exports) {
+},{"@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"2Kqui":[function(require,module,exports) {
+module.exports = require("208aea94075cb92e").getBundleURL("eXLhp") + "github-mark.4310cae3.svg" + "?" + Date.now();
+
+},{"208aea94075cb92e":"lgJ39"}],"lgJ39":[function(require,module,exports) {
+"use strict";
+var bundleURL = {};
+function getBundleURLCached(id) {
+    var value = bundleURL[id];
+    if (!value) {
+        value = getBundleURL();
+        bundleURL[id] = value;
+    }
+    return value;
+}
+function getBundleURL() {
+    try {
+        throw new Error();
+    } catch (err) {
+        var matches = ("" + err.stack).match(/(https?|file|ftp|(chrome|moz|safari-web)-extension):\/\/[^)\n]+/g);
+        if (matches) // The first two stack frames will be this function and getBundleURLCached.
+        // Use the 3rd one, which will be a runtime in the original bundle.
+        return getBaseURL(matches[2]);
+    }
+    return "/";
+}
+function getBaseURL(url) {
+    return ("" + url).replace(/^((?:https?|file|ftp|(chrome|moz|safari-web)-extension):\/\/.+)\/[^/]+$/, "$1") + "/";
+} // TODO: Replace uses with `new URL(url).origin` when ie11 is no longer supported.
+function getOrigin(url) {
+    var matches = ("" + url).match(/(https?|file|ftp|(chrome|moz|safari-web)-extension):\/\/[^/]+/);
+    if (!matches) throw new Error("Origin not found");
+    return matches[0];
+}
+exports.getBundleURL = getBundleURLCached;
+exports.getBaseURL = getBaseURL;
+exports.getOrigin = getOrigin;
+
+},{}],"bKvwO":[function(require,module,exports) {
+var $parcel$ReactRefreshHelpers$1e33 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
+var prevRefreshReg = window.$RefreshReg$;
+var prevRefreshSig = window.$RefreshSig$;
+$parcel$ReactRefreshHelpers$1e33.prelude(module);
+
+try {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+var _jsxDevRuntime = require("react/jsx-dev-runtime");
+var _react = require("react");
+var _reactDefault = parcelHelpers.interopDefault(_react);
+function BgIconsRandom() {
+    const ChatEmpty = ({ size , distance  })=>{
+        return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("svg", {
+            style: {
+                width: size,
+                height: size,
+                top: distance,
+                left: distance
+            },
+            xmlns: "http://www.w3.org/2000/svg",
+            width: "30",
+            height: "30",
+            fill: "currentColor",
+            className: "bi bi-chat-left position-absolute",
+            viewBox: "0 0 16 16",
+            children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("path", {
+                d: "M14 1a1 1 0 0 1 1 1v8a1 1 0 0 1-1 1H4.414A2 2 0 0 0 3 11.586l-2 2V2a1 1 0 0 1 1-1h12zM2 0a2 2 0 0 0-2 2v12.793a.5.5 0 0 0 .854.353l2.853-2.853A1 1 0 0 1 4.414 12H14a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2z"
+            }, void 0, false, {
+                fileName: "app/components/BgIconsRandom.js",
+                lineNumber: 8,
+                columnNumber: 13
+            }, this)
+        }, void 0, false, {
+            fileName: "app/components/BgIconsRandom.js",
+            lineNumber: 7,
+            columnNumber: 9
+        }, this);
+    };
+    const ChatDots = ({ size , distance  })=>{
+        return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("svg", {
+            style: {
+                width: size,
+                height: size,
+                bottom: distance,
+                left: distance
+            },
+            xmlns: "http://www.w3.org/2000/svg",
+            width: "30",
+            height: "30",
+            fill: "currentColor",
+            className: "bi bi-chat-left-dots position-absolute",
+            viewBox: "0 0 16 16",
+            children: [
+                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("path", {
+                    d: "M14 1a1 1 0 0 1 1 1v8a1 1 0 0 1-1 1H4.414A2 2 0 0 0 3 11.586l-2 2V2a1 1 0 0 1 1-1h12zM2 0a2 2 0 0 0-2 2v12.793a.5.5 0 0 0 .854.353l2.853-2.853A1 1 0 0 1 4.414 12H14a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2z"
+                }, void 0, false, {
+                    fileName: "app/components/BgIconsRandom.js",
+                    lineNumber: 16,
+                    columnNumber: 13
+                }, this),
+                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("path", {
+                    d: "M5 6a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm4 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm4 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0z"
+                }, void 0, false, {
+                    fileName: "app/components/BgIconsRandom.js",
+                    lineNumber: 17,
+                    columnNumber: 13
+                }, this)
+            ]
+        }, void 0, true, {
+            fileName: "app/components/BgIconsRandom.js",
+            lineNumber: 15,
+            columnNumber: 9
+        }, this);
+    };
+    const ChatLines = ({ size , distance  })=>{
+        return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("svg", {
+            style: {
+                width: size,
+                height: size,
+                top: distance,
+                right: distance
+            },
+            xmlns: "http://www.w3.org/2000/svg",
+            width: "30",
+            height: "30",
+            fill: "currentColor",
+            className: "bi bi-chat-left-text position-absolute",
+            viewBox: "0 0 16 16",
+            children: [
+                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("path", {
+                    d: "M14 1a1 1 0 0 1 1 1v8a1 1 0 0 1-1 1H4.414A2 2 0 0 0 3 11.586l-2 2V2a1 1 0 0 1 1-1h12zM2 0a2 2 0 0 0-2 2v12.793a.5.5 0 0 0 .854.353l2.853-2.853A1 1 0 0 1 4.414 12H14a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2z"
+                }, void 0, false, {
+                    fileName: "app/components/BgIconsRandom.js",
+                    lineNumber: 25,
+                    columnNumber: 13
+                }, this),
+                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("path", {
+                    d: "M3 3.5a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9a.5.5 0 0 1-.5-.5zM3 6a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9A.5.5 0 0 1 3 6zm0 2.5a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1h-5a.5.5 0 0 1-.5-.5z"
+                }, void 0, false, {
+                    fileName: "app/components/BgIconsRandom.js",
+                    lineNumber: 26,
+                    columnNumber: 13
+                }, this)
+            ]
+        }, void 0, true, {
+            fileName: "app/components/BgIconsRandom.js",
+            lineNumber: 24,
+            columnNumber: 9
+        }, this);
+    };
+    const randomSizeOne = Math.random();
+    const randomSizeTwo = Math.random();
+    const randomSizeThree = Math.random();
+    const randomSizeFour = Math.random();
+    const randomDistanceOne = Math.random();
+    const randomDistanceTwo = Math.random();
+    const randomDistanceThree = Math.random();
+    const randomDistanceFour = Math.random();
+    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+        className: "random-chat-icons text-primary text-opacity-25 position-relative h-100 w-100",
+        style: {
+            zIndex: -1,
+            left: "20vw",
+            bottom: `50vh`,
+            rotate: `${randomDistanceOne * 30 - 15}deg`
+        },
+        children: [
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(ChatEmpty, {
+                size: `${randomSizeOne * 20}vw`,
+                distance: `${randomDistanceOne * 20}vw`
+            }, void 0, false, {
+                fileName: "app/components/BgIconsRandom.js",
+                lineNumber: 42,
+                columnNumber: 9
+            }, this),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(ChatDots, {
+                size: `${randomSizeTwo * 20}vw`,
+                distance: `${randomDistanceTwo * 40}vw`
+            }, void 0, false, {
+                fileName: "app/components/BgIconsRandom.js",
+                lineNumber: 43,
+                columnNumber: 9
+            }, this),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(ChatLines, {
+                size: `${randomSizeThree * 20}vw`,
+                distance: `${randomDistanceThree * 60}vw`
+            }, void 0, false, {
+                fileName: "app/components/BgIconsRandom.js",
+                lineNumber: 44,
+                columnNumber: 9
+            }, this),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(ChatDots, {
+                size: `${randomSizeFour * 20}vw`,
+                distance: `${randomDistanceFour * 80}vw`
+            }, void 0, false, {
+                fileName: "app/components/BgIconsRandom.js",
+                lineNumber: 45,
+                columnNumber: 9
+            }, this)
+        ]
+    }, void 0, true, {
+        fileName: "app/components/BgIconsRandom.js",
+        lineNumber: 41,
+        columnNumber: 5
+    }, this);
+}
+_c = BgIconsRandom;
+exports.default = BgIconsRandom;
+var _c;
+$RefreshReg$(_c, "BgIconsRandom");
+
+  $parcel$ReactRefreshHelpers$1e33.postlude(module);
+} finally {
+  window.$RefreshReg$ = prevRefreshReg;
+  window.$RefreshSig$ = prevRefreshSig;
+}
+},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"lOjBx":[function(require,module,exports) {
 "use strict";
 var m = require("46381bd6bc66197b");
 var i = m.__SECRET_INTERNALS_DO_NOT_USE_OR_YOU_WILL_BE_FIRED;

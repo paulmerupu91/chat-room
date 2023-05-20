@@ -10121,4 +10121,11 @@ body, html {
   width: max(15vw, 30px);
 }
 
+@media (width >= 768px) {
+  .large-cta {
+    font-size: max(15vw, 80px);
+    line-height: max(15vw, 80px);
+  }
+}
+
 /*# sourceMappingURL=index.524012e9.css.map */

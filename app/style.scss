@@ -77,4 +77,9 @@ body, html{
         height: calc( max( 15vw, 30px ) );
         width: calc( max( 15vw, 30px ) );
     }
+
+    @include media-breakpoint-up(md) {
+        font-size: calc( max( 15vw, 80px ) );
+        line-height: calc( max( 15vw, 80px ) );
+    }
 }

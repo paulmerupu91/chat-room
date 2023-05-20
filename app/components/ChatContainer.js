@@ -46,7 +46,7 @@ function ChatContainer( {messages, setMessages} ) {
         <>
 
         
-		<div className="container-fluid overflow-scroll h-100" ref={refChatContainer}>
+		<div className="container-fluid overflow-scroll flex-grow-1" ref={refChatContainer}>
 			<div  className="chat-container container ">
 
                 {
@@ -66,6 +66,9 @@ function ChatContainer( {messages, setMessages} ) {
                         {/* Wave */}
                         <InsertEmoji value="&#128075;" />
 
+                        {/* Thumbs up */}
+                        <InsertEmoji value="&#128077;" />
+
                         {/* Laugh */}
                         <InsertEmoji value="&#128516;" />
 
@@ -79,7 +82,10 @@ function ChatContainer( {messages, setMessages} ) {
                         <InsertEmoji value="&#128175;" />
 
                         {/* Sad */}
-                        <InsertEmoji value="&#128542;" />
+                        {/* <InsertEmoji value="&#128542;" /> */}
+                        
+                        {/* Fire */}
+                        <InsertEmoji value="&#128293;" />
 
                         {/* Hands Raised */}
                         <InsertEmoji value="&#128588;" />
