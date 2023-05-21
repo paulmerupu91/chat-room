@@ -562,14 +562,13 @@ var $parcel$__dirname = require("7a2b56c44e27b7bd").resolve(__dirname, "../../ap
 const express = require("818570491c2d1192");
 const app = express();
 const https = require("7785ffb89647a237");
+const http = require("a344ddd9b61e770c");
 const path = require("7a2b56c44e27b7bd");
 const fs = require("b1ef9fc55475aa0b");
-var privateKey = fs.readFileSync($parcel$__dirname + "/../ssl-files/localhost.key");
-var certificate = fs.readFileSync($parcel$__dirname + "/../ssl-files/localhost.crt");
+// var privateKey = fs.readFileSync( __dirname + '/../ssl-files/localhost.key' );
+// var certificate = fs.readFileSync( __dirname + '/../ssl-files/localhost.crt' );
 var bodyParser = require("5629d851821f53d5");
-const server = https.createServer({
-    key: privateKey,
-    cert: certificate
+const server = http.createServer({
 }, app);
 const { Server  } = require("c59a704518e8719a");
 const io = new Server(server);
@@ -613,7 +612,7 @@ io.on("connection", (socket)=>{
     });
 });
 
-},{"7a2b56c44e27b7bd":"path","818570491c2d1192":"express","7785ffb89647a237":"https","b1ef9fc55475aa0b":"node:fs","5629d851821f53d5":"body-parser","c59a704518e8719a":"socket.io","./includes/db_queries":"Ep6EO","./includes/authentication":"ciHe0"}],"Ep6EO":[function(require,module,exports) {
+},{"7a2b56c44e27b7bd":"path","818570491c2d1192":"express","7785ffb89647a237":"https","b1ef9fc55475aa0b":"node:fs","5629d851821f53d5":"body-parser","c59a704518e8719a":"socket.io","./includes/db_queries":"Ep6EO","./includes/authentication":"ciHe0","a344ddd9b61e770c":"http"}],"Ep6EO":[function(require,module,exports) {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
 // main()

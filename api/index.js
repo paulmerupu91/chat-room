@@ -1,14 +1,15 @@
 const express = require( 'express' );
 const app = express();
 const https = require( 'https' );
+const http = require( 'http' );
 const path = require( 'path' );
 const fs = require( 'node:fs' );
-var privateKey = fs.readFileSync( __dirname + '/../ssl-files/localhost.key' );
-var certificate = fs.readFileSync( __dirname + '/../ssl-files/localhost.crt' );
+// var privateKey = fs.readFileSync( __dirname + '/../ssl-files/localhost.key' );
+// var certificate = fs.readFileSync( __dirname + '/../ssl-files/localhost.crt' );
 var bodyParser = require('body-parser');
-const server = https.createServer({
-    key: privateKey,
-    cert: certificate
+const server = http.createServer({
+    // key: privateKey,
+    // cert: certificate
 }, app );
 const { Server } = require("socket.io");
 const io = new Server(server);
