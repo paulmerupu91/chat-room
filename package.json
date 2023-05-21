@@ -21,7 +21,7 @@
 	},
 	"scripts": {
 		"start": "parcel watch",
-		"build": "parcel build",
+		"build": "prisma generate && parcel build",
 		"watch": "nodemon --watch dist --inspect ./dist/backend/index.js",
 		"prisma:generate": "prisma generate"
 	},
