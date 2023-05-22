@@ -10111,21 +10111,24 @@ body, html {
   cursor: pointer;
 }
 
+.random-chat-icons {
+  opacity: .18;
+}
+
 .large-cta {
   font-size: max(9vw, 40px);
   line-height: max(9vw, 40px);
 }
 
-.large-cta svg {
-  height: max(15vw, 30px);
-  width: max(15vw, 30px);
-}
-
 @media (width >= 768px) {
   .large-cta {
-    font-size: max(15vw, 80px);
-    line-height: max(15vw, 80px);
+    font-size: max(12vw, 80px);
+    line-height: max(12vw, 80px);
   }
+}
+
+.gradient-bg {
+  background: linear-gradient(59deg, #09cd577d 0%, #09cd5712 100%);
 }
 
 /*# sourceMappingURL=index.524012e9.css.map */

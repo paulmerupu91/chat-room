@@ -69,17 +69,21 @@ body, html{
     
 }
 
+.random-chat-icons{
+    opacity: .18;
+}
+
 .large-cta{
     font-size: calc( max( 9vw, 40px ) );
     line-height: calc( max( 9vw, 40px ) );
 
-    svg{
-        height: calc( max( 15vw, 30px ) );
-        width: calc( max( 15vw, 30px ) );
-    }
-
     @include media-breakpoint-up(md) {
-        font-size: calc( max( 15vw, 80px ) );
-        line-height: calc( max( 15vw, 80px ) );
+        font-size: calc( max( 12vw, 80px ) );
+        line-height: calc( max( 12vw, 80px ) );
     }
+}
+
+.gradient-bg{
+    background: rgb(9,205,87);
+    background: linear-gradient(59deg, rgba(9,205,87,0.49205619747899154) 0%, rgba(9,205,87,0.06908700980392157) 100%);
 }
