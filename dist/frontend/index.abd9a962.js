@@ -5720,7 +5720,7 @@ function App() {
         }
     });
     (0, _react.useEffect)(()=>{
-        fetch("https://localhost:3000/api").then((res)=>res.json()).then((res)=>{
+        fetch(`/api`).then((res)=>res.json()).then((res)=>{
             if (res && res.lastTenMessages && res.lastTenMessages.length > 0) {
                 if (messages && messages.length) setMessages([
                     ...res.lastTenMessages,
@@ -5732,31 +5732,72 @@ function App() {
     }, []);
     const LogoutStateComponent = ()=>{
         return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-            className: "py-5 h-100 overflow-hidden",
-            children: [
-                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _loginWithGoogleButtonDefault.default), {
-                    user: user,
-                    setUser: setUser
-                }, void 0, false, {
+            className: "py-5 h-100 overflow-hidden ",
+            children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                className: "container h-100",
+                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                    className: "row h-100",
+                    children: [
+                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                            className: "col-md-8 col-12 h-100 d-flex flex-column justify-content-center",
+                            children: [
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                    className: "large-cta font-black mb-5",
+                                    children: [
+                                        "Join the ",
+                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                                            className: "text-secondary",
+                                            children: "chat"
+                                        }, void 0, false, {
+                                            fileName: "app/App.js",
+                                            lineNumber: 80,
+                                            columnNumber: 42
+                                        }, this),
+                                        "."
+                                    ]
+                                }, void 0, true, {
+                                    fileName: "app/App.js",
+                                    lineNumber: 79,
+                                    columnNumber: 29
+                                }, this),
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _loginWithGoogleButtonDefault.default), {
+                                    user: user,
+                                    setUser: setUser
+                                }, void 0, false, {
+                                    fileName: "app/App.js",
+                                    lineNumber: 82,
+                                    columnNumber: 29
+                                }, this)
+                            ]
+                        }, void 0, true, {
+                            fileName: "app/App.js",
+                            lineNumber: 78,
+                            columnNumber: 25
+                        }, this),
+                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                            className: "col-md-4 col-12",
+                            children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _bgIconsRandomDefault.default), {}, void 0, false, {
+                                fileName: "app/App.js",
+                                lineNumber: 85,
+                                columnNumber: 29
+                            }, this)
+                        }, void 0, false, {
+                            fileName: "app/App.js",
+                            lineNumber: 84,
+                            columnNumber: 25
+                        }, this)
+                    ]
+                }, void 0, true, {
                     fileName: "app/App.js",
-                    lineNumber: 75,
-                    columnNumber: 17
-                }, this),
-                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                    className: "large-cta d-flex my-5 container align-items-baseline",
-                    children: "Join the chat."
-                }, void 0, false, {
-                    fileName: "app/App.js",
-                    lineNumber: 76,
-                    columnNumber: 17
-                }, this),
-                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _bgIconsRandomDefault.default), {}, void 0, false, {
-                    fileName: "app/App.js",
-                    lineNumber: 82,
-                    columnNumber: 17
+                    lineNumber: 77,
+                    columnNumber: 21
                 }, this)
-            ]
-        }, void 0, true, {
+            }, void 0, false, {
+                fileName: "app/App.js",
+                lineNumber: 74,
+                columnNumber: 17
+            }, this)
+        }, void 0, false, {
             fileName: "app/App.js",
             lineNumber: 73,
             columnNumber: 13
@@ -5772,12 +5813,12 @@ function App() {
                 children: [
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _navBarDefault.default), {}, void 0, false, {
                         fileName: "app/App.js",
-                        lineNumber: 93,
+                        lineNumber: 100,
                         columnNumber: 13
                     }, this),
                     !user?.email && /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(LogoutStateComponent, {}, void 0, false, {
                         fileName: "app/App.js",
-                        lineNumber: 95,
+                        lineNumber: 102,
                         columnNumber: 33
                     }, this),
                     user?.email && /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _chatContainerDefault.default), {
@@ -5785,22 +5826,22 @@ function App() {
                         setMessages: setMessages
                     }, void 0, false, {
                         fileName: "app/App.js",
-                        lineNumber: 96,
+                        lineNumber: 103,
                         columnNumber: 30
                     }, this),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactHotToast.Toaster), {}, void 0, false, {
                         fileName: "app/App.js",
-                        lineNumber: 98,
+                        lineNumber: 105,
                         columnNumber: 13
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "app/App.js",
-                lineNumber: 91,
+                lineNumber: 98,
                 columnNumber: 9
             }, this),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                className: "container py-2 footer",
+                className: "container py-2 footer border-top",
                 children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("a", {
                     href: "https://github.com/paulmerupu91/chat-room",
                     className: "link-muted link-reset link-underline link-underline-opacity-0 d-flex justify-content-end align-items-center",
@@ -5813,7 +5854,7 @@ function App() {
                             className: "me-2"
                         }, void 0, false, {
                             fileName: "app/App.js",
-                            lineNumber: 103,
+                            lineNumber: 110,
                             columnNumber: 17
                         }, this),
                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
@@ -5821,18 +5862,18 @@ function App() {
                             children: "Github Repository"
                         }, void 0, false, {
                             fileName: "app/App.js",
-                            lineNumber: 104,
+                            lineNumber: 111,
                             columnNumber: 17
                         }, this)
                     ]
                 }, void 0, true, {
                     fileName: "app/App.js",
-                    lineNumber: 102,
+                    lineNumber: 109,
                     columnNumber: 13
                 }, this)
             }, void 0, false, {
                 fileName: "app/App.js",
-                lineNumber: 101,
+                lineNumber: 108,
                 columnNumber: 9
             }, this)
         ]
@@ -13712,7 +13753,10 @@ function LoginWithGoogleButton() {
         };
     }, []);
     return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-        className: "container mb-4",
+        className: "",
+        style: {
+            minHeight: "90px"
+        },
         children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
             id: "buttonDiv"
         }, void 0, false, {
@@ -14500,7 +14544,7 @@ function BgIconsRandom() {
             style: {
                 width: size,
                 height: size,
-                bottom: distance,
+                top: distance,
                 left: distance
             },
             xmlns: "http://www.w3.org/2000/svg",
@@ -14537,7 +14581,7 @@ function BgIconsRandom() {
                 width: size,
                 height: size,
                 top: distance,
-                right: distance
+                left: distance
             },
             xmlns: "http://www.w3.org/2000/svg",
             width: "30",
@@ -14576,11 +14620,9 @@ function BgIconsRandom() {
     const randomDistanceThree = Math.random();
     const randomDistanceFour = Math.random();
     return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-        className: "random-chat-icons text-primary text-opacity-25 position-relative h-100 w-100",
+        className: "random-chat-icons text-primary position-relative h-100 w-100",
         style: {
             zIndex: -1,
-            left: "20vw",
-            bottom: `50vh`,
             rotate: `${randomDistanceOne * 30 - 15}deg`
         },
         children: [
@@ -14589,31 +14631,31 @@ function BgIconsRandom() {
                 distance: `${randomDistanceOne * 20}vw`
             }, void 0, false, {
                 fileName: "app/components/BgIconsRandom.js",
-                lineNumber: 42,
-                columnNumber: 9
-            }, this),
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(ChatDots, {
-                size: `${randomSizeTwo * 20}vw`,
-                distance: `${randomDistanceTwo * 40}vw`
-            }, void 0, false, {
-                fileName: "app/components/BgIconsRandom.js",
                 lineNumber: 43,
                 columnNumber: 9
             }, this),
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(ChatLines, {
-                size: `${randomSizeThree * 20}vw`,
-                distance: `${randomDistanceThree * 60}vw`
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(ChatDots, {
+                size: `${randomSizeTwo * 30}vw`,
+                distance: `${randomDistanceTwo * 40}vw`
             }, void 0, false, {
                 fileName: "app/components/BgIconsRandom.js",
                 lineNumber: 44,
                 columnNumber: 9
             }, this),
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(ChatDots, {
-                size: `${randomSizeFour * 20}vw`,
-                distance: `${randomDistanceFour * 80}vw`
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(ChatLines, {
+                size: `${randomSizeThree * 40}vw`,
+                distance: `${randomDistanceThree * 50}vw`
             }, void 0, false, {
                 fileName: "app/components/BgIconsRandom.js",
                 lineNumber: 45,
+                columnNumber: 9
+            }, this),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(ChatDots, {
+                size: `${randomSizeFour * 50}vw`,
+                distance: `${randomDistanceFour * 30}vw`
+            }, void 0, false, {
+                fileName: "app/components/BgIconsRandom.js",
+                lineNumber: 46,
                 columnNumber: 9
             }, this)
         ]

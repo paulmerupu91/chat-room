@@ -50,7 +50,7 @@ function LoginWithGoogleButton() {
 		};
 	}, []);
 	return (
-        <div className="container mb-4">
+        <div className=""  style={{minHeight: '90px'}}>
             <div id="buttonDiv"></div>
         </div>
     )
