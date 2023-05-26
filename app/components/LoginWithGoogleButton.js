@@ -22,6 +22,8 @@ function LoginWithGoogleButton() {
 				});
 				const resJson = await res.json();
 
+                localStorage.setItem( 'crUserData', JSON.stringify( resJson ) );
+
 				console.log("res res", resJson);
                 toast.success('Profile loaded!');
 

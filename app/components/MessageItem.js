@@ -17,6 +17,7 @@ function MessageItem({ messageData }) {
         target: "_blank",
     });
     console.log( 'html', html );
+
 	return (
 		<div className={`d-flex align-items-baseline p-2 ${email === userEmail ? `flex-row-reverse` : ``}`}>
 			<span>
@@ -30,8 +31,8 @@ function MessageItem({ messageData }) {
                     color={"#09cd57"}
 				/>
 			</span>
-			<span className="mx-2 rounded-2 px-2 py-1 border-black-20 border" dangerouslySetInnerHTML={{__html: html}}>
-				
+			<span className="mx-2 rounded-2 px-2 py-1 border-black-20 border">
+                {html}
 			</span>
 		</div>
 	);

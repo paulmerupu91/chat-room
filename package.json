@@ -5,7 +5,10 @@
 	"source": "frontend/main.js",
 	"targets": {
 		"frontend": {
-			"source": "app/index.html"
+			"source": "app/index.html",
+			"engines": {
+				"browsers": "> 0.5%, last 2 versions, not dead"
+			}
 		},
 		"backend": {
 			"context": "node",
@@ -22,6 +25,8 @@
 	"scripts": {
 		"start": "parcel watch",
 		"build": "prisma generate && parcel build",
+		"postbuild": "npm run copy-assets",
+		"copy-assets": "mkdir -p dist/frontend/assets/ && cp -r app/assets/* dist/frontend/assets/",
 		"watch": "nodemon --watch dist --inspect ./dist/backend/index.js",
 		"prisma:generate": "prisma generate"
 	},
@@ -32,6 +37,7 @@
 		"body-parser": "^1.20.2",
 		"bootstrap": "^5.3.0-alpha3",
 		"express": "^4.18.2",
+		"framer-motion": "^4.1.17",
 		"google-auth-library": "^8.8.0",
 		"jwt-decode": "^3.1.2",
 		"linkify-string": "^4.1.1",
