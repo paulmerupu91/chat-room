@@ -11,49 +11,50 @@ import BgIconsRandom from './components/BgIconsRandom';
 function toastEnteredTheChat(name){
     toast.success( `${name} joined.` );
 }
+console.log( 'setting clone' );
+let setMessagesClone = () => {};
+const audio = new Audio('assets/notification.mp3');
 
 socket.on('entered the chat', toastEnteredTheChat);
+socket.on('chat message', function(data) {
+
+    
+    console.log( 'Playing alert sound', audio );
+    audio.play();
+    console.log( 'data', data );
+    setMessagesClone( messages => {
+        if( messages && messages.length > 0 ){
+            return [...messages, data]
+        } else {
+            return [data];
+        }
+    } );
+    
+});
+
+
 
 function App() {
 
-    const defaultRooms = [
-        {
-            name: 'New York'
-        },
-        {
-            name: 'San Diego'
-        },
-        {
-            name: 'Miami'
-        },
-        {
-            name: 'Chicago'
-        },
-        {
-            name: 'Austin'
-        },
-        {
-            name: 'Boston'
-        },
-    ]
-
     const [user, setUser] = useState( null );
+    const [userDataInClientChecked, setUserDataInClientChecked] = useState( false );
 
     const [messages, setMessages] = useState( [] );
 
-    socket.on('chat message', function(data) {
-        console.log( 'data', data );
-        if( Array.isArray( messages ) && messages.length > 0 ){
-            console.log( 'Messages found' );
-            setMessages( () => [...messages, data] );
-        } else {
-            console.log( 'Messages not found' );
-            setMessages( [data] );
-        }
-    });
-    
+    setMessagesClone = setMessages;
 
     useEffect( () => {
+
+        // Load user data from localStorage if exists
+        const userData = localStorage.getItem( 'crUserData' );
+        const userDataJson = JSON.parse( userData );
+        if( userDataJson?.email ){
+            const { email, name, picture } = userDataJson;
+            setUser( { email, name, picture } );
+            
+        }
+
+        setUserDataInClientChecked( true );
         
         fetch( `/api` ).then( res => res.json() ).then( res => {
             if( res && res.lastTenMessages && res.lastTenMessages.length > 0 ){
@@ -79,7 +80,7 @@ function App() {
                             <div className="large-cta font-black mb-5">
                                 Join the <span className="text-secondary">chat</span>.
                             </div>
-                            <LoginWithGoogleButton user={user} setUser={setUser}/>
+                            { !user && userDataInClientChecked && <LoginWithGoogleButton user={user} setUser={setUser}/> }
                         </div>
                         <div className="col-md-4 col-12">
                             <BgIconsRandom />
@@ -95,7 +96,7 @@ function App() {
 
     return(
         <>
-        <UserContext.Provider value={{user, setUser}}>
+        <UserContext.Provider value={{user, setUser, setUserDataInClientChecked}}>
         
             <NavBar />
             {/* { user?.email && <div className="container">Email: {user.email}</div> } */}

@@ -142,7 +142,7 @@
       this[globalName] = mainExports;
     }
   }
-})({"1xC6H":[function(require,module,exports) {
+})({"fp5lG":[function(require,module,exports) {
 var Refresh = require("bd85c49f3d16afa9");
 var ErrorOverlay = require("92e46ac85047e967");
 Refresh.injectIntoGlobalHook(window);
@@ -163,11 +163,11 @@ window.addEventListener("parcelhmraccept", ()=>{
     ErrorOverlay.dismissRuntimeErrors();
 });
 
-},{"bd85c49f3d16afa9":"786KC","92e46ac85047e967":"1dldy"}],"786KC":[function(require,module,exports) {
+},{"bd85c49f3d16afa9":"9Svz8","92e46ac85047e967":"9rQAZ"}],"9Svz8":[function(require,module,exports) {
 "use strict";
 module.exports = require("9291bb0210d912ff");
 
-},{"9291bb0210d912ff":"hdge7"}],"hdge7":[function(require,module,exports) {
+},{"9291bb0210d912ff":"aovEM"}],"aovEM":[function(require,module,exports) {
 /** @license React v0.9.0
  * react-refresh-runtime.development.js
  *
@@ -627,7 +627,7 @@ module.exports = require("9291bb0210d912ff");
     exports.setSignature = setSignature;
 })();
 
-},{}],"1dldy":[function(require,module,exports) {
+},{}],"9rQAZ":[function(require,module,exports) {
 var process = require("ffadb096c888a5ca");
 !function(e, t) {
     module.exports = t();
@@ -2358,7 +2358,7 @@ var process = require("ffadb096c888a5ca");
     ]);
 });
 
-},{"ffadb096c888a5ca":"d5jf4"}],"d5jf4":[function(require,module,exports) {
+},{"ffadb096c888a5ca":"gRR53"}],"gRR53":[function(require,module,exports) {
 // shim for using process in browser
 var process = module.exports = {};
 // cached from whatever global is present so that test runners that stub it
@@ -2503,13 +2503,13 @@ process.umask = function() {
     return 0;
 };
 
-},{}],"e23ce":[function(require,module,exports) {
+},{}],"gRjRn":[function(require,module,exports) {
 var global = arguments[3];
 var HMR_HOST = null;
 var HMR_PORT = 1234;
 var HMR_SECURE = false;
-var HMR_ENV_HASH = "d6ea1d42532a7575";
-module.bundle.HMR_BUNDLE_ID = "ae4b4023abd9a962";
+var HMR_ENV_HASH = "916932b22e4085ab";
+module.bundle.HMR_BUNDLE_ID = "d9857b3751271794";
 "use strict";
 /* global HMR_HOST, HMR_PORT, HMR_ENV_HASH, HMR_SECURE, chrome, browser, globalThis, __parcel__import__, __parcel__importScripts__, ServiceWorkerGlobalScope */ /*::
 import type {
@@ -2917,11 +2917,11 @@ function hmrAccept(bundle, id) {
     });
 }
 
-},{}],"gp8bJ":[function(require,module,exports) {
-var $parcel$ReactRefreshHelpers$6cd7 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
+},{}],"34bti":[function(require,module,exports) {
+var $parcel$ReactRefreshHelpers$adae = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
 var prevRefreshReg = window.$RefreshReg$;
 var prevRefreshSig = window.$RefreshSig$;
-$parcel$ReactRefreshHelpers$6cd7.prelude(module);
+$parcel$ReactRefreshHelpers$adae.prelude(module);
 
 try {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
@@ -2937,16 +2937,16 @@ root.render(/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _appDefault.default), {
     columnNumber: 13
 }, undefined));
 
-  $parcel$ReactRefreshHelpers$6cd7.postlude(module);
+  $parcel$ReactRefreshHelpers$adae.postlude(module);
 } finally {
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","./App":"aQoef","react-dom/client":"lOjBx","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"iTorj":[function(require,module,exports) {
+},{"react/jsx-dev-runtime":"eGH5i","./App":"1iaDK","react-dom/client":"gtkFg","@parcel/transformer-js/src/esmodule-helpers.js":"5oERU","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"ftrPk"}],"eGH5i":[function(require,module,exports) {
 "use strict";
 module.exports = require("beca5e0e08701fdb");
 
-},{"beca5e0e08701fdb":"48uCM"}],"48uCM":[function(require,module,exports) {
+},{"beca5e0e08701fdb":"7cB6B"}],"7cB6B":[function(require,module,exports) {
 /**
  * @license React
  * react-jsx-dev-runtime.development.js
@@ -3777,11 +3777,11 @@ module.exports = require("beca5e0e08701fdb");
     exports.jsxDEV = jsxDEV$1;
 })();
 
-},{"b18e73b2e5113da7":"21dqq"}],"21dqq":[function(require,module,exports) {
+},{"b18e73b2e5113da7":"9sfFD"}],"9sfFD":[function(require,module,exports) {
 "use strict";
 module.exports = require("ba1b3b0d3d9a6e63");
 
-},{"ba1b3b0d3d9a6e63":"6YvXz"}],"6YvXz":[function(require,module,exports) {
+},{"ba1b3b0d3d9a6e63":"8n23p"}],"8n23p":[function(require,module,exports) {
 /**
  * @license React
  * react.development.js
@@ -5647,11 +5647,11 @@ module.exports = require("ba1b3b0d3d9a6e63");
     /* global __REACT_DEVTOOLS_GLOBAL_HOOK__ */ if (typeof __REACT_DEVTOOLS_GLOBAL_HOOK__ !== "undefined" && typeof __REACT_DEVTOOLS_GLOBAL_HOOK__.registerInternalModuleStop === "function") __REACT_DEVTOOLS_GLOBAL_HOOK__.registerInternalModuleStop(new Error());
 })();
 
-},{}],"aQoef":[function(require,module,exports) {
-var $parcel$ReactRefreshHelpers$f527 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
+},{}],"1iaDK":[function(require,module,exports) {
+var $parcel$ReactRefreshHelpers$73c7 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
 var prevRefreshReg = window.$RefreshReg$;
 var prevRefreshSig = window.$RefreshSig$;
-$parcel$ReactRefreshHelpers$f527.prelude(module);
+$parcel$ReactRefreshHelpers$73c7.prelude(module);
 
 try {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
@@ -5679,47 +5679,43 @@ var _s = $RefreshSig$();
 function toastEnteredTheChat(name) {
     (0, _reactHotToastDefault.default).success(`${name} joined.`);
 }
+console.log("setting clone");
+let setMessagesClone = ()=>{};
+const audio = new Audio("assets/notification.mp3");
 socket.on("entered the chat", toastEnteredTheChat);
+socket.on("chat message", function(data) {
+    console.log("Playing alert sound", audio);
+    audio.play();
+    console.log("data", data);
+    setMessagesClone((messages)=>{
+        if (messages && messages.length > 0) return [
+            ...messages,
+            data
+        ];
+        else return [
+            data
+        ];
+    });
+});
 function App() {
     _s();
-    const defaultRooms = [
-        {
-            name: "New York"
-        },
-        {
-            name: "San Diego"
-        },
-        {
-            name: "Miami"
-        },
-        {
-            name: "Chicago"
-        },
-        {
-            name: "Austin"
-        },
-        {
-            name: "Boston"
-        }
-    ];
     const [user, setUser] = (0, _react.useState)(null);
+    const [userDataInClientChecked, setUserDataInClientChecked] = (0, _react.useState)(false);
     const [messages, setMessages] = (0, _react.useState)([]);
-    socket.on("chat message", function(data) {
-        console.log("data", data);
-        if (Array.isArray(messages) && messages.length > 0) {
-            console.log("Messages found");
-            setMessages(()=>[
-                    ...messages,
-                    data
-                ]);
-        } else {
-            console.log("Messages not found");
-            setMessages([
-                data
-            ]);
-        }
-    });
+    setMessagesClone = setMessages;
     (0, _react.useEffect)(()=>{
+        // Load user data from localStorage if exists
+        const userData = localStorage.getItem("crUserData");
+        const userDataJson = JSON.parse(userData);
+        if (userDataJson?.email) {
+            const { email , name , picture  } = userDataJson;
+            setUser({
+                email,
+                name,
+                picture
+            });
+        }
+        setUserDataInClientChecked(true);
         fetch(`/api`).then((res)=>res.json()).then((res)=>{
             if (res && res.lastTenMessages && res.lastTenMessages.length > 0) {
                 if (messages && messages.length) setMessages([
@@ -5750,56 +5746,56 @@ function App() {
                                             children: "chat"
                                         }, void 0, false, {
                                             fileName: "app/App.js",
-                                            lineNumber: 80,
+                                            lineNumber: 81,
                                             columnNumber: 42
                                         }, this),
                                         "."
                                     ]
                                 }, void 0, true, {
                                     fileName: "app/App.js",
-                                    lineNumber: 79,
+                                    lineNumber: 80,
                                     columnNumber: 29
                                 }, this),
-                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _loginWithGoogleButtonDefault.default), {
+                                !user && userDataInClientChecked && /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _loginWithGoogleButtonDefault.default), {
                                     user: user,
                                     setUser: setUser
                                 }, void 0, false, {
                                     fileName: "app/App.js",
-                                    lineNumber: 82,
-                                    columnNumber: 29
+                                    lineNumber: 83,
+                                    columnNumber: 67
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "app/App.js",
-                            lineNumber: 78,
+                            lineNumber: 79,
                             columnNumber: 25
                         }, this),
                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
                             className: "col-md-4 col-12",
                             children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _bgIconsRandomDefault.default), {}, void 0, false, {
                                 fileName: "app/App.js",
-                                lineNumber: 85,
+                                lineNumber: 86,
                                 columnNumber: 29
                             }, this)
                         }, void 0, false, {
                             fileName: "app/App.js",
-                            lineNumber: 84,
+                            lineNumber: 85,
                             columnNumber: 25
                         }, this)
                     ]
                 }, void 0, true, {
                     fileName: "app/App.js",
-                    lineNumber: 77,
+                    lineNumber: 78,
                     columnNumber: 21
                 }, this)
             }, void 0, false, {
                 fileName: "app/App.js",
-                lineNumber: 74,
+                lineNumber: 75,
                 columnNumber: 17
             }, this)
         }, void 0, false, {
             fileName: "app/App.js",
-            lineNumber: 73,
+            lineNumber: 74,
             columnNumber: 13
         }, this);
     };
@@ -5808,17 +5804,18 @@ function App() {
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _userContextDefault.default).Provider, {
                 value: {
                     user,
-                    setUser
+                    setUser,
+                    setUserDataInClientChecked
                 },
                 children: [
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _navBarDefault.default), {}, void 0, false, {
                         fileName: "app/App.js",
-                        lineNumber: 100,
+                        lineNumber: 101,
                         columnNumber: 13
                     }, this),
                     !user?.email && /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(LogoutStateComponent, {}, void 0, false, {
                         fileName: "app/App.js",
-                        lineNumber: 102,
+                        lineNumber: 103,
                         columnNumber: 33
                     }, this),
                     user?.email && /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _chatContainerDefault.default), {
@@ -5826,18 +5823,18 @@ function App() {
                         setMessages: setMessages
                     }, void 0, false, {
                         fileName: "app/App.js",
-                        lineNumber: 103,
+                        lineNumber: 104,
                         columnNumber: 30
                     }, this),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactHotToast.Toaster), {}, void 0, false, {
                         fileName: "app/App.js",
-                        lineNumber: 105,
+                        lineNumber: 106,
                         columnNumber: 13
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "app/App.js",
-                lineNumber: 98,
+                lineNumber: 99,
                 columnNumber: 9
             }, this),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -5854,7 +5851,7 @@ function App() {
                             className: "me-2"
                         }, void 0, false, {
                             fileName: "app/App.js",
-                            lineNumber: 110,
+                            lineNumber: 111,
                             columnNumber: 17
                         }, this),
                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
@@ -5862,39 +5859,39 @@ function App() {
                             children: "Github Repository"
                         }, void 0, false, {
                             fileName: "app/App.js",
-                            lineNumber: 111,
+                            lineNumber: 112,
                             columnNumber: 17
                         }, this)
                     ]
                 }, void 0, true, {
                     fileName: "app/App.js",
-                    lineNumber: 109,
+                    lineNumber: 110,
                     columnNumber: 13
                 }, this)
             }, void 0, false, {
                 fileName: "app/App.js",
-                lineNumber: 108,
+                lineNumber: 109,
                 columnNumber: 9
             }, this)
         ]
     }, void 0, true);
 }
-_s(App, "Fb3hl39k2IZW7tPVFL8oliKXE2U=");
+_s(App, "i1FXMZQcewWGaTFiqZA9oDgK9Nk=");
 _c = App;
 exports.default = App;
 var _c;
 $RefreshReg$(_c, "App");
 
-  $parcel$ReactRefreshHelpers$f527.postlude(module);
+  $parcel$ReactRefreshHelpers$73c7.postlude(module);
 } finally {
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","./components/ChatContainer":"fcoSs","./components/ChatRoomSelect":"7ZeDF","./components/NavBar":"l3AoH","./contexts/UserContext":"2hYBu","./components/LoginWithGoogleButton":"2fA1P","react-hot-toast":"gi0hv","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","./images/github-mark.svg":"2Kqui","./components/BgIconsRandom":"bKvwO"}],"fcoSs":[function(require,module,exports) {
-var $parcel$ReactRefreshHelpers$f8aa = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
+},{"react/jsx-dev-runtime":"eGH5i","react":"9sfFD","./components/ChatContainer":"jVj6X","./components/ChatRoomSelect":"ibShd","./components/NavBar":"cGTHU","./contexts/UserContext":"gJPKA","./components/LoginWithGoogleButton":"aun22","react-hot-toast":"6huAF","./images/github-mark.svg":"7xIYQ","./components/BgIconsRandom":"3HXnU","@parcel/transformer-js/src/esmodule-helpers.js":"5oERU","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"ftrPk"}],"jVj6X":[function(require,module,exports) {
+var $parcel$ReactRefreshHelpers$e9ec = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
 var prevRefreshReg = window.$RefreshReg$;
 var prevRefreshSig = window.$RefreshSig$;
-$parcel$ReactRefreshHelpers$f8aa.prelude(module);
+$parcel$ReactRefreshHelpers$e9ec.prelude(module);
 
 try {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
@@ -6145,16 +6142,16 @@ exports.default = ChatContainer;
 var _c;
 $RefreshReg$(_c, "ChatContainer");
 
-  $parcel$ReactRefreshHelpers$f8aa.postlude(module);
+  $parcel$ReactRefreshHelpers$e9ec.postlude(module);
 } finally {
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","./MessageItem":"90bxX","../contexts/UserContext":"2hYBu","./Toggle":"66WHQ","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"90bxX":[function(require,module,exports) {
-var $parcel$ReactRefreshHelpers$2a9a = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
+},{"react/jsx-dev-runtime":"eGH5i","react":"9sfFD","./MessageItem":"9Cszd","../contexts/UserContext":"gJPKA","./Toggle":"6q2C4","@parcel/transformer-js/src/esmodule-helpers.js":"5oERU","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"ftrPk"}],"9Cszd":[function(require,module,exports) {
+var $parcel$ReactRefreshHelpers$ffcd = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
 var prevRefreshReg = window.$RefreshReg$;
 var prevRefreshSig = window.$RefreshSig$;
-$parcel$ReactRefreshHelpers$2a9a.prelude(module);
+$parcel$ReactRefreshHelpers$ffcd.prelude(module);
 
 try {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
@@ -6196,28 +6193,26 @@ function MessageItem({ messageData  }) {
                     color: "#09cd57"
                 }, void 0, false, {
                     fileName: "app/components/MessageItem.js",
-                    lineNumber: 23,
+                    lineNumber: 24,
                     columnNumber: 5
                 }, this)
             }, void 0, false, {
                 fileName: "app/components/MessageItem.js",
-                lineNumber: 22,
+                lineNumber: 23,
                 columnNumber: 4
             }, this),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
                 className: "mx-2 rounded-2 px-2 py-1 border-black-20 border",
-                dangerouslySetInnerHTML: {
-                    __html: html
-                }
+                children: html
             }, void 0, false, {
                 fileName: "app/components/MessageItem.js",
-                lineNumber: 33,
+                lineNumber: 34,
                 columnNumber: 4
             }, this)
         ]
     }, void 0, true, {
         fileName: "app/components/MessageItem.js",
-        lineNumber: 21,
+        lineNumber: 22,
         columnNumber: 3
     }, this);
 }
@@ -6227,12 +6222,12 @@ exports.default = MessageItem;
 var _c;
 $RefreshReg$(_c, "MessageItem");
 
-  $parcel$ReactRefreshHelpers$2a9a.postlude(module);
+  $parcel$ReactRefreshHelpers$ffcd.postlude(module);
 } finally {
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","react-avatar":"933jC","../contexts/UserContext":"2hYBu","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","linkifyjs":"2aKZP","linkify-string":"lEMdM"}],"933jC":[function(require,module,exports) {
+},{"react/jsx-dev-runtime":"eGH5i","react":"9sfFD","react-avatar":"cMMdc","../contexts/UserContext":"gJPKA","linkifyjs":"279sE","linkify-string":"fhc4t","@parcel/transformer-js/src/esmodule-helpers.js":"5oERU","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"ftrPk"}],"cMMdc":[function(require,module,exports) {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
 parcelHelpers.export(exports, "createAvatarComponent", ()=>(0, _avatarDefault.default));
@@ -6297,7 +6292,7 @@ exports.default = (0, _avatarDefault.default)({
     sources: SOURCES
 });
 
-},{"./avatar":"eoMI7","./sources/Gravatar":"1RGyJ","./sources/Facebook":"9xyGN","./sources/Github":"dTPTM","./sources/Skype":"clafp","./sources/Value":"drpHG","./sources/Src":"cf19P","./sources/Icon":"29rE3","./sources/Twitter":"gzZ5b","./sources/VKontakte":"5Y8Tk","./sources/Instagram":"kP0aR","./sources/Google":"hGGYh","./data-provider":"7KdXh","./sources/AvatarRedirect":"b3MoM","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"eoMI7":[function(require,module,exports) {
+},{"./avatar":"lQAHK","./sources/Gravatar":"7LQkq","./sources/Facebook":"kjYFT","./sources/Github":"cCgW8","./sources/Skype":"9foe0","./sources/Value":"xBnCL","./sources/Src":"lP45n","./sources/Icon":"dIgr5","./sources/Twitter":"9EPef","./sources/VKontakte":"fgeGH","./sources/Instagram":"1jkwZ","./sources/Google":"ewJRs","./data-provider":"8pynw","./sources/AvatarRedirect":"dfJV1","@parcel/transformer-js/src/esmodule-helpers.js":"5oERU"}],"lQAHK":[function(require,module,exports) {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
 parcelHelpers.export(exports, "getRandomColor", ()=>(0, _utils.getRandomColor));
@@ -6341,7 +6336,7 @@ function createAvatarComponent(options) {
 }
 exports.default = createAvatarComponent;
 
-},{"@babel/runtime/helpers/extends":"vw3vn","core-js-pure/stable/object/assign.js":"hgdze","react":"21dqq","./cache":"58QUy","./context":"9EqwV","./data-provider":"7KdXh","./utils":"kE0JY","./components/image":"4yBlW","./components/text":"gIT9X","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"vw3vn":[function(require,module,exports) {
+},{"@babel/runtime/helpers/extends":"fPVoI","core-js-pure/stable/object/assign.js":"9F04r","react":"9sfFD","./cache":"6pFup","./context":"jWvoL","./data-provider":"8pynw","./utils":"4BiX7","./components/image":"kWeim","./components/text":"lup2l","@parcel/transformer-js/src/esmodule-helpers.js":"5oERU"}],"fPVoI":[function(require,module,exports) {
 function _extends() {
     module.exports = _extends = Object.assign ? Object.assign.bind() : function(target) {
         for(var i = 1; i < arguments.length; i++){
@@ -6354,16 +6349,16 @@ function _extends() {
 }
 module.exports = _extends, module.exports.__esModule = true, module.exports["default"] = module.exports;
 
-},{}],"hgdze":[function(require,module,exports) {
+},{}],"9F04r":[function(require,module,exports) {
 var parent = require("a7bcebd60e9ec010");
 module.exports = parent;
 
-},{"a7bcebd60e9ec010":"bW6qk"}],"bW6qk":[function(require,module,exports) {
+},{"a7bcebd60e9ec010":"67dDs"}],"67dDs":[function(require,module,exports) {
 require("7333ee4de820d91e");
 var path = require("21b022a936d95c7d");
 module.exports = path.Object.assign;
 
-},{"7333ee4de820d91e":"9FtgB","21b022a936d95c7d":"8QO0z"}],"9FtgB":[function(require,module,exports) {
+},{"7333ee4de820d91e":"f8Q2M","21b022a936d95c7d":"1MoZb"}],"f8Q2M":[function(require,module,exports) {
 var $ = require("362d1c97ffaad118");
 var assign = require("95651d838cd502a");
 // `Object.assign` method
@@ -6378,7 +6373,7 @@ $({
     assign: assign
 });
 
-},{"362d1c97ffaad118":"jjems","95651d838cd502a":"f1P6v"}],"jjems":[function(require,module,exports) {
+},{"362d1c97ffaad118":"jMgg9","95651d838cd502a":"eSHGc"}],"jMgg9":[function(require,module,exports) {
 "use strict";
 var global = require("7d0c7e6d92c10a3e");
 var apply = require("fe3ebc4588284adf");
@@ -6465,7 +6460,7 @@ var wrapConstructor = function(NativeConstructor) {
     }
 };
 
-},{"7d0c7e6d92c10a3e":"avqB7","fe3ebc4588284adf":"kLBNq","db1dc6e6c8619ed9":"4LaES","b3a9c5faa555d4a":"fqYwo","ba6c8af9350a1478":"bs1FJ","2ff896d54e79539f":"1D6eY","4ce77b04e85c655e":"8QO0z","46f0773be874284d":"jZFzY","f1d2fb77aa384805":"2bHDS","1a101f8ddc40327b":"lacXY"}],"avqB7":[function(require,module,exports) {
+},{"7d0c7e6d92c10a3e":"fBlhT","fe3ebc4588284adf":"ikUbg","db1dc6e6c8619ed9":"533YR","b3a9c5faa555d4a":"2yOWk","ba6c8af9350a1478":"1GqC5","2ff896d54e79539f":"hRKPl","4ce77b04e85c655e":"1MoZb","46f0773be874284d":"1eiou","f1d2fb77aa384805":"8OWDb","1a101f8ddc40327b":"ck7id"}],"fBlhT":[function(require,module,exports) {
 var global = arguments[3];
 var check = function(it) {
     return it && it.Math == Math && it;
@@ -6478,7 +6473,7 @@ function() {
     return this;
 }() || this || Function("return this")();
 
-},{}],"kLBNq":[function(require,module,exports) {
+},{}],"ikUbg":[function(require,module,exports) {
 var NATIVE_BIND = require("cc8fcec3ef8554b9");
 var FunctionPrototype = Function.prototype;
 var apply = FunctionPrototype.apply;
@@ -6488,7 +6483,7 @@ module.exports = typeof Reflect == "object" && Reflect.apply || (NATIVE_BIND ? c
     return call.apply(apply, arguments);
 });
 
-},{"cc8fcec3ef8554b9":"bFMAq"}],"bFMAq":[function(require,module,exports) {
+},{"cc8fcec3ef8554b9":"heaen"}],"heaen":[function(require,module,exports) {
 var fails = require("8faba986a46d94cd");
 module.exports = !fails(function() {
     // eslint-disable-next-line es/no-function-prototype-bind -- safe
@@ -6497,7 +6492,7 @@ module.exports = !fails(function() {
     return typeof test != "function" || test.hasOwnProperty("prototype");
 });
 
-},{"8faba986a46d94cd":"luPpk"}],"luPpk":[function(require,module,exports) {
+},{"8faba986a46d94cd":"iTIcj"}],"iTIcj":[function(require,module,exports) {
 module.exports = function(exec) {
     try {
         return !!exec();
@@ -6506,7 +6501,7 @@ module.exports = function(exec) {
     }
 };
 
-},{}],"4LaES":[function(require,module,exports) {
+},{}],"533YR":[function(require,module,exports) {
 var classofRaw = require("2c8395e8220952b0");
 var uncurryThis = require("bfde343b8c2a931c");
 module.exports = function(fn) {
@@ -6516,7 +6511,7 @@ module.exports = function(fn) {
     if (classofRaw(fn) === "Function") return uncurryThis(fn);
 };
 
-},{"2c8395e8220952b0":"fZmv0","bfde343b8c2a931c":"5P4uT"}],"fZmv0":[function(require,module,exports) {
+},{"2c8395e8220952b0":"d1xrx","bfde343b8c2a931c":"gtGFr"}],"d1xrx":[function(require,module,exports) {
 var uncurryThis = require("1daea2a8f66a302f");
 var toString = uncurryThis({}.toString);
 var stringSlice = uncurryThis("".slice);
@@ -6524,7 +6519,7 @@ module.exports = function(it) {
     return stringSlice(toString(it), 8, -1);
 };
 
-},{"1daea2a8f66a302f":"5P4uT"}],"5P4uT":[function(require,module,exports) {
+},{"1daea2a8f66a302f":"gtGFr"}],"gtGFr":[function(require,module,exports) {
 var NATIVE_BIND = require("7fde8248985666d2");
 var FunctionPrototype = Function.prototype;
 var call = FunctionPrototype.call;
@@ -6535,7 +6530,7 @@ module.exports = NATIVE_BIND ? uncurryThisWithBind : function(fn) {
     };
 };
 
-},{"7fde8248985666d2":"bFMAq"}],"fqYwo":[function(require,module,exports) {
+},{"7fde8248985666d2":"heaen"}],"2yOWk":[function(require,module,exports) {
 var $documentAll = require("591aa3ddc93163a7");
 var documentAll = $documentAll.all;
 // `IsCallable` abstract operation
@@ -6546,7 +6541,7 @@ module.exports = $documentAll.IS_HTMLDDA ? function(argument) {
     return typeof argument == "function";
 };
 
-},{"591aa3ddc93163a7":"lPFRS"}],"lPFRS":[function(require,module,exports) {
+},{"591aa3ddc93163a7":"iT9b8"}],"iT9b8":[function(require,module,exports) {
 var documentAll = typeof document == "object" && document.all;
 // https://tc39.es/ecma262/#sec-IsHTMLDDA-internal-slot
 // eslint-disable-next-line unicorn/no-typeof-undefined -- required for testing
@@ -6556,7 +6551,7 @@ module.exports = {
     IS_HTMLDDA: IS_HTMLDDA
 };
 
-},{}],"bs1FJ":[function(require,module,exports) {
+},{}],"1GqC5":[function(require,module,exports) {
 var DESCRIPTORS = require("9854f7f5921ad206");
 var call = require("a030b9f22bd9cb59");
 var propertyIsEnumerableModule = require("b50b8fe3349886d9");
@@ -6578,7 +6573,7 @@ exports.f = DESCRIPTORS ? $getOwnPropertyDescriptor : function getOwnPropertyDes
     if (hasOwn(O, P)) return createPropertyDescriptor(!call(propertyIsEnumerableModule.f, O, P), O[P]);
 };
 
-},{"9854f7f5921ad206":"87WOB","a030b9f22bd9cb59":"acNwo","b50b8fe3349886d9":"lvpvk","12b13c101bd3fc55":"1E79z","3e4ae77b10c75fd2":"kvdfV","dfd3781fba85ca72":"2GDiT","460d43bf12940d57":"lacXY","b589428dc7317b48":"451hU"}],"87WOB":[function(require,module,exports) {
+},{"9854f7f5921ad206":"bcvE3","a030b9f22bd9cb59":"eaezI","b50b8fe3349886d9":"aiDYP","12b13c101bd3fc55":"7E1bf","3e4ae77b10c75fd2":"2LQHC","dfd3781fba85ca72":"8McI3","460d43bf12940d57":"ck7id","b589428dc7317b48":"cKToX"}],"bcvE3":[function(require,module,exports) {
 var fails = require("a938c7e66df02a2");
 // Detect IE8's incomplete defineProperty implementation
 module.exports = !fails(function() {
@@ -6590,14 +6585,14 @@ module.exports = !fails(function() {
     })[1] != 7;
 });
 
-},{"a938c7e66df02a2":"luPpk"}],"acNwo":[function(require,module,exports) {
+},{"a938c7e66df02a2":"iTIcj"}],"eaezI":[function(require,module,exports) {
 var NATIVE_BIND = require("3764ddecba4e5098");
 var call = Function.prototype.call;
 module.exports = NATIVE_BIND ? call.bind(call) : function() {
     return call.apply(call, arguments);
 };
 
-},{"3764ddecba4e5098":"bFMAq"}],"lvpvk":[function(require,module,exports) {
+},{"3764ddecba4e5098":"heaen"}],"aiDYP":[function(require,module,exports) {
 "use strict";
 var $propertyIsEnumerable = {}.propertyIsEnumerable;
 // eslint-disable-next-line es/no-object-getownpropertydescriptor -- safe
@@ -6613,7 +6608,7 @@ exports.f = NASHORN_BUG ? function propertyIsEnumerable(V) {
     return !!descriptor && descriptor.enumerable;
 } : $propertyIsEnumerable;
 
-},{}],"1E79z":[function(require,module,exports) {
+},{}],"7E1bf":[function(require,module,exports) {
 module.exports = function(bitmap, value) {
     return {
         enumerable: !(bitmap & 1),
@@ -6623,7 +6618,7 @@ module.exports = function(bitmap, value) {
     };
 };
 
-},{}],"kvdfV":[function(require,module,exports) {
+},{}],"2LQHC":[function(require,module,exports) {
 // toObject with fallback for non-array-like ES3 strings
 var IndexedObject = require("b64625062d1be241");
 var requireObjectCoercible = require("13e10a9bac9e374");
@@ -6631,7 +6626,7 @@ module.exports = function(it) {
     return IndexedObject(requireObjectCoercible(it));
 };
 
-},{"b64625062d1be241":"6NkN4","13e10a9bac9e374":"3XBjA"}],"6NkN4":[function(require,module,exports) {
+},{"b64625062d1be241":"7oPnm","13e10a9bac9e374":"dRmOQ"}],"7oPnm":[function(require,module,exports) {
 var uncurryThis = require("bdfa5fbea3712108");
 var fails = require("c29be668b33144cd");
 var classof = require("6c435982897fe3a7");
@@ -6646,7 +6641,7 @@ module.exports = fails(function() {
     return classof(it) == "String" ? split(it, "") : $Object(it);
 } : $Object;
 
-},{"bdfa5fbea3712108":"5P4uT","c29be668b33144cd":"luPpk","6c435982897fe3a7":"fZmv0"}],"3XBjA":[function(require,module,exports) {
+},{"bdfa5fbea3712108":"gtGFr","c29be668b33144cd":"iTIcj","6c435982897fe3a7":"d1xrx"}],"dRmOQ":[function(require,module,exports) {
 var isNullOrUndefined = require("4edc175022f157a0");
 var $TypeError = TypeError;
 // `RequireObjectCoercible` abstract operation
@@ -6656,14 +6651,14 @@ module.exports = function(it) {
     return it;
 };
 
-},{"4edc175022f157a0":"xVj2k"}],"xVj2k":[function(require,module,exports) {
+},{"4edc175022f157a0":"kgfT5"}],"kgfT5":[function(require,module,exports) {
 // we can't use just `it == null` since of `document.all` special case
 // https://tc39.es/ecma262/#sec-IsHTMLDDA-internal-slot-aec
 module.exports = function(it) {
     return it === null || it === undefined;
 };
 
-},{}],"2GDiT":[function(require,module,exports) {
+},{}],"8McI3":[function(require,module,exports) {
 var toPrimitive = require("62756216ece49ebb");
 var isSymbol = require("96216a9c6ede0ebe");
 // `ToPropertyKey` abstract operation
@@ -6673,7 +6668,7 @@ module.exports = function(argument) {
     return isSymbol(key) ? key : key + "";
 };
 
-},{"62756216ece49ebb":"e0Xko","96216a9c6ede0ebe":"58L3i"}],"e0Xko":[function(require,module,exports) {
+},{"62756216ece49ebb":"fpFaz","96216a9c6ede0ebe":"IwqwV"}],"fpFaz":[function(require,module,exports) {
 var call = require("d1343d19a408b6aa");
 var isObject = require("70b7b84da9039b6");
 var isSymbol = require("54ef16f3a4483804");
@@ -6698,7 +6693,7 @@ module.exports = function(input, pref) {
     return ordinaryToPrimitive(input, pref);
 };
 
-},{"d1343d19a408b6aa":"acNwo","70b7b84da9039b6":"fRYFX","54ef16f3a4483804":"58L3i","bc365f2171b7a7b1":"goREb","581088d062f125ad":"iTXKY","68295fb23dc3bc65":"cSGfj"}],"fRYFX":[function(require,module,exports) {
+},{"d1343d19a408b6aa":"eaezI","70b7b84da9039b6":"7j1Gt","54ef16f3a4483804":"IwqwV","bc365f2171b7a7b1":"SYOVZ","581088d062f125ad":"bDmjG","68295fb23dc3bc65":"2Upad"}],"7j1Gt":[function(require,module,exports) {
 var isCallable = require("9d023c820c871f4b");
 var $documentAll = require("f1e2a10a5c5045c9");
 var documentAll = $documentAll.all;
@@ -6708,7 +6703,7 @@ module.exports = $documentAll.IS_HTMLDDA ? function(it) {
     return typeof it == "object" ? it !== null : isCallable(it);
 };
 
-},{"9d023c820c871f4b":"fqYwo","f1e2a10a5c5045c9":"lPFRS"}],"58L3i":[function(require,module,exports) {
+},{"9d023c820c871f4b":"2yOWk","f1e2a10a5c5045c9":"iT9b8"}],"IwqwV":[function(require,module,exports) {
 var getBuiltIn = require("3dd1df2205eab8e0");
 var isCallable = require("a5ccf8e2cbc9c131");
 var isPrototypeOf = require("395a38f0fa780c03");
@@ -6721,7 +6716,7 @@ module.exports = USE_SYMBOL_AS_UID ? function(it) {
     return isCallable($Symbol) && isPrototypeOf($Symbol.prototype, $Object(it));
 };
 
-},{"3dd1df2205eab8e0":"6wm25","a5ccf8e2cbc9c131":"fqYwo","395a38f0fa780c03":"qlM4L","1d6fae60fd73acf6":"aDtCm"}],"6wm25":[function(require,module,exports) {
+},{"3dd1df2205eab8e0":"qT6hq","a5ccf8e2cbc9c131":"2yOWk","395a38f0fa780c03":"glCsH","1d6fae60fd73acf6":"e6O8Y"}],"qT6hq":[function(require,module,exports) {
 var path = require("9f96a3d2a74f2dda");
 var global = require("1753de61cdebaedf");
 var isCallable = require("9c5c8d483cff51cc");
@@ -6732,18 +6727,18 @@ module.exports = function(namespace, method) {
     return arguments.length < 2 ? aFunction(path[namespace]) || aFunction(global[namespace]) : path[namespace] && path[namespace][method] || global[namespace] && global[namespace][method];
 };
 
-},{"9f96a3d2a74f2dda":"8QO0z","1753de61cdebaedf":"avqB7","9c5c8d483cff51cc":"fqYwo"}],"8QO0z":[function(require,module,exports) {
+},{"9f96a3d2a74f2dda":"1MoZb","1753de61cdebaedf":"fBlhT","9c5c8d483cff51cc":"2yOWk"}],"1MoZb":[function(require,module,exports) {
 module.exports = {};
 
-},{}],"qlM4L":[function(require,module,exports) {
+},{}],"glCsH":[function(require,module,exports) {
 var uncurryThis = require("c4da8a2f3b306fab");
 module.exports = uncurryThis({}.isPrototypeOf);
 
-},{"c4da8a2f3b306fab":"5P4uT"}],"aDtCm":[function(require,module,exports) {
+},{"c4da8a2f3b306fab":"gtGFr"}],"e6O8Y":[function(require,module,exports) {
 /* eslint-disable es/no-symbol -- required for testing */ var NATIVE_SYMBOL = require("16b710678a6c9a0e");
 module.exports = NATIVE_SYMBOL && !Symbol.sham && typeof Symbol.iterator == "symbol";
 
-},{"16b710678a6c9a0e":"hdbC4"}],"hdbC4":[function(require,module,exports) {
+},{"16b710678a6c9a0e":"bFDVY"}],"bFDVY":[function(require,module,exports) {
 /* eslint-disable es/no-symbol -- required for testing */ var V8_VERSION = require("4fab5bc6861f366d");
 var fails = require("1aca328c5945d4be");
 var global = require("9d2b4580c1adf457");
@@ -6759,7 +6754,7 @@ module.exports = !!Object.getOwnPropertySymbols && !fails(function() {
     !Symbol.sham && V8_VERSION && V8_VERSION < 41;
 });
 
-},{"4fab5bc6861f366d":"diVIs","1aca328c5945d4be":"luPpk","9d2b4580c1adf457":"avqB7"}],"diVIs":[function(require,module,exports) {
+},{"4fab5bc6861f366d":"8S5hK","1aca328c5945d4be":"iTIcj","9d2b4580c1adf457":"fBlhT"}],"8S5hK":[function(require,module,exports) {
 var global = require("ea7620e49b9b4f49");
 var userAgent = require("226bdc5620418ec1");
 var process = global.process;
@@ -6784,10 +6779,10 @@ if (!version && userAgent) {
 }
 module.exports = version;
 
-},{"ea7620e49b9b4f49":"avqB7","226bdc5620418ec1":"jumDW"}],"jumDW":[function(require,module,exports) {
+},{"ea7620e49b9b4f49":"fBlhT","226bdc5620418ec1":"8Zp6g"}],"8Zp6g":[function(require,module,exports) {
 module.exports = typeof navigator != "undefined" && String(navigator.userAgent) || "";
 
-},{}],"goREb":[function(require,module,exports) {
+},{}],"SYOVZ":[function(require,module,exports) {
 var aCallable = require("f495519ebed8f9ed");
 var isNullOrUndefined = require("fc55fb1d2e9dff97");
 // `GetMethod` abstract operation
@@ -6797,7 +6792,7 @@ module.exports = function(V, P) {
     return isNullOrUndefined(func) ? undefined : aCallable(func);
 };
 
-},{"f495519ebed8f9ed":"7r1lP","fc55fb1d2e9dff97":"xVj2k"}],"7r1lP":[function(require,module,exports) {
+},{"f495519ebed8f9ed":"9MULW","fc55fb1d2e9dff97":"kgfT5"}],"9MULW":[function(require,module,exports) {
 var isCallable = require("9639c42751803dde");
 var tryToString = require("100dda2611c972b9");
 var $TypeError = TypeError;
@@ -6807,7 +6802,7 @@ module.exports = function(argument) {
     throw $TypeError(tryToString(argument) + " is not a function");
 };
 
-},{"9639c42751803dde":"fqYwo","100dda2611c972b9":"c7C3w"}],"c7C3w":[function(require,module,exports) {
+},{"9639c42751803dde":"2yOWk","100dda2611c972b9":"3N4GZ"}],"3N4GZ":[function(require,module,exports) {
 var $String = String;
 module.exports = function(argument) {
     try {
@@ -6817,7 +6812,7 @@ module.exports = function(argument) {
     }
 };
 
-},{}],"iTXKY":[function(require,module,exports) {
+},{}],"bDmjG":[function(require,module,exports) {
 var call = require("ccc2f71e2b9456d6");
 var isCallable = require("472822f0cfcaf32e");
 var isObject = require("156ea859822b7980");
@@ -6832,7 +6827,7 @@ module.exports = function(input, pref) {
     throw $TypeError("Can't convert object to primitive value");
 };
 
-},{"ccc2f71e2b9456d6":"acNwo","472822f0cfcaf32e":"fqYwo","156ea859822b7980":"fRYFX"}],"cSGfj":[function(require,module,exports) {
+},{"ccc2f71e2b9456d6":"eaezI","472822f0cfcaf32e":"2yOWk","156ea859822b7980":"7j1Gt"}],"2Upad":[function(require,module,exports) {
 var global = require("c2ef1fca8aa824b7");
 var shared = require("a35be1fbc8548af");
 var hasOwn = require("7b045123241cf239");
@@ -6847,7 +6842,7 @@ module.exports = function(name) {
     return WellKnownSymbolsStore[name];
 };
 
-},{"c2ef1fca8aa824b7":"avqB7","a35be1fbc8548af":"9VSA0","7b045123241cf239":"lacXY","98c8f9130ccc7adc":"cLNyV","a5f7f20a8e57f47c":"hdbC4","ec7f643e8e8eba46":"aDtCm"}],"9VSA0":[function(require,module,exports) {
+},{"c2ef1fca8aa824b7":"fBlhT","a35be1fbc8548af":"cLzb3","7b045123241cf239":"ck7id","98c8f9130ccc7adc":"gWpYg","a5f7f20a8e57f47c":"bFDVY","ec7f643e8e8eba46":"e6O8Y"}],"cLzb3":[function(require,module,exports) {
 var IS_PURE = require("e3e3a919de6923f8");
 var store = require("76d61d27f9e02abc");
 (module.exports = function(key, value) {
@@ -6860,17 +6855,17 @@ var store = require("76d61d27f9e02abc");
     source: "https://github.com/zloirock/core-js"
 });
 
-},{"e3e3a919de6923f8":"k905C","76d61d27f9e02abc":"4KS55"}],"k905C":[function(require,module,exports) {
+},{"e3e3a919de6923f8":"hYUnX","76d61d27f9e02abc":"1rLK3"}],"hYUnX":[function(require,module,exports) {
 module.exports = true;
 
-},{}],"4KS55":[function(require,module,exports) {
+},{}],"1rLK3":[function(require,module,exports) {
 var global = require("7cf2181b42bb9deb");
 var defineGlobalProperty = require("57656addff097c9f");
 var SHARED = "__core-js_shared__";
 var store = global[SHARED] || defineGlobalProperty(SHARED, {});
 module.exports = store;
 
-},{"7cf2181b42bb9deb":"avqB7","57656addff097c9f":"4kJdN"}],"4kJdN":[function(require,module,exports) {
+},{"7cf2181b42bb9deb":"fBlhT","57656addff097c9f":"jNUnB"}],"jNUnB":[function(require,module,exports) {
 var global = require("a9a3453cd485cc55");
 // eslint-disable-next-line es/no-object-defineproperty -- safe
 var defineProperty = Object.defineProperty;
@@ -6887,7 +6882,7 @@ module.exports = function(key, value) {
     return value;
 };
 
-},{"a9a3453cd485cc55":"avqB7"}],"lacXY":[function(require,module,exports) {
+},{"a9a3453cd485cc55":"fBlhT"}],"ck7id":[function(require,module,exports) {
 var uncurryThis = require("319b07a72c6ce45a");
 var toObject = require("90a1893d314d14f0");
 var hasOwnProperty = uncurryThis({}.hasOwnProperty);
@@ -6898,7 +6893,7 @@ module.exports = Object.hasOwn || function hasOwn(it, key) {
     return hasOwnProperty(toObject(it), key);
 };
 
-},{"319b07a72c6ce45a":"5P4uT","90a1893d314d14f0":"70Utf"}],"70Utf":[function(require,module,exports) {
+},{"319b07a72c6ce45a":"gtGFr","90a1893d314d14f0":"1vsnu"}],"1vsnu":[function(require,module,exports) {
 var requireObjectCoercible = require("28d565d10dd025bf");
 var $Object = Object;
 // `ToObject` abstract operation
@@ -6907,7 +6902,7 @@ module.exports = function(argument) {
     return $Object(requireObjectCoercible(argument));
 };
 
-},{"28d565d10dd025bf":"3XBjA"}],"cLNyV":[function(require,module,exports) {
+},{"28d565d10dd025bf":"dRmOQ"}],"gWpYg":[function(require,module,exports) {
 var uncurryThis = require("137af866593cbc67");
 var id = 0;
 var postfix = Math.random();
@@ -6916,7 +6911,7 @@ module.exports = function(key) {
     return "Symbol(" + (key === undefined ? "" : key) + ")_" + toString(++id + postfix, 36);
 };
 
-},{"137af866593cbc67":"5P4uT"}],"451hU":[function(require,module,exports) {
+},{"137af866593cbc67":"gtGFr"}],"cKToX":[function(require,module,exports) {
 var DESCRIPTORS = require("d58155a465fa30fd");
 var fails = require("52b0b3c498f520f4");
 var createElement = require("48903a04749bc2ef");
@@ -6930,7 +6925,7 @@ module.exports = !DESCRIPTORS && !fails(function() {
     }).a != 7;
 });
 
-},{"d58155a465fa30fd":"87WOB","52b0b3c498f520f4":"luPpk","48903a04749bc2ef":"Ioo8t"}],"Ioo8t":[function(require,module,exports) {
+},{"d58155a465fa30fd":"bcvE3","52b0b3c498f520f4":"iTIcj","48903a04749bc2ef":"2qKLu"}],"2qKLu":[function(require,module,exports) {
 var global = require("d8d15f9c448166e5");
 var isObject = require("3d7632d7ef01f126");
 var document = global.document;
@@ -6940,7 +6935,7 @@ module.exports = function(it) {
     return EXISTS ? document.createElement(it) : {};
 };
 
-},{"d8d15f9c448166e5":"avqB7","3d7632d7ef01f126":"fRYFX"}],"1D6eY":[function(require,module,exports) {
+},{"d8d15f9c448166e5":"fBlhT","3d7632d7ef01f126":"7j1Gt"}],"hRKPl":[function(require,module,exports) {
 var fails = require("d6fb76808bc44ddd");
 var isCallable = require("6bfb275df6a24e73");
 var replacement = /#|\.prototype\./;
@@ -6956,7 +6951,7 @@ var NATIVE = isForced.NATIVE = "N";
 var POLYFILL = isForced.POLYFILL = "P";
 module.exports = isForced;
 
-},{"d6fb76808bc44ddd":"luPpk","6bfb275df6a24e73":"fqYwo"}],"jZFzY":[function(require,module,exports) {
+},{"d6fb76808bc44ddd":"iTIcj","6bfb275df6a24e73":"2yOWk"}],"1eiou":[function(require,module,exports) {
 var uncurryThis = require("4383e1c579e02b64");
 var aCallable = require("2baa1c81814e3517");
 var NATIVE_BIND = require("b1c5aabf8eea28a0");
@@ -6969,7 +6964,7 @@ module.exports = function(fn, that) {
     };
 };
 
-},{"4383e1c579e02b64":"4LaES","2baa1c81814e3517":"7r1lP","b1c5aabf8eea28a0":"bFMAq"}],"2bHDS":[function(require,module,exports) {
+},{"4383e1c579e02b64":"533YR","2baa1c81814e3517":"9MULW","b1c5aabf8eea28a0":"heaen"}],"8OWDb":[function(require,module,exports) {
 var DESCRIPTORS = require("a84526a7a8c77728");
 var definePropertyModule = require("1e5cd261c8d5010d");
 var createPropertyDescriptor = require("1311063d1b4ac30");
@@ -6980,7 +6975,7 @@ module.exports = DESCRIPTORS ? function(object, key, value) {
     return object;
 };
 
-},{"a84526a7a8c77728":"87WOB","1e5cd261c8d5010d":"gbIb1","1311063d1b4ac30":"1E79z"}],"gbIb1":[function(require,module,exports) {
+},{"a84526a7a8c77728":"bcvE3","1e5cd261c8d5010d":"6KxLn","1311063d1b4ac30":"7E1bf"}],"6KxLn":[function(require,module,exports) {
 var DESCRIPTORS = require("6eca22918f9c62e0");
 var IE8_DOM_DEFINE = require("4b22cf273c841759");
 var V8_PROTOTYPE_DEFINE_BUG = require("fc315312801e4efa");
@@ -7024,7 +7019,7 @@ exports.f = DESCRIPTORS ? V8_PROTOTYPE_DEFINE_BUG ? function defineProperty(O, P
     return O;
 };
 
-},{"6eca22918f9c62e0":"87WOB","4b22cf273c841759":"451hU","fc315312801e4efa":"fElse","77c2db8bec2952d9":"bTNyr","b7c57c31bc54e3a0":"2GDiT"}],"fElse":[function(require,module,exports) {
+},{"6eca22918f9c62e0":"bcvE3","4b22cf273c841759":"cKToX","fc315312801e4efa":"3SXL7","77c2db8bec2952d9":"gLWrN","b7c57c31bc54e3a0":"8McI3"}],"3SXL7":[function(require,module,exports) {
 var DESCRIPTORS = require("6859b427d908934c");
 var fails = require("8c19fa1da84e62dc");
 // V8 ~ Chrome 36-
@@ -7037,7 +7032,7 @@ module.exports = DESCRIPTORS && fails(function() {
     }).prototype != 42;
 });
 
-},{"6859b427d908934c":"87WOB","8c19fa1da84e62dc":"luPpk"}],"bTNyr":[function(require,module,exports) {
+},{"6859b427d908934c":"bcvE3","8c19fa1da84e62dc":"iTIcj"}],"gLWrN":[function(require,module,exports) {
 var isObject = require("14c6afa92e0521b9");
 var $String = String;
 var $TypeError = TypeError;
@@ -7047,7 +7042,7 @@ module.exports = function(argument) {
     throw $TypeError($String(argument) + " is not an object");
 };
 
-},{"14c6afa92e0521b9":"fRYFX"}],"f1P6v":[function(require,module,exports) {
+},{"14c6afa92e0521b9":"7j1Gt"}],"eSHGc":[function(require,module,exports) {
 "use strict";
 var DESCRIPTORS = require("7549c4ab1058e0e1");
 var uncurryThis = require("af54e7d71cdc850c");
@@ -7111,7 +7106,7 @@ module.exports = !$assign || fails(function() {
     return T;
 } : $assign;
 
-},{"7549c4ab1058e0e1":"87WOB","af54e7d71cdc850c":"5P4uT","9ea9ab6e580ea66f":"acNwo","d7540dbeeeccf3b4":"luPpk","78aaa7715c80fd4b":"9NKcn","b9e809931f8731c":"1qW3G","ee75d7bcc44c5ce5":"lvpvk","effad705bc9d909d":"70Utf","27f904e3d9ea13a7":"6NkN4"}],"9NKcn":[function(require,module,exports) {
+},{"7549c4ab1058e0e1":"bcvE3","af54e7d71cdc850c":"gtGFr","9ea9ab6e580ea66f":"eaezI","d7540dbeeeccf3b4":"iTIcj","78aaa7715c80fd4b":"6Uk5V","b9e809931f8731c":"c2Bph","ee75d7bcc44c5ce5":"aiDYP","effad705bc9d909d":"1vsnu","27f904e3d9ea13a7":"7oPnm"}],"6Uk5V":[function(require,module,exports) {
 var internalObjectKeys = require("21ac2624a0f55533");
 var enumBugKeys = require("a2f1036e2fe67f4b");
 // `Object.keys` method
@@ -7121,7 +7116,7 @@ module.exports = Object.keys || function keys(O) {
     return internalObjectKeys(O, enumBugKeys);
 };
 
-},{"21ac2624a0f55533":"4pxTL","a2f1036e2fe67f4b":"dvPi1"}],"4pxTL":[function(require,module,exports) {
+},{"21ac2624a0f55533":"dUxib","a2f1036e2fe67f4b":"8Ocja"}],"dUxib":[function(require,module,exports) {
 var uncurryThis = require("86679fd54d44e39a");
 var hasOwn = require("ff57ca2005cfb6ef");
 var toIndexedObject = require("83651759fe390a46");
@@ -7139,7 +7134,7 @@ module.exports = function(object, names) {
     return result;
 };
 
-},{"86679fd54d44e39a":"5P4uT","ff57ca2005cfb6ef":"lacXY","83651759fe390a46":"kvdfV","b3fe1ecc3e500fb":"9QVVn","469873f0b8c93e8e":"7lBVj"}],"9QVVn":[function(require,module,exports) {
+},{"86679fd54d44e39a":"gtGFr","ff57ca2005cfb6ef":"ck7id","83651759fe390a46":"2LQHC","b3fe1ecc3e500fb":"82oEB","469873f0b8c93e8e":"fBQCk"}],"82oEB":[function(require,module,exports) {
 var toIndexedObject = require("81da6cc075519dda");
 var toAbsoluteIndex = require("a17955bfe2d9942f");
 var lengthOfArrayLike = require("7c82c856e14e1c96");
@@ -7173,7 +7168,7 @@ module.exports = {
     indexOf: createMethod(false)
 };
 
-},{"81da6cc075519dda":"kvdfV","a17955bfe2d9942f":"1L8Z0","7c82c856e14e1c96":"icIfm"}],"1L8Z0":[function(require,module,exports) {
+},{"81da6cc075519dda":"2LQHC","a17955bfe2d9942f":"5cpq7","7c82c856e14e1c96":"8VpKU"}],"5cpq7":[function(require,module,exports) {
 var toIntegerOrInfinity = require("709de4a9b8041b52");
 var max = Math.max;
 var min = Math.min;
@@ -7185,7 +7180,7 @@ module.exports = function(index, length) {
     return integer < 0 ? max(integer + length, 0) : min(integer, length);
 };
 
-},{"709de4a9b8041b52":"dQ2Uo"}],"dQ2Uo":[function(require,module,exports) {
+},{"709de4a9b8041b52":"1impw"}],"1impw":[function(require,module,exports) {
 var trunc = require("cc2f82262e597ca6");
 // `ToIntegerOrInfinity` abstract operation
 // https://tc39.es/ecma262/#sec-tointegerorinfinity
@@ -7195,7 +7190,7 @@ module.exports = function(argument) {
     return number !== number || number === 0 ? 0 : trunc(number);
 };
 
-},{"cc2f82262e597ca6":"3ItwT"}],"3ItwT":[function(require,module,exports) {
+},{"cc2f82262e597ca6":"9ZP8W"}],"9ZP8W":[function(require,module,exports) {
 var ceil = Math.ceil;
 var floor = Math.floor;
 // `Math.trunc` method
@@ -7206,7 +7201,7 @@ module.exports = Math.trunc || function trunc(x) {
     return (n > 0 ? floor : ceil)(n);
 };
 
-},{}],"icIfm":[function(require,module,exports) {
+},{}],"8VpKU":[function(require,module,exports) {
 var toLength = require("2d1a2aff67b25a2");
 // `LengthOfArrayLike` abstract operation
 // https://tc39.es/ecma262/#sec-lengthofarraylike
@@ -7214,7 +7209,7 @@ module.exports = function(obj) {
     return toLength(obj.length);
 };
 
-},{"2d1a2aff67b25a2":"9kM19"}],"9kM19":[function(require,module,exports) {
+},{"2d1a2aff67b25a2":"4eP7U"}],"4eP7U":[function(require,module,exports) {
 var toIntegerOrInfinity = require("6ff7cc566e058561");
 var min = Math.min;
 // `ToLength` abstract operation
@@ -7223,10 +7218,10 @@ module.exports = function(argument) {
     return argument > 0 ? min(toIntegerOrInfinity(argument), 0x1FFFFFFFFFFFFF) : 0; // 2 ** 53 - 1 == 9007199254740991
 };
 
-},{"6ff7cc566e058561":"dQ2Uo"}],"7lBVj":[function(require,module,exports) {
+},{"6ff7cc566e058561":"1impw"}],"fBQCk":[function(require,module,exports) {
 module.exports = {};
 
-},{}],"dvPi1":[function(require,module,exports) {
+},{}],"8Ocja":[function(require,module,exports) {
 // IE8- don't enum bug keys
 module.exports = [
     "constructor",
@@ -7238,11 +7233,11 @@ module.exports = [
     "valueOf"
 ];
 
-},{}],"1qW3G":[function(require,module,exports) {
+},{}],"c2Bph":[function(require,module,exports) {
 // eslint-disable-next-line es/no-object-getownpropertysymbols -- safe
 exports.f = Object.getOwnPropertySymbols;
 
-},{}],"58QUy":[function(require,module,exports) {
+},{}],"6pFup":[function(require,module,exports) {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
 parcelHelpers.export(exports, "CACHE_PREFIX", ()=>CACHE_PREFIX);
@@ -7334,13 +7329,13 @@ var Cache = /*#__PURE__*/ function() {
 }();
 exports.default = new Cache();
 
-},{"@babel/runtime/helpers/classCallCheck":"3nRml","@babel/runtime/helpers/createClass":"2yzPp","core-js-pure/stable/json/stringify.js":"3CGXI","core-js-pure/stable/instance/filter.js":"7Rz77","core-js-pure/stable/instance/slice.js":"7vNvC","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"3nRml":[function(require,module,exports) {
+},{"@babel/runtime/helpers/classCallCheck":"1wLuj","@babel/runtime/helpers/createClass":"5H0F2","core-js-pure/stable/json/stringify.js":"4ydOE","core-js-pure/stable/instance/filter.js":"dIbZ0","core-js-pure/stable/instance/slice.js":"A2bMV","@parcel/transformer-js/src/esmodule-helpers.js":"5oERU"}],"1wLuj":[function(require,module,exports) {
 function _classCallCheck(instance, Constructor) {
     if (!(instance instanceof Constructor)) throw new TypeError("Cannot call a class as a function");
 }
 module.exports = _classCallCheck, module.exports.__esModule = true, module.exports["default"] = module.exports;
 
-},{}],"2yzPp":[function(require,module,exports) {
+},{}],"5H0F2":[function(require,module,exports) {
 var toPropertyKey = require("f54cb3acdb1af785");
 function _defineProperties(target, props) {
     for(var i = 0; i < props.length; i++){
@@ -7361,7 +7356,7 @@ function _createClass(Constructor, protoProps, staticProps) {
 }
 module.exports = _createClass, module.exports.__esModule = true, module.exports["default"] = module.exports;
 
-},{"f54cb3acdb1af785":"5P3X5"}],"5P3X5":[function(require,module,exports) {
+},{"f54cb3acdb1af785":"264Pt"}],"264Pt":[function(require,module,exports) {
 var _typeof = require("934aec3b71d4f35c")["default"];
 var toPrimitive = require("ac7e6d5902e76c3d");
 function _toPropertyKey(arg) {
@@ -7370,7 +7365,7 @@ function _toPropertyKey(arg) {
 }
 module.exports = _toPropertyKey, module.exports.__esModule = true, module.exports["default"] = module.exports;
 
-},{"934aec3b71d4f35c":"jgQjt","ac7e6d5902e76c3d":"eJCHQ"}],"jgQjt":[function(require,module,exports) {
+},{"934aec3b71d4f35c":"72MbO","ac7e6d5902e76c3d":"fIPIl"}],"72MbO":[function(require,module,exports) {
 function _typeof(obj) {
     "@babel/helpers - typeof";
     return module.exports = _typeof = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? function(obj) {
@@ -7381,7 +7376,7 @@ function _typeof(obj) {
 }
 module.exports = _typeof, module.exports.__esModule = true, module.exports["default"] = module.exports;
 
-},{}],"eJCHQ":[function(require,module,exports) {
+},{}],"fIPIl":[function(require,module,exports) {
 var _typeof = require("eb27bd3fbd2f1bcf")["default"];
 function _toPrimitive(input, hint) {
     if (_typeof(input) !== "object" || input === null) return input;
@@ -7395,11 +7390,11 @@ function _toPrimitive(input, hint) {
 }
 module.exports = _toPrimitive, module.exports.__esModule = true, module.exports["default"] = module.exports;
 
-},{"eb27bd3fbd2f1bcf":"jgQjt"}],"3CGXI":[function(require,module,exports) {
+},{"eb27bd3fbd2f1bcf":"72MbO"}],"4ydOE":[function(require,module,exports) {
 var parent = require("9e2df02a6e256846");
 module.exports = parent;
 
-},{"9e2df02a6e256846":"fPNFh"}],"fPNFh":[function(require,module,exports) {
+},{"9e2df02a6e256846":"jRQfw"}],"jRQfw":[function(require,module,exports) {
 require("b4f195c2be957bef");
 var path = require("a5c38d76648ef81d");
 var apply = require("ea9995bb02b07384");
@@ -7412,7 +7407,7 @@ module.exports = function stringify(it, replacer, space) {
     return apply(path.JSON.stringify, null, arguments);
 };
 
-},{"b4f195c2be957bef":"2qOVD","a5c38d76648ef81d":"8QO0z","ea9995bb02b07384":"kLBNq"}],"2qOVD":[function(require,module,exports) {
+},{"b4f195c2be957bef":"bXAYV","a5c38d76648ef81d":"1MoZb","ea9995bb02b07384":"ikUbg"}],"bXAYV":[function(require,module,exports) {
 var $ = require("ff74e4e9ee6cd9de");
 var getBuiltIn = require("4b27d5a0db2f7915");
 var apply = require("aca59d80d85ed521");
@@ -7480,11 +7475,11 @@ $({
     }
 });
 
-},{"ff74e4e9ee6cd9de":"jjems","4b27d5a0db2f7915":"6wm25","aca59d80d85ed521":"kLBNq","8e119a12809240c6":"acNwo","9a81284003cae65a":"5P4uT","d4f77baad95d4544":"luPpk","c143663c9472216a":"fqYwo","1f5a97bea439f30":"58L3i","2203d4f533f3e8":"gooNL","2ee2697c635b1218":"206z4","f122c12cc4aa58aa":"hdbC4"}],"gooNL":[function(require,module,exports) {
+},{"ff74e4e9ee6cd9de":"jMgg9","4b27d5a0db2f7915":"qT6hq","aca59d80d85ed521":"ikUbg","8e119a12809240c6":"eaezI","9a81284003cae65a":"gtGFr","d4f77baad95d4544":"iTIcj","c143663c9472216a":"2yOWk","1f5a97bea439f30":"IwqwV","2203d4f533f3e8":"yBMZ9","2ee2697c635b1218":"gObmd","f122c12cc4aa58aa":"bFDVY"}],"yBMZ9":[function(require,module,exports) {
 var uncurryThis = require("c490b754cb39adb7");
 module.exports = uncurryThis([].slice);
 
-},{"c490b754cb39adb7":"5P4uT"}],"206z4":[function(require,module,exports) {
+},{"c490b754cb39adb7":"gtGFr"}],"gObmd":[function(require,module,exports) {
 var uncurryThis = require("10b3a0da933085c9");
 var isArray = require("6d747ae95e8d8e4");
 var isCallable = require("45b8a9d7bc38fe2c");
@@ -7513,7 +7508,7 @@ module.exports = function(replacer) {
     };
 };
 
-},{"10b3a0da933085c9":"5P4uT","6d747ae95e8d8e4":"byYNs","45b8a9d7bc38fe2c":"fqYwo","2bfb562697749795":"fZmv0","d5d1c8cfa87fed5":"3DQpG"}],"byYNs":[function(require,module,exports) {
+},{"10b3a0da933085c9":"gtGFr","6d747ae95e8d8e4":"299ri","45b8a9d7bc38fe2c":"2yOWk","2bfb562697749795":"d1xrx","d5d1c8cfa87fed5":"1z8zJ"}],"299ri":[function(require,module,exports) {
 var classof = require("e8dfc748a0ce24ac");
 // `IsArray` abstract operation
 // https://tc39.es/ecma262/#sec-isarray
@@ -7522,7 +7517,7 @@ module.exports = Array.isArray || function isArray(argument) {
     return classof(argument) == "Array";
 };
 
-},{"e8dfc748a0ce24ac":"fZmv0"}],"3DQpG":[function(require,module,exports) {
+},{"e8dfc748a0ce24ac":"d1xrx"}],"1z8zJ":[function(require,module,exports) {
 var classof = require("937dc18f1ba48ff4");
 var $String = String;
 module.exports = function(argument) {
@@ -7530,7 +7525,7 @@ module.exports = function(argument) {
     return $String(argument);
 };
 
-},{"937dc18f1ba48ff4":"5J26j"}],"5J26j":[function(require,module,exports) {
+},{"937dc18f1ba48ff4":"cPLFb"}],"cPLFb":[function(require,module,exports) {
 var TO_STRING_TAG_SUPPORT = require("cc56d6a5eb970df9");
 var isCallable = require("c44722447de4a017");
 var classofRaw = require("2b9083af7316492b");
@@ -7553,18 +7548,18 @@ module.exports = TO_STRING_TAG_SUPPORT ? classofRaw : function(it) {
     return it === undefined ? "Undefined" : it === null ? "Null" : typeof (tag = tryGet(O = $Object(it), TO_STRING_TAG)) == "string" ? tag : CORRECT_ARGUMENTS ? classofRaw(O) : (result = classofRaw(O)) == "Object" && isCallable(O.callee) ? "Arguments" : result;
 };
 
-},{"cc56d6a5eb970df9":"7vtNP","c44722447de4a017":"fqYwo","2b9083af7316492b":"fZmv0","4481c6b1051abe8e":"cSGfj"}],"7vtNP":[function(require,module,exports) {
+},{"cc56d6a5eb970df9":"6csFe","c44722447de4a017":"2yOWk","2b9083af7316492b":"d1xrx","4481c6b1051abe8e":"2Upad"}],"6csFe":[function(require,module,exports) {
 var wellKnownSymbol = require("f3bf181de797fc8b");
 var TO_STRING_TAG = wellKnownSymbol("toStringTag");
 var test = {};
 test[TO_STRING_TAG] = "z";
 module.exports = String(test) === "[object z]";
 
-},{"f3bf181de797fc8b":"cSGfj"}],"7Rz77":[function(require,module,exports) {
+},{"f3bf181de797fc8b":"2Upad"}],"dIbZ0":[function(require,module,exports) {
 var parent = require("a3c5e59c0f75569e");
 module.exports = parent;
 
-},{"a3c5e59c0f75569e":"5RQrT"}],"5RQrT":[function(require,module,exports) {
+},{"a3c5e59c0f75569e":"cm1Vb"}],"cm1Vb":[function(require,module,exports) {
 var isPrototypeOf = require("bd97b0937a098166");
 var method = require("6778ac04b78418d6");
 var ArrayPrototype = Array.prototype;
@@ -7573,12 +7568,12 @@ module.exports = function(it) {
     return it === ArrayPrototype || isPrototypeOf(ArrayPrototype, it) && own === ArrayPrototype.filter ? method : own;
 };
 
-},{"bd97b0937a098166":"qlM4L","6778ac04b78418d6":"j3F3D"}],"j3F3D":[function(require,module,exports) {
+},{"bd97b0937a098166":"glCsH","6778ac04b78418d6":"2Ttq1"}],"2Ttq1":[function(require,module,exports) {
 require("5d2ae6e5c0685dfb");
 var entryVirtual = require("94b171d935db0ab0");
 module.exports = entryVirtual("Array").filter;
 
-},{"5d2ae6e5c0685dfb":"keBoU","94b171d935db0ab0":"5RMpR"}],"keBoU":[function(require,module,exports) {
+},{"5d2ae6e5c0685dfb":"ciNbN","94b171d935db0ab0":"f2f2w"}],"ciNbN":[function(require,module,exports) {
 "use strict";
 var $ = require("21c2f74976909fe3");
 var $filter = require("34325e2a45185aa4").filter;
@@ -7597,7 +7592,7 @@ $({
     }
 });
 
-},{"21c2f74976909fe3":"jjems","34325e2a45185aa4":"8g5by","7109e27c1945e7ba":"4n6gw"}],"8g5by":[function(require,module,exports) {
+},{"21c2f74976909fe3":"jMgg9","34325e2a45185aa4":"3yCAV","7109e27c1945e7ba":"4m75i"}],"3yCAV":[function(require,module,exports) {
 var bind = require("2c2ef22d4950cace");
 var uncurryThis = require("8dcb286de119946e");
 var IndexedObject = require("5d1b2430ac61fbc");
@@ -7676,7 +7671,7 @@ module.exports = {
     filterReject: createMethod(7)
 };
 
-},{"2c2ef22d4950cace":"jZFzY","8dcb286de119946e":"5P4uT","5d1b2430ac61fbc":"6NkN4","e3fc7b4bb3329dee":"70Utf","7572e0ce8eb9710f":"icIfm","2403b6fe8fdf3f03":"jQr4t"}],"jQr4t":[function(require,module,exports) {
+},{"2c2ef22d4950cace":"1eiou","8dcb286de119946e":"gtGFr","5d1b2430ac61fbc":"7oPnm","e3fc7b4bb3329dee":"1vsnu","7572e0ce8eb9710f":"8VpKU","2403b6fe8fdf3f03":"d57uW"}],"d57uW":[function(require,module,exports) {
 var arraySpeciesConstructor = require("f14c6562db805b20");
 // `ArraySpeciesCreate` abstract operation
 // https://tc39.es/ecma262/#sec-arrayspeciescreate
@@ -7684,7 +7679,7 @@ module.exports = function(originalArray, length) {
     return new (arraySpeciesConstructor(originalArray))(length === 0 ? 0 : length);
 };
 
-},{"f14c6562db805b20":"cVDs2"}],"cVDs2":[function(require,module,exports) {
+},{"f14c6562db805b20":"loO3N"}],"loO3N":[function(require,module,exports) {
 var isArray = require("cd1aeb3ad2084248");
 var isConstructor = require("af5d83ca4b1ea6af");
 var isObject = require("28d860510aea2840");
@@ -7707,7 +7702,7 @@ module.exports = function(originalArray) {
     return C === undefined ? $Array : C;
 };
 
-},{"cd1aeb3ad2084248":"byYNs","af5d83ca4b1ea6af":"15Sn8","28d860510aea2840":"fRYFX","76c34db4bf39f30":"cSGfj"}],"15Sn8":[function(require,module,exports) {
+},{"cd1aeb3ad2084248":"299ri","af5d83ca4b1ea6af":"eBEu4","28d860510aea2840":"7j1Gt","76c34db4bf39f30":"2Upad"}],"eBEu4":[function(require,module,exports) {
 var uncurryThis = require("7fb197bf1b71dc57");
 var fails = require("ba1bd214cc83a0b8");
 var isCallable = require("c659fa9f263947df");
@@ -7756,7 +7751,7 @@ module.exports = !construct || fails(function() {
     }) || called;
 }) ? isConstructorLegacy : isConstructorModern;
 
-},{"7fb197bf1b71dc57":"5P4uT","ba1bd214cc83a0b8":"luPpk","c659fa9f263947df":"fqYwo","30860cfeee462601":"5J26j","451954c31557657d":"6wm25","44bbb331d7e439e9":"17BO4"}],"17BO4":[function(require,module,exports) {
+},{"7fb197bf1b71dc57":"gtGFr","ba1bd214cc83a0b8":"iTIcj","c659fa9f263947df":"2yOWk","30860cfeee462601":"cPLFb","451954c31557657d":"qT6hq","44bbb331d7e439e9":"9aGX2"}],"9aGX2":[function(require,module,exports) {
 var uncurryThis = require("cb48022a7d7034ee");
 var isCallable = require("dd6e3188b76f5c44");
 var store = require("103f22eba5278931");
@@ -7767,7 +7762,7 @@ if (!isCallable(store.inspectSource)) store.inspectSource = function(it) {
 };
 module.exports = store.inspectSource;
 
-},{"cb48022a7d7034ee":"5P4uT","dd6e3188b76f5c44":"fqYwo","103f22eba5278931":"4KS55"}],"4n6gw":[function(require,module,exports) {
+},{"cb48022a7d7034ee":"gtGFr","dd6e3188b76f5c44":"2yOWk","103f22eba5278931":"1rLK3"}],"4m75i":[function(require,module,exports) {
 var fails = require("b5f7ac0ea6145a44");
 var wellKnownSymbol = require("ebe923c23150a454");
 var V8_VERSION = require("28482aaa1f44cf95");
@@ -7788,17 +7783,17 @@ module.exports = function(METHOD_NAME) {
     });
 };
 
-},{"b5f7ac0ea6145a44":"luPpk","ebe923c23150a454":"cSGfj","28482aaa1f44cf95":"diVIs"}],"5RMpR":[function(require,module,exports) {
+},{"b5f7ac0ea6145a44":"iTIcj","ebe923c23150a454":"2Upad","28482aaa1f44cf95":"8S5hK"}],"f2f2w":[function(require,module,exports) {
 var path = require("676f6757f0cc96f");
 module.exports = function(CONSTRUCTOR) {
     return path[CONSTRUCTOR + "Prototype"];
 };
 
-},{"676f6757f0cc96f":"8QO0z"}],"7vNvC":[function(require,module,exports) {
+},{"676f6757f0cc96f":"1MoZb"}],"A2bMV":[function(require,module,exports) {
 var parent = require("b6c7fcccc38a2f20");
 module.exports = parent;
 
-},{"b6c7fcccc38a2f20":"a03fI"}],"a03fI":[function(require,module,exports) {
+},{"b6c7fcccc38a2f20":"bTorq"}],"bTorq":[function(require,module,exports) {
 var isPrototypeOf = require("4072e53c07d3e798");
 var method = require("e8d507e015ca5be7");
 var ArrayPrototype = Array.prototype;
@@ -7807,12 +7802,12 @@ module.exports = function(it) {
     return it === ArrayPrototype || isPrototypeOf(ArrayPrototype, it) && own === ArrayPrototype.slice ? method : own;
 };
 
-},{"4072e53c07d3e798":"qlM4L","e8d507e015ca5be7":"auZbe"}],"auZbe":[function(require,module,exports) {
+},{"4072e53c07d3e798":"glCsH","e8d507e015ca5be7":"40hSd"}],"40hSd":[function(require,module,exports) {
 require("6c468234abc0d7d8");
 var entryVirtual = require("fcba68c17f658113");
 module.exports = entryVirtual("Array").slice;
 
-},{"6c468234abc0d7d8":"lM7kR","fcba68c17f658113":"5RMpR"}],"lM7kR":[function(require,module,exports) {
+},{"6c468234abc0d7d8":"4m6PH","fcba68c17f658113":"f2f2w"}],"4m6PH":[function(require,module,exports) {
 "use strict";
 var $ = require("529aac56d7a39e82");
 var isArray = require("58ca5e6f3f838cca");
@@ -7861,7 +7856,7 @@ $({
     }
 });
 
-},{"529aac56d7a39e82":"jjems","58ca5e6f3f838cca":"byYNs","811ea0cdd3aba375":"15Sn8","30d156a6beed47f0":"fRYFX","d5fe9b45f4e62821":"1L8Z0","a6b254fa2cbfa07a":"icIfm","2d1898b1815ab059":"kvdfV","fc406c3c2e4d6f25":"9Ttit","4c108dc9a403d8af":"cSGfj","7aa8b5e5cc626e77":"4n6gw","5e992a7050cca7dc":"gooNL"}],"9Ttit":[function(require,module,exports) {
+},{"529aac56d7a39e82":"jMgg9","58ca5e6f3f838cca":"299ri","811ea0cdd3aba375":"eBEu4","30d156a6beed47f0":"7j1Gt","d5fe9b45f4e62821":"5cpq7","a6b254fa2cbfa07a":"8VpKU","2d1898b1815ab059":"2LQHC","fc406c3c2e4d6f25":"a13Rs","4c108dc9a403d8af":"2Upad","7aa8b5e5cc626e77":"4m75i","5e992a7050cca7dc":"yBMZ9"}],"a13Rs":[function(require,module,exports) {
 "use strict";
 var toPropertyKey = require("7683084ca61276d7");
 var definePropertyModule = require("896a060132b18449");
@@ -7872,7 +7867,7 @@ module.exports = function(object, key, value) {
     else object[propertyKey] = value;
 };
 
-},{"7683084ca61276d7":"2GDiT","896a060132b18449":"gbIb1","bf594cd37f7eda73":"1E79z"}],"gkKU3":[function(require,module,exports) {
+},{"7683084ca61276d7":"8McI3","896a060132b18449":"6KxLn","bf594cd37f7eda73":"7E1bf"}],"5oERU":[function(require,module,exports) {
 exports.interopDefault = function(a) {
     return a && a.__esModule ? a : {
         default: a
@@ -7902,7 +7897,7 @@ exports.export = function(dest, destName, get) {
     });
 };
 
-},{}],"9EqwV":[function(require,module,exports) {
+},{}],"jWvoL":[function(require,module,exports) {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
 parcelHelpers.export(exports, "ConfigProvider", ()=>ConfigProvider);
@@ -8047,16 +8042,16 @@ if (isLegacyContext) {
     };
 }
 
-},{"core-js-pure/stable/reflect/construct.js":"cbxux","@babel/runtime/helpers/extends":"vw3vn","@babel/runtime/helpers/classCallCheck":"3nRml","@babel/runtime/helpers/createClass":"2yzPp","@babel/runtime/helpers/inherits":"bYd1U","@babel/runtime/helpers/possibleConstructorReturn":"cW3L5","@babel/runtime/helpers/getPrototypeOf":"gWrBy","@babel/runtime/helpers/defineProperty":"4x6r7","core-js-pure/stable/object/keys.js":"3hXU8","react":"21dqq","prop-types":"7wKI2","./cache":"58QUy","./utils":"kE0JY","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"cbxux":[function(require,module,exports) {
+},{"core-js-pure/stable/reflect/construct.js":"kXIlE","@babel/runtime/helpers/extends":"fPVoI","@babel/runtime/helpers/classCallCheck":"1wLuj","@babel/runtime/helpers/createClass":"5H0F2","@babel/runtime/helpers/inherits":"dSr3D","@babel/runtime/helpers/possibleConstructorReturn":"jDEHj","@babel/runtime/helpers/getPrototypeOf":"bJYCu","@babel/runtime/helpers/defineProperty":"lDZQ4","core-js-pure/stable/object/keys.js":"1HiOT","react":"9sfFD","prop-types":"jFJ5I","./cache":"6pFup","./utils":"4BiX7","@parcel/transformer-js/src/esmodule-helpers.js":"5oERU"}],"kXIlE":[function(require,module,exports) {
 var parent = require("5cdec49ee624dbfc");
 module.exports = parent;
 
-},{"5cdec49ee624dbfc":"4V363"}],"4V363":[function(require,module,exports) {
+},{"5cdec49ee624dbfc":"l3i8X"}],"l3i8X":[function(require,module,exports) {
 require("7dfc7348e4e628b5");
 var path = require("b90f398486d72395");
 module.exports = path.Reflect.construct;
 
-},{"7dfc7348e4e628b5":"8Lwlo","b90f398486d72395":"8QO0z"}],"8Lwlo":[function(require,module,exports) {
+},{"7dfc7348e4e628b5":"9VxMP","b90f398486d72395":"1MoZb"}],"9VxMP":[function(require,module,exports) {
 var $ = require("53fd777fafe62727");
 var getBuiltIn = require("971b5b5ed7d75b30");
 var apply = require("42f3e0123cc54f5f");
@@ -8121,7 +8116,7 @@ $({
     }
 });
 
-},{"53fd777fafe62727":"jjems","971b5b5ed7d75b30":"6wm25","42f3e0123cc54f5f":"kLBNq","c8985d6af994191b":"7QBbC","d2bf5287a444ad61":"afYrT","746329b1d4a91160":"bTNyr","c8e6ace788ed6414":"fRYFX","83e9176d39f894ae":"eqWCY","38f67d505eef641d":"luPpk"}],"7QBbC":[function(require,module,exports) {
+},{"53fd777fafe62727":"jMgg9","971b5b5ed7d75b30":"qT6hq","42f3e0123cc54f5f":"ikUbg","c8985d6af994191b":"gEyoW","d2bf5287a444ad61":"d2emg","746329b1d4a91160":"gLWrN","c8e6ace788ed6414":"7j1Gt","83e9176d39f894ae":"74zH9","38f67d505eef641d":"iTIcj"}],"gEyoW":[function(require,module,exports) {
 "use strict";
 var uncurryThis = require("a66dbb3bf388d716");
 var aCallable = require("6b1af576da976ace");
@@ -8155,7 +8150,7 @@ module.exports = NATIVE_BIND ? $Function.bind : function bind(that /* , ...args 
     return boundFunction;
 };
 
-},{"a66dbb3bf388d716":"5P4uT","6b1af576da976ace":"7r1lP","a74b11e0e04ab8a7":"fRYFX","6ab2e030e3b2f3fb":"lacXY","1f2834c282abc144":"gooNL","b409553b29f1af91":"bFMAq"}],"afYrT":[function(require,module,exports) {
+},{"a66dbb3bf388d716":"gtGFr","6b1af576da976ace":"9MULW","a74b11e0e04ab8a7":"7j1Gt","6ab2e030e3b2f3fb":"ck7id","1f2834c282abc144":"yBMZ9","b409553b29f1af91":"heaen"}],"d2emg":[function(require,module,exports) {
 var isConstructor = require("8b94fb5a43830dff");
 var tryToString = require("bc300f8f235717c5");
 var $TypeError = TypeError;
@@ -8165,7 +8160,7 @@ module.exports = function(argument) {
     throw $TypeError(tryToString(argument) + " is not a constructor");
 };
 
-},{"8b94fb5a43830dff":"15Sn8","bc300f8f235717c5":"c7C3w"}],"eqWCY":[function(require,module,exports) {
+},{"8b94fb5a43830dff":"eBEu4","bc300f8f235717c5":"3N4GZ"}],"74zH9":[function(require,module,exports) {
 /* global ActiveXObject -- old IE, WSH */ var anObject = require("8786cc73bb14563d");
 var definePropertiesModule = require("ad1197eadd154e85");
 var enumBugKeys = require("785fecc3548c5706");
@@ -8238,7 +8233,7 @@ module.exports = Object.create || function create(O, Properties) {
     return Properties === undefined ? result : definePropertiesModule.f(result, Properties);
 };
 
-},{"8786cc73bb14563d":"bTNyr","ad1197eadd154e85":"8IwWp","785fecc3548c5706":"dvPi1","5d25a3a8588fb6b8":"7lBVj","3fd8b9b889bdf7ff":"4RwZR","69f105b7b1d9a7bc":"Ioo8t","f94661d0bc3c0cf9":"fjVxw"}],"8IwWp":[function(require,module,exports) {
+},{"8786cc73bb14563d":"gLWrN","ad1197eadd154e85":"gDWt6","785fecc3548c5706":"8Ocja","5d25a3a8588fb6b8":"fBQCk","3fd8b9b889bdf7ff":"gYWlj","69f105b7b1d9a7bc":"2qKLu","f94661d0bc3c0cf9":"kDtvt"}],"gDWt6":[function(require,module,exports) {
 var DESCRIPTORS = require("7b812e9a852642d1");
 var V8_PROTOTYPE_DEFINE_BUG = require("5c6ee0098141b0d3");
 var definePropertyModule = require("948e58dca40203f6");
@@ -8259,11 +8254,11 @@ exports.f = DESCRIPTORS && !V8_PROTOTYPE_DEFINE_BUG ? Object.defineProperties : 
     return O;
 };
 
-},{"7b812e9a852642d1":"87WOB","5c6ee0098141b0d3":"fElse","948e58dca40203f6":"gbIb1","c248e0dd5a9e11d2":"bTNyr","d86ed3f9c83835a9":"kvdfV","2c588374f8e3602a":"9NKcn"}],"4RwZR":[function(require,module,exports) {
+},{"7b812e9a852642d1":"bcvE3","5c6ee0098141b0d3":"3SXL7","948e58dca40203f6":"6KxLn","c248e0dd5a9e11d2":"gLWrN","d86ed3f9c83835a9":"2LQHC","2c588374f8e3602a":"6Uk5V"}],"gYWlj":[function(require,module,exports) {
 var getBuiltIn = require("f2cd7c21d63dbb75");
 module.exports = getBuiltIn("document", "documentElement");
 
-},{"f2cd7c21d63dbb75":"6wm25"}],"fjVxw":[function(require,module,exports) {
+},{"f2cd7c21d63dbb75":"qT6hq"}],"kDtvt":[function(require,module,exports) {
 var shared = require("4de79401487851fa");
 var uid = require("e3f502ba6b308fa2");
 var keys = shared("keys");
@@ -8271,7 +8266,7 @@ module.exports = function(key) {
     return keys[key] || (keys[key] = uid(key));
 };
 
-},{"4de79401487851fa":"9VSA0","e3f502ba6b308fa2":"cLNyV"}],"bYd1U":[function(require,module,exports) {
+},{"4de79401487851fa":"cLzb3","e3f502ba6b308fa2":"gWpYg"}],"dSr3D":[function(require,module,exports) {
 var setPrototypeOf = require("26d918307cbcfd74");
 function _inherits(subClass, superClass) {
     if (typeof superClass !== "function" && superClass !== null) throw new TypeError("Super expression must either be null or a function");
@@ -8289,7 +8284,7 @@ function _inherits(subClass, superClass) {
 }
 module.exports = _inherits, module.exports.__esModule = true, module.exports["default"] = module.exports;
 
-},{"26d918307cbcfd74":"bblYu"}],"bblYu":[function(require,module,exports) {
+},{"26d918307cbcfd74":"g2FXT"}],"g2FXT":[function(require,module,exports) {
 function _setPrototypeOf(o, p) {
     module.exports = _setPrototypeOf = Object.setPrototypeOf ? Object.setPrototypeOf.bind() : function _setPrototypeOf(o, p) {
         o.__proto__ = p;
@@ -8299,7 +8294,7 @@ function _setPrototypeOf(o, p) {
 }
 module.exports = _setPrototypeOf, module.exports.__esModule = true, module.exports["default"] = module.exports;
 
-},{}],"cW3L5":[function(require,module,exports) {
+},{}],"jDEHj":[function(require,module,exports) {
 var _typeof = require("c8c5162ed748bc9f")["default"];
 var assertThisInitialized = require("8dc71ec715593bcb");
 function _possibleConstructorReturn(self, call) {
@@ -8309,14 +8304,14 @@ function _possibleConstructorReturn(self, call) {
 }
 module.exports = _possibleConstructorReturn, module.exports.__esModule = true, module.exports["default"] = module.exports;
 
-},{"c8c5162ed748bc9f":"jgQjt","8dc71ec715593bcb":"1mVba"}],"1mVba":[function(require,module,exports) {
+},{"c8c5162ed748bc9f":"72MbO","8dc71ec715593bcb":"gXcvA"}],"gXcvA":[function(require,module,exports) {
 function _assertThisInitialized(self) {
     if (self === void 0) throw new ReferenceError("this hasn't been initialised - super() hasn't been called");
     return self;
 }
 module.exports = _assertThisInitialized, module.exports.__esModule = true, module.exports["default"] = module.exports;
 
-},{}],"gWrBy":[function(require,module,exports) {
+},{}],"bJYCu":[function(require,module,exports) {
 function _getPrototypeOf(o) {
     module.exports = _getPrototypeOf = Object.setPrototypeOf ? Object.getPrototypeOf.bind() : function _getPrototypeOf(o) {
         return o.__proto__ || Object.getPrototypeOf(o);
@@ -8325,7 +8320,7 @@ function _getPrototypeOf(o) {
 }
 module.exports = _getPrototypeOf, module.exports.__esModule = true, module.exports["default"] = module.exports;
 
-},{}],"4x6r7":[function(require,module,exports) {
+},{}],"lDZQ4":[function(require,module,exports) {
 var toPropertyKey = require("a29bcfa36d868817");
 function _defineProperty(obj, key, value) {
     key = toPropertyKey(key);
@@ -8340,16 +8335,16 @@ function _defineProperty(obj, key, value) {
 }
 module.exports = _defineProperty, module.exports.__esModule = true, module.exports["default"] = module.exports;
 
-},{"a29bcfa36d868817":"5P3X5"}],"3hXU8":[function(require,module,exports) {
+},{"a29bcfa36d868817":"264Pt"}],"1HiOT":[function(require,module,exports) {
 var parent = require("5aa945ebcddffea3");
 module.exports = parent;
 
-},{"5aa945ebcddffea3":"hmmRM"}],"hmmRM":[function(require,module,exports) {
+},{"5aa945ebcddffea3":"3xzRI"}],"3xzRI":[function(require,module,exports) {
 require("fd09fd9c08e7f69e");
 var path = require("e26ea4f689349dcb");
 module.exports = path.Object.keys;
 
-},{"fd09fd9c08e7f69e":"arc4F","e26ea4f689349dcb":"8QO0z"}],"arc4F":[function(require,module,exports) {
+},{"fd09fd9c08e7f69e":"kb47J","e26ea4f689349dcb":"1MoZb"}],"kb47J":[function(require,module,exports) {
 var $ = require("6abc16e8c5f48678");
 var toObject = require("d2d729eabaeeaec");
 var nativeKeys = require("12d09bf751a3d9c3");
@@ -8369,7 +8364,7 @@ $({
     }
 });
 
-},{"6abc16e8c5f48678":"jjems","d2d729eabaeeaec":"70Utf","12d09bf751a3d9c3":"9NKcn","75b416a41510e695":"luPpk"}],"7wKI2":[function(require,module,exports) {
+},{"6abc16e8c5f48678":"jMgg9","d2d729eabaeeaec":"1vsnu","12d09bf751a3d9c3":"6Uk5V","75b416a41510e695":"iTIcj"}],"jFJ5I":[function(require,module,exports) {
 /**
  * Copyright (c) 2013-present, Facebook, Inc.
  *
@@ -8381,11 +8376,11 @@ $({
 var throwOnDirectAccess = true;
 module.exports = require("243dbea4990274c7")(ReactIs.isElement, throwOnDirectAccess);
 
-},{"78eec20415123307":"7EuwB","243dbea4990274c7":"bBUgD"}],"7EuwB":[function(require,module,exports) {
+},{"78eec20415123307":"jBCIK","243dbea4990274c7":"avcU9"}],"jBCIK":[function(require,module,exports) {
 "use strict";
 module.exports = require("3b96561d3f024a26");
 
-},{"3b96561d3f024a26":"5DsXl"}],"5DsXl":[function(require,module,exports) {
+},{"3b96561d3f024a26":"cKU5V"}],"cKU5V":[function(require,module,exports) {
 /** @license React v16.13.1
  * react-is.development.js
  *
@@ -8542,7 +8537,7 @@ module.exports = require("3b96561d3f024a26");
     exports.typeOf = typeOf;
 })();
 
-},{}],"bBUgD":[function(require,module,exports) {
+},{}],"avcU9":[function(require,module,exports) {
 /**
  * Copyright (c) 2013-present, Facebook, Inc.
  *
@@ -8980,7 +8975,7 @@ module.exports = function(isValidElement, throwOnDirectAccess) {
     return ReactPropTypes;
 };
 
-},{"5fcae83f35455a2":"7EuwB","53f4a28350f9bc02":"7OXxh","ab14f9348652a1f8":"jZTZJ","3bf5e922966de367":"fqKuf","3dd83b804da8556b":"5VwyJ"}],"7OXxh":[function(require,module,exports) {
+},{"5fcae83f35455a2":"jBCIK","53f4a28350f9bc02":"9UC7U","ab14f9348652a1f8":"dTZlW","3bf5e922966de367":"jKQIG","3dd83b804da8556b":"3CEDl"}],"9UC7U":[function(require,module,exports) {
 /*
 object-assign
 (c) Sindre Sorhus
@@ -9035,7 +9030,7 @@ module.exports = shouldUseNative() ? Object.assign : function(target, source) {
     return to;
 };
 
-},{}],"jZTZJ":[function(require,module,exports) {
+},{}],"dTZlW":[function(require,module,exports) {
 /**
  * Copyright (c) 2013-present, Facebook, Inc.
  *
@@ -9045,10 +9040,10 @@ module.exports = shouldUseNative() ? Object.assign : function(target, source) {
 var ReactPropTypesSecret = "SECRET_DO_NOT_PASS_THIS_OR_YOU_WILL_BE_FIRED";
 module.exports = ReactPropTypesSecret;
 
-},{}],"fqKuf":[function(require,module,exports) {
+},{}],"jKQIG":[function(require,module,exports) {
 module.exports = Function.call.bind(Object.prototype.hasOwnProperty);
 
-},{}],"5VwyJ":[function(require,module,exports) {
+},{}],"3CEDl":[function(require,module,exports) {
 /**
  * Copyright (c) 2013-present, Facebook, Inc.
  *
@@ -9116,7 +9111,7 @@ printWarning = function(text) {
 };
 module.exports = checkPropTypes;
 
-},{"4e9d5f24ab60a614":"jZTZJ","9d20e0cc03f479c2":"fqKuf"}],"kE0JY":[function(require,module,exports) {
+},{"4e9d5f24ab60a614":"dTZlW","9d20e0cc03f479c2":"jKQIG"}],"4BiX7":[function(require,module,exports) {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
 parcelHelpers.export(exports, "fetch", ()=>fetch);
@@ -9287,7 +9282,7 @@ function calculateBorderRadius(round) {
     return round;
 }
 
-},{"@babel/runtime/helpers/slicedToArray":"6AJmz","@babel/runtime/helpers/toConsumableArray":"bCb5n","core-js-pure/stable/instance/index-of.js":"1IYNZ","core-js-pure/stable/instance/map.js":"14NOZ","core-js-pure/stable/instance/reduce.js":"3fBVK","core-js-pure/stable/parse-float.js":"2zJsi","core-js-pure/stable/instance/slice.js":"7vNvC","core-js-pure/stable/instance/filter.js":"7Rz77","is-retina":"aEQbm","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"6AJmz":[function(require,module,exports) {
+},{"@babel/runtime/helpers/slicedToArray":"10nrh","@babel/runtime/helpers/toConsumableArray":"ldhM8","core-js-pure/stable/instance/index-of.js":"emhGx","core-js-pure/stable/instance/map.js":"dDxDb","core-js-pure/stable/instance/reduce.js":"3n2fP","core-js-pure/stable/parse-float.js":"3ChIM","core-js-pure/stable/instance/slice.js":"A2bMV","core-js-pure/stable/instance/filter.js":"dIbZ0","is-retina":"dt8pt","@parcel/transformer-js/src/esmodule-helpers.js":"5oERU"}],"10nrh":[function(require,module,exports) {
 var arrayWithHoles = require("5718c4761fc7cc1");
 var iterableToArrayLimit = require("6b739d810aaeb41f");
 var unsupportedIterableToArray = require("ad0b7cec0616f219");
@@ -9297,13 +9292,13 @@ function _slicedToArray(arr, i) {
 }
 module.exports = _slicedToArray, module.exports.__esModule = true, module.exports["default"] = module.exports;
 
-},{"5718c4761fc7cc1":"5CPOx","6b739d810aaeb41f":"2B9nq","ad0b7cec0616f219":"cFxnT","345d70d80a404368":"9O5RF"}],"5CPOx":[function(require,module,exports) {
+},{"5718c4761fc7cc1":"iGF8s","6b739d810aaeb41f":"bG7OX","ad0b7cec0616f219":"heF7o","345d70d80a404368":"i3p8Z"}],"iGF8s":[function(require,module,exports) {
 function _arrayWithHoles(arr) {
     if (Array.isArray(arr)) return arr;
 }
 module.exports = _arrayWithHoles, module.exports.__esModule = true, module.exports["default"] = module.exports;
 
-},{}],"2B9nq":[function(require,module,exports) {
+},{}],"bG7OX":[function(require,module,exports) {
 function _iterableToArrayLimit(arr, i) {
     var _i = null == arr ? null : "undefined" != typeof Symbol && arr[Symbol.iterator] || arr["@@iterator"];
     if (null != _i) {
@@ -9327,7 +9322,7 @@ function _iterableToArrayLimit(arr, i) {
 }
 module.exports = _iterableToArrayLimit, module.exports.__esModule = true, module.exports["default"] = module.exports;
 
-},{}],"cFxnT":[function(require,module,exports) {
+},{}],"heF7o":[function(require,module,exports) {
 var arrayLikeToArray = require("9e0dc4861474300");
 function _unsupportedIterableToArray(o, minLen) {
     if (!o) return;
@@ -9339,7 +9334,7 @@ function _unsupportedIterableToArray(o, minLen) {
 }
 module.exports = _unsupportedIterableToArray, module.exports.__esModule = true, module.exports["default"] = module.exports;
 
-},{"9e0dc4861474300":"2QyYi"}],"2QyYi":[function(require,module,exports) {
+},{"9e0dc4861474300":"9lZfO"}],"9lZfO":[function(require,module,exports) {
 function _arrayLikeToArray(arr, len) {
     if (len == null || len > arr.length) len = arr.length;
     for(var i = 0, arr2 = new Array(len); i < len; i++)arr2[i] = arr[i];
@@ -9347,13 +9342,13 @@ function _arrayLikeToArray(arr, len) {
 }
 module.exports = _arrayLikeToArray, module.exports.__esModule = true, module.exports["default"] = module.exports;
 
-},{}],"9O5RF":[function(require,module,exports) {
+},{}],"i3p8Z":[function(require,module,exports) {
 function _nonIterableRest() {
     throw new TypeError("Invalid attempt to destructure non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method.");
 }
 module.exports = _nonIterableRest, module.exports.__esModule = true, module.exports["default"] = module.exports;
 
-},{}],"bCb5n":[function(require,module,exports) {
+},{}],"ldhM8":[function(require,module,exports) {
 var arrayWithoutHoles = require("f96e6ed3e182aa5d");
 var iterableToArray = require("8a3a974aa486622a");
 var unsupportedIterableToArray = require("24355b8d220a1081");
@@ -9363,30 +9358,30 @@ function _toConsumableArray(arr) {
 }
 module.exports = _toConsumableArray, module.exports.__esModule = true, module.exports["default"] = module.exports;
 
-},{"f96e6ed3e182aa5d":"3Xl6v","8a3a974aa486622a":"02b3Z","24355b8d220a1081":"cFxnT","30a4fa497bec711c":"aejXd"}],"3Xl6v":[function(require,module,exports) {
+},{"f96e6ed3e182aa5d":"2id30","8a3a974aa486622a":"ukC39","24355b8d220a1081":"heF7o","30a4fa497bec711c":"hJkRm"}],"2id30":[function(require,module,exports) {
 var arrayLikeToArray = require("e197c8849342eb91");
 function _arrayWithoutHoles(arr) {
     if (Array.isArray(arr)) return arrayLikeToArray(arr);
 }
 module.exports = _arrayWithoutHoles, module.exports.__esModule = true, module.exports["default"] = module.exports;
 
-},{"e197c8849342eb91":"2QyYi"}],"02b3Z":[function(require,module,exports) {
+},{"e197c8849342eb91":"9lZfO"}],"ukC39":[function(require,module,exports) {
 function _iterableToArray(iter) {
     if (typeof Symbol !== "undefined" && iter[Symbol.iterator] != null || iter["@@iterator"] != null) return Array.from(iter);
 }
 module.exports = _iterableToArray, module.exports.__esModule = true, module.exports["default"] = module.exports;
 
-},{}],"aejXd":[function(require,module,exports) {
+},{}],"hJkRm":[function(require,module,exports) {
 function _nonIterableSpread() {
     throw new TypeError("Invalid attempt to spread non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method.");
 }
 module.exports = _nonIterableSpread, module.exports.__esModule = true, module.exports["default"] = module.exports;
 
-},{}],"1IYNZ":[function(require,module,exports) {
+},{}],"emhGx":[function(require,module,exports) {
 var parent = require("ea39299d010d1e36");
 module.exports = parent;
 
-},{"ea39299d010d1e36":"L2zGq"}],"L2zGq":[function(require,module,exports) {
+},{"ea39299d010d1e36":"9E4yh"}],"9E4yh":[function(require,module,exports) {
 var isPrototypeOf = require("ff2f3c6d4d75c4e2");
 var method = require("e6cc8593e3ff214d");
 var ArrayPrototype = Array.prototype;
@@ -9395,12 +9390,12 @@ module.exports = function(it) {
     return it === ArrayPrototype || isPrototypeOf(ArrayPrototype, it) && own === ArrayPrototype.indexOf ? method : own;
 };
 
-},{"ff2f3c6d4d75c4e2":"qlM4L","e6cc8593e3ff214d":"1SUNt"}],"1SUNt":[function(require,module,exports) {
+},{"ff2f3c6d4d75c4e2":"glCsH","e6cc8593e3ff214d":"ey6Jg"}],"ey6Jg":[function(require,module,exports) {
 require("4357d338a4bb294b");
 var entryVirtual = require("90327d5fdcaa067f");
 module.exports = entryVirtual("Array").indexOf;
 
-},{"4357d338a4bb294b":"jPuvf","90327d5fdcaa067f":"5RMpR"}],"jPuvf":[function(require,module,exports) {
+},{"4357d338a4bb294b":"6jxiE","90327d5fdcaa067f":"f2f2w"}],"6jxiE":[function(require,module,exports) {
 "use strict";
 /* eslint-disable es/no-array-prototype-indexof -- required for testing */ var $ = require("69998537ee053872");
 var uncurryThis = require("71d69847ea412b87");
@@ -9424,7 +9419,7 @@ $({
     }
 });
 
-},{"69998537ee053872":"jjems","71d69847ea412b87":"4LaES","4a30e58eb3b5de5a":"9QVVn","b47e1062e4a16a7f":"jxw0S"}],"jxw0S":[function(require,module,exports) {
+},{"69998537ee053872":"jMgg9","71d69847ea412b87":"533YR","4a30e58eb3b5de5a":"82oEB","b47e1062e4a16a7f":"7PkRt"}],"7PkRt":[function(require,module,exports) {
 "use strict";
 var fails = require("c186cfe319702ff9");
 module.exports = function(METHOD_NAME, argument) {
@@ -9437,11 +9432,11 @@ module.exports = function(METHOD_NAME, argument) {
     });
 };
 
-},{"c186cfe319702ff9":"luPpk"}],"14NOZ":[function(require,module,exports) {
+},{"c186cfe319702ff9":"iTIcj"}],"dDxDb":[function(require,module,exports) {
 var parent = require("4c14621150099c64");
 module.exports = parent;
 
-},{"4c14621150099c64":"l0IjZ"}],"l0IjZ":[function(require,module,exports) {
+},{"4c14621150099c64":"4QEN0"}],"4QEN0":[function(require,module,exports) {
 var isPrototypeOf = require("8b61ed94218a3f5b");
 var method = require("bca766b329c907aa");
 var ArrayPrototype = Array.prototype;
@@ -9450,12 +9445,12 @@ module.exports = function(it) {
     return it === ArrayPrototype || isPrototypeOf(ArrayPrototype, it) && own === ArrayPrototype.map ? method : own;
 };
 
-},{"8b61ed94218a3f5b":"qlM4L","bca766b329c907aa":"lhLzf"}],"lhLzf":[function(require,module,exports) {
+},{"8b61ed94218a3f5b":"glCsH","bca766b329c907aa":"fLMff"}],"fLMff":[function(require,module,exports) {
 require("2641852892dccb9e");
 var entryVirtual = require("6219d3a6de1524b");
 module.exports = entryVirtual("Array").map;
 
-},{"2641852892dccb9e":"4mWs8","6219d3a6de1524b":"5RMpR"}],"4mWs8":[function(require,module,exports) {
+},{"2641852892dccb9e":"1py8v","6219d3a6de1524b":"f2f2w"}],"1py8v":[function(require,module,exports) {
 "use strict";
 var $ = require("56ac98400436d0f6");
 var $map = require("8e27f0045cda1730").map;
@@ -9474,11 +9469,11 @@ $({
     }
 });
 
-},{"56ac98400436d0f6":"jjems","8e27f0045cda1730":"8g5by","30f30f9e1231c28":"4n6gw"}],"3fBVK":[function(require,module,exports) {
+},{"56ac98400436d0f6":"jMgg9","8e27f0045cda1730":"3yCAV","30f30f9e1231c28":"4m75i"}],"3n2fP":[function(require,module,exports) {
 var parent = require("229c2f6c94bc7dc4");
 module.exports = parent;
 
-},{"229c2f6c94bc7dc4":"djmLE"}],"djmLE":[function(require,module,exports) {
+},{"229c2f6c94bc7dc4":"29rrf"}],"29rrf":[function(require,module,exports) {
 var isPrototypeOf = require("8d6569726c678753");
 var method = require("cbcb6a9fabd7398");
 var ArrayPrototype = Array.prototype;
@@ -9487,12 +9482,12 @@ module.exports = function(it) {
     return it === ArrayPrototype || isPrototypeOf(ArrayPrototype, it) && own === ArrayPrototype.reduce ? method : own;
 };
 
-},{"8d6569726c678753":"qlM4L","cbcb6a9fabd7398":"ekQLY"}],"ekQLY":[function(require,module,exports) {
+},{"8d6569726c678753":"glCsH","cbcb6a9fabd7398":"c7S3s"}],"c7S3s":[function(require,module,exports) {
 require("36731dfd551eddcd");
 var entryVirtual = require("3324e61c01fdcdb2");
 module.exports = entryVirtual("Array").reduce;
 
-},{"36731dfd551eddcd":"e0Gri","3324e61c01fdcdb2":"5RMpR"}],"e0Gri":[function(require,module,exports) {
+},{"36731dfd551eddcd":"27vPg","3324e61c01fdcdb2":"f2f2w"}],"27vPg":[function(require,module,exports) {
 "use strict";
 var $ = require("f76a6cc86c2c21b");
 var $reduce = require("85d64a47a46e3946").left;
@@ -9516,7 +9511,7 @@ $({
     }
 });
 
-},{"f76a6cc86c2c21b":"jjems","85d64a47a46e3946":"eRh3o","3a48246d7d20dc91":"jxw0S","d46f01081d522a37":"diVIs","94eeb0d892f5ccc1":"hrb5Y"}],"eRh3o":[function(require,module,exports) {
+},{"f76a6cc86c2c21b":"jMgg9","85d64a47a46e3946":"gATAe","3a48246d7d20dc91":"7PkRt","d46f01081d522a37":"8S5hK","94eeb0d892f5ccc1":"deogg"}],"gATAe":[function(require,module,exports) {
 var aCallable = require("f488fc72bb02a2dc");
 var toObject = require("58cfe23ffb8db412");
 var IndexedObject = require("3a4b84617b6a35ee");
@@ -9553,21 +9548,21 @@ module.exports = {
     right: createMethod(true)
 };
 
-},{"f488fc72bb02a2dc":"7r1lP","58cfe23ffb8db412":"70Utf","3a4b84617b6a35ee":"6NkN4","3a06a13d0f77607":"icIfm"}],"hrb5Y":[function(require,module,exports) {
+},{"f488fc72bb02a2dc":"9MULW","58cfe23ffb8db412":"1vsnu","3a4b84617b6a35ee":"7oPnm","3a06a13d0f77607":"8VpKU"}],"deogg":[function(require,module,exports) {
 var process = require("861dd9bced7616d4");
 var classof = require("c893c04965e1b46c");
 module.exports = typeof process != "undefined" && classof(process) == "process";
 
-},{"861dd9bced7616d4":"d5jf4","c893c04965e1b46c":"fZmv0"}],"2zJsi":[function(require,module,exports) {
+},{"861dd9bced7616d4":"gRR53","c893c04965e1b46c":"d1xrx"}],"3ChIM":[function(require,module,exports) {
 var parent = require("8e862b8552f09e6e");
 module.exports = parent;
 
-},{"8e862b8552f09e6e":"2oUxC"}],"2oUxC":[function(require,module,exports) {
+},{"8e862b8552f09e6e":"1kQe3"}],"1kQe3":[function(require,module,exports) {
 require("c0eaec7fb9847c68");
 var path = require("9e0468ba9bfba36f");
 module.exports = path.parseFloat;
 
-},{"c0eaec7fb9847c68":"6hsxU","9e0468ba9bfba36f":"8QO0z"}],"6hsxU":[function(require,module,exports) {
+},{"c0eaec7fb9847c68":"foE9w","9e0468ba9bfba36f":"1MoZb"}],"foE9w":[function(require,module,exports) {
 var $ = require("100ce2f6fb808f8e");
 var $parseFloat = require("acd48a117f0a134e");
 // `parseFloat` method
@@ -9579,7 +9574,7 @@ $({
     parseFloat: $parseFloat
 });
 
-},{"100ce2f6fb808f8e":"jjems","acd48a117f0a134e":"8josb"}],"8josb":[function(require,module,exports) {
+},{"100ce2f6fb808f8e":"jMgg9","acd48a117f0a134e":"hQy3C"}],"hQy3C":[function(require,module,exports) {
 var global = require("c2491f85a7eed40f");
 var fails = require("7e8fb7ff000c98eb");
 var uncurryThis = require("50568d4aea48dd50");
@@ -9601,7 +9596,7 @@ module.exports = FORCED ? function parseFloat(string) {
     return result === 0 && charAt(trimmedString, 0) == "-" ? -0 : result;
 } : $parseFloat;
 
-},{"c2491f85a7eed40f":"avqB7","7e8fb7ff000c98eb":"luPpk","50568d4aea48dd50":"5P4uT","63c27277a10940e4":"3DQpG","84bb7e8f5cdff1f8":"gvApt","3773a45b29bfb33d":"7dUTT"}],"gvApt":[function(require,module,exports) {
+},{"c2491f85a7eed40f":"fBlhT","7e8fb7ff000c98eb":"iTIcj","50568d4aea48dd50":"gtGFr","63c27277a10940e4":"1z8zJ","84bb7e8f5cdff1f8":"6hw0y","3773a45b29bfb33d":"jSY8K"}],"6hw0y":[function(require,module,exports) {
 var uncurryThis = require("f2a7142533746ac4");
 var requireObjectCoercible = require("ac03c960cdca20c8");
 var toString = require("d123aa9ffb696047");
@@ -9630,11 +9625,11 @@ module.exports = {
     trim: createMethod(3)
 };
 
-},{"f2a7142533746ac4":"5P4uT","ac03c960cdca20c8":"3XBjA","d123aa9ffb696047":"3DQpG","82e81c03f75754ec":"7dUTT"}],"7dUTT":[function(require,module,exports) {
+},{"f2a7142533746ac4":"gtGFr","ac03c960cdca20c8":"dRmOQ","d123aa9ffb696047":"1z8zJ","82e81c03f75754ec":"jSY8K"}],"jSY8K":[function(require,module,exports) {
 // a string of all valid unicode whitespaces
 module.exports = "	\n\v\f\r \xa0              　\u2028\u2029\uFEFF";
 
-},{}],"aEQbm":[function(require,module,exports) {
+},{}],"dt8pt":[function(require,module,exports) {
 module.exports = function() {
     var mediaQuery;
     if (typeof window !== "undefined" && window !== null) {
@@ -9645,7 +9640,7 @@ module.exports = function() {
     return false;
 };
 
-},{}],"7KdXh":[function(require,module,exports) {
+},{}],"8pynw":[function(require,module,exports) {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
 parcelHelpers.export(exports, "getRandomColor", ()=>(0, _utils.getRandomColor));
@@ -9863,16 +9858,16 @@ function createAvatarDataProvider(_ref) {
 }
 exports.default = createAvatarDataProvider;
 
-},{"@babel/runtime/helpers/classCallCheck":"3nRml","@babel/runtime/helpers/createClass":"2yzPp","@babel/runtime/helpers/assertThisInitialized":"1mVba","@babel/runtime/helpers/inherits":"bYd1U","@babel/runtime/helpers/possibleConstructorReturn":"cW3L5","@babel/runtime/helpers/getPrototypeOf":"gWrBy","@babel/runtime/helpers/defineProperty":"4x6r7","core-js-pure/stable/instance/reduce.js":"3fBVK","core-js-pure/stable/object/assign.js":"hgdze","core-js-pure/stable/reflect/construct.js":"cbxux","core-js-pure/stable/object/keys.js":"3hXU8","core-js-pure/stable/object/get-own-property-symbols.js":"lycR6","core-js-pure/stable/instance/filter.js":"7Rz77","core-js-pure/stable/object/get-own-property-descriptor.js":"7bDJk","core-js-pure/stable/object/get-own-property-descriptors.js":"jbWnf","core-js-pure/stable/object/define-properties.js":"a8w3R","core-js-pure/stable/object/define-property.js":"fpclb","react":"21dqq","prop-types":"7wKI2","./cache":"58QUy","./context":"9EqwV","./internal-state":"4OkXW","./utils":"kE0JY","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"lycR6":[function(require,module,exports) {
+},{"@babel/runtime/helpers/classCallCheck":"1wLuj","@babel/runtime/helpers/createClass":"5H0F2","@babel/runtime/helpers/assertThisInitialized":"gXcvA","@babel/runtime/helpers/inherits":"dSr3D","@babel/runtime/helpers/possibleConstructorReturn":"jDEHj","@babel/runtime/helpers/getPrototypeOf":"bJYCu","@babel/runtime/helpers/defineProperty":"lDZQ4","core-js-pure/stable/instance/reduce.js":"3n2fP","core-js-pure/stable/object/assign.js":"9F04r","core-js-pure/stable/reflect/construct.js":"kXIlE","core-js-pure/stable/object/keys.js":"1HiOT","core-js-pure/stable/object/get-own-property-symbols.js":"fItOY","core-js-pure/stable/instance/filter.js":"dIbZ0","core-js-pure/stable/object/get-own-property-descriptor.js":"cJPJr","core-js-pure/stable/object/get-own-property-descriptors.js":"f3Td4","core-js-pure/stable/object/define-properties.js":"EjaaZ","core-js-pure/stable/object/define-property.js":"bhVut","react":"9sfFD","prop-types":"jFJ5I","./cache":"6pFup","./context":"jWvoL","./internal-state":"dne1u","./utils":"4BiX7","@parcel/transformer-js/src/esmodule-helpers.js":"5oERU"}],"fItOY":[function(require,module,exports) {
 var parent = require("a570b6a1ecae5174");
 module.exports = parent;
 
-},{"a570b6a1ecae5174":"fK69X"}],"fK69X":[function(require,module,exports) {
+},{"a570b6a1ecae5174":"6do7g"}],"6do7g":[function(require,module,exports) {
 require("41fb5159a91e2292");
 var path = require("3bde3f02c10aad37");
 module.exports = path.Object.getOwnPropertySymbols;
 
-},{"41fb5159a91e2292":"eRNGH","3bde3f02c10aad37":"8QO0z"}],"eRNGH":[function(require,module,exports) {
+},{"41fb5159a91e2292":"csEVR","3bde3f02c10aad37":"1MoZb"}],"csEVR":[function(require,module,exports) {
 // TODO: Remove this module from `core-js@4` since it's split to modules listed below
 require("104f05462f5a5dba");
 require("101f70ec4c160270");
@@ -9880,7 +9875,7 @@ require("8f48178764c7fe38");
 require("2c99f7122ff86e3a");
 require("4cbb4b311683fcfe");
 
-},{"104f05462f5a5dba":"9BzOL","101f70ec4c160270":"kn0pm","8f48178764c7fe38":"iBU0N","2c99f7122ff86e3a":"2qOVD","4cbb4b311683fcfe":"ga77Y"}],"9BzOL":[function(require,module,exports) {
+},{"104f05462f5a5dba":"2B0cz","101f70ec4c160270":"f3fWE","8f48178764c7fe38":"4g3ME","2c99f7122ff86e3a":"bXAYV","4cbb4b311683fcfe":"4to90"}],"2B0cz":[function(require,module,exports) {
 "use strict";
 var $ = require("4ba57b385a85df65");
 var global = require("ebf280df6b58e252");
@@ -10133,7 +10128,7 @@ defineSymbolToPrimitive();
 setToStringTag($Symbol, SYMBOL);
 hiddenKeys[HIDDEN] = true;
 
-},{"4ba57b385a85df65":"jjems","ebf280df6b58e252":"avqB7","a2adc4b70e5f02b":"acNwo","e3d2a3b873b72b7c":"5P4uT","8b2bb3d67e8a8fb7":"k905C","deec00ac92e04f7f":"87WOB","29f4051c65bb3518":"hdbC4","343bdcff565d8cb1":"luPpk","71fa093183dce580":"lacXY","3ffe5b34533092b9":"qlM4L","4f6dc5b29517c861":"bTNyr","85a12850e0f2a2c3":"kvdfV","af875f36fc85aa58":"2GDiT","e8337274c8de3fc7":"3DQpG","3fc3cf5b64b21959":"1E79z","bb85bf30d5c7d69d":"eqWCY","2848160069adb3c5":"9NKcn","198f855c52e8b6ba":"lJsHK","54b91b8a5c3304d1":"8ONpC","d047a9cd085b6d08":"1qW3G","cc5f9e61c4ab07a8":"bs1FJ","b61639a475317c03":"gbIb1","8709af8ae9559bd4":"8IwWp","9b0f26c315a78489":"lvpvk","96d9091422165cf2":"fXiQ5","b0dd29ac6e8e527a":"6aS9E","94ee752c7a5e6517":"9VSA0","395b9ddb7ade2b0a":"fjVxw","2687b0d49787c6da":"7lBVj","927b9f8591a25c13":"cLNyV","c10eb160129a8f4f":"cSGfj","23773fe3b7a03e88":"fnRxR","e09554583122cea4":"kKlUq","d4e5705928e0395f":"h6U5e","39390a4c907b2d79":"8BLll","edd3879c3ba6d12a":"73CuX","f63520cabb9f7e74":"8g5by"}],"lJsHK":[function(require,module,exports) {
+},{"4ba57b385a85df65":"jMgg9","ebf280df6b58e252":"fBlhT","a2adc4b70e5f02b":"eaezI","e3d2a3b873b72b7c":"gtGFr","8b2bb3d67e8a8fb7":"hYUnX","deec00ac92e04f7f":"bcvE3","29f4051c65bb3518":"bFDVY","343bdcff565d8cb1":"iTIcj","71fa093183dce580":"ck7id","3ffe5b34533092b9":"glCsH","4f6dc5b29517c861":"gLWrN","85a12850e0f2a2c3":"2LQHC","af875f36fc85aa58":"8McI3","e8337274c8de3fc7":"1z8zJ","3fc3cf5b64b21959":"7E1bf","bb85bf30d5c7d69d":"74zH9","2848160069adb3c5":"6Uk5V","198f855c52e8b6ba":"f12oE","54b91b8a5c3304d1":"lS0yW","d047a9cd085b6d08":"c2Bph","cc5f9e61c4ab07a8":"1GqC5","b61639a475317c03":"6KxLn","8709af8ae9559bd4":"gDWt6","9b0f26c315a78489":"aiDYP","96d9091422165cf2":"iruNw","b0dd29ac6e8e527a":"9oOMK","94ee752c7a5e6517":"cLzb3","395b9ddb7ade2b0a":"kDtvt","2687b0d49787c6da":"fBQCk","927b9f8591a25c13":"gWpYg","c10eb160129a8f4f":"2Upad","23773fe3b7a03e88":"cBblO","e09554583122cea4":"2jWWg","d4e5705928e0395f":"34kxA","39390a4c907b2d79":"fhFRV","edd3879c3ba6d12a":"l2AeP","f63520cabb9f7e74":"3yCAV"}],"f12oE":[function(require,module,exports) {
 var internalObjectKeys = require("3792d13fe85a5153");
 var enumBugKeys = require("59462fc4ab954c9c");
 var hiddenKeys = enumBugKeys.concat("length", "prototype");
@@ -10144,7 +10139,7 @@ exports.f = Object.getOwnPropertyNames || function getOwnPropertyNames(O) {
     return internalObjectKeys(O, hiddenKeys);
 };
 
-},{"3792d13fe85a5153":"4pxTL","59462fc4ab954c9c":"dvPi1"}],"8ONpC":[function(require,module,exports) {
+},{"3792d13fe85a5153":"dUxib","59462fc4ab954c9c":"8Ocja"}],"lS0yW":[function(require,module,exports) {
 /* eslint-disable es/no-object-getownpropertynames -- safe */ var classof = require("4c943706b1f9a577");
 var toIndexedObject = require("f05e590880940293");
 var $getOwnPropertyNames = require("118d22a5f5375f8d").f;
@@ -10162,7 +10157,7 @@ module.exports.f = function getOwnPropertyNames(it) {
     return windowNames && classof(it) == "Window" ? getWindowNames(it) : $getOwnPropertyNames(toIndexedObject(it));
 };
 
-},{"4c943706b1f9a577":"fZmv0","f05e590880940293":"kvdfV","118d22a5f5375f8d":"lJsHK","fca97401b88d30d9":"bhPIa"}],"bhPIa":[function(require,module,exports) {
+},{"4c943706b1f9a577":"d1xrx","f05e590880940293":"2LQHC","118d22a5f5375f8d":"f12oE","fca97401b88d30d9":"5p4i8"}],"5p4i8":[function(require,module,exports) {
 var toAbsoluteIndex = require("d90f6d586631ad71");
 var lengthOfArrayLike = require("c0643f0e66adc7cf");
 var createProperty = require("e31272dbfa5c9b88");
@@ -10178,7 +10173,7 @@ module.exports = function(O, start, end) {
     return result;
 };
 
-},{"d90f6d586631ad71":"1L8Z0","c0643f0e66adc7cf":"icIfm","e31272dbfa5c9b88":"9Ttit"}],"fXiQ5":[function(require,module,exports) {
+},{"d90f6d586631ad71":"5cpq7","c0643f0e66adc7cf":"8VpKU","e31272dbfa5c9b88":"a13Rs"}],"iruNw":[function(require,module,exports) {
 var createNonEnumerableProperty = require("5aa70a8afcfe1469");
 module.exports = function(target, key, value, options) {
     if (options && options.enumerable) target[key] = value;
@@ -10186,17 +10181,17 @@ module.exports = function(target, key, value, options) {
     return target;
 };
 
-},{"5aa70a8afcfe1469":"2bHDS"}],"6aS9E":[function(require,module,exports) {
+},{"5aa70a8afcfe1469":"8OWDb"}],"9oOMK":[function(require,module,exports) {
 var defineProperty = require("47686fc9293ffcf6");
 module.exports = function(target, name, descriptor) {
     return defineProperty.f(target, name, descriptor);
 };
 
-},{"47686fc9293ffcf6":"gbIb1"}],"fnRxR":[function(require,module,exports) {
+},{"47686fc9293ffcf6":"6KxLn"}],"cBblO":[function(require,module,exports) {
 var wellKnownSymbol = require("c77796b35e74d71a");
 exports.f = wellKnownSymbol;
 
-},{"c77796b35e74d71a":"cSGfj"}],"kKlUq":[function(require,module,exports) {
+},{"c77796b35e74d71a":"2Upad"}],"2jWWg":[function(require,module,exports) {
 var path = require("f55a8964690273aa");
 var hasOwn = require("e9f29932487674f4");
 var wrappedWellKnownSymbolModule = require("2b633d20d3930a38");
@@ -10208,7 +10203,7 @@ module.exports = function(NAME) {
     });
 };
 
-},{"f55a8964690273aa":"8QO0z","e9f29932487674f4":"lacXY","2b633d20d3930a38":"fnRxR","adb3925851f73aa2":"gbIb1"}],"h6U5e":[function(require,module,exports) {
+},{"f55a8964690273aa":"1MoZb","e9f29932487674f4":"ck7id","2b633d20d3930a38":"cBblO","adb3925851f73aa2":"6KxLn"}],"34kxA":[function(require,module,exports) {
 var call = require("ebd0c5529cc11c16");
 var getBuiltIn = require("cdbd0e3e8437bb6d");
 var wellKnownSymbol = require("3359be080c4e1765");
@@ -10228,7 +10223,7 @@ module.exports = function() {
     });
 };
 
-},{"ebd0c5529cc11c16":"acNwo","cdbd0e3e8437bb6d":"6wm25","3359be080c4e1765":"cSGfj","17fd44be11c309c2":"fXiQ5"}],"8BLll":[function(require,module,exports) {
+},{"ebd0c5529cc11c16":"eaezI","cdbd0e3e8437bb6d":"qT6hq","3359be080c4e1765":"2Upad","17fd44be11c309c2":"iruNw"}],"fhFRV":[function(require,module,exports) {
 var TO_STRING_TAG_SUPPORT = require("1fe9430f4f9af875");
 var defineProperty = require("cafa46f8e999cd1f").f;
 var createNonEnumerableProperty = require("95b0ba70db028c1a");
@@ -10247,7 +10242,7 @@ module.exports = function(it, TAG, STATIC, SET_METHOD) {
     }
 };
 
-},{"1fe9430f4f9af875":"7vtNP","cafa46f8e999cd1f":"gbIb1","95b0ba70db028c1a":"2bHDS","e8989b8fa6f18ab0":"lacXY","858725d89faf1898":"5lBHV","8bf478f8a997a430":"cSGfj"}],"5lBHV":[function(require,module,exports) {
+},{"1fe9430f4f9af875":"6csFe","cafa46f8e999cd1f":"6KxLn","95b0ba70db028c1a":"8OWDb","e8989b8fa6f18ab0":"ck7id","858725d89faf1898":"ebCib","8bf478f8a997a430":"2Upad"}],"ebCib":[function(require,module,exports) {
 "use strict";
 var TO_STRING_TAG_SUPPORT = require("88149163771f45");
 var classof = require("7f7afd336e21e3ff");
@@ -10257,7 +10252,7 @@ module.exports = TO_STRING_TAG_SUPPORT ? ({}).toString : function toString() {
     return "[object " + classof(this) + "]";
 };
 
-},{"88149163771f45":"7vtNP","7f7afd336e21e3ff":"5J26j"}],"73CuX":[function(require,module,exports) {
+},{"88149163771f45":"6csFe","7f7afd336e21e3ff":"cPLFb"}],"l2AeP":[function(require,module,exports) {
 var NATIVE_WEAK_MAP = require("5b124dc56d7e77db");
 var global = require("aad845456ec68bbd");
 var isObject = require("da5933a20397f4dc");
@@ -10321,13 +10316,13 @@ module.exports = {
     getterFor: getterFor
 };
 
-},{"5b124dc56d7e77db":"896Id","aad845456ec68bbd":"avqB7","da5933a20397f4dc":"fRYFX","4520c8c51afe5664":"2bHDS","2dbda92d260fe0e":"lacXY","141749157c44109b":"4KS55","dc69c4cc8614d09c":"fjVxw","48d3654517671f2a":"7lBVj"}],"896Id":[function(require,module,exports) {
+},{"5b124dc56d7e77db":"kUJU0","aad845456ec68bbd":"fBlhT","da5933a20397f4dc":"7j1Gt","4520c8c51afe5664":"8OWDb","2dbda92d260fe0e":"ck7id","141749157c44109b":"1rLK3","dc69c4cc8614d09c":"kDtvt","48d3654517671f2a":"fBQCk"}],"kUJU0":[function(require,module,exports) {
 var global = require("f4641134b53ab34b");
 var isCallable = require("a4ca771e9cbb40a4");
 var WeakMap = global.WeakMap;
 module.exports = isCallable(WeakMap) && /native code/.test(String(WeakMap));
 
-},{"f4641134b53ab34b":"avqB7","a4ca771e9cbb40a4":"fqYwo"}],"kn0pm":[function(require,module,exports) {
+},{"f4641134b53ab34b":"fBlhT","a4ca771e9cbb40a4":"2yOWk"}],"f3fWE":[function(require,module,exports) {
 var $ = require("cfb22d1114b5e8e9");
 var getBuiltIn = require("814ab569f5c0df93");
 var hasOwn = require("a90c99f01ae00c36");
@@ -10353,11 +10348,11 @@ $({
     }
 });
 
-},{"cfb22d1114b5e8e9":"jjems","814ab569f5c0df93":"6wm25","a90c99f01ae00c36":"lacXY","6cdba543790a90f6":"3DQpG","95f025052c0e053a":"9VSA0","8142279d0cb74c01":"9RKNb"}],"9RKNb":[function(require,module,exports) {
+},{"cfb22d1114b5e8e9":"jMgg9","814ab569f5c0df93":"qT6hq","a90c99f01ae00c36":"ck7id","6cdba543790a90f6":"1z8zJ","95f025052c0e053a":"cLzb3","8142279d0cb74c01":"aiWSN"}],"aiWSN":[function(require,module,exports) {
 var NATIVE_SYMBOL = require("f0fdd2ab4adf74b2");
 /* eslint-disable es/no-symbol -- safe */ module.exports = NATIVE_SYMBOL && !!Symbol["for"] && !!Symbol.keyFor;
 
-},{"f0fdd2ab4adf74b2":"hdbC4"}],"iBU0N":[function(require,module,exports) {
+},{"f0fdd2ab4adf74b2":"bFDVY"}],"4g3ME":[function(require,module,exports) {
 var $ = require("a2d3fd835a3f86a");
 var hasOwn = require("5713db74e6e1bda");
 var isSymbol = require("e5ff6064f274fe79");
@@ -10378,7 +10373,7 @@ $({
     }
 });
 
-},{"a2d3fd835a3f86a":"jjems","5713db74e6e1bda":"lacXY","e5ff6064f274fe79":"58L3i","2e28dd3973904620":"c7C3w","e57487425c120a27":"9VSA0","624501bd9058c6eb":"9RKNb"}],"ga77Y":[function(require,module,exports) {
+},{"a2d3fd835a3f86a":"jMgg9","5713db74e6e1bda":"ck7id","e5ff6064f274fe79":"IwqwV","2e28dd3973904620":"3N4GZ","e57487425c120a27":"cLzb3","624501bd9058c6eb":"aiWSN"}],"4to90":[function(require,module,exports) {
 var $ = require("b0f47b4e213ece39");
 var NATIVE_SYMBOL = require("b6af71cedaa3fa18");
 var fails = require("6bb56cdc6ea6719f");
@@ -10402,11 +10397,11 @@ $({
     }
 });
 
-},{"b0f47b4e213ece39":"jjems","b6af71cedaa3fa18":"hdbC4","6bb56cdc6ea6719f":"luPpk","707b059efac15dec":"1qW3G","c1fd4b193335832f":"70Utf"}],"7bDJk":[function(require,module,exports) {
+},{"b0f47b4e213ece39":"jMgg9","b6af71cedaa3fa18":"bFDVY","6bb56cdc6ea6719f":"iTIcj","707b059efac15dec":"c2Bph","c1fd4b193335832f":"1vsnu"}],"cJPJr":[function(require,module,exports) {
 var parent = require("d0082989ee81a67b");
 module.exports = parent;
 
-},{"d0082989ee81a67b":"hm6Dg"}],"hm6Dg":[function(require,module,exports) {
+},{"d0082989ee81a67b":"9JEBh"}],"9JEBh":[function(require,module,exports) {
 require("5e4630a97e9e9054");
 var path = require("cc3bfa4be12e1f2a");
 var Object = path.Object;
@@ -10415,7 +10410,7 @@ var getOwnPropertyDescriptor = module.exports = function getOwnPropertyDescripto
 };
 if (Object.getOwnPropertyDescriptor.sham) getOwnPropertyDescriptor.sham = true;
 
-},{"5e4630a97e9e9054":"c8MlR","cc3bfa4be12e1f2a":"8QO0z"}],"c8MlR":[function(require,module,exports) {
+},{"5e4630a97e9e9054":"kQHjL","cc3bfa4be12e1f2a":"1MoZb"}],"kQHjL":[function(require,module,exports) {
 var $ = require("df8c896e778c2e23");
 var fails = require("2f18048ab7e857e8");
 var toIndexedObject = require("4ae2f19a0946dd88");
@@ -10437,16 +10432,16 @@ $({
     }
 });
 
-},{"df8c896e778c2e23":"jjems","2f18048ab7e857e8":"luPpk","4ae2f19a0946dd88":"kvdfV","21811c9a551109ff":"bs1FJ","3a20d0f7a733e080":"87WOB"}],"jbWnf":[function(require,module,exports) {
+},{"df8c896e778c2e23":"jMgg9","2f18048ab7e857e8":"iTIcj","4ae2f19a0946dd88":"2LQHC","21811c9a551109ff":"1GqC5","3a20d0f7a733e080":"bcvE3"}],"f3Td4":[function(require,module,exports) {
 var parent = require("58a352a565dd64a4");
 module.exports = parent;
 
-},{"58a352a565dd64a4":"jeSQR"}],"jeSQR":[function(require,module,exports) {
+},{"58a352a565dd64a4":"1MkUM"}],"1MkUM":[function(require,module,exports) {
 require("24dbace099158d9");
 var path = require("96a2beace2f26c1d");
 module.exports = path.Object.getOwnPropertyDescriptors;
 
-},{"24dbace099158d9":"GEvCx","96a2beace2f26c1d":"8QO0z"}],"GEvCx":[function(require,module,exports) {
+},{"24dbace099158d9":"j2BMp","96a2beace2f26c1d":"1MoZb"}],"j2BMp":[function(require,module,exports) {
 var $ = require("9011d3a921be2f1a");
 var DESCRIPTORS = require("a90a4ec3377c4183");
 var ownKeys = require("3e06c2423d3fbc44");
@@ -10475,7 +10470,7 @@ $({
     }
 });
 
-},{"9011d3a921be2f1a":"jjems","a90a4ec3377c4183":"87WOB","3e06c2423d3fbc44":"iC5zJ","1005c445cd4c5184":"kvdfV","50fc337456ba6835":"bs1FJ","735771dba8acdfe2":"9Ttit"}],"iC5zJ":[function(require,module,exports) {
+},{"9011d3a921be2f1a":"jMgg9","a90a4ec3377c4183":"bcvE3","3e06c2423d3fbc44":"cMcuk","1005c445cd4c5184":"2LQHC","50fc337456ba6835":"1GqC5","735771dba8acdfe2":"a13Rs"}],"cMcuk":[function(require,module,exports) {
 var getBuiltIn = require("d229968da15ade8b");
 var uncurryThis = require("cc9e42998a4dc9a2");
 var getOwnPropertyNamesModule = require("bce2367c550623b4");
@@ -10489,11 +10484,11 @@ module.exports = getBuiltIn("Reflect", "ownKeys") || function ownKeys(it) {
     return getOwnPropertySymbols ? concat(keys, getOwnPropertySymbols(it)) : keys;
 };
 
-},{"d229968da15ade8b":"6wm25","cc9e42998a4dc9a2":"5P4uT","bce2367c550623b4":"lJsHK","8ed9577123176cb2":"1qW3G","5de53efbc4c3415":"bTNyr"}],"a8w3R":[function(require,module,exports) {
+},{"d229968da15ade8b":"qT6hq","cc9e42998a4dc9a2":"gtGFr","bce2367c550623b4":"f12oE","8ed9577123176cb2":"c2Bph","5de53efbc4c3415":"gLWrN"}],"EjaaZ":[function(require,module,exports) {
 var parent = require("7b71aaf7e935e0ed");
 module.exports = parent;
 
-},{"7b71aaf7e935e0ed":"hsdVp"}],"hsdVp":[function(require,module,exports) {
+},{"7b71aaf7e935e0ed":"2aeZH"}],"2aeZH":[function(require,module,exports) {
 require("f75cf1ab51fe69aa");
 var path = require("eecaa7d5da21133e");
 var Object = path.Object;
@@ -10502,7 +10497,7 @@ var defineProperties = module.exports = function defineProperties(T, D) {
 };
 if (Object.defineProperties.sham) defineProperties.sham = true;
 
-},{"f75cf1ab51fe69aa":"dsgW7","eecaa7d5da21133e":"8QO0z"}],"dsgW7":[function(require,module,exports) {
+},{"f75cf1ab51fe69aa":"hfiVW","eecaa7d5da21133e":"1MoZb"}],"hfiVW":[function(require,module,exports) {
 var $ = require("a0a18f1e2d2221ce");
 var DESCRIPTORS = require("b7f7a648f7708164");
 var defineProperties = require("ad06be98f40885ad").f;
@@ -10518,11 +10513,11 @@ $({
     defineProperties: defineProperties
 });
 
-},{"a0a18f1e2d2221ce":"jjems","b7f7a648f7708164":"87WOB","ad06be98f40885ad":"8IwWp"}],"fpclb":[function(require,module,exports) {
+},{"a0a18f1e2d2221ce":"jMgg9","b7f7a648f7708164":"bcvE3","ad06be98f40885ad":"gDWt6"}],"bhVut":[function(require,module,exports) {
 var parent = require("b01cd05e30aef6d1");
 module.exports = parent;
 
-},{"b01cd05e30aef6d1":"i49oF"}],"i49oF":[function(require,module,exports) {
+},{"b01cd05e30aef6d1":"2XwA1"}],"2XwA1":[function(require,module,exports) {
 require("a924a1f4d89d64ff");
 var path = require("3a086dd07eb4616f");
 var Object = path.Object;
@@ -10531,7 +10526,7 @@ var defineProperty = module.exports = function defineProperty(it, key, desc) {
 };
 if (Object.defineProperty.sham) defineProperty.sham = true;
 
-},{"a924a1f4d89d64ff":"bQpcG","3a086dd07eb4616f":"8QO0z"}],"bQpcG":[function(require,module,exports) {
+},{"a924a1f4d89d64ff":"eKzFy","3a086dd07eb4616f":"1MoZb"}],"eKzFy":[function(require,module,exports) {
 var $ = require("d80421653a40fa51");
 var DESCRIPTORS = require("e08bd429b8a434ed");
 var defineProperty = require("a8322e04d9dd0ebe").f;
@@ -10547,7 +10542,7 @@ $({
     defineProperty: defineProperty
 });
 
-},{"d80421653a40fa51":"jjems","e08bd429b8a434ed":"87WOB","a8322e04d9dd0ebe":"gbIb1"}],"4OkXW":[function(require,module,exports) {
+},{"d80421653a40fa51":"jMgg9","e08bd429b8a434ed":"bcvE3","a8322e04d9dd0ebe":"6KxLn"}],"dne1u":[function(require,module,exports) {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
 parcelHelpers.export(exports, "default", ()=>InternalState);
@@ -10578,7 +10573,7 @@ var InternalState = /*#__PURE__*/ function() {
     return InternalState;
 }();
 
-},{"@babel/runtime/helpers/classCallCheck":"3nRml","@babel/runtime/helpers/createClass":"2yzPp","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"4yBlW":[function(require,module,exports) {
+},{"@babel/runtime/helpers/classCallCheck":"1wLuj","@babel/runtime/helpers/createClass":"5H0F2","@parcel/transformer-js/src/esmodule-helpers.js":"5oERU"}],"kWeim":[function(require,module,exports) {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
 parcelHelpers.export(exports, "default", ()=>AvatarImage);
@@ -10690,7 +10685,7 @@ var AvatarImage = /*#__PURE__*/ function(_React$PureComponent) {
     unstyled: false
 });
 
-},{"core-js-pure/stable/reflect/construct.js":"cbxux","@babel/runtime/helpers/classCallCheck":"3nRml","@babel/runtime/helpers/createClass":"2yzPp","@babel/runtime/helpers/inherits":"bYd1U","@babel/runtime/helpers/possibleConstructorReturn":"cW3L5","@babel/runtime/helpers/getPrototypeOf":"gWrBy","@babel/runtime/helpers/defineProperty":"4x6r7","react":"21dqq","prop-types":"7wKI2","../utils":"kE0JY","./wrapper":"cLNdQ","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"cLNdQ":[function(require,module,exports) {
+},{"core-js-pure/stable/reflect/construct.js":"kXIlE","@babel/runtime/helpers/classCallCheck":"1wLuj","@babel/runtime/helpers/createClass":"5H0F2","@babel/runtime/helpers/inherits":"dSr3D","@babel/runtime/helpers/possibleConstructorReturn":"jDEHj","@babel/runtime/helpers/getPrototypeOf":"bJYCu","@babel/runtime/helpers/defineProperty":"lDZQ4","react":"9sfFD","prop-types":"jFJ5I","../utils":"4BiX7","./wrapper":"idn2y","@parcel/transformer-js/src/esmodule-helpers.js":"5oERU"}],"idn2y":[function(require,module,exports) {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
 parcelHelpers.export(exports, "default", ()=>AvatarWrapper);
@@ -10828,7 +10823,7 @@ var AvatarWrapper = /*#__PURE__*/ function(_React$PureComponent) {
     children: (0, _propTypesDefault.default).node
 });
 
-},{"core-js-pure/stable/reflect/construct.js":"cbxux","core-js-pure/stable/object/keys.js":"3hXU8","core-js-pure/stable/object/get-own-property-symbols.js":"lycR6","core-js-pure/stable/instance/filter.js":"7Rz77","core-js-pure/stable/object/get-own-property-descriptor.js":"7bDJk","core-js-pure/stable/object/get-own-property-descriptors.js":"jbWnf","core-js-pure/stable/object/define-properties.js":"a8w3R","core-js-pure/stable/object/define-property.js":"fpclb","@babel/runtime/helpers/classCallCheck":"3nRml","@babel/runtime/helpers/createClass":"2yzPp","@babel/runtime/helpers/inherits":"bYd1U","@babel/runtime/helpers/possibleConstructorReturn":"cW3L5","@babel/runtime/helpers/getPrototypeOf":"gWrBy","@babel/runtime/helpers/defineProperty":"4x6r7","react":"21dqq","prop-types":"7wKI2","../utils":"kE0JY","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"gIT9X":[function(require,module,exports) {
+},{"core-js-pure/stable/reflect/construct.js":"kXIlE","core-js-pure/stable/object/keys.js":"1HiOT","core-js-pure/stable/object/get-own-property-symbols.js":"fItOY","core-js-pure/stable/instance/filter.js":"dIbZ0","core-js-pure/stable/object/get-own-property-descriptor.js":"cJPJr","core-js-pure/stable/object/get-own-property-descriptors.js":"f3Td4","core-js-pure/stable/object/define-properties.js":"EjaaZ","core-js-pure/stable/object/define-property.js":"bhVut","@babel/runtime/helpers/classCallCheck":"1wLuj","@babel/runtime/helpers/createClass":"5H0F2","@babel/runtime/helpers/inherits":"dSr3D","@babel/runtime/helpers/possibleConstructorReturn":"jDEHj","@babel/runtime/helpers/getPrototypeOf":"bJYCu","@babel/runtime/helpers/defineProperty":"lDZQ4","react":"9sfFD","prop-types":"jFJ5I","../utils":"4BiX7","@parcel/transformer-js/src/esmodule-helpers.js":"5oERU"}],"lup2l":[function(require,module,exports) {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
 parcelHelpers.export(exports, "default", ()=>AvatarText);
@@ -11019,11 +11014,11 @@ var AvatarText = /*#__PURE__*/ function(_React$PureComponent) {
     unstyled: false
 });
 
-},{"core-js-pure/stable/reflect/construct.js":"cbxux","@babel/runtime/helpers/classCallCheck":"3nRml","@babel/runtime/helpers/createClass":"2yzPp","@babel/runtime/helpers/assertThisInitialized":"1mVba","@babel/runtime/helpers/inherits":"bYd1U","@babel/runtime/helpers/possibleConstructorReturn":"cW3L5","@babel/runtime/helpers/getPrototypeOf":"gWrBy","@babel/runtime/helpers/defineProperty":"4x6r7","core-js-pure/stable/instance/concat.js":"aiUCw","react":"21dqq","prop-types":"7wKI2","./wrapper":"cLNdQ","../utils":"kE0JY","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"aiUCw":[function(require,module,exports) {
+},{"core-js-pure/stable/reflect/construct.js":"kXIlE","@babel/runtime/helpers/classCallCheck":"1wLuj","@babel/runtime/helpers/createClass":"5H0F2","@babel/runtime/helpers/assertThisInitialized":"gXcvA","@babel/runtime/helpers/inherits":"dSr3D","@babel/runtime/helpers/possibleConstructorReturn":"jDEHj","@babel/runtime/helpers/getPrototypeOf":"bJYCu","@babel/runtime/helpers/defineProperty":"lDZQ4","core-js-pure/stable/instance/concat.js":"1Mxgc","react":"9sfFD","prop-types":"jFJ5I","./wrapper":"idn2y","../utils":"4BiX7","@parcel/transformer-js/src/esmodule-helpers.js":"5oERU"}],"1Mxgc":[function(require,module,exports) {
 var parent = require("91239e3ef45d263c");
 module.exports = parent;
 
-},{"91239e3ef45d263c":"5dgPy"}],"5dgPy":[function(require,module,exports) {
+},{"91239e3ef45d263c":"hIfCG"}],"hIfCG":[function(require,module,exports) {
 var isPrototypeOf = require("2cc66d59b20ea28c");
 var method = require("732a8d023c67caa4");
 var ArrayPrototype = Array.prototype;
@@ -11032,12 +11027,12 @@ module.exports = function(it) {
     return it === ArrayPrototype || isPrototypeOf(ArrayPrototype, it) && own === ArrayPrototype.concat ? method : own;
 };
 
-},{"2cc66d59b20ea28c":"qlM4L","732a8d023c67caa4":"7dfuZ"}],"7dfuZ":[function(require,module,exports) {
+},{"2cc66d59b20ea28c":"glCsH","732a8d023c67caa4":"kVVBh"}],"kVVBh":[function(require,module,exports) {
 require("64c9605b490812a2");
 var entryVirtual = require("d9ecac840144b580");
 module.exports = entryVirtual("Array").concat;
 
-},{"64c9605b490812a2":"liOpx","d9ecac840144b580":"5RMpR"}],"liOpx":[function(require,module,exports) {
+},{"64c9605b490812a2":"g6E8S","d9ecac840144b580":"f2f2w"}],"g6E8S":[function(require,module,exports) {
 "use strict";
 var $ = require("526f3463688583ac");
 var fails = require("8e8ee5196bebcbd2");
@@ -11097,7 +11092,7 @@ $({
     }
 });
 
-},{"526f3463688583ac":"jjems","8e8ee5196bebcbd2":"luPpk","c3bc822a01de390d":"byYNs","7ca17697c1c2c377":"fRYFX","5101b0e9864b374f":"70Utf","dd785d6583d74527":"icIfm","67dc70456bd21d32":"cP08i","31ffc50746fcd0c":"9Ttit","d7bbca23e674c6e4":"jQr4t","cc3f384d7e76b9f0":"4n6gw","116fca90102f5fcc":"cSGfj","ce5f7f268fd754b1":"diVIs"}],"cP08i":[function(require,module,exports) {
+},{"526f3463688583ac":"jMgg9","8e8ee5196bebcbd2":"iTIcj","c3bc822a01de390d":"299ri","7ca17697c1c2c377":"7j1Gt","5101b0e9864b374f":"1vsnu","dd785d6583d74527":"8VpKU","67dc70456bd21d32":"l36PV","31ffc50746fcd0c":"a13Rs","d7bbca23e674c6e4":"d57uW","cc3f384d7e76b9f0":"4m75i","116fca90102f5fcc":"2Upad","ce5f7f268fd754b1":"8S5hK"}],"l36PV":[function(require,module,exports) {
 var $TypeError = TypeError;
 var MAX_SAFE_INTEGER = 0x1FFFFFFFFFFFFF; // 2 ** 53 - 1 == 9007199254740991
 module.exports = function(it) {
@@ -11105,7 +11100,7 @@ module.exports = function(it) {
     return it;
 };
 
-},{}],"1RGyJ":[function(require,module,exports) {
+},{}],"7LQkq":[function(require,module,exports) {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
 parcelHelpers.export(exports, "default", ()=>GravatarSource);
@@ -11146,7 +11141,7 @@ var GravatarSource = /*#__PURE__*/ (0, _createClassDefault.default)(function Gra
     md5Email: (0, _propTypesDefault.default).string
 });
 
-},{"@babel/runtime/helpers/createClass":"2yzPp","@babel/runtime/helpers/classCallCheck":"3nRml","@babel/runtime/helpers/defineProperty":"4x6r7","prop-types":"7wKI2","md5":"jZ5V0","../utils":"kE0JY","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"jZ5V0":[function(require,module,exports) {
+},{"@babel/runtime/helpers/createClass":"5H0F2","@babel/runtime/helpers/classCallCheck":"1wLuj","@babel/runtime/helpers/defineProperty":"lDZQ4","prop-types":"jFJ5I","md5":"96SFk","../utils":"4BiX7","@parcel/transformer-js/src/esmodule-helpers.js":"5oERU"}],"96SFk":[function(require,module,exports) {
 (function() {
     var crypt = require("766d71fddf93dabc"), utf8 = require("5b4cdf0af793dd8c").utf8, isBuffer = require("909313eb327dc7a5"), bin = require("5b4cdf0af793dd8c").bin, // The core
     md5 = function(message, options) {
@@ -11270,7 +11265,7 @@ var GravatarSource = /*#__PURE__*/ (0, _createClassDefault.default)(function Gra
     };
 })();
 
-},{"766d71fddf93dabc":"fdR42","5b4cdf0af793dd8c":"bvGEx","909313eb327dc7a5":"9JmUB"}],"fdR42":[function(require,module,exports) {
+},{"766d71fddf93dabc":"bgher","5b4cdf0af793dd8c":"eQWKJ","909313eb327dc7a5":"87831"}],"bgher":[function(require,module,exports) {
 (function() {
     var base64map = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/", crypt = {
         // Bit-wise rotation left
@@ -11340,7 +11335,7 @@ var GravatarSource = /*#__PURE__*/ (0, _createClassDefault.default)(function Gra
     module.exports = crypt;
 })();
 
-},{}],"bvGEx":[function(require,module,exports) {
+},{}],"eQWKJ":[function(require,module,exports) {
 var charenc = {
     // UTF-8 encoding
     utf8: {
@@ -11369,7 +11364,7 @@ var charenc = {
 };
 module.exports = charenc;
 
-},{}],"9JmUB":[function(require,module,exports) {
+},{}],"87831":[function(require,module,exports) {
 /*!
  * Determine if an object is a Buffer
  *
@@ -11388,7 +11383,7 @@ function isSlowBuffer(obj) {
     return typeof obj.readFloatLE === "function" && typeof obj.slice === "function" && isBuffer(obj.slice(0, 0));
 }
 
-},{}],"9xyGN":[function(require,module,exports) {
+},{}],"kjYFT":[function(require,module,exports) {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
 parcelHelpers.export(exports, "default", ()=>FacebookSource);
@@ -11428,7 +11423,7 @@ var FacebookSource = /*#__PURE__*/ (0, _createClassDefault.default)(function Fac
     facebookId: (0, _propTypesDefault.default).string
 });
 
-},{"@babel/runtime/helpers/createClass":"2yzPp","@babel/runtime/helpers/classCallCheck":"3nRml","@babel/runtime/helpers/defineProperty":"4x6r7","core-js-pure/stable/instance/concat.js":"aiUCw","prop-types":"7wKI2","../utils":"kE0JY","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"dTPTM":[function(require,module,exports) {
+},{"@babel/runtime/helpers/createClass":"5H0F2","@babel/runtime/helpers/classCallCheck":"1wLuj","@babel/runtime/helpers/defineProperty":"lDZQ4","core-js-pure/stable/instance/concat.js":"1Mxgc","prop-types":"jFJ5I","../utils":"4BiX7","@parcel/transformer-js/src/esmodule-helpers.js":"5oERU"}],"cCgW8":[function(require,module,exports) {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
 parcelHelpers.export(exports, "default", ()=>GithubSource);
@@ -11465,7 +11460,7 @@ var GithubSource = /*#__PURE__*/ (0, _createClassDefault.default)(function Githu
     githubHandle: (0, _propTypesDefault.default).string
 });
 
-},{"@babel/runtime/helpers/createClass":"2yzPp","@babel/runtime/helpers/classCallCheck":"3nRml","@babel/runtime/helpers/defineProperty":"4x6r7","prop-types":"7wKI2","../utils":"kE0JY","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"clafp":[function(require,module,exports) {
+},{"@babel/runtime/helpers/createClass":"5H0F2","@babel/runtime/helpers/classCallCheck":"1wLuj","@babel/runtime/helpers/defineProperty":"lDZQ4","prop-types":"jFJ5I","../utils":"4BiX7","@parcel/transformer-js/src/esmodule-helpers.js":"5oERU"}],"9foe0":[function(require,module,exports) {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
 parcelHelpers.export(exports, "default", ()=>SkypeSource);
@@ -11499,7 +11494,7 @@ var SkypeSource = /*#__PURE__*/ (0, _createClassDefault.default)(function SkypeS
     skypeId: (0, _propTypesDefault.default).string
 });
 
-},{"@babel/runtime/helpers/createClass":"2yzPp","@babel/runtime/helpers/classCallCheck":"3nRml","@babel/runtime/helpers/defineProperty":"4x6r7","prop-types":"7wKI2","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"drpHG":[function(require,module,exports) {
+},{"@babel/runtime/helpers/createClass":"5H0F2","@babel/runtime/helpers/classCallCheck":"1wLuj","@babel/runtime/helpers/defineProperty":"lDZQ4","prop-types":"jFJ5I","@parcel/transformer-js/src/esmodule-helpers.js":"5oERU"}],"xBnCL":[function(require,module,exports) {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
 parcelHelpers.export(exports, "default", ()=>ValueSource);
@@ -11573,7 +11568,7 @@ var ValueSource = /*#__PURE__*/ function() {
     ])
 });
 
-},{"@babel/runtime/helpers/classCallCheck":"3nRml","@babel/runtime/helpers/createClass":"2yzPp","@babel/runtime/helpers/defineProperty":"4x6r7","prop-types":"7wKI2","../utils":"kE0JY","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"cf19P":[function(require,module,exports) {
+},{"@babel/runtime/helpers/classCallCheck":"1wLuj","@babel/runtime/helpers/createClass":"5H0F2","@babel/runtime/helpers/defineProperty":"lDZQ4","prop-types":"jFJ5I","../utils":"4BiX7","@parcel/transformer-js/src/esmodule-helpers.js":"5oERU"}],"lP45n":[function(require,module,exports) {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
 parcelHelpers.export(exports, "default", ()=>SrcSource);
@@ -11605,7 +11600,7 @@ var SrcSource = /*#__PURE__*/ (0, _createClassDefault.default)(function SrcSourc
     src: (0, _propTypesDefault.default).string
 });
 
-},{"@babel/runtime/helpers/createClass":"2yzPp","@babel/runtime/helpers/classCallCheck":"3nRml","@babel/runtime/helpers/defineProperty":"4x6r7","prop-types":"7wKI2","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"29rE3":[function(require,module,exports) {
+},{"@babel/runtime/helpers/createClass":"5H0F2","@babel/runtime/helpers/classCallCheck":"1wLuj","@babel/runtime/helpers/defineProperty":"lDZQ4","prop-types":"jFJ5I","@parcel/transformer-js/src/esmodule-helpers.js":"5oERU"}],"dIgr5":[function(require,module,exports) {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
 parcelHelpers.export(exports, "default", ()=>IconSource);
@@ -11641,14 +11636,14 @@ var IconSource = /*#__PURE__*/ (0, _createClassDefault.default)(function IconSou
     color: (0, _propTypesDefault.default).string
 });
 
-},{"@babel/runtime/helpers/createClass":"2yzPp","@babel/runtime/helpers/classCallCheck":"3nRml","@babel/runtime/helpers/defineProperty":"4x6r7","prop-types":"7wKI2","../utils":"kE0JY","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"gzZ5b":[function(require,module,exports) {
+},{"@babel/runtime/helpers/createClass":"5H0F2","@babel/runtime/helpers/classCallCheck":"1wLuj","@babel/runtime/helpers/defineProperty":"lDZQ4","prop-types":"jFJ5I","../utils":"4BiX7","@parcel/transformer-js/src/esmodule-helpers.js":"5oERU"}],"9EPef":[function(require,module,exports) {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
 var _avatarRedirect = require("./AvatarRedirect");
 var _avatarRedirectDefault = parcelHelpers.interopDefault(_avatarRedirect);
 exports.default = (0, _avatarRedirectDefault.default)("twitter", "twitterHandle");
 
-},{"./AvatarRedirect":"b3MoM","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"b3MoM":[function(require,module,exports) {
+},{"./AvatarRedirect":"dfJV1","@parcel/transformer-js/src/esmodule-helpers.js":"5oERU"}],"dfJV1":[function(require,module,exports) {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
 var _createClass = require("@babel/runtime/helpers/createClass");
@@ -11693,32 +11688,32 @@ function createRedirectSource(network, property) {
 }
 exports.default = createRedirectSource;
 
-},{"@babel/runtime/helpers/createClass":"2yzPp","@babel/runtime/helpers/classCallCheck":"3nRml","@babel/runtime/helpers/defineProperty":"4x6r7","core-js-pure/stable/instance/concat.js":"aiUCw","prop-types":"7wKI2","../utils":"kE0JY","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"5Y8Tk":[function(require,module,exports) {
+},{"@babel/runtime/helpers/createClass":"5H0F2","@babel/runtime/helpers/classCallCheck":"1wLuj","@babel/runtime/helpers/defineProperty":"lDZQ4","core-js-pure/stable/instance/concat.js":"1Mxgc","prop-types":"jFJ5I","../utils":"4BiX7","@parcel/transformer-js/src/esmodule-helpers.js":"5oERU"}],"fgeGH":[function(require,module,exports) {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
 var _avatarRedirect = require("./AvatarRedirect");
 var _avatarRedirectDefault = parcelHelpers.interopDefault(_avatarRedirect);
 exports.default = (0, _avatarRedirectDefault.default)("vkontakte", "vkontakteId");
 
-},{"./AvatarRedirect":"b3MoM","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"kP0aR":[function(require,module,exports) {
+},{"./AvatarRedirect":"dfJV1","@parcel/transformer-js/src/esmodule-helpers.js":"5oERU"}],"1jkwZ":[function(require,module,exports) {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
 var _avatarRedirect = require("./AvatarRedirect");
 var _avatarRedirectDefault = parcelHelpers.interopDefault(_avatarRedirect);
 exports.default = (0, _avatarRedirectDefault.default)("instagram", "instagramId");
 
-},{"./AvatarRedirect":"b3MoM","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"hGGYh":[function(require,module,exports) {
+},{"./AvatarRedirect":"dfJV1","@parcel/transformer-js/src/esmodule-helpers.js":"5oERU"}],"ewJRs":[function(require,module,exports) {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
 var _avatarRedirect = require("./AvatarRedirect");
 var _avatarRedirectDefault = parcelHelpers.interopDefault(_avatarRedirect);
 exports.default = (0, _avatarRedirectDefault.default)("google", "googleId");
 
-},{"./AvatarRedirect":"b3MoM","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"2hYBu":[function(require,module,exports) {
-var $parcel$ReactRefreshHelpers$d607 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
+},{"./AvatarRedirect":"dfJV1","@parcel/transformer-js/src/esmodule-helpers.js":"5oERU"}],"gJPKA":[function(require,module,exports) {
+var $parcel$ReactRefreshHelpers$c762 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
 var prevRefreshReg = window.$RefreshReg$;
 var prevRefreshSig = window.$RefreshSig$;
-$parcel$ReactRefreshHelpers$d607.prelude(module);
+$parcel$ReactRefreshHelpers$c762.prelude(module);
 
 try {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
@@ -11728,12 +11723,12 @@ var _react = require("react");
 const UserContext = /*#__PURE__*/ (0, _react.createContext)(null);
 exports.default = UserContext;
 
-  $parcel$ReactRefreshHelpers$d607.postlude(module);
+  $parcel$ReactRefreshHelpers$c762.postlude(module);
 } finally {
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react":"21dqq","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"km3Ru":[function(require,module,exports) {
+},{"react":"9sfFD","@parcel/transformer-js/src/esmodule-helpers.js":"5oERU","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"ftrPk"}],"ftrPk":[function(require,module,exports) {
 "use strict";
 var Refresh = require("7651d62212652773");
 function debounce(func, delay) {
@@ -11866,7 +11861,7 @@ function registerExportsForReactRefresh(module1) {
     }
 }
 
-},{"7651d62212652773":"786KC"}],"2aKZP":[function(require,module,exports) {
+},{"7651d62212652773":"9Svz8"}],"279sE":[function(require,module,exports) {
 // THIS FILE IS AUTOMATICALLY GENERATED DO NOT EDIT DIRECTLY
 // See update-tlds.js for encoding/decoding format
 // https://data.iana.org/TLD/tlds-alpha-by-domain.txt
@@ -13458,7 +13453,7 @@ const INIT = {
     return tokens.length === 1 && tokens[0].isLink && (!type || tokens[0].t === type);
 }
 
-},{"@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"lEMdM":[function(require,module,exports) {
+},{"@parcel/transformer-js/src/esmodule-helpers.js":"5oERU"}],"fhc4t":[function(require,module,exports) {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
 parcelHelpers.export(exports, "default", ()=>linkifyStr);
@@ -13511,11 +13506,11 @@ if (!String.prototype.linkify) Object.defineProperty(String.prototype, "linkify"
     }
 });
 
-},{"linkifyjs":"2aKZP","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"66WHQ":[function(require,module,exports) {
-var $parcel$ReactRefreshHelpers$84ac = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
+},{"linkifyjs":"279sE","@parcel/transformer-js/src/esmodule-helpers.js":"5oERU"}],"6q2C4":[function(require,module,exports) {
+var $parcel$ReactRefreshHelpers$bfe1 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
 var prevRefreshReg = window.$RefreshReg$;
 var prevRefreshSig = window.$RefreshSig$;
-$parcel$ReactRefreshHelpers$84ac.prelude(module);
+$parcel$ReactRefreshHelpers$bfe1.prelude(module);
 
 try {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
@@ -13561,16 +13556,16 @@ exports.default = Toggle;
 var _c;
 $RefreshReg$(_c, "Toggle");
 
-  $parcel$ReactRefreshHelpers$84ac.postlude(module);
+  $parcel$ReactRefreshHelpers$bfe1.postlude(module);
 } finally {
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"7ZeDF":[function(require,module,exports) {
-var $parcel$ReactRefreshHelpers$37b1 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
+},{"react/jsx-dev-runtime":"eGH5i","react":"9sfFD","@parcel/transformer-js/src/esmodule-helpers.js":"5oERU","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"ftrPk"}],"ibShd":[function(require,module,exports) {
+var $parcel$ReactRefreshHelpers$7ec9 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
 var prevRefreshReg = window.$RefreshReg$;
 var prevRefreshSig = window.$RefreshSig$;
-$parcel$ReactRefreshHelpers$37b1.prelude(module);
+$parcel$ReactRefreshHelpers$7ec9.prelude(module);
 
 try {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
@@ -13616,16 +13611,16 @@ exports.default = ChatRoomSelect;
 var _c;
 $RefreshReg$(_c, "ChatRoomSelect");
 
-  $parcel$ReactRefreshHelpers$37b1.postlude(module);
+  $parcel$ReactRefreshHelpers$7ec9.postlude(module);
 } finally {
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"l3AoH":[function(require,module,exports) {
-var $parcel$ReactRefreshHelpers$e573 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
+},{"react/jsx-dev-runtime":"eGH5i","react":"9sfFD","@parcel/transformer-js/src/esmodule-helpers.js":"5oERU","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"ftrPk"}],"cGTHU":[function(require,module,exports) {
+var $parcel$ReactRefreshHelpers$263c = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
 var prevRefreshReg = window.$RefreshReg$;
 var prevRefreshSig = window.$RefreshSig$;
-$parcel$ReactRefreshHelpers$e573.prelude(module);
+$parcel$ReactRefreshHelpers$263c.prelude(module);
 
 try {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
@@ -13633,68 +13628,9403 @@ parcelHelpers.defineInteropFlag(exports);
 var _jsxDevRuntime = require("react/jsx-dev-runtime");
 var _react = require("react");
 var _reactDefault = parcelHelpers.interopDefault(_react);
+var _userContext = require("../contexts/UserContext");
+var _userContextDefault = parcelHelpers.interopDefault(_userContext);
+var _navDropdown = require("./NavDropdown");
+var _navDropdownDefault = parcelHelpers.interopDefault(_navDropdown);
+var _s = $RefreshSig$();
 function NavBar() {
+    _s();
+    const { user , setUser , setUserDataInClientChecked  } = (0, _react.useContext)((0, _userContextDefault.default));
+    const [isVisibleDropdown, setIsVisibleDropdown] = (0, _react.useState)();
+    const pathSegments = window.location.pathname.split("/");
+    const roomName = pathSegments.pop() || pathSegments.pop();
+    console.log("roomName", roomName);
+    const handleLogout = (e)=>{
+        e.preventDefault();
+        setUser(()=>{
+            localStorage.setItem("crUserData", null);
+            return null;
+        });
+        window.location.reload();
+    };
     return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
         className: "container-fluid navbar position-sticky top-0 border-bottom",
         children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
             className: "container py-3",
-            children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                className: "row",
-                children: [
-                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                        className: "col-8",
-                        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
-                            className: " h3 text-secondary mb-0",
-                            children: "ChatRoom"
+            children: [
+                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                    className: "row d-flex align-items-center",
+                    children: [
+                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                            className: "col-10 col-md-8",
+                            children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
+                                className: " h3 text-secondary mb-0",
+                                children: [
+                                    "ChatRoom",
+                                    roomName && /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                                        className: "ms-3 lead text-black text-uppercase",
+                                        children: `${roomName.replace("-", " ")}`
+                                    }, void 0, false, {
+                                        fileName: "app/components/NavBar.js",
+                                        lineNumber: 29,
+                                        columnNumber: 43
+                                    }, this)
+                                ]
+                            }, void 0, true, {
+                                fileName: "app/components/NavBar.js",
+                                lineNumber: 27,
+                                columnNumber: 7
+                            }, this)
                         }, void 0, false, {
                             fileName: "app/components/NavBar.js",
-                            lineNumber: 11,
-                            columnNumber: 7
+                            lineNumber: 26,
+                            columnNumber: 6
+                        }, this),
+                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                            className: "col-md-4 col-2 d-flex flex-column align-items-end text-right position-relative",
+                            children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
+                                className: "btn btn-sm btn-outline-secondary border-0 rounded-pill",
+                                onClick: ()=>setIsVisibleDropdown(!isVisibleDropdown),
+                                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(UserIcon, {}, void 0, false, {
+                                    fileName: "app/components/NavBar.js",
+                                    lineNumber: 35,
+                                    columnNumber: 29
+                                }, this)
+                            }, void 0, false, {
+                                fileName: "app/components/NavBar.js",
+                                lineNumber: 34,
+                                columnNumber: 25
+                            }, this)
+                        }, void 0, false, {
+                            fileName: "app/components/NavBar.js",
+                            lineNumber: 32,
+                            columnNumber: 6
+                        }, this)
+                    ]
+                }, void 0, true, {
+                    fileName: "app/components/NavBar.js",
+                    lineNumber: 25,
+                    columnNumber: 5
+                }, this),
+                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                    className: "row",
+                    children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                        className: "col-12 d-flex justify-content-end",
+                        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _navDropdownDefault.default), {
+                            handleLogout: handleLogout,
+                            user: user,
+                            isVisible: isVisibleDropdown
+                        }, void 0, false, {
+                            fileName: "app/components/NavBar.js",
+                            lineNumber: 43,
+                            columnNumber: 25
                         }, this)
                     }, void 0, false, {
                         fileName: "app/components/NavBar.js",
-                        lineNumber: 10,
-                        columnNumber: 6
-                    }, this),
-                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                        className: "col-4"
-                    }, void 0, false, {
-                        fileName: "app/components/NavBar.js",
-                        lineNumber: 13,
-                        columnNumber: 6
+                        lineNumber: 42,
+                        columnNumber: 21
                     }, this)
-                ]
-            }, void 0, true, {
-                fileName: "app/components/NavBar.js",
-                lineNumber: 9,
-                columnNumber: 5
-            }, this)
-        }, void 0, false, {
+                }, void 0, false, {
+                    fileName: "app/components/NavBar.js",
+                    lineNumber: 41,
+                    columnNumber: 17
+                }, this)
+            ]
+        }, void 0, true, {
             fileName: "app/components/NavBar.js",
-            lineNumber: 8,
+            lineNumber: 24,
             columnNumber: 4
         }, this)
     }, void 0, false, {
         fileName: "app/components/NavBar.js",
-        lineNumber: 6,
+        lineNumber: 23,
         columnNumber: 3
     }, this);
 }
+_s(NavBar, "LwkGFRr7/VOJXUWdtlGJGVvgGyQ=");
 _c = NavBar;
 exports.default = NavBar;
-var _c;
+const UserIcon = ()=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("svg", {
+        xmlns: "http://www.w3.org/2000/svg",
+        width: "26",
+        height: "26",
+        fill: "currentColor",
+        className: "bi bi-person",
+        viewBox: "0 0 16 16",
+        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("path", {
+            d: "M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6Zm2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0Zm4 8c0 1-1 1-1 1H3s-1 0-1-1 1-4 6-4 6 3 6 4Zm-1-.004c-.001-.246-.154-.986-.832-1.664C11.516 10.68 10.289 10 8 10c-2.29 0-3.516.68-4.168 1.332-.678.678-.83 1.418-.832 1.664h10Z"
+        }, void 0, false, {
+            fileName: "app/components/NavBar.js",
+            lineNumber: 54,
+            columnNumber: 1
+        }, undefined)
+    }, void 0, false, {
+        fileName: "app/components/NavBar.js",
+        lineNumber: 53,
+        columnNumber: 24
+    }, undefined);
+_c1 = UserIcon;
+var _c, _c1;
 $RefreshReg$(_c, "NavBar");
+$RefreshReg$(_c1, "UserIcon");
 
-  $parcel$ReactRefreshHelpers$e573.postlude(module);
+  $parcel$ReactRefreshHelpers$263c.postlude(module);
 } finally {
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"2fA1P":[function(require,module,exports) {
-var $parcel$ReactRefreshHelpers$df03 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
+},{"react/jsx-dev-runtime":"eGH5i","react":"9sfFD","@parcel/transformer-js/src/esmodule-helpers.js":"5oERU","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"ftrPk","../contexts/UserContext":"gJPKA","./NavDropdown":"clOI2"}],"clOI2":[function(require,module,exports) {
+var $parcel$ReactRefreshHelpers$4fe0 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
 var prevRefreshReg = window.$RefreshReg$;
 var prevRefreshSig = window.$RefreshSig$;
-$parcel$ReactRefreshHelpers$df03.prelude(module);
+$parcel$ReactRefreshHelpers$4fe0.prelude(module);
+
+try {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+var _jsxDevRuntime = require("react/jsx-dev-runtime");
+var _react = require("react");
+var _reactDefault = parcelHelpers.interopDefault(_react);
+var _framerMotion = require("framer-motion");
+function NavDropdown({ isVisible , user , handleLogout  }) {
+    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _framerMotion.AnimatePresence), {
+        children: isVisible && /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _framerMotion.motion).div, {
+            initial: {
+                opacity: 0
+            },
+            animate: {
+                opacity: 1
+            },
+            exit: {
+                opacity: 0
+            },
+            style: {
+                top: "55px",
+                maxWidth: "240px"
+            },
+            className: "w-100 position-absolute right-0 shadow-sm",
+            children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                className: "position-relative",
+                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("ul", {
+                    className: "list-group",
+                    children: user && /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _jsxDevRuntime.Fragment), {
+                        children: [
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
+                                className: "list-group-item",
+                                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("a", {
+                                    href: "#",
+                                    className: "link-secondary link-underline-opacity-0",
+                                    onClick: handleLogout,
+                                    children: "Logout"
+                                }, void 0, false, {
+                                    fileName: "app/components/NavDropdown.js",
+                                    lineNumber: 25,
+                                    columnNumber: 37
+                                }, this)
+                            }, void 0, false, {
+                                fileName: "app/components/NavDropdown.js",
+                                lineNumber: 22,
+                                columnNumber: 33
+                            }, this),
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
+                                className: "list-group-item text-small",
+                                children: user?.email
+                            }, void 0, false, {
+                                fileName: "app/components/NavDropdown.js",
+                                lineNumber: 33,
+                                columnNumber: 33
+                            }, this)
+                        ]
+                    }, void 0, true)
+                }, void 0, false, {
+                    fileName: "app/components/NavDropdown.js",
+                    lineNumber: 18,
+                    columnNumber: 7
+                }, this)
+            }, void 0, false, {
+                fileName: "app/components/NavDropdown.js",
+                lineNumber: 16,
+                columnNumber: 6
+            }, this)
+        }, void 0, false, {
+            fileName: "app/components/NavDropdown.js",
+            lineNumber: 9,
+            columnNumber: 5
+        }, this)
+    }, void 0, false, {
+        fileName: "app/components/NavDropdown.js",
+        lineNumber: 7,
+        columnNumber: 3
+    }, this);
+}
+_c = NavDropdown;
+exports.default = NavDropdown;
+var _c;
+$RefreshReg$(_c, "NavDropdown");
+
+  $parcel$ReactRefreshHelpers$4fe0.postlude(module);
+} finally {
+  window.$RefreshReg$ = prevRefreshReg;
+  window.$RefreshSig$ = prevRefreshSig;
+}
+},{"react/jsx-dev-runtime":"eGH5i","react":"9sfFD","framer-motion":"b00XP","@parcel/transformer-js/src/esmodule-helpers.js":"5oERU","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"ftrPk"}],"b00XP":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "createDomMotionComponent", ()=>(0, _motionJs.createDomMotionComponent));
+parcelHelpers.export(exports, "motion", ()=>(0, _motionJs.motion));
+parcelHelpers.export(exports, "m", ()=>(0, _motionMinimalJs.m));
+parcelHelpers.export(exports, "AnimatePresence", ()=>(0, _indexJs.AnimatePresence));
+parcelHelpers.export(exports, "AnimateSharedLayout", ()=>(0, _indexJs1.AnimateSharedLayout));
+parcelHelpers.export(exports, "MotionConfig", ()=>(0, _indexJs2.MotionConfig));
+parcelHelpers.export(exports, "LazyMotion", ()=>(0, _indexJs3.LazyMotion));
+parcelHelpers.export(exports, "domAnimation", ()=>(0, _featuresAnimationJs.domAnimation));
+parcelHelpers.export(exports, "domMax", ()=>(0, _featuresMaxJs.domMax));
+parcelHelpers.export(exports, "useMotionValue", ()=>(0, _useMotionValueJs.useMotionValue));
+parcelHelpers.export(exports, "useMotionTemplate", ()=>(0, _useMotionTemplateJs.useMotionTemplate));
+parcelHelpers.export(exports, "MotionValue", ()=>(0, _indexJs4.MotionValue));
+parcelHelpers.export(exports, "motionValue", ()=>(0, _indexJs4.motionValue));
+parcelHelpers.export(exports, "resolveMotionValue", ()=>(0, _resolveMotionValueJs.resolveMotionValue));
+parcelHelpers.export(exports, "useTransform", ()=>(0, _useTransformJs.useTransform));
+parcelHelpers.export(exports, "useSpring", ()=>(0, _useSpringJs.useSpring));
+parcelHelpers.export(exports, "useVelocity", ()=>(0, _useVelocityJs.useVelocity));
+parcelHelpers.export(exports, "useElementScroll", ()=>(0, _useElementScrollJs.useElementScroll));
+parcelHelpers.export(exports, "useViewportScroll", ()=>(0, _useViewportScrollJs.useViewportScroll));
+parcelHelpers.export(exports, "useReducedMotion", ()=>(0, _useReducedMotionJs.useReducedMotion));
+parcelHelpers.export(exports, "animationControls", ()=>(0, _animationControlsJs.animationControls));
+parcelHelpers.export(exports, "useAnimation", ()=>(0, _useAnimationJs.useAnimation));
+parcelHelpers.export(exports, "animate", ()=>(0, _animateJs.animate));
+parcelHelpers.export(exports, "animateVisualElement", ()=>(0, _animationJs.animateVisualElement));
+parcelHelpers.export(exports, "useCycle", ()=>(0, _useCycleJs.useCycle));
+parcelHelpers.export(exports, "transform", ()=>(0, _transformJs.transform));
+parcelHelpers.export(exports, "isValidMotionProp", ()=>(0, _validPropJs.isValidMotionProp));
+parcelHelpers.export(exports, "useIsPresent", ()=>(0, _usePresenceJs.useIsPresent));
+parcelHelpers.export(exports, "usePresence", ()=>(0, _usePresenceJs.usePresence));
+parcelHelpers.export(exports, "DragControls", ()=>(0, _useDragControlsJs.DragControls));
+parcelHelpers.export(exports, "useDragControls", ()=>(0, _useDragControlsJs.useDragControls));
+parcelHelpers.export(exports, "useDomEvent", ()=>(0, _useDomEventJs.useDomEvent));
+parcelHelpers.export(exports, "createMotionComponent", ()=>(0, _indexJs5.createMotionComponent));
+parcelHelpers.export(exports, "addScaleCorrection", ()=>(0, _scaleCorrectionJs.addScaleCorrection));
+parcelHelpers.export(exports, "snapshotViewportBox", ()=>(0, _utilsJs.snapshotViewportBox));
+parcelHelpers.export(exports, "createCrossfader", ()=>(0, _crossfaderJs.createCrossfader));
+parcelHelpers.export(exports, "visualElement", ()=>(0, _indexJs6.visualElement));
+parcelHelpers.export(exports, "batchLayout", ()=>(0, _batchLayoutJs.batchLayout));
+parcelHelpers.export(exports, "flushLayout", ()=>(0, _batchLayoutJs.flushLayout));
+parcelHelpers.export(exports, "MotionConfigContext", ()=>(0, _motionConfigContextJs.MotionConfigContext));
+parcelHelpers.export(exports, "PresenceContext", ()=>(0, _presenceContextJs.PresenceContext));
+parcelHelpers.export(exports, "LayoutGroupContext", ()=>(0, _layoutGroupContextJs.LayoutGroupContext));
+parcelHelpers.export(exports, "VisibilityAction", ()=>(0, _typesJs.VisibilityAction));
+parcelHelpers.export(exports, "FramerTreeLayoutContext", ()=>(0, _sharedLayoutContextJs.FramerTreeLayoutContext));
+parcelHelpers.export(exports, "SharedLayoutContext", ()=>(0, _sharedLayoutContextJs.SharedLayoutContext));
+parcelHelpers.export(exports, "createBatcher", ()=>(0, _batcherJs.createBatcher));
+parcelHelpers.export(exports, "FlatTree", ()=>(0, _flatTreeJs.FlatTree));
+parcelHelpers.export(exports, "useDeprecatedAnimatedState", ()=>(0, _useAnimatedStateJs.useAnimatedState));
+parcelHelpers.export(exports, "useDeprecatedInvertedScale", ()=>(0, _useInvertedScaleJs.useInvertedScale));
+var _motionJs = require("./render/dom/motion.js");
+var _motionMinimalJs = require("./render/dom/motion-minimal.js");
+var _indexJs = require("./components/AnimatePresence/index.js");
+var _indexJs1 = require("./components/AnimateSharedLayout/index.js");
+var _indexJs2 = require("./components/MotionConfig/index.js");
+var _indexJs3 = require("./components/LazyMotion/index.js");
+var _featuresAnimationJs = require("./render/dom/features-animation.js");
+var _featuresMaxJs = require("./render/dom/features-max.js");
+var _useMotionValueJs = require("./value/use-motion-value.js");
+var _useMotionTemplateJs = require("./value/use-motion-template.js");
+var _indexJs4 = require("./value/index.js");
+var _resolveMotionValueJs = require("./value/utils/resolve-motion-value.js");
+var _useTransformJs = require("./value/use-transform.js");
+var _useSpringJs = require("./value/use-spring.js");
+var _useVelocityJs = require("./value/use-velocity.js");
+var _useElementScrollJs = require("./value/scroll/use-element-scroll.js");
+var _useViewportScrollJs = require("./value/scroll/use-viewport-scroll.js");
+var _useReducedMotionJs = require("./utils/use-reduced-motion.js");
+var _animationControlsJs = require("./animation/animation-controls.js");
+var _useAnimationJs = require("./animation/use-animation.js");
+var _animateJs = require("./animation/animate.js");
+var _animationJs = require("./render/utils/animation.js");
+var _useCycleJs = require("./utils/use-cycle.js");
+var _transformJs = require("./utils/transform.js");
+var _validPropJs = require("./motion/utils/valid-prop.js");
+var _usePresenceJs = require("./components/AnimatePresence/use-presence.js");
+var _useDragControlsJs = require("./gestures/drag/use-drag-controls.js");
+var _useDomEventJs = require("./events/use-dom-event.js");
+var _indexJs5 = require("./motion/index.js");
+var _scaleCorrectionJs = require("./render/dom/projection/scale-correction.js");
+var _utilsJs = require("./render/dom/projection/utils.js");
+var _crossfaderJs = require("./components/AnimateSharedLayout/utils/crossfader.js");
+var _indexJs6 = require("./render/index.js");
+var _batchLayoutJs = require("./render/dom/utils/batch-layout.js");
+var _motionConfigContextJs = require("./context/MotionConfigContext.js");
+var _presenceContextJs = require("./context/PresenceContext.js");
+var _layoutGroupContextJs = require("./context/LayoutGroupContext.js");
+var _typesJs = require("./components/AnimateSharedLayout/types.js");
+var _sharedLayoutContextJs = require("./context/SharedLayoutContext.js");
+var _batcherJs = require("./components/AnimateSharedLayout/utils/batcher.js");
+var _flatTreeJs = require("./render/utils/flat-tree.js");
+var _useAnimatedStateJs = require("./animation/use-animated-state.js");
+var _useInvertedScaleJs = require("./value/use-inverted-scale.js");
+
+},{"./render/dom/motion.js":"b2kDo","./render/dom/motion-minimal.js":false,"./components/AnimatePresence/index.js":"egRLB","./components/AnimateSharedLayout/index.js":false,"./components/MotionConfig/index.js":false,"./components/LazyMotion/index.js":false,"./render/dom/features-animation.js":false,"./render/dom/features-max.js":false,"./value/use-motion-value.js":false,"./value/use-motion-template.js":false,"./value/index.js":"brlv5","./value/utils/resolve-motion-value.js":"tKbTp","./value/use-transform.js":false,"./value/use-spring.js":false,"./value/use-velocity.js":false,"./value/scroll/use-element-scroll.js":false,"./value/scroll/use-viewport-scroll.js":false,"./utils/use-reduced-motion.js":false,"./animation/animation-controls.js":false,"./animation/use-animation.js":false,"./animation/animate.js":false,"./render/utils/animation.js":"jQHlL","./utils/use-cycle.js":false,"./utils/transform.js":false,"./motion/utils/valid-prop.js":"d0QGY","./components/AnimatePresence/use-presence.js":"cZuzC","./gestures/drag/use-drag-controls.js":false,"./events/use-dom-event.js":"kTxxy","./motion/index.js":"ioPYv","./render/dom/projection/scale-correction.js":"ddOEd","./render/dom/projection/utils.js":"i6B7W","./components/AnimateSharedLayout/utils/crossfader.js":false,"./render/index.js":"hsOSl","./render/dom/utils/batch-layout.js":"6IwMV","./context/MotionConfigContext.js":"dwzzE","./context/PresenceContext.js":"iCJR7","./context/LayoutGroupContext.js":"9Gtb0","./components/AnimateSharedLayout/types.js":"4tfpW","./context/SharedLayoutContext.js":"9VpnA","./components/AnimateSharedLayout/utils/batcher.js":"bbm4G","./render/utils/flat-tree.js":"4q3s9","./animation/use-animated-state.js":false,"./value/use-inverted-scale.js":false,"@parcel/transformer-js/src/esmodule-helpers.js":"5oERU"}],"b2kDo":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "createDomMotionComponent", ()=>createDomMotionComponent);
+parcelHelpers.export(exports, "motion", ()=>motion);
+var _tslib = require("tslib");
+var _indexJs = require("../../motion/index.js");
+var _motionProxyJs = require("./motion-proxy.js");
+var _createConfigJs = require("./utils/create-config.js");
+var _gesturesJs = require("../../motion/features/gestures.js");
+var _animationsJs = require("../../motion/features/animations.js");
+var _dragJs = require("../../motion/features/drag.js");
+var _indexJs1 = require("../../motion/features/layout/index.js");
+var _createVisualElementJs = require("./create-visual-element.js");
+var featureBundle = (0, _tslib.__assign)((0, _tslib.__assign)((0, _tslib.__assign)((0, _tslib.__assign)({}, (0, _animationsJs.animations)), (0, _gesturesJs.gestureAnimations)), (0, _dragJs.drag)), (0, _indexJs1.layoutAnimations));
+/**
+ * HTML & SVG components, optimised for use with gestures and animation. These can be used as
+ * drop-in replacements for any HTML & SVG component, all CSS & SVG properties are supported.
+ *
+ * @public
+ */ var motion = /*@__PURE__*/ (0, _motionProxyJs.createMotionProxy)(function(Component, config) {
+    return (0, _createConfigJs.createDomMotionConfig)(Component, config, featureBundle, (0, _createVisualElementJs.createDomVisualElement));
+});
+/**
+ * Create a DOM `motion` component with the provided string. This is primarily intended
+ * as a full alternative to `motion` for consumers who have to support environments that don't
+ * support `Proxy`.
+ *
+ * ```javascript
+ * import { createDomMotionComponent } from "framer-motion"
+ *
+ * const motion = {
+ *   div: createDomMotionComponent('div')
+ * }
+ * ```
+ *
+ * @public
+ */ function createDomMotionComponent(key) {
+    return (0, _indexJs.createMotionComponent)((0, _createConfigJs.createDomMotionConfig)(key, {
+        forwardMotionProps: false
+    }, featureBundle, (0, _createVisualElementJs.createDomVisualElement)));
+}
+
+},{"tslib":"edJ4f","../../motion/index.js":"ioPYv","./motion-proxy.js":"kbo2m","./utils/create-config.js":"05g8D","../../motion/features/gestures.js":"4A032","../../motion/features/animations.js":"5blpz","../../motion/features/drag.js":"53WFv","../../motion/features/layout/index.js":"iRZ09","./create-visual-element.js":"iMB7s","@parcel/transformer-js/src/esmodule-helpers.js":"5oERU"}],"edJ4f":[function(require,module,exports) {
+/******************************************************************************
+Copyright (c) Microsoft Corporation.
+
+Permission to use, copy, modify, and/or distribute this software for any
+purpose with or without fee is hereby granted.
+
+THE SOFTWARE IS PROVIDED "AS IS" AND THE AUTHOR DISCLAIMS ALL WARRANTIES WITH
+REGARD TO THIS SOFTWARE INCLUDING ALL IMPLIED WARRANTIES OF MERCHANTABILITY
+AND FITNESS. IN NO EVENT SHALL THE AUTHOR BE LIABLE FOR ANY SPECIAL, DIRECT,
+INDIRECT, OR CONSEQUENTIAL DAMAGES OR ANY DAMAGES WHATSOEVER RESULTING FROM
+LOSS OF USE, DATA OR PROFITS, WHETHER IN AN ACTION OF CONTRACT, NEGLIGENCE OR
+OTHER TORTIOUS ACTION, ARISING OUT OF OR IN CONNECTION WITH THE USE OR
+PERFORMANCE OF THIS SOFTWARE.
+***************************************************************************** */ /* global Reflect, Promise */ var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "__extends", ()=>__extends);
+parcelHelpers.export(exports, "__assign", ()=>__assign);
+parcelHelpers.export(exports, "__rest", ()=>__rest);
+parcelHelpers.export(exports, "__decorate", ()=>__decorate);
+parcelHelpers.export(exports, "__param", ()=>__param);
+parcelHelpers.export(exports, "__esDecorate", ()=>__esDecorate);
+parcelHelpers.export(exports, "__runInitializers", ()=>__runInitializers);
+parcelHelpers.export(exports, "__propKey", ()=>__propKey);
+parcelHelpers.export(exports, "__setFunctionName", ()=>__setFunctionName);
+parcelHelpers.export(exports, "__metadata", ()=>__metadata);
+parcelHelpers.export(exports, "__awaiter", ()=>__awaiter);
+parcelHelpers.export(exports, "__generator", ()=>__generator);
+parcelHelpers.export(exports, "__createBinding", ()=>__createBinding);
+parcelHelpers.export(exports, "__exportStar", ()=>__exportStar);
+parcelHelpers.export(exports, "__values", ()=>__values);
+parcelHelpers.export(exports, "__read", ()=>__read);
+/** @deprecated */ parcelHelpers.export(exports, "__spread", ()=>__spread);
+/** @deprecated */ parcelHelpers.export(exports, "__spreadArrays", ()=>__spreadArrays);
+parcelHelpers.export(exports, "__spreadArray", ()=>__spreadArray);
+parcelHelpers.export(exports, "__await", ()=>__await);
+parcelHelpers.export(exports, "__asyncGenerator", ()=>__asyncGenerator);
+parcelHelpers.export(exports, "__asyncDelegator", ()=>__asyncDelegator);
+parcelHelpers.export(exports, "__asyncValues", ()=>__asyncValues);
+parcelHelpers.export(exports, "__makeTemplateObject", ()=>__makeTemplateObject);
+parcelHelpers.export(exports, "__importStar", ()=>__importStar);
+parcelHelpers.export(exports, "__importDefault", ()=>__importDefault);
+parcelHelpers.export(exports, "__classPrivateFieldGet", ()=>__classPrivateFieldGet);
+parcelHelpers.export(exports, "__classPrivateFieldSet", ()=>__classPrivateFieldSet);
+parcelHelpers.export(exports, "__classPrivateFieldIn", ()=>__classPrivateFieldIn);
+var extendStatics = function(d, b) {
+    extendStatics = Object.setPrototypeOf || ({
+        __proto__: []
+    }) instanceof Array && function(d, b) {
+        d.__proto__ = b;
+    } || function(d, b) {
+        for(var p in b)if (Object.prototype.hasOwnProperty.call(b, p)) d[p] = b[p];
+    };
+    return extendStatics(d, b);
+};
+function __extends(d, b) {
+    if (typeof b !== "function" && b !== null) throw new TypeError("Class extends value " + String(b) + " is not a constructor or null");
+    extendStatics(d, b);
+    function __() {
+        this.constructor = d;
+    }
+    d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
+}
+var __assign = function() {
+    __assign = Object.assign || function __assign(t) {
+        for(var s, i = 1, n = arguments.length; i < n; i++){
+            s = arguments[i];
+            for(var p in s)if (Object.prototype.hasOwnProperty.call(s, p)) t[p] = s[p];
+        }
+        return t;
+    };
+    return __assign.apply(this, arguments);
+};
+function __rest(s, e) {
+    var t = {};
+    for(var p in s)if (Object.prototype.hasOwnProperty.call(s, p) && e.indexOf(p) < 0) t[p] = s[p];
+    if (s != null && typeof Object.getOwnPropertySymbols === "function") {
+        for(var i = 0, p = Object.getOwnPropertySymbols(s); i < p.length; i++)if (e.indexOf(p[i]) < 0 && Object.prototype.propertyIsEnumerable.call(s, p[i])) t[p[i]] = s[p[i]];
+    }
+    return t;
+}
+function __decorate(decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for(var i = decorators.length - 1; i >= 0; i--)if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+}
+function __param(paramIndex, decorator) {
+    return function(target, key) {
+        decorator(target, key, paramIndex);
+    };
+}
+function __esDecorate(ctor, descriptorIn, decorators, contextIn, initializers, extraInitializers) {
+    function accept(f) {
+        if (f !== void 0 && typeof f !== "function") throw new TypeError("Function expected");
+        return f;
+    }
+    var kind = contextIn.kind, key = kind === "getter" ? "get" : kind === "setter" ? "set" : "value";
+    var target = !descriptorIn && ctor ? contextIn["static"] ? ctor : ctor.prototype : null;
+    var descriptor = descriptorIn || (target ? Object.getOwnPropertyDescriptor(target, contextIn.name) : {});
+    var _, done = false;
+    for(var i = decorators.length - 1; i >= 0; i--){
+        var context = {};
+        for(var p in contextIn)context[p] = p === "access" ? {} : contextIn[p];
+        for(var p in contextIn.access)context.access[p] = contextIn.access[p];
+        context.addInitializer = function(f) {
+            if (done) throw new TypeError("Cannot add initializers after decoration has completed");
+            extraInitializers.push(accept(f || null));
+        };
+        var result = (0, decorators[i])(kind === "accessor" ? {
+            get: descriptor.get,
+            set: descriptor.set
+        } : descriptor[key], context);
+        if (kind === "accessor") {
+            if (result === void 0) continue;
+            if (result === null || typeof result !== "object") throw new TypeError("Object expected");
+            if (_ = accept(result.get)) descriptor.get = _;
+            if (_ = accept(result.set)) descriptor.set = _;
+            if (_ = accept(result.init)) initializers.unshift(_);
+        } else if (_ = accept(result)) {
+            if (kind === "field") initializers.unshift(_);
+            else descriptor[key] = _;
+        }
+    }
+    if (target) Object.defineProperty(target, contextIn.name, descriptor);
+    done = true;
+}
+function __runInitializers(thisArg, initializers, value) {
+    var useValue = arguments.length > 2;
+    for(var i = 0; i < initializers.length; i++)value = useValue ? initializers[i].call(thisArg, value) : initializers[i].call(thisArg);
+    return useValue ? value : void 0;
+}
+function __propKey(x) {
+    return typeof x === "symbol" ? x : "".concat(x);
+}
+function __setFunctionName(f, name, prefix) {
+    if (typeof name === "symbol") name = name.description ? "[".concat(name.description, "]") : "";
+    return Object.defineProperty(f, "name", {
+        configurable: true,
+        value: prefix ? "".concat(prefix, " ", name) : name
+    });
+}
+function __metadata(metadataKey, metadataValue) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(metadataKey, metadataValue);
+}
+function __awaiter(thisArg, _arguments, P, generator) {
+    function adopt(value) {
+        return value instanceof P ? value : new P(function(resolve) {
+            resolve(value);
+        });
+    }
+    return new (P || (P = Promise))(function(resolve, reject) {
+        function fulfilled(value) {
+            try {
+                step(generator.next(value));
+            } catch (e) {
+                reject(e);
+            }
+        }
+        function rejected(value) {
+            try {
+                step(generator["throw"](value));
+            } catch (e) {
+                reject(e);
+            }
+        }
+        function step(result) {
+            result.done ? resolve(result.value) : adopt(result.value).then(fulfilled, rejected);
+        }
+        step((generator = generator.apply(thisArg, _arguments || [])).next());
+    });
+}
+function __generator(thisArg, body) {
+    var _ = {
+        label: 0,
+        sent: function() {
+            if (t[0] & 1) throw t[1];
+            return t[1];
+        },
+        trys: [],
+        ops: []
+    }, f, y, t, g;
+    return g = {
+        next: verb(0),
+        "throw": verb(1),
+        "return": verb(2)
+    }, typeof Symbol === "function" && (g[Symbol.iterator] = function() {
+        return this;
+    }), g;
+    function verb(n) {
+        return function(v) {
+            return step([
+                n,
+                v
+            ]);
+        };
+    }
+    function step(op) {
+        if (f) throw new TypeError("Generator is already executing.");
+        while(g && (g = 0, op[0] && (_ = 0)), _)try {
+            if (f = 1, y && (t = op[0] & 2 ? y["return"] : op[0] ? y["throw"] || ((t = y["return"]) && t.call(y), 0) : y.next) && !(t = t.call(y, op[1])).done) return t;
+            if (y = 0, t) op = [
+                op[0] & 2,
+                t.value
+            ];
+            switch(op[0]){
+                case 0:
+                case 1:
+                    t = op;
+                    break;
+                case 4:
+                    _.label++;
+                    return {
+                        value: op[1],
+                        done: false
+                    };
+                case 5:
+                    _.label++;
+                    y = op[1];
+                    op = [
+                        0
+                    ];
+                    continue;
+                case 7:
+                    op = _.ops.pop();
+                    _.trys.pop();
+                    continue;
+                default:
+                    if (!(t = _.trys, t = t.length > 0 && t[t.length - 1]) && (op[0] === 6 || op[0] === 2)) {
+                        _ = 0;
+                        continue;
+                    }
+                    if (op[0] === 3 && (!t || op[1] > t[0] && op[1] < t[3])) {
+                        _.label = op[1];
+                        break;
+                    }
+                    if (op[0] === 6 && _.label < t[1]) {
+                        _.label = t[1];
+                        t = op;
+                        break;
+                    }
+                    if (t && _.label < t[2]) {
+                        _.label = t[2];
+                        _.ops.push(op);
+                        break;
+                    }
+                    if (t[2]) _.ops.pop();
+                    _.trys.pop();
+                    continue;
+            }
+            op = body.call(thisArg, _);
+        } catch (e) {
+            op = [
+                6,
+                e
+            ];
+            y = 0;
+        } finally{
+            f = t = 0;
+        }
+        if (op[0] & 5) throw op[1];
+        return {
+            value: op[0] ? op[1] : void 0,
+            done: true
+        };
+    }
+}
+var __createBinding = Object.create ? function(o, m, k, k2) {
+    if (k2 === undefined) k2 = k;
+    var desc = Object.getOwnPropertyDescriptor(m, k);
+    if (!desc || ("get" in desc ? !m.__esModule : desc.writable || desc.configurable)) desc = {
+        enumerable: true,
+        get: function() {
+            return m[k];
+        }
+    };
+    Object.defineProperty(o, k2, desc);
+} : function(o, m, k, k2) {
+    if (k2 === undefined) k2 = k;
+    o[k2] = m[k];
+};
+function __exportStar(m, o) {
+    for(var p in m)if (p !== "default" && !Object.prototype.hasOwnProperty.call(o, p)) __createBinding(o, m, p);
+}
+function __values(o) {
+    var s = typeof Symbol === "function" && Symbol.iterator, m = s && o[s], i = 0;
+    if (m) return m.call(o);
+    if (o && typeof o.length === "number") return {
+        next: function() {
+            if (o && i >= o.length) o = void 0;
+            return {
+                value: o && o[i++],
+                done: !o
+            };
+        }
+    };
+    throw new TypeError(s ? "Object is not iterable." : "Symbol.iterator is not defined.");
+}
+function __read(o, n) {
+    var m = typeof Symbol === "function" && o[Symbol.iterator];
+    if (!m) return o;
+    var i = m.call(o), r, ar = [], e;
+    try {
+        while((n === void 0 || n-- > 0) && !(r = i.next()).done)ar.push(r.value);
+    } catch (error) {
+        e = {
+            error: error
+        };
+    } finally{
+        try {
+            if (r && !r.done && (m = i["return"])) m.call(i);
+        } finally{
+            if (e) throw e.error;
+        }
+    }
+    return ar;
+}
+function __spread() {
+    for(var ar = [], i = 0; i < arguments.length; i++)ar = ar.concat(__read(arguments[i]));
+    return ar;
+}
+function __spreadArrays() {
+    for(var s = 0, i = 0, il = arguments.length; i < il; i++)s += arguments[i].length;
+    for(var r = Array(s), k = 0, i = 0; i < il; i++)for(var a = arguments[i], j = 0, jl = a.length; j < jl; j++, k++)r[k] = a[j];
+    return r;
+}
+function __spreadArray(to, from, pack) {
+    if (pack || arguments.length === 2) {
+        for(var i = 0, l = from.length, ar; i < l; i++)if (ar || !(i in from)) {
+            if (!ar) ar = Array.prototype.slice.call(from, 0, i);
+            ar[i] = from[i];
+        }
+    }
+    return to.concat(ar || Array.prototype.slice.call(from));
+}
+function __await(v) {
+    return this instanceof __await ? (this.v = v, this) : new __await(v);
+}
+function __asyncGenerator(thisArg, _arguments, generator) {
+    if (!Symbol.asyncIterator) throw new TypeError("Symbol.asyncIterator is not defined.");
+    var g = generator.apply(thisArg, _arguments || []), i, q = [];
+    return i = {}, verb("next"), verb("throw"), verb("return"), i[Symbol.asyncIterator] = function() {
+        return this;
+    }, i;
+    function verb(n) {
+        if (g[n]) i[n] = function(v) {
+            return new Promise(function(a, b) {
+                q.push([
+                    n,
+                    v,
+                    a,
+                    b
+                ]) > 1 || resume(n, v);
+            });
+        };
+    }
+    function resume(n, v) {
+        try {
+            step(g[n](v));
+        } catch (e) {
+            settle(q[0][3], e);
+        }
+    }
+    function step(r) {
+        r.value instanceof __await ? Promise.resolve(r.value.v).then(fulfill, reject) : settle(q[0][2], r);
+    }
+    function fulfill(value) {
+        resume("next", value);
+    }
+    function reject(value) {
+        resume("throw", value);
+    }
+    function settle(f, v) {
+        if (f(v), q.shift(), q.length) resume(q[0][0], q[0][1]);
+    }
+}
+function __asyncDelegator(o) {
+    var i, p;
+    return i = {}, verb("next"), verb("throw", function(e) {
+        throw e;
+    }), verb("return"), i[Symbol.iterator] = function() {
+        return this;
+    }, i;
+    function verb(n, f) {
+        i[n] = o[n] ? function(v) {
+            return (p = !p) ? {
+                value: __await(o[n](v)),
+                done: false
+            } : f ? f(v) : v;
+        } : f;
+    }
+}
+function __asyncValues(o) {
+    if (!Symbol.asyncIterator) throw new TypeError("Symbol.asyncIterator is not defined.");
+    var m = o[Symbol.asyncIterator], i;
+    return m ? m.call(o) : (o = typeof __values === "function" ? __values(o) : o[Symbol.iterator](), i = {}, verb("next"), verb("throw"), verb("return"), i[Symbol.asyncIterator] = function() {
+        return this;
+    }, i);
+    function verb(n) {
+        i[n] = o[n] && function(v) {
+            return new Promise(function(resolve, reject) {
+                v = o[n](v), settle(resolve, reject, v.done, v.value);
+            });
+        };
+    }
+    function settle(resolve, reject, d, v) {
+        Promise.resolve(v).then(function(v) {
+            resolve({
+                value: v,
+                done: d
+            });
+        }, reject);
+    }
+}
+function __makeTemplateObject(cooked, raw) {
+    if (Object.defineProperty) Object.defineProperty(cooked, "raw", {
+        value: raw
+    });
+    else cooked.raw = raw;
+    return cooked;
+}
+var __setModuleDefault = Object.create ? function(o, v) {
+    Object.defineProperty(o, "default", {
+        enumerable: true,
+        value: v
+    });
+} : function(o, v) {
+    o["default"] = v;
+};
+function __importStar(mod) {
+    if (mod && mod.__esModule) return mod;
+    var result = {};
+    if (mod != null) {
+        for(var k in mod)if (k !== "default" && Object.prototype.hasOwnProperty.call(mod, k)) __createBinding(result, mod, k);
+    }
+    __setModuleDefault(result, mod);
+    return result;
+}
+function __importDefault(mod) {
+    return mod && mod.__esModule ? mod : {
+        default: mod
+    };
+}
+function __classPrivateFieldGet(receiver, state, kind, f) {
+    if (kind === "a" && !f) throw new TypeError("Private accessor was defined without a getter");
+    if (typeof state === "function" ? receiver !== state || !f : !state.has(receiver)) throw new TypeError("Cannot read private member from an object whose class did not declare it");
+    return kind === "m" ? f : kind === "a" ? f.call(receiver) : f ? f.value : state.get(receiver);
+}
+function __classPrivateFieldSet(receiver, state, value, kind, f) {
+    if (kind === "m") throw new TypeError("Private method is not writable");
+    if (kind === "a" && !f) throw new TypeError("Private accessor was defined without a setter");
+    if (typeof state === "function" ? receiver !== state || !f : !state.has(receiver)) throw new TypeError("Cannot write private member to an object whose class did not declare it");
+    return kind === "a" ? f.call(receiver, value) : f ? f.value = value : state.set(receiver, value), value;
+}
+function __classPrivateFieldIn(state, receiver) {
+    if (receiver === null || typeof receiver !== "object" && typeof receiver !== "function") throw new TypeError("Cannot use 'in' operator on non-object");
+    return typeof state === "function" ? receiver === state : state.has(receiver);
+}
+exports.default = {
+    __extends,
+    __assign,
+    __rest,
+    __decorate,
+    __param,
+    __metadata,
+    __awaiter,
+    __generator,
+    __createBinding,
+    __exportStar,
+    __values,
+    __read,
+    __spread,
+    __spreadArrays,
+    __spreadArray,
+    __await,
+    __asyncGenerator,
+    __asyncDelegator,
+    __asyncValues,
+    __makeTemplateObject,
+    __importStar,
+    __importDefault,
+    __classPrivateFieldGet,
+    __classPrivateFieldSet,
+    __classPrivateFieldIn
+};
+
+},{"@parcel/transformer-js/src/esmodule-helpers.js":"5oERU"}],"ioPYv":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "createMotionComponent", ()=>createMotionComponent);
+var _react = require("react");
+var _useFeaturesJs = require("./features/use-features.js");
+var _motionConfigContextJs = require("../context/MotionConfigContext.js");
+var _indexJs = require("../context/MotionContext/index.js");
+var _useVisualElementJs = require("./utils/use-visual-element.js");
+var _useMotionRefJs = require("./utils/use-motion-ref.js");
+var _createJs = require("../context/MotionContext/create.js");
+var _definitionsJs = require("./features/definitions.js");
+var _isBrowserJs = require("../utils/is-browser.js");
+/**
+ * Create a `motion` component.
+ *
+ * This function accepts a Component argument, which can be either a string (ie "div"
+ * for `motion.div`), or an actual React component.
+ *
+ * Alongside this is a config option which provides a way of rendering the provided
+ * component "offline", or outside the React render cycle.
+ *
+ * @internal
+ */ function createMotionComponent(_a) {
+    var preloadedFeatures = _a.preloadedFeatures, createVisualElement = _a.createVisualElement, useRender = _a.useRender, useVisualState = _a.useVisualState, Component = _a.Component;
+    preloadedFeatures && (0, _definitionsJs.loadFeatures)(preloadedFeatures);
+    function MotionComponent(props, externalRef) {
+        /**
+         * If we're rendering in a static environment, we only visually update the component
+         * as a result of a React-rerender rather than interactions or animations. This
+         * means we don't need to load additional memory structures like VisualElement,
+         * or any gesture/animation features.
+         */ var isStatic = (0, _react.useContext)((0, _motionConfigContextJs.MotionConfigContext)).isStatic;
+        var features = null;
+        /**
+         * Create the tree context. This is memoized and will only trigger renders
+         * when the current tree variant changes in static mode.
+         */ var context = (0, _createJs.useCreateMotionContext)(props, isStatic);
+        /**
+         *
+         */ var visualState = useVisualState(props, isStatic);
+        if (!isStatic && (0, _isBrowserJs.isBrowser)) {
+            /**
+             * Create a VisualElement for this component. A VisualElement provides a common
+             * interface to renderer-specific APIs (ie DOM/Three.js etc) as well as
+             * providing a way of rendering to these APIs outside of the React render loop
+             * for more performant animations and interactions
+             */ context.visualElement = (0, _useVisualElementJs.useVisualElement)(Component, visualState, props, createVisualElement);
+            /**
+             * Load Motion gesture and animation features. These are rendered as renderless
+             * components so each feature can optionally make use of React lifecycle methods.
+             *
+             * TODO: The intention is to move these away from a React-centric to a
+             * VisualElement-centric lifecycle scheme.
+             */ features = (0, _useFeaturesJs.useFeatures)(props, context.visualElement, preloadedFeatures);
+        }
+        /**
+         * The mount order and hierarchy is specific to ensure our element ref
+         * is hydrated by the time features fire their effects.
+         */ return _react.createElement(_react.Fragment, null, _react.createElement((0, _indexJs.MotionContext).Provider, {
+            value: context
+        }, useRender(Component, props, (0, _useMotionRefJs.useMotionRef)(visualState, context.visualElement, externalRef), visualState, isStatic)), features);
+    }
+    return (0, _react.forwardRef)(MotionComponent);
+}
+
+},{"react":"9sfFD","./features/use-features.js":"8Ahlx","../context/MotionConfigContext.js":"dwzzE","../context/MotionContext/index.js":"1mMVq","./utils/use-visual-element.js":"6mJcc","./utils/use-motion-ref.js":"dEICd","../context/MotionContext/create.js":"8CRCH","./features/definitions.js":"gOqJp","../utils/is-browser.js":"cXChZ","@parcel/transformer-js/src/esmodule-helpers.js":"5oERU"}],"8Ahlx":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "useFeatures", ()=>useFeatures);
+var _tslib = require("tslib");
+var _react = require("react");
+var _definitionsJs = require("./definitions.js");
+var _heyListen = require("hey-listen");
+var _lazyContextJs = require("../../context/LazyContext.js");
+var featureNames = Object.keys((0, _definitionsJs.featureDefinitions));
+var numFeatures = featureNames.length;
+/**
+ * Load features via renderless components based on the provided MotionProps.
+ */ function useFeatures(props, visualElement, preloadedFeatures) {
+    var features = [];
+    var lazyContext = (0, _react.useContext)((0, _lazyContextJs.LazyContext));
+    if (!visualElement) return null;
+    /**
+     * If we're in development mode, check to make sure we're not rendering a motion component
+     * as a child of LazyMotion, as this will break the file-size benefits of using it.
+     */ if (preloadedFeatures && lazyContext.strict) (0, _heyListen.invariant)(false, "You have rendered a `motion` component within a `LazyMotion` component. This will break tree shaking. Import and render a `m` component instead.");
+    for(var i = 0; i < numFeatures; i++){
+        var name_1 = featureNames[i];
+        var _a = (0, _definitionsJs.featureDefinitions)[name_1], isEnabled = _a.isEnabled, Component = _a.Component;
+        /**
+         * It might be possible in the future to use this moment to
+         * dynamically request functionality. In initial tests this
+         * was producing a lot of duplication amongst bundles.
+         */ if (isEnabled(props) && Component) features.push(_react.createElement(Component, (0, _tslib.__assign)({
+            key: name_1
+        }, props, {
+            visualElement: visualElement
+        })));
+    }
+    return features;
+}
+
+},{"tslib":"edJ4f","react":"9sfFD","./definitions.js":"gOqJp","hey-listen":"fFhg6","../../context/LazyContext.js":"8Pt4K","@parcel/transformer-js/src/esmodule-helpers.js":"5oERU"}],"gOqJp":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "featureDefinitions", ()=>featureDefinitions);
+parcelHelpers.export(exports, "loadFeatures", ()=>loadFeatures);
+var createDefinition = function(propNames) {
+    return {
+        isEnabled: function(props) {
+            return propNames.some(function(name) {
+                return !!props[name];
+            });
+        }
+    };
+};
+var featureDefinitions = {
+    measureLayout: createDefinition([
+        "layout",
+        "layoutId",
+        "drag",
+        "_layoutResetTransform"
+    ]),
+    animation: createDefinition([
+        "animate",
+        "exit",
+        "variants",
+        "whileHover",
+        "whileTap",
+        "whileFocus",
+        "whileDrag"
+    ]),
+    exit: createDefinition([
+        "exit"
+    ]),
+    drag: createDefinition([
+        "drag",
+        "dragControls"
+    ]),
+    focus: createDefinition([
+        "whileFocus"
+    ]),
+    hover: createDefinition([
+        "whileHover",
+        "onHoverStart",
+        "onHoverEnd"
+    ]),
+    tap: createDefinition([
+        "whileTap",
+        "onTap",
+        "onTapStart",
+        "onTapCancel"
+    ]),
+    pan: createDefinition([
+        "onPan",
+        "onPanStart",
+        "onPanSessionStart",
+        "onPanEnd"
+    ]),
+    layoutAnimation: createDefinition([
+        "layout",
+        "layoutId"
+    ])
+};
+function loadFeatures(features) {
+    for(var key in features){
+        var Component = features[key];
+        if (Component !== null) featureDefinitions[key].Component = Component;
+    }
+}
+
+},{"@parcel/transformer-js/src/esmodule-helpers.js":"5oERU"}],"fFhg6":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "invariant", ()=>invariant);
+parcelHelpers.export(exports, "warning", ()=>warning);
+var warning = function() {};
+var invariant = function() {};
+warning = function(check, message) {
+    if (!check && typeof console !== "undefined") console.warn(message);
+};
+invariant = function(check, message) {
+    if (!check) throw new Error(message);
+};
+
+},{"@parcel/transformer-js/src/esmodule-helpers.js":"5oERU"}],"8Pt4K":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "LazyContext", ()=>LazyContext);
+var _react = require("react");
+var LazyContext = (0, _react.createContext)({
+    strict: false
+});
+
+},{"react":"9sfFD","@parcel/transformer-js/src/esmodule-helpers.js":"5oERU"}],"dwzzE":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "MotionConfigContext", ()=>MotionConfigContext);
+var _react = require("react");
+/**
+ * @public
+ */ var MotionConfigContext = (0, _react.createContext)({
+    transformPagePoint: function(p) {
+        return p;
+    },
+    isStatic: false
+});
+
+},{"react":"9sfFD","@parcel/transformer-js/src/esmodule-helpers.js":"5oERU"}],"1mMVq":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "MotionContext", ()=>MotionContext);
+parcelHelpers.export(exports, "useVisualElementContext", ()=>useVisualElementContext);
+var _react = require("react");
+var MotionContext = (0, _react.createContext)({});
+function useVisualElementContext() {
+    return (0, _react.useContext)(MotionContext).visualElement;
+}
+
+},{"react":"9sfFD","@parcel/transformer-js/src/esmodule-helpers.js":"5oERU"}],"6mJcc":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "useVisualElement", ()=>useVisualElement);
+var _tslib = require("tslib");
+var _react = require("react");
+var _presenceContextJs = require("../../context/PresenceContext.js");
+var _usePresenceJs = require("../../components/AnimatePresence/use-presence.js");
+var _layoutGroupContextJs = require("../../context/LayoutGroupContext.js");
+var _indexJs = require("../../context/MotionContext/index.js");
+var _useIsomorphicEffectJs = require("../../utils/use-isomorphic-effect.js");
+var _motionConfigContextJs = require("../../context/MotionConfigContext.js");
+var _lazyContextJs = require("../../context/LazyContext.js");
+function useLayoutId(_a) {
+    var layoutId = _a.layoutId;
+    var layoutGroupId = (0, _react.useContext)((0, _layoutGroupContextJs.LayoutGroupContext));
+    return layoutGroupId && layoutId !== undefined ? layoutGroupId + "-" + layoutId : layoutId;
+}
+function useVisualElement(Component, visualState, props, createVisualElement) {
+    var config = (0, _react.useContext)((0, _motionConfigContextJs.MotionConfigContext));
+    var lazyContext = (0, _react.useContext)((0, _lazyContextJs.LazyContext));
+    var parent = (0, _indexJs.useVisualElementContext)();
+    var presenceContext = (0, _react.useContext)((0, _presenceContextJs.PresenceContext));
+    var layoutId = useLayoutId(props);
+    var visualElementRef = (0, _react.useRef)(undefined);
+    /**
+     * If we haven't preloaded a renderer, check to see if we have one lazy-loaded
+     */ if (!createVisualElement) createVisualElement = lazyContext.renderer;
+    if (!visualElementRef.current && createVisualElement) visualElementRef.current = createVisualElement(Component, {
+        visualState: visualState,
+        parent: parent,
+        props: (0, _tslib.__assign)((0, _tslib.__assign)({}, props), {
+            layoutId: layoutId
+        }),
+        presenceId: presenceContext === null || presenceContext === void 0 ? void 0 : presenceContext.id,
+        blockInitialAnimation: (presenceContext === null || presenceContext === void 0 ? void 0 : presenceContext.initial) === false
+    });
+    var visualElement = visualElementRef.current;
+    (0, _useIsomorphicEffectJs.useIsomorphicLayoutEffect)(function() {
+        if (!visualElement) return;
+        visualElement.setProps((0, _tslib.__assign)((0, _tslib.__assign)((0, _tslib.__assign)({}, config), props), {
+            layoutId: layoutId
+        }));
+        visualElement.isPresent = (0, _usePresenceJs.isPresent)(presenceContext);
+        visualElement.isPresenceRoot = !parent || parent.presenceId !== (presenceContext === null || presenceContext === void 0 ? void 0 : presenceContext.id);
+        /**
+         * Fire a render to ensure the latest state is reflected on-screen.
+         */ visualElement.syncRender();
+    });
+    (0, _react.useEffect)(function() {
+        var _a;
+        if (!visualElement) return;
+        /**
+         * In a future refactor we can replace the features-as-components and
+         * have this loop through them all firing "effect" listeners
+         */ (_a = visualElement.animationState) === null || _a === void 0 || _a.animateChanges();
+    });
+    (0, _useIsomorphicEffectJs.useIsomorphicLayoutEffect)(function() {
+        return function() {
+            return visualElement === null || visualElement === void 0 ? void 0 : visualElement.notifyUnmount();
+        };
+    }, []);
+    return visualElement;
+}
+
+},{"tslib":"edJ4f","react":"9sfFD","../../context/PresenceContext.js":"iCJR7","../../components/AnimatePresence/use-presence.js":"cZuzC","../../context/LayoutGroupContext.js":"9Gtb0","../../context/MotionContext/index.js":"1mMVq","../../utils/use-isomorphic-effect.js":"fejVC","../../context/MotionConfigContext.js":"dwzzE","../../context/LazyContext.js":"8Pt4K","@parcel/transformer-js/src/esmodule-helpers.js":"5oERU"}],"iCJR7":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "PresenceContext", ()=>PresenceContext);
+var _react = require("react");
+/**
+ * @public
+ */ var PresenceContext = (0, _react.createContext)(null);
+
+},{"react":"9sfFD","@parcel/transformer-js/src/esmodule-helpers.js":"5oERU"}],"cZuzC":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "isPresent", ()=>isPresent);
+parcelHelpers.export(exports, "useIsPresent", ()=>useIsPresent);
+parcelHelpers.export(exports, "usePresence", ()=>usePresence);
+var _react = require("react");
+var _presenceContextJs = require("../../context/PresenceContext.js");
+var _useConstantJs = require("../../utils/use-constant.js");
+/**
+ * When a component is the child of `AnimatePresence`, it can use `usePresence`
+ * to access information about whether it's still present in the React tree.
+ *
+ * ```jsx
+ * import { usePresence } from "framer-motion"
+ *
+ * export const Component = () => {
+ *   const [isPresent, safeToRemove] = usePresence()
+ *
+ *   useEffect(() => {
+ *     !isPresent && setTimeout(safeToRemove, 1000)
+ *   }, [isPresent])
+ *
+ *   return <div />
+ * }
+ * ```
+ *
+ * If `isPresent` is `false`, it means that a component has been removed the tree, but
+ * `AnimatePresence` won't really remove it until `safeToRemove` has been called.
+ *
+ * @public
+ */ function usePresence() {
+    var context = (0, _react.useContext)((0, _presenceContextJs.PresenceContext));
+    if (context === null) return [
+        true,
+        null
+    ];
+    var isPresent = context.isPresent, onExitComplete = context.onExitComplete, register = context.register;
+    // It's safe to call the following hooks conditionally (after an early return) because the context will always
+    // either be null or non-null for the lifespan of the component.
+    // Replace with useOpaqueId when released in React
+    var id = useUniqueId();
+    (0, _react.useEffect)(function() {
+        return register(id);
+    }, []);
+    var safeToRemove = function() {
+        return onExitComplete === null || onExitComplete === void 0 ? void 0 : onExitComplete(id);
+    };
+    return !isPresent && onExitComplete ? [
+        false,
+        safeToRemove
+    ] : [
+        true
+    ];
+}
+/**
+ * Similar to `usePresence`, except `useIsPresent` simply returns whether or not the component is present.
+ * There is no `safeToRemove` function.
+ *
+ * ```jsx
+ * import { useIsPresent } from "framer-motion"
+ *
+ * export const Component = () => {
+ *   const isPresent = useIsPresent()
+ *
+ *   useEffect(() => {
+ *     !isPresent && console.log("I've been removed!")
+ *   }, [isPresent])
+ *
+ *   return <div />
+ * }
+ * ```
+ *
+ * @public
+ */ function useIsPresent() {
+    return isPresent((0, _react.useContext)((0, _presenceContextJs.PresenceContext)));
+}
+function isPresent(context) {
+    return context === null ? true : context.isPresent;
+}
+var counter = 0;
+var incrementId = function() {
+    return counter++;
+};
+var useUniqueId = function() {
+    return (0, _useConstantJs.useConstant)(incrementId);
+};
+
+},{"react":"9sfFD","../../context/PresenceContext.js":"iCJR7","../../utils/use-constant.js":"fUKVy","@parcel/transformer-js/src/esmodule-helpers.js":"5oERU"}],"fUKVy":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "useConstant", ()=>useConstant);
+var _react = require("react");
+/**
+ * Creates a constant value over the lifecycle of a component.
+ *
+ * Even if `useMemo` is provided an empty array as its final argument, it doesn't offer
+ * a guarantee that it won't re-run for performance reasons later on. By using `useConstant`
+ * you can ensure that initialisers don't execute twice or more.
+ */ function useConstant(init) {
+    var ref = (0, _react.useRef)(null);
+    if (ref.current === null) ref.current = init();
+    return ref.current;
+}
+
+},{"react":"9sfFD","@parcel/transformer-js/src/esmodule-helpers.js":"5oERU"}],"9Gtb0":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "LayoutGroupContext", ()=>LayoutGroupContext);
+var _react = require("react");
+/**
+ * @internal
+ */ var LayoutGroupContext = (0, _react.createContext)(null);
+
+},{"react":"9sfFD","@parcel/transformer-js/src/esmodule-helpers.js":"5oERU"}],"fejVC":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "useIsomorphicLayoutEffect", ()=>useIsomorphicLayoutEffect);
+var _react = require("react");
+var _isBrowserJs = require("./is-browser.js");
+var useIsomorphicLayoutEffect = (0, _isBrowserJs.isBrowser) ? (0, _react.useLayoutEffect) : (0, _react.useEffect);
+
+},{"react":"9sfFD","./is-browser.js":"cXChZ","@parcel/transformer-js/src/esmodule-helpers.js":"5oERU"}],"cXChZ":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "isBrowser", ()=>isBrowser);
+var isBrowser = typeof window !== "undefined";
+
+},{"@parcel/transformer-js/src/esmodule-helpers.js":"5oERU"}],"dEICd":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "useMotionRef", ()=>useMotionRef);
+var _react = require("react");
+var _isRefObjectJs = require("../../utils/is-ref-object.js");
+/**
+ * Creates a ref function that, when called, hydrates the provided
+ * external ref and VisualElement.
+ */ function useMotionRef(visualState, visualElement, externalRef) {
+    return (0, _react.useCallback)(function(instance) {
+        var _a;
+        instance && ((_a = visualState.mount) === null || _a === void 0 || _a.call(visualState, instance));
+        if (visualElement) instance ? visualElement.mount(instance) : visualElement.unmount();
+        if (externalRef) {
+            if (typeof externalRef === "function") externalRef(instance);
+            else if ((0, _isRefObjectJs.isRefObject)(externalRef)) externalRef.current = instance;
+        }
+    }, /**
+     * Only pass a new ref callback to React if we've received a visual element
+     * factory. Otherwise we'll be mounting/remounting every time externalRef
+     * or other dependencies change.
+     */ [
+        visualElement
+    ]);
+}
+
+},{"react":"9sfFD","../../utils/is-ref-object.js":"RnmQb","@parcel/transformer-js/src/esmodule-helpers.js":"5oERU"}],"RnmQb":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "isRefObject", ()=>isRefObject);
+function isRefObject(ref) {
+    return typeof ref === "object" && Object.prototype.hasOwnProperty.call(ref, "current");
+}
+
+},{"@parcel/transformer-js/src/esmodule-helpers.js":"5oERU"}],"8CRCH":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "useCreateMotionContext", ()=>useCreateMotionContext);
+var _react = require("react");
+var _indexJs = require("./index.js");
+var _utilsJs = require("./utils.js");
+function useCreateMotionContext(props, isStatic) {
+    var _a = (0, _utilsJs.getCurrentTreeVariants)(props, (0, _react.useContext)((0, _indexJs.MotionContext))), initial = _a.initial, animate = _a.animate;
+    return (0, _react.useMemo)(function() {
+        return {
+            initial: initial,
+            animate: animate
+        };
+    }, /**
+     * Only break memoisation in static mode
+     */ isStatic ? [
+        variantLabelsAsDependency(initial),
+        variantLabelsAsDependency(animate)
+    ] : []);
+}
+function variantLabelsAsDependency(prop) {
+    return Array.isArray(prop) ? prop.join(" ") : prop;
+}
+
+},{"react":"9sfFD","./index.js":"1mMVq","./utils.js":"9DsCm","@parcel/transformer-js/src/esmodule-helpers.js":"5oERU"}],"9DsCm":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "getCurrentTreeVariants", ()=>getCurrentTreeVariants);
+var _variantsJs = require("../../render/utils/variants.js");
+function getCurrentTreeVariants(props, context) {
+    if ((0, _variantsJs.checkIfControllingVariants)(props)) {
+        var initial = props.initial, animate = props.animate;
+        return {
+            initial: initial === false || (0, _variantsJs.isVariantLabel)(initial) ? initial : undefined,
+            animate: (0, _variantsJs.isVariantLabel)(animate) ? animate : undefined
+        };
+    }
+    return props.inherit !== false ? context : {};
+}
+
+},{"../../render/utils/variants.js":"aCPPK","@parcel/transformer-js/src/esmodule-helpers.js":"5oERU"}],"aCPPK":[function(require,module,exports) {
+/**
+ * Decides if the supplied variable is an array of variant labels
+ */ var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "checkIfControllingVariants", ()=>checkIfControllingVariants);
+parcelHelpers.export(exports, "checkIfVariantNode", ()=>checkIfVariantNode);
+parcelHelpers.export(exports, "isVariantLabel", ()=>isVariantLabel);
+parcelHelpers.export(exports, "isVariantLabels", ()=>isVariantLabels);
+parcelHelpers.export(exports, "resolveVariant", ()=>resolveVariant);
+parcelHelpers.export(exports, "resolveVariantFromProps", ()=>resolveVariantFromProps);
+function isVariantLabels(v) {
+    return Array.isArray(v);
+}
+/**
+ * Decides if the supplied variable is variant label
+ */ function isVariantLabel(v) {
+    return typeof v === "string" || isVariantLabels(v);
+}
+/**
+ * Creates an object containing the latest state of every MotionValue on a VisualElement
+ */ function getCurrent(visualElement) {
+    var current = {};
+    visualElement.forEachValue(function(value, key) {
+        return current[key] = value.get();
+    });
+    return current;
+}
+/**
+ * Creates an object containing the latest velocity of every MotionValue on a VisualElement
+ */ function getVelocity(visualElement) {
+    var velocity = {};
+    visualElement.forEachValue(function(value, key) {
+        return velocity[key] = value.getVelocity();
+    });
+    return velocity;
+}
+function resolveVariantFromProps(props, definition, custom, currentValues, currentVelocity) {
+    var _a;
+    if (currentValues === void 0) currentValues = {};
+    if (currentVelocity === void 0) currentVelocity = {};
+    if (typeof definition === "string") definition = (_a = props.variants) === null || _a === void 0 ? void 0 : _a[definition];
+    return typeof definition === "function" ? definition(custom !== null && custom !== void 0 ? custom : props.custom, currentValues, currentVelocity) : definition;
+}
+function resolveVariant(visualElement, definition, custom) {
+    var props = visualElement.getProps();
+    return resolveVariantFromProps(props, definition, custom !== null && custom !== void 0 ? custom : props.custom, getCurrent(visualElement), getVelocity(visualElement));
+}
+function checkIfControllingVariants(props) {
+    var _a;
+    return typeof ((_a = props.animate) === null || _a === void 0 ? void 0 : _a.start) === "function" || isVariantLabel(props.initial) || isVariantLabel(props.animate) || isVariantLabel(props.whileHover) || isVariantLabel(props.whileDrag) || isVariantLabel(props.whileTap) || isVariantLabel(props.whileFocus) || isVariantLabel(props.exit);
+}
+function checkIfVariantNode(props) {
+    return Boolean(checkIfControllingVariants(props) || props.variants);
+}
+
+},{"@parcel/transformer-js/src/esmodule-helpers.js":"5oERU"}],"kbo2m":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "createMotionProxy", ()=>createMotionProxy);
+var _indexJs = require("../../motion/index.js");
+/**
+ * Convert any React component into a `motion` component. The provided component
+ * **must** use `React.forwardRef` to the underlying DOM component you want to animate.
+ *
+ * ```jsx
+ * const Component = React.forwardRef((props, ref) => {
+ *   return <div ref={ref} />
+ * })
+ *
+ * const MotionComponent = motion(Component)
+ * ```
+ *
+ * @public
+ */ function createMotionProxy(createConfig) {
+    function custom(Component, customMotionComponentConfig) {
+        if (customMotionComponentConfig === void 0) customMotionComponentConfig = {};
+        return (0, _indexJs.createMotionComponent)(createConfig(Component, customMotionComponentConfig));
+    }
+    /**
+     * A cache of generated `motion` components, e.g `motion.div`, `motion.input` etc.
+     * Rather than generating them anew every render.
+     */ var componentCache = new Map();
+    return new Proxy(custom, {
+        /**
+         * Called when `motion` is referenced with a prop: `motion.div`, `motion.input` etc.
+         * The prop name is passed through as `key` and we can use that to generate a `motion`
+         * DOM component with that name.
+         */ get: function(_target, key) {
+            /**
+             * If this element doesn't exist in the component cache, create it and cache.
+             */ if (!componentCache.has(key)) componentCache.set(key, custom(key));
+            return componentCache.get(key);
+        }
+    });
+}
+
+},{"../../motion/index.js":"ioPYv","@parcel/transformer-js/src/esmodule-helpers.js":"5oERU"}],"05g8D":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "createDomMotionConfig", ()=>createDomMotionConfig);
+var _tslib = require("tslib");
+var _isSvgComponentJs = require("./is-svg-component.js");
+var _useRenderJs = require("../use-render.js");
+var _configMotionJs = require("../../svg/config-motion.js");
+var _configMotionJs1 = require("../../html/config-motion.js");
+function createDomMotionConfig(Component, _a, preloadedFeatures, createVisualElement) {
+    var _b = _a.forwardMotionProps, forwardMotionProps = _b === void 0 ? false : _b;
+    var baseConfig = (0, _isSvgComponentJs.isSVGComponent)(Component) ? (0, _configMotionJs.svgMotionConfig) : (0, _configMotionJs1.htmlMotionConfig);
+    return (0, _tslib.__assign)((0, _tslib.__assign)({}, baseConfig), {
+        preloadedFeatures: preloadedFeatures,
+        useRender: (0, _useRenderJs.createUseRender)(forwardMotionProps),
+        createVisualElement: createVisualElement,
+        Component: Component
+    });
+}
+
+},{"tslib":"edJ4f","./is-svg-component.js":"flpaS","../use-render.js":"2oJDW","../../svg/config-motion.js":"cfVp0","../../html/config-motion.js":"3eOo9","@parcel/transformer-js/src/esmodule-helpers.js":"5oERU"}],"flpaS":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "isSVGComponent", ()=>isSVGComponent);
+var _lowercaseElementsJs = require("../../svg/lowercase-elements.js");
+function isSVGComponent(Component) {
+    if (/**
+     * If it's not a string, it's a custom React component. Currently we only support
+     * HTML custom React components.
+     */ typeof Component !== "string" || /**
+         * If it contains a dash, the element is a custom HTML webcomponent.
+         */ Component.includes("-")) return false;
+    else if (/**
+     * If it's in our list of lowercase SVG tags, it's an SVG component
+     */ (0, _lowercaseElementsJs.lowercaseSVGElements).indexOf(Component) > -1 || /**
+         * If it contains a capital letter, it's an SVG component
+         */ /[A-Z]/.test(Component)) return true;
+    return false;
+}
+
+},{"../../svg/lowercase-elements.js":"6Wq9D","@parcel/transformer-js/src/esmodule-helpers.js":"5oERU"}],"6Wq9D":[function(require,module,exports) {
+/**
+ * We keep these listed seperately as we use the lowercase tag names as part
+ * of the runtime bundle to detect SVG components
+ */ var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "lowercaseSVGElements", ()=>lowercaseSVGElements);
+var lowercaseSVGElements = [
+    "animate",
+    "circle",
+    "defs",
+    "desc",
+    "ellipse",
+    "g",
+    "image",
+    "line",
+    "filter",
+    "marker",
+    "mask",
+    "metadata",
+    "path",
+    "pattern",
+    "polygon",
+    "polyline",
+    "rect",
+    "stop",
+    "svg",
+    "switch",
+    "symbol",
+    "text",
+    "tspan",
+    "use",
+    "view"
+];
+
+},{"@parcel/transformer-js/src/esmodule-helpers.js":"5oERU"}],"2oJDW":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "createUseRender", ()=>createUseRender);
+var _tslib = require("tslib");
+var _react = require("react");
+var _usePropsJs = require("../html/use-props.js");
+var _filterPropsJs = require("./utils/filter-props.js");
+var _isSvgComponentJs = require("./utils/is-svg-component.js");
+var _usePropsJs1 = require("../svg/use-props.js");
+function createUseRender(forwardMotionProps) {
+    if (forwardMotionProps === void 0) forwardMotionProps = false;
+    var useRender = function(Component, props, ref, _a, isStatic) {
+        var latestValues = _a.latestValues;
+        var useVisualProps = (0, _isSvgComponentJs.isSVGComponent)(Component) ? (0, _usePropsJs1.useSVGProps) : (0, _usePropsJs.useHTMLProps);
+        var visualProps = useVisualProps(props, latestValues, isStatic);
+        var filteredProps = (0, _filterPropsJs.filterProps)(props, typeof Component === "string", forwardMotionProps);
+        var elementProps = (0, _tslib.__assign)((0, _tslib.__assign)((0, _tslib.__assign)({}, filteredProps), visualProps), {
+            ref: ref
+        });
+        return (0, _react.createElement)(Component, elementProps);
+    };
+    return useRender;
+}
+
+},{"tslib":"edJ4f","react":"9sfFD","../html/use-props.js":"3qxqp","./utils/filter-props.js":"8Wche","./utils/is-svg-component.js":"flpaS","../svg/use-props.js":"9JRPg","@parcel/transformer-js/src/esmodule-helpers.js":"5oERU"}],"3qxqp":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "copyRawValuesOnly", ()=>copyRawValuesOnly);
+parcelHelpers.export(exports, "useHTMLProps", ()=>useHTMLProps);
+parcelHelpers.export(exports, "useStyle", ()=>useStyle);
+var _tslib = require("tslib");
+var _react = require("react");
+var _isForcedMotionValueJs = require("../../motion/utils/is-forced-motion-value.js");
+var _isMotionValueJs = require("../../value/utils/is-motion-value.js");
+var _buildStylesJs = require("./utils/build-styles.js");
+var _createRenderStateJs = require("./utils/create-render-state.js");
+function copyRawValuesOnly(target, source, props) {
+    for(var key in source)if (!(0, _isMotionValueJs.isMotionValue)(source[key]) && !(0, _isForcedMotionValueJs.isForcedMotionValue)(key, props)) target[key] = source[key];
+}
+function useInitialMotionValues(_a, visualState, isStatic) {
+    var transformTemplate = _a.transformTemplate;
+    return (0, _react.useMemo)(function() {
+        var state = (0, _createRenderStateJs.createHtmlRenderState)();
+        (0, _buildStylesJs.buildHTMLStyles)(state, visualState, undefined, undefined, {
+            enableHardwareAcceleration: !isStatic
+        }, transformTemplate);
+        var vars = state.vars, style = state.style;
+        return (0, _tslib.__assign)((0, _tslib.__assign)({}, vars), style);
+    }, [
+        visualState
+    ]);
+}
+function useStyle(props, visualState, isStatic) {
+    var styleProp = props.style || {};
+    var style = {};
+    /**
+     * Copy non-Motion Values straight into style
+     */ copyRawValuesOnly(style, styleProp, props);
+    Object.assign(style, useInitialMotionValues(props, visualState, isStatic));
+    if (props.transformValues) style = props.transformValues(style);
+    return style;
+}
+function useHTMLProps(props, visualState, isStatic) {
+    // The `any` isn't ideal but it is the type of createElement props argument
+    var htmlProps = {};
+    var style = useStyle(props, visualState, isStatic);
+    if (Boolean(props.drag)) {
+        // Disable the ghost element when a user drags
+        htmlProps.draggable = false;
+        // Disable text selection
+        style.userSelect = style.WebkitUserSelect = style.WebkitTouchCallout = "none";
+        // Disable scrolling on the draggable direction
+        style.touchAction = props.drag === true ? "none" : "pan-" + (props.drag === "x" ? "y" : "x");
+    }
+    htmlProps.style = style;
+    return htmlProps;
+}
+
+},{"tslib":"edJ4f","react":"9sfFD","../../motion/utils/is-forced-motion-value.js":"qm2mR","../../value/utils/is-motion-value.js":"bSPO9","./utils/build-styles.js":"gTgoj","./utils/create-render-state.js":"73cHF","@parcel/transformer-js/src/esmodule-helpers.js":"5oERU"}],"qm2mR":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "isForcedMotionValue", ()=>isForcedMotionValue);
+var _scaleCorrectionJs = require("../../render/dom/projection/scale-correction.js");
+var _transformJs = require("../../render/html/utils/transform.js");
+function isForcedMotionValue(key, _a) {
+    var layout = _a.layout, layoutId = _a.layoutId;
+    return (0, _transformJs.isTransformProp)(key) || (0, _transformJs.isTransformOriginProp)(key) || (layout || layoutId !== undefined) && (!!(0, _scaleCorrectionJs.valueScaleCorrection)[key] || key === "opacity");
+}
+
+},{"../../render/dom/projection/scale-correction.js":"ddOEd","../../render/html/utils/transform.js":"cTSQv","@parcel/transformer-js/src/esmodule-helpers.js":"5oERU"}],"ddOEd":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "addScaleCorrection", ()=>addScaleCorrection);
+parcelHelpers.export(exports, "valueScaleCorrection", ()=>valueScaleCorrection);
+var valueScaleCorrection = {};
+/**
+ * @internal
+ */ function addScaleCorrection(correctors) {
+    for(var key in correctors)valueScaleCorrection[key] = correctors[key];
+}
+
+},{"@parcel/transformer-js/src/esmodule-helpers.js":"5oERU"}],"cTSQv":[function(require,module,exports) {
+/**
+ * A list of all transformable axes. We'll use this list to generated a version
+ * of each axes for each transform.
+ */ var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "isTransformOriginProp", ()=>isTransformOriginProp);
+parcelHelpers.export(exports, "isTransformProp", ()=>isTransformProp);
+parcelHelpers.export(exports, "sortTransformProps", ()=>sortTransformProps);
+parcelHelpers.export(exports, "transformAxes", ()=>transformAxes);
+parcelHelpers.export(exports, "transformProps", ()=>transformProps);
+var transformAxes = [
+    "",
+    "X",
+    "Y",
+    "Z"
+];
+/**
+ * An ordered array of each transformable value. By default, transform values
+ * will be sorted to this order.
+ */ var order = [
+    "translate",
+    "scale",
+    "rotate",
+    "skew"
+];
+/**
+ * Generate a list of every possible transform key.
+ */ var transformProps = [
+    "transformPerspective",
+    "x",
+    "y",
+    "z"
+];
+order.forEach(function(operationKey) {
+    return transformAxes.forEach(function(axesKey) {
+        return transformProps.push(operationKey + axesKey);
+    });
+});
+/**
+ * A function to use with Array.sort to sort transform keys by their default order.
+ */ function sortTransformProps(a, b) {
+    return transformProps.indexOf(a) - transformProps.indexOf(b);
+}
+/**
+ * A quick lookup for transform props.
+ */ var transformPropSet = new Set(transformProps);
+function isTransformProp(key) {
+    return transformPropSet.has(key);
+}
+/**
+ * A quick lookup for transform origin props
+ */ var transformOriginProps = new Set([
+    "originX",
+    "originY",
+    "originZ"
+]);
+function isTransformOriginProp(key) {
+    return transformOriginProps.has(key);
+}
+
+},{"@parcel/transformer-js/src/esmodule-helpers.js":"5oERU"}],"bSPO9":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "isMotionValue", ()=>isMotionValue);
+var isMotionValue = function(value) {
+    return value !== null && typeof value === "object" && value.getVelocity;
+};
+
+},{"@parcel/transformer-js/src/esmodule-helpers.js":"5oERU"}],"gTgoj":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "buildHTMLStyles", ()=>buildHTMLStyles);
+var _scaleCorrectionJs = require("../../dom/projection/scale-correction.js");
+var _buildTransformJs = require("./build-transform.js");
+var _isCssVariableJs = require("../../dom/utils/is-css-variable.js");
+var _transformJs = require("./transform.js");
+var _getAsTypeJs = require("../../dom/value-types/get-as-type.js");
+var _numberJs = require("../../dom/value-types/number.js");
+function buildHTMLStyles(state, latestValues, projection, layoutState, options, transformTemplate, buildProjectionTransform, buildProjectionTransformOrigin) {
+    var _a;
+    var style = state.style, vars = state.vars, transform = state.transform, transformKeys = state.transformKeys, transformOrigin = state.transformOrigin;
+    // Empty the transformKeys array. As we're throwing out refs to its items
+    // this might not be as cheap as suspected. Maybe using the array as a buffer
+    // with a manual incrementation would be better.
+    transformKeys.length = 0;
+    // Track whether we encounter any transform or transformOrigin values.
+    var hasTransform = false;
+    var hasTransformOrigin = false;
+    // Does the calculated transform essentially equal "none"?
+    var transformIsNone = true;
+    /**
+     * Loop over all our latest animated values and decide whether to handle them
+     * as a style or CSS variable.
+     *
+     * Transforms and transform origins are kept seperately for further processing.
+     */ for(var key in latestValues){
+        var value = latestValues[key];
+        /**
+         * If this is a CSS variable we don't do any further processing.
+         */ if ((0, _isCssVariableJs.isCSSVariable)(key)) {
+            vars[key] = value;
+            continue;
+        }
+        // Convert the value to its default value type, ie 0 -> "0px"
+        var valueType = (0, _numberJs.numberValueTypes)[key];
+        var valueAsType = (0, _getAsTypeJs.getValueAsType)(value, valueType);
+        if ((0, _transformJs.isTransformProp)(key)) {
+            // If this is a transform, flag to enable further transform processing
+            hasTransform = true;
+            transform[key] = valueAsType;
+            transformKeys.push(key);
+            // If we already know we have a non-default transform, early return
+            if (!transformIsNone) continue;
+            // Otherwise check to see if this is a default transform
+            if (value !== ((_a = valueType.default) !== null && _a !== void 0 ? _a : 0)) transformIsNone = false;
+        } else if ((0, _transformJs.isTransformOriginProp)(key)) {
+            transformOrigin[key] = valueAsType;
+            // If this is a transform origin, flag and enable further transform-origin processing
+            hasTransformOrigin = true;
+        } else /**
+             * If layout projection is on, and we need to perform scale correction for this
+             * value type, perform it.
+             */ if ((projection === null || projection === void 0 ? void 0 : projection.isHydrated) && (layoutState === null || layoutState === void 0 ? void 0 : layoutState.isHydrated) && (0, _scaleCorrectionJs.valueScaleCorrection)[key]) {
+            var correctedValue = (0, _scaleCorrectionJs.valueScaleCorrection)[key].process(value, layoutState, projection);
+            /**
+                 * Scale-correctable values can define a number of other values to break
+                 * down into. For instance borderRadius needs applying to borderBottomLeftRadius etc
+                 */ var applyTo = (0, _scaleCorrectionJs.valueScaleCorrection)[key].applyTo;
+            if (applyTo) {
+                var num = applyTo.length;
+                for(var i = 0; i < num; i++)style[applyTo[i]] = correctedValue;
+            } else style[key] = correctedValue;
+        } else style[key] = valueAsType;
+    }
+    if (layoutState && projection && buildProjectionTransform && buildProjectionTransformOrigin) {
+        style.transform = buildProjectionTransform(layoutState.deltaFinal, layoutState.treeScale, hasTransform ? transform : undefined);
+        if (transformTemplate) style.transform = transformTemplate(transform, style.transform);
+        style.transformOrigin = buildProjectionTransformOrigin(layoutState);
+    } else {
+        if (hasTransform) style.transform = (0, _buildTransformJs.buildTransform)(state, options, transformIsNone, transformTemplate);
+        if (hasTransformOrigin) style.transformOrigin = (0, _buildTransformJs.buildTransformOrigin)(transformOrigin);
+    }
+}
+
+},{"../../dom/projection/scale-correction.js":"ddOEd","./build-transform.js":"f7Zbh","../../dom/utils/is-css-variable.js":"5y6Ux","./transform.js":"cTSQv","../../dom/value-types/get-as-type.js":"j7HOU","../../dom/value-types/number.js":"iIQuy","@parcel/transformer-js/src/esmodule-helpers.js":"5oERU"}],"f7Zbh":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "buildTransform", ()=>buildTransform);
+parcelHelpers.export(exports, "buildTransformOrigin", ()=>buildTransformOrigin);
+var _transformJs = require("./transform.js");
+var translateAlias = {
+    x: "translateX",
+    y: "translateY",
+    z: "translateZ",
+    transformPerspective: "perspective"
+};
+/**
+ * Build a CSS transform style from individual x/y/scale etc properties.
+ *
+ * This outputs with a default order of transforms/scales/rotations, this can be customised by
+ * providing a transformTemplate function.
+ */ function buildTransform(_a, _b, transformIsDefault, transformTemplate) {
+    var transform = _a.transform, transformKeys = _a.transformKeys;
+    var _c = _b.enableHardwareAcceleration, enableHardwareAcceleration = _c === void 0 ? true : _c, _d = _b.allowTransformNone, allowTransformNone = _d === void 0 ? true : _d;
+    // The transform string we're going to build into.
+    var transformString = "";
+    // Transform keys into their default order - this will determine the output order.
+    transformKeys.sort((0, _transformJs.sortTransformProps));
+    // Track whether the defined transform has a defined z so we don't add a
+    // second to enable hardware acceleration
+    var transformHasZ = false;
+    // Loop over each transform and build them into transformString
+    var numTransformKeys = transformKeys.length;
+    for(var i = 0; i < numTransformKeys; i++){
+        var key = transformKeys[i];
+        transformString += (translateAlias[key] || key) + "(" + transform[key] + ") ";
+        if (key === "z") transformHasZ = true;
+    }
+    if (!transformHasZ && enableHardwareAcceleration) transformString += "translateZ(0)";
+    else transformString = transformString.trim();
+    // If we have a custom `transform` template, pass our transform values and
+    // generated transformString to that before returning
+    if (transformTemplate) transformString = transformTemplate(transform, transformIsDefault ? "" : transformString);
+    else if (allowTransformNone && transformIsDefault) transformString = "none";
+    return transformString;
+}
+/**
+ * Build a transformOrigin style. Uses the same defaults as the browser for
+ * undefined origins.
+ */ function buildTransformOrigin(_a) {
+    var _b = _a.originX, originX = _b === void 0 ? "50%" : _b, _c = _a.originY, originY = _c === void 0 ? "50%" : _c, _d = _a.originZ, originZ = _d === void 0 ? 0 : _d;
+    return originX + " " + originY + " " + originZ;
+}
+
+},{"./transform.js":"cTSQv","@parcel/transformer-js/src/esmodule-helpers.js":"5oERU"}],"5y6Ux":[function(require,module,exports) {
+/**
+ * Returns true if the provided key is a CSS variable
+ */ var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "isCSSVariable", ()=>isCSSVariable);
+function isCSSVariable(key) {
+    return key.startsWith("--");
+}
+
+},{"@parcel/transformer-js/src/esmodule-helpers.js":"5oERU"}],"j7HOU":[function(require,module,exports) {
+/**
+ * Provided a value and a ValueType, returns the value as that value type.
+ */ var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "getValueAsType", ()=>getValueAsType);
+var getValueAsType = function(value, type) {
+    return type && typeof value === "number" ? type.transform(value) : value;
+};
+
+},{"@parcel/transformer-js/src/esmodule-helpers.js":"5oERU"}],"iIQuy":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "numberValueTypes", ()=>numberValueTypes);
+var _styleValueTypes = require("style-value-types");
+var _typeIntJs = require("./type-int.js");
+var numberValueTypes = {
+    // Border props
+    borderWidth: (0, _styleValueTypes.px),
+    borderTopWidth: (0, _styleValueTypes.px),
+    borderRightWidth: (0, _styleValueTypes.px),
+    borderBottomWidth: (0, _styleValueTypes.px),
+    borderLeftWidth: (0, _styleValueTypes.px),
+    borderRadius: (0, _styleValueTypes.px),
+    radius: (0, _styleValueTypes.px),
+    borderTopLeftRadius: (0, _styleValueTypes.px),
+    borderTopRightRadius: (0, _styleValueTypes.px),
+    borderBottomRightRadius: (0, _styleValueTypes.px),
+    borderBottomLeftRadius: (0, _styleValueTypes.px),
+    // Positioning props
+    width: (0, _styleValueTypes.px),
+    maxWidth: (0, _styleValueTypes.px),
+    height: (0, _styleValueTypes.px),
+    maxHeight: (0, _styleValueTypes.px),
+    size: (0, _styleValueTypes.px),
+    top: (0, _styleValueTypes.px),
+    right: (0, _styleValueTypes.px),
+    bottom: (0, _styleValueTypes.px),
+    left: (0, _styleValueTypes.px),
+    // Spacing props
+    padding: (0, _styleValueTypes.px),
+    paddingTop: (0, _styleValueTypes.px),
+    paddingRight: (0, _styleValueTypes.px),
+    paddingBottom: (0, _styleValueTypes.px),
+    paddingLeft: (0, _styleValueTypes.px),
+    margin: (0, _styleValueTypes.px),
+    marginTop: (0, _styleValueTypes.px),
+    marginRight: (0, _styleValueTypes.px),
+    marginBottom: (0, _styleValueTypes.px),
+    marginLeft: (0, _styleValueTypes.px),
+    // Transform props
+    rotate: (0, _styleValueTypes.degrees),
+    rotateX: (0, _styleValueTypes.degrees),
+    rotateY: (0, _styleValueTypes.degrees),
+    rotateZ: (0, _styleValueTypes.degrees),
+    scale: (0, _styleValueTypes.scale),
+    scaleX: (0, _styleValueTypes.scale),
+    scaleY: (0, _styleValueTypes.scale),
+    scaleZ: (0, _styleValueTypes.scale),
+    skew: (0, _styleValueTypes.degrees),
+    skewX: (0, _styleValueTypes.degrees),
+    skewY: (0, _styleValueTypes.degrees),
+    distance: (0, _styleValueTypes.px),
+    translateX: (0, _styleValueTypes.px),
+    translateY: (0, _styleValueTypes.px),
+    translateZ: (0, _styleValueTypes.px),
+    x: (0, _styleValueTypes.px),
+    y: (0, _styleValueTypes.px),
+    z: (0, _styleValueTypes.px),
+    perspective: (0, _styleValueTypes.px),
+    transformPerspective: (0, _styleValueTypes.px),
+    opacity: (0, _styleValueTypes.alpha),
+    originX: (0, _styleValueTypes.progressPercentage),
+    originY: (0, _styleValueTypes.progressPercentage),
+    originZ: (0, _styleValueTypes.px),
+    // Misc
+    zIndex: (0, _typeIntJs.int),
+    // SVG
+    fillOpacity: (0, _styleValueTypes.alpha),
+    strokeOpacity: (0, _styleValueTypes.alpha),
+    numOctaves: (0, _typeIntJs.int)
+};
+
+},{"style-value-types":"dhngi","./type-int.js":"k8gul","@parcel/transformer-js/src/esmodule-helpers.js":"5oERU"}],"dhngi":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "alpha", ()=>(0, _indexJs.alpha));
+parcelHelpers.export(exports, "number", ()=>(0, _indexJs.number));
+parcelHelpers.export(exports, "scale", ()=>(0, _indexJs.scale));
+parcelHelpers.export(exports, "degrees", ()=>(0, _unitsJs.degrees));
+parcelHelpers.export(exports, "percent", ()=>(0, _unitsJs.percent));
+parcelHelpers.export(exports, "progressPercentage", ()=>(0, _unitsJs.progressPercentage));
+parcelHelpers.export(exports, "px", ()=>(0, _unitsJs.px));
+parcelHelpers.export(exports, "vh", ()=>(0, _unitsJs.vh));
+parcelHelpers.export(exports, "vw", ()=>(0, _unitsJs.vw));
+parcelHelpers.export(exports, "hsla", ()=>(0, _hslaJs.hsla));
+parcelHelpers.export(exports, "rgbUnit", ()=>(0, _rgbaJs.rgbUnit));
+parcelHelpers.export(exports, "rgba", ()=>(0, _rgbaJs.rgba));
+parcelHelpers.export(exports, "hex", ()=>(0, _hexJs.hex));
+parcelHelpers.export(exports, "color", ()=>(0, _indexJs1.color));
+parcelHelpers.export(exports, "complex", ()=>(0, _indexJs2.complex));
+parcelHelpers.export(exports, "filter", ()=>(0, _filterJs.filter));
+var _indexJs = require("./numbers/index.js");
+var _unitsJs = require("./numbers/units.js");
+var _hslaJs = require("./color/hsla.js");
+var _rgbaJs = require("./color/rgba.js");
+var _hexJs = require("./color/hex.js");
+var _indexJs1 = require("./color/index.js");
+var _indexJs2 = require("./complex/index.js");
+var _filterJs = require("./complex/filter.js");
+
+},{"./numbers/index.js":"hpltb","./numbers/units.js":"cl9pj","./color/hsla.js":"jVRQ4","./color/rgba.js":"22zg8","./color/hex.js":"7l3Kn","./color/index.js":"eIeey","./complex/index.js":"lQGCj","./complex/filter.js":"4G5tw","@parcel/transformer-js/src/esmodule-helpers.js":"5oERU"}],"hpltb":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "alpha", ()=>alpha);
+parcelHelpers.export(exports, "number", ()=>number);
+parcelHelpers.export(exports, "scale", ()=>scale);
+var _tslib = require("tslib");
+var _utilsJs = require("../utils.js");
+var number = {
+    test: function(v) {
+        return typeof v === "number";
+    },
+    parse: parseFloat,
+    transform: function(v) {
+        return v;
+    }
+};
+var alpha = (0, _tslib.__assign)((0, _tslib.__assign)({}, number), {
+    transform: (0, _utilsJs.clamp)(0, 1)
+});
+var scale = (0, _tslib.__assign)((0, _tslib.__assign)({}, number), {
+    default: 1
+});
+
+},{"tslib":"edJ4f","../utils.js":"jmQL7","@parcel/transformer-js/src/esmodule-helpers.js":"5oERU"}],"jmQL7":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "clamp", ()=>clamp);
+parcelHelpers.export(exports, "colorRegex", ()=>colorRegex);
+parcelHelpers.export(exports, "floatRegex", ()=>floatRegex);
+parcelHelpers.export(exports, "isString", ()=>isString);
+parcelHelpers.export(exports, "sanitize", ()=>sanitize);
+parcelHelpers.export(exports, "singleColorRegex", ()=>singleColorRegex);
+var clamp = function(min, max) {
+    return function(v) {
+        return Math.max(Math.min(v, max), min);
+    };
+};
+var sanitize = function(v) {
+    return v % 1 ? Number(v.toFixed(5)) : v;
+};
+var floatRegex = /(-)?([\d]*\.?[\d])+/g;
+var colorRegex = /(#[0-9a-f]{6}|#[0-9a-f]{3}|#(?:[0-9a-f]{2}){2,4}|(rgb|hsl)a?\((-?[\d\.]+%?[,\s]+){2,3}\s*\/*\s*[\d\.]+%?\))/gi;
+var singleColorRegex = /^(#[0-9a-f]{3}|#(?:[0-9a-f]{2}){2,4}|(rgb|hsl)a?\((-?[\d\.]+%?[,\s]+){2,3}\s*\/*\s*[\d\.]+%?\))$/i;
+function isString(v) {
+    return typeof v === "string";
+}
+
+},{"@parcel/transformer-js/src/esmodule-helpers.js":"5oERU"}],"cl9pj":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "degrees", ()=>degrees);
+parcelHelpers.export(exports, "percent", ()=>percent);
+parcelHelpers.export(exports, "progressPercentage", ()=>progressPercentage);
+parcelHelpers.export(exports, "px", ()=>px);
+parcelHelpers.export(exports, "vh", ()=>vh);
+parcelHelpers.export(exports, "vw", ()=>vw);
+var _tslib = require("tslib");
+var _utilsJs = require("../utils.js");
+var createUnitType = function(unit) {
+    return {
+        test: function(v) {
+            return (0, _utilsJs.isString)(v) && v.endsWith(unit) && v.split(" ").length === 1;
+        },
+        parse: parseFloat,
+        transform: function(v) {
+            return "" + v + unit;
+        }
+    };
+};
+var degrees = createUnitType("deg");
+var percent = createUnitType("%");
+var px = createUnitType("px");
+var vh = createUnitType("vh");
+var vw = createUnitType("vw");
+var progressPercentage = (0, _tslib.__assign)((0, _tslib.__assign)({}, percent), {
+    parse: function(v) {
+        return percent.parse(v) / 100;
+    },
+    transform: function(v) {
+        return percent.transform(v * 100);
+    }
+});
+
+},{"tslib":"edJ4f","../utils.js":"jmQL7","@parcel/transformer-js/src/esmodule-helpers.js":"5oERU"}],"jVRQ4":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "hsla", ()=>hsla);
+var _indexJs = require("../numbers/index.js");
+var _unitsJs = require("../numbers/units.js");
+var _utilsJs = require("../utils.js");
+var _utilsJs1 = require("./utils.js");
+var hsla = {
+    test: (0, _utilsJs1.isColorString)("hsl", "hue"),
+    parse: (0, _utilsJs1.splitColor)("hue", "saturation", "lightness"),
+    transform: function(_a) {
+        var hue = _a.hue, saturation = _a.saturation, lightness = _a.lightness, _b = _a.alpha, alpha$1 = _b === void 0 ? 1 : _b;
+        return "hsla(" + Math.round(hue) + ", " + (0, _unitsJs.percent).transform((0, _utilsJs.sanitize)(saturation)) + ", " + (0, _unitsJs.percent).transform((0, _utilsJs.sanitize)(lightness)) + ", " + (0, _utilsJs.sanitize)((0, _indexJs.alpha).transform(alpha$1)) + ")";
+    }
+};
+
+},{"../numbers/index.js":"hpltb","../numbers/units.js":"cl9pj","../utils.js":"jmQL7","./utils.js":"49rUM","@parcel/transformer-js/src/esmodule-helpers.js":"5oERU"}],"49rUM":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "isColorString", ()=>isColorString);
+parcelHelpers.export(exports, "splitColor", ()=>splitColor);
+var _utilsJs = require("../utils.js");
+var isColorString = function(type, testProp) {
+    return function(v) {
+        return Boolean((0, _utilsJs.isString)(v) && (0, _utilsJs.singleColorRegex).test(v) && v.startsWith(type) || testProp && Object.prototype.hasOwnProperty.call(v, testProp));
+    };
+};
+var splitColor = function(aName, bName, cName) {
+    return function(v) {
+        var _a;
+        if (!(0, _utilsJs.isString)(v)) return v;
+        var _b = v.match((0, _utilsJs.floatRegex)), a = _b[0], b = _b[1], c = _b[2], alpha = _b[3];
+        return _a = {}, _a[aName] = parseFloat(a), _a[bName] = parseFloat(b), _a[cName] = parseFloat(c), _a.alpha = alpha !== undefined ? parseFloat(alpha) : 1, _a;
+    };
+};
+
+},{"../utils.js":"jmQL7","@parcel/transformer-js/src/esmodule-helpers.js":"5oERU"}],"22zg8":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "rgbUnit", ()=>rgbUnit);
+parcelHelpers.export(exports, "rgba", ()=>rgba);
+var _tslib = require("tslib");
+var _indexJs = require("../numbers/index.js");
+var _utilsJs = require("../utils.js");
+var _utilsJs1 = require("./utils.js");
+var clampRgbUnit = (0, _utilsJs.clamp)(0, 255);
+var rgbUnit = (0, _tslib.__assign)((0, _tslib.__assign)({}, (0, _indexJs.number)), {
+    transform: function(v) {
+        return Math.round(clampRgbUnit(v));
+    }
+});
+var rgba = {
+    test: (0, _utilsJs1.isColorString)("rgb", "red"),
+    parse: (0, _utilsJs1.splitColor)("red", "green", "blue"),
+    transform: function(_a) {
+        var red = _a.red, green = _a.green, blue = _a.blue, _b = _a.alpha, alpha$1 = _b === void 0 ? 1 : _b;
+        return "rgba(" + rgbUnit.transform(red) + ", " + rgbUnit.transform(green) + ", " + rgbUnit.transform(blue) + ", " + (0, _utilsJs.sanitize)((0, _indexJs.alpha).transform(alpha$1)) + ")";
+    }
+};
+
+},{"tslib":"edJ4f","../numbers/index.js":"hpltb","../utils.js":"jmQL7","./utils.js":"49rUM","@parcel/transformer-js/src/esmodule-helpers.js":"5oERU"}],"7l3Kn":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "hex", ()=>hex);
+var _rgbaJs = require("./rgba.js");
+var _utilsJs = require("./utils.js");
+function parseHex(v) {
+    var r = "";
+    var g = "";
+    var b = "";
+    var a = "";
+    if (v.length > 5) {
+        r = v.substr(1, 2);
+        g = v.substr(3, 2);
+        b = v.substr(5, 2);
+        a = v.substr(7, 2);
+    } else {
+        r = v.substr(1, 1);
+        g = v.substr(2, 1);
+        b = v.substr(3, 1);
+        a = v.substr(4, 1);
+        r += r;
+        g += g;
+        b += b;
+        a += a;
+    }
+    return {
+        red: parseInt(r, 16),
+        green: parseInt(g, 16),
+        blue: parseInt(b, 16),
+        alpha: a ? parseInt(a, 16) / 255 : 1
+    };
+}
+var hex = {
+    test: (0, _utilsJs.isColorString)("#"),
+    parse: parseHex,
+    transform: (0, _rgbaJs.rgba).transform
+};
+
+},{"./rgba.js":"22zg8","./utils.js":"49rUM","@parcel/transformer-js/src/esmodule-helpers.js":"5oERU"}],"eIeey":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "color", ()=>color);
+var _utilsJs = require("../utils.js");
+var _hexJs = require("./hex.js");
+var _hslaJs = require("./hsla.js");
+var _rgbaJs = require("./rgba.js");
+var color = {
+    test: function(v) {
+        return (0, _rgbaJs.rgba).test(v) || (0, _hexJs.hex).test(v) || (0, _hslaJs.hsla).test(v);
+    },
+    parse: function(v) {
+        if ((0, _rgbaJs.rgba).test(v)) return (0, _rgbaJs.rgba).parse(v);
+        else if ((0, _hslaJs.hsla).test(v)) return (0, _hslaJs.hsla).parse(v);
+        else return (0, _hexJs.hex).parse(v);
+    },
+    transform: function(v) {
+        return (0, _utilsJs.isString)(v) ? v : v.hasOwnProperty("red") ? (0, _rgbaJs.rgba).transform(v) : (0, _hslaJs.hsla).transform(v);
+    }
+};
+
+},{"../utils.js":"jmQL7","./hex.js":"7l3Kn","./hsla.js":"jVRQ4","./rgba.js":"22zg8","@parcel/transformer-js/src/esmodule-helpers.js":"5oERU"}],"lQGCj":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "complex", ()=>complex);
+var _indexJs = require("../color/index.js");
+var _indexJs1 = require("../numbers/index.js");
+var _utilsJs = require("../utils.js");
+var colorToken = "${c}";
+var numberToken = "${n}";
+function test(v) {
+    var _a, _b, _c, _d;
+    return isNaN(v) && (0, _utilsJs.isString)(v) && ((_b = (_a = v.match((0, _utilsJs.floatRegex))) === null || _a === void 0 ? void 0 : _a.length) !== null && _b !== void 0 ? _b : 0) + ((_d = (_c = v.match((0, _utilsJs.colorRegex))) === null || _c === void 0 ? void 0 : _c.length) !== null && _d !== void 0 ? _d : 0) > 0;
+}
+function analyse(v) {
+    var values = [];
+    var numColors = 0;
+    var colors = v.match((0, _utilsJs.colorRegex));
+    if (colors) {
+        numColors = colors.length;
+        v = v.replace((0, _utilsJs.colorRegex), colorToken);
+        values.push.apply(values, colors.map((0, _indexJs.color).parse));
+    }
+    var numbers = v.match((0, _utilsJs.floatRegex));
+    if (numbers) {
+        v = v.replace((0, _utilsJs.floatRegex), numberToken);
+        values.push.apply(values, numbers.map((0, _indexJs1.number).parse));
+    }
+    return {
+        values: values,
+        numColors: numColors,
+        tokenised: v
+    };
+}
+function parse(v) {
+    return analyse(v).values;
+}
+function createTransformer(v) {
+    var _a = analyse(v), values = _a.values, numColors = _a.numColors, tokenised = _a.tokenised;
+    var numValues = values.length;
+    return function(v) {
+        var output = tokenised;
+        for(var i = 0; i < numValues; i++)output = output.replace(i < numColors ? colorToken : numberToken, i < numColors ? (0, _indexJs.color).transform(v[i]) : (0, _utilsJs.sanitize)(v[i]));
+        return output;
+    };
+}
+var convertNumbersToZero = function(v) {
+    return typeof v === "number" ? 0 : v;
+};
+function getAnimatableNone(v) {
+    var parsed = parse(v);
+    var transformer = createTransformer(v);
+    return transformer(parsed.map(convertNumbersToZero));
+}
+var complex = {
+    test: test,
+    parse: parse,
+    createTransformer: createTransformer,
+    getAnimatableNone: getAnimatableNone
+};
+
+},{"../color/index.js":"eIeey","../numbers/index.js":"hpltb","../utils.js":"jmQL7","@parcel/transformer-js/src/esmodule-helpers.js":"5oERU"}],"4G5tw":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "filter", ()=>filter);
+var _tslib = require("tslib");
+var _indexJs = require("./index.js");
+var _utilsJs = require("../utils.js");
+var maxDefaults = new Set([
+    "brightness",
+    "contrast",
+    "saturate",
+    "opacity"
+]);
+function applyDefaultFilter(v) {
+    var _a = v.slice(0, -1).split("("), name = _a[0], value = _a[1];
+    if (name === "drop-shadow") return v;
+    var number = (value.match((0, _utilsJs.floatRegex)) || [])[0];
+    if (!number) return v;
+    var unit = value.replace(number, "");
+    var defaultValue = maxDefaults.has(name) ? 1 : 0;
+    if (number !== value) defaultValue *= 100;
+    return name + "(" + defaultValue + unit + ")";
+}
+var functionRegex = /([a-z-]*)\(.*?\)/g;
+var filter = (0, _tslib.__assign)((0, _tslib.__assign)({}, (0, _indexJs.complex)), {
+    getAnimatableNone: function(v) {
+        var functions = v.match(functionRegex);
+        return functions ? functions.map(applyDefaultFilter).join(" ") : v;
+    }
+});
+
+},{"tslib":"edJ4f","./index.js":"lQGCj","../utils.js":"jmQL7","@parcel/transformer-js/src/esmodule-helpers.js":"5oERU"}],"k8gul":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "int", ()=>int);
+var _tslib = require("tslib");
+var _styleValueTypes = require("style-value-types");
+var int = (0, _tslib.__assign)((0, _tslib.__assign)({}, (0, _styleValueTypes.number)), {
+    transform: Math.round
+});
+
+},{"tslib":"edJ4f","style-value-types":"dhngi","@parcel/transformer-js/src/esmodule-helpers.js":"5oERU"}],"73cHF":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "createHtmlRenderState", ()=>createHtmlRenderState);
+var createHtmlRenderState = function() {
+    return {
+        style: {},
+        transform: {},
+        transformKeys: [],
+        transformOrigin: {},
+        vars: {}
+    };
+};
+
+},{"@parcel/transformer-js/src/esmodule-helpers.js":"5oERU"}],"8Wche":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "filterProps", ()=>filterProps);
+var _validPropJs = require("../../../motion/utils/valid-prop.js");
+var shouldForward = function(key) {
+    return !(0, _validPropJs.isValidMotionProp)(key);
+};
+/**
+ * Emotion and Styled Components both allow users to pass through arbitrary props to their components
+ * to dynamically generate CSS. They both use the `@emotion/is-prop-valid` package to determine which
+ * of these should be passed to the underlying DOM node.
+ *
+ * However, when styling a Motion component `styled(motion.div)`, both packages pass through *all* props
+ * as it's seen as an arbitrary component rather than a DOM node. Motion only allows arbitrary props
+ * passed through the `custom` prop so it doesn't *need* the payload or computational overhead of
+ * `@emotion/is-prop-valid`, however to fix this problem we need to use it.
+ *
+ * By making it an optionalDependency we can offer this functionality only in the situations where it's
+ * actually required.
+ */ try {
+    var emotionIsPropValid_1 = require("5e1459b0ddea9743").default;
+    shouldForward = function(key) {
+        // Handle events explicitly as Emotion validates them all as true
+        if (key.startsWith("on")) return !(0, _validPropJs.isValidMotionProp)(key);
+        else return emotionIsPropValid_1(key);
+    };
+} catch (_a) {
+// We don't need to actually do anything here - the fallback is the existing `isPropValid`.
+}
+function filterProps(props, isDom, forwardMotionProps) {
+    var filteredProps = {};
+    for(var key in props)if (shouldForward(key) || forwardMotionProps === true && (0, _validPropJs.isValidMotionProp)(key) || !isDom && !(0, _validPropJs.isValidMotionProp)(key)) filteredProps[key] = props[key];
+    return filteredProps;
+}
+
+},{"../../../motion/utils/valid-prop.js":"d0QGY","5e1459b0ddea9743":"u6hqs","@parcel/transformer-js/src/esmodule-helpers.js":"5oERU"}],"d0QGY":[function(require,module,exports) {
+/**
+ * A list of all valid MotionProps.
+ *
+ * @internalremarks
+ * This doesn't throw if a `MotionProp` name is missing - it should.
+ */ var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "isValidMotionProp", ()=>isValidMotionProp);
+var validMotionProps = new Set([
+    "initial",
+    "animate",
+    "exit",
+    "style",
+    "variants",
+    "transition",
+    "transformTemplate",
+    "transformValues",
+    "custom",
+    "inherit",
+    "layout",
+    "layoutId",
+    "_layoutResetTransform",
+    "onLayoutAnimationComplete",
+    "onViewportBoxUpdate",
+    "onLayoutMeasure",
+    "onBeforeLayoutMeasure",
+    "onAnimationStart",
+    "onAnimationComplete",
+    "onUpdate",
+    "onDragStart",
+    "onDrag",
+    "onDragEnd",
+    "onMeasureDragConstraints",
+    "onDirectionLock",
+    "onDragTransitionEnd",
+    "drag",
+    "dragControls",
+    "dragListener",
+    "dragConstraints",
+    "dragDirectionLock",
+    "_dragX",
+    "_dragY",
+    "dragElastic",
+    "dragMomentum",
+    "dragPropagation",
+    "dragTransition",
+    "whileDrag",
+    "onPan",
+    "onPanStart",
+    "onPanEnd",
+    "onPanSessionStart",
+    "onTap",
+    "onTapStart",
+    "onTapCancel",
+    "onHoverStart",
+    "onHoverEnd",
+    "whileFocus",
+    "whileTap",
+    "whileHover"
+]);
+/**
+ * Check whether a prop name is a valid `MotionProp` key.
+ *
+ * @param key - Name of the property to check
+ * @returns `true` is key is a valid `MotionProp`.
+ *
+ * @public
+ */ function isValidMotionProp(key) {
+    return validMotionProps.has(key);
+}
+
+},{"@parcel/transformer-js/src/esmodule-helpers.js":"5oERU"}],"u6hqs":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+var _memoize = require("@emotion/memoize");
+var _memoizeDefault = parcelHelpers.interopDefault(_memoize);
+var reactPropsRegex = /^((children|dangerouslySetInnerHTML|key|ref|autoFocus|defaultValue|defaultChecked|innerHTML|suppressContentEditableWarning|suppressHydrationWarning|valueLink|accept|acceptCharset|accessKey|action|allow|allowUserMedia|allowPaymentRequest|allowFullScreen|allowTransparency|alt|async|autoComplete|autoPlay|capture|cellPadding|cellSpacing|challenge|charSet|checked|cite|classID|className|cols|colSpan|content|contentEditable|contextMenu|controls|controlsList|coords|crossOrigin|data|dateTime|decoding|default|defer|dir|disabled|disablePictureInPicture|download|draggable|encType|form|formAction|formEncType|formMethod|formNoValidate|formTarget|frameBorder|headers|height|hidden|high|href|hrefLang|htmlFor|httpEquiv|id|inputMode|integrity|is|keyParams|keyType|kind|label|lang|list|loading|loop|low|marginHeight|marginWidth|max|maxLength|media|mediaGroup|method|min|minLength|multiple|muted|name|nonce|noValidate|open|optimum|pattern|placeholder|playsInline|poster|preload|profile|radioGroup|readOnly|referrerPolicy|rel|required|reversed|role|rows|rowSpan|sandbox|scope|scoped|scrolling|seamless|selected|shape|size|sizes|slot|span|spellCheck|src|srcDoc|srcLang|srcSet|start|step|style|summary|tabIndex|target|title|type|useMap|value|width|wmode|wrap|about|datatype|inlist|prefix|property|resource|typeof|vocab|autoCapitalize|autoCorrect|autoSave|color|inert|itemProp|itemScope|itemType|itemID|itemRef|on|results|security|unselectable|accentHeight|accumulate|additive|alignmentBaseline|allowReorder|alphabetic|amplitude|arabicForm|ascent|attributeName|attributeType|autoReverse|azimuth|baseFrequency|baselineShift|baseProfile|bbox|begin|bias|by|calcMode|capHeight|clip|clipPathUnits|clipPath|clipRule|colorInterpolation|colorInterpolationFilters|colorProfile|colorRendering|contentScriptType|contentStyleType|cursor|cx|cy|d|decelerate|descent|diffuseConstant|direction|display|divisor|dominantBaseline|dur|dx|dy|edgeMode|elevation|enableBackground|end|exponent|externalResourcesRequired|fill|fillOpacity|fillRule|filter|filterRes|filterUnits|floodColor|floodOpacity|focusable|fontFamily|fontSize|fontSizeAdjust|fontStretch|fontStyle|fontVariant|fontWeight|format|from|fr|fx|fy|g1|g2|glyphName|glyphOrientationHorizontal|glyphOrientationVertical|glyphRef|gradientTransform|gradientUnits|hanging|horizAdvX|horizOriginX|ideographic|imageRendering|in|in2|intercept|k|k1|k2|k3|k4|kernelMatrix|kernelUnitLength|kerning|keyPoints|keySplines|keyTimes|lengthAdjust|letterSpacing|lightingColor|limitingConeAngle|local|markerEnd|markerMid|markerStart|markerHeight|markerUnits|markerWidth|mask|maskContentUnits|maskUnits|mathematical|mode|numOctaves|offset|opacity|operator|order|orient|orientation|origin|overflow|overlinePosition|overlineThickness|panose1|paintOrder|pathLength|patternContentUnits|patternTransform|patternUnits|pointerEvents|points|pointsAtX|pointsAtY|pointsAtZ|preserveAlpha|preserveAspectRatio|primitiveUnits|r|radius|refX|refY|renderingIntent|repeatCount|repeatDur|requiredExtensions|requiredFeatures|restart|result|rotate|rx|ry|scale|seed|shapeRendering|slope|spacing|specularConstant|specularExponent|speed|spreadMethod|startOffset|stdDeviation|stemh|stemv|stitchTiles|stopColor|stopOpacity|strikethroughPosition|strikethroughThickness|string|stroke|strokeDasharray|strokeDashoffset|strokeLinecap|strokeLinejoin|strokeMiterlimit|strokeOpacity|strokeWidth|surfaceScale|systemLanguage|tableValues|targetX|targetY|textAnchor|textDecoration|textRendering|textLength|to|transform|u1|u2|underlinePosition|underlineThickness|unicode|unicodeBidi|unicodeRange|unitsPerEm|vAlphabetic|vHanging|vIdeographic|vMathematical|values|vectorEffect|version|vertAdvY|vertOriginX|vertOriginY|viewBox|viewTarget|visibility|widths|wordSpacing|writingMode|x|xHeight|x1|x2|xChannelSelector|xlinkActuate|xlinkArcrole|xlinkHref|xlinkRole|xlinkShow|xlinkTitle|xlinkType|xmlBase|xmlns|xmlnsXlink|xmlLang|xmlSpace|y|y1|y2|yChannelSelector|z|zoomAndPan|for|class|autofocus)|(([Dd][Aa][Tt][Aa]|[Aa][Rr][Ii][Aa]|x)-.*))$/; // https://esbench.com/bench/5bfee68a4cd7e6009ef61d23
+var index = (0, _memoizeDefault.default)(function(prop) {
+    return reactPropsRegex.test(prop) || prop.charCodeAt(0) === 111 && prop.charCodeAt(1) === 110 && prop.charCodeAt(2) < 91;
+});
+exports.default = index;
+
+},{"@emotion/memoize":"ak4fr","@parcel/transformer-js/src/esmodule-helpers.js":"5oERU"}],"ak4fr":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+function memoize(fn) {
+    var cache = {};
+    return function(arg) {
+        if (cache[arg] === undefined) cache[arg] = fn(arg);
+        return cache[arg];
+    };
+}
+exports.default = memoize;
+
+},{"@parcel/transformer-js/src/esmodule-helpers.js":"5oERU"}],"9JRPg":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "useSVGProps", ()=>useSVGProps);
+var _tslib = require("tslib");
+var _react = require("react");
+var _usePropsJs = require("../html/use-props.js");
+var _buildAttrsJs = require("./utils/build-attrs.js");
+var _createRenderStateJs = require("./utils/create-render-state.js");
+function useSVGProps(props, visualState) {
+    var visualProps = (0, _react.useMemo)(function() {
+        var state = (0, _createRenderStateJs.createSvgRenderState)();
+        (0, _buildAttrsJs.buildSVGAttrs)(state, visualState, undefined, undefined, {
+            enableHardwareAcceleration: false
+        }, props.transformTemplate);
+        return (0, _tslib.__assign)((0, _tslib.__assign)({}, state.attrs), {
+            style: (0, _tslib.__assign)({}, state.style)
+        });
+    }, [
+        visualState
+    ]);
+    if (props.style) {
+        var rawStyles = {};
+        (0, _usePropsJs.copyRawValuesOnly)(rawStyles, props.style, props);
+        visualProps.style = (0, _tslib.__assign)((0, _tslib.__assign)({}, rawStyles), visualProps.style);
+    }
+    return visualProps;
+}
+
+},{"tslib":"edJ4f","react":"9sfFD","../html/use-props.js":"3qxqp","./utils/build-attrs.js":"kzWZd","./utils/create-render-state.js":"1ZnkK","@parcel/transformer-js/src/esmodule-helpers.js":"5oERU"}],"kzWZd":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "buildSVGAttrs", ()=>buildSVGAttrs);
+var _tslib = require("tslib");
+var _buildStylesJs = require("../../html/utils/build-styles.js");
+var _transformOriginJs = require("./transform-origin.js");
+var _pathJs = require("./path.js");
+/**
+ * Build SVG visual attrbutes, like cx and style.transform
+ */ function buildSVGAttrs(state, _a, projection, layoutState, options, transformTemplate, buildProjectionTransform, buildProjectionTransformOrigin) {
+    var attrX = _a.attrX, attrY = _a.attrY, originX = _a.originX, originY = _a.originY, pathLength = _a.pathLength, _b = _a.pathSpacing, pathSpacing = _b === void 0 ? 1 : _b, _c = _a.pathOffset, pathOffset = _c === void 0 ? 0 : _c, // This is object creation, which we try to avoid per-frame.
+    latest = (0, _tslib.__rest)(_a, [
+        "attrX",
+        "attrY",
+        "originX",
+        "originY",
+        "pathLength",
+        "pathSpacing",
+        "pathOffset"
+    ]);
+    (0, _buildStylesJs.buildHTMLStyles)(state, latest, projection, layoutState, options, transformTemplate, buildProjectionTransform, buildProjectionTransformOrigin);
+    state.attrs = state.style;
+    state.style = {};
+    var attrs = state.attrs, style = state.style, dimensions = state.dimensions, totalPathLength = state.totalPathLength;
+    /**
+     * However, we apply transforms as CSS transforms. So if we detect a transform we take it from attrs
+     * and copy it into style.
+     */ if (attrs.transform) {
+        if (dimensions) style.transform = attrs.transform;
+        delete attrs.transform;
+    }
+    // Parse transformOrigin
+    if (dimensions && (originX !== undefined || originY !== undefined || style.transform)) style.transformOrigin = (0, _transformOriginJs.calcSVGTransformOrigin)(dimensions, originX !== undefined ? originX : 0.5, originY !== undefined ? originY : 0.5);
+    // Treat x/y not as shortcuts but as actual attributes
+    if (attrX !== undefined) attrs.x = attrX;
+    if (attrY !== undefined) attrs.y = attrY;
+    // Build SVG path if one has been measured
+    if (totalPathLength !== undefined && pathLength !== undefined) (0, _pathJs.buildSVGPath)(attrs, totalPathLength, pathLength, pathSpacing, pathOffset, false);
+}
+
+},{"tslib":"edJ4f","../../html/utils/build-styles.js":"gTgoj","./transform-origin.js":"cvXjM","./path.js":"gWz57","@parcel/transformer-js/src/esmodule-helpers.js":"5oERU"}],"cvXjM":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "calcSVGTransformOrigin", ()=>calcSVGTransformOrigin);
+var _styleValueTypes = require("style-value-types");
+function calcOrigin(origin, offset, size) {
+    return typeof origin === "string" ? origin : (0, _styleValueTypes.px).transform(offset + size * origin);
+}
+/**
+ * The SVG transform origin defaults are different to CSS and is less intuitive,
+ * so we use the measured dimensions of the SVG to reconcile these.
+ */ function calcSVGTransformOrigin(dimensions, originX, originY) {
+    var pxOriginX = calcOrigin(originX, dimensions.x, dimensions.width);
+    var pxOriginY = calcOrigin(originY, dimensions.y, dimensions.height);
+    return pxOriginX + " " + pxOriginY;
+}
+
+},{"style-value-types":"dhngi","@parcel/transformer-js/src/esmodule-helpers.js":"5oERU"}],"gWz57":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "buildSVGPath", ()=>buildSVGPath);
+var _styleValueTypes = require("style-value-types");
+// Convert a progress 0-1 to a pixels value based on the provided length
+var progressToPixels = function(progress, length) {
+    return (0, _styleValueTypes.px).transform(progress * length);
+};
+var dashKeys = {
+    offset: "stroke-dashoffset",
+    array: "stroke-dasharray"
+};
+var camelKeys = {
+    offset: "strokeDashoffset",
+    array: "strokeDasharray"
+};
+/**
+ * Build SVG path properties. Uses the path's measured length to convert
+ * our custom pathLength, pathSpacing and pathOffset into stroke-dashoffset
+ * and stroke-dasharray attributes.
+ *
+ * This function is mutative to reduce per-frame GC.
+ */ function buildSVGPath(attrs, totalLength, length, spacing, offset, useDashCase) {
+    if (spacing === void 0) spacing = 1;
+    if (offset === void 0) offset = 0;
+    if (useDashCase === void 0) useDashCase = true;
+    // We use dash case when setting attributes directly to the DOM node and camel case
+    // when defining props on a React component.
+    var keys = useDashCase ? dashKeys : camelKeys;
+    // Build the dash offset
+    attrs[keys.offset] = progressToPixels(-offset, totalLength);
+    // Build the dash array
+    var pathLength = progressToPixels(length, totalLength);
+    var pathSpacing = progressToPixels(spacing, totalLength);
+    attrs[keys.array] = pathLength + " " + pathSpacing;
+}
+
+},{"style-value-types":"dhngi","@parcel/transformer-js/src/esmodule-helpers.js":"5oERU"}],"1ZnkK":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "createSvgRenderState", ()=>createSvgRenderState);
+var _tslib = require("tslib");
+var _createRenderStateJs = require("../../html/utils/create-render-state.js");
+var createSvgRenderState = function() {
+    return (0, _tslib.__assign)((0, _tslib.__assign)({}, (0, _createRenderStateJs.createHtmlRenderState)()), {
+        attrs: {}
+    });
+};
+
+},{"tslib":"edJ4f","../../html/utils/create-render-state.js":"73cHF","@parcel/transformer-js/src/esmodule-helpers.js":"5oERU"}],"cfVp0":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "svgMotionConfig", ()=>svgMotionConfig);
+var _renderJs = require("./utils/render.js");
+var _scrapeMotionValuesJs = require("./utils/scrape-motion-values.js");
+var _useVisualStateJs = require("../../motion/utils/use-visual-state.js");
+var _createRenderStateJs = require("./utils/create-render-state.js");
+var _buildAttrsJs = require("./utils/build-attrs.js");
+var svgMotionConfig = {
+    useVisualState: (0, _useVisualStateJs.makeUseVisualState)({
+        scrapeMotionValuesFromProps: (0, _scrapeMotionValuesJs.scrapeMotionValuesFromProps),
+        createRenderState: (0, _createRenderStateJs.createSvgRenderState),
+        onMount: function(props, instance, _a) {
+            var renderState = _a.renderState, latestValues = _a.latestValues;
+            try {
+                renderState.dimensions = typeof instance.getBBox === "function" ? instance.getBBox() : instance.getBoundingClientRect();
+            } catch (e) {
+                // Most likely trying to measure an unrendered element under Firefox
+                renderState.dimensions = {
+                    x: 0,
+                    y: 0,
+                    width: 0,
+                    height: 0
+                };
+            }
+            if (isPath(instance)) renderState.totalPathLength = instance.getTotalLength();
+            (0, _buildAttrsJs.buildSVGAttrs)(renderState, latestValues, undefined, undefined, {
+                enableHardwareAcceleration: false
+            }, props.transformTemplate);
+            // TODO: Replace with direct assignment
+            (0, _renderJs.renderSVG)(instance, renderState);
+        }
+    })
+};
+function isPath(element) {
+    return element.tagName === "path";
+}
+
+},{"./utils/render.js":"6lkLm","./utils/scrape-motion-values.js":"7kpaA","../../motion/utils/use-visual-state.js":"9AGMH","./utils/create-render-state.js":"1ZnkK","./utils/build-attrs.js":"kzWZd","@parcel/transformer-js/src/esmodule-helpers.js":"5oERU"}],"6lkLm":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "renderSVG", ()=>renderSVG);
+var _camelToDashJs = require("../../dom/utils/camel-to-dash.js");
+var _renderJs = require("../../html/utils/render.js");
+var _camelCaseAttrsJs = require("./camel-case-attrs.js");
+function renderSVG(element, renderState) {
+    (0, _renderJs.renderHTML)(element, renderState);
+    for(var key in renderState.attrs)element.setAttribute(!(0, _camelCaseAttrsJs.camelCaseAttributes).has(key) ? (0, _camelToDashJs.camelToDash)(key) : key, renderState.attrs[key]);
+}
+
+},{"../../dom/utils/camel-to-dash.js":"i0CLn","../../html/utils/render.js":"aAfA4","./camel-case-attrs.js":"7KtdX","@parcel/transformer-js/src/esmodule-helpers.js":"5oERU"}],"i0CLn":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "camelToDash", ()=>camelToDash);
+var CAMEL_CASE_PATTERN = /([a-z])([A-Z])/g;
+var REPLACE_TEMPLATE = "$1-$2";
+/**
+ * Convert camelCase to dash-case properties.
+ */ var camelToDash = function(str) {
+    return str.replace(CAMEL_CASE_PATTERN, REPLACE_TEMPLATE).toLowerCase();
+};
+
+},{"@parcel/transformer-js/src/esmodule-helpers.js":"5oERU"}],"aAfA4":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "renderHTML", ()=>renderHTML);
+function renderHTML(element, _a) {
+    var style = _a.style, vars = _a.vars;
+    // Directly assign style into the Element's style prop. In tests Object.assign is the
+    // fastest way to assign styles.
+    Object.assign(element.style, style);
+    // Loop over any CSS variables and assign those.
+    for(var key in vars)element.style.setProperty(key, vars[key]);
+}
+
+},{"@parcel/transformer-js/src/esmodule-helpers.js":"5oERU"}],"7KtdX":[function(require,module,exports) {
+/**
+ * A set of attribute names that are always read/written as camel case.
+ */ var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "camelCaseAttributes", ()=>camelCaseAttributes);
+var camelCaseAttributes = new Set([
+    "baseFrequency",
+    "diffuseConstant",
+    "kernelMatrix",
+    "kernelUnitLength",
+    "keySplines",
+    "keyTimes",
+    "limitingConeAngle",
+    "markerHeight",
+    "markerWidth",
+    "numOctaves",
+    "targetX",
+    "targetY",
+    "surfaceScale",
+    "specularConstant",
+    "specularExponent",
+    "stdDeviation",
+    "tableValues",
+    "viewBox",
+    "gradientTransform"
+]);
+
+},{"@parcel/transformer-js/src/esmodule-helpers.js":"5oERU"}],"7kpaA":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "scrapeMotionValuesFromProps", ()=>scrapeMotionValuesFromProps);
+var _isMotionValueJs = require("../../../value/utils/is-motion-value.js");
+var _scrapeMotionValuesJs = require("../../html/utils/scrape-motion-values.js");
+function scrapeMotionValuesFromProps(props) {
+    var newValues = (0, _scrapeMotionValuesJs.scrapeMotionValuesFromProps)(props);
+    for(var key in props)if ((0, _isMotionValueJs.isMotionValue)(props[key])) {
+        var targetKey = key === "x" || key === "y" ? "attr" + key.toUpperCase() : key;
+        newValues[targetKey] = props[key];
+    }
+    return newValues;
+}
+
+},{"../../../value/utils/is-motion-value.js":"bSPO9","../../html/utils/scrape-motion-values.js":"a6p4l","@parcel/transformer-js/src/esmodule-helpers.js":"5oERU"}],"a6p4l":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "scrapeMotionValuesFromProps", ()=>scrapeMotionValuesFromProps);
+var _isForcedMotionValueJs = require("../../../motion/utils/is-forced-motion-value.js");
+var _isMotionValueJs = require("../../../value/utils/is-motion-value.js");
+function scrapeMotionValuesFromProps(props) {
+    var style = props.style;
+    var newValues = {};
+    for(var key in style)if ((0, _isMotionValueJs.isMotionValue)(style[key]) || (0, _isForcedMotionValueJs.isForcedMotionValue)(key, props)) newValues[key] = style[key];
+    return newValues;
+}
+
+},{"../../../motion/utils/is-forced-motion-value.js":"qm2mR","../../../value/utils/is-motion-value.js":"bSPO9","@parcel/transformer-js/src/esmodule-helpers.js":"5oERU"}],"9AGMH":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "makeUseVisualState", ()=>makeUseVisualState);
+var _tslib = require("tslib");
+var _react = require("react");
+var _isAnimationControlsJs = require("../../animation/utils/is-animation-controls.js");
+var _presenceContextJs = require("../../context/PresenceContext.js");
+var _variantsJs = require("../../render/utils/variants.js");
+var _useConstantJs = require("../../utils/use-constant.js");
+var _resolveMotionValueJs = require("../../value/utils/resolve-motion-value.js");
+var _indexJs = require("../../context/MotionContext/index.js");
+function makeState(_a, props, context, presenceContext) {
+    var scrapeMotionValuesFromProps = _a.scrapeMotionValuesFromProps, createRenderState = _a.createRenderState, onMount = _a.onMount;
+    var state = {
+        latestValues: makeLatestValues(props, context, presenceContext, scrapeMotionValuesFromProps),
+        renderState: createRenderState()
+    };
+    if (onMount) state.mount = function(instance) {
+        return onMount(props, instance, state);
+    };
+    return state;
+}
+var makeUseVisualState = function(config) {
+    return function(props, isStatic) {
+        var context = (0, _react.useContext)((0, _indexJs.MotionContext));
+        var presenceContext = (0, _react.useContext)((0, _presenceContextJs.PresenceContext));
+        return isStatic ? makeState(config, props, context, presenceContext) : (0, _useConstantJs.useConstant)(function() {
+            return makeState(config, props, context, presenceContext);
+        });
+    };
+};
+function makeLatestValues(props, context, presenceContext, scrapeMotionValues) {
+    var values = {};
+    var blockInitialAnimation = (presenceContext === null || presenceContext === void 0 ? void 0 : presenceContext.initial) === false;
+    var motionValues = scrapeMotionValues(props);
+    for(var key in motionValues)values[key] = (0, _resolveMotionValueJs.resolveMotionValue)(motionValues[key]);
+    var initial = props.initial, animate = props.animate;
+    var isControllingVariants = (0, _variantsJs.checkIfControllingVariants)(props);
+    var isVariantNode = (0, _variantsJs.checkIfVariantNode)(props);
+    if (context && isVariantNode && !isControllingVariants && props.inherit !== false) {
+        initial !== null && initial !== void 0 ? initial : initial = context.initial;
+        animate !== null && animate !== void 0 ? animate : animate = context.animate;
+    }
+    var variantToSet = blockInitialAnimation || initial === false ? animate : initial;
+    if (variantToSet && typeof variantToSet !== "boolean" && !(0, _isAnimationControlsJs.isAnimationControls)(variantToSet)) {
+        var list = Array.isArray(variantToSet) ? variantToSet : [
+            variantToSet
+        ];
+        list.forEach(function(definition) {
+            var resolved = (0, _variantsJs.resolveVariantFromProps)(props, definition);
+            if (!resolved) return;
+            var transitionEnd = resolved.transitionEnd;
+            resolved.transition;
+            var target = (0, _tslib.__rest)(resolved, [
+                "transitionEnd",
+                "transition"
+            ]);
+            for(var key in target)values[key] = target[key];
+            for(var key in transitionEnd)values[key] = transitionEnd[key];
+        });
+    }
+    return values;
+}
+
+},{"tslib":"edJ4f","react":"9sfFD","../../animation/utils/is-animation-controls.js":"gRai1","../../context/PresenceContext.js":"iCJR7","../../render/utils/variants.js":"aCPPK","../../utils/use-constant.js":"fUKVy","../../value/utils/resolve-motion-value.js":"tKbTp","../../context/MotionContext/index.js":"1mMVq","@parcel/transformer-js/src/esmodule-helpers.js":"5oERU"}],"gRai1":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "isAnimationControls", ()=>isAnimationControls);
+function isAnimationControls(v) {
+    return typeof v === "object" && typeof v.start === "function";
+}
+
+},{"@parcel/transformer-js/src/esmodule-helpers.js":"5oERU"}],"tKbTp":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "resolveMotionValue", ()=>resolveMotionValue);
+var _resolveValueJs = require("../../utils/resolve-value.js");
+var _isMotionValueJs = require("./is-motion-value.js");
+/**
+ * If the provided value is a MotionValue, this returns the actual value, otherwise just the value itself
+ *
+ * TODO: Remove and move to library
+ *
+ * @internal
+ */ function resolveMotionValue(value) {
+    var unwrappedValue = (0, _isMotionValueJs.isMotionValue)(value) ? value.get() : value;
+    return (0, _resolveValueJs.isCustomValue)(unwrappedValue) ? unwrappedValue.toValue() : unwrappedValue;
+}
+
+},{"../../utils/resolve-value.js":"bgXss","./is-motion-value.js":"bSPO9","@parcel/transformer-js/src/esmodule-helpers.js":"5oERU"}],"bgXss":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "isCustomValue", ()=>isCustomValue);
+parcelHelpers.export(exports, "resolveFinalValueInKeyframes", ()=>resolveFinalValueInKeyframes);
+var _isKeyframesTargetJs = require("../animation/utils/is-keyframes-target.js");
+var isCustomValue = function(v) {
+    return Boolean(v && typeof v === "object" && v.mix && v.toValue);
+};
+var resolveFinalValueInKeyframes = function(v) {
+    // TODO maybe throw if v.length - 1 is placeholder token?
+    return (0, _isKeyframesTargetJs.isKeyframesTarget)(v) ? v[v.length - 1] || 0 : v;
+};
+
+},{"../animation/utils/is-keyframes-target.js":"23L0g","@parcel/transformer-js/src/esmodule-helpers.js":"5oERU"}],"23L0g":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "isKeyframesTarget", ()=>isKeyframesTarget);
+var isKeyframesTarget = function(v) {
+    return Array.isArray(v);
+};
+
+},{"@parcel/transformer-js/src/esmodule-helpers.js":"5oERU"}],"3eOo9":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "htmlMotionConfig", ()=>htmlMotionConfig);
+var _useVisualStateJs = require("../../motion/utils/use-visual-state.js");
+var _scrapeMotionValuesJs = require("./utils/scrape-motion-values.js");
+var _createRenderStateJs = require("./utils/create-render-state.js");
+var htmlMotionConfig = {
+    useVisualState: (0, _useVisualStateJs.makeUseVisualState)({
+        scrapeMotionValuesFromProps: (0, _scrapeMotionValuesJs.scrapeMotionValuesFromProps),
+        createRenderState: (0, _createRenderStateJs.createHtmlRenderState)
+    })
+};
+
+},{"../../motion/utils/use-visual-state.js":"9AGMH","./utils/scrape-motion-values.js":"a6p4l","./utils/create-render-state.js":"73cHF","@parcel/transformer-js/src/esmodule-helpers.js":"5oERU"}],"4A032":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "gestureAnimations", ()=>gestureAnimations);
+var _useFocusGestureJs = require("../../gestures/use-focus-gesture.js");
+var _useHoverGestureJs = require("../../gestures/use-hover-gesture.js");
+var _useTapGestureJs = require("../../gestures/use-tap-gesture.js");
+var _makeRenderlessComponentJs = require("../utils/make-renderless-component.js");
+var gestureAnimations = {
+    tap: (0, _makeRenderlessComponentJs.makeRenderlessComponent)((0, _useTapGestureJs.useTapGesture)),
+    focus: (0, _makeRenderlessComponentJs.makeRenderlessComponent)((0, _useFocusGestureJs.useFocusGesture)),
+    hover: (0, _makeRenderlessComponentJs.makeRenderlessComponent)((0, _useHoverGestureJs.useHoverGesture))
+};
+
+},{"../../gestures/use-focus-gesture.js":"uBSvS","../../gestures/use-hover-gesture.js":"eNytU","../../gestures/use-tap-gesture.js":"bYtqd","../utils/make-renderless-component.js":"gABee","@parcel/transformer-js/src/esmodule-helpers.js":"5oERU"}],"uBSvS":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "useFocusGesture", ()=>useFocusGesture);
+var _typesJs = require("../render/utils/types.js");
+var _useDomEventJs = require("../events/use-dom-event.js");
+/**
+ *
+ * @param props
+ * @param ref
+ * @internal
+ */ function useFocusGesture(_a) {
+    var whileFocus = _a.whileFocus, visualElement = _a.visualElement;
+    var onFocus = function() {
+        var _a;
+        (_a = visualElement.animationState) === null || _a === void 0 || _a.setActive((0, _typesJs.AnimationType).Focus, true);
+    };
+    var onBlur = function() {
+        var _a;
+        (_a = visualElement.animationState) === null || _a === void 0 || _a.setActive((0, _typesJs.AnimationType).Focus, false);
+    };
+    (0, _useDomEventJs.useDomEvent)(visualElement, "focus", whileFocus ? onFocus : undefined);
+    (0, _useDomEventJs.useDomEvent)(visualElement, "blur", whileFocus ? onBlur : undefined);
+}
+
+},{"../render/utils/types.js":"aemrC","../events/use-dom-event.js":"kTxxy","@parcel/transformer-js/src/esmodule-helpers.js":"5oERU"}],"aemrC":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "AnimationType", ()=>AnimationType);
+var AnimationType;
+(function(AnimationType) {
+    AnimationType["Animate"] = "animate";
+    AnimationType["Hover"] = "whileHover";
+    AnimationType["Tap"] = "whileTap";
+    AnimationType["Drag"] = "whileDrag";
+    AnimationType["Focus"] = "whileFocus";
+    AnimationType["Exit"] = "exit";
+})(AnimationType || (AnimationType = {}));
+
+},{"@parcel/transformer-js/src/esmodule-helpers.js":"5oERU"}],"kTxxy":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "addDomEvent", ()=>addDomEvent);
+parcelHelpers.export(exports, "useDomEvent", ()=>useDomEvent);
+var _react = require("react");
+function addDomEvent(target, eventName, handler, options) {
+    target.addEventListener(eventName, handler, options);
+    return function() {
+        return target.removeEventListener(eventName, handler, options);
+    };
+}
+/**
+ * Attaches an event listener directly to the provided DOM element.
+ *
+ * Bypassing React's event system can be desirable, for instance when attaching non-passive
+ * event handlers.
+ *
+ * ```jsx
+ * const ref = useRef(null)
+ *
+ * useDomEvent(ref, 'wheel', onWheel, { passive: false })
+ *
+ * return <div ref={ref} />
+ * ```
+ *
+ * @param ref - React.RefObject that's been provided to the element you want to bind the listener to.
+ * @param eventName - Name of the event you want listen for.
+ * @param handler - Function to fire when receiving the event.
+ * @param options - Options to pass to `Event.addEventListener`.
+ *
+ * @public
+ */ function useDomEvent(ref, eventName, handler, options) {
+    (0, _react.useEffect)(function() {
+        var element = ref.current;
+        if (handler && element) return addDomEvent(element, eventName, handler, options);
+    }, [
+        ref,
+        eventName,
+        handler,
+        options
+    ]);
+}
+
+},{"react":"9sfFD","@parcel/transformer-js/src/esmodule-helpers.js":"5oERU"}],"eNytU":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "useHoverGesture", ()=>useHoverGesture);
+var _eventTypeJs = require("./utils/event-type.js");
+var _typesJs = require("../render/utils/types.js");
+var _usePointerEventJs = require("../events/use-pointer-event.js");
+var _lockJs = require("./drag/utils/lock.js");
+function createHoverEvent(visualElement, isActive, callback) {
+    return function(event, info) {
+        var _a;
+        if (!(0, _eventTypeJs.isMouseEvent)(event) || (0, _lockJs.isDragActive)()) return;
+        callback === null || callback === void 0 || callback(event, info);
+        (_a = visualElement.animationState) === null || _a === void 0 || _a.setActive((0, _typesJs.AnimationType).Hover, isActive);
+    };
+}
+function useHoverGesture(_a) {
+    var onHoverStart = _a.onHoverStart, onHoverEnd = _a.onHoverEnd, whileHover = _a.whileHover, visualElement = _a.visualElement;
+    (0, _usePointerEventJs.usePointerEvent)(visualElement, "pointerenter", onHoverStart || whileHover ? createHoverEvent(visualElement, true, onHoverStart) : undefined);
+    (0, _usePointerEventJs.usePointerEvent)(visualElement, "pointerleave", onHoverEnd || whileHover ? createHoverEvent(visualElement, false, onHoverEnd) : undefined);
+}
+
+},{"./utils/event-type.js":"40daC","../render/utils/types.js":"aemrC","../events/use-pointer-event.js":"9ltEK","./drag/utils/lock.js":"fzvQf","@parcel/transformer-js/src/esmodule-helpers.js":"5oERU"}],"40daC":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "isMouseEvent", ()=>isMouseEvent);
+parcelHelpers.export(exports, "isTouchEvent", ()=>isTouchEvent);
+function isMouseEvent(event) {
+    // PointerEvent inherits from MouseEvent so we can't use a straight instanceof check.
+    if (typeof PointerEvent !== "undefined" && event instanceof PointerEvent) return !!(event.pointerType === "mouse");
+    return event instanceof MouseEvent;
+}
+function isTouchEvent(event) {
+    var hasTouches = !!event.touches;
+    return hasTouches;
+}
+
+},{"@parcel/transformer-js/src/esmodule-helpers.js":"5oERU"}],"9ltEK":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "addPointerEvent", ()=>addPointerEvent);
+parcelHelpers.export(exports, "usePointerEvent", ()=>usePointerEvent);
+var _useDomEventJs = require("./use-dom-event.js");
+var _eventInfoJs = require("./event-info.js");
+var _utilsJs = require("./utils.js");
+var mouseEventNames = {
+    pointerdown: "mousedown",
+    pointermove: "mousemove",
+    pointerup: "mouseup",
+    pointercancel: "mousecancel",
+    pointerover: "mouseover",
+    pointerout: "mouseout",
+    pointerenter: "mouseenter",
+    pointerleave: "mouseleave"
+};
+var touchEventNames = {
+    pointerdown: "touchstart",
+    pointermove: "touchmove",
+    pointerup: "touchend",
+    pointercancel: "touchcancel"
+};
+function getPointerEventName(name) {
+    if ((0, _utilsJs.supportsPointerEvents)()) return name;
+    else if ((0, _utilsJs.supportsTouchEvents)()) return touchEventNames[name];
+    else if ((0, _utilsJs.supportsMouseEvents)()) return mouseEventNames[name];
+    return name;
+}
+function addPointerEvent(target, eventName, handler, options) {
+    return (0, _useDomEventJs.addDomEvent)(target, getPointerEventName(eventName), (0, _eventInfoJs.wrapHandler)(handler, eventName === "pointerdown"), options);
+}
+function usePointerEvent(ref, eventName, handler, options) {
+    return (0, _useDomEventJs.useDomEvent)(ref, getPointerEventName(eventName), handler && (0, _eventInfoJs.wrapHandler)(handler, eventName === "pointerdown"), options);
+}
+
+},{"./use-dom-event.js":"kTxxy","./event-info.js":"jPSr0","./utils.js":"cA5YM","@parcel/transformer-js/src/esmodule-helpers.js":"5oERU"}],"jPSr0":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "extractEventInfo", ()=>extractEventInfo);
+parcelHelpers.export(exports, "getViewportPointFromEvent", ()=>getViewportPointFromEvent);
+parcelHelpers.export(exports, "wrapHandler", ()=>wrapHandler);
+var _eventTypeJs = require("../gestures/utils/event-type.js");
+/**
+ * Filters out events not attached to the primary pointer (currently left mouse button)
+ * @param eventHandler
+ */ function filterPrimaryPointer(eventHandler) {
+    return function(event) {
+        var isMouseEvent = event instanceof MouseEvent;
+        var isPrimaryPointer = !isMouseEvent || isMouseEvent && event.button === 0;
+        if (isPrimaryPointer) eventHandler(event);
+    };
+}
+var defaultPagePoint = {
+    pageX: 0,
+    pageY: 0
+};
+function pointFromTouch(e, pointType) {
+    if (pointType === void 0) pointType = "page";
+    var primaryTouch = e.touches[0] || e.changedTouches[0];
+    var point = primaryTouch || defaultPagePoint;
+    return {
+        x: point[pointType + "X"],
+        y: point[pointType + "Y"]
+    };
+}
+function pointFromMouse(point, pointType) {
+    if (pointType === void 0) pointType = "page";
+    return {
+        x: point[pointType + "X"],
+        y: point[pointType + "Y"]
+    };
+}
+function extractEventInfo(event, pointType) {
+    if (pointType === void 0) pointType = "page";
+    return {
+        point: (0, _eventTypeJs.isTouchEvent)(event) ? pointFromTouch(event, pointType) : pointFromMouse(event, pointType)
+    };
+}
+function getViewportPointFromEvent(event) {
+    return extractEventInfo(event, "client");
+}
+var wrapHandler = function(handler, shouldFilterPrimaryPointer) {
+    if (shouldFilterPrimaryPointer === void 0) shouldFilterPrimaryPointer = false;
+    var listener = function(event) {
+        return handler(event, extractEventInfo(event));
+    };
+    return shouldFilterPrimaryPointer ? filterPrimaryPointer(listener) : listener;
+};
+
+},{"../gestures/utils/event-type.js":"40daC","@parcel/transformer-js/src/esmodule-helpers.js":"5oERU"}],"cA5YM":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "supportsMouseEvents", ()=>supportsMouseEvents);
+parcelHelpers.export(exports, "supportsPointerEvents", ()=>supportsPointerEvents);
+parcelHelpers.export(exports, "supportsTouchEvents", ()=>supportsTouchEvents);
+var _isBrowserJs = require("../utils/is-browser.js");
+// We check for event support via functions in case they've been mocked by a testing suite.
+var supportsPointerEvents = function() {
+    return (0, _isBrowserJs.isBrowser) && window.onpointerdown === null;
+};
+var supportsTouchEvents = function() {
+    return (0, _isBrowserJs.isBrowser) && window.ontouchstart === null;
+};
+var supportsMouseEvents = function() {
+    return (0, _isBrowserJs.isBrowser) && window.onmousedown === null;
+};
+
+},{"../utils/is-browser.js":"cXChZ","@parcel/transformer-js/src/esmodule-helpers.js":"5oERU"}],"fzvQf":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "createLock", ()=>createLock);
+parcelHelpers.export(exports, "getGlobalLock", ()=>getGlobalLock);
+parcelHelpers.export(exports, "isDragActive", ()=>isDragActive);
+function createLock(name) {
+    var lock = null;
+    return function() {
+        var openLock = function() {
+            lock = null;
+        };
+        if (lock === null) {
+            lock = name;
+            return openLock;
+        }
+        return false;
+    };
+}
+var globalHorizontalLock = createLock("dragHorizontal");
+var globalVerticalLock = createLock("dragVertical");
+function getGlobalLock(drag) {
+    var lock = false;
+    if (drag === "y") lock = globalVerticalLock();
+    else if (drag === "x") lock = globalHorizontalLock();
+    else {
+        var openHorizontal_1 = globalHorizontalLock();
+        var openVertical_1 = globalVerticalLock();
+        if (openHorizontal_1 && openVertical_1) lock = function() {
+            openHorizontal_1();
+            openVertical_1();
+        };
+        else {
+            // Release the locks because we don't use them
+            if (openHorizontal_1) openHorizontal_1();
+            if (openVertical_1) openVertical_1();
+        }
+    }
+    return lock;
+}
+function isDragActive() {
+    // Check the gesture lock - if we get it, it means no drag gesture is active
+    // and we can safely fire the tap gesture.
+    var openGestureLock = getGlobalLock(true);
+    if (!openGestureLock) return true;
+    openGestureLock();
+    return false;
+}
+
+},{"@parcel/transformer-js/src/esmodule-helpers.js":"5oERU"}],"bYtqd":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "useTapGesture", ()=>useTapGesture);
+var _react = require("react");
+var _isNodeOrChildJs = require("./utils/is-node-or-child.js");
+var _usePointerEventJs = require("../events/use-pointer-event.js");
+var _useUnmountEffectJs = require("../utils/use-unmount-effect.js");
+var _popmotion = require("popmotion");
+var _typesJs = require("../render/utils/types.js");
+var _lockJs = require("./drag/utils/lock.js");
+/**
+ * @param handlers -
+ * @internal
+ */ function useTapGesture(_a) {
+    var onTap = _a.onTap, onTapStart = _a.onTapStart, onTapCancel = _a.onTapCancel, whileTap = _a.whileTap, visualElement = _a.visualElement;
+    var hasPressListeners = onTap || onTapStart || onTapCancel || whileTap;
+    var isPressing = (0, _react.useRef)(false);
+    var cancelPointerEndListeners = (0, _react.useRef)(null);
+    function removePointerEndListener() {
+        var _a;
+        (_a = cancelPointerEndListeners.current) === null || _a === void 0 || _a.call(cancelPointerEndListeners);
+        cancelPointerEndListeners.current = null;
+    }
+    function checkPointerEnd() {
+        var _a;
+        removePointerEndListener();
+        isPressing.current = false;
+        (_a = visualElement.animationState) === null || _a === void 0 || _a.setActive((0, _typesJs.AnimationType).Tap, false);
+        return !(0, _lockJs.isDragActive)();
+    }
+    function onPointerUp(event, info) {
+        if (!checkPointerEnd()) return;
+        /**
+         * We only count this as a tap gesture if the event.target is the same
+         * as, or a child of, this component's element
+         */ !(0, _isNodeOrChildJs.isNodeOrChild)(visualElement.getInstance(), event.target) ? onTapCancel === null || onTapCancel === void 0 || onTapCancel(event, info) : onTap === null || onTap === void 0 || onTap(event, info);
+    }
+    function onPointerCancel(event, info) {
+        if (!checkPointerEnd()) return;
+        onTapCancel === null || onTapCancel === void 0 || onTapCancel(event, info);
+    }
+    function onPointerDown(event, info) {
+        var _a;
+        removePointerEndListener();
+        if (isPressing.current) return;
+        isPressing.current = true;
+        cancelPointerEndListeners.current = (0, _popmotion.pipe)((0, _usePointerEventJs.addPointerEvent)(window, "pointerup", onPointerUp), (0, _usePointerEventJs.addPointerEvent)(window, "pointercancel", onPointerCancel));
+        onTapStart === null || onTapStart === void 0 || onTapStart(event, info);
+        (_a = visualElement.animationState) === null || _a === void 0 || _a.setActive((0, _typesJs.AnimationType).Tap, true);
+    }
+    (0, _usePointerEventJs.usePointerEvent)(visualElement, "pointerdown", hasPressListeners ? onPointerDown : undefined);
+    (0, _useUnmountEffectJs.useUnmountEffect)(removePointerEndListener);
+}
+
+},{"react":"9sfFD","./utils/is-node-or-child.js":"5PzK1","../events/use-pointer-event.js":"9ltEK","../utils/use-unmount-effect.js":"1ewES","popmotion":"hu70l","../render/utils/types.js":"aemrC","./drag/utils/lock.js":"fzvQf","@parcel/transformer-js/src/esmodule-helpers.js":"5oERU"}],"5PzK1":[function(require,module,exports) {
+/**
+ * Recursively traverse up the tree to check whether the provided child node
+ * is the parent or a descendant of it.
+ *
+ * @param parent - Element to find
+ * @param child - Element to test against parent
+ */ var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "isNodeOrChild", ()=>isNodeOrChild);
+var isNodeOrChild = function(parent, child) {
+    if (!child) return false;
+    else if (parent === child) return true;
+    else return isNodeOrChild(parent, child.parentElement);
+};
+
+},{"@parcel/transformer-js/src/esmodule-helpers.js":"5oERU"}],"1ewES":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "useUnmountEffect", ()=>useUnmountEffect);
+var _react = require("react");
+function useUnmountEffect(callback) {
+    return (0, _react.useEffect)(function() {
+        return function() {
+            return callback();
+        };
+    }, []);
+}
+
+},{"react":"9sfFD","@parcel/transformer-js/src/esmodule-helpers.js":"5oERU"}],"hu70l":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "animate", ()=>(0, _indexJs.animate));
+parcelHelpers.export(exports, "inertia", ()=>(0, _inertiaJs.inertia));
+parcelHelpers.export(exports, "decay", ()=>(0, _decayJs.decay));
+parcelHelpers.export(exports, "spring", ()=>(0, _springJs.spring));
+parcelHelpers.export(exports, "keyframes", ()=>(0, _keyframesJs.keyframes));
+parcelHelpers.export(exports, "angle", ()=>(0, _angleJs.angle));
+parcelHelpers.export(exports, "applyOffset", ()=>(0, _applyOffsetJs.applyOffset));
+parcelHelpers.export(exports, "attract", ()=>(0, _attractJs.attract));
+parcelHelpers.export(exports, "attractExpo", ()=>(0, _attractJs.attractExpo));
+parcelHelpers.export(exports, "createAttractor", ()=>(0, _attractJs.createAttractor));
+parcelHelpers.export(exports, "clamp", ()=>(0, _clampJs.clamp));
+parcelHelpers.export(exports, "degreesToRadians", ()=>(0, _degreesToRadiansJs.degreesToRadians));
+parcelHelpers.export(exports, "distance", ()=>(0, _distanceJs.distance));
+parcelHelpers.export(exports, "interpolate", ()=>(0, _interpolateJs.interpolate));
+parcelHelpers.export(exports, "isPoint3D", ()=>(0, _isPoint3DJs.isPoint3D));
+parcelHelpers.export(exports, "isPoint", ()=>(0, _isPointJs.isPoint));
+parcelHelpers.export(exports, "mixColor", ()=>(0, _mixColorJs.mixColor));
+parcelHelpers.export(exports, "mixComplex", ()=>(0, _mixComplexJs.mixComplex));
+parcelHelpers.export(exports, "mix", ()=>(0, _mixJs.mix));
+parcelHelpers.export(exports, "pipe", ()=>(0, _pipeJs.pipe));
+parcelHelpers.export(exports, "pointFromVector", ()=>(0, _pointFromVectorJs.pointFromVector));
+parcelHelpers.export(exports, "progress", ()=>(0, _progressJs.progress));
+parcelHelpers.export(exports, "radiansToDegrees", ()=>(0, _radiansToDegreesJs.radiansToDegrees));
+parcelHelpers.export(exports, "smoothFrame", ()=>(0, _smoothFrameJs.smoothFrame));
+parcelHelpers.export(exports, "smooth", ()=>(0, _smoothJs.smooth));
+parcelHelpers.export(exports, "snap", ()=>(0, _snapJs.snap));
+parcelHelpers.export(exports, "toDecimal", ()=>(0, _toDecimalJs.toDecimal));
+parcelHelpers.export(exports, "velocityPerFrame", ()=>(0, _velocityPerFrameJs.velocityPerFrame));
+parcelHelpers.export(exports, "velocityPerSecond", ()=>(0, _velocityPerSecondJs.velocityPerSecond));
+parcelHelpers.export(exports, "wrap", ()=>(0, _wrapJs.wrap));
+parcelHelpers.export(exports, "anticipate", ()=>(0, _indexJs1.anticipate));
+parcelHelpers.export(exports, "backIn", ()=>(0, _indexJs1.backIn));
+parcelHelpers.export(exports, "backInOut", ()=>(0, _indexJs1.backInOut));
+parcelHelpers.export(exports, "backOut", ()=>(0, _indexJs1.backOut));
+parcelHelpers.export(exports, "bounceIn", ()=>(0, _indexJs1.bounceIn));
+parcelHelpers.export(exports, "bounceInOut", ()=>(0, _indexJs1.bounceInOut));
+parcelHelpers.export(exports, "bounceOut", ()=>(0, _indexJs1.bounceOut));
+parcelHelpers.export(exports, "circIn", ()=>(0, _indexJs1.circIn));
+parcelHelpers.export(exports, "circInOut", ()=>(0, _indexJs1.circInOut));
+parcelHelpers.export(exports, "circOut", ()=>(0, _indexJs1.circOut));
+parcelHelpers.export(exports, "easeIn", ()=>(0, _indexJs1.easeIn));
+parcelHelpers.export(exports, "easeInOut", ()=>(0, _indexJs1.easeInOut));
+parcelHelpers.export(exports, "easeOut", ()=>(0, _indexJs1.easeOut));
+parcelHelpers.export(exports, "linear", ()=>(0, _indexJs1.linear));
+parcelHelpers.export(exports, "cubicBezier", ()=>(0, _cubicBezierJs.cubicBezier));
+parcelHelpers.export(exports, "steps", ()=>(0, _stepsJs.steps));
+parcelHelpers.export(exports, "createAnticipate", ()=>(0, _utilsJs.createAnticipate));
+parcelHelpers.export(exports, "createBackIn", ()=>(0, _utilsJs.createBackIn));
+parcelHelpers.export(exports, "createExpoIn", ()=>(0, _utilsJs.createExpoIn));
+parcelHelpers.export(exports, "mirrorEasing", ()=>(0, _utilsJs.mirrorEasing));
+parcelHelpers.export(exports, "reverseEasing", ()=>(0, _utilsJs.reverseEasing));
+var _indexJs = require("./animations/index.js");
+var _inertiaJs = require("./animations/inertia.js");
+var _decayJs = require("./animations/generators/decay.js");
+var _springJs = require("./animations/generators/spring.js");
+var _keyframesJs = require("./animations/generators/keyframes.js");
+var _angleJs = require("./utils/angle.js");
+var _applyOffsetJs = require("./utils/apply-offset.js");
+var _attractJs = require("./utils/attract.js");
+var _clampJs = require("./utils/clamp.js");
+var _degreesToRadiansJs = require("./utils/degrees-to-radians.js");
+var _distanceJs = require("./utils/distance.js");
+var _interpolateJs = require("./utils/interpolate.js");
+var _isPoint3DJs = require("./utils/is-point-3d.js");
+var _isPointJs = require("./utils/is-point.js");
+var _mixColorJs = require("./utils/mix-color.js");
+var _mixComplexJs = require("./utils/mix-complex.js");
+var _mixJs = require("./utils/mix.js");
+var _pipeJs = require("./utils/pipe.js");
+var _pointFromVectorJs = require("./utils/point-from-vector.js");
+var _progressJs = require("./utils/progress.js");
+var _radiansToDegreesJs = require("./utils/radians-to-degrees.js");
+var _smoothFrameJs = require("./utils/smooth-frame.js");
+var _smoothJs = require("./utils/smooth.js");
+var _snapJs = require("./utils/snap.js");
+var _toDecimalJs = require("./utils/to-decimal.js");
+var _velocityPerFrameJs = require("./utils/velocity-per-frame.js");
+var _velocityPerSecondJs = require("./utils/velocity-per-second.js");
+var _wrapJs = require("./utils/wrap.js");
+var _indexJs1 = require("./easing/index.js");
+var _cubicBezierJs = require("./easing/cubic-bezier.js");
+var _stepsJs = require("./easing/steps.js");
+var _utilsJs = require("./easing/utils.js");
+
+},{"./animations/index.js":"213vg","./animations/inertia.js":"fadhN","./animations/generators/decay.js":"8s46z","./animations/generators/spring.js":"qcgJ0","./animations/generators/keyframes.js":"b10FU","./utils/angle.js":false,"./utils/apply-offset.js":false,"./utils/attract.js":false,"./utils/clamp.js":"48v6h","./utils/degrees-to-radians.js":false,"./utils/distance.js":"eGyTM","./utils/interpolate.js":"3vsWk","./utils/is-point-3d.js":"2RnOp","./utils/is-point.js":"awwdp","./utils/mix-color.js":"ktzu7","./utils/mix-complex.js":"1ydO6","./utils/mix.js":"c2eXc","./utils/pipe.js":"7J27S","./utils/point-from-vector.js":false,"./utils/progress.js":"8ymm6","./utils/radians-to-degrees.js":false,"./utils/smooth-frame.js":false,"./utils/smooth.js":false,"./utils/snap.js":false,"./utils/to-decimal.js":false,"./utils/velocity-per-frame.js":false,"./utils/velocity-per-second.js":"8EzJA","./utils/wrap.js":false,"./easing/index.js":"lGoVg","./easing/cubic-bezier.js":"dSV1w","./easing/steps.js":false,"./easing/utils.js":"dBJ5W","@parcel/transformer-js/src/esmodule-helpers.js":"5oERU"}],"213vg":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "animate", ()=>animate);
+var _tslib = require("tslib");
+var _detectAnimationFromOptionsJs = require("./utils/detect-animation-from-options.js");
+var _framesync = require("framesync");
+var _framesyncDefault = parcelHelpers.interopDefault(_framesync);
+var _interpolateJs = require("../utils/interpolate.js");
+var _elapsedJs = require("./utils/elapsed.js");
+var framesync = function(update) {
+    var passTimestamp = function(_a) {
+        var delta = _a.delta;
+        return update(delta);
+    };
+    return {
+        start: function() {
+            return (0, _framesyncDefault.default).update(passTimestamp, true);
+        },
+        stop: function() {
+            return (0, _framesync.cancelSync).update(passTimestamp);
+        }
+    };
+};
+function animate(_a) {
+    var _b, _c;
+    var from = _a.from, _d = _a.autoplay, autoplay = _d === void 0 ? true : _d, _e = _a.driver, driver = _e === void 0 ? framesync : _e, _f = _a.elapsed, elapsed = _f === void 0 ? 0 : _f, _g = _a.repeat, repeatMax = _g === void 0 ? 0 : _g, _h = _a.repeatType, repeatType = _h === void 0 ? "loop" : _h, _j = _a.repeatDelay, repeatDelay = _j === void 0 ? 0 : _j, onPlay = _a.onPlay, onStop = _a.onStop, onComplete = _a.onComplete, onRepeat = _a.onRepeat, onUpdate = _a.onUpdate, options = (0, _tslib.__rest)(_a, [
+        "from",
+        "autoplay",
+        "driver",
+        "elapsed",
+        "repeat",
+        "repeatType",
+        "repeatDelay",
+        "onPlay",
+        "onStop",
+        "onComplete",
+        "onRepeat",
+        "onUpdate"
+    ]);
+    var to = options.to;
+    var driverControls;
+    var repeatCount = 0;
+    var computedDuration = options.duration;
+    var latest;
+    var isComplete = false;
+    var isForwardPlayback = true;
+    var interpolateFromNumber;
+    var animator = (0, _detectAnimationFromOptionsJs.detectAnimationFromOptions)(options);
+    if ((_c = (_b = animator).needsInterpolation) === null || _c === void 0 ? void 0 : _c.call(_b, from, to)) {
+        interpolateFromNumber = (0, _interpolateJs.interpolate)([
+            0,
+            100
+        ], [
+            from,
+            to
+        ], {
+            clamp: false
+        });
+        from = 0;
+        to = 100;
+    }
+    var animation = animator((0, _tslib.__assign)((0, _tslib.__assign)({}, options), {
+        from: from,
+        to: to
+    }));
+    function repeat() {
+        repeatCount++;
+        if (repeatType === "reverse") {
+            isForwardPlayback = repeatCount % 2 === 0;
+            elapsed = (0, _elapsedJs.reverseElapsed)(elapsed, computedDuration, repeatDelay, isForwardPlayback);
+        } else {
+            elapsed = (0, _elapsedJs.loopElapsed)(elapsed, computedDuration, repeatDelay);
+            if (repeatType === "mirror") animation.flipTarget();
+        }
+        isComplete = false;
+        onRepeat && onRepeat();
+    }
+    function complete() {
+        driverControls.stop();
+        onComplete && onComplete();
+    }
+    function update(delta) {
+        if (!isForwardPlayback) delta = -delta;
+        elapsed += delta;
+        if (!isComplete) {
+            var state = animation.next(Math.max(0, elapsed));
+            latest = state.value;
+            if (interpolateFromNumber) latest = interpolateFromNumber(latest);
+            isComplete = isForwardPlayback ? state.done : elapsed <= 0;
+        }
+        onUpdate === null || onUpdate === void 0 || onUpdate(latest);
+        if (isComplete) {
+            if (repeatCount === 0) computedDuration !== null && computedDuration !== void 0 ? computedDuration : computedDuration = elapsed;
+            if (repeatCount < repeatMax) (0, _elapsedJs.hasRepeatDelayElapsed)(elapsed, computedDuration, repeatDelay, isForwardPlayback) && repeat();
+            else complete();
+        }
+    }
+    function play() {
+        onPlay === null || onPlay === void 0 || onPlay();
+        driverControls = driver(update);
+        driverControls.start();
+    }
+    autoplay && play();
+    return {
+        stop: function() {
+            onStop === null || onStop === void 0 || onStop();
+            driverControls.stop();
+        }
+    };
+}
+
+},{"tslib":"edJ4f","./utils/detect-animation-from-options.js":"aXK88","framesync":"geFpv","../utils/interpolate.js":"3vsWk","./utils/elapsed.js":"6gszJ","@parcel/transformer-js/src/esmodule-helpers.js":"5oERU"}],"aXK88":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "detectAnimationFromOptions", ()=>detectAnimationFromOptions);
+var _springJs = require("../generators/spring.js");
+var _keyframesJs = require("../generators/keyframes.js");
+var _decayJs = require("../generators/decay.js");
+var types = {
+    keyframes: (0, _keyframesJs.keyframes),
+    spring: (0, _springJs.spring),
+    decay: (0, _decayJs.decay)
+};
+function detectAnimationFromOptions(config) {
+    if (Array.isArray(config.to)) return 0, _keyframesJs.keyframes;
+    else if (types[config.type]) return types[config.type];
+    var keys = new Set(Object.keys(config));
+    if (keys.has("ease") || keys.has("duration") && !keys.has("dampingRatio")) return 0, _keyframesJs.keyframes;
+    else if (keys.has("dampingRatio") || keys.has("stiffness") || keys.has("mass") || keys.has("damping") || keys.has("restSpeed") || keys.has("restDelta")) return 0, _springJs.spring;
+    return 0, _keyframesJs.keyframes;
+}
+
+},{"../generators/spring.js":"qcgJ0","../generators/keyframes.js":"b10FU","../generators/decay.js":"8s46z","@parcel/transformer-js/src/esmodule-helpers.js":"5oERU"}],"qcgJ0":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "spring", ()=>spring);
+var _tslib = require("tslib");
+var _findSpringJs = require("../utils/find-spring.js");
+var durationKeys = [
+    "duration",
+    "bounce"
+];
+var physicsKeys = [
+    "stiffness",
+    "damping",
+    "mass"
+];
+function isSpringType(options, keys) {
+    return keys.some(function(key) {
+        return options[key] !== undefined;
+    });
+}
+function getSpringOptions(options) {
+    var springOptions = (0, _tslib.__assign)({
+        velocity: 0.0,
+        stiffness: 100,
+        damping: 10,
+        mass: 1.0,
+        isResolvedFromDuration: false
+    }, options);
+    if (!isSpringType(options, physicsKeys) && isSpringType(options, durationKeys)) {
+        var derived = (0, _findSpringJs.findSpring)(options);
+        springOptions = (0, _tslib.__assign)((0, _tslib.__assign)((0, _tslib.__assign)({}, springOptions), derived), {
+            velocity: 0.0,
+            mass: 1.0
+        });
+        springOptions.isResolvedFromDuration = true;
+    }
+    return springOptions;
+}
+function spring(_a) {
+    var _b = _a.from, from = _b === void 0 ? 0.0 : _b, _c = _a.to, to = _c === void 0 ? 1.0 : _c, _d = _a.restSpeed, restSpeed = _d === void 0 ? 2 : _d, restDelta = _a.restDelta, options = (0, _tslib.__rest)(_a, [
+        "from",
+        "to",
+        "restSpeed",
+        "restDelta"
+    ]);
+    var state = {
+        done: false,
+        value: from
+    };
+    var _e = getSpringOptions(options), stiffness = _e.stiffness, damping = _e.damping, mass = _e.mass, velocity = _e.velocity, duration = _e.duration, isResolvedFromDuration = _e.isResolvedFromDuration;
+    var resolveSpring = zero;
+    var resolveVelocity = zero;
+    function createSpring() {
+        var initialVelocity = velocity ? -(velocity / 1000) : 0.0;
+        var initialDelta = to - from;
+        var dampingRatio = damping / (2 * Math.sqrt(stiffness * mass));
+        var undampedAngularFreq = Math.sqrt(stiffness / mass) / 1000;
+        restDelta !== null && restDelta !== void 0 ? restDelta : restDelta = Math.abs(to - from) <= 1 ? 0.01 : 0.4;
+        if (dampingRatio < 1) {
+            var angularFreq_1 = (0, _findSpringJs.calcAngularFreq)(undampedAngularFreq, dampingRatio);
+            resolveSpring = function(t) {
+                var envelope = Math.exp(-dampingRatio * undampedAngularFreq * t);
+                return to - envelope * ((initialVelocity + dampingRatio * undampedAngularFreq * initialDelta) / angularFreq_1 * Math.sin(angularFreq_1 * t) + initialDelta * Math.cos(angularFreq_1 * t));
+            };
+            resolveVelocity = function(t) {
+                var envelope = Math.exp(-dampingRatio * undampedAngularFreq * t);
+                return dampingRatio * undampedAngularFreq * envelope * (Math.sin(angularFreq_1 * t) * (initialVelocity + dampingRatio * undampedAngularFreq * initialDelta) / angularFreq_1 + initialDelta * Math.cos(angularFreq_1 * t)) - envelope * (Math.cos(angularFreq_1 * t) * (initialVelocity + dampingRatio * undampedAngularFreq * initialDelta) - angularFreq_1 * initialDelta * Math.sin(angularFreq_1 * t));
+            };
+        } else if (dampingRatio === 1) resolveSpring = function(t) {
+            return to - Math.exp(-undampedAngularFreq * t) * (initialDelta + (initialVelocity + undampedAngularFreq * initialDelta) * t);
+        };
+        else {
+            var dampedAngularFreq_1 = undampedAngularFreq * Math.sqrt(dampingRatio * dampingRatio - 1);
+            resolveSpring = function(t) {
+                var envelope = Math.exp(-dampingRatio * undampedAngularFreq * t);
+                var freqForT = Math.min(dampedAngularFreq_1 * t, 300);
+                return to - envelope * ((initialVelocity + dampingRatio * undampedAngularFreq * initialDelta) * Math.sinh(freqForT) + dampedAngularFreq_1 * initialDelta * Math.cosh(freqForT)) / dampedAngularFreq_1;
+            };
+        }
+    }
+    createSpring();
+    return {
+        next: function(t) {
+            var current = resolveSpring(t);
+            if (!isResolvedFromDuration) {
+                var currentVelocity = resolveVelocity(t) * 1000;
+                var isBelowVelocityThreshold = Math.abs(currentVelocity) <= restSpeed;
+                var isBelowDisplacementThreshold = Math.abs(to - current) <= restDelta;
+                state.done = isBelowVelocityThreshold && isBelowDisplacementThreshold;
+            } else state.done = t >= duration;
+            state.value = state.done ? to : current;
+            return state;
+        },
+        flipTarget: function() {
+            var _a;
+            velocity = -velocity;
+            _a = [
+                to,
+                from
+            ], from = _a[0], to = _a[1];
+            createSpring();
+        }
+    };
+}
+spring.needsInterpolation = function(a, b) {
+    return typeof a === "string" || typeof b === "string";
+};
+var zero = function(_t) {
+    return 0;
+};
+
+},{"tslib":"edJ4f","../utils/find-spring.js":"7GMQ1","@parcel/transformer-js/src/esmodule-helpers.js":"5oERU"}],"7GMQ1":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "calcAngularFreq", ()=>calcAngularFreq);
+parcelHelpers.export(exports, "findSpring", ()=>findSpring);
+parcelHelpers.export(exports, "maxDamping", ()=>maxDamping);
+parcelHelpers.export(exports, "maxDuration", ()=>maxDuration);
+parcelHelpers.export(exports, "minDamping", ()=>minDamping);
+parcelHelpers.export(exports, "minDuration", ()=>minDuration);
+var _heyListen = require("hey-listen");
+var _clampJs = require("../../utils/clamp.js");
+var safeMin = 0.001;
+var minDuration = 0.01;
+var maxDuration = 10.0;
+var minDamping = 0.05;
+var maxDamping = 1;
+function findSpring(_a) {
+    var _b = _a.duration, duration = _b === void 0 ? 800 : _b, _c = _a.bounce, bounce = _c === void 0 ? 0.25 : _c, _d = _a.velocity, velocity = _d === void 0 ? 0 : _d, _e = _a.mass, mass = _e === void 0 ? 1 : _e;
+    var envelope;
+    var derivative;
+    (0, _heyListen.warning)(duration <= maxDuration * 1000, "Spring duration must be 10 seconds or less");
+    var dampingRatio = 1 - bounce;
+    dampingRatio = (0, _clampJs.clamp)(minDamping, maxDamping, dampingRatio);
+    duration = (0, _clampJs.clamp)(minDuration, maxDuration, duration / 1000);
+    if (dampingRatio < 1) {
+        envelope = function(undampedFreq) {
+            var exponentialDecay = undampedFreq * dampingRatio;
+            var delta = exponentialDecay * duration;
+            var a = exponentialDecay - velocity;
+            var b = calcAngularFreq(undampedFreq, dampingRatio);
+            var c = Math.exp(-delta);
+            return safeMin - a / b * c;
+        };
+        derivative = function(undampedFreq) {
+            var exponentialDecay = undampedFreq * dampingRatio;
+            var delta = exponentialDecay * duration;
+            var d = delta * velocity + velocity;
+            var e = Math.pow(dampingRatio, 2) * Math.pow(undampedFreq, 2) * duration;
+            var f = Math.exp(-delta);
+            var g = calcAngularFreq(Math.pow(undampedFreq, 2), dampingRatio);
+            var factor = -envelope(undampedFreq) + safeMin > 0 ? -1 : 1;
+            return factor * ((d - e) * f) / g;
+        };
+    } else {
+        envelope = function(undampedFreq) {
+            var a = Math.exp(-undampedFreq * duration);
+            var b = (undampedFreq - velocity) * duration + 1;
+            return -safeMin + a * b;
+        };
+        derivative = function(undampedFreq) {
+            var a = Math.exp(-undampedFreq * duration);
+            var b = (velocity - undampedFreq) * (duration * duration);
+            return a * b;
+        };
+    }
+    var initialGuess = 5 / duration;
+    var undampedFreq = approximateRoot(envelope, derivative, initialGuess);
+    duration = duration * 1000;
+    if (isNaN(undampedFreq)) return {
+        stiffness: 100,
+        damping: 10,
+        duration: duration
+    };
+    else {
+        var stiffness = Math.pow(undampedFreq, 2) * mass;
+        return {
+            stiffness: stiffness,
+            damping: dampingRatio * 2 * Math.sqrt(mass * stiffness),
+            duration: duration
+        };
+    }
+}
+var rootIterations = 12;
+function approximateRoot(envelope, derivative, initialGuess) {
+    var result = initialGuess;
+    for(var i = 1; i < rootIterations; i++)result = result - envelope(result) / derivative(result);
+    return result;
+}
+function calcAngularFreq(undampedFreq, dampingRatio) {
+    return undampedFreq * Math.sqrt(1 - dampingRatio * dampingRatio);
+}
+
+},{"hey-listen":"fFhg6","../../utils/clamp.js":"48v6h","@parcel/transformer-js/src/esmodule-helpers.js":"5oERU"}],"48v6h":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "clamp", ()=>clamp);
+var clamp = function(min, max, v) {
+    return Math.min(Math.max(v, min), max);
+};
+
+},{"@parcel/transformer-js/src/esmodule-helpers.js":"5oERU"}],"b10FU":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "convertOffsetToTimes", ()=>convertOffsetToTimes);
+parcelHelpers.export(exports, "defaultEasing", ()=>defaultEasing);
+parcelHelpers.export(exports, "defaultOffset", ()=>defaultOffset);
+parcelHelpers.export(exports, "keyframes", ()=>keyframes);
+var _interpolateJs = require("../../utils/interpolate.js");
+var _indexJs = require("../../easing/index.js");
+function defaultEasing(values, easing) {
+    return values.map(function() {
+        return easing || (0, _indexJs.easeInOut);
+    }).splice(0, values.length - 1);
+}
+function defaultOffset(values) {
+    var numValues = values.length;
+    return values.map(function(_value, i) {
+        return i !== 0 ? i / (numValues - 1) : 0;
+    });
+}
+function convertOffsetToTimes(offset, duration) {
+    return offset.map(function(o) {
+        return o * duration;
+    });
+}
+function keyframes(_a) {
+    var _b = _a.from, from = _b === void 0 ? 0 : _b, _c = _a.to, to = _c === void 0 ? 1 : _c, ease = _a.ease, offset = _a.offset, _d = _a.duration, duration = _d === void 0 ? 300 : _d;
+    var state = {
+        done: false,
+        value: from
+    };
+    var values = Array.isArray(to) ? to : [
+        from,
+        to
+    ];
+    var times = convertOffsetToTimes(offset && offset.length === values.length ? offset : defaultOffset(values), duration);
+    function createInterpolator() {
+        return (0, _interpolateJs.interpolate)(times, values, {
+            ease: Array.isArray(ease) ? ease : defaultEasing(values, ease)
+        });
+    }
+    var interpolator = createInterpolator();
+    return {
+        next: function(t) {
+            state.value = interpolator(t);
+            state.done = t >= duration;
+            return state;
+        },
+        flipTarget: function() {
+            values.reverse();
+            interpolator = createInterpolator();
+        }
+    };
+}
+
+},{"../../utils/interpolate.js":"3vsWk","../../easing/index.js":"lGoVg","@parcel/transformer-js/src/esmodule-helpers.js":"5oERU"}],"3vsWk":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "interpolate", ()=>interpolate);
+var _progressJs = require("./progress.js");
+var _mixJs = require("./mix.js");
+var _mixColorJs = require("./mix-color.js");
+var _mixComplexJs = require("./mix-complex.js");
+var _styleValueTypes = require("style-value-types");
+var _clampJs = require("./clamp.js");
+var _pipeJs = require("./pipe.js");
+var _heyListen = require("hey-listen");
+var mixNumber = function(from, to) {
+    return function(p) {
+        return (0, _mixJs.mix)(from, to, p);
+    };
+};
+function detectMixerFactory(v) {
+    if (typeof v === "number") return mixNumber;
+    else if (typeof v === "string") {
+        if ((0, _styleValueTypes.color).test(v)) return 0, _mixColorJs.mixColor;
+        else return 0, _mixComplexJs.mixComplex;
+    } else if (Array.isArray(v)) return 0, _mixComplexJs.mixArray;
+    else if (typeof v === "object") return 0, _mixComplexJs.mixObject;
+}
+function createMixers(output, ease, customMixer) {
+    var mixers = [];
+    var mixerFactory = customMixer || detectMixerFactory(output[0]);
+    var numMixers = output.length - 1;
+    for(var i = 0; i < numMixers; i++){
+        var mixer = mixerFactory(output[i], output[i + 1]);
+        if (ease) {
+            var easingFunction = Array.isArray(ease) ? ease[i] : ease;
+            mixer = (0, _pipeJs.pipe)(easingFunction, mixer);
+        }
+        mixers.push(mixer);
+    }
+    return mixers;
+}
+function fastInterpolate(_a, _b) {
+    var from = _a[0], to = _a[1];
+    var mixer = _b[0];
+    return function(v) {
+        return mixer((0, _progressJs.progress)(from, to, v));
+    };
+}
+function slowInterpolate(input, mixers) {
+    var inputLength = input.length;
+    var lastInputIndex = inputLength - 1;
+    return function(v) {
+        var mixerIndex = 0;
+        var foundMixerIndex = false;
+        if (v <= input[0]) foundMixerIndex = true;
+        else if (v >= input[lastInputIndex]) {
+            mixerIndex = lastInputIndex - 1;
+            foundMixerIndex = true;
+        }
+        if (!foundMixerIndex) {
+            var i = 1;
+            for(; i < inputLength; i++){
+                if (input[i] > v || i === lastInputIndex) break;
+            }
+            mixerIndex = i - 1;
+        }
+        var progressInRange = (0, _progressJs.progress)(input[mixerIndex], input[mixerIndex + 1], v);
+        return mixers[mixerIndex](progressInRange);
+    };
+}
+function interpolate(input, output, _a) {
+    var _b = _a === void 0 ? {} : _a, _c = _b.clamp, isClamp = _c === void 0 ? true : _c, ease = _b.ease, mixer = _b.mixer;
+    var inputLength = input.length;
+    (0, _heyListen.invariant)(inputLength === output.length, "Both input and output ranges must be the same length");
+    (0, _heyListen.invariant)(!ease || !Array.isArray(ease) || ease.length === inputLength - 1, "Array of easing functions must be of length `input.length - 1`, as it applies to the transitions **between** the defined values.");
+    if (input[0] > input[inputLength - 1]) {
+        input = [].concat(input);
+        output = [].concat(output);
+        input.reverse();
+        output.reverse();
+    }
+    var mixers = createMixers(output, ease, mixer);
+    var interpolator = inputLength === 2 ? fastInterpolate(input, mixers) : slowInterpolate(input, mixers);
+    return isClamp ? function(v) {
+        return interpolator((0, _clampJs.clamp)(input[0], input[inputLength - 1], v));
+    } : interpolator;
+}
+
+},{"./progress.js":"8ymm6","./mix.js":"c2eXc","./mix-color.js":"ktzu7","./mix-complex.js":"1ydO6","style-value-types":"dhngi","./clamp.js":"48v6h","./pipe.js":"7J27S","hey-listen":"fFhg6","@parcel/transformer-js/src/esmodule-helpers.js":"5oERU"}],"8ymm6":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "progress", ()=>progress);
+var progress = function(from, to, value) {
+    var toFromDifference = to - from;
+    return toFromDifference === 0 ? 1 : (value - from) / toFromDifference;
+};
+
+},{"@parcel/transformer-js/src/esmodule-helpers.js":"5oERU"}],"c2eXc":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "mix", ()=>mix);
+var mix = function(from, to, progress) {
+    return -progress * from + progress * to + from;
+};
+
+},{"@parcel/transformer-js/src/esmodule-helpers.js":"5oERU"}],"ktzu7":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "mixColor", ()=>mixColor);
+parcelHelpers.export(exports, "mixLinearColor", ()=>mixLinearColor);
+var _tslib = require("tslib");
+var _mixJs = require("./mix.js");
+var _styleValueTypes = require("style-value-types");
+var _heyListen = require("hey-listen");
+var mixLinearColor = function(from, to, v) {
+    var fromExpo = from * from;
+    var toExpo = to * to;
+    return Math.sqrt(Math.max(0, v * (toExpo - fromExpo) + fromExpo));
+};
+var colorTypes = [
+    (0, _styleValueTypes.hex),
+    (0, _styleValueTypes.rgba),
+    (0, _styleValueTypes.hsla)
+];
+var getColorType = function(v) {
+    return colorTypes.find(function(type) {
+        return type.test(v);
+    });
+};
+var notAnimatable = function(color) {
+    return "'" + color + "' is not an animatable color. Use the equivalent color code instead.";
+};
+var mixColor = function(from, to) {
+    var fromColorType = getColorType(from);
+    var toColorType = getColorType(to);
+    (0, _heyListen.invariant)(!!fromColorType, notAnimatable(from));
+    (0, _heyListen.invariant)(!!toColorType, notAnimatable(to));
+    (0, _heyListen.invariant)(fromColorType.transform === toColorType.transform, "Both colors must be hex/RGBA, OR both must be HSLA.");
+    var fromColor = fromColorType.parse(from);
+    var toColor = toColorType.parse(to);
+    var blended = (0, _tslib.__assign)({}, fromColor);
+    var mixFunc = fromColorType === (0, _styleValueTypes.hsla) ? (0, _mixJs.mix) : mixLinearColor;
+    return function(v) {
+        for(var key in blended)if (key !== "alpha") blended[key] = mixFunc(fromColor[key], toColor[key], v);
+        blended.alpha = (0, _mixJs.mix)(fromColor.alpha, toColor.alpha, v);
+        return fromColorType.transform(blended);
+    };
+};
+
+},{"tslib":"edJ4f","./mix.js":"c2eXc","style-value-types":"dhngi","hey-listen":"fFhg6","@parcel/transformer-js/src/esmodule-helpers.js":"5oERU"}],"1ydO6":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "mixArray", ()=>mixArray);
+parcelHelpers.export(exports, "mixComplex", ()=>mixComplex);
+parcelHelpers.export(exports, "mixObject", ()=>mixObject);
+var _tslib = require("tslib");
+var _styleValueTypes = require("style-value-types");
+var _mixJs = require("./mix.js");
+var _mixColorJs = require("./mix-color.js");
+var _incJs = require("./inc.js");
+var _pipeJs = require("./pipe.js");
+var _heyListen = require("hey-listen");
+function getMixer(origin, target) {
+    if ((0, _incJs.isNum)(origin)) return function(v) {
+        return (0, _mixJs.mix)(origin, target, v);
+    };
+    else if ((0, _styleValueTypes.color).test(origin)) return (0, _mixColorJs.mixColor)(origin, target);
+    else return mixComplex(origin, target);
+}
+var mixArray = function(from, to) {
+    var output = (0, _tslib.__spreadArray)([], from);
+    var numValues = output.length;
+    var blendValue = from.map(function(fromThis, i) {
+        return getMixer(fromThis, to[i]);
+    });
+    return function(v) {
+        for(var i = 0; i < numValues; i++)output[i] = blendValue[i](v);
+        return output;
+    };
+};
+var mixObject = function(origin, target) {
+    var output = (0, _tslib.__assign)((0, _tslib.__assign)({}, origin), target);
+    var blendValue = {};
+    for(var key in output)if (origin[key] !== undefined && target[key] !== undefined) blendValue[key] = getMixer(origin[key], target[key]);
+    return function(v) {
+        for(var key in blendValue)output[key] = blendValue[key](v);
+        return output;
+    };
+};
+function analyse(value) {
+    var parsed = (0, _styleValueTypes.complex).parse(value);
+    var numValues = parsed.length;
+    var numNumbers = 0;
+    var numRGB = 0;
+    var numHSL = 0;
+    for(var i = 0; i < numValues; i++){
+        if (numNumbers || typeof parsed[i] === "number") numNumbers++;
+        else if (parsed[i].hue !== undefined) numHSL++;
+        else numRGB++;
+    }
+    return {
+        parsed: parsed,
+        numNumbers: numNumbers,
+        numRGB: numRGB,
+        numHSL: numHSL
+    };
+}
+var mixComplex = function(origin, target) {
+    var template = (0, _styleValueTypes.complex).createTransformer(target);
+    var originStats = analyse(origin);
+    var targetStats = analyse(target);
+    (0, _heyListen.invariant)(originStats.numHSL === targetStats.numHSL && originStats.numRGB === targetStats.numRGB && originStats.numNumbers >= targetStats.numNumbers, "Complex values '" + origin + "' and '" + target + "' too different to mix. Ensure all colors are of the same type.");
+    return (0, _pipeJs.pipe)(mixArray(originStats.parsed, targetStats.parsed), template);
+};
+
+},{"tslib":"edJ4f","style-value-types":"dhngi","./mix.js":"c2eXc","./mix-color.js":"ktzu7","./inc.js":"eBOw5","./pipe.js":"7J27S","hey-listen":"fFhg6","@parcel/transformer-js/src/esmodule-helpers.js":"5oERU"}],"eBOw5":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "isNum", ()=>isNum);
+parcelHelpers.export(exports, "zeroPoint", ()=>zeroPoint);
+var zeroPoint = {
+    x: 0,
+    y: 0,
+    z: 0
+};
+var isNum = function(v) {
+    return typeof v === "number";
+};
+
+},{"@parcel/transformer-js/src/esmodule-helpers.js":"5oERU"}],"7J27S":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "pipe", ()=>pipe);
+var combineFunctions = function(a, b) {
+    return function(v) {
+        return b(a(v));
+    };
+};
+var pipe = function() {
+    var transformers = [];
+    for(var _i = 0; _i < arguments.length; _i++)transformers[_i] = arguments[_i];
+    return transformers.reduce(combineFunctions);
+};
+
+},{"@parcel/transformer-js/src/esmodule-helpers.js":"5oERU"}],"lGoVg":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "anticipate", ()=>anticipate);
+parcelHelpers.export(exports, "backIn", ()=>backIn);
+parcelHelpers.export(exports, "backInOut", ()=>backInOut);
+parcelHelpers.export(exports, "backOut", ()=>backOut);
+parcelHelpers.export(exports, "bounceIn", ()=>bounceIn);
+parcelHelpers.export(exports, "bounceInOut", ()=>bounceInOut);
+parcelHelpers.export(exports, "bounceOut", ()=>bounceOut);
+parcelHelpers.export(exports, "circIn", ()=>circIn);
+parcelHelpers.export(exports, "circInOut", ()=>circInOut);
+parcelHelpers.export(exports, "circOut", ()=>circOut);
+parcelHelpers.export(exports, "easeIn", ()=>easeIn);
+parcelHelpers.export(exports, "easeInOut", ()=>easeInOut);
+parcelHelpers.export(exports, "easeOut", ()=>easeOut);
+parcelHelpers.export(exports, "linear", ()=>linear);
+var _utilsJs = require("./utils.js");
+var DEFAULT_OVERSHOOT_STRENGTH = 1.525;
+var BOUNCE_FIRST_THRESHOLD = 4.0 / 11.0;
+var BOUNCE_SECOND_THRESHOLD = 8.0 / 11.0;
+var BOUNCE_THIRD_THRESHOLD = 0.9;
+var linear = function(p) {
+    return p;
+};
+var easeIn = (0, _utilsJs.createExpoIn)(2);
+var easeOut = (0, _utilsJs.reverseEasing)(easeIn);
+var easeInOut = (0, _utilsJs.mirrorEasing)(easeIn);
+var circIn = function(p) {
+    return 1 - Math.sin(Math.acos(p));
+};
+var circOut = (0, _utilsJs.reverseEasing)(circIn);
+var circInOut = (0, _utilsJs.mirrorEasing)(circOut);
+var backIn = (0, _utilsJs.createBackIn)(DEFAULT_OVERSHOOT_STRENGTH);
+var backOut = (0, _utilsJs.reverseEasing)(backIn);
+var backInOut = (0, _utilsJs.mirrorEasing)(backIn);
+var anticipate = (0, _utilsJs.createAnticipate)(DEFAULT_OVERSHOOT_STRENGTH);
+var ca = 4356.0 / 361.0;
+var cb = 35442.0 / 1805.0;
+var cc = 16061.0 / 1805.0;
+var bounceOut = function(p) {
+    if (p === 1 || p === 0) return p;
+    var p2 = p * p;
+    return p < BOUNCE_FIRST_THRESHOLD ? 7.5625 * p2 : p < BOUNCE_SECOND_THRESHOLD ? 9.075 * p2 - 9.9 * p + 3.4 : p < BOUNCE_THIRD_THRESHOLD ? ca * p2 - cb * p + cc : 10.8 * p * p - 20.52 * p + 10.72;
+};
+var bounceIn = (0, _utilsJs.reverseEasing)(bounceOut);
+var bounceInOut = function(p) {
+    return p < 0.5 ? 0.5 * (1.0 - bounceOut(1.0 - p * 2.0)) : 0.5 * bounceOut(p * 2.0 - 1.0) + 0.5;
+};
+
+},{"./utils.js":"dBJ5W","@parcel/transformer-js/src/esmodule-helpers.js":"5oERU"}],"dBJ5W":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "createAnticipate", ()=>createAnticipate);
+parcelHelpers.export(exports, "createBackIn", ()=>createBackIn);
+parcelHelpers.export(exports, "createExpoIn", ()=>createExpoIn);
+parcelHelpers.export(exports, "mirrorEasing", ()=>mirrorEasing);
+parcelHelpers.export(exports, "reverseEasing", ()=>reverseEasing);
+var reverseEasing = function(easing) {
+    return function(p) {
+        return 1 - easing(1 - p);
+    };
+};
+var mirrorEasing = function(easing) {
+    return function(p) {
+        return p <= 0.5 ? easing(2 * p) / 2 : (2 - easing(2 * (1 - p))) / 2;
+    };
+};
+var createExpoIn = function(power) {
+    return function(p) {
+        return Math.pow(p, power);
+    };
+};
+var createBackIn = function(power) {
+    return function(p) {
+        return p * p * ((power + 1) * p - power);
+    };
+};
+var createAnticipate = function(power) {
+    var backEasing = createBackIn(power);
+    return function(p) {
+        return (p *= 2) < 1 ? 0.5 * backEasing(p) : 0.5 * (2 - Math.pow(2, -10 * (p - 1)));
+    };
+};
+
+},{"@parcel/transformer-js/src/esmodule-helpers.js":"5oERU"}],"8s46z":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "decay", ()=>decay);
+function decay(_a) {
+    var _b = _a.velocity, velocity = _b === void 0 ? 0 : _b, _c = _a.from, from = _c === void 0 ? 0 : _c, _d = _a.power, power = _d === void 0 ? 0.8 : _d, _e = _a.timeConstant, timeConstant = _e === void 0 ? 350 : _e, _f = _a.restDelta, restDelta = _f === void 0 ? 0.5 : _f, modifyTarget = _a.modifyTarget;
+    var state = {
+        done: false,
+        value: from
+    };
+    var amplitude = power * velocity;
+    var ideal = from + amplitude;
+    var target = modifyTarget === undefined ? ideal : modifyTarget(ideal);
+    if (target !== ideal) amplitude = target - from;
+    return {
+        next: function(t) {
+            var delta = -amplitude * Math.exp(-t / timeConstant);
+            state.done = !(delta > restDelta || delta < -restDelta);
+            state.value = state.done ? target : target + delta;
+            return state;
+        },
+        flipTarget: function() {}
+    };
+}
+
+},{"@parcel/transformer-js/src/esmodule-helpers.js":"5oERU"}],"geFpv":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "cancelSync", ()=>cancelSync);
+parcelHelpers.export(exports, "flushSync", ()=>flushSync);
+parcelHelpers.export(exports, "getFrameData", ()=>getFrameData);
+var _onNextFrameJs = require("./on-next-frame.js");
+var _createRenderStepJs = require("./create-render-step.js");
+var maxElapsed = 40;
+var useDefaultElapsed = true;
+var runNextFrame = false;
+var isProcessing = false;
+var frame = {
+    delta: 0,
+    timestamp: 0
+};
+var stepsOrder = [
+    "read",
+    "update",
+    "preRender",
+    "render",
+    "postRender"
+];
+var steps = /*#__PURE__*/ stepsOrder.reduce(function(acc, key) {
+    acc[key] = (0, _createRenderStepJs.createRenderStep)(function() {
+        return runNextFrame = true;
+    });
+    return acc;
+}, {});
+var sync = /*#__PURE__*/ stepsOrder.reduce(function(acc, key) {
+    var step = steps[key];
+    acc[key] = function(process, keepAlive, immediate) {
+        if (keepAlive === void 0) keepAlive = false;
+        if (immediate === void 0) immediate = false;
+        if (!runNextFrame) startLoop();
+        return step.schedule(process, keepAlive, immediate);
+    };
+    return acc;
+}, {});
+var cancelSync = /*#__PURE__*/ stepsOrder.reduce(function(acc, key) {
+    acc[key] = steps[key].cancel;
+    return acc;
+}, {});
+var flushSync = /*#__PURE__*/ stepsOrder.reduce(function(acc, key) {
+    acc[key] = function() {
+        return steps[key].process(frame);
+    };
+    return acc;
+}, {});
+var processStep = function(stepId) {
+    return steps[stepId].process(frame);
+};
+var processFrame = function(timestamp) {
+    runNextFrame = false;
+    frame.delta = useDefaultElapsed ? (0, _onNextFrameJs.defaultTimestep) : Math.max(Math.min(timestamp - frame.timestamp, maxElapsed), 1);
+    frame.timestamp = timestamp;
+    isProcessing = true;
+    stepsOrder.forEach(processStep);
+    isProcessing = false;
+    if (runNextFrame) {
+        useDefaultElapsed = false;
+        (0, _onNextFrameJs.onNextFrame)(processFrame);
+    }
+};
+var startLoop = function() {
+    runNextFrame = true;
+    useDefaultElapsed = true;
+    if (!isProcessing) (0, _onNextFrameJs.onNextFrame)(processFrame);
+};
+var getFrameData = function() {
+    return frame;
+};
+exports.default = sync;
+
+},{"./on-next-frame.js":"juWfl","./create-render-step.js":"dCyMX","@parcel/transformer-js/src/esmodule-helpers.js":"5oERU"}],"juWfl":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "defaultTimestep", ()=>defaultTimestep);
+parcelHelpers.export(exports, "onNextFrame", ()=>onNextFrame);
+var defaultTimestep = 1 / 60 * 1000;
+var getCurrentTime = typeof performance !== "undefined" ? function() {
+    return performance.now();
+} : function() {
+    return Date.now();
+};
+var onNextFrame = typeof window !== "undefined" ? function(callback) {
+    return window.requestAnimationFrame(callback);
+} : function(callback) {
+    return setTimeout(function() {
+        return callback(getCurrentTime());
+    }, defaultTimestep);
+};
+
+},{"@parcel/transformer-js/src/esmodule-helpers.js":"5oERU"}],"dCyMX":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "createRenderStep", ()=>createRenderStep);
+function createRenderStep(runNextFrame) {
+    var toRun = [];
+    var toRunNextFrame = [];
+    var numToRun = 0;
+    var isProcessing = false;
+    var toKeepAlive = new WeakSet();
+    var step = {
+        schedule: function(callback, keepAlive, immediate) {
+            if (keepAlive === void 0) keepAlive = false;
+            if (immediate === void 0) immediate = false;
+            var addToCurrentFrame = immediate && isProcessing;
+            var buffer = addToCurrentFrame ? toRun : toRunNextFrame;
+            if (keepAlive) toKeepAlive.add(callback);
+            if (buffer.indexOf(callback) === -1) {
+                buffer.push(callback);
+                if (addToCurrentFrame && isProcessing) numToRun = toRun.length;
+            }
+            return callback;
+        },
+        cancel: function(callback) {
+            var index = toRunNextFrame.indexOf(callback);
+            if (index !== -1) toRunNextFrame.splice(index, 1);
+            toKeepAlive.delete(callback);
+        },
+        process: function(frameData) {
+            var _a;
+            isProcessing = true;
+            _a = [
+                toRunNextFrame,
+                toRun
+            ], toRun = _a[0], toRunNextFrame = _a[1];
+            toRunNextFrame.length = 0;
+            numToRun = toRun.length;
+            if (numToRun) for(var i = 0; i < numToRun; i++){
+                var callback = toRun[i];
+                callback(frameData);
+                if (toKeepAlive.has(callback)) {
+                    step.schedule(callback);
+                    runNextFrame();
+                }
+            }
+            isProcessing = false;
+        }
+    };
+    return step;
+}
+
+},{"@parcel/transformer-js/src/esmodule-helpers.js":"5oERU"}],"6gszJ":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "hasRepeatDelayElapsed", ()=>hasRepeatDelayElapsed);
+parcelHelpers.export(exports, "loopElapsed", ()=>loopElapsed);
+parcelHelpers.export(exports, "reverseElapsed", ()=>reverseElapsed);
+function loopElapsed(elapsed, duration, delay) {
+    if (delay === void 0) delay = 0;
+    return elapsed - duration - delay;
+}
+function reverseElapsed(elapsed, duration, delay, isForwardPlayback) {
+    if (delay === void 0) delay = 0;
+    if (isForwardPlayback === void 0) isForwardPlayback = true;
+    return isForwardPlayback ? loopElapsed(duration + -elapsed, duration, delay) : duration - (elapsed - duration) + delay;
+}
+function hasRepeatDelayElapsed(elapsed, duration, delay, isForwardPlayback) {
+    return isForwardPlayback ? elapsed >= duration + delay : elapsed <= -delay;
+}
+
+},{"@parcel/transformer-js/src/esmodule-helpers.js":"5oERU"}],"fadhN":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "inertia", ()=>inertia);
+var _tslib = require("tslib");
+var _indexJs = require("./index.js");
+var _velocityPerSecondJs = require("../utils/velocity-per-second.js");
+var _framesync = require("framesync");
+function inertia(_a) {
+    var _b = _a.from, from = _b === void 0 ? 0 : _b, _c = _a.velocity, velocity = _c === void 0 ? 0 : _c, min = _a.min, max = _a.max, _d = _a.power, power = _d === void 0 ? 0.8 : _d, _e = _a.timeConstant, timeConstant = _e === void 0 ? 750 : _e, _f = _a.bounceStiffness, bounceStiffness = _f === void 0 ? 500 : _f, _g = _a.bounceDamping, bounceDamping = _g === void 0 ? 10 : _g, _h = _a.restDelta, restDelta = _h === void 0 ? 1 : _h, modifyTarget = _a.modifyTarget, driver = _a.driver, onUpdate = _a.onUpdate, onComplete = _a.onComplete;
+    var currentAnimation;
+    function isOutOfBounds(v) {
+        return min !== undefined && v < min || max !== undefined && v > max;
+    }
+    function boundaryNearest(v) {
+        if (min === undefined) return max;
+        if (max === undefined) return min;
+        return Math.abs(min - v) < Math.abs(max - v) ? min : max;
+    }
+    function startAnimation(options) {
+        currentAnimation === null || currentAnimation === void 0 || currentAnimation.stop();
+        currentAnimation = (0, _indexJs.animate)((0, _tslib.__assign)((0, _tslib.__assign)({}, options), {
+            driver: driver,
+            onUpdate: function(v) {
+                var _a;
+                onUpdate === null || onUpdate === void 0 || onUpdate(v);
+                (_a = options.onUpdate) === null || _a === void 0 || _a.call(options, v);
+            },
+            onComplete: onComplete
+        }));
+    }
+    function startSpring(options) {
+        startAnimation((0, _tslib.__assign)({
+            type: "spring",
+            stiffness: bounceStiffness,
+            damping: bounceDamping,
+            restDelta: restDelta
+        }, options));
+    }
+    if (isOutOfBounds(from)) startSpring({
+        from: from,
+        velocity: velocity,
+        to: boundaryNearest(from)
+    });
+    else {
+        var target = power * velocity + from;
+        if (typeof modifyTarget !== "undefined") target = modifyTarget(target);
+        var boundary_1 = boundaryNearest(target);
+        var heading_1 = boundary_1 === min ? -1 : 1;
+        var prev_1;
+        var current_1;
+        var checkBoundary = function(v) {
+            prev_1 = current_1;
+            current_1 = v;
+            velocity = (0, _velocityPerSecondJs.velocityPerSecond)(v - prev_1, (0, _framesync.getFrameData)().delta);
+            if (heading_1 === 1 && v > boundary_1 || heading_1 === -1 && v < boundary_1) startSpring({
+                from: v,
+                to: boundary_1,
+                velocity: velocity
+            });
+        };
+        startAnimation({
+            type: "decay",
+            from: from,
+            velocity: velocity,
+            timeConstant: timeConstant,
+            power: power,
+            restDelta: restDelta,
+            modifyTarget: modifyTarget,
+            onUpdate: isOutOfBounds(target) ? checkBoundary : undefined
+        });
+    }
+    return {
+        stop: function() {
+            return currentAnimation === null || currentAnimation === void 0 ? void 0 : currentAnimation.stop();
+        }
+    };
+}
+
+},{"tslib":"edJ4f","./index.js":"213vg","../utils/velocity-per-second.js":"8EzJA","framesync":"geFpv","@parcel/transformer-js/src/esmodule-helpers.js":"5oERU"}],"8EzJA":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "velocityPerSecond", ()=>velocityPerSecond);
+function velocityPerSecond(velocity, frameDuration) {
+    return frameDuration ? velocity * (1000 / frameDuration) : 0;
+}
+
+},{"@parcel/transformer-js/src/esmodule-helpers.js":"5oERU"}],"eGyTM":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "distance", ()=>distance);
+var _isPointJs = require("./is-point.js");
+var _isPoint3DJs = require("./is-point-3d.js");
+var _incJs = require("./inc.js");
+var distance1D = function(a, b) {
+    return Math.abs(a - b);
+};
+function distance(a, b) {
+    if ((0, _incJs.isNum)(a) && (0, _incJs.isNum)(b)) return distance1D(a, b);
+    else if ((0, _isPointJs.isPoint)(a) && (0, _isPointJs.isPoint)(b)) {
+        var xDelta = distance1D(a.x, b.x);
+        var yDelta = distance1D(a.y, b.y);
+        var zDelta = (0, _isPoint3DJs.isPoint3D)(a) && (0, _isPoint3DJs.isPoint3D)(b) ? distance1D(a.z, b.z) : 0;
+        return Math.sqrt(Math.pow(xDelta, 2) + Math.pow(yDelta, 2) + Math.pow(zDelta, 2));
+    }
+}
+
+},{"./is-point.js":"awwdp","./is-point-3d.js":"2RnOp","./inc.js":"eBOw5","@parcel/transformer-js/src/esmodule-helpers.js":"5oERU"}],"awwdp":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "isPoint", ()=>isPoint);
+var isPoint = function(point) {
+    return point.hasOwnProperty("x") && point.hasOwnProperty("y");
+};
+
+},{"@parcel/transformer-js/src/esmodule-helpers.js":"5oERU"}],"2RnOp":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "isPoint3D", ()=>isPoint3D);
+var _isPointJs = require("./is-point.js");
+var isPoint3D = function(point) {
+    return (0, _isPointJs.isPoint)(point) && point.hasOwnProperty("z");
+};
+
+},{"./is-point.js":"awwdp","@parcel/transformer-js/src/esmodule-helpers.js":"5oERU"}],"dSV1w":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "cubicBezier", ()=>cubicBezier);
+var _indexJs = require("./index.js");
+var a = function(a1, a2) {
+    return 1.0 - 3.0 * a2 + 3.0 * a1;
+};
+var b = function(a1, a2) {
+    return 3.0 * a2 - 6.0 * a1;
+};
+var c = function(a1) {
+    return 3.0 * a1;
+};
+var calcBezier = function(t, a1, a2) {
+    return ((a(a1, a2) * t + b(a1, a2)) * t + c(a1)) * t;
+};
+var getSlope = function(t, a1, a2) {
+    return 3.0 * a(a1, a2) * t * t + 2.0 * b(a1, a2) * t + c(a1);
+};
+var subdivisionPrecision = 0.0000001;
+var subdivisionMaxIterations = 10;
+function binarySubdivide(aX, aA, aB, mX1, mX2) {
+    var currentX;
+    var currentT;
+    var i = 0;
+    do {
+        currentT = aA + (aB - aA) / 2.0;
+        currentX = calcBezier(currentT, mX1, mX2) - aX;
+        if (currentX > 0.0) aB = currentT;
+        else aA = currentT;
+    }while (Math.abs(currentX) > subdivisionPrecision && ++i < subdivisionMaxIterations);
+    return currentT;
+}
+var newtonIterations = 8;
+var newtonMinSlope = 0.001;
+function newtonRaphsonIterate(aX, aGuessT, mX1, mX2) {
+    for(var i = 0; i < newtonIterations; ++i){
+        var currentSlope = getSlope(aGuessT, mX1, mX2);
+        if (currentSlope === 0.0) return aGuessT;
+        var currentX = calcBezier(aGuessT, mX1, mX2) - aX;
+        aGuessT -= currentX / currentSlope;
+    }
+    return aGuessT;
+}
+var kSplineTableSize = 11;
+var kSampleStepSize = 1.0 / (kSplineTableSize - 1.0);
+function cubicBezier(mX1, mY1, mX2, mY2) {
+    if (mX1 === mY1 && mX2 === mY2) return 0, _indexJs.linear;
+    var sampleValues = new Float32Array(kSplineTableSize);
+    for(var i = 0; i < kSplineTableSize; ++i)sampleValues[i] = calcBezier(i * kSampleStepSize, mX1, mX2);
+    function getTForX(aX) {
+        var intervalStart = 0.0;
+        var currentSample = 1;
+        var lastSample = kSplineTableSize - 1;
+        for(; currentSample !== lastSample && sampleValues[currentSample] <= aX; ++currentSample)intervalStart += kSampleStepSize;
+        --currentSample;
+        var dist = (aX - sampleValues[currentSample]) / (sampleValues[currentSample + 1] - sampleValues[currentSample]);
+        var guessForT = intervalStart + dist * kSampleStepSize;
+        var initialSlope = getSlope(guessForT, mX1, mX2);
+        if (initialSlope >= newtonMinSlope) return newtonRaphsonIterate(aX, guessForT, mX1, mX2);
+        else if (initialSlope === 0.0) return guessForT;
+        else return binarySubdivide(aX, intervalStart, intervalStart + kSampleStepSize, mX1, mX2);
+    }
+    return function(t) {
+        return t === 0 || t === 1 ? t : calcBezier(getTForX(t), mY1, mY2);
+    };
+}
+
+},{"./index.js":"lGoVg","@parcel/transformer-js/src/esmodule-helpers.js":"5oERU"}],"gABee":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "makeRenderlessComponent", ()=>makeRenderlessComponent);
+var makeRenderlessComponent = function(hook) {
+    return function(props) {
+        hook(props);
+        return null;
+    };
+};
+
+},{"@parcel/transformer-js/src/esmodule-helpers.js":"5oERU"}],"5blpz":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "animations", ()=>animations);
+var _tslib = require("tslib");
+var _react = require("react");
+var _isAnimationControlsJs = require("../../animation/utils/is-animation-controls.js");
+var _usePresenceJs = require("../../components/AnimatePresence/use-presence.js");
+var _presenceContextJs = require("../../context/PresenceContext.js");
+var _animationStateJs = require("../../render/utils/animation-state.js");
+var _typesJs = require("../../render/utils/types.js");
+var _makeRenderlessComponentJs = require("../utils/make-renderless-component.js");
+var animations = {
+    animation: (0, _makeRenderlessComponentJs.makeRenderlessComponent)(function(_a) {
+        var visualElement = _a.visualElement, animate = _a.animate;
+        /**
+         * We dynamically generate the AnimationState manager as it contains a reference
+         * to the underlying animation library. We only want to load that if we load this,
+         * so people can optionally code split it out using the `m` component.
+         */ visualElement.animationState || (visualElement.animationState = (0, _animationStateJs.createAnimationState)(visualElement));
+        /**
+         * Subscribe any provided AnimationControls to the component's VisualElement
+         */ if ((0, _isAnimationControlsJs.isAnimationControls)(animate)) (0, _react.useEffect)(function() {
+            return animate.subscribe(visualElement);
+        }, [
+            animate
+        ]);
+    }),
+    exit: (0, _makeRenderlessComponentJs.makeRenderlessComponent)(function(props) {
+        var custom = props.custom, visualElement = props.visualElement;
+        var _a = (0, _tslib.__read)((0, _usePresenceJs.usePresence)(), 2), isPresent = _a[0], onExitComplete = _a[1];
+        var presenceContext = (0, _react.useContext)((0, _presenceContextJs.PresenceContext));
+        (0, _react.useEffect)(function() {
+            var _a, _b;
+            var animation = (_a = visualElement.animationState) === null || _a === void 0 ? void 0 : _a.setActive((0, _typesJs.AnimationType).Exit, !isPresent, {
+                custom: (_b = presenceContext === null || presenceContext === void 0 ? void 0 : presenceContext.custom) !== null && _b !== void 0 ? _b : custom
+            });
+            !isPresent && (animation === null || animation === void 0 || animation.then(onExitComplete));
+        }, [
+            isPresent
+        ]);
+    })
+};
+
+},{"tslib":"edJ4f","react":"9sfFD","../../animation/utils/is-animation-controls.js":"gRai1","../../components/AnimatePresence/use-presence.js":"cZuzC","../../context/PresenceContext.js":"iCJR7","../../render/utils/animation-state.js":"dnpNl","../../render/utils/types.js":"aemrC","../utils/make-renderless-component.js":"gABee","@parcel/transformer-js/src/esmodule-helpers.js":"5oERU"}],"dnpNl":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "createAnimationState", ()=>createAnimationState);
+parcelHelpers.export(exports, "variantPriorityOrder", ()=>variantPriorityOrder);
+parcelHelpers.export(exports, "variantsHaveChanged", ()=>variantsHaveChanged);
+var _tslib = require("tslib");
+var _isAnimationControlsJs = require("../../animation/utils/is-animation-controls.js");
+var _isKeyframesTargetJs = require("../../animation/utils/is-keyframes-target.js");
+var _shallowCompareJs = require("../../utils/shallow-compare.js");
+var _animationJs = require("./animation.js");
+var _typesJs = require("./types.js");
+var _variantsJs = require("./variants.js");
+var variantPriorityOrder = [
+    (0, _typesJs.AnimationType).Animate,
+    (0, _typesJs.AnimationType).Hover,
+    (0, _typesJs.AnimationType).Tap,
+    (0, _typesJs.AnimationType).Drag,
+    (0, _typesJs.AnimationType).Focus,
+    (0, _typesJs.AnimationType).Exit
+];
+var reversePriorityOrder = (0, _tslib.__spreadArray)([], (0, _tslib.__read)(variantPriorityOrder)).reverse();
+var numAnimationTypes = variantPriorityOrder.length;
+function animateList(visualElement) {
+    return function(animations) {
+        return Promise.all(animations.map(function(_a) {
+            var animation = _a.animation, options = _a.options;
+            return (0, _animationJs.animateVisualElement)(visualElement, animation, options);
+        }));
+    };
+}
+function createAnimationState(visualElement) {
+    var animate = animateList(visualElement);
+    var state = createState();
+    var allAnimatedKeys = {};
+    var isInitialRender = true;
+    /**
+     * This function will be used to reduce the animation definitions for
+     * each active animation type into an object of resolved values for it.
+     */ var buildResolvedTypeValues = function(acc, definition) {
+        var resolved = (0, _variantsJs.resolveVariant)(visualElement, definition);
+        if (resolved) {
+            resolved.transition;
+            var transitionEnd = resolved.transitionEnd, target = (0, _tslib.__rest)(resolved, [
+                "transition",
+                "transitionEnd"
+            ]);
+            acc = (0, _tslib.__assign)((0, _tslib.__assign)((0, _tslib.__assign)({}, acc), target), transitionEnd);
+        }
+        return acc;
+    };
+    function isAnimated(key) {
+        return allAnimatedKeys[key] !== undefined;
+    }
+    /**
+     * This just allows us to inject mocked animation functions
+     * @internal
+     */ function setAnimateFunction(makeAnimator) {
+        animate = makeAnimator(visualElement);
+    }
+    /**
+     * When we receive new props, we need to:
+     * 1. Create a list of protected keys for each type. This is a directory of
+     *    value keys that are currently being "handled" by types of a higher priority
+     *    so that whenever an animation is played of a given type, these values are
+     *    protected from being animated.
+     * 2. Determine if an animation type needs animating.
+     * 3. Determine if any values have been removed from a type and figure out
+     *    what to animate those to.
+     */ function animateChanges(options, changedActiveType) {
+        var _a;
+        var props = visualElement.getProps();
+        var context = visualElement.getVariantContext(true) || {};
+        /**
+         * A list of animations that we'll build into as we iterate through the animation
+         * types. This will get executed at the end of the function.
+         */ var animations = [];
+        /**
+         * Keep track of which values have been removed. Then, as we hit lower priority
+         * animation types, we can check if they contain removed values and animate to that.
+         */ var removedKeys = new Set();
+        /**
+         * A dictionary of all encountered keys. This is an object to let us build into and
+         * copy it without iteration. Each time we hit an animation type we set its protected
+         * keys - the keys its not allowed to animate - to the latest version of this object.
+         */ var encounteredKeys = {};
+        /**
+         * If a variant has been removed at a given index, and this component is controlling
+         * variant animations, we want to ensure lower-priority variants are forced to animate.
+         */ var removedVariantIndex = Infinity;
+        var _loop_1 = function(i) {
+            var type = reversePriorityOrder[i];
+            var typeState = state[type];
+            var prop = (_a = props[type]) !== null && _a !== void 0 ? _a : context[type];
+            var propIsVariant = (0, _variantsJs.isVariantLabel)(prop);
+            /**
+             * If this type has *just* changed isActive status, set activeDelta
+             * to that status. Otherwise set to null.
+             */ var activeDelta = type === changedActiveType ? typeState.isActive : null;
+            if (activeDelta === false) removedVariantIndex = i;
+            /**
+             * If this prop is an inherited variant, rather than been set directly on the
+             * component itself, we want to make sure we allow the parent to trigger animations.
+             *
+             * TODO: Can probably change this to a !isControllingVariants check
+             */ var isInherited = prop === context[type] && prop !== props[type] && propIsVariant;
+            /**
+             *
+             */ if (isInherited && isInitialRender && visualElement.manuallyAnimateOnMount) isInherited = false;
+            /**
+             * Set all encountered keys so far as the protected keys for this type. This will
+             * be any key that has been animated or otherwise handled by active, higher-priortiy types.
+             */ typeState.protectedKeys = (0, _tslib.__assign)({}, encounteredKeys);
+            // Check if we can skip analysing this prop early
+            if (// If it isn't active and hasn't *just* been set as inactive
+            !typeState.isActive && activeDelta === null || // If we didn't and don't have any defined prop for this animation type
+            !prop && !typeState.prevProp || // Or if the prop doesn't define an animation
+            (0, _isAnimationControlsJs.isAnimationControls)(prop) || typeof prop === "boolean") return "continue";
+            /**
+             * As we go look through the values defined on this type, if we detect
+             * a changed value or a value that was removed in a higher priority, we set
+             * this to true and add this prop to the animation list.
+             */ var shouldAnimateType = variantsHaveChanged(typeState.prevProp, prop) || // If we're making this variant active, we want to always make it active
+            type === changedActiveType && typeState.isActive && !isInherited && propIsVariant || // If we removed a higher-priority variant (i is in reverse order)
+            i > removedVariantIndex && propIsVariant;
+            /**
+             * As animations can be set as variant lists, variants or target objects, we
+             * coerce everything to an array if it isn't one already
+             */ var definitionList = Array.isArray(prop) ? prop : [
+                prop
+            ];
+            /**
+             * Build an object of all the resolved values. We'll use this in the subsequent
+             * animateChanges calls to determine whether a value has changed.
+             */ var resolvedValues = definitionList.reduce(buildResolvedTypeValues, {});
+            if (activeDelta === false) resolvedValues = {};
+            /**
+             * Now we need to loop through all the keys in the prev prop and this prop,
+             * and decide:
+             * 1. If the value has changed, and needs animating
+             * 2. If it has been removed, and needs adding to the removedKeys set
+             * 3. If it has been removed in a higher priority type and needs animating
+             * 4. If it hasn't been removed in a higher priority but hasn't changed, and
+             *    needs adding to the type's protectedKeys list.
+             */ var _b = typeState.prevResolvedValues, prevResolvedValues = _b === void 0 ? {} : _b;
+            var allKeys = (0, _tslib.__assign)((0, _tslib.__assign)({}, prevResolvedValues), resolvedValues);
+            var markToAnimate = function(key) {
+                shouldAnimateType = true;
+                removedKeys.delete(key);
+                typeState.needsAnimating[key] = true;
+            };
+            for(var key in allKeys){
+                var next = resolvedValues[key];
+                var prev = prevResolvedValues[key];
+                // If we've already handled this we can just skip ahead
+                if (encounteredKeys.hasOwnProperty(key)) continue;
+                /**
+                 * If the value has changed, we probably want to animate it.
+                 */ if (next !== prev) {
+                    /**
+                     * If both values are keyframes, we need to shallow compare them to
+                     * detect whether any value has changed. If it has, we animate it.
+                     */ if ((0, _isKeyframesTargetJs.isKeyframesTarget)(next) && (0, _isKeyframesTargetJs.isKeyframesTarget)(prev)) {
+                        if (!(0, _shallowCompareJs.shallowCompare)(next, prev)) markToAnimate(key);
+                        else /**
+                             * If it hasn't changed, we want to ensure it doesn't animate by
+                             * adding it to the list of protected keys.
+                             */ typeState.protectedKeys[key] = true;
+                    } else if (next !== undefined) // If next is defined and doesn't equal prev, it needs animating
+                    markToAnimate(key);
+                    else // If it's undefined, it's been removed.
+                    removedKeys.add(key);
+                } else if (next !== undefined && removedKeys.has(key)) /**
+                     * If next hasn't changed and it isn't undefined, we want to check if it's
+                     * been removed by a higher priority
+                     */ markToAnimate(key);
+                else /**
+                     * If it hasn't changed, we add it to the list of protected values
+                     * to ensure it doesn't get animated.
+                     */ typeState.protectedKeys[key] = true;
+            }
+            /**
+             * Update the typeState so next time animateChanges is called we can compare the
+             * latest prop and resolvedValues to these.
+             */ typeState.prevProp = prop;
+            typeState.prevResolvedValues = resolvedValues;
+            /**
+             *
+             */ if (typeState.isActive) encounteredKeys = (0, _tslib.__assign)((0, _tslib.__assign)({}, encounteredKeys), resolvedValues);
+            if (isInitialRender && visualElement.blockInitialAnimation) shouldAnimateType = false;
+            /**
+             * If this is an inherited prop we want to hard-block animations
+             * TODO: Test as this should probably still handle animations triggered
+             * by removed values?
+             */ if (shouldAnimateType && !isInherited) animations.push.apply(animations, (0, _tslib.__spreadArray)([], (0, _tslib.__read)(definitionList.map(function(animation) {
+                return {
+                    animation: animation,
+                    options: (0, _tslib.__assign)({
+                        type: type
+                    }, options)
+                };
+            }))));
+        };
+        /**
+         * Iterate through all animation types in reverse priority order. For each, we want to
+         * detect which values it's handling and whether or not they've changed (and therefore
+         * need to be animated). If any values have been removed, we want to detect those in
+         * lower priority props and flag for animation.
+         */ for(var i = 0; i < numAnimationTypes; i++)_loop_1(i);
+        allAnimatedKeys = (0, _tslib.__assign)({}, encounteredKeys);
+        /**
+         * If there are some removed value that haven't been dealt with,
+         * we need to create a new animation that falls back either to the value
+         * defined in the style prop, or the last read value.
+         */ if (removedKeys.size) {
+            var fallbackAnimation_1 = {};
+            removedKeys.forEach(function(key) {
+                var fallbackTarget = visualElement.getBaseTarget(key);
+                if (fallbackTarget !== undefined) fallbackAnimation_1[key] = fallbackTarget;
+            });
+            animations.push({
+                animation: fallbackAnimation_1
+            });
+        }
+        var shouldAnimate = Boolean(animations.length);
+        if (isInitialRender && props.initial === false && !visualElement.manuallyAnimateOnMount) shouldAnimate = false;
+        isInitialRender = false;
+        return shouldAnimate ? animate(animations) : Promise.resolve();
+    }
+    /**
+     * Change whether a certain animation type is active.
+     */ function setActive(type, isActive, options) {
+        var _a;
+        // If the active state hasn't changed, we can safely do nothing here
+        if (state[type].isActive === isActive) return Promise.resolve();
+        // Propagate active change to children
+        (_a = visualElement.variantChildren) === null || _a === void 0 || _a.forEach(function(child) {
+            var _a;
+            return (_a = child.animationState) === null || _a === void 0 ? void 0 : _a.setActive(type, isActive);
+        });
+        state[type].isActive = isActive;
+        return animateChanges(options, type);
+    }
+    return {
+        isAnimated: isAnimated,
+        animateChanges: animateChanges,
+        setActive: setActive,
+        setAnimateFunction: setAnimateFunction,
+        getState: function() {
+            return state;
+        }
+    };
+}
+function variantsHaveChanged(prev, next) {
+    if (typeof next === "string") return next !== prev;
+    else if ((0, _variantsJs.isVariantLabels)(next)) return !(0, _shallowCompareJs.shallowCompare)(next, prev);
+    return false;
+}
+function createTypeState(isActive) {
+    if (isActive === void 0) isActive = false;
+    return {
+        isActive: isActive,
+        protectedKeys: {},
+        needsAnimating: {},
+        prevResolvedValues: {}
+    };
+}
+function createState() {
+    var _a;
+    return _a = {}, _a[(0, _typesJs.AnimationType).Animate] = createTypeState(true), _a[(0, _typesJs.AnimationType).Hover] = createTypeState(), _a[(0, _typesJs.AnimationType).Tap] = createTypeState(), _a[(0, _typesJs.AnimationType).Drag] = createTypeState(), _a[(0, _typesJs.AnimationType).Focus] = createTypeState(), _a[(0, _typesJs.AnimationType).Exit] = createTypeState(), _a;
+}
+
+},{"tslib":"edJ4f","../../animation/utils/is-animation-controls.js":"gRai1","../../animation/utils/is-keyframes-target.js":"23L0g","../../utils/shallow-compare.js":"dr9rD","./animation.js":"jQHlL","./types.js":"aemrC","./variants.js":"aCPPK","@parcel/transformer-js/src/esmodule-helpers.js":"5oERU"}],"dr9rD":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "shallowCompare", ()=>shallowCompare);
+function shallowCompare(next, prev) {
+    if (!Array.isArray(prev)) return false;
+    var prevLength = prev.length;
+    if (prevLength !== next.length) return false;
+    for(var i = 0; i < prevLength; i++){
+        if (prev[i] !== next[i]) return false;
+    }
+    return true;
+}
+
+},{"@parcel/transformer-js/src/esmodule-helpers.js":"5oERU"}],"jQHlL":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "animateVisualElement", ()=>animateVisualElement);
+parcelHelpers.export(exports, "sortByTreeOrder", ()=>sortByTreeOrder);
+parcelHelpers.export(exports, "stopAnimation", ()=>stopAnimation);
+var _tslib = require("tslib");
+var _transitionsJs = require("../../animation/utils/transitions.js");
+var _settersJs = require("./setters.js");
+var _variantsJs = require("./variants.js");
+/**
+ * @internal
+ */ function animateVisualElement(visualElement, definition, options) {
+    if (options === void 0) options = {};
+    visualElement.notifyAnimationStart();
+    var animation;
+    if (Array.isArray(definition)) {
+        var animations = definition.map(function(variant) {
+            return animateVariant(visualElement, variant, options);
+        });
+        animation = Promise.all(animations);
+    } else if (typeof definition === "string") animation = animateVariant(visualElement, definition, options);
+    else {
+        var resolvedDefinition = typeof definition === "function" ? (0, _variantsJs.resolveVariant)(visualElement, definition, options.custom) : definition;
+        animation = animateTarget(visualElement, resolvedDefinition, options);
+    }
+    return animation.then(function() {
+        return visualElement.notifyAnimationComplete(definition);
+    });
+}
+function animateVariant(visualElement, variant, options) {
+    var _a;
+    if (options === void 0) options = {};
+    var resolved = (0, _variantsJs.resolveVariant)(visualElement, variant, options.custom);
+    var _b = (resolved || {}).transition, transition = _b === void 0 ? visualElement.getDefaultTransition() || {} : _b;
+    if (options.transitionOverride) transition = options.transitionOverride;
+    /**
+     * If we have a variant, create a callback that runs it as an animation.
+     * Otherwise, we resolve a Promise immediately for a composable no-op.
+     */ var getAnimation = resolved ? function() {
+        return animateTarget(visualElement, resolved, options);
+    } : function() {
+        return Promise.resolve();
+    };
+    /**
+     * If we have children, create a callback that runs all their animations.
+     * Otherwise, we resolve a Promise immediately for a composable no-op.
+     */ var getChildAnimations = ((_a = visualElement.variantChildren) === null || _a === void 0 ? void 0 : _a.size) ? function(forwardDelay) {
+        if (forwardDelay === void 0) forwardDelay = 0;
+        var _a = transition.delayChildren, delayChildren = _a === void 0 ? 0 : _a, staggerChildren = transition.staggerChildren, staggerDirection = transition.staggerDirection;
+        return animateChildren(visualElement, variant, delayChildren + forwardDelay, staggerChildren, staggerDirection, options);
+    } : function() {
+        return Promise.resolve();
+    };
+    /**
+     * If the transition explicitly defines a "when" option, we need to resolve either
+     * this animation or all children animations before playing the other.
+     */ var when = transition.when;
+    if (when) {
+        var _c = (0, _tslib.__read)(when === "beforeChildren" ? [
+            getAnimation,
+            getChildAnimations
+        ] : [
+            getChildAnimations,
+            getAnimation
+        ], 2), first = _c[0], last = _c[1];
+        return first().then(last);
+    } else return Promise.all([
+        getAnimation(),
+        getChildAnimations(options.delay)
+    ]);
+}
+/**
+ * @internal
+ */ function animateTarget(visualElement, definition, _a) {
+    var _b;
+    var _c = _a === void 0 ? {} : _a, _d = _c.delay, delay = _d === void 0 ? 0 : _d, transitionOverride = _c.transitionOverride, type = _c.type;
+    var _e = visualElement.makeTargetAnimatable(definition), _f = _e.transition, transition = _f === void 0 ? visualElement.getDefaultTransition() : _f, transitionEnd = _e.transitionEnd, target = (0, _tslib.__rest)(_e, [
+        "transition",
+        "transitionEnd"
+    ]);
+    if (transitionOverride) transition = transitionOverride;
+    var animations = [];
+    var animationTypeState = type && ((_b = visualElement.animationState) === null || _b === void 0 ? void 0 : _b.getState()[type]);
+    for(var key in target){
+        var value = visualElement.getValue(key);
+        var valueTarget = target[key];
+        if (!value || valueTarget === undefined || animationTypeState && shouldBlockAnimation(animationTypeState, key)) continue;
+        var animation = (0, _transitionsJs.startAnimation)(key, value, valueTarget, (0, _tslib.__assign)({
+            delay: delay
+        }, transition));
+        animations.push(animation);
+    }
+    return Promise.all(animations).then(function() {
+        transitionEnd && (0, _settersJs.setTarget)(visualElement, transitionEnd);
+    });
+}
+function animateChildren(visualElement, variant, delayChildren, staggerChildren, staggerDirection, options) {
+    if (delayChildren === void 0) delayChildren = 0;
+    if (staggerChildren === void 0) staggerChildren = 0;
+    if (staggerDirection === void 0) staggerDirection = 1;
+    var animations = [];
+    var maxStaggerDuration = (visualElement.variantChildren.size - 1) * staggerChildren;
+    var generateStaggerDuration = staggerDirection === 1 ? function(i) {
+        if (i === void 0) i = 0;
+        return i * staggerChildren;
+    } : function(i) {
+        if (i === void 0) i = 0;
+        return maxStaggerDuration - i * staggerChildren;
+    };
+    Array.from(visualElement.variantChildren).sort(sortByTreeOrder).forEach(function(child, i) {
+        animations.push(animateVariant(child, variant, (0, _tslib.__assign)((0, _tslib.__assign)({}, options), {
+            delay: delayChildren + generateStaggerDuration(i)
+        })).then(function() {
+            return child.notifyAnimationComplete(variant);
+        }));
+    });
+    return Promise.all(animations);
+}
+function stopAnimation(visualElement) {
+    visualElement.forEachValue(function(value) {
+        return value.stop();
+    });
+}
+function sortByTreeOrder(a, b) {
+    return a.sortNodePosition(b);
+}
+/**
+ * Decide whether we should block this animation. Previously, we achieved this
+ * just by checking whether the key was listed in protectedKeys, but this
+ * posed problems if an animation was triggered by afterChildren and protectedKeys
+ * had been set to true in the meantime.
+ */ function shouldBlockAnimation(_a, key) {
+    var protectedKeys = _a.protectedKeys, needsAnimating = _a.needsAnimating;
+    var shouldBlock = protectedKeys.hasOwnProperty(key) && needsAnimating[key] !== true;
+    needsAnimating[key] = false;
+    return shouldBlock;
+}
+
+},{"tslib":"edJ4f","../../animation/utils/transitions.js":"6JS8P","./setters.js":"2dj52","./variants.js":"aCPPK","@parcel/transformer-js/src/esmodule-helpers.js":"5oERU"}],"6JS8P":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "convertTransitionToAnimationOptions", ()=>convertTransitionToAnimationOptions);
+parcelHelpers.export(exports, "getDelayFromTransition", ()=>getDelayFromTransition);
+parcelHelpers.export(exports, "getPopmotionAnimationOptions", ()=>getPopmotionAnimationOptions);
+parcelHelpers.export(exports, "getValueTransition", ()=>getValueTransition);
+parcelHelpers.export(exports, "getZeroUnit", ()=>getZeroUnit);
+parcelHelpers.export(exports, "hydrateKeyframes", ()=>hydrateKeyframes);
+parcelHelpers.export(exports, "isTransitionDefined", ()=>isTransitionDefined);
+parcelHelpers.export(exports, "isZero", ()=>isZero);
+parcelHelpers.export(exports, "startAnimation", ()=>startAnimation);
+var _tslib = require("tslib");
+var _popmotion = require("popmotion");
+var _timeConversionJs = require("../../utils/time-conversion.js");
+var _easingJs = require("./easing.js");
+var _isAnimatableJs = require("./is-animatable.js");
+var _defaultTransitionsJs = require("./default-transitions.js");
+var _heyListen = require("hey-listen");
+var _animatableNoneJs = require("../../render/dom/value-types/animatable-none.js");
+/**
+ * Decide whether a transition is defined on a given Transition.
+ * This filters out orchestration options and returns true
+ * if any options are left.
+ */ function isTransitionDefined(_a) {
+    _a.when;
+    _a.delay;
+    _a.delayChildren;
+    _a.staggerChildren;
+    _a.staggerDirection;
+    _a.repeat;
+    _a.repeatType;
+    _a.repeatDelay;
+    _a.from;
+    var transition = (0, _tslib.__rest)(_a, [
+        "when",
+        "delay",
+        "delayChildren",
+        "staggerChildren",
+        "staggerDirection",
+        "repeat",
+        "repeatType",
+        "repeatDelay",
+        "from"
+    ]);
+    return !!Object.keys(transition).length;
+}
+var legacyRepeatWarning = false;
+/**
+ * Convert Framer Motion's Transition type into Popmotion-compatible options.
+ */ function convertTransitionToAnimationOptions(_a) {
+    var ease = _a.ease, times = _a.times, yoyo = _a.yoyo, flip = _a.flip, loop = _a.loop, transition = (0, _tslib.__rest)(_a, [
+        "ease",
+        "times",
+        "yoyo",
+        "flip",
+        "loop"
+    ]);
+    var options = (0, _tslib.__assign)({}, transition);
+    if (times) options["offset"] = times;
+    /**
+     * Convert any existing durations from seconds to milliseconds
+     */ if (transition.duration) options["duration"] = (0, _timeConversionJs.secondsToMilliseconds)(transition.duration);
+    if (transition.repeatDelay) options.repeatDelay = (0, _timeConversionJs.secondsToMilliseconds)(transition.repeatDelay);
+    /**
+     * Map easing names to Popmotion's easing functions
+     */ if (ease) options["ease"] = (0, _easingJs.isEasingArray)(ease) ? ease.map((0, _easingJs.easingDefinitionToFunction)) : (0, _easingJs.easingDefinitionToFunction)(ease);
+    /**
+     * Support legacy transition API
+     */ if (transition.type === "tween") options.type = "keyframes";
+    /**
+     * TODO: These options are officially removed from the API.
+     */ if (yoyo || loop || flip) {
+        (0, _heyListen.warning)(!legacyRepeatWarning, "yoyo, loop and flip have been removed from the API. Replace with repeat and repeatType options.");
+        legacyRepeatWarning = true;
+        if (yoyo) options.repeatType = "reverse";
+        else if (loop) options.repeatType = "loop";
+        else if (flip) options.repeatType = "mirror";
+        options.repeat = loop || yoyo || flip || transition.repeat;
+    }
+    /**
+     * TODO: Popmotion 9 has the ability to automatically detect whether to use
+     * a keyframes or spring animation, but does so by detecting velocity and other spring options.
+     * It'd be good to introduce a similar thing here.
+     */ if (transition.type !== "spring") options.type = "keyframes";
+    return options;
+}
+/**
+ * Get the delay for a value by checking Transition with decreasing specificity.
+ */ function getDelayFromTransition(transition, key) {
+    var _a;
+    var valueTransition = getValueTransition(transition, key) || {};
+    return (_a = valueTransition.delay) !== null && _a !== void 0 ? _a : 0;
+}
+function hydrateKeyframes(options) {
+    if (Array.isArray(options.to) && options.to[0] === null) {
+        options.to = (0, _tslib.__spreadArray)([], (0, _tslib.__read)(options.to));
+        options.to[0] = options.from;
+    }
+    return options;
+}
+function getPopmotionAnimationOptions(transition, options, key) {
+    var _a;
+    if (Array.isArray(options.to)) (_a = transition.duration) !== null && _a !== void 0 ? _a : transition.duration = 0.8;
+    hydrateKeyframes(options);
+    /**
+     * Get a default transition if none is determined to be defined.
+     */ if (!isTransitionDefined(transition)) transition = (0, _tslib.__assign)((0, _tslib.__assign)({}, transition), (0, _defaultTransitionsJs.getDefaultTransition)(key, options.to));
+    return (0, _tslib.__assign)((0, _tslib.__assign)({}, options), convertTransitionToAnimationOptions(transition));
+}
+/**
+ *
+ */ function getAnimation(key, value, target, transition, onComplete) {
+    var _a;
+    var valueTransition = getValueTransition(transition, key);
+    var origin = (_a = valueTransition.from) !== null && _a !== void 0 ? _a : value.get();
+    var isTargetAnimatable = (0, _isAnimatableJs.isAnimatable)(key, target);
+    if (origin === "none" && isTargetAnimatable && typeof target === "string") /**
+         * If we're trying to animate from "none", try and get an animatable version
+         * of the target. This could be improved to work both ways.
+         */ origin = (0, _animatableNoneJs.getAnimatableNone)(key, target);
+    else if (isZero(origin) && typeof target === "string") origin = getZeroUnit(target);
+    else if (!Array.isArray(target) && isZero(target) && typeof origin === "string") target = getZeroUnit(origin);
+    var isOriginAnimatable = (0, _isAnimatableJs.isAnimatable)(key, origin);
+    (0, _heyListen.warning)(isOriginAnimatable === isTargetAnimatable, "You are trying to animate " + key + ' from "' + origin + '" to "' + target + '". ' + origin + " is not an animatable value - to enable this animation set " + origin + " to a value animatable to " + target + " via the `style` property.");
+    function start() {
+        var options = {
+            from: origin,
+            to: target,
+            velocity: value.getVelocity(),
+            onComplete: onComplete,
+            onUpdate: function(v) {
+                return value.set(v);
+            }
+        };
+        return valueTransition.type === "inertia" || valueTransition.type === "decay" ? (0, _popmotion.inertia)((0, _tslib.__assign)((0, _tslib.__assign)({}, options), valueTransition)) : (0, _popmotion.animate)((0, _tslib.__assign)((0, _tslib.__assign)({}, getPopmotionAnimationOptions(valueTransition, options, key)), {
+            onUpdate: function(v) {
+                var _a;
+                options.onUpdate(v);
+                (_a = valueTransition.onUpdate) === null || _a === void 0 || _a.call(valueTransition, v);
+            },
+            onComplete: function() {
+                var _a;
+                options.onComplete();
+                (_a = valueTransition.onComplete) === null || _a === void 0 || _a.call(valueTransition);
+            }
+        }));
+    }
+    function set() {
+        var _a;
+        value.set(target);
+        onComplete();
+        (_a = valueTransition === null || valueTransition === void 0 ? void 0 : valueTransition.onComplete) === null || _a === void 0 || _a.call(valueTransition);
+        return {
+            stop: function() {}
+        };
+    }
+    return !isOriginAnimatable || !isTargetAnimatable || valueTransition.type === false ? set : start;
+}
+function isZero(value) {
+    return value === 0 || typeof value === "string" && parseFloat(value) === 0 && value.indexOf(" ") === -1;
+}
+function getZeroUnit(potentialUnitType) {
+    return typeof potentialUnitType === "number" ? 0 : (0, _animatableNoneJs.getAnimatableNone)("", potentialUnitType);
+}
+function getValueTransition(transition, key) {
+    return transition[key] || transition["default"] || transition;
+}
+/**
+ * Start animation on a MotionValue. This function is an interface between
+ * Framer Motion and Popmotion
+ *
+ * @internal
+ */ function startAnimation(key, value, target, transition) {
+    if (transition === void 0) transition = {};
+    return value.start(function(onComplete) {
+        var delayTimer;
+        var controls;
+        var animation = getAnimation(key, value, target, transition, onComplete);
+        var delay = getDelayFromTransition(transition, key);
+        var start = function() {
+            return controls = animation();
+        };
+        if (delay) delayTimer = setTimeout(start, (0, _timeConversionJs.secondsToMilliseconds)(delay));
+        else start();
+        return function() {
+            clearTimeout(delayTimer);
+            controls === null || controls === void 0 || controls.stop();
+        };
+    });
+}
+
+},{"tslib":"edJ4f","popmotion":"hu70l","../../utils/time-conversion.js":"j6AbR","./easing.js":"2b2Xm","./is-animatable.js":"glNFZ","./default-transitions.js":"4XlmY","hey-listen":"fFhg6","../../render/dom/value-types/animatable-none.js":"aP6Mn","@parcel/transformer-js/src/esmodule-helpers.js":"5oERU"}],"j6AbR":[function(require,module,exports) {
+/**
+ * Converts seconds to milliseconds
+ *
+ * @param seconds - Time in seconds.
+ * @return milliseconds - Converted time in milliseconds.
+ */ var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "secondsToMilliseconds", ()=>secondsToMilliseconds);
+var secondsToMilliseconds = function(seconds) {
+    return seconds * 1000;
+};
+
+},{"@parcel/transformer-js/src/esmodule-helpers.js":"5oERU"}],"2b2Xm":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "easingDefinitionToFunction", ()=>easingDefinitionToFunction);
+parcelHelpers.export(exports, "isEasingArray", ()=>isEasingArray);
+var _tslib = require("tslib");
+var _heyListen = require("hey-listen");
+var _popmotion = require("popmotion");
+var easingLookup = {
+    linear: (0, _popmotion.linear),
+    easeIn: (0, _popmotion.easeIn),
+    easeInOut: (0, _popmotion.easeInOut),
+    easeOut: (0, _popmotion.easeOut),
+    circIn: (0, _popmotion.circIn),
+    circInOut: (0, _popmotion.circInOut),
+    circOut: (0, _popmotion.circOut),
+    backIn: (0, _popmotion.backIn),
+    backInOut: (0, _popmotion.backInOut),
+    backOut: (0, _popmotion.backOut),
+    anticipate: (0, _popmotion.anticipate),
+    bounceIn: (0, _popmotion.bounceIn),
+    bounceInOut: (0, _popmotion.bounceInOut),
+    bounceOut: (0, _popmotion.bounceOut)
+};
+var easingDefinitionToFunction = function(definition) {
+    if (Array.isArray(definition)) {
+        // If cubic bezier definition, create bezier curve
+        (0, _heyListen.invariant)(definition.length === 4, "Cubic bezier arrays must contain four numerical values.");
+        var _a = (0, _tslib.__read)(definition, 4), x1 = _a[0], y1 = _a[1], x2 = _a[2], y2 = _a[3];
+        return (0, _popmotion.cubicBezier)(x1, y1, x2, y2);
+    } else if (typeof definition === "string") {
+        // Else lookup from table
+        (0, _heyListen.invariant)(easingLookup[definition] !== undefined, "Invalid easing type '" + definition + "'");
+        return easingLookup[definition];
+    }
+    return definition;
+};
+var isEasingArray = function(ease) {
+    return Array.isArray(ease) && typeof ease[0] !== "number";
+};
+
+},{"tslib":"edJ4f","hey-listen":"fFhg6","popmotion":"hu70l","@parcel/transformer-js/src/esmodule-helpers.js":"5oERU"}],"glNFZ":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "isAnimatable", ()=>isAnimatable);
+var _styleValueTypes = require("style-value-types");
+/**
+ * Check if a value is animatable. Examples:
+ *
+ * ✅: 100, "100px", "#fff"
+ * ❌: "block", "url(2.jpg)"
+ * @param value
+ *
+ * @internal
+ */ var isAnimatable = function(key, value) {
+    // If the list of keys tat might be non-animatable grows, replace with Set
+    if (key === "zIndex") return false;
+    // If it's a number or a keyframes array, we can animate it. We might at some point
+    // need to do a deep isAnimatable check of keyframes, or let Popmotion handle this,
+    // but for now lets leave it like this for performance reasons
+    if (typeof value === "number" || Array.isArray(value)) return true;
+    if (typeof value === "string" && // It's animatable if we have a string
+    (0, _styleValueTypes.complex).test(value) && // And it contains numbers and/or colors
+    !value.startsWith("url(") // Unless it starts with "url("
+    ) return true;
+    return false;
+};
+
+},{"style-value-types":"dhngi","@parcel/transformer-js/src/esmodule-helpers.js":"5oERU"}],"4XlmY":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "criticallyDampedSpring", ()=>criticallyDampedSpring);
+parcelHelpers.export(exports, "getDefaultTransition", ()=>getDefaultTransition);
+parcelHelpers.export(exports, "linearTween", ()=>linearTween);
+parcelHelpers.export(exports, "underDampedSpring", ()=>underDampedSpring);
+var _tslib = require("tslib");
+var _isKeyframesTargetJs = require("./is-keyframes-target.js");
+var underDampedSpring = function() {
+    return {
+        type: "spring",
+        stiffness: 500,
+        damping: 25,
+        restDelta: 0.5,
+        restSpeed: 10
+    };
+};
+var criticallyDampedSpring = function(to) {
+    return {
+        type: "spring",
+        stiffness: 550,
+        damping: to === 0 ? 2 * Math.sqrt(550) : 30,
+        restDelta: 0.01,
+        restSpeed: 10
+    };
+};
+var linearTween = function() {
+    return {
+        type: "keyframes",
+        ease: "linear",
+        duration: 0.3
+    };
+};
+var keyframes = function(values) {
+    return {
+        type: "keyframes",
+        duration: 0.8,
+        values: values
+    };
+};
+var defaultTransitions = {
+    x: underDampedSpring,
+    y: underDampedSpring,
+    z: underDampedSpring,
+    rotate: underDampedSpring,
+    rotateX: underDampedSpring,
+    rotateY: underDampedSpring,
+    rotateZ: underDampedSpring,
+    scaleX: criticallyDampedSpring,
+    scaleY: criticallyDampedSpring,
+    scale: criticallyDampedSpring,
+    opacity: linearTween,
+    backgroundColor: linearTween,
+    color: linearTween,
+    default: criticallyDampedSpring
+};
+var getDefaultTransition = function(valueKey, to) {
+    var transitionFactory;
+    if ((0, _isKeyframesTargetJs.isKeyframesTarget)(to)) transitionFactory = keyframes;
+    else transitionFactory = defaultTransitions[valueKey] || defaultTransitions.default;
+    return (0, _tslib.__assign)({
+        to: to
+    }, transitionFactory(to));
+};
+
+},{"tslib":"edJ4f","./is-keyframes-target.js":"23L0g","@parcel/transformer-js/src/esmodule-helpers.js":"5oERU"}],"aP6Mn":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "getAnimatableNone", ()=>getAnimatableNone);
+var _styleValueTypes = require("style-value-types");
+var _defaultsJs = require("./defaults.js");
+function getAnimatableNone(key, value) {
+    var _a;
+    var defaultValueType = (0, _defaultsJs.getDefaultValueType)(key);
+    if (defaultValueType !== (0, _styleValueTypes.filter)) defaultValueType = (0, _styleValueTypes.complex);
+    // If value is not recognised as animatable, ie "none", create an animatable version origin based on the target
+    return (_a = defaultValueType.getAnimatableNone) === null || _a === void 0 ? void 0 : _a.call(defaultValueType, value);
+}
+
+},{"style-value-types":"dhngi","./defaults.js":"48tHB","@parcel/transformer-js/src/esmodule-helpers.js":"5oERU"}],"48tHB":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "defaultValueTypes", ()=>defaultValueTypes);
+parcelHelpers.export(exports, "getDefaultValueType", ()=>getDefaultValueType);
+var _tslib = require("tslib");
+var _styleValueTypes = require("style-value-types");
+var _numberJs = require("./number.js");
+/**
+ * A map of default value types for common values
+ */ var defaultValueTypes = (0, _tslib.__assign)((0, _tslib.__assign)({}, (0, _numberJs.numberValueTypes)), {
+    // Color props
+    color: (0, _styleValueTypes.color),
+    backgroundColor: (0, _styleValueTypes.color),
+    outlineColor: (0, _styleValueTypes.color),
+    fill: (0, _styleValueTypes.color),
+    stroke: (0, _styleValueTypes.color),
+    // Border props
+    borderColor: (0, _styleValueTypes.color),
+    borderTopColor: (0, _styleValueTypes.color),
+    borderRightColor: (0, _styleValueTypes.color),
+    borderBottomColor: (0, _styleValueTypes.color),
+    borderLeftColor: (0, _styleValueTypes.color),
+    filter: (0, _styleValueTypes.filter),
+    WebkitFilter: (0, _styleValueTypes.filter)
+});
+/**
+ * Gets the default ValueType for the provided value key
+ */ var getDefaultValueType = function(key) {
+    return defaultValueTypes[key];
+};
+
+},{"tslib":"edJ4f","style-value-types":"dhngi","./number.js":"iIQuy","@parcel/transformer-js/src/esmodule-helpers.js":"5oERU"}],"2dj52":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "checkTargetForNewValues", ()=>checkTargetForNewValues);
+parcelHelpers.export(exports, "getOrigin", ()=>getOrigin);
+parcelHelpers.export(exports, "getOriginFromTransition", ()=>getOriginFromTransition);
+parcelHelpers.export(exports, "setTarget", ()=>setTarget);
+parcelHelpers.export(exports, "setValues", ()=>setValues);
+var _tslib = require("tslib");
+var _styleValueTypes = require("style-value-types");
+var _isNumericalStringJs = require("../../utils/is-numerical-string.js");
+var _resolveValueJs = require("../../utils/resolve-value.js");
+var _indexJs = require("../../value/index.js");
+var _animatableNoneJs = require("../dom/value-types/animatable-none.js");
+var _findJs = require("../dom/value-types/find.js");
+var _variantsJs = require("./variants.js");
+/**
+ * Set VisualElement's MotionValue, creating a new MotionValue for it if
+ * it doesn't exist.
+ */ function setMotionValue(visualElement, key, value) {
+    if (visualElement.hasValue(key)) visualElement.getValue(key).set(value);
+    else visualElement.addValue(key, (0, _indexJs.motionValue)(value));
+}
+function setTarget(visualElement, definition) {
+    var resolved = (0, _variantsJs.resolveVariant)(visualElement, definition);
+    var _a = resolved ? visualElement.makeTargetAnimatable(resolved, false) : {}, _b = _a.transitionEnd, transitionEnd = _b === void 0 ? {} : _b;
+    _a.transition;
+    var target = (0, _tslib.__rest)(_a, [
+        "transitionEnd",
+        "transition"
+    ]);
+    target = (0, _tslib.__assign)((0, _tslib.__assign)({}, target), transitionEnd);
+    for(var key in target){
+        var value = (0, _resolveValueJs.resolveFinalValueInKeyframes)(target[key]);
+        setMotionValue(visualElement, key, value);
+    }
+}
+function setVariants(visualElement, variantLabels) {
+    var reversedLabels = (0, _tslib.__spreadArray)([], (0, _tslib.__read)(variantLabels)).reverse();
+    reversedLabels.forEach(function(key) {
+        var _a;
+        var variant = visualElement.getVariant(key);
+        variant && setTarget(visualElement, variant);
+        (_a = visualElement.variantChildren) === null || _a === void 0 || _a.forEach(function(child) {
+            setVariants(child, variantLabels);
+        });
+    });
+}
+function setValues(visualElement, definition) {
+    if (Array.isArray(definition)) return setVariants(visualElement, definition);
+    else if (typeof definition === "string") return setVariants(visualElement, [
+        definition
+    ]);
+    else setTarget(visualElement, definition);
+}
+function checkTargetForNewValues(visualElement, target, origin) {
+    var _a, _b, _c;
+    var _d;
+    var newValueKeys = Object.keys(target).filter(function(key) {
+        return !visualElement.hasValue(key);
+    });
+    var numNewValues = newValueKeys.length;
+    if (!numNewValues) return;
+    for(var i = 0; i < numNewValues; i++){
+        var key = newValueKeys[i];
+        var targetValue = target[key];
+        var value = null;
+        /**
+         * If the target is a series of keyframes, we can use the first value
+         * in the array. If this first value is null, we'll still need to read from the DOM.
+         */ if (Array.isArray(targetValue)) value = targetValue[0];
+        /**
+         * If the target isn't keyframes, or the first keyframe was null, we need to
+         * first check if an origin value was explicitly defined in the transition as "from",
+         * if not read the value from the DOM. As an absolute fallback, take the defined target value.
+         */ if (value === null) value = (_b = (_a = origin[key]) !== null && _a !== void 0 ? _a : visualElement.readValue(key)) !== null && _b !== void 0 ? _b : target[key];
+        /**
+         * If value is still undefined or null, ignore it. Preferably this would throw,
+         * but this was causing issues in Framer.
+         */ if (value === undefined || value === null) continue;
+        if (typeof value === "string" && (0, _isNumericalStringJs.isNumericalString)(value)) // If this is a number read as a string, ie "0" or "200", convert it to a number
+        value = parseFloat(value);
+        else if (!(0, _findJs.findValueType)(value) && (0, _styleValueTypes.complex).test(targetValue)) value = (0, _animatableNoneJs.getAnimatableNone)(key, targetValue);
+        visualElement.addValue(key, (0, _indexJs.motionValue)(value));
+        (_c = (_d = origin)[key]) !== null && _c !== void 0 ? _c : _d[key] = value;
+        visualElement.setBaseTarget(key, value);
+    }
+}
+function getOriginFromTransition(key, transition) {
+    if (!transition) return;
+    var valueTransition = transition[key] || transition["default"] || transition;
+    return valueTransition.from;
+}
+function getOrigin(target, transition, visualElement) {
+    var _a, _b;
+    var origin = {};
+    for(var key in target)origin[key] = (_a = getOriginFromTransition(key, transition)) !== null && _a !== void 0 ? _a : (_b = visualElement.getValue(key)) === null || _b === void 0 ? void 0 : _b.get();
+    return origin;
+}
+
+},{"tslib":"edJ4f","style-value-types":"dhngi","../../utils/is-numerical-string.js":"2WRvl","../../utils/resolve-value.js":"bgXss","../../value/index.js":"brlv5","../dom/value-types/animatable-none.js":"aP6Mn","../dom/value-types/find.js":"8xXI0","./variants.js":"aCPPK","@parcel/transformer-js/src/esmodule-helpers.js":"5oERU"}],"2WRvl":[function(require,module,exports) {
+/**
+ * Check if value is a numerical string, ie a string that is purely a number eg "100" or "-100.1"
+ */ var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "isNumericalString", ()=>isNumericalString);
+var isNumericalString = function(v) {
+    return /^\-?\d*\.?\d+$/.test(v);
+};
+
+},{"@parcel/transformer-js/src/esmodule-helpers.js":"5oERU"}],"brlv5":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "MotionValue", ()=>MotionValue);
+parcelHelpers.export(exports, "motionValue", ()=>motionValue);
+var _framesync = require("framesync");
+var _framesyncDefault = parcelHelpers.interopDefault(_framesync);
+var _popmotion = require("popmotion");
+var _subscriptionManagerJs = require("../utils/subscription-manager.js");
+var isFloat = function(value) {
+    return !isNaN(parseFloat(value));
+};
+/**
+ * `MotionValue` is used to track the state and velocity of motion values.
+ *
+ * @public
+ */ var MotionValue = /** @class */ function() {
+    /**
+     * @param init - The initiating value
+     * @param config - Optional configuration options
+     *
+     * -  `transformer`: A function to transform incoming values with.
+     *
+     * @internal
+     */ function MotionValue(init) {
+        var _this = this;
+        /**
+         * Duration, in milliseconds, since last updating frame.
+         *
+         * @internal
+         */ this.timeDelta = 0;
+        /**
+         * Timestamp of the last time this `MotionValue` was updated.
+         *
+         * @internal
+         */ this.lastUpdated = 0;
+        /**
+         * Functions to notify when the `MotionValue` updates.
+         *
+         * @internal
+         */ this.updateSubscribers = new (0, _subscriptionManagerJs.SubscriptionManager)();
+        /**
+         * Functions to notify when the velocity updates.
+         *
+         * @internal
+         */ this.velocityUpdateSubscribers = new (0, _subscriptionManagerJs.SubscriptionManager)();
+        /**
+         * Functions to notify when the `MotionValue` updates and `render` is set to `true`.
+         *
+         * @internal
+         */ this.renderSubscribers = new (0, _subscriptionManagerJs.SubscriptionManager)();
+        /**
+         * Tracks whether this value can output a velocity. Currently this is only true
+         * if the value is numerical, but we might be able to widen the scope here and support
+         * other value types.
+         *
+         * @internal
+         */ this.canTrackVelocity = false;
+        this.updateAndNotify = function(v, render) {
+            if (render === void 0) render = true;
+            _this.prev = _this.current;
+            _this.current = v;
+            // Update timestamp
+            var _a = (0, _framesync.getFrameData)(), delta = _a.delta, timestamp = _a.timestamp;
+            if (_this.lastUpdated !== timestamp) {
+                _this.timeDelta = delta;
+                _this.lastUpdated = timestamp;
+                (0, _framesyncDefault.default).postRender(_this.scheduleVelocityCheck);
+            }
+            // Update update subscribers
+            if (_this.prev !== _this.current) _this.updateSubscribers.notify(_this.current);
+            // Update velocity subscribers
+            if (_this.velocityUpdateSubscribers.getSize()) _this.velocityUpdateSubscribers.notify(_this.getVelocity());
+            // Update render subscribers
+            if (render) _this.renderSubscribers.notify(_this.current);
+        };
+        /**
+         * Schedule a velocity check for the next frame.
+         *
+         * This is an instanced and bound function to prevent generating a new
+         * function once per frame.
+         *
+         * @internal
+         */ this.scheduleVelocityCheck = function() {
+            return (0, _framesyncDefault.default).postRender(_this.velocityCheck);
+        };
+        /**
+         * Updates `prev` with `current` if the value hasn't been updated this frame.
+         * This ensures velocity calculations return `0`.
+         *
+         * This is an instanced and bound function to prevent generating a new
+         * function once per frame.
+         *
+         * @internal
+         */ this.velocityCheck = function(_a) {
+            var timestamp = _a.timestamp;
+            if (timestamp !== _this.lastUpdated) {
+                _this.prev = _this.current;
+                _this.velocityUpdateSubscribers.notify(_this.getVelocity());
+            }
+        };
+        this.hasAnimated = false;
+        this.prev = this.current = init;
+        this.canTrackVelocity = isFloat(this.current);
+    }
+    /**
+     * Adds a function that will be notified when the `MotionValue` is updated.
+     *
+     * It returns a function that, when called, will cancel the subscription.
+     *
+     * When calling `onChange` inside a React component, it should be wrapped with the
+     * `useEffect` hook. As it returns an unsubscribe function, this should be returned
+     * from the `useEffect` function to ensure you don't add duplicate subscribers..
+     *
+     * @library
+     *
+     * ```jsx
+     * function MyComponent() {
+     *   const x = useMotionValue(0)
+     *   const y = useMotionValue(0)
+     *   const opacity = useMotionValue(1)
+     *
+     *   useEffect(() => {
+     *     function updateOpacity() {
+     *       const maxXY = Math.max(x.get(), y.get())
+     *       const newOpacity = transform(maxXY, [0, 100], [1, 0])
+     *       opacity.set(newOpacity)
+     *     }
+     *
+     *     const unsubscribeX = x.onChange(updateOpacity)
+     *     const unsubscribeY = y.onChange(updateOpacity)
+     *
+     *     return () => {
+     *       unsubscribeX()
+     *       unsubscribeY()
+     *     }
+     *   }, [])
+     *
+     *   return <Frame x={x} />
+     * }
+     * ```
+     *
+     * @motion
+     *
+     * ```jsx
+     * export const MyComponent = () => {
+     *   const x = useMotionValue(0)
+     *   const y = useMotionValue(0)
+     *   const opacity = useMotionValue(1)
+     *
+     *   useEffect(() => {
+     *     function updateOpacity() {
+     *       const maxXY = Math.max(x.get(), y.get())
+     *       const newOpacity = transform(maxXY, [0, 100], [1, 0])
+     *       opacity.set(newOpacity)
+     *     }
+     *
+     *     const unsubscribeX = x.onChange(updateOpacity)
+     *     const unsubscribeY = y.onChange(updateOpacity)
+     *
+     *     return () => {
+     *       unsubscribeX()
+     *       unsubscribeY()
+     *     }
+     *   }, [])
+     *
+     *   return <motion.div style={{ x }} />
+     * }
+     * ```
+     *
+     * @internalremarks
+     *
+     * We could look into a `useOnChange` hook if the above lifecycle management proves confusing.
+     *
+     * ```jsx
+     * useOnChange(x, () => {})
+     * ```
+     *
+     * @param subscriber - A function that receives the latest value.
+     * @returns A function that, when called, will cancel this subscription.
+     *
+     * @public
+     */ MotionValue.prototype.onChange = function(subscription) {
+        return this.updateSubscribers.add(subscription);
+    };
+    MotionValue.prototype.clearListeners = function() {
+        this.updateSubscribers.clear();
+    };
+    /**
+     * Adds a function that will be notified when the `MotionValue` requests a render.
+     *
+     * @param subscriber - A function that's provided the latest value.
+     * @returns A function that, when called, will cancel this subscription.
+     *
+     * @internal
+     */ MotionValue.prototype.onRenderRequest = function(subscription) {
+        // Render immediately
+        subscription(this.get());
+        return this.renderSubscribers.add(subscription);
+    };
+    /**
+     * Attaches a passive effect to the `MotionValue`.
+     *
+     * @internal
+     */ MotionValue.prototype.attach = function(passiveEffect) {
+        this.passiveEffect = passiveEffect;
+    };
+    /**
+     * Sets the state of the `MotionValue`.
+     *
+     * @remarks
+     *
+     * ```jsx
+     * const x = useMotionValue(0)
+     * x.set(10)
+     * ```
+     *
+     * @param latest - Latest value to set.
+     * @param render - Whether to notify render subscribers. Defaults to `true`
+     *
+     * @public
+     */ MotionValue.prototype.set = function(v, render) {
+        if (render === void 0) render = true;
+        if (!render || !this.passiveEffect) this.updateAndNotify(v, render);
+        else this.passiveEffect(v, this.updateAndNotify);
+    };
+    /**
+     * Returns the latest state of `MotionValue`
+     *
+     * @returns - The latest state of `MotionValue`
+     *
+     * @public
+     */ MotionValue.prototype.get = function() {
+        return this.current;
+    };
+    /**
+     * @public
+     */ MotionValue.prototype.getPrevious = function() {
+        return this.prev;
+    };
+    /**
+     * Returns the latest velocity of `MotionValue`
+     *
+     * @returns - The latest velocity of `MotionValue`. Returns `0` if the state is non-numerical.
+     *
+     * @public
+     */ MotionValue.prototype.getVelocity = function() {
+        // This could be isFloat(this.prev) && isFloat(this.current), but that would be wasteful
+        return this.canTrackVelocity ? (0, _popmotion.velocityPerSecond)(parseFloat(this.current) - parseFloat(this.prev), this.timeDelta) : 0;
+    };
+    /**
+     * Registers a new animation to control this `MotionValue`. Only one
+     * animation can drive a `MotionValue` at one time.
+     *
+     * ```jsx
+     * value.start()
+     * ```
+     *
+     * @param animation - A function that starts the provided animation
+     *
+     * @internal
+     */ MotionValue.prototype.start = function(animation) {
+        var _this = this;
+        this.stop();
+        return new Promise(function(resolve) {
+            _this.hasAnimated = true;
+            _this.stopAnimation = animation(resolve);
+        }).then(function() {
+            return _this.clearAnimation();
+        });
+    };
+    /**
+     * Stop the currently active animation.
+     *
+     * @public
+     */ MotionValue.prototype.stop = function() {
+        if (this.stopAnimation) this.stopAnimation();
+        this.clearAnimation();
+    };
+    /**
+     * Returns `true` if this value is currently animating.
+     *
+     * @public
+     */ MotionValue.prototype.isAnimating = function() {
+        return !!this.stopAnimation;
+    };
+    MotionValue.prototype.clearAnimation = function() {
+        this.stopAnimation = null;
+    };
+    /**
+     * Destroy and clean up subscribers to this `MotionValue`.
+     *
+     * The `MotionValue` hooks like `useMotionValue` and `useTransform` automatically
+     * handle the lifecycle of the returned `MotionValue`, so this method is only necessary if you've manually
+     * created a `MotionValue` via the `motionValue` function.
+     *
+     * @public
+     */ MotionValue.prototype.destroy = function() {
+        this.updateSubscribers.clear();
+        this.renderSubscribers.clear();
+        this.stop();
+    };
+    return MotionValue;
+}();
+/**
+ * @internal
+ */ function motionValue(init) {
+    return new MotionValue(init);
+}
+
+},{"framesync":"geFpv","popmotion":"hu70l","../utils/subscription-manager.js":"8AO8z","@parcel/transformer-js/src/esmodule-helpers.js":"5oERU"}],"8AO8z":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "SubscriptionManager", ()=>SubscriptionManager);
+var _arrayJs = require("./array.js");
+var SubscriptionManager = /** @class */ function() {
+    function SubscriptionManager() {
+        this.subscriptions = [];
+    }
+    SubscriptionManager.prototype.add = function(handler) {
+        var _this = this;
+        (0, _arrayJs.addUniqueItem)(this.subscriptions, handler);
+        return function() {
+            return (0, _arrayJs.removeItem)(_this.subscriptions, handler);
+        };
+    };
+    SubscriptionManager.prototype.notify = function(a, b, c) {
+        var numSubscriptions = this.subscriptions.length;
+        if (!numSubscriptions) return;
+        if (numSubscriptions === 1) /**
+             * If there's only a single handler we can just call it without invoking a loop.
+             */ this.subscriptions[0](a, b, c);
+        else for(var i = 0; i < numSubscriptions; i++){
+            /**
+                 * Check whether the handler exists before firing as it's possible
+                 * the subscriptions were modified during this loop running.
+                 */ var handler = this.subscriptions[i];
+            handler && handler(a, b, c);
+        }
+    };
+    SubscriptionManager.prototype.getSize = function() {
+        return this.subscriptions.length;
+    };
+    SubscriptionManager.prototype.clear = function() {
+        this.subscriptions.length = 0;
+    };
+    return SubscriptionManager;
+}();
+
+},{"./array.js":"jSqBq","@parcel/transformer-js/src/esmodule-helpers.js":"5oERU"}],"jSqBq":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "addUniqueItem", ()=>addUniqueItem);
+parcelHelpers.export(exports, "removeItem", ()=>removeItem);
+function addUniqueItem(arr, item) {
+    arr.indexOf(item) === -1 && arr.push(item);
+}
+function removeItem(arr, item) {
+    var index = arr.indexOf(item);
+    index > -1 && arr.splice(index, 1);
+}
+
+},{"@parcel/transformer-js/src/esmodule-helpers.js":"5oERU"}],"8xXI0":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "findValueType", ()=>findValueType);
+var _tslib = require("tslib");
+var _styleValueTypes = require("style-value-types");
+var _dimensionsJs = require("./dimensions.js");
+var _testJs = require("./test.js");
+/**
+ * A list of all ValueTypes
+ */ var valueTypes = (0, _tslib.__spreadArray)((0, _tslib.__spreadArray)([], (0, _tslib.__read)((0, _dimensionsJs.dimensionValueTypes))), [
+    (0, _styleValueTypes.color),
+    (0, _styleValueTypes.complex)
+]);
+/**
+ * Tests a value against the list of ValueTypes
+ */ var findValueType = function(v) {
+    return valueTypes.find((0, _testJs.testValueType)(v));
+};
+
+},{"tslib":"edJ4f","style-value-types":"dhngi","./dimensions.js":"1Gv5I","./test.js":"1eZg7","@parcel/transformer-js/src/esmodule-helpers.js":"5oERU"}],"1Gv5I":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "dimensionValueTypes", ()=>dimensionValueTypes);
+parcelHelpers.export(exports, "findDimensionValueType", ()=>findDimensionValueType);
+var _styleValueTypes = require("style-value-types");
+var _testJs = require("./test.js");
+var _typeAutoJs = require("./type-auto.js");
+/**
+ * A list of value types commonly used for dimensions
+ */ var dimensionValueTypes = [
+    (0, _styleValueTypes.number),
+    (0, _styleValueTypes.px),
+    (0, _styleValueTypes.percent),
+    (0, _styleValueTypes.degrees),
+    (0, _styleValueTypes.vw),
+    (0, _styleValueTypes.vh),
+    (0, _typeAutoJs.auto)
+];
+/**
+ * Tests a dimensional value against the list of dimension ValueTypes
+ */ var findDimensionValueType = function(v) {
+    return dimensionValueTypes.find((0, _testJs.testValueType)(v));
+};
+
+},{"style-value-types":"dhngi","./test.js":"1eZg7","./type-auto.js":"dCwGH","@parcel/transformer-js/src/esmodule-helpers.js":"5oERU"}],"1eZg7":[function(require,module,exports) {
+/**
+ * Tests a provided value against a ValueType
+ */ var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "testValueType", ()=>testValueType);
+var testValueType = function(v) {
+    return function(type) {
+        return type.test(v);
+    };
+};
+
+},{"@parcel/transformer-js/src/esmodule-helpers.js":"5oERU"}],"dCwGH":[function(require,module,exports) {
+/**
+ * ValueType for "auto"
+ */ var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "auto", ()=>auto);
+var auto = {
+    test: function(v) {
+        return v === "auto";
+    },
+    parse: function(v) {
+        return v;
+    }
+};
+
+},{"@parcel/transformer-js/src/esmodule-helpers.js":"5oERU"}],"53WFv":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "drag", ()=>drag);
+var _useDragJs = require("../../gestures/drag/use-drag.js");
+var _usePanGestureJs = require("../../gestures/use-pan-gesture.js");
+var _makeRenderlessComponentJs = require("../utils/make-renderless-component.js");
+var drag = {
+    pan: (0, _makeRenderlessComponentJs.makeRenderlessComponent)((0, _usePanGestureJs.usePanGesture)),
+    drag: (0, _makeRenderlessComponentJs.makeRenderlessComponent)((0, _useDragJs.useDrag))
+};
+
+},{"../../gestures/drag/use-drag.js":"g30uz","../../gestures/use-pan-gesture.js":"a9NEf","../utils/make-renderless-component.js":"gABee","@parcel/transformer-js/src/esmodule-helpers.js":"5oERU"}],"g30uz":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "useDrag", ()=>useDrag);
+var _tslib = require("tslib");
+var _react = require("react");
+var _motionConfigContextJs = require("../../context/MotionConfigContext.js");
+var _visualElementDragControlsJs = require("./VisualElementDragControls.js");
+var _useConstantJs = require("../../utils/use-constant.js");
+/**
+ * A hook that allows an element to be dragged.
+ *
+ * @internal
+ */ function useDrag(props) {
+    var groupDragControls = props.dragControls, visualElement = props.visualElement;
+    var transformPagePoint = (0, _react.useContext)((0, _motionConfigContextJs.MotionConfigContext)).transformPagePoint;
+    var dragControls = (0, _useConstantJs.useConstant)(function() {
+        return new (0, _visualElementDragControlsJs.VisualElementDragControls)({
+            visualElement: visualElement
+        });
+    });
+    dragControls.setProps((0, _tslib.__assign)((0, _tslib.__assign)({}, props), {
+        transformPagePoint: transformPagePoint
+    }));
+    // If we've been provided a DragControls for manual control over the drag gesture,
+    // subscribe this component to it on mount.
+    (0, _react.useEffect)(function() {
+        return groupDragControls && groupDragControls.subscribe(dragControls);
+    }, [
+        dragControls
+    ]);
+    // Mount the drag controls with the visualElement
+    (0, _react.useEffect)(function() {
+        return dragControls.mount(visualElement);
+    }, []);
+}
+
+},{"tslib":"edJ4f","react":"9sfFD","../../context/MotionConfigContext.js":"dwzzE","./VisualElementDragControls.js":"7MwwB","../../utils/use-constant.js":"fUKVy","@parcel/transformer-js/src/esmodule-helpers.js":"5oERU"}],"7MwwB":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "VisualElementDragControls", ()=>VisualElementDragControls);
+parcelHelpers.export(exports, "elementDragControls", ()=>elementDragControls);
+var _tslib = require("tslib");
+var _heyListen = require("hey-listen");
+var _panSessionJs = require("../PanSession.js");
+var _lockJs = require("./utils/lock.js");
+var _isRefObjectJs = require("../../utils/is-ref-object.js");
+var _usePointerEventJs = require("../../events/use-pointer-event.js");
+var _useDomEventJs = require("../../events/use-dom-event.js");
+var _eventInfoJs = require("../../events/event-info.js");
+var _indexJs = require("../../utils/geometry/index.js");
+var _eachAxisJs = require("../../utils/each-axis.js");
+var _constraintsJs = require("./utils/constraints.js");
+var _measureJs = require("../../render/dom/projection/measure.js");
+var _deltaCalcJs = require("../../utils/geometry/delta-calc.js");
+var _transitionsJs = require("../../animation/utils/transitions.js");
+var _typesJs = require("../../render/utils/types.js");
+var _utilsJs = require("../../render/dom/projection/utils.js");
+var _popmotion = require("popmotion");
+var _convertToRelativeJs = require("../../render/dom/projection/convert-to-relative.js");
+var _utilsJs1 = require("../../motion/features/layout/utils.js");
+var _batchLayoutJs = require("../../render/dom/utils/batch-layout.js");
+var _framesync = require("framesync");
+var elementDragControls = new WeakMap();
+/**
+ *
+ */ var lastPointerEvent;
+var VisualElementDragControls = /** @class */ function() {
+    function VisualElementDragControls(_a) {
+        var visualElement = _a.visualElement;
+        /**
+         * Track whether we're currently dragging.
+         *
+         * @internal
+         */ this.isDragging = false;
+        /**
+         * The current direction of drag, or `null` if both.
+         *
+         * @internal
+         */ this.currentDirection = null;
+        /**
+         * The permitted boundaries of travel, in pixels.
+         *
+         * @internal
+         */ this.constraints = false;
+        /**
+         * The per-axis resolved elastic values.
+         *
+         * @internal
+         */ this.elastic = (0, _indexJs.axisBox)();
+        /**
+         * A reference to the host component's latest props.
+         *
+         * @internal
+         */ this.props = {};
+        /**
+         * @internal
+         */ this.hasMutatedConstraints = false;
+        /**
+         * Track the initial position of the cursor relative to the dragging element
+         * when dragging starts as a value of 0-1 on each axis. We then use this to calculate
+         * an ideal bounding box for the VisualElement renderer to project into every frame.
+         *
+         * @internal
+         */ this.cursorProgress = {
+            x: 0.5,
+            y: 0.5
+        };
+        // When updating _dragX, or _dragY instead of the VisualElement,
+        // persist their values between drag gestures.
+        this.originPoint = {};
+        // This is a reference to the global drag gesture lock, ensuring only one component
+        // can "capture" the drag of one or both axes.
+        // TODO: Look into moving this into pansession?
+        this.openGlobalLock = null;
+        /**
+         * @internal
+         */ this.panSession = null;
+        this.visualElement = visualElement;
+        this.visualElement.enableLayoutProjection();
+        elementDragControls.set(visualElement, this);
+    }
+    /**
+     * Instantiate a PanSession for the drag gesture
+     *
+     * @public
+     */ VisualElementDragControls.prototype.start = function(originEvent, _a) {
+        var _this = this;
+        var _b = _a === void 0 ? {} : _a, _c = _b.snapToCursor, snapToCursor = _c === void 0 ? false : _c, cursorProgress = _b.cursorProgress;
+        var onSessionStart = function(event) {
+            var _a;
+            // Stop any animations on both axis values immediately. This allows the user to throw and catch
+            // the component.
+            _this.stopMotion();
+            /**
+             * Save the initial point. We'll use this to calculate the pointer's position rather
+             * than the one we receive when the gesture actually starts. By then, the pointer will
+             * have already moved, and the perception will be of the pointer "slipping" across the element
+             */ var initialPoint = (0, _eventInfoJs.getViewportPointFromEvent)(event).point;
+            (_a = _this.cancelLayout) === null || _a === void 0 || _a.call(_this);
+            _this.cancelLayout = (0, _batchLayoutJs.batchLayout)(function(read, write) {
+                var ancestors = (0, _utilsJs.collectProjectingAncestors)(_this.visualElement);
+                var children = (0, _utilsJs.collectProjectingChildren)(_this.visualElement);
+                var tree = (0, _tslib.__spreadArray)((0, _tslib.__spreadArray)([], (0, _tslib.__read)(ancestors)), (0, _tslib.__read)(children));
+                var hasManuallySetCursorOrigin = false;
+                /**
+                 * Apply a simple lock to the projection target. This ensures no animations
+                 * can run on the projection box while this lock is active.
+                 */ _this.isLayoutDrag() && _this.visualElement.lockProjectionTarget();
+                write(function() {
+                    tree.forEach(function(element) {
+                        return element.resetTransform();
+                    });
+                });
+                read(function() {
+                    (0, _utilsJs.updateLayoutMeasurement)(_this.visualElement);
+                    children.forEach((0, _utilsJs.updateLayoutMeasurement));
+                });
+                write(function() {
+                    tree.forEach(function(element) {
+                        return element.restoreTransform();
+                    });
+                    if (snapToCursor) hasManuallySetCursorOrigin = _this.snapToCursor(initialPoint);
+                });
+                read(function() {
+                    var isRelativeDrag = Boolean(_this.getAxisMotionValue("x") && !_this.isExternalDrag());
+                    if (!isRelativeDrag) _this.visualElement.rebaseProjectionTarget(true, _this.visualElement.measureViewportBox(false));
+                    _this.visualElement.scheduleUpdateLayoutProjection();
+                    /**
+                     * When dragging starts, we want to find where the cursor is relative to the bounding box
+                     * of the element. Every frame, we calculate a new bounding box using this relative position
+                     * and let the visualElement renderer figure out how to reproject the element into this bounding
+                     * box.
+                     *
+                     * By doing it this way, rather than applying an x/y transform directly to the element,
+                     * we can ensure the component always visually sticks to the cursor as we'd expect, even
+                     * if the DOM element itself changes layout as a result of React updates the user might
+                     * make based on the drag position.
+                     */ var projection = _this.visualElement.projection;
+                    (0, _eachAxisJs.eachAxis)(function(axis) {
+                        if (!hasManuallySetCursorOrigin) {
+                            var _a = projection.target[axis], min = _a.min, max = _a.max;
+                            _this.cursorProgress[axis] = cursorProgress ? cursorProgress[axis] : (0, _popmotion.progress)(min, max, initialPoint[axis]);
+                        }
+                        /**
+                         * If we have external drag MotionValues, record their origin point. On pointermove
+                         * we'll apply the pan gesture offset directly to this value.
+                         */ var axisValue = _this.getAxisMotionValue(axis);
+                        if (axisValue) _this.originPoint[axis] = axisValue.get();
+                    });
+                });
+                write(function() {
+                    (0, _framesync.flushSync).update();
+                    (0, _framesync.flushSync).preRender();
+                    (0, _framesync.flushSync).render();
+                    (0, _framesync.flushSync).postRender();
+                });
+                read(function() {
+                    return _this.resolveDragConstraints();
+                });
+            });
+        };
+        var onStart = function(event, info) {
+            var _a, _b, _c;
+            // Attempt to grab the global drag gesture lock - maybe make this part of PanSession
+            var _d = _this.props, drag = _d.drag, dragPropagation = _d.dragPropagation;
+            if (drag && !dragPropagation) {
+                if (_this.openGlobalLock) _this.openGlobalLock();
+                _this.openGlobalLock = (0, _lockJs.getGlobalLock)(drag);
+                // If we don 't have the lock, don't start dragging
+                if (!_this.openGlobalLock) return;
+            }
+            (0, _batchLayoutJs.flushLayout)();
+            // Set current drag status
+            _this.isDragging = true;
+            _this.currentDirection = null;
+            // Fire onDragStart event
+            (_b = (_a = _this.props).onDragStart) === null || _b === void 0 || _b.call(_a, event, info);
+            (_c = _this.visualElement.animationState) === null || _c === void 0 || _c.setActive((0, _typesJs.AnimationType).Drag, true);
+        };
+        var onMove = function(event, info) {
+            var _a, _b, _c, _d;
+            var _e = _this.props, dragPropagation = _e.dragPropagation, dragDirectionLock = _e.dragDirectionLock;
+            // If we didn't successfully receive the gesture lock, early return.
+            if (!dragPropagation && !_this.openGlobalLock) return;
+            var offset = info.offset;
+            // Attempt to detect drag direction if directionLock is true
+            if (dragDirectionLock && _this.currentDirection === null) {
+                _this.currentDirection = getCurrentDirection(offset);
+                // If we've successfully set a direction, notify listener
+                if (_this.currentDirection !== null) (_b = (_a = _this.props).onDirectionLock) === null || _b === void 0 || _b.call(_a, _this.currentDirection);
+                return;
+            }
+            // Update each point with the latest position
+            _this.updateAxis("x", info.point, offset);
+            _this.updateAxis("y", info.point, offset);
+            // Fire onDrag event
+            (_d = (_c = _this.props).onDrag) === null || _d === void 0 || _d.call(_c, event, info);
+            // Update the last pointer event
+            lastPointerEvent = event;
+        };
+        var onSessionEnd = function(event, info) {
+            return _this.stop(event, info);
+        };
+        var transformPagePoint = this.props.transformPagePoint;
+        this.panSession = new (0, _panSessionJs.PanSession)(originEvent, {
+            onSessionStart: onSessionStart,
+            onStart: onStart,
+            onMove: onMove,
+            onSessionEnd: onSessionEnd
+        }, {
+            transformPagePoint: transformPagePoint
+        });
+    };
+    VisualElementDragControls.prototype.resolveDragConstraints = function() {
+        var _this = this;
+        var _a = this.props, dragConstraints = _a.dragConstraints, dragElastic = _a.dragElastic;
+        var layout = this.visualElement.getLayoutState().layoutCorrected;
+        if (dragConstraints) this.constraints = (0, _isRefObjectJs.isRefObject)(dragConstraints) ? this.resolveRefConstraints(layout, dragConstraints) : (0, _constraintsJs.calcRelativeConstraints)(layout, dragConstraints);
+        else this.constraints = false;
+        this.elastic = (0, _constraintsJs.resolveDragElastic)(dragElastic);
+        /**
+         * If we're outputting to external MotionValues, we want to rebase the measured constraints
+         * from viewport-relative to component-relative.
+         */ if (this.constraints && !this.hasMutatedConstraints) (0, _eachAxisJs.eachAxis)(function(axis) {
+            if (_this.getAxisMotionValue(axis)) _this.constraints[axis] = (0, _constraintsJs.rebaseAxisConstraints)(layout[axis], _this.constraints[axis]);
+        });
+    };
+    VisualElementDragControls.prototype.resolveRefConstraints = function(layoutBox, constraints) {
+        var _a = this.props, onMeasureDragConstraints = _a.onMeasureDragConstraints, transformPagePoint = _a.transformPagePoint;
+        var constraintsElement = constraints.current;
+        (0, _heyListen.invariant)(constraintsElement !== null, "If `dragConstraints` is set as a React ref, that ref must be passed to another component's `ref` prop.");
+        this.constraintsBox = (0, _measureJs.getBoundingBox)(constraintsElement, transformPagePoint);
+        var measuredConstraints = (0, _constraintsJs.calcViewportConstraints)(layoutBox, this.constraintsBox);
+        /**
+         * If there's an onMeasureDragConstraints listener we call it and
+         * if different constraints are returned, set constraints to that
+         */ if (onMeasureDragConstraints) {
+            var userConstraints = onMeasureDragConstraints((0, _indexJs.convertAxisBoxToBoundingBox)(measuredConstraints));
+            this.hasMutatedConstraints = !!userConstraints;
+            if (userConstraints) measuredConstraints = (0, _indexJs.convertBoundingBoxToAxisBox)(userConstraints);
+        }
+        return measuredConstraints;
+    };
+    VisualElementDragControls.prototype.cancelDrag = function() {
+        var _a, _b;
+        this.visualElement.unlockProjectionTarget();
+        (_a = this.cancelLayout) === null || _a === void 0 || _a.call(this);
+        this.isDragging = false;
+        this.panSession && this.panSession.end();
+        this.panSession = null;
+        if (!this.props.dragPropagation && this.openGlobalLock) {
+            this.openGlobalLock();
+            this.openGlobalLock = null;
+        }
+        (_b = this.visualElement.animationState) === null || _b === void 0 || _b.setActive((0, _typesJs.AnimationType).Drag, false);
+    };
+    VisualElementDragControls.prototype.stop = function(event, info) {
+        var _a, _b, _c;
+        (_a = this.panSession) === null || _a === void 0 || _a.end();
+        this.panSession = null;
+        var isDragging = this.isDragging;
+        this.cancelDrag();
+        if (!isDragging) return;
+        var velocity = info.velocity;
+        this.animateDragEnd(velocity);
+        (_c = (_b = this.props).onDragEnd) === null || _c === void 0 || _c.call(_b, event, info);
+    };
+    VisualElementDragControls.prototype.snapToCursor = function(point) {
+        var _this = this;
+        return (0, _eachAxisJs.eachAxis)(function(axis) {
+            var drag = _this.props.drag;
+            // If we're not dragging this axis, do an early return.
+            if (!shouldDrag(axis, drag, _this.currentDirection)) return;
+            var axisValue = _this.getAxisMotionValue(axis);
+            if (axisValue) {
+                var box = _this.visualElement.getLayoutState().layout;
+                var length_1 = box[axis].max - box[axis].min;
+                var center = box[axis].min + length_1 / 2;
+                var offset = point[axis] - center;
+                _this.originPoint[axis] = point[axis];
+                axisValue.set(offset);
+            } else {
+                _this.cursorProgress[axis] = 0.5;
+                return true;
+            }
+        }).includes(true);
+    };
+    /**
+     * Update the specified axis with the latest pointer information.
+     */ VisualElementDragControls.prototype.updateAxis = function(axis, point, offset) {
+        var drag = this.props.drag;
+        // If we're not dragging this axis, do an early return.
+        if (!shouldDrag(axis, drag, this.currentDirection)) return;
+        return this.getAxisMotionValue(axis) ? this.updateAxisMotionValue(axis, offset) : this.updateVisualElementAxis(axis, point);
+    };
+    VisualElementDragControls.prototype.updateAxisMotionValue = function(axis, offset) {
+        var axisValue = this.getAxisMotionValue(axis);
+        if (!offset || !axisValue) return;
+        var nextValue = this.originPoint[axis] + offset[axis];
+        var update = this.constraints ? (0, _constraintsJs.applyConstraints)(nextValue, this.constraints[axis], this.elastic[axis]) : nextValue;
+        axisValue.set(update);
+    };
+    VisualElementDragControls.prototype.updateVisualElementAxis = function(axis, point) {
+        var _a;
+        // Get the actual layout bounding box of the element
+        var axisLayout = this.visualElement.getLayoutState().layout[axis];
+        // Calculate its current length. In the future we might want to lerp this to animate
+        // between lengths if the layout changes as we change the DOM
+        var axisLength = axisLayout.max - axisLayout.min;
+        // Get the initial progress that the pointer sat on this axis on gesture start.
+        var axisProgress = this.cursorProgress[axis];
+        // Calculate a new min point based on the latest pointer position, constraints and elastic
+        var min = (0, _constraintsJs.calcConstrainedMinPoint)(point[axis], axisLength, axisProgress, (_a = this.constraints) === null || _a === void 0 ? void 0 : _a[axis], this.elastic[axis]);
+        // Update the axis viewport target with this new min and the length
+        this.visualElement.setProjectionTargetAxis(axis, min, min + axisLength);
+    };
+    VisualElementDragControls.prototype.setProps = function(_a) {
+        var _b = _a.drag, drag = _b === void 0 ? false : _b, _c = _a.dragDirectionLock, dragDirectionLock = _c === void 0 ? false : _c, _d = _a.dragPropagation, dragPropagation = _d === void 0 ? false : _d, _e = _a.dragConstraints, dragConstraints = _e === void 0 ? false : _e, _f = _a.dragElastic, dragElastic = _f === void 0 ? (0, _constraintsJs.defaultElastic) : _f, _g = _a.dragMomentum, dragMomentum = _g === void 0 ? true : _g, remainingProps = (0, _tslib.__rest)(_a, [
+            "drag",
+            "dragDirectionLock",
+            "dragPropagation",
+            "dragConstraints",
+            "dragElastic",
+            "dragMomentum"
+        ]);
+        this.props = (0, _tslib.__assign)({
+            drag: drag,
+            dragDirectionLock: dragDirectionLock,
+            dragPropagation: dragPropagation,
+            dragConstraints: dragConstraints,
+            dragElastic: dragElastic,
+            dragMomentum: dragMomentum
+        }, remainingProps);
+    };
+    /**
+     * Drag works differently depending on which props are provided.
+     *
+     * - If _dragX and _dragY are provided, we output the gesture delta directly to those motion values.
+     * - If the component will perform layout animations, we output the gesture to the component's
+     *      visual bounding box
+     * - Otherwise, we apply the delta to the x/y motion values.
+     */ VisualElementDragControls.prototype.getAxisMotionValue = function(axis) {
+        var _a = this.props, layout = _a.layout, layoutId = _a.layoutId;
+        var dragKey = "_drag" + axis.toUpperCase();
+        if (this.props[dragKey]) return this.props[dragKey];
+        else if (!layout && layoutId === undefined) return this.visualElement.getValue(axis, 0);
+    };
+    VisualElementDragControls.prototype.isLayoutDrag = function() {
+        return !this.getAxisMotionValue("x");
+    };
+    VisualElementDragControls.prototype.isExternalDrag = function() {
+        var _a = this.props, _dragX = _a._dragX, _dragY = _a._dragY;
+        return _dragX || _dragY;
+    };
+    VisualElementDragControls.prototype.animateDragEnd = function(velocity) {
+        var _this = this;
+        var _a = this.props, drag = _a.drag, dragMomentum = _a.dragMomentum, dragElastic = _a.dragElastic, dragTransition = _a.dragTransition;
+        /**
+         * Everything beyond the drag gesture should be performed with
+         * relative projection so children stay in sync with their parent element.
+         */ var isRelative = (0, _convertToRelativeJs.convertToRelativeProjection)(this.visualElement, this.isLayoutDrag() && !this.isExternalDrag());
+        /**
+         * If we had previously resolved constraints relative to the viewport,
+         * we need to also convert those to a relative coordinate space for the animation
+         */ var constraints = this.constraints || {};
+        if (isRelative && Object.keys(constraints).length && this.isLayoutDrag()) {
+            var projectionParent = this.visualElement.getProjectionParent();
+            if (projectionParent) {
+                var relativeConstraints_1 = (0, _utilsJs1.calcRelativeOffset)(projectionParent.projection.targetFinal, constraints);
+                (0, _eachAxisJs.eachAxis)(function(axis) {
+                    var _a = relativeConstraints_1[axis], min = _a.min, max = _a.max;
+                    constraints[axis] = {
+                        min: isNaN(min) ? undefined : min,
+                        max: isNaN(max) ? undefined : max
+                    };
+                });
+            }
+        }
+        var momentumAnimations = (0, _eachAxisJs.eachAxis)(function(axis) {
+            var _a;
+            if (!shouldDrag(axis, drag, _this.currentDirection)) return;
+            var transition = (_a = constraints === null || constraints === void 0 ? void 0 : constraints[axis]) !== null && _a !== void 0 ? _a : {};
+            /**
+             * Overdamp the boundary spring if `dragElastic` is disabled. There's still a frame
+             * of spring animations so we should look into adding a disable spring option to `inertia`.
+             * We could do something here where we affect the `bounceStiffness` and `bounceDamping`
+             * using the value of `dragElastic`.
+             */ var bounceStiffness = dragElastic ? 200 : 1000000;
+            var bounceDamping = dragElastic ? 40 : 10000000;
+            var inertia = (0, _tslib.__assign)((0, _tslib.__assign)({
+                type: "inertia",
+                velocity: dragMomentum ? velocity[axis] : 0,
+                bounceStiffness: bounceStiffness,
+                bounceDamping: bounceDamping,
+                timeConstant: 750,
+                restDelta: 1,
+                restSpeed: 10
+            }, dragTransition), transition);
+            // If we're not animating on an externally-provided `MotionValue` we can use the
+            // component's animation controls which will handle interactions with whileHover (etc),
+            // otherwise we just have to animate the `MotionValue` itself.
+            return _this.getAxisMotionValue(axis) ? _this.startAxisValueAnimation(axis, inertia) : _this.visualElement.startLayoutAnimation(axis, inertia, isRelative);
+        });
+        // Run all animations and then resolve the new drag constraints.
+        return Promise.all(momentumAnimations).then(function() {
+            var _a, _b;
+            (_b = (_a = _this.props).onDragTransitionEnd) === null || _b === void 0 || _b.call(_a);
+        });
+    };
+    VisualElementDragControls.prototype.stopMotion = function() {
+        var _this = this;
+        (0, _eachAxisJs.eachAxis)(function(axis) {
+            var axisValue = _this.getAxisMotionValue(axis);
+            axisValue ? axisValue.stop() : _this.visualElement.stopLayoutAnimation();
+        });
+    };
+    VisualElementDragControls.prototype.startAxisValueAnimation = function(axis, transition) {
+        var axisValue = this.getAxisMotionValue(axis);
+        if (!axisValue) return;
+        var currentValue = axisValue.get();
+        axisValue.set(currentValue);
+        axisValue.set(currentValue); // Set twice to hard-reset velocity
+        return (0, _transitionsJs.startAnimation)(axis, axisValue, 0, transition);
+    };
+    VisualElementDragControls.prototype.scalePoint = function() {
+        var _this = this;
+        var _a = this.props, drag = _a.drag, dragConstraints = _a.dragConstraints;
+        if (!(0, _isRefObjectJs.isRefObject)(dragConstraints) || !this.constraintsBox) return;
+        // Stop any current animations as there can be some visual glitching if we resize mid animation
+        this.stopMotion();
+        // Record the relative progress of the targetBox relative to the constraintsBox
+        var boxProgress = {
+            x: 0,
+            y: 0
+        };
+        (0, _eachAxisJs.eachAxis)(function(axis) {
+            boxProgress[axis] = (0, _deltaCalcJs.calcOrigin)(_this.visualElement.projection.target[axis], _this.constraintsBox[axis]);
+        });
+        /**
+         * For each axis, calculate the current progress of the layout axis within the constraints.
+         * Then, using the latest layout and constraints measurements, reposition the new layout axis
+         * proportionally within the constraints.
+         */ this.updateConstraints(function() {
+            (0, _eachAxisJs.eachAxis)(function(axis) {
+                if (!shouldDrag(axis, drag, null)) return;
+                // Calculate the position of the targetBox relative to the constraintsBox using the
+                // previously calculated progress
+                var _a = (0, _constraintsJs.calcPositionFromProgress)(_this.visualElement.projection.target[axis], _this.constraintsBox[axis], boxProgress[axis]), min = _a.min, max = _a.max;
+                _this.visualElement.setProjectionTargetAxis(axis, min, max);
+            });
+        });
+        /**
+         * If any other draggable components are queuing the same tasks synchronously
+         * this will wait until they've all been scheduled before flushing.
+         */ setTimeout((0, _batchLayoutJs.flushLayout), 1);
+    };
+    VisualElementDragControls.prototype.updateConstraints = function(onReady) {
+        var _this = this;
+        this.cancelLayout = (0, _batchLayoutJs.batchLayout)(function(read, write) {
+            var ancestors = (0, _utilsJs.collectProjectingAncestors)(_this.visualElement);
+            write(function() {
+                return ancestors.forEach(function(element) {
+                    return element.resetTransform();
+                });
+            });
+            read(function() {
+                return (0, _utilsJs.updateLayoutMeasurement)(_this.visualElement);
+            });
+            write(function() {
+                return ancestors.forEach(function(element) {
+                    return element.restoreTransform();
+                });
+            });
+            read(function() {
+                _this.resolveDragConstraints();
+            });
+            if (onReady) write(onReady);
+        });
+    };
+    VisualElementDragControls.prototype.mount = function(visualElement) {
+        var _this = this;
+        var element = visualElement.getInstance();
+        /**
+         * Attach a pointerdown event listener on this DOM element to initiate drag tracking.
+         */ var stopPointerListener = (0, _usePointerEventJs.addPointerEvent)(element, "pointerdown", function(event) {
+            var _a = _this.props, drag = _a.drag, _b = _a.dragListener, dragListener = _b === void 0 ? true : _b;
+            drag && dragListener && _this.start(event);
+        });
+        /**
+         * Attach a window resize listener to scale the draggable target within its defined
+         * constraints as the window resizes.
+         */ var stopResizeListener = (0, _useDomEventJs.addDomEvent)(window, "resize", function() {
+            _this.scalePoint();
+        });
+        /**
+         * Ensure drag constraints are resolved correctly relative to the dragging element
+         * whenever its layout changes.
+         */ var stopLayoutUpdateListener = visualElement.onLayoutUpdate(function() {
+            if (_this.isDragging) _this.resolveDragConstraints();
+        });
+        /**
+         * If the previous component with this same layoutId was dragging at the time
+         * it was unmounted, we want to continue the same gesture on this component.
+         */ var prevDragCursor = visualElement.prevDragCursor;
+        if (prevDragCursor) this.start(lastPointerEvent, {
+            cursorProgress: prevDragCursor
+        });
+        /**
+         * Return a function that will teardown the drag gesture
+         */ return function() {
+            stopPointerListener === null || stopPointerListener === void 0 || stopPointerListener();
+            stopResizeListener === null || stopResizeListener === void 0 || stopResizeListener();
+            stopLayoutUpdateListener === null || stopLayoutUpdateListener === void 0 || stopLayoutUpdateListener();
+            _this.cancelDrag();
+        };
+    };
+    return VisualElementDragControls;
+}();
+function shouldDrag(direction, drag, currentDirection) {
+    return (drag === true || drag === direction) && (currentDirection === null || currentDirection === direction);
+}
+/**
+ * Based on an x/y offset determine the current drag direction. If both axis' offsets are lower
+ * than the provided threshold, return `null`.
+ *
+ * @param offset - The x/y offset from origin.
+ * @param lockThreshold - (Optional) - the minimum absolute offset before we can determine a drag direction.
+ */ function getCurrentDirection(offset, lockThreshold) {
+    if (lockThreshold === void 0) lockThreshold = 10;
+    var direction = null;
+    if (Math.abs(offset.y) > lockThreshold) direction = "y";
+    else if (Math.abs(offset.x) > lockThreshold) direction = "x";
+    return direction;
+}
+
+},{"tslib":"edJ4f","hey-listen":"fFhg6","../PanSession.js":"hqxGK","./utils/lock.js":"fzvQf","../../utils/is-ref-object.js":"RnmQb","../../events/use-pointer-event.js":"9ltEK","../../events/use-dom-event.js":"kTxxy","../../events/event-info.js":"jPSr0","../../utils/geometry/index.js":"cOvBE","../../utils/each-axis.js":"49wtY","./utils/constraints.js":"aT12a","../../render/dom/projection/measure.js":"kh2Yv","../../utils/geometry/delta-calc.js":"6SONB","../../animation/utils/transitions.js":"6JS8P","../../render/utils/types.js":"aemrC","../../render/dom/projection/utils.js":"i6B7W","popmotion":"hu70l","../../render/dom/projection/convert-to-relative.js":"b61cs","../../motion/features/layout/utils.js":"91rnc","../../render/dom/utils/batch-layout.js":"6IwMV","framesync":"geFpv","@parcel/transformer-js/src/esmodule-helpers.js":"5oERU"}],"hqxGK":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "PanSession", ()=>PanSession);
+var _tslib = require("tslib");
+var _eventTypeJs = require("./utils/event-type.js");
+var _eventInfoJs = require("../events/event-info.js");
+var _framesync = require("framesync");
+var _framesyncDefault = parcelHelpers.interopDefault(_framesync);
+var _timeConversionJs = require("../utils/time-conversion.js");
+var _usePointerEventJs = require("../events/use-pointer-event.js");
+var _popmotion = require("popmotion");
+/**
+ * @internal
+ */ var PanSession = /** @class */ function() {
+    function PanSession(event, handlers, _a) {
+        var _this = this;
+        var _b = _a === void 0 ? {} : _a, transformPagePoint = _b.transformPagePoint;
+        /**
+         * @internal
+         */ this.startEvent = null;
+        /**
+         * @internal
+         */ this.lastMoveEvent = null;
+        /**
+         * @internal
+         */ this.lastMoveEventInfo = null;
+        /**
+         * @internal
+         */ this.handlers = {};
+        this.updatePoint = function() {
+            if (!(_this.lastMoveEvent && _this.lastMoveEventInfo)) return;
+            var info = getPanInfo(_this.lastMoveEventInfo, _this.history);
+            var isPanStarted = _this.startEvent !== null;
+            // Only start panning if the offset is larger than 3 pixels. If we make it
+            // any larger than this we'll want to reset the pointer history
+            // on the first update to avoid visual snapping to the cursoe.
+            var isDistancePastThreshold = (0, _popmotion.distance)(info.offset, {
+                x: 0,
+                y: 0
+            }) >= 3;
+            if (!isPanStarted && !isDistancePastThreshold) return;
+            var point = info.point;
+            var timestamp = (0, _framesync.getFrameData)().timestamp;
+            _this.history.push((0, _tslib.__assign)((0, _tslib.__assign)({}, point), {
+                timestamp: timestamp
+            }));
+            var _a = _this.handlers, onStart = _a.onStart, onMove = _a.onMove;
+            if (!isPanStarted) {
+                onStart && onStart(_this.lastMoveEvent, info);
+                _this.startEvent = _this.lastMoveEvent;
+            }
+            onMove && onMove(_this.lastMoveEvent, info);
+        };
+        this.handlePointerMove = function(event, info) {
+            _this.lastMoveEvent = event;
+            _this.lastMoveEventInfo = transformPoint(info, _this.transformPagePoint);
+            // Because Safari doesn't trigger mouseup events when it's above a `<select>`
+            if ((0, _eventTypeJs.isMouseEvent)(event) && event.buttons === 0) {
+                _this.handlePointerUp(event, info);
+                return;
+            }
+            // Throttle mouse move event to once per frame
+            (0, _framesyncDefault.default).update(_this.updatePoint, true);
+        };
+        this.handlePointerUp = function(event, info) {
+            _this.end();
+            var _a = _this.handlers, onEnd = _a.onEnd, onSessionEnd = _a.onSessionEnd;
+            var panInfo = getPanInfo(transformPoint(info, _this.transformPagePoint), _this.history);
+            if (_this.startEvent && onEnd) onEnd(event, panInfo);
+            onSessionEnd && onSessionEnd(event, panInfo);
+        };
+        // If we have more than one touch, don't start detecting this gesture
+        if ((0, _eventTypeJs.isTouchEvent)(event) && event.touches.length > 1) return;
+        this.handlers = handlers;
+        this.transformPagePoint = transformPagePoint;
+        var info = (0, _eventInfoJs.extractEventInfo)(event);
+        var initialInfo = transformPoint(info, this.transformPagePoint);
+        var point = initialInfo.point;
+        var timestamp = (0, _framesync.getFrameData)().timestamp;
+        this.history = [
+            (0, _tslib.__assign)((0, _tslib.__assign)({}, point), {
+                timestamp: timestamp
+            })
+        ];
+        var onSessionStart = handlers.onSessionStart;
+        onSessionStart && onSessionStart(event, getPanInfo(initialInfo, this.history));
+        this.removeListeners = (0, _popmotion.pipe)((0, _usePointerEventJs.addPointerEvent)(window, "pointermove", this.handlePointerMove), (0, _usePointerEventJs.addPointerEvent)(window, "pointerup", this.handlePointerUp), (0, _usePointerEventJs.addPointerEvent)(window, "pointercancel", this.handlePointerUp));
+    }
+    PanSession.prototype.updateHandlers = function(handlers) {
+        this.handlers = handlers;
+    };
+    PanSession.prototype.end = function() {
+        this.removeListeners && this.removeListeners();
+        (0, _framesync.cancelSync).update(this.updatePoint);
+    };
+    return PanSession;
+}();
+function transformPoint(info, transformPagePoint) {
+    return transformPagePoint ? {
+        point: transformPagePoint(info.point)
+    } : info;
+}
+function subtractPoint(a, b) {
+    return {
+        x: a.x - b.x,
+        y: a.y - b.y
+    };
+}
+function getPanInfo(_a, history) {
+    var point = _a.point;
+    return {
+        point: point,
+        delta: subtractPoint(point, lastDevicePoint(history)),
+        offset: subtractPoint(point, startDevicePoint(history)),
+        velocity: getVelocity(history, 0.1)
+    };
+}
+function startDevicePoint(history) {
+    return history[0];
+}
+function lastDevicePoint(history) {
+    return history[history.length - 1];
+}
+function getVelocity(history, timeDelta) {
+    if (history.length < 2) return {
+        x: 0,
+        y: 0
+    };
+    var i = history.length - 1;
+    var timestampedPoint = null;
+    var lastPoint = lastDevicePoint(history);
+    while(i >= 0){
+        timestampedPoint = history[i];
+        if (lastPoint.timestamp - timestampedPoint.timestamp > (0, _timeConversionJs.secondsToMilliseconds)(timeDelta)) break;
+        i--;
+    }
+    if (!timestampedPoint) return {
+        x: 0,
+        y: 0
+    };
+    var time = (lastPoint.timestamp - timestampedPoint.timestamp) / 1000;
+    if (time === 0) return {
+        x: 0,
+        y: 0
+    };
+    var currentVelocity = {
+        x: (lastPoint.x - timestampedPoint.x) / time,
+        y: (lastPoint.y - timestampedPoint.y) / time
+    };
+    if (currentVelocity.x === Infinity) currentVelocity.x = 0;
+    if (currentVelocity.y === Infinity) currentVelocity.y = 0;
+    return currentVelocity;
+}
+
+},{"tslib":"edJ4f","./utils/event-type.js":"40daC","../events/event-info.js":"jPSr0","framesync":"geFpv","../utils/time-conversion.js":"j6AbR","../events/use-pointer-event.js":"9ltEK","popmotion":"hu70l","@parcel/transformer-js/src/esmodule-helpers.js":"5oERU"}],"cOvBE":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "axisBox", ()=>axisBox);
+parcelHelpers.export(exports, "convertAxisBoxToBoundingBox", ()=>convertAxisBoxToBoundingBox);
+parcelHelpers.export(exports, "convertBoundingBoxToAxisBox", ()=>convertBoundingBoxToAxisBox);
+parcelHelpers.export(exports, "copyAxisBox", ()=>copyAxisBox);
+parcelHelpers.export(exports, "delta", ()=>delta);
+parcelHelpers.export(exports, "transformBoundingBox", ()=>transformBoundingBox);
+var _tslib = require("tslib");
+var _noopJs = require("../noop.js");
+/**
+ * Bounding boxes tend to be defined as top, left, right, bottom. For various operations
+ * it's easier to consider each axis individually. This function returns a bounding box
+ * as a map of single-axis min/max values.
+ */ function convertBoundingBoxToAxisBox(_a) {
+    var top = _a.top, left = _a.left, right = _a.right, bottom = _a.bottom;
+    return {
+        x: {
+            min: left,
+            max: right
+        },
+        y: {
+            min: top,
+            max: bottom
+        }
+    };
+}
+function convertAxisBoxToBoundingBox(_a) {
+    var x = _a.x, y = _a.y;
+    return {
+        top: y.min,
+        bottom: y.max,
+        left: x.min,
+        right: x.max
+    };
+}
+/**
+ * Applies a TransformPoint function to a bounding box. TransformPoint is usually a function
+ * provided by Framer to allow measured points to be corrected for device scaling. This is used
+ * when measuring DOM elements and DOM event points.
+ */ function transformBoundingBox(_a, transformPoint) {
+    var top = _a.top, left = _a.left, bottom = _a.bottom, right = _a.right;
+    if (transformPoint === void 0) transformPoint = (0, _noopJs.noop);
+    var topLeft = transformPoint({
+        x: left,
+        y: top
+    });
+    var bottomRight = transformPoint({
+        x: right,
+        y: bottom
+    });
+    return {
+        top: topLeft.y,
+        left: topLeft.x,
+        bottom: bottomRight.y,
+        right: bottomRight.x
+    };
+}
+/**
+ * Create an empty axis box of zero size
+ */ function axisBox() {
+    return {
+        x: {
+            min: 0,
+            max: 1
+        },
+        y: {
+            min: 0,
+            max: 1
+        }
+    };
+}
+function copyAxisBox(box) {
+    return {
+        x: (0, _tslib.__assign)({}, box.x),
+        y: (0, _tslib.__assign)({}, box.y)
+    };
+}
+/**
+ * Create an empty box delta
+ */ var zeroDelta = {
+    translate: 0,
+    scale: 1,
+    origin: 0,
+    originPoint: 0
+};
+function delta() {
+    return {
+        x: (0, _tslib.__assign)({}, zeroDelta),
+        y: (0, _tslib.__assign)({}, zeroDelta)
+    };
+}
+
+},{"tslib":"edJ4f","../noop.js":"ewOyx","@parcel/transformer-js/src/esmodule-helpers.js":"5oERU"}],"ewOyx":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "noop", ()=>noop);
+function noop(any) {
+    return any;
+}
+
+},{"@parcel/transformer-js/src/esmodule-helpers.js":"5oERU"}],"49wtY":[function(require,module,exports) {
+// Call a handler once for each axis
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "eachAxis", ()=>eachAxis);
+function eachAxis(handler) {
+    return [
+        handler("x"),
+        handler("y")
+    ];
+}
+
+},{"@parcel/transformer-js/src/esmodule-helpers.js":"5oERU"}],"aT12a":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "applyConstraints", ()=>applyConstraints);
+parcelHelpers.export(exports, "calcConstrainedMinPoint", ()=>calcConstrainedMinPoint);
+parcelHelpers.export(exports, "calcPositionFromProgress", ()=>calcPositionFromProgress);
+parcelHelpers.export(exports, "calcRelativeAxisConstraints", ()=>calcRelativeAxisConstraints);
+parcelHelpers.export(exports, "calcRelativeConstraints", ()=>calcRelativeConstraints);
+parcelHelpers.export(exports, "calcViewportAxisConstraints", ()=>calcViewportAxisConstraints);
+parcelHelpers.export(exports, "calcViewportConstraints", ()=>calcViewportConstraints);
+parcelHelpers.export(exports, "defaultElastic", ()=>defaultElastic);
+parcelHelpers.export(exports, "rebaseAxisConstraints", ()=>rebaseAxisConstraints);
+parcelHelpers.export(exports, "resolveAxisElastic", ()=>resolveAxisElastic);
+parcelHelpers.export(exports, "resolveDragElastic", ()=>resolveDragElastic);
+parcelHelpers.export(exports, "resolvePointElastic", ()=>resolvePointElastic);
+var _tslib = require("tslib");
+var _popmotion = require("popmotion");
+/**
+ * Apply constraints to a point. These constraints are both physical along an
+ * axis, and an elastic factor that determines how much to constrain the point
+ * by if it does lie outside the defined parameters.
+ */ function applyConstraints(point, _a, elastic) {
+    var min = _a.min, max = _a.max;
+    if (min !== undefined && point < min) // If we have a min point defined, and this is outside of that, constrain
+    point = elastic ? (0, _popmotion.mix)(min, point, elastic.min) : Math.max(point, min);
+    else if (max !== undefined && point > max) // If we have a max point defined, and this is outside of that, constrain
+    point = elastic ? (0, _popmotion.mix)(max, point, elastic.max) : Math.min(point, max);
+    return point;
+}
+/**
+ * Calculates a min projection point based on a pointer, pointer progress
+ * within the drag target, and constraints.
+ *
+ * For instance if an element was 100px width, we were dragging from 0.25
+ * along this axis, the pointer is at 200px, and there were no constraints,
+ * we would calculate a min projection point of 175px.
+ */ function calcConstrainedMinPoint(point, length, progress, constraints, elastic) {
+    // Calculate a min point for this axis and apply it to the current pointer
+    var min = point - length * progress;
+    return constraints ? applyConstraints(min, constraints, elastic) : min;
+}
+/**
+ * Calculate constraints in terms of the viewport when defined relatively to the
+ * measured axis. This is measured from the nearest edge, so a max constraint of 200
+ * on an axis with a max value of 300 would return a constraint of 500 - axis length
+ */ function calcRelativeAxisConstraints(axis, min, max) {
+    return {
+        min: min !== undefined ? axis.min + min : undefined,
+        max: max !== undefined ? axis.max + max - (axis.max - axis.min) : undefined
+    };
+}
+/**
+ * Calculate constraints in terms of the viewport when
+ * defined relatively to the measured bounding box.
+ */ function calcRelativeConstraints(layoutBox, _a) {
+    var top = _a.top, left = _a.left, bottom = _a.bottom, right = _a.right;
+    return {
+        x: calcRelativeAxisConstraints(layoutBox.x, left, right),
+        y: calcRelativeAxisConstraints(layoutBox.y, top, bottom)
+    };
+}
+/**
+ * Calculate viewport constraints when defined as another viewport-relative axis
+ */ function calcViewportAxisConstraints(layoutAxis, constraintsAxis) {
+    var _a;
+    var min = constraintsAxis.min - layoutAxis.min;
+    var max = constraintsAxis.max - layoutAxis.max;
+    // If the constraints axis is actually smaller than the layout axis then we can
+    // flip the constraints
+    if (constraintsAxis.max - constraintsAxis.min < layoutAxis.max - layoutAxis.min) _a = (0, _tslib.__read)([
+        max,
+        min
+    ], 2), min = _a[0], max = _a[1];
+    return {
+        min: layoutAxis.min + min,
+        max: layoutAxis.min + max
+    };
+}
+/**
+ * Calculate viewport constraints when defined as another viewport-relative box
+ */ function calcViewportConstraints(layoutBox, constraintsBox) {
+    return {
+        x: calcViewportAxisConstraints(layoutBox.x, constraintsBox.x),
+        y: calcViewportAxisConstraints(layoutBox.y, constraintsBox.y)
+    };
+}
+/**
+ * Calculate the an axis position based on two axes and a progress value.
+ */ function calcPositionFromProgress(axis, constraints, progress) {
+    var axisLength = axis.max - axis.min;
+    var min = (0, _popmotion.mix)(constraints.min, constraints.max - axisLength, progress);
+    return {
+        min: min,
+        max: min + axisLength
+    };
+}
+/**
+ * Rebase the calculated viewport constraints relative to the layout.min point.
+ */ function rebaseAxisConstraints(layout, constraints) {
+    var relativeConstraints = {};
+    if (constraints.min !== undefined) relativeConstraints.min = constraints.min - layout.min;
+    if (constraints.max !== undefined) relativeConstraints.max = constraints.max - layout.min;
+    return relativeConstraints;
+}
+var defaultElastic = 0.35;
+/**
+ * Accepts a dragElastic prop and returns resolved elastic values for each axis.
+ */ function resolveDragElastic(dragElastic) {
+    if (dragElastic === false) dragElastic = 0;
+    else if (dragElastic === true) dragElastic = defaultElastic;
+    return {
+        x: resolveAxisElastic(dragElastic, "left", "right"),
+        y: resolveAxisElastic(dragElastic, "top", "bottom")
+    };
+}
+function resolveAxisElastic(dragElastic, minLabel, maxLabel) {
+    return {
+        min: resolvePointElastic(dragElastic, minLabel),
+        max: resolvePointElastic(dragElastic, maxLabel)
+    };
+}
+function resolvePointElastic(dragElastic, label) {
+    var _a;
+    return typeof dragElastic === "number" ? dragElastic : (_a = dragElastic[label]) !== null && _a !== void 0 ? _a : 0;
+}
+
+},{"tslib":"edJ4f","popmotion":"hu70l","@parcel/transformer-js/src/esmodule-helpers.js":"5oERU"}],"kh2Yv":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "getBoundingBox", ()=>getBoundingBox);
+var _indexJs = require("../../../utils/geometry/index.js");
+/**
+ * Measure and return the element bounding box.
+ *
+ * We convert the box into an AxisBox2D to make it easier to work with each axis
+ * individually and programmatically.
+ *
+ * This function optionally accepts a transformPagePoint function which allows us to compensate
+ * for, for instance, measuring the element within a scaled plane like a Framer devivce preview component.
+ */ function getBoundingBox(element, transformPagePoint) {
+    var box = element.getBoundingClientRect();
+    return (0, _indexJs.convertBoundingBoxToAxisBox)((0, _indexJs.transformBoundingBox)(box, transformPagePoint));
+}
+
+},{"../../../utils/geometry/index.js":"cOvBE","@parcel/transformer-js/src/esmodule-helpers.js":"5oERU"}],"6SONB":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "calcOrigin", ()=>calcOrigin);
+parcelHelpers.export(exports, "calcRelativeAxis", ()=>calcRelativeAxis);
+parcelHelpers.export(exports, "calcRelativeBox", ()=>calcRelativeBox);
+parcelHelpers.export(exports, "isNear", ()=>isNear);
+parcelHelpers.export(exports, "updateAxisDelta", ()=>updateAxisDelta);
+parcelHelpers.export(exports, "updateBoxDelta", ()=>updateBoxDelta);
+var _popmotion = require("popmotion");
+var clampProgress = function(v) {
+    return (0, _popmotion.clamp)(0, 1, v);
+};
+/**
+ * Returns true if the provided value is within maxDistance of the provided target
+ */ function isNear(value, target, maxDistance) {
+    if (target === void 0) target = 0;
+    if (maxDistance === void 0) maxDistance = 0.01;
+    return (0, _popmotion.distance)(value, target) < maxDistance;
+}
+function calcLength(axis) {
+    return axis.max - axis.min;
+}
+/**
+ * Calculate a transform origin relative to the source axis, between 0-1, that results
+ * in an asthetically pleasing scale/transform needed to project from source to target.
+ */ function calcOrigin(source, target) {
+    var origin = 0.5;
+    var sourceLength = calcLength(source);
+    var targetLength = calcLength(target);
+    if (targetLength > sourceLength) origin = (0, _popmotion.progress)(target.min, target.max - sourceLength, source.min);
+    else if (sourceLength > targetLength) origin = (0, _popmotion.progress)(source.min, source.max - targetLength, target.min);
+    return clampProgress(origin);
+}
+/**
+ * Update the AxisDelta with a transform that projects source into target.
+ *
+ * The transform `origin` is optional. If not provided, it'll be automatically
+ * calculated based on the relative positions of the two bounding boxes.
+ */ function updateAxisDelta(delta, source, target, origin) {
+    if (origin === void 0) origin = 0.5;
+    delta.origin = origin;
+    delta.originPoint = (0, _popmotion.mix)(source.min, source.max, delta.origin);
+    delta.scale = calcLength(target) / calcLength(source);
+    if (isNear(delta.scale, 1, 0.0001)) delta.scale = 1;
+    delta.translate = (0, _popmotion.mix)(target.min, target.max, delta.origin) - delta.originPoint;
+    if (isNear(delta.translate)) delta.translate = 0;
+}
+/**
+ * Update the BoxDelta with a transform that projects the source into the target.
+ *
+ * The transform `origin` is optional. If not provided, it'll be automatically
+ * calculated based on the relative positions of the two bounding boxes.
+ */ function updateBoxDelta(delta, source, target, origin) {
+    updateAxisDelta(delta.x, source.x, target.x, defaultOrigin(origin.originX));
+    updateAxisDelta(delta.y, source.y, target.y, defaultOrigin(origin.originY));
+}
+/**
+ * Currently this only accepts numerical origins, measured as 0-1, but could
+ * accept pixel values by comparing to the target axis.
+ */ function defaultOrigin(origin) {
+    return typeof origin === "number" ? origin : 0.5;
+}
+function calcRelativeAxis(target, relative, parent) {
+    target.min = parent.min + relative.min;
+    target.max = target.min + calcLength(relative);
+}
+function calcRelativeBox(projection, parentProjection) {
+    calcRelativeAxis(projection.target.x, projection.relativeTarget.x, parentProjection.target.x);
+    calcRelativeAxis(projection.target.y, projection.relativeTarget.y, parentProjection.target.y);
+}
+
+},{"popmotion":"hu70l","@parcel/transformer-js/src/esmodule-helpers.js":"5oERU"}],"i6B7W":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "collectProjectingAncestors", ()=>collectProjectingAncestors);
+parcelHelpers.export(exports, "collectProjectingChildren", ()=>collectProjectingChildren);
+parcelHelpers.export(exports, "snapshotViewportBox", ()=>snapshotViewportBox);
+parcelHelpers.export(exports, "updateLayoutMeasurement", ()=>updateLayoutMeasurement);
+var _framesync = require("framesync");
+var _framesyncDefault = parcelHelpers.interopDefault(_framesync);
+var _indexJs = require("../../../utils/geometry/index.js");
+var _compareByDepthJs = require("../../utils/compare-by-depth.js");
+function isProjecting(visualElement) {
+    var isEnabled = visualElement.projection.isEnabled;
+    return isEnabled || visualElement.shouldResetTransform();
+}
+function collectProjectingAncestors(visualElement, ancestors) {
+    if (ancestors === void 0) ancestors = [];
+    var parent = visualElement.parent;
+    if (parent) collectProjectingAncestors(parent, ancestors);
+    if (isProjecting(visualElement)) ancestors.push(visualElement);
+    return ancestors;
+}
+function collectProjectingChildren(visualElement) {
+    var children = [];
+    var addChild = function(child) {
+        if (isProjecting(child)) children.push(child);
+        child.children.forEach(addChild);
+    };
+    visualElement.children.forEach(addChild);
+    return children.sort((0, _compareByDepthJs.compareByDepth));
+}
+/**
+ * Update the layoutState by measuring the DOM layout. This
+ * should be called after resetting any layout-affecting transforms.
+ */ function updateLayoutMeasurement(visualElement) {
+    if (visualElement.shouldResetTransform()) return;
+    var layoutState = visualElement.getLayoutState();
+    visualElement.notifyBeforeLayoutMeasure(layoutState.layout);
+    layoutState.isHydrated = true;
+    layoutState.layout = visualElement.measureViewportBox();
+    layoutState.layoutCorrected = (0, _indexJs.copyAxisBox)(layoutState.layout);
+    visualElement.notifyLayoutMeasure(layoutState.layout, visualElement.prevViewportBox || layoutState.layout);
+    (0, _framesyncDefault.default).update(function() {
+        return visualElement.rebaseProjectionTarget();
+    });
+}
+/**
+ * Record the viewport box as it was before an expected mutation/re-render
+ */ function snapshotViewportBox(visualElement) {
+    if (visualElement.shouldResetTransform()) return;
+    visualElement.prevViewportBox = visualElement.measureViewportBox(false);
+    /**
+     * Update targetBox to match the prevViewportBox. This is just to ensure
+     * that targetBox is affected by scroll in the same way as the measured box
+     */ visualElement.rebaseProjectionTarget(false, visualElement.prevViewportBox);
+}
+
+},{"framesync":"geFpv","../../../utils/geometry/index.js":"cOvBE","../../utils/compare-by-depth.js":"6Na1y","@parcel/transformer-js/src/esmodule-helpers.js":"5oERU"}],"6Na1y":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "compareByDepth", ()=>compareByDepth);
+var compareByDepth = function(a, b) {
+    return a.depth - b.depth;
+};
+
+},{"@parcel/transformer-js/src/esmodule-helpers.js":"5oERU"}],"b61cs":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "convertToRelativeProjection", ()=>convertToRelativeProjection);
+var _utilsJs = require("../../../motion/features/layout/utils.js");
+var _eachAxisJs = require("../../../utils/each-axis.js");
+var _deltaApplyJs = require("../../../utils/geometry/delta-apply.js");
+/**
+ * Returns a boolean stating whether or not we converted the projection
+ * to relative projection.
+ */ function convertToRelativeProjection(visualElement, isLayoutDrag) {
+    if (isLayoutDrag === void 0) isLayoutDrag = true;
+    var projectionParent = visualElement.getProjectionParent();
+    if (!projectionParent) return false;
+    var offset;
+    if (isLayoutDrag) {
+        offset = (0, _utilsJs.calcRelativeOffset)(projectionParent.projection.target, visualElement.projection.target);
+        (0, _deltaApplyJs.removeBoxTransforms)(offset, projectionParent.getLatestValues());
+    } else offset = (0, _utilsJs.calcRelativeOffset)(projectionParent.getLayoutState().layout, visualElement.getLayoutState().layout);
+    (0, _eachAxisJs.eachAxis)(function(axis) {
+        return visualElement.setProjectionTargetAxis(axis, offset[axis].min, offset[axis].max, true);
+    });
+    return true;
+}
+
+},{"../../../motion/features/layout/utils.js":"91rnc","../../../utils/each-axis.js":"49wtY","../../../utils/geometry/delta-apply.js":"ais1d","@parcel/transformer-js/src/esmodule-helpers.js":"5oERU"}],"91rnc":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "calcRelativeOffset", ()=>calcRelativeOffset);
+parcelHelpers.export(exports, "calcRelativeOffsetAxis", ()=>calcRelativeOffsetAxis);
+parcelHelpers.export(exports, "checkIfParentHasChanged", ()=>checkIfParentHasChanged);
+parcelHelpers.export(exports, "tweenAxis", ()=>tweenAxis);
+var _popmotion = require("popmotion");
+function tweenAxis(target, prev, next, p) {
+    target.min = (0, _popmotion.mix)(prev.min, next.min, p);
+    target.max = (0, _popmotion.mix)(prev.max, next.max, p);
+}
+function calcRelativeOffsetAxis(parent, child) {
+    return {
+        min: child.min - parent.min,
+        max: child.max - parent.min
+    };
+}
+function calcRelativeOffset(parent, child) {
+    return {
+        x: calcRelativeOffsetAxis(parent.x, child.x),
+        y: calcRelativeOffsetAxis(parent.y, child.y)
+    };
+}
+function checkIfParentHasChanged(prev, next) {
+    var prevId = prev.getLayoutId();
+    var nextId = next.getLayoutId();
+    return prevId !== nextId || nextId === undefined && prev !== next;
+}
+
+},{"popmotion":"hu70l","@parcel/transformer-js/src/esmodule-helpers.js":"5oERU"}],"ais1d":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "applyAxisDelta", ()=>applyAxisDelta);
+parcelHelpers.export(exports, "applyAxisTransforms", ()=>applyAxisTransforms);
+parcelHelpers.export(exports, "applyBoxDelta", ()=>applyBoxDelta);
+parcelHelpers.export(exports, "applyBoxTransforms", ()=>applyBoxTransforms);
+parcelHelpers.export(exports, "applyPointDelta", ()=>applyPointDelta);
+parcelHelpers.export(exports, "applyTreeDeltas", ()=>applyTreeDeltas);
+parcelHelpers.export(exports, "removeAxisDelta", ()=>removeAxisDelta);
+parcelHelpers.export(exports, "removeAxisTransforms", ()=>removeAxisTransforms);
+parcelHelpers.export(exports, "removeBoxTransforms", ()=>removeBoxTransforms);
+parcelHelpers.export(exports, "removePointDelta", ()=>removePointDelta);
+parcelHelpers.export(exports, "resetAxis", ()=>resetAxis);
+parcelHelpers.export(exports, "resetBox", ()=>resetBox);
+parcelHelpers.export(exports, "scalePoint", ()=>scalePoint);
+var _tslib = require("tslib");
+var _popmotion = require("popmotion");
+var _isDraggableJs = require("../../render/utils/is-draggable.js");
+/**
+ * Reset an axis to the provided origin box.
+ *
+ * This is a mutative operation.
+ */ function resetAxis(axis, originAxis) {
+    axis.min = originAxis.min;
+    axis.max = originAxis.max;
+}
+/**
+ * Reset a box to the provided origin box.
+ *
+ * This is a mutative operation.
+ */ function resetBox(box, originBox) {
+    resetAxis(box.x, originBox.x);
+    resetAxis(box.y, originBox.y);
+}
+/**
+ * Scales a point based on a factor and an originPoint
+ */ function scalePoint(point, scale, originPoint) {
+    var distanceFromOrigin = point - originPoint;
+    var scaled = scale * distanceFromOrigin;
+    return originPoint + scaled;
+}
+/**
+ * Applies a translate/scale delta to a point
+ */ function applyPointDelta(point, translate, scale, originPoint, boxScale) {
+    if (boxScale !== undefined) point = scalePoint(point, boxScale, originPoint);
+    return scalePoint(point, scale, originPoint) + translate;
+}
+/**
+ * Applies a translate/scale delta to an axis
+ */ function applyAxisDelta(axis, translate, scale, originPoint, boxScale) {
+    if (translate === void 0) translate = 0;
+    if (scale === void 0) scale = 1;
+    axis.min = applyPointDelta(axis.min, translate, scale, originPoint, boxScale);
+    axis.max = applyPointDelta(axis.max, translate, scale, originPoint, boxScale);
+}
+/**
+ * Applies a translate/scale delta to a box
+ */ function applyBoxDelta(box, _a) {
+    var x = _a.x, y = _a.y;
+    applyAxisDelta(box.x, x.translate, x.scale, x.originPoint);
+    applyAxisDelta(box.y, y.translate, y.scale, y.originPoint);
+}
+/**
+ * Apply a transform to an axis from the latest resolved motion values.
+ * This function basically acts as a bridge between a flat motion value map
+ * and applyAxisDelta
+ */ function applyAxisTransforms(final, axis, transforms, _a) {
+    var _b = (0, _tslib.__read)(_a, 3), key = _b[0], scaleKey = _b[1], originKey = _b[2];
+    // Copy the current axis to the final axis before mutation
+    final.min = axis.min;
+    final.max = axis.max;
+    var axisOrigin = transforms[originKey] !== undefined ? transforms[originKey] : 0.5;
+    var originPoint = (0, _popmotion.mix)(axis.min, axis.max, axisOrigin);
+    // Apply the axis delta to the final axis
+    applyAxisDelta(final, transforms[key], transforms[scaleKey], originPoint, transforms.scale);
+}
+/**
+ * The names of the motion values we want to apply as translation, scale and origin.
+ */ var xKeys = [
+    "x",
+    "scaleX",
+    "originX"
+];
+var yKeys = [
+    "y",
+    "scaleY",
+    "originY"
+];
+/**
+ * Apply a transform to a box from the latest resolved motion values.
+ */ function applyBoxTransforms(finalBox, box, transforms) {
+    applyAxisTransforms(finalBox.x, box.x, transforms, xKeys);
+    applyAxisTransforms(finalBox.y, box.y, transforms, yKeys);
+}
+/**
+ * Remove a delta from a point. This is essentially the steps of applyPointDelta in reverse
+ */ function removePointDelta(point, translate, scale, originPoint, boxScale) {
+    point -= translate;
+    point = scalePoint(point, 1 / scale, originPoint);
+    if (boxScale !== undefined) point = scalePoint(point, 1 / boxScale, originPoint);
+    return point;
+}
+/**
+ * Remove a delta from an axis. This is essentially the steps of applyAxisDelta in reverse
+ */ function removeAxisDelta(axis, translate, scale, origin, boxScale) {
+    if (translate === void 0) translate = 0;
+    if (scale === void 0) scale = 1;
+    if (origin === void 0) origin = 0.5;
+    var originPoint = (0, _popmotion.mix)(axis.min, axis.max, origin) - translate;
+    axis.min = removePointDelta(axis.min, translate, scale, originPoint, boxScale);
+    axis.max = removePointDelta(axis.max, translate, scale, originPoint, boxScale);
+}
+/**
+ * Remove a transforms from an axis. This is essentially the steps of applyAxisTransforms in reverse
+ * and acts as a bridge between motion values and removeAxisDelta
+ */ function removeAxisTransforms(axis, transforms, _a) {
+    var _b = (0, _tslib.__read)(_a, 3), key = _b[0], scaleKey = _b[1], originKey = _b[2];
+    removeAxisDelta(axis, transforms[key], transforms[scaleKey], transforms[originKey], transforms.scale);
+}
+/**
+ * Remove a transforms from an box. This is essentially the steps of applyAxisBox in reverse
+ * and acts as a bridge between motion values and removeAxisDelta
+ */ function removeBoxTransforms(box, transforms) {
+    removeAxisTransforms(box.x, transforms, xKeys);
+    removeAxisTransforms(box.y, transforms, yKeys);
+}
+/**
+ * Apply a tree of deltas to a box. We do this to calculate the effect of all the transforms
+ * in a tree upon our box before then calculating how to project it into our desired viewport-relative box
+ *
+ * This is the final nested loop within updateLayoutDelta for future refactoring
+ */ function applyTreeDeltas(box, treeScale, treePath) {
+    var treeLength = treePath.length;
+    if (!treeLength) return;
+    // Reset the treeScale
+    treeScale.x = treeScale.y = 1;
+    var node;
+    var delta;
+    for(var i = 0; i < treeLength; i++){
+        node = treePath[i];
+        delta = node.getLayoutState().delta;
+        // Incoporate each ancestor's scale into a culmulative treeScale for this component
+        treeScale.x *= delta.x.scale;
+        treeScale.y *= delta.y.scale;
+        // Apply each ancestor's calculated delta into this component's recorded layout box
+        applyBoxDelta(box, delta);
+        // If this is a draggable ancestor, also incorporate the node's transform to the layout box
+        if ((0, _isDraggableJs.isDraggable)(node)) applyBoxTransforms(box, box, node.getLatestValues());
+    }
+}
+
+},{"tslib":"edJ4f","popmotion":"hu70l","../../render/utils/is-draggable.js":"dLK6W","@parcel/transformer-js/src/esmodule-helpers.js":"5oERU"}],"dLK6W":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "isDraggable", ()=>isDraggable);
+function isDraggable(visualElement) {
+    var _a = visualElement.getProps(), drag = _a.drag, _dragX = _a._dragX;
+    return drag && !_dragX;
+}
+
+},{"@parcel/transformer-js/src/esmodule-helpers.js":"5oERU"}],"6IwMV":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "batchLayout", ()=>batchLayout);
+parcelHelpers.export(exports, "flushLayout", ()=>flushLayout);
+var unresolvedJobs = new Set();
+function pushJob(stack, job, pointer) {
+    if (!stack[pointer]) stack[pointer] = [];
+    stack[pointer].push(job);
+}
+function batchLayout(callback) {
+    unresolvedJobs.add(callback);
+    return function() {
+        return unresolvedJobs.delete(callback);
+    };
+}
+function flushLayout() {
+    if (!unresolvedJobs.size) return;
+    var pointer = 0;
+    var reads = [
+        []
+    ];
+    var writes = [];
+    var setRead = function(job) {
+        return pushJob(reads, job, pointer);
+    };
+    var setWrite = function(job) {
+        pushJob(writes, job, pointer);
+        pointer++;
+    };
+    /**
+     * Resolve jobs into their array stacks
+     */ unresolvedJobs.forEach(function(callback) {
+        callback(setRead, setWrite);
+        pointer = 0;
+    });
+    unresolvedJobs.clear();
+    /**
+     * Execute jobs
+     */ var numStacks = writes.length;
+    for(var i = 0; i <= numStacks; i++){
+        reads[i] && reads[i].forEach(executeJob);
+        writes[i] && writes[i].forEach(executeJob);
+    }
+}
+var executeJob = function(job) {
+    return job();
+};
+
+},{"@parcel/transformer-js/src/esmodule-helpers.js":"5oERU"}],"a9NEf":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "usePanGesture", ()=>usePanGesture);
+var _react = require("react");
+var _motionConfigContextJs = require("../context/MotionConfigContext.js");
+var _useUnmountEffectJs = require("../utils/use-unmount-effect.js");
+var _usePointerEventJs = require("../events/use-pointer-event.js");
+var _panSessionJs = require("./PanSession.js");
+/**
+ *
+ * @param handlers -
+ * @param ref -
+ *
+ * @internalremarks
+ * Currently this sets new pan gesture functions every render. The memo route has been explored
+ * in the past but ultimately we're still creating new functions every render. An optimisation
+ * to explore is creating the pan gestures and loading them into a `ref`.
+ *
+ * @internal
+ */ function usePanGesture(_a) {
+    var onPan = _a.onPan, onPanStart = _a.onPanStart, onPanEnd = _a.onPanEnd, onPanSessionStart = _a.onPanSessionStart, visualElement = _a.visualElement;
+    var hasPanEvents = onPan || onPanStart || onPanEnd || onPanSessionStart;
+    var panSession = (0, _react.useRef)(null);
+    var transformPagePoint = (0, _react.useContext)((0, _motionConfigContextJs.MotionConfigContext)).transformPagePoint;
+    var handlers = {
+        onSessionStart: onPanSessionStart,
+        onStart: onPanStart,
+        onMove: onPan,
+        onEnd: function(event, info) {
+            panSession.current = null;
+            onPanEnd && onPanEnd(event, info);
+        }
+    };
+    (0, _react.useEffect)(function() {
+        if (panSession.current !== null) panSession.current.updateHandlers(handlers);
+    });
+    function onPointerDown(event) {
+        panSession.current = new (0, _panSessionJs.PanSession)(event, handlers, {
+            transformPagePoint: transformPagePoint
+        });
+    }
+    (0, _usePointerEventJs.usePointerEvent)(visualElement, "pointerdown", hasPanEvents && onPointerDown);
+    (0, _useUnmountEffectJs.useUnmountEffect)(function() {
+        return panSession.current && panSession.current.end();
+    });
+}
+
+},{"react":"9sfFD","../context/MotionConfigContext.js":"dwzzE","../utils/use-unmount-effect.js":"1ewES","../events/use-pointer-event.js":"9ltEK","./PanSession.js":"hqxGK","@parcel/transformer-js/src/esmodule-helpers.js":"5oERU"}],"iRZ09":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "layoutAnimations", ()=>layoutAnimations);
+var _animateJs = require("./Animate.js");
+var _measureJs = require("./Measure.js");
+var layoutAnimations = {
+    measureLayout: (0, _measureJs.MeasureContextProvider),
+    layoutAnimation: (0, _animateJs.AnimateLayoutContextProvider)
+};
+
+},{"./Animate.js":"1Yq4b","./Measure.js":"btaMM","@parcel/transformer-js/src/esmodule-helpers.js":"5oERU"}],"1Yq4b":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "AnimateLayoutContextProvider", ()=>AnimateLayoutContextProvider);
+var _tslib = require("tslib");
+var _react = require("react");
+var _eachAxisJs = require("../../../utils/each-axis.js");
+var _transitionsJs = require("../../../animation/utils/transitions.js");
+var _utilsJs = require("./utils.js");
+var _typesJs = require("../../../components/AnimateSharedLayout/types.js");
+var _usePresenceJs = require("../../../components/AnimatePresence/use-presence.js");
+var _indexJs = require("../../../utils/geometry/index.js");
+var _scaleCorrectionJs = require("../../../render/dom/projection/scale-correction.js");
+var _defaultScaleCorrectorsJs = require("../../../render/dom/projection/default-scale-correctors.js");
+var progressTarget = 1000;
+var Animate = /** @class */ function(_super) {
+    (0, _tslib.__extends)(Animate, _super);
+    function Animate() {
+        var _this = _super !== null && _super.apply(this, arguments) || this;
+        /**
+         * A mutable object that tracks the target viewport box
+         * for the current animation frame.
+         */ _this.frameTarget = (0, _indexJs.axisBox)();
+        /**
+         * The current animation target, we use this to check whether to start
+         * a new animation or continue the existing one.
+         */ _this.currentAnimationTarget = (0, _indexJs.axisBox)();
+        /**
+         * Track whether we're animating this axis.
+         */ _this.isAnimating = {
+            x: false,
+            y: false
+        };
+        _this.stopAxisAnimation = {
+            x: undefined,
+            y: undefined
+        };
+        _this.isAnimatingTree = false;
+        _this.animate = function(target, origin, _a) {
+            if (_a === void 0) _a = {};
+            var originBox = _a.originBox, targetBox = _a.targetBox, visibilityAction = _a.visibilityAction, shouldStackAnimate = _a.shouldStackAnimate, onComplete = _a.onComplete, prevParent = _a.prevParent, config = (0, _tslib.__rest)(_a, [
+                "originBox",
+                "targetBox",
+                "visibilityAction",
+                "shouldStackAnimate",
+                "onComplete",
+                "prevParent"
+            ]);
+            var _b = _this.props, visualElement = _b.visualElement, layout = _b.layout;
+            /**
+             * Early return if we've been instructed not to animate this render.
+             */ if (shouldStackAnimate === false) {
+                _this.isAnimatingTree = false;
+                return _this.safeToRemove();
+            }
+            /**
+             * Prioritise tree animations
+             */ if (_this.isAnimatingTree && shouldStackAnimate !== true) return;
+            else if (shouldStackAnimate) _this.isAnimatingTree = true;
+            /**
+             * Allow the measured origin (prev bounding box) and target (actual layout) to be
+             * overridden by the provided config.
+             */ origin = originBox || origin;
+            target = targetBox || target;
+            /**
+             * If this element has a projecting parent, there's an opportunity to animate
+             * it relatively to that parent rather than relatively to the viewport. This
+             * allows us to add orchestrated animations.
+             */ var isRelative = false;
+            var projectionParent = visualElement.getProjectionParent();
+            if (projectionParent) {
+                var prevParentViewportBox = projectionParent.prevViewportBox;
+                var parentLayout = projectionParent.getLayoutState().layout;
+                /**
+                 * If we're being provided a previous parent VisualElement by AnimateSharedLayout
+                 */ if (prevParent) {
+                    /**
+                     * If we've been provided an explicit target box it means we're animating back
+                     * to this previous parent. So we can make a relative box by comparing to the previous
+                     * parent's layout
+                     */ if (targetBox) parentLayout = prevParent.getLayoutState().layout;
+                    /**
+                     * Likewise if we've been provided an explicit origin box it means we're
+                     * animating out from a different element. So we should figure out where that was
+                     * on screen relative to the new parent element.
+                     */ if (originBox && !(0, _utilsJs.checkIfParentHasChanged)(prevParent, projectionParent) && prevParent.prevViewportBox) prevParentViewportBox = prevParent.prevViewportBox;
+                }
+                if (prevParentViewportBox && isProvidedCorrectDataForRelativeSharedLayout(prevParent, originBox, targetBox)) {
+                    isRelative = true;
+                    origin = (0, _utilsJs.calcRelativeOffset)(prevParentViewportBox, origin);
+                    target = (0, _utilsJs.calcRelativeOffset)(parentLayout, target);
+                }
+            }
+            var boxHasMoved = hasMoved(origin, target);
+            var animations = (0, _eachAxisJs.eachAxis)(function(axis) {
+                var _a, _b;
+                /**
+                 * If layout is set to "position", we can resize the origin box based on the target
+                 * box and only animate its position.
+                 */ if (layout === "position") {
+                    var targetLength = target[axis].max - target[axis].min;
+                    origin[axis].max = origin[axis].min + targetLength;
+                }
+                if (visualElement.projection.isTargetLocked) return;
+                else if (visibilityAction !== undefined) visualElement.setVisibility(visibilityAction === (0, _typesJs.VisibilityAction).Show);
+                else if (boxHasMoved) // If the box has moved, animate between it's current visual state and its
+                // final state
+                return _this.animateAxis(axis, target[axis], origin[axis], (0, _tslib.__assign)((0, _tslib.__assign)({}, config), {
+                    isRelative: isRelative
+                }));
+                else {
+                    (_b = (_a = _this.stopAxisAnimation)[axis]) === null || _b === void 0 || _b.call(_a);
+                    // If the box has remained in the same place, immediately set the axis target
+                    // to the final desired state
+                    return visualElement.setProjectionTargetAxis(axis, target[axis].min, target[axis].max, isRelative);
+                }
+            });
+            // Force a render to ensure there's no flash of uncorrected bounding box.
+            visualElement.syncRender();
+            /**
+             * If this visualElement isn't present (ie it's been removed from the tree by the user but
+             * kept in by the tree by AnimatePresence) then call safeToRemove when all axis animations
+             * have successfully finished.
+             */ return Promise.all(animations).then(function() {
+                _this.isAnimatingTree = false;
+                onComplete && onComplete();
+                visualElement.notifyLayoutAnimationComplete();
+            });
+        };
+        return _this;
+    }
+    Animate.prototype.componentDidMount = function() {
+        var _this = this;
+        var visualElement = this.props.visualElement;
+        visualElement.animateMotionValue = (0, _transitionsJs.startAnimation);
+        visualElement.enableLayoutProjection();
+        this.unsubLayoutReady = visualElement.onLayoutUpdate(this.animate);
+        visualElement.layoutSafeToRemove = function() {
+            return _this.safeToRemove();
+        };
+        (0, _scaleCorrectionJs.addScaleCorrection)((0, _defaultScaleCorrectorsJs.defaultScaleCorrectors));
+    };
+    Animate.prototype.componentWillUnmount = function() {
+        var _this = this;
+        this.unsubLayoutReady();
+        (0, _eachAxisJs.eachAxis)(function(axis) {
+            var _a, _b;
+            return (_b = (_a = _this.stopAxisAnimation)[axis]) === null || _b === void 0 ? void 0 : _b.call(_a);
+        });
+    };
+    /**
+     * TODO: This manually performs animations on the visualElement's layout progress
+     * values. It'd be preferable to amend the startLayoutAxisAnimation
+     * API to accept more custom animations like this.
+     */ Animate.prototype.animateAxis = function(axis, target, origin, _a) {
+        var _this = this;
+        var _b, _c;
+        var _d = _a === void 0 ? {} : _a, transition = _d.transition, isRelative = _d.isRelative;
+        /**
+         * If we're not animating to a new target, don't run this animation
+         */ if (this.isAnimating[axis] && axisIsEqual(target, this.currentAnimationTarget[axis])) return;
+        (_c = (_b = this.stopAxisAnimation)[axis]) === null || _c === void 0 || _c.call(_b);
+        this.isAnimating[axis] = true;
+        var visualElement = this.props.visualElement;
+        var frameTarget = this.frameTarget[axis];
+        var layoutProgress = visualElement.getProjectionAnimationProgress()[axis];
+        /**
+         * Set layout progress back to 0. We set it twice to hard-reset any velocity that might
+         * be re-incoporated into a subsequent spring animation.
+         */ layoutProgress.clearListeners();
+        layoutProgress.set(0);
+        layoutProgress.set(0);
+        /**
+         * Create an animation function to run once per frame. This will tween the visual bounding box from
+         * origin to target using the latest progress value.
+         */ var frame = function() {
+            // Convert the latest layoutProgress, which is a value from 0-1000, into a 0-1 progress
+            var p = layoutProgress.get() / progressTarget;
+            // Tween the axis and update the visualElement with the latest values
+            (0, _utilsJs.tweenAxis)(frameTarget, origin, target, p);
+            visualElement.setProjectionTargetAxis(axis, frameTarget.min, frameTarget.max, isRelative);
+        };
+        // Synchronously run a frame to ensure there's no flash of the uncorrected bounding box.
+        frame();
+        // Create a function to stop animation on this specific axis
+        var unsubscribeProgress = layoutProgress.onChange(frame);
+        this.stopAxisAnimation[axis] = function() {
+            _this.isAnimating[axis] = false;
+            layoutProgress.stop();
+            unsubscribeProgress();
+        };
+        this.currentAnimationTarget[axis] = target;
+        var layoutTransition = transition || visualElement.getDefaultTransition() || defaultLayoutTransition;
+        // Start the animation on this axis
+        var animation = (0, _transitionsJs.startAnimation)(axis === "x" ? "layoutX" : "layoutY", layoutProgress, progressTarget, layoutTransition && (0, _transitionsJs.getValueTransition)(layoutTransition, "layout")).then(this.stopAxisAnimation[axis]);
+        return animation;
+    };
+    Animate.prototype.safeToRemove = function() {
+        var _a, _b;
+        (_b = (_a = this.props).safeToRemove) === null || _b === void 0 || _b.call(_a);
+    };
+    Animate.prototype.render = function() {
+        return null;
+    };
+    return Animate;
+}(_react.Component);
+function AnimateLayoutContextProvider(props) {
+    var _a = (0, _tslib.__read)((0, _usePresenceJs.usePresence)(), 2), safeToRemove = _a[1];
+    return _react.createElement(Animate, (0, _tslib.__assign)({}, props, {
+        safeToRemove: safeToRemove
+    }));
+}
+function hasMoved(a, b) {
+    return !isZeroBox(a) && !isZeroBox(b) && (!axisIsEqual(a.x, b.x) || !axisIsEqual(a.y, b.y));
+}
+var zeroAxis = {
+    min: 0,
+    max: 0
+};
+function isZeroBox(a) {
+    return axisIsEqual(a.x, zeroAxis) && axisIsEqual(a.y, zeroAxis);
+}
+function axisIsEqual(a, b) {
+    return a.min === b.min && a.max === b.max;
+}
+var defaultLayoutTransition = {
+    duration: 0.45,
+    ease: [
+        0.4,
+        0,
+        0.1,
+        1
+    ]
+};
+function isProvidedCorrectDataForRelativeSharedLayout(prevParent, originBox, targetBox) {
+    return prevParent || !prevParent && !(originBox || targetBox);
+}
+
+},{"tslib":"edJ4f","react":"9sfFD","../../../utils/each-axis.js":"49wtY","../../../animation/utils/transitions.js":"6JS8P","./utils.js":"91rnc","../../../components/AnimateSharedLayout/types.js":"4tfpW","../../../components/AnimatePresence/use-presence.js":"cZuzC","../../../utils/geometry/index.js":"cOvBE","../../../render/dom/projection/scale-correction.js":"ddOEd","../../../render/dom/projection/default-scale-correctors.js":"3XfxO","@parcel/transformer-js/src/esmodule-helpers.js":"5oERU"}],"4tfpW":[function(require,module,exports) {
+/**
+ * @public
+ */ var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "Presence", ()=>Presence);
+parcelHelpers.export(exports, "VisibilityAction", ()=>VisibilityAction);
+var Presence;
+(function(Presence) {
+    Presence[Presence["Entering"] = 0] = "Entering";
+    Presence[Presence["Present"] = 1] = "Present";
+    Presence[Presence["Exiting"] = 2] = "Exiting";
+})(Presence || (Presence = {}));
+/**
+ * @public
+ */ var VisibilityAction;
+(function(VisibilityAction) {
+    VisibilityAction[VisibilityAction["Hide"] = 0] = "Hide";
+    VisibilityAction[VisibilityAction["Show"] = 1] = "Show";
+})(VisibilityAction || (VisibilityAction = {}));
+
+},{"@parcel/transformer-js/src/esmodule-helpers.js":"5oERU"}],"3XfxO":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "correctBorderRadius", ()=>correctBorderRadius);
+parcelHelpers.export(exports, "correctBoxShadow", ()=>correctBoxShadow);
+parcelHelpers.export(exports, "defaultScaleCorrectors", ()=>defaultScaleCorrectors);
+parcelHelpers.export(exports, "pixelsToPercent", ()=>pixelsToPercent);
+var _tslib = require("tslib");
+var _styleValueTypes = require("style-value-types");
+var _popmotion = require("popmotion");
+var _cssVariablesConversionJs = require("../utils/css-variables-conversion.js");
+function pixelsToPercent(pixels, axis) {
+    return pixels / (axis.max - axis.min) * 100;
+}
+/**
+ * We always correct borderRadius as a percentage rather than pixels to reduce paints.
+ * For example, if you are projecting a box that is 100px wide with a 10px borderRadius
+ * into a box that is 200px wide with a 20px borderRadius, that is actually a 10%
+ * borderRadius in both states. If we animate between the two in pixels that will trigger
+ * a paint each time. If we animate between the two in percentage we'll avoid a paint.
+ */ function correctBorderRadius(latest, _layoutState, _a) {
+    var target = _a.target;
+    /**
+     * If latest is a string, if it's a percentage we can return immediately as it's
+     * going to be stretched appropriately. Otherwise, if it's a pixel, convert it to a number.
+     */ if (typeof latest === "string") {
+        if ((0, _styleValueTypes.px).test(latest)) latest = parseFloat(latest);
+        else return latest;
+    }
+    /**
+     * If latest is a number, it's a pixel value. We use the current viewportBox to calculate that
+     * pixel value as a percentage of each axis
+     */ var x = pixelsToPercent(latest, target.x);
+    var y = pixelsToPercent(latest, target.y);
+    return x + "% " + y + "%";
+}
+var varToken = "_$css";
+function correctBoxShadow(latest, _a) {
+    var delta = _a.delta, treeScale = _a.treeScale;
+    var original = latest;
+    /**
+     * We need to first strip and store CSS variables from the string.
+     */ var containsCSSVariables = latest.includes("var(");
+    var cssVariables = [];
+    if (containsCSSVariables) latest = latest.replace((0, _cssVariablesConversionJs.cssVariableRegex), function(match) {
+        cssVariables.push(match);
+        return varToken;
+    });
+    var shadow = (0, _styleValueTypes.complex).parse(latest);
+    // TODO: Doesn't support multiple shadows
+    if (shadow.length > 5) return original;
+    var template = (0, _styleValueTypes.complex).createTransformer(latest);
+    var offset = typeof shadow[0] !== "number" ? 1 : 0;
+    // Calculate the overall context scale
+    var xScale = delta.x.scale * treeScale.x;
+    var yScale = delta.y.scale * treeScale.y;
+    shadow[0 + offset] /= xScale;
+    shadow[1 + offset] /= yScale;
+    /**
+     * Ideally we'd correct x and y scales individually, but because blur and
+     * spread apply to both we have to take a scale average and apply that instead.
+     * We could potentially improve the outcome of this by incorporating the ratio between
+     * the two scales.
+     */ var averageScale = (0, _popmotion.mix)(xScale, yScale, 0.5);
+    // Blur
+    if (typeof shadow[2 + offset] === "number") shadow[2 + offset] /= averageScale;
+    // Spread
+    if (typeof shadow[3 + offset] === "number") shadow[3 + offset] /= averageScale;
+    var output = template(shadow);
+    if (containsCSSVariables) {
+        var i_1 = 0;
+        output = output.replace(varToken, function() {
+            var cssVariable = cssVariables[i_1];
+            i_1++;
+            return cssVariable;
+        });
+    }
+    return output;
+}
+var borderCorrectionDefinition = {
+    process: correctBorderRadius
+};
+var defaultScaleCorrectors = {
+    borderRadius: (0, _tslib.__assign)((0, _tslib.__assign)({}, borderCorrectionDefinition), {
+        applyTo: [
+            "borderTopLeftRadius",
+            "borderTopRightRadius",
+            "borderBottomLeftRadius",
+            "borderBottomRightRadius"
+        ]
+    }),
+    borderTopLeftRadius: borderCorrectionDefinition,
+    borderTopRightRadius: borderCorrectionDefinition,
+    borderBottomLeftRadius: borderCorrectionDefinition,
+    borderBottomRightRadius: borderCorrectionDefinition,
+    boxShadow: {
+        process: correctBoxShadow
+    }
+};
+
+},{"tslib":"edJ4f","style-value-types":"dhngi","popmotion":"hu70l","../utils/css-variables-conversion.js":"8q6vE","@parcel/transformer-js/src/esmodule-helpers.js":"5oERU"}],"8q6vE":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "cssVariableRegex", ()=>cssVariableRegex);
+parcelHelpers.export(exports, "parseCSSVariable", ()=>parseCSSVariable);
+parcelHelpers.export(exports, "resolveCSSVariables", ()=>resolveCSSVariables);
+var _tslib = require("tslib");
+var _heyListen = require("hey-listen");
+function isCSSVariable(value) {
+    return typeof value === "string" && value.startsWith("var(--");
+}
+/**
+ * Parse Framer's special CSS variable format into a CSS token and a fallback.
+ *
+ * ```
+ * `var(--foo, #fff)` => [`--foo`, '#fff']
+ * ```
+ *
+ * @param current
+ */ var cssVariableRegex = /var\((--[a-zA-Z0-9-_]+),? ?([a-zA-Z0-9 ()%#.,-]+)?\)/;
+function parseCSSVariable(current) {
+    var match = cssVariableRegex.exec(current);
+    if (!match) return [
+        , 
+    ];
+    var _a = (0, _tslib.__read)(match, 3), token = _a[1], fallback = _a[2];
+    return [
+        token,
+        fallback
+    ];
+}
+var maxDepth = 4;
+function getVariableValue(current, element, depth) {
+    if (depth === void 0) depth = 1;
+    (0, _heyListen.invariant)(depth <= maxDepth, 'Max CSS variable fallback depth detected in property "' + current + '". This may indicate a circular fallback dependency.');
+    var _a = (0, _tslib.__read)(parseCSSVariable(current), 2), token = _a[0], fallback = _a[1];
+    // No CSS variable detected
+    if (!token) return;
+    // Attempt to read this CSS variable off the element
+    var resolved = window.getComputedStyle(element).getPropertyValue(token);
+    if (resolved) return resolved.trim();
+    else if (isCSSVariable(fallback)) // The fallback might itself be a CSS variable, in which case we attempt to resolve it too.
+    return getVariableValue(fallback, element, depth + 1);
+    else return fallback;
+}
+/**
+ * Resolve CSS variables from
+ *
+ * @internal
+ */ function resolveCSSVariables(visualElement, _a, transitionEnd) {
+    var _b;
+    var target = (0, _tslib.__rest)(_a, []);
+    var element = visualElement.getInstance();
+    if (!(element instanceof HTMLElement)) return {
+        target: target,
+        transitionEnd: transitionEnd
+    };
+    // If `transitionEnd` isn't `undefined`, clone it. We could clone `target` and `transitionEnd`
+    // only if they change but I think this reads clearer and this isn't a performance-critical path.
+    if (transitionEnd) transitionEnd = (0, _tslib.__assign)({}, transitionEnd);
+    // Go through existing `MotionValue`s and ensure any existing CSS variables are resolved
+    visualElement.forEachValue(function(value) {
+        var current = value.get();
+        if (!isCSSVariable(current)) return;
+        var resolved = getVariableValue(current, element);
+        if (resolved) value.set(resolved);
+    });
+    // Cycle through every target property and resolve CSS variables. Currently
+    // we only read single-var properties like `var(--foo)`, not `calc(var(--foo) + 20px)`
+    for(var key in target){
+        var current = target[key];
+        if (!isCSSVariable(current)) continue;
+        var resolved = getVariableValue(current, element);
+        if (!resolved) continue;
+        // Clone target if it hasn't already been
+        target[key] = resolved;
+        // If the user hasn't already set this key on `transitionEnd`, set it to the unresolved
+        // CSS variable. This will ensure that after the animation the component will reflect
+        // changes in the value of the CSS variable.
+        if (transitionEnd) (_b = transitionEnd[key]) !== null && _b !== void 0 ? _b : transitionEnd[key] = current;
+    }
+    return {
+        target: target,
+        transitionEnd: transitionEnd
+    };
+}
+
+},{"tslib":"edJ4f","hey-listen":"fFhg6","@parcel/transformer-js/src/esmodule-helpers.js":"5oERU"}],"btaMM":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "MeasureContextProvider", ()=>MeasureContextProvider);
+var _tslib = require("tslib");
+var _react = require("react");
+var _reactDefault = parcelHelpers.interopDefault(_react);
+var _sharedLayoutContextJs = require("../../../context/SharedLayoutContext.js");
+var _utilsJs = require("../../../render/dom/projection/utils.js");
+/**
+ * This component is responsible for scheduling the measuring of the motion component
+ */ var Measure = /** @class */ function(_super) {
+    (0, _tslib.__extends)(Measure, _super);
+    function Measure() {
+        return _super !== null && _super.apply(this, arguments) || this;
+    }
+    /**
+     * If this is a child of a SyncContext, register the VisualElement with it on mount.
+     */ Measure.prototype.componentDidMount = function() {
+        var _a = this.props, syncLayout = _a.syncLayout, framerSyncLayout = _a.framerSyncLayout, visualElement = _a.visualElement;
+        (0, _sharedLayoutContextJs.isSharedLayout)(syncLayout) && syncLayout.register(visualElement);
+        (0, _sharedLayoutContextJs.isSharedLayout)(framerSyncLayout) && framerSyncLayout.register(visualElement);
+        visualElement.onUnmount(function() {
+            if ((0, _sharedLayoutContextJs.isSharedLayout)(syncLayout)) syncLayout.remove(visualElement);
+            if ((0, _sharedLayoutContextJs.isSharedLayout)(framerSyncLayout)) framerSyncLayout.remove(visualElement);
+        });
+    };
+    /**
+     * If this is a child of a SyncContext, notify it that it needs to re-render. It will then
+     * handle the snapshotting.
+     *
+     * If it is stand-alone component, add it to the batcher.
+     */ Measure.prototype.getSnapshotBeforeUpdate = function() {
+        var _a = this.props, syncLayout = _a.syncLayout, visualElement = _a.visualElement;
+        if ((0, _sharedLayoutContextJs.isSharedLayout)(syncLayout)) syncLayout.syncUpdate();
+        else {
+            (0, _utilsJs.snapshotViewportBox)(visualElement);
+            syncLayout.add(visualElement);
+        }
+        return null;
+    };
+    Measure.prototype.componentDidUpdate = function() {
+        var syncLayout = this.props.syncLayout;
+        if (!(0, _sharedLayoutContextJs.isSharedLayout)(syncLayout)) syncLayout.flush();
+    };
+    Measure.prototype.render = function() {
+        return null;
+    };
+    return Measure;
+}((0, _reactDefault.default).Component);
+function MeasureContextProvider(props) {
+    var syncLayout = (0, _react.useContext)((0, _sharedLayoutContextJs.SharedLayoutContext));
+    var framerSyncLayout = (0, _react.useContext)((0, _sharedLayoutContextJs.FramerTreeLayoutContext));
+    return (0, _reactDefault.default).createElement(Measure, (0, _tslib.__assign)({}, props, {
+        syncLayout: syncLayout,
+        framerSyncLayout: framerSyncLayout
+    }));
+}
+
+},{"tslib":"edJ4f","react":"9sfFD","../../../context/SharedLayoutContext.js":"9VpnA","../../../render/dom/projection/utils.js":"i6B7W","@parcel/transformer-js/src/esmodule-helpers.js":"5oERU"}],"9VpnA":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "FramerTreeLayoutContext", ()=>FramerTreeLayoutContext);
+parcelHelpers.export(exports, "SharedLayoutContext", ()=>SharedLayoutContext);
+parcelHelpers.export(exports, "isSharedLayout", ()=>isSharedLayout);
+var _react = require("react");
+var _batcherJs = require("../components/AnimateSharedLayout/utils/batcher.js");
+var SharedLayoutContext = (0, _react.createContext)((0, _batcherJs.createBatcher)());
+/**
+ * @internal
+ */ var FramerTreeLayoutContext = (0, _react.createContext)((0, _batcherJs.createBatcher)());
+function isSharedLayout(context) {
+    return !!context.forceUpdate;
+}
+
+},{"react":"9sfFD","../components/AnimateSharedLayout/utils/batcher.js":"bbm4G","@parcel/transformer-js/src/esmodule-helpers.js":"5oERU"}],"bbm4G":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "createBatcher", ()=>createBatcher);
+var _tslib = require("tslib");
+var _framesync = require("framesync");
+var _framesyncDefault = parcelHelpers.interopDefault(_framesync);
+var _utilsJs = require("../../../render/dom/projection/utils.js");
+var _batchLayoutJs = require("../../../render/dom/utils/batch-layout.js");
+var _compareByDepthJs = require("../../../render/utils/compare-by-depth.js");
+var _typesJs = require("../types.js");
+/**
+ * Default handlers for batching VisualElements
+ */ var defaultHandler = {
+    layoutReady: function(child) {
+        return child.notifyLayoutReady();
+    }
+};
+/**
+ * Create a batcher to process VisualElements
+ */ function createBatcher() {
+    var queue = new Set();
+    return {
+        add: function(child) {
+            return queue.add(child);
+        },
+        flush: function(_a) {
+            var _b = _a === void 0 ? defaultHandler : _a, layoutReady = _b.layoutReady, parent = _b.parent;
+            (0, _batchLayoutJs.batchLayout)(function(read, write) {
+                var order = Array.from(queue).sort((0, _compareByDepthJs.compareByDepth));
+                var ancestors = parent ? (0, _utilsJs.collectProjectingAncestors)(parent) : [];
+                write(function() {
+                    var allElements = (0, _tslib.__spreadArray)((0, _tslib.__spreadArray)([], (0, _tslib.__read)(ancestors)), (0, _tslib.__read)(order));
+                    allElements.forEach(function(element) {
+                        return element.resetTransform();
+                    });
+                });
+                read(function() {
+                    order.forEach((0, _utilsJs.updateLayoutMeasurement));
+                });
+                write(function() {
+                    ancestors.forEach(function(element) {
+                        return element.restoreTransform();
+                    });
+                    order.forEach(layoutReady);
+                });
+                read(function() {
+                    /**
+                     * After all children have started animating, ensure any Entering components are set to Present.
+                     * If we add deferred animations (set up all animations and then start them in two loops) this
+                     * could be moved to the start loop. But it needs to happen after all the animations configs
+                     * are generated in AnimateSharedLayout as this relies on presence data
+                     */ order.forEach(function(child) {
+                        if (child.isPresent) child.presence = (0, _typesJs.Presence).Present;
+                    });
+                });
+                write(function() {
+                    /**
+                     * Starting these animations will have queued jobs on the frame loop. In some situations,
+                     * like when removing an element, these will be processed too late after the DOM is manipulated,
+                     * leaving a flash of incorrectly-projected content. By manually flushing these jobs
+                     * we ensure there's no flash.
+                     */ (0, _framesync.flushSync).preRender();
+                    (0, _framesync.flushSync).render();
+                });
+                read(function() {
+                    /**
+                     * Schedule a callback at the end of the following frame to assign the latest projection
+                     * box to the prevViewportBox snapshot. Once global batching is in place this could be run
+                     * synchronously. But for now it ensures that if any nested `AnimateSharedLayout` top-level
+                     * child attempts to calculate its previous relative position against a prevViewportBox
+                     * it will be against its latest projection box instead, as the snapshot is useless beyond this
+                     * render.
+                     */ (0, _framesyncDefault.default).postRender(function() {
+                        return order.forEach(assignProjectionToSnapshot);
+                    });
+                    queue.clear();
+                });
+            });
+            // TODO: Need to find a layout-synchronous way of flushing this
+            (0, _batchLayoutJs.flushLayout)();
+        }
+    };
+}
+function assignProjectionToSnapshot(child) {
+    child.prevViewportBox = child.projection.target;
+}
+
+},{"tslib":"edJ4f","framesync":"geFpv","../../../render/dom/projection/utils.js":"i6B7W","../../../render/dom/utils/batch-layout.js":"6IwMV","../../../render/utils/compare-by-depth.js":"6Na1y","../types.js":"4tfpW","@parcel/transformer-js/src/esmodule-helpers.js":"5oERU"}],"iMB7s":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "createDomVisualElement", ()=>createDomVisualElement);
+var _visualElementJs = require("../html/visual-element.js");
+var _visualElementJs1 = require("../svg/visual-element.js");
+var _isSvgComponentJs = require("./utils/is-svg-component.js");
+var createDomVisualElement = function(Component, options) {
+    return (0, _isSvgComponentJs.isSVGComponent)(Component) ? (0, _visualElementJs1.svgVisualElement)(options, {
+        enableHardwareAcceleration: false
+    }) : (0, _visualElementJs.htmlVisualElement)(options, {
+        enableHardwareAcceleration: true
+    });
+};
+
+},{"../html/visual-element.js":"6nqVy","../svg/visual-element.js":"eSxAD","./utils/is-svg-component.js":"flpaS","@parcel/transformer-js/src/esmodule-helpers.js":"5oERU"}],"6nqVy":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "getComputedStyle", ()=>getComputedStyle);
+parcelHelpers.export(exports, "htmlConfig", ()=>htmlConfig);
+parcelHelpers.export(exports, "htmlVisualElement", ()=>htmlVisualElement);
+var _tslib = require("tslib");
+var _indexJs = require("../index.js");
+var _settersJs = require("../utils/setters.js");
+var _measureJs = require("../dom/projection/measure.js");
+var _buildStylesJs = require("./utils/build-styles.js");
+var _isCssVariableJs = require("../dom/utils/is-css-variable.js");
+var _parseDomVariantJs = require("../dom/utils/parse-dom-variant.js");
+var _transformJs = require("./utils/transform.js");
+var _scrapeMotionValuesJs = require("./utils/scrape-motion-values.js");
+var _renderJs = require("./utils/render.js");
+var _defaultsJs = require("../dom/value-types/defaults.js");
+var _buildProjectionTransformJs = require("./utils/build-projection-transform.js");
+function getComputedStyle(element) {
+    return window.getComputedStyle(element);
+}
+var htmlConfig = {
+    treeType: "dom",
+    readValueFromInstance: function(domElement, key) {
+        if ((0, _transformJs.isTransformProp)(key)) {
+            var defaultType = (0, _defaultsJs.getDefaultValueType)(key);
+            return defaultType ? defaultType.default || 0 : 0;
+        } else {
+            var computedStyle = getComputedStyle(domElement);
+            return ((0, _isCssVariableJs.isCSSVariable)(key) ? computedStyle.getPropertyValue(key) : computedStyle[key]) || 0;
+        }
+    },
+    sortNodePosition: function(a, b) {
+        /**
+         * compareDocumentPosition returns a bitmask, by using the bitwise &
+         * we're returning true if 2 in that bitmask is set to true. 2 is set
+         * to true if b preceeds a.
+         */ return a.compareDocumentPosition(b) & 2 ? 1 : -1;
+    },
+    getBaseTarget: function(props, key) {
+        var _a;
+        return (_a = props.style) === null || _a === void 0 ? void 0 : _a[key];
+    },
+    measureViewportBox: function(element, _a) {
+        var transformPagePoint = _a.transformPagePoint;
+        return (0, _measureJs.getBoundingBox)(element, transformPagePoint);
+    },
+    /**
+     * Reset the transform on the current Element. This is called as part
+     * of a batched process across the entire layout tree. To remove this write
+     * cycle it'd be interesting to see if it's possible to "undo" all the current
+     * layout transforms up the tree in the same way this.getBoundingBoxWithoutTransforms
+     * works
+     */ resetTransform: function(element, domElement, props) {
+        var transformTemplate = props.transformTemplate;
+        domElement.style.transform = transformTemplate ? transformTemplate({}, "") : "none";
+        // Ensure that whatever happens next, we restore our transform on the next frame
+        element.scheduleRender();
+    },
+    restoreTransform: function(instance, mutableState) {
+        instance.style.transform = mutableState.style.transform;
+    },
+    removeValueFromRenderState: function(key, _a) {
+        var vars = _a.vars, style = _a.style;
+        delete vars[key];
+        delete style[key];
+    },
+    /**
+     * Ensure that HTML and Framer-specific value types like `px`->`%` and `Color`
+     * can be animated by Motion.
+     */ makeTargetAnimatable: function(element, _a, _b, isMounted) {
+        var transformValues = _b.transformValues;
+        if (isMounted === void 0) isMounted = true;
+        var transition = _a.transition, transitionEnd = _a.transitionEnd, target = (0, _tslib.__rest)(_a, [
+            "transition",
+            "transitionEnd"
+        ]);
+        var origin = (0, _settersJs.getOrigin)(target, transition || {}, element);
+        /**
+         * If Framer has provided a function to convert `Color` etc value types, convert them
+         */ if (transformValues) {
+            if (transitionEnd) transitionEnd = transformValues(transitionEnd);
+            if (target) target = transformValues(target);
+            if (origin) origin = transformValues(origin);
+        }
+        if (isMounted) {
+            (0, _settersJs.checkTargetForNewValues)(element, target, origin);
+            var parsed = (0, _parseDomVariantJs.parseDomVariant)(element, target, origin, transitionEnd);
+            transitionEnd = parsed.transitionEnd;
+            target = parsed.target;
+        }
+        return (0, _tslib.__assign)({
+            transition: transition,
+            transitionEnd: transitionEnd
+        }, target);
+    },
+    scrapeMotionValuesFromProps: (0, _scrapeMotionValuesJs.scrapeMotionValuesFromProps),
+    build: function(element, renderState, latestValues, projection, layoutState, options, props) {
+        if (element.isVisible !== undefined) renderState.style.visibility = element.isVisible ? "visible" : "hidden";
+        var isProjectionTranform = projection.isEnabled && layoutState.isHydrated;
+        (0, _buildStylesJs.buildHTMLStyles)(renderState, latestValues, projection, layoutState, options, props.transformTemplate, isProjectionTranform ? (0, _buildProjectionTransformJs.buildLayoutProjectionTransform) : undefined, isProjectionTranform ? (0, _buildProjectionTransformJs.buildLayoutProjectionTransformOrigin) : undefined);
+    },
+    render: (0, _renderJs.renderHTML)
+};
+var htmlVisualElement = (0, _indexJs.visualElement)(htmlConfig);
+
+},{"tslib":"edJ4f","../index.js":"hsOSl","../utils/setters.js":"2dj52","../dom/projection/measure.js":"kh2Yv","./utils/build-styles.js":"gTgoj","../dom/utils/is-css-variable.js":"5y6Ux","../dom/utils/parse-dom-variant.js":"2KKcS","./utils/transform.js":"cTSQv","./utils/scrape-motion-values.js":"a6p4l","./utils/render.js":"aAfA4","../dom/value-types/defaults.js":"48tHB","./utils/build-projection-transform.js":"19KsI","@parcel/transformer-js/src/esmodule-helpers.js":"5oERU"}],"hsOSl":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "visualElement", ()=>visualElement);
+var _tslib = require("tslib");
+var _framesync = require("framesync");
+var _framesyncDefault = parcelHelpers.interopDefault(_framesync);
+var _popmotion = require("popmotion");
+var _typesJs = require("../components/AnimateSharedLayout/types.js");
+var _eachAxisJs = require("../utils/each-axis.js");
+var _indexJs = require("../utils/geometry/index.js");
+var _deltaApplyJs = require("../utils/geometry/delta-apply.js");
+var _deltaCalcJs = require("../utils/geometry/delta-calc.js");
+var _indexJs1 = require("../value/index.js");
+var _isMotionValueJs = require("../value/utils/is-motion-value.js");
+var _buildProjectionTransformJs = require("./html/utils/build-projection-transform.js");
+var _animationStateJs = require("./utils/animation-state.js");
+var _lifecyclesJs = require("./utils/lifecycles.js");
+var _motionValuesJs = require("./utils/motion-values.js");
+var _projectionJs = require("./utils/projection.js");
+var _stateJs = require("./utils/state.js");
+var _flatTreeJs = require("./utils/flat-tree.js");
+var _variantsJs = require("./utils/variants.js");
+var _relativeSetJs = require("./dom/projection/relative-set.js");
+var _isDraggableJs = require("./utils/is-draggable.js");
+var visualElement = function(_a) {
+    var _b = _a.treeType, treeType = _b === void 0 ? "" : _b, build = _a.build, getBaseTarget = _a.getBaseTarget, makeTargetAnimatable = _a.makeTargetAnimatable, measureViewportBox = _a.measureViewportBox, renderInstance = _a.render, readValueFromInstance = _a.readValueFromInstance, resetTransform = _a.resetTransform, restoreTransform = _a.restoreTransform, removeValueFromRenderState = _a.removeValueFromRenderState, sortNodePosition = _a.sortNodePosition, scrapeMotionValuesFromProps = _a.scrapeMotionValuesFromProps;
+    return function(_a, options) {
+        var parent = _a.parent, props = _a.props, presenceId = _a.presenceId, blockInitialAnimation = _a.blockInitialAnimation, visualState = _a.visualState;
+        if (options === void 0) options = {};
+        var latestValues = visualState.latestValues, renderState = visualState.renderState;
+        /**
+         * The instance of the render-specific node that will be hydrated by the
+         * exposed React ref. So for example, this visual element can host a
+         * HTMLElement, plain object, or Three.js object. The functions provided
+         * in VisualElementConfig allow us to interface with this instance.
+         */ var instance;
+        /**
+         * Manages the subscriptions for a visual element's lifecycle, for instance
+         * onRender and onViewportBoxUpdate.
+         */ var lifecycles = (0, _lifecyclesJs.createLifecycles)();
+        /**
+         *
+         */ var projection = (0, _stateJs.createProjectionState)();
+        /**
+         * A reference to the nearest projecting parent. This is either
+         * undefined if we haven't looked for the nearest projecting parent,
+         * false if there is no parent performing layout projection, or a reference
+         * to the projecting parent.
+         */ var projectionParent;
+        /**
+         * This is a reference to the visual state of the "lead" visual element.
+         * Usually, this will be this visual element. But if it shares a layoutId
+         * with other visual elements, only one of them will be designated lead by
+         * AnimateSharedLayout. All the other visual elements will take on the visual
+         * appearance of the lead while they crossfade to it.
+         */ var leadProjection = projection;
+        var leadLatestValues = latestValues;
+        var unsubscribeFromLeadVisualElement;
+        /**
+         * The latest layout measurements and calculated projections. This
+         * is seperate from the target projection data in visualState as
+         * many visual elements might point to the same piece of visualState as
+         * a target, whereas they might each have different layouts and thus
+         * projection calculations needed to project into the same viewport box.
+         */ var layoutState = (0, _stateJs.createLayoutState)();
+        /**
+         *
+         */ var crossfader;
+        /**
+         * Keep track of whether the viewport box has been updated since the
+         * last time the layout projection was re-calculated.
+         */ var hasViewportBoxUpdated = false;
+        /**
+         * A map of all motion values attached to this visual element. Motion
+         * values are source of truth for any given animated value. A motion
+         * value might be provided externally by the component via props.
+         */ var values = new Map();
+        /**
+         * A map of every subscription that binds the provided or generated
+         * motion values onChange listeners to this visual element.
+         */ var valueSubscriptions = new Map();
+        /**
+         * A reference to the previously-provided motion values as returned
+         * from scrapeMotionValuesFromProps. We use the keys in here to determine
+         * if any motion values need to be removed after props are updated.
+         */ var prevMotionValues = {};
+        /**
+         * x/y motion values that track the progress of initiated layout
+         * animations.
+         *
+         * TODO: Target for removal
+         */ var projectionTargetProgress;
+        /**
+         * When values are removed from all animation props we need to search
+         * for a fallback value to animate to. These values are tracked in baseTarget.
+         */ var baseTarget = (0, _tslib.__assign)({}, latestValues);
+        // Internal methods ========================
+        /**
+         * On mount, this will be hydrated with a callback to disconnect
+         * this visual element from its parent on unmount.
+         */ var removeFromVariantTree;
+        /**
+         *
+         */ function render() {
+            if (!instance) return;
+            if (element.isProjectionReady()) {
+                /**
+                 * Apply the latest user-set transforms to the targetBox to produce the targetBoxFinal.
+                 * This is the final box that we will then project into by calculating a transform delta and
+                 * applying it to the corrected box.
+                 */ (0, _deltaApplyJs.applyBoxTransforms)(leadProjection.targetFinal, leadProjection.target, leadLatestValues);
+                /**
+                 * Update the delta between the corrected box and the final target box, after
+                 * user-set transforms are applied to it. This will be used by the renderer to
+                 * create a transform style that will reproject the element from its actual layout
+                 * into the desired bounding box.
+                 */ (0, _deltaCalcJs.updateBoxDelta)(layoutState.deltaFinal, layoutState.layoutCorrected, leadProjection.targetFinal, latestValues);
+            }
+            triggerBuild();
+            renderInstance(instance, renderState);
+        }
+        function triggerBuild() {
+            var valuesToRender = latestValues;
+            if (crossfader && crossfader.isActive()) {
+                var crossfadedValues = crossfader.getCrossfadeState(element);
+                if (crossfadedValues) valuesToRender = crossfadedValues;
+            }
+            build(element, renderState, valuesToRender, leadProjection, layoutState, options, props);
+        }
+        function update() {
+            lifecycles.notifyUpdate(latestValues);
+        }
+        function updateLayoutProjection() {
+            if (!element.isProjectionReady()) return;
+            var delta = layoutState.delta, treeScale = layoutState.treeScale;
+            var prevTreeScaleX = treeScale.x;
+            var prevTreeScaleY = treeScale.y;
+            var prevDeltaTransform = layoutState.deltaTransform;
+            (0, _projectionJs.updateLayoutDeltas)(layoutState, leadProjection, element.path, latestValues);
+            hasViewportBoxUpdated && element.notifyViewportBoxUpdate(leadProjection.target, delta);
+            hasViewportBoxUpdated = false;
+            var deltaTransform = (0, _buildProjectionTransformJs.buildLayoutProjectionTransform)(delta, treeScale);
+            if (deltaTransform !== prevDeltaTransform || // Also compare calculated treeScale, for values that rely on this only for scale correction
+            prevTreeScaleX !== treeScale.x || prevTreeScaleY !== treeScale.y) element.scheduleRender();
+            layoutState.deltaTransform = deltaTransform;
+        }
+        function updateTreeLayoutProjection() {
+            element.layoutTree.forEach(fireUpdateLayoutProjection);
+        }
+        /**
+         *
+         */ function bindToMotionValue(key, value) {
+            var removeOnChange = value.onChange(function(latestValue) {
+                latestValues[key] = latestValue;
+                props.onUpdate && (0, _framesyncDefault.default).update(update, false, true);
+            });
+            var removeOnRenderRequest = value.onRenderRequest(element.scheduleRender);
+            valueSubscriptions.set(key, function() {
+                removeOnChange();
+                removeOnRenderRequest();
+            });
+        }
+        /**
+         * Any motion values that are provided to the element when created
+         * aren't yet bound to the element, as this would technically be impure.
+         * However, we iterate through the motion values and set them to the
+         * initial values for this component.
+         *
+         * TODO: This is impure and we should look at changing this to run on mount.
+         * Doing so will break some tests but this isn't neccessarily a breaking change,
+         * more a reflection of the test.
+         */ var initialMotionValues = scrapeMotionValuesFromProps(props);
+        for(var key in initialMotionValues){
+            var value = initialMotionValues[key];
+            if (latestValues[key] !== undefined && (0, _isMotionValueJs.isMotionValue)(value)) value.set(latestValues[key], false);
+        }
+        /**
+         * Determine what role this visual element should take in the variant tree.
+         */ var isControllingVariants = (0, _variantsJs.checkIfControllingVariants)(props);
+        var isVariantNode = (0, _variantsJs.checkIfVariantNode)(props);
+        var element = (0, _tslib.__assign)((0, _tslib.__assign)({
+            treeType: treeType,
+            /**
+             * This is a mirror of the internal instance prop, which keeps
+             * VisualElement type-compatible with React's RefObject.
+             */ current: null,
+            /**
+             * The depth of this visual element within the visual element tree.
+             */ depth: parent ? parent.depth + 1 : 0,
+            parent: parent,
+            children: new Set(),
+            /**
+             * An ancestor path back to the root visual element. This is used
+             * by layout projection to quickly recurse back up the tree.
+             */ path: parent ? (0, _tslib.__spreadArray)((0, _tslib.__spreadArray)([], (0, _tslib.__read)(parent.path)), [
+                parent
+            ]) : [],
+            layoutTree: parent ? parent.layoutTree : new (0, _flatTreeJs.FlatTree)(),
+            /**
+             *
+             */ presenceId: presenceId,
+            projection: projection,
+            /**
+             * If this component is part of the variant tree, it should track
+             * any children that are also part of the tree. This is essentially
+             * a shadow tree to simplify logic around how to stagger over children.
+             */ variantChildren: isVariantNode ? new Set() : undefined,
+            /**
+             * Whether this instance is visible. This can be changed imperatively
+             * by AnimateSharedLayout, is analogous to CSS's visibility in that
+             * hidden elements should take up layout, and needs enacting by the configured
+             * render function.
+             */ isVisible: undefined,
+            /**
+             * Normally, if a component is controlled by a parent's variants, it can
+             * rely on that ancestor to trigger animations further down the tree.
+             * However, if a component is created after its parent is mounted, the parent
+             * won't trigger that mount animation so the child needs to.
+             *
+             * TODO: This might be better replaced with a method isParentMounted
+             */ manuallyAnimateOnMount: Boolean(parent === null || parent === void 0 ? void 0 : parent.isMounted()),
+            /**
+             * This can be set by AnimatePresence to force components that mount
+             * at the same time as it to mount as if they have initial={false} set.
+             */ blockInitialAnimation: blockInitialAnimation,
+            /**
+             * Determine whether this component has mounted yet. This is mostly used
+             * by variant children to determine whether they need to trigger their
+             * own animations on mount.
+             */ isMounted: function() {
+                return Boolean(instance);
+            },
+            mount: function(newInstance) {
+                instance = element.current = newInstance;
+                element.pointTo(element);
+                if (isVariantNode && parent && !isControllingVariants) removeFromVariantTree = parent === null || parent === void 0 ? void 0 : parent.addVariantChild(element);
+                parent === null || parent === void 0 || parent.children.add(element);
+            },
+            /**
+             *
+             */ unmount: function() {
+                (0, _framesync.cancelSync).update(update);
+                (0, _framesync.cancelSync).render(render);
+                (0, _framesync.cancelSync).preRender(element.updateLayoutProjection);
+                valueSubscriptions.forEach(function(remove) {
+                    return remove();
+                });
+                element.stopLayoutAnimation();
+                element.layoutTree.remove(element);
+                removeFromVariantTree === null || removeFromVariantTree === void 0 || removeFromVariantTree();
+                parent === null || parent === void 0 || parent.children.delete(element);
+                unsubscribeFromLeadVisualElement === null || unsubscribeFromLeadVisualElement === void 0 || unsubscribeFromLeadVisualElement();
+                lifecycles.clearAllListeners();
+            },
+            /**
+             * Add a child visual element to our set of children.
+             */ addVariantChild: function(child) {
+                var _a;
+                var closestVariantNode = element.getClosestVariantNode();
+                if (closestVariantNode) {
+                    (_a = closestVariantNode.variantChildren) === null || _a === void 0 || _a.add(child);
+                    return function() {
+                        return closestVariantNode.variantChildren.delete(child);
+                    };
+                }
+            },
+            sortNodePosition: function(other) {
+                /**
+                 * If these nodes aren't even of the same type we can't compare their depth.
+                 */ if (!sortNodePosition || treeType !== other.treeType) return 0;
+                return sortNodePosition(element.getInstance(), other.getInstance());
+            },
+            /**
+             * Returns the closest variant node in the tree starting from
+             * this visual element.
+             */ getClosestVariantNode: function() {
+                return isVariantNode ? element : parent === null || parent === void 0 ? void 0 : parent.getClosestVariantNode();
+            },
+            /**
+             * A method that schedules an update to layout projections throughout
+             * the tree. We inherit from the parent so there's only ever one
+             * job scheduled on the next frame - that of the root visual element.
+             */ scheduleUpdateLayoutProjection: parent ? parent.scheduleUpdateLayoutProjection : function() {
+                return (0, _framesyncDefault.default).preRender(element.updateTreeLayoutProjection, false, true);
+            },
+            /**
+             * Expose the latest layoutId prop.
+             */ getLayoutId: function() {
+                return props.layoutId;
+            },
+            /**
+             * Returns the current instance.
+             */ getInstance: function() {
+                return instance;
+            },
+            /**
+             * Get/set the latest static values.
+             */ getStaticValue: function(key) {
+                return latestValues[key];
+            },
+            setStaticValue: function(key, value) {
+                return latestValues[key] = value;
+            },
+            /**
+             * Returns the latest motion value state. Currently only used to take
+             * a snapshot of the visual element - perhaps this can return the whole
+             * visual state
+             */ getLatestValues: function() {
+                return latestValues;
+            },
+            /**
+             * Set the visiblity of the visual element. If it's changed, schedule
+             * a render to reflect these changes.
+             */ setVisibility: function(visibility) {
+                if (element.isVisible === visibility) return;
+                element.isVisible = visibility;
+                element.scheduleRender();
+            },
+            /**
+             * Make a target animatable by Popmotion. For instance, if we're
+             * trying to animate width from 100px to 100vw we need to measure 100vw
+             * in pixels to determine what we really need to animate to. This is also
+             * pluggable to support Framer's custom value types like Color,
+             * and CSS variables.
+             */ makeTargetAnimatable: function(target, canMutate) {
+                if (canMutate === void 0) canMutate = true;
+                return makeTargetAnimatable(element, target, props, canMutate);
+            },
+            // Motion values ========================
+            /**
+             * Add a motion value and bind it to this visual element.
+             */ addValue: function(key, value) {
+                // Remove existing value if it exists
+                if (element.hasValue(key)) element.removeValue(key);
+                values.set(key, value);
+                latestValues[key] = value.get();
+                bindToMotionValue(key, value);
+            },
+            /**
+             * Remove a motion value and unbind any active subscriptions.
+             */ removeValue: function(key) {
+                var _a;
+                values.delete(key);
+                (_a = valueSubscriptions.get(key)) === null || _a === void 0 || _a();
+                valueSubscriptions.delete(key);
+                delete latestValues[key];
+                removeValueFromRenderState(key, renderState);
+            },
+            /**
+             * Check whether we have a motion value for this key
+             */ hasValue: function(key) {
+                return values.has(key);
+            },
+            /**
+             * Get a motion value for this key. If called with a default
+             * value, we'll create one if none exists.
+             */ getValue: function(key, defaultValue) {
+                var value = values.get(key);
+                if (value === undefined && defaultValue !== undefined) {
+                    value = (0, _indexJs1.motionValue)(defaultValue);
+                    element.addValue(key, value);
+                }
+                return value;
+            },
+            /**
+             * Iterate over our motion values.
+             */ forEachValue: function(callback) {
+                return values.forEach(callback);
+            },
+            /**
+             * If we're trying to animate to a previously unencountered value,
+             * we need to check for it in our state and as a last resort read it
+             * directly from the instance (which might have performance implications).
+             */ readValue: function(key) {
+                var _a;
+                return (_a = latestValues[key]) !== null && _a !== void 0 ? _a : readValueFromInstance(instance, key, options);
+            },
+            /**
+             * Set the base target to later animate back to. This is currently
+             * only hydrated on creation and when we first read a value.
+             */ setBaseTarget: function(key, value) {
+                baseTarget[key] = value;
+            },
+            /**
+             * Find the base target for a value thats been removed from all animation
+             * props.
+             */ getBaseTarget: function(key) {
+                if (getBaseTarget) {
+                    var target = getBaseTarget(props, key);
+                    if (target !== undefined && !(0, _isMotionValueJs.isMotionValue)(target)) return target;
+                }
+                return baseTarget[key];
+            }
+        }, lifecycles), {
+            /**
+             * Build the renderer state based on the latest visual state.
+             */ build: function() {
+                triggerBuild();
+                return renderState;
+            },
+            /**
+             * Schedule a render on the next animation frame.
+             */ scheduleRender: function() {
+                (0, _framesyncDefault.default).render(render, false, true);
+            },
+            /**
+             * Synchronously fire render. It's prefered that we batch renders but
+             * in many circumstances, like layout measurement, we need to run this
+             * synchronously. However in those instances other measures should be taken
+             * to batch reads/writes.
+             */ syncRender: render,
+            /**
+             * Update the provided props. Ensure any newly-added motion values are
+             * added to our map, old ones removed, and listeners updated.
+             */ setProps: function(newProps) {
+                props = newProps;
+                lifecycles.updatePropListeners(newProps);
+                prevMotionValues = (0, _motionValuesJs.updateMotionValuesFromProps)(element, scrapeMotionValuesFromProps(props), prevMotionValues);
+            },
+            getProps: function() {
+                return props;
+            },
+            // Variants ==============================
+            /**
+             * Returns the variant definition with a given name.
+             */ getVariant: function(name) {
+                var _a;
+                return (_a = props.variants) === null || _a === void 0 ? void 0 : _a[name];
+            },
+            /**
+             * Returns the defined default transition on this component.
+             */ getDefaultTransition: function() {
+                return props.transition;
+            },
+            /**
+             * Used by child variant nodes to get the closest ancestor variant props.
+             */ getVariantContext: function(startAtParent) {
+                if (startAtParent === void 0) startAtParent = false;
+                if (startAtParent) return parent === null || parent === void 0 ? void 0 : parent.getVariantContext();
+                if (!isControllingVariants) {
+                    var context_1 = (parent === null || parent === void 0 ? void 0 : parent.getVariantContext()) || {};
+                    if (props.initial !== undefined) context_1.initial = props.initial;
+                    return context_1;
+                }
+                var context = {};
+                for(var i = 0; i < numVariantProps; i++){
+                    var name_1 = variantProps[i];
+                    var prop = props[name_1];
+                    if ((0, _variantsJs.isVariantLabel)(prop) || prop === false) context[name_1] = prop;
+                }
+                return context;
+            },
+            // Layout projection ==============================
+            /**
+             * Enable layout projection for this visual element. Won't actually
+             * occur until we also have hydrated layout measurements.
+             */ enableLayoutProjection: function() {
+                projection.isEnabled = true;
+                element.layoutTree.add(element);
+            },
+            /**
+             * Lock the projection target, for instance when dragging, so
+             * nothing else can try and animate it.
+             */ lockProjectionTarget: function() {
+                projection.isTargetLocked = true;
+            },
+            unlockProjectionTarget: function() {
+                element.stopLayoutAnimation();
+                projection.isTargetLocked = false;
+            },
+            getLayoutState: function() {
+                return layoutState;
+            },
+            setCrossfader: function(newCrossfader) {
+                crossfader = newCrossfader;
+            },
+            isProjectionReady: function() {
+                return projection.isEnabled && projection.isHydrated && layoutState.isHydrated;
+            },
+            /**
+             * Start a layout animation on a given axis.
+             */ startLayoutAnimation: function(axis, transition, isRelative) {
+                if (isRelative === void 0) isRelative = false;
+                var progress = element.getProjectionAnimationProgress()[axis];
+                var _a = isRelative ? projection.relativeTarget[axis] : projection.target[axis], min = _a.min, max = _a.max;
+                var length = max - min;
+                progress.clearListeners();
+                progress.set(min);
+                progress.set(min); // Set twice to hard-reset velocity
+                progress.onChange(function(v) {
+                    element.setProjectionTargetAxis(axis, v, v + length, isRelative);
+                });
+                return element.animateMotionValue(axis, progress, 0, transition);
+            },
+            /**
+             * Stop layout animations.
+             */ stopLayoutAnimation: function() {
+                (0, _eachAxisJs.eachAxis)(function(axis) {
+                    return element.getProjectionAnimationProgress()[axis].stop();
+                });
+            },
+            /**
+             * Measure the current viewport box with or without transforms.
+             * Only measures axis-aligned boxes, rotate and skew must be manually
+             * removed with a re-render to work.
+             */ measureViewportBox: function(withTransform) {
+                if (withTransform === void 0) withTransform = true;
+                var viewportBox = measureViewportBox(instance, options);
+                if (!withTransform) (0, _deltaApplyJs.removeBoxTransforms)(viewportBox, latestValues);
+                return viewportBox;
+            },
+            /**
+             * Get the motion values tracking the layout animations on each
+             * axis. Lazy init if not already created.
+             */ getProjectionAnimationProgress: function() {
+                projectionTargetProgress || (projectionTargetProgress = {
+                    x: (0, _indexJs1.motionValue)(0),
+                    y: (0, _indexJs1.motionValue)(0)
+                });
+                return projectionTargetProgress;
+            },
+            /**
+             * Update the projection of a single axis. Schedule an update to
+             * the tree layout projection.
+             */ setProjectionTargetAxis: function(axis, min, max, isRelative) {
+                if (isRelative === void 0) isRelative = false;
+                var target;
+                if (isRelative) {
+                    if (!projection.relativeTarget) projection.relativeTarget = (0, _indexJs.axisBox)();
+                    target = projection.relativeTarget[axis];
+                } else {
+                    projection.relativeTarget = undefined;
+                    target = projection.target[axis];
+                }
+                projection.isHydrated = true;
+                target.min = min;
+                target.max = max;
+                // Flag that we want to fire the onViewportBoxUpdate event handler
+                hasViewportBoxUpdated = true;
+                lifecycles.notifySetAxisTarget();
+            },
+            /**
+             * Rebase the projection target on top of the provided viewport box
+             * or the measured layout. This ensures that non-animating elements
+             * don't fall out of sync differences in measurements vs projections
+             * after a page scroll or other relayout.
+             */ rebaseProjectionTarget: function(force, box) {
+                if (box === void 0) box = layoutState.layout;
+                var _a = element.getProjectionAnimationProgress(), x = _a.x, y = _a.y;
+                var shouldRebase = !projection.relativeTarget && !projection.isTargetLocked && !x.isAnimating() && !y.isAnimating();
+                if (force || shouldRebase) (0, _eachAxisJs.eachAxis)(function(axis) {
+                    var _a = box[axis], min = _a.min, max = _a.max;
+                    element.setProjectionTargetAxis(axis, min, max);
+                });
+            },
+            /**
+             * Notify the visual element that its layout is up-to-date.
+             * Currently Animate.tsx uses this to check whether a layout animation
+             * needs to be performed.
+             */ notifyLayoutReady: function(config) {
+                (0, _relativeSetJs.setCurrentViewportBox)(element);
+                element.notifyLayoutUpdate(layoutState.layout, element.prevViewportBox || layoutState.layout, config);
+            },
+            /**
+             * Temporarily reset the transform of the instance.
+             */ resetTransform: function() {
+                return resetTransform(element, instance, props);
+            },
+            restoreTransform: function() {
+                return restoreTransform(instance, renderState);
+            },
+            updateLayoutProjection: updateLayoutProjection,
+            updateTreeLayoutProjection: function() {
+                element.layoutTree.forEach(fireResolveRelativeTargetBox);
+                /**
+                 * Schedule the projection updates at the end of the current preRender
+                 * step. This will ensure that all layout trees will first resolve
+                 * relative projection boxes into viewport boxes, and *then*
+                 * update projections.
+                 */ (0, _framesyncDefault.default).preRender(updateTreeLayoutProjection, false, true);
+            // sync.postRender(() => element.scheduleUpdateLayoutProjection())
+            },
+            getProjectionParent: function() {
+                if (projectionParent === undefined) {
+                    var foundParent = false;
+                    // Search backwards through the tree path
+                    for(var i = element.path.length - 1; i >= 0; i--){
+                        var ancestor = element.path[i];
+                        if (ancestor.projection.isEnabled) {
+                            foundParent = ancestor;
+                            break;
+                        }
+                    }
+                    projectionParent = foundParent;
+                }
+                return projectionParent;
+            },
+            resolveRelativeTargetBox: function() {
+                var relativeParent = element.getProjectionParent();
+                if (!projection.relativeTarget || !relativeParent) return;
+                (0, _deltaCalcJs.calcRelativeBox)(projection, relativeParent.projection);
+                if ((0, _isDraggableJs.isDraggable)(relativeParent)) {
+                    var target = projection.target;
+                    (0, _deltaApplyJs.applyBoxTransforms)(target, target, relativeParent.getLatestValues());
+                }
+            },
+            shouldResetTransform: function() {
+                return Boolean(props._layoutResetTransform);
+            },
+            /**
+             *
+             */ pointTo: function(newLead) {
+                leadProjection = newLead.projection;
+                leadLatestValues = newLead.getLatestValues();
+                /**
+                 * Subscribe to lead component's layout animations
+                 */ unsubscribeFromLeadVisualElement === null || unsubscribeFromLeadVisualElement === void 0 || unsubscribeFromLeadVisualElement();
+                unsubscribeFromLeadVisualElement = (0, _popmotion.pipe)(newLead.onSetAxisTarget(element.scheduleUpdateLayoutProjection), newLead.onLayoutAnimationComplete(function() {
+                    var _a;
+                    if (element.isPresent) element.presence = (0, _typesJs.Presence).Present;
+                    else (_a = element.layoutSafeToRemove) === null || _a === void 0 || _a.call(element);
+                }));
+            },
+            // TODO: Clean this up
+            isPresent: true,
+            presence: (0, _typesJs.Presence).Entering
+        });
+        return element;
+    };
+};
+function fireResolveRelativeTargetBox(child) {
+    child.resolveRelativeTargetBox();
+}
+function fireUpdateLayoutProjection(child) {
+    child.updateLayoutProjection();
+}
+var variantProps = (0, _tslib.__spreadArray)([
+    "initial"
+], (0, _tslib.__read)((0, _animationStateJs.variantPriorityOrder)));
+var numVariantProps = variantProps.length;
+
+},{"tslib":"edJ4f","framesync":"geFpv","popmotion":"hu70l","../components/AnimateSharedLayout/types.js":"4tfpW","../utils/each-axis.js":"49wtY","../utils/geometry/index.js":"cOvBE","../utils/geometry/delta-apply.js":"ais1d","../utils/geometry/delta-calc.js":"6SONB","../value/index.js":"brlv5","../value/utils/is-motion-value.js":"bSPO9","./html/utils/build-projection-transform.js":"19KsI","./utils/animation-state.js":"dnpNl","./utils/lifecycles.js":"8DOKc","./utils/motion-values.js":"aaWlX","./utils/projection.js":"dIwPM","./utils/state.js":"lHHP6","./utils/flat-tree.js":"4q3s9","./utils/variants.js":"aCPPK","./dom/projection/relative-set.js":"jF4vx","./utils/is-draggable.js":"dLK6W","@parcel/transformer-js/src/esmodule-helpers.js":"5oERU"}],"19KsI":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "buildLayoutProjectionTransform", ()=>buildLayoutProjectionTransform);
+parcelHelpers.export(exports, "buildLayoutProjectionTransformOrigin", ()=>buildLayoutProjectionTransformOrigin);
+parcelHelpers.export(exports, "identityProjection", ()=>identityProjection);
+var _stateJs = require("../../utils/state.js");
+/**
+ * Build a transform style that takes a calculated delta between the element's current
+ * space on screen and projects it into the desired space.
+ */ function buildLayoutProjectionTransform(_a, treeScale, latestTransform) {
+    var x = _a.x, y = _a.y;
+    /**
+     * The translations we use to calculate are always relative to the viewport coordinate space.
+     * But when we apply scales, we also scale the coordinate space of an element and its children.
+     * For instance if we have a treeScale (the culmination of all parent scales) of 0.5 and we need
+     * to move an element 100 pixels, we actually need to move it 200 in within that scaled space.
+     */ var xTranslate = x.translate / treeScale.x;
+    var yTranslate = y.translate / treeScale.y;
+    var transform = "translate3d(" + xTranslate + "px, " + yTranslate + "px, 0) ";
+    if (latestTransform) {
+        var rotate = latestTransform.rotate, rotateX = latestTransform.rotateX, rotateY = latestTransform.rotateY;
+        if (rotate) transform += "rotate(" + rotate + ") ";
+        if (rotateX) transform += "rotateX(" + rotateX + ") ";
+        if (rotateY) transform += "rotateY(" + rotateY + ") ";
+    }
+    transform += "scale(" + x.scale + ", " + y.scale + ")";
+    return !latestTransform && transform === identityProjection ? "" : transform;
+}
+/**
+ * Take the calculated delta origin and apply it as a transform string.
+ */ function buildLayoutProjectionTransformOrigin(_a) {
+    var deltaFinal = _a.deltaFinal;
+    return deltaFinal.x.origin * 100 + "% " + deltaFinal.y.origin * 100 + "% 0";
+}
+var identityProjection = buildLayoutProjectionTransform((0, _stateJs.zeroLayout).delta, (0, _stateJs.zeroLayout).treeScale, {
+    x: 1,
+    y: 1
+});
+
+},{"../../utils/state.js":"lHHP6","@parcel/transformer-js/src/esmodule-helpers.js":"5oERU"}],"lHHP6":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "createLayoutState", ()=>createLayoutState);
+parcelHelpers.export(exports, "createProjectionState", ()=>createProjectionState);
+parcelHelpers.export(exports, "zeroLayout", ()=>zeroLayout);
+var _indexJs = require("../../utils/geometry/index.js");
+var createProjectionState = function() {
+    return {
+        isEnabled: false,
+        isHydrated: false,
+        isTargetLocked: false,
+        target: (0, _indexJs.axisBox)(),
+        targetFinal: (0, _indexJs.axisBox)()
+    };
+};
+function createLayoutState() {
+    return {
+        isHydrated: false,
+        layout: (0, _indexJs.axisBox)(),
+        layoutCorrected: (0, _indexJs.axisBox)(),
+        treeScale: {
+            x: 1,
+            y: 1
+        },
+        delta: (0, _indexJs.delta)(),
+        deltaFinal: (0, _indexJs.delta)(),
+        deltaTransform: ""
+    };
+}
+var zeroLayout = createLayoutState();
+
+},{"../../utils/geometry/index.js":"cOvBE","@parcel/transformer-js/src/esmodule-helpers.js":"5oERU"}],"8DOKc":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "createLifecycles", ()=>createLifecycles);
+var _tslib = require("tslib");
+var _subscriptionManagerJs = require("../../utils/subscription-manager.js");
+var names = [
+    "LayoutMeasure",
+    "BeforeLayoutMeasure",
+    "LayoutUpdate",
+    "ViewportBoxUpdate",
+    "Update",
+    "Render",
+    "AnimationComplete",
+    "LayoutAnimationComplete",
+    "AnimationStart",
+    "SetAxisTarget",
+    "Unmount"
+];
+function createLifecycles() {
+    var managers = names.map(function() {
+        return new (0, _subscriptionManagerJs.SubscriptionManager)();
+    });
+    var propSubscriptions = {};
+    var lifecycles = {
+        clearAllListeners: function() {
+            return managers.forEach(function(manager) {
+                return manager.clear();
+            });
+        },
+        updatePropListeners: function(props) {
+            return names.forEach(function(name) {
+                var _a;
+                (_a = propSubscriptions[name]) === null || _a === void 0 || _a.call(propSubscriptions);
+                var on = "on" + name;
+                var propListener = props[on];
+                if (propListener) propSubscriptions[name] = lifecycles[on](propListener);
+            });
+        }
+    };
+    managers.forEach(function(manager, i) {
+        lifecycles["on" + names[i]] = function(handler) {
+            return manager.add(handler);
+        };
+        lifecycles["notify" + names[i]] = function() {
+            var args = [];
+            for(var _i = 0; _i < arguments.length; _i++)args[_i] = arguments[_i];
+            return manager.notify.apply(manager, (0, _tslib.__spreadArray)([], (0, _tslib.__read)(args)));
+        };
+    });
+    return lifecycles;
+}
+
+},{"tslib":"edJ4f","../../utils/subscription-manager.js":"8AO8z","@parcel/transformer-js/src/esmodule-helpers.js":"5oERU"}],"aaWlX":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "updateMotionValuesFromProps", ()=>updateMotionValuesFromProps);
+var _indexJs = require("../../value/index.js");
+var _isMotionValueJs = require("../../value/utils/is-motion-value.js");
+function updateMotionValuesFromProps(element, next, prev) {
+    var _a;
+    for(var key in next){
+        var nextValue = next[key];
+        var prevValue = prev[key];
+        if ((0, _isMotionValueJs.isMotionValue)(nextValue)) /**
+             * If this is a motion value found in props or style, we want to add it
+             * to our visual element's motion value map.
+             */ element.addValue(key, nextValue);
+        else if ((0, _isMotionValueJs.isMotionValue)(prevValue)) /**
+             * If we're swapping to a new motion value, create a new motion value
+             * from that
+             */ element.addValue(key, (0, _indexJs.motionValue)(nextValue));
+        else if (prevValue !== nextValue) {
+            /**
+             * If this is a flat value that has changed, update the motion value
+             * or create one if it doesn't exist. We only want to do this if we're
+             * not handling the value with our animation state.
+             */ if (element.hasValue(key)) {
+                var existingValue = element.getValue(key);
+                // TODO: Only update values that aren't being animated or even looked at
+                !existingValue.hasAnimated && existingValue.set(nextValue);
+            } else element.addValue(key, (0, _indexJs.motionValue)((_a = element.getStaticValue(key)) !== null && _a !== void 0 ? _a : nextValue));
+        }
+    }
+    // Handle removed values
+    for(var key in prev)if (next[key] === undefined) element.removeValue(key);
+    return next;
+}
+
+},{"../../value/index.js":"brlv5","../../value/utils/is-motion-value.js":"bSPO9","@parcel/transformer-js/src/esmodule-helpers.js":"5oERU"}],"dIwPM":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "updateLayoutDeltas", ()=>updateLayoutDeltas);
+var _deltaApplyJs = require("../../utils/geometry/delta-apply.js");
+var _deltaCalcJs = require("../../utils/geometry/delta-calc.js");
+function updateLayoutDeltas(_a, _b, treePath, transformOrigin) {
+    var delta = _a.delta, layout = _a.layout, layoutCorrected = _a.layoutCorrected, treeScale = _a.treeScale;
+    var target = _b.target;
+    /**
+     * Reset the corrected box with the latest values from box, as we're then going
+     * to perform mutative operations on it.
+     */ (0, _deltaApplyJs.resetBox)(layoutCorrected, layout);
+    /**
+     * Apply all the parent deltas to this box to produce the corrected box. This
+     * is the layout box, as it will appear on screen as a result of the transforms of its parents.
+     */ (0, _deltaApplyJs.applyTreeDeltas)(layoutCorrected, treeScale, treePath);
+    /**
+     * Update the delta between the corrected box and the target box before user-set transforms were applied.
+     * This will allow us to calculate the corrected borderRadius and boxShadow to compensate
+     * for our layout reprojection, but still allow them to be scaled correctly by the user.
+     * It might be that to simplify this we may want to accept that user-set scale is also corrected
+     * and we wouldn't have to keep and calc both deltas, OR we could support a user setting
+     * to allow people to choose whether these styles are corrected based on just the
+     * layout reprojection or the final bounding box.
+     */ (0, _deltaCalcJs.updateBoxDelta)(delta, layoutCorrected, target, transformOrigin);
+}
+
+},{"../../utils/geometry/delta-apply.js":"ais1d","../../utils/geometry/delta-calc.js":"6SONB","@parcel/transformer-js/src/esmodule-helpers.js":"5oERU"}],"4q3s9":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "FlatTree", ()=>FlatTree);
+var _arrayJs = require("../../utils/array.js");
+var _compareByDepthJs = require("./compare-by-depth.js");
+var FlatTree = /** @class */ function() {
+    function FlatTree() {
+        this.children = [];
+        this.isDirty = false;
+    }
+    FlatTree.prototype.add = function(child) {
+        (0, _arrayJs.addUniqueItem)(this.children, child);
+        this.isDirty = true;
+    };
+    FlatTree.prototype.remove = function(child) {
+        (0, _arrayJs.removeItem)(this.children, child);
+        this.isDirty = true;
+    };
+    FlatTree.prototype.forEach = function(callback) {
+        this.isDirty && this.children.sort((0, _compareByDepthJs.compareByDepth));
+        this.isDirty = false;
+        this.children.forEach(callback);
+    };
+    return FlatTree;
+}();
+
+},{"../../utils/array.js":"jSqBq","./compare-by-depth.js":"6Na1y","@parcel/transformer-js/src/esmodule-helpers.js":"5oERU"}],"jF4vx":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "setCurrentViewportBox", ()=>setCurrentViewportBox);
+var _utilsJs = require("../../../motion/features/layout/utils.js");
+var _eachAxisJs = require("../../../utils/each-axis.js");
+function setCurrentViewportBox(visualElement) {
+    var projectionParent = visualElement.getProjectionParent();
+    if (!projectionParent) {
+        visualElement.rebaseProjectionTarget();
+        return;
+    }
+    var relativeOffset = (0, _utilsJs.calcRelativeOffset)(projectionParent.getLayoutState().layout, visualElement.getLayoutState().layout);
+    (0, _eachAxisJs.eachAxis)(function(axis) {
+        visualElement.setProjectionTargetAxis(axis, relativeOffset[axis].min, relativeOffset[axis].max, true);
+    });
+}
+
+},{"../../../motion/features/layout/utils.js":"91rnc","../../../utils/each-axis.js":"49wtY","@parcel/transformer-js/src/esmodule-helpers.js":"5oERU"}],"2KKcS":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "parseDomVariant", ()=>parseDomVariant);
+var _cssVariablesConversionJs = require("./css-variables-conversion.js");
+var _unitConversionJs = require("./unit-conversion.js");
+/**
+ * Parse a DOM variant to make it animatable. This involves resolving CSS variables
+ * and ensuring animations like "20%" => "calc(50vw)" are performed in pixels.
+ */ var parseDomVariant = function(visualElement, target, origin, transitionEnd) {
+    var resolved = (0, _cssVariablesConversionJs.resolveCSSVariables)(visualElement, target, transitionEnd);
+    target = resolved.target;
+    transitionEnd = resolved.transitionEnd;
+    return (0, _unitConversionJs.unitConversion)(visualElement, target, origin, transitionEnd);
+};
+
+},{"./css-variables-conversion.js":"8q6vE","./unit-conversion.js":"6y0ug","@parcel/transformer-js/src/esmodule-helpers.js":"5oERU"}],"6y0ug":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "BoundingBoxDimension", ()=>BoundingBoxDimension);
+parcelHelpers.export(exports, "unitConversion", ()=>unitConversion);
+var _tslib = require("tslib");
+var _styleValueTypes = require("style-value-types");
+var _isKeyframesTargetJs = require("../../../animation/utils/is-keyframes-target.js");
+var _heyListen = require("hey-listen");
+var _transformJs = require("../../html/utils/transform.js");
+var _dimensionsJs = require("../value-types/dimensions.js");
+var positionalKeys = new Set([
+    "width",
+    "height",
+    "top",
+    "left",
+    "right",
+    "bottom",
+    "x",
+    "y"
+]);
+var isPositionalKey = function(key) {
+    return positionalKeys.has(key);
+};
+var hasPositionalKey = function(target) {
+    return Object.keys(target).some(isPositionalKey);
+};
+var setAndResetVelocity = function(value, to) {
+    // Looks odd but setting it twice doesn't render, it'll just
+    // set both prev and current to the latest value
+    value.set(to, false);
+    value.set(to);
+};
+var isNumOrPxType = function(v) {
+    return v === (0, _styleValueTypes.number) || v === (0, _styleValueTypes.px);
+};
+var BoundingBoxDimension;
+(function(BoundingBoxDimension) {
+    BoundingBoxDimension["width"] = "width";
+    BoundingBoxDimension["height"] = "height";
+    BoundingBoxDimension["left"] = "left";
+    BoundingBoxDimension["right"] = "right";
+    BoundingBoxDimension["top"] = "top";
+    BoundingBoxDimension["bottom"] = "bottom";
+})(BoundingBoxDimension || (BoundingBoxDimension = {}));
+var getPosFromMatrix = function(matrix, pos) {
+    return parseFloat(matrix.split(", ")[pos]);
+};
+var getTranslateFromMatrix = function(pos2, pos3) {
+    return function(_bbox, _a) {
+        var transform = _a.transform;
+        if (transform === "none" || !transform) return 0;
+        var matrix3d = transform.match(/^matrix3d\((.+)\)$/);
+        if (matrix3d) return getPosFromMatrix(matrix3d[1], pos3);
+        else {
+            var matrix = transform.match(/^matrix\((.+)\)$/);
+            if (matrix) return getPosFromMatrix(matrix[1], pos2);
+            else return 0;
+        }
+    };
+};
+var transformKeys = new Set([
+    "x",
+    "y",
+    "z"
+]);
+var nonTranslationalTransformKeys = (0, _transformJs.transformProps).filter(function(key) {
+    return !transformKeys.has(key);
+});
+function removeNonTranslationalTransform(visualElement) {
+    var removedTransforms = [];
+    nonTranslationalTransformKeys.forEach(function(key) {
+        var value = visualElement.getValue(key);
+        if (value !== undefined) {
+            removedTransforms.push([
+                key,
+                value.get()
+            ]);
+            value.set(key.startsWith("scale") ? 1 : 0);
+        }
+    });
+    // Apply changes to element before measurement
+    if (removedTransforms.length) visualElement.syncRender();
+    return removedTransforms;
+}
+var positionalValues = {
+    // Dimensions
+    width: function(_a) {
+        var x = _a.x;
+        return x.max - x.min;
+    },
+    height: function(_a) {
+        var y = _a.y;
+        return y.max - y.min;
+    },
+    top: function(_bbox, _a) {
+        var top = _a.top;
+        return parseFloat(top);
+    },
+    left: function(_bbox, _a) {
+        var left = _a.left;
+        return parseFloat(left);
+    },
+    bottom: function(_a, _b) {
+        var y = _a.y;
+        var top = _b.top;
+        return parseFloat(top) + (y.max - y.min);
+    },
+    right: function(_a, _b) {
+        var x = _a.x;
+        var left = _b.left;
+        return parseFloat(left) + (x.max - x.min);
+    },
+    // Transform
+    x: getTranslateFromMatrix(4, 13),
+    y: getTranslateFromMatrix(5, 14)
+};
+var convertChangedValueTypes = function(target, visualElement, changedKeys) {
+    var originBbox = visualElement.measureViewportBox();
+    var element = visualElement.getInstance();
+    var elementComputedStyle = getComputedStyle(element);
+    var display = elementComputedStyle.display, top = elementComputedStyle.top, left = elementComputedStyle.left, bottom = elementComputedStyle.bottom, right = elementComputedStyle.right, transform = elementComputedStyle.transform;
+    var originComputedStyle = {
+        top: top,
+        left: left,
+        bottom: bottom,
+        right: right,
+        transform: transform
+    };
+    // If the element is currently set to display: "none", make it visible before
+    // measuring the target bounding box
+    if (display === "none") visualElement.setStaticValue("display", target.display || "block");
+    // Apply the latest values (as set in checkAndConvertChangedValueTypes)
+    visualElement.syncRender();
+    var targetBbox = visualElement.measureViewportBox();
+    changedKeys.forEach(function(key) {
+        // Restore styles to their **calculated computed style**, not their actual
+        // originally set style. This allows us to animate between equivalent pixel units.
+        var value = visualElement.getValue(key);
+        setAndResetVelocity(value, positionalValues[key](originBbox, originComputedStyle));
+        target[key] = positionalValues[key](targetBbox, elementComputedStyle);
+    });
+    return target;
+};
+var checkAndConvertChangedValueTypes = function(visualElement, target, origin, transitionEnd) {
+    if (origin === void 0) origin = {};
+    if (transitionEnd === void 0) transitionEnd = {};
+    target = (0, _tslib.__assign)({}, target);
+    transitionEnd = (0, _tslib.__assign)({}, transitionEnd);
+    var targetPositionalKeys = Object.keys(target).filter(isPositionalKey);
+    // We want to remove any transform values that could affect the element's bounding box before
+    // it's measured. We'll reapply these later.
+    var removedTransformValues = [];
+    var hasAttemptedToRemoveTransformValues = false;
+    var changedValueTypeKeys = [];
+    targetPositionalKeys.forEach(function(key) {
+        var value = visualElement.getValue(key);
+        if (!visualElement.hasValue(key)) return;
+        var from = origin[key];
+        var to = target[key];
+        var fromType = (0, _dimensionsJs.findDimensionValueType)(from);
+        var toType;
+        // TODO: The current implementation of this basically throws an error
+        // if you try and do value conversion via keyframes. There's probably
+        // a way of doing this but the performance implications would need greater scrutiny,
+        // as it'd be doing multiple resize-remeasure operations.
+        if ((0, _isKeyframesTargetJs.isKeyframesTarget)(to)) {
+            var numKeyframes = to.length;
+            for(var i = to[0] === null ? 1 : 0; i < numKeyframes; i++)if (!toType) {
+                toType = (0, _dimensionsJs.findDimensionValueType)(to[i]);
+                (0, _heyListen.invariant)(toType === fromType || isNumOrPxType(fromType) && isNumOrPxType(toType), "Keyframes must be of the same dimension as the current value");
+            } else (0, _heyListen.invariant)((0, _dimensionsJs.findDimensionValueType)(to[i]) === toType, "All keyframes must be of the same type");
+        } else toType = (0, _dimensionsJs.findDimensionValueType)(to);
+        if (fromType !== toType) {
+            // If they're both just number or px, convert them both to numbers rather than
+            // relying on resize/remeasure to convert (which is wasteful in this situation)
+            if (isNumOrPxType(fromType) && isNumOrPxType(toType)) {
+                var current = value.get();
+                if (typeof current === "string") value.set(parseFloat(current));
+                if (typeof to === "string") target[key] = parseFloat(to);
+                else if (Array.isArray(to) && toType === (0, _styleValueTypes.px)) target[key] = to.map(parseFloat);
+            } else if ((fromType === null || fromType === void 0 ? void 0 : fromType.transform) && (toType === null || toType === void 0 ? void 0 : toType.transform) && (from === 0 || to === 0)) {
+                // If one or the other value is 0, it's safe to coerce it to the
+                // type of the other without measurement
+                if (from === 0) value.set(toType.transform(from));
+                else target[key] = fromType.transform(to);
+            } else {
+                // If we're going to do value conversion via DOM measurements, we first
+                // need to remove non-positional transform values that could affect the bbox measurements.
+                if (!hasAttemptedToRemoveTransformValues) {
+                    removedTransformValues = removeNonTranslationalTransform(visualElement);
+                    hasAttemptedToRemoveTransformValues = true;
+                }
+                changedValueTypeKeys.push(key);
+                transitionEnd[key] = transitionEnd[key] !== undefined ? transitionEnd[key] : target[key];
+                setAndResetVelocity(value, to);
+            }
+        }
+    });
+    if (changedValueTypeKeys.length) {
+        var convertedTarget = convertChangedValueTypes(target, visualElement, changedValueTypeKeys);
+        // If we removed transform values, reapply them before the next render
+        if (removedTransformValues.length) removedTransformValues.forEach(function(_a) {
+            var _b = (0, _tslib.__read)(_a, 2), key = _b[0], value = _b[1];
+            visualElement.getValue(key).set(value);
+        });
+        // Reapply original values
+        visualElement.syncRender();
+        return {
+            target: convertedTarget,
+            transitionEnd: transitionEnd
+        };
+    } else return {
+        target: target,
+        transitionEnd: transitionEnd
+    };
+};
+/**
+ * Convert value types for x/y/width/height/top/left/bottom/right
+ *
+ * Allows animation between `'auto'` -> `'100%'` or `0` -> `'calc(50% - 10vw)'`
+ *
+ * @internal
+ */ function unitConversion(visualElement, target, origin, transitionEnd) {
+    return hasPositionalKey(target) ? checkAndConvertChangedValueTypes(visualElement, target, origin, transitionEnd) : {
+        target: target,
+        transitionEnd: transitionEnd
+    };
+}
+
+},{"tslib":"edJ4f","style-value-types":"dhngi","../../../animation/utils/is-keyframes-target.js":"23L0g","hey-listen":"fFhg6","../../html/utils/transform.js":"cTSQv","../value-types/dimensions.js":"1Gv5I","@parcel/transformer-js/src/esmodule-helpers.js":"5oERU"}],"eSxAD":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "svgVisualElement", ()=>svgVisualElement);
+var _tslib = require("tslib");
+var _indexJs = require("../index.js");
+var _scrapeMotionValuesJs = require("./utils/scrape-motion-values.js");
+var _visualElementJs = require("../html/visual-element.js");
+var _buildAttrsJs = require("./utils/build-attrs.js");
+var _camelToDashJs = require("../dom/utils/camel-to-dash.js");
+var _camelCaseAttrsJs = require("./utils/camel-case-attrs.js");
+var _transformJs = require("../html/utils/transform.js");
+var _renderJs = require("./utils/render.js");
+var _defaultsJs = require("../dom/value-types/defaults.js");
+var _buildProjectionTransformJs = require("../html/utils/build-projection-transform.js");
+var svgVisualElement = (0, _indexJs.visualElement)((0, _tslib.__assign)((0, _tslib.__assign)({}, (0, _visualElementJs.htmlConfig)), {
+    getBaseTarget: function(props, key) {
+        return props[key];
+    },
+    readValueFromInstance: function(domElement, key) {
+        var _a;
+        if ((0, _transformJs.isTransformProp)(key)) return ((_a = (0, _defaultsJs.getDefaultValueType)(key)) === null || _a === void 0 ? void 0 : _a.default) || 0;
+        key = !(0, _camelCaseAttrsJs.camelCaseAttributes).has(key) ? (0, _camelToDashJs.camelToDash)(key) : key;
+        return domElement.getAttribute(key);
+    },
+    scrapeMotionValuesFromProps: (0, _scrapeMotionValuesJs.scrapeMotionValuesFromProps),
+    build: function(_element, renderState, latestValues, projection, layoutState, options, props) {
+        var isProjectionTranform = projection.isEnabled && layoutState.isHydrated;
+        (0, _buildAttrsJs.buildSVGAttrs)(renderState, latestValues, projection, layoutState, options, props.transformTemplate, isProjectionTranform ? (0, _buildProjectionTransformJs.buildLayoutProjectionTransform) : undefined, isProjectionTranform ? (0, _buildProjectionTransformJs.buildLayoutProjectionTransformOrigin) : undefined);
+    },
+    render: (0, _renderJs.renderSVG)
+}));
+
+},{"tslib":"edJ4f","../index.js":"hsOSl","./utils/scrape-motion-values.js":"7kpaA","../html/visual-element.js":"6nqVy","./utils/build-attrs.js":"kzWZd","../dom/utils/camel-to-dash.js":"i0CLn","./utils/camel-case-attrs.js":"7KtdX","../html/utils/transform.js":"cTSQv","./utils/render.js":"6lkLm","../dom/value-types/defaults.js":"48tHB","../html/utils/build-projection-transform.js":"19KsI","@parcel/transformer-js/src/esmodule-helpers.js":"5oERU"}],"egRLB":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "AnimatePresence", ()=>AnimatePresence);
+var _tslib = require("tslib");
+var _react = require("react");
+var _useForceUpdateJs = require("../../utils/use-force-update.js");
+var _presenceChildJs = require("./PresenceChild.js");
+var _sharedLayoutContextJs = require("../../context/SharedLayoutContext.js");
+function getChildKey(child) {
+    return child.key || "";
+}
+function updateChildLookup(children, allChildren) {
+    var seenChildren = new Set();
+    children.forEach(function(child) {
+        var key = getChildKey(child);
+        if (seenChildren) {
+            if (seenChildren.has(key)) console.warn('Children of AnimatePresence require unique keys. "' + key + '" is a duplicate.');
+            seenChildren.add(key);
+        }
+        allChildren.set(key, child);
+    });
+}
+function onlyElements(children) {
+    var filtered = [];
+    // We use forEach here instead of map as map mutates the component key by preprending `.$`
+    (0, _react.Children).forEach(children, function(child) {
+        if ((0, _react.isValidElement)(child)) filtered.push(child);
+    });
+    return filtered;
+}
+/**
+ * `AnimatePresence` enables the animation of components that have been removed from the tree.
+ *
+ * When adding/removing more than a single child, every child **must** be given a unique `key` prop.
+ *
+ * @library
+ *
+ * Any `Frame` components that have an `exit` property defined will animate out when removed from
+ * the tree.
+ *
+ * ```jsx
+ * import { Frame, AnimatePresence } from 'framer'
+ *
+ * // As items are added and removed from `items`
+ * export function Items({ items }) {
+ *   return (
+ *     <AnimatePresence>
+ *       {items.map(item => (
+ *         <Frame
+ *           key={item.id}
+ *           initial={{ opacity: 0 }}
+ *           animate={{ opacity: 1 }}
+ *           exit={{ opacity: 0 }}
+ *         />
+ *       ))}
+ *     </AnimatePresence>
+ *   )
+ * }
+ * ```
+ *
+ * You can sequence exit animations throughout a tree using variants.
+ *
+ * @motion
+ *
+ * Any `motion` components that have an `exit` property defined will animate out when removed from
+ * the tree.
+ *
+ * ```jsx
+ * import { motion, AnimatePresence } from 'framer-motion'
+ *
+ * export const Items = ({ items }) => (
+ *   <AnimatePresence>
+ *     {items.map(item => (
+ *       <motion.div
+ *         key={item.id}
+ *         initial={{ opacity: 0 }}
+ *         animate={{ opacity: 1 }}
+ *         exit={{ opacity: 0 }}
+ *       />
+ *     ))}
+ *   </AnimatePresence>
+ * )
+ * ```
+ *
+ * You can sequence exit animations throughout a tree using variants.
+ *
+ * If a child contains multiple `motion` components with `exit` props, it will only unmount the child
+ * once all `motion` components have finished animating out. Likewise, any components using
+ * `usePresence` all need to call `safeToRemove`.
+ *
+ * @public
+ */ var AnimatePresence = function(_a) {
+    var children = _a.children, custom = _a.custom, _b = _a.initial, initial = _b === void 0 ? true : _b, onExitComplete = _a.onExitComplete, exitBeforeEnter = _a.exitBeforeEnter, _c = _a.presenceAffectsLayout, presenceAffectsLayout = _c === void 0 ? true : _c;
+    // We want to force a re-render once all exiting animations have finished. We
+    // either use a local forceRender function, or one from a parent context if it exists.
+    var forceRender = (0, _useForceUpdateJs.useForceUpdate)();
+    var layoutContext = (0, _react.useContext)((0, _sharedLayoutContextJs.SharedLayoutContext));
+    if ((0, _sharedLayoutContextJs.isSharedLayout)(layoutContext)) forceRender = layoutContext.forceUpdate;
+    var isInitialRender = (0, _react.useRef)(true);
+    // Filter out any children that aren't ReactElements. We can only track ReactElements with a props.key
+    var filteredChildren = onlyElements(children);
+    // Keep a living record of the children we're actually rendering so we
+    // can diff to figure out which are entering and exiting
+    var presentChildren = (0, _react.useRef)(filteredChildren);
+    // A lookup table to quickly reference components by key
+    var allChildren = (0, _react.useRef)(new Map()).current;
+    // A living record of all currently exiting components.
+    var exiting = (0, _react.useRef)(new Set()).current;
+    updateChildLookup(filteredChildren, allChildren);
+    // If this is the initial component render, just deal with logic surrounding whether
+    // we play onMount animations or not.
+    if (isInitialRender.current) {
+        isInitialRender.current = false;
+        return _react.createElement(_react.Fragment, null, filteredChildren.map(function(child) {
+            return _react.createElement((0, _presenceChildJs.PresenceChild), {
+                key: getChildKey(child),
+                isPresent: true,
+                initial: initial ? undefined : false,
+                presenceAffectsLayout: presenceAffectsLayout
+            }, child);
+        }));
+    }
+    // If this is a subsequent render, deal with entering and exiting children
+    var childrenToRender = (0, _tslib.__spreadArray)([], (0, _tslib.__read)(filteredChildren));
+    // Diff the keys of the currently-present and target children to update our
+    // exiting list.
+    var presentKeys = presentChildren.current.map(getChildKey);
+    var targetKeys = filteredChildren.map(getChildKey);
+    // Diff the present children with our target children and mark those that are exiting
+    var numPresent = presentKeys.length;
+    for(var i = 0; i < numPresent; i++){
+        var key = presentKeys[i];
+        if (targetKeys.indexOf(key) === -1) exiting.add(key);
+        else // In case this key has re-entered, remove from the exiting list
+        exiting.delete(key);
+    }
+    // If we currently have exiting children, and we're deferring rendering incoming children
+    // until after all current children have exiting, empty the childrenToRender array
+    if (exitBeforeEnter && exiting.size) childrenToRender = [];
+    // Loop through all currently exiting components and clone them to overwrite `animate`
+    // with any `exit` prop they might have defined.
+    exiting.forEach(function(key) {
+        // If this component is actually entering again, early return
+        if (targetKeys.indexOf(key) !== -1) return;
+        var child = allChildren.get(key);
+        if (!child) return;
+        var insertionIndex = presentKeys.indexOf(key);
+        var onExit = function() {
+            allChildren.delete(key);
+            exiting.delete(key);
+            // Remove this child from the present children
+            var removeIndex = presentChildren.current.findIndex(function(presentChild) {
+                return presentChild.key === key;
+            });
+            presentChildren.current.splice(removeIndex, 1);
+            // Defer re-rendering until all exiting children have indeed left
+            if (!exiting.size) {
+                presentChildren.current = filteredChildren;
+                forceRender();
+                onExitComplete && onExitComplete();
+            }
+        };
+        childrenToRender.splice(insertionIndex, 0, _react.createElement((0, _presenceChildJs.PresenceChild), {
+            key: getChildKey(child),
+            isPresent: false,
+            onExitComplete: onExit,
+            custom: custom,
+            presenceAffectsLayout: presenceAffectsLayout
+        }, child));
+    });
+    // Add `MotionContext` even to children that don't need it to ensure we're rendering
+    // the same tree between renders
+    childrenToRender = childrenToRender.map(function(child) {
+        var key = child.key;
+        return exiting.has(key) ? child : _react.createElement((0, _presenceChildJs.PresenceChild), {
+            key: getChildKey(child),
+            isPresent: true,
+            presenceAffectsLayout: presenceAffectsLayout
+        }, child);
+    });
+    presentChildren.current = childrenToRender;
+    if (exitBeforeEnter && childrenToRender.length > 1) console.warn("You're attempting to animate multiple children within AnimatePresence, but its exitBeforeEnter prop is set to true. This will lead to odd visual behaviour.");
+    return _react.createElement(_react.Fragment, null, exiting.size ? childrenToRender : childrenToRender.map(function(child) {
+        return (0, _react.cloneElement)(child);
+    }));
+};
+
+},{"tslib":"edJ4f","react":"9sfFD","../../utils/use-force-update.js":"kZHdk","./PresenceChild.js":"jv9v7","../../context/SharedLayoutContext.js":"9VpnA","@parcel/transformer-js/src/esmodule-helpers.js":"5oERU"}],"kZHdk":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "useForceUpdate", ()=>useForceUpdate);
+var _tslib = require("tslib");
+var _react = require("react");
+var _useUnmountEffectJs = require("./use-unmount-effect.js");
+function useForceUpdate() {
+    var unloadingRef = (0, _react.useRef)(false);
+    var _a = (0, _tslib.__read)((0, _react.useState)(0), 2), forcedRenderCount = _a[0], setForcedRenderCount = _a[1];
+    (0, _useUnmountEffectJs.useUnmountEffect)(function() {
+        return unloadingRef.current = true;
+    });
+    return (0, _react.useCallback)(function() {
+        !unloadingRef.current && setForcedRenderCount(forcedRenderCount + 1);
+    }, [
+        forcedRenderCount
+    ]);
+}
+
+},{"tslib":"edJ4f","react":"9sfFD","./use-unmount-effect.js":"1ewES","@parcel/transformer-js/src/esmodule-helpers.js":"5oERU"}],"jv9v7":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "PresenceChild", ()=>PresenceChild);
+var _react = require("react");
+var _presenceContextJs = require("../../context/PresenceContext.js");
+var _useConstantJs = require("../../utils/use-constant.js");
+var presenceId = 0;
+function getPresenceId() {
+    var id = presenceId;
+    presenceId++;
+    return id;
+}
+var PresenceChild = function(_a) {
+    var children = _a.children, initial = _a.initial, isPresent = _a.isPresent, onExitComplete = _a.onExitComplete, custom = _a.custom, presenceAffectsLayout = _a.presenceAffectsLayout;
+    var presenceChildren = (0, _useConstantJs.useConstant)(newChildrenMap);
+    var id = (0, _useConstantJs.useConstant)(getPresenceId);
+    var context = (0, _react.useMemo)(function() {
+        return {
+            id: id,
+            initial: initial,
+            isPresent: isPresent,
+            custom: custom,
+            onExitComplete: function(childId) {
+                presenceChildren.set(childId, true);
+                var allComplete = true;
+                presenceChildren.forEach(function(isComplete) {
+                    if (!isComplete) allComplete = false;
+                });
+                allComplete && (onExitComplete === null || onExitComplete === void 0 || onExitComplete());
+            },
+            register: function(childId) {
+                presenceChildren.set(childId, false);
+                return function() {
+                    return presenceChildren.delete(childId);
+                };
+            }
+        };
+    }, /**
+     * If the presence of a child affects the layout of the components around it,
+     * we want to make a new context value to ensure they get re-rendered
+     * so they can detect that layout change.
+     */ presenceAffectsLayout ? undefined : [
+        isPresent
+    ]);
+    (0, _react.useMemo)(function() {
+        presenceChildren.forEach(function(_, key) {
+            return presenceChildren.set(key, false);
+        });
+    }, [
+        isPresent
+    ]);
+    /**
+     * If there's no `motion` components to fire exit animations, we want to remove this
+     * component immediately.
+     */ _react.useEffect(function() {
+        !isPresent && !presenceChildren.size && (onExitComplete === null || onExitComplete === void 0 || onExitComplete());
+    }, [
+        isPresent
+    ]);
+    return _react.createElement((0, _presenceContextJs.PresenceContext).Provider, {
+        value: context
+    }, children);
+};
+function newChildrenMap() {
+    return new Map();
+}
+
+},{"react":"9sfFD","../../context/PresenceContext.js":"iCJR7","../../utils/use-constant.js":"fUKVy","@parcel/transformer-js/src/esmodule-helpers.js":"5oERU"}],"aun22":[function(require,module,exports) {
+var $parcel$ReactRefreshHelpers$f31f = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
+var prevRefreshReg = window.$RefreshReg$;
+var prevRefreshSig = window.$RefreshSig$;
+$parcel$ReactRefreshHelpers$f31f.prelude(module);
 
 try {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
@@ -13724,6 +23054,7 @@ function LoginWithGoogleButton() {
                     body: JSON.stringify(response)
                 });
                 const resJson = await res.json();
+                localStorage.setItem("crUserData", JSON.stringify(resJson));
                 console.log("res res", resJson);
                 (0, _reactHotToastDefault.default).success("Profile loaded!");
                 const { email , name , picture  } = resJson;
@@ -13761,12 +23092,12 @@ function LoginWithGoogleButton() {
             id: "buttonDiv"
         }, void 0, false, {
             fileName: "app/components/LoginWithGoogleButton.js",
-            lineNumber: 54,
+            lineNumber: 56,
             columnNumber: 13
         }, this)
     }, void 0, false, {
         fileName: "app/components/LoginWithGoogleButton.js",
-        lineNumber: 53,
+        lineNumber: 55,
         columnNumber: 9
     }, this);
 }
@@ -13776,12 +23107,12 @@ exports.default = LoginWithGoogleButton;
 var _c;
 $RefreshReg$(_c, "LoginWithGoogleButton");
 
-  $parcel$ReactRefreshHelpers$df03.postlude(module);
+  $parcel$ReactRefreshHelpers$f31f.postlude(module);
 } finally {
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","../contexts/UserContext":"2hYBu","react-hot-toast":"gi0hv","../utils/broadcastChatEntrace":"9LZd3","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"gi0hv":[function(require,module,exports) {
+},{"react/jsx-dev-runtime":"eGH5i","react":"9sfFD","../contexts/UserContext":"gJPKA","react-hot-toast":"6huAF","../utils/broadcastChatEntrace":"lxQ3X","@parcel/transformer-js/src/esmodule-helpers.js":"5oERU","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"ftrPk"}],"6huAF":[function(require,module,exports) {
 "use client";
 "use strict";
 var Y = Object.create;
@@ -14365,7 +23696,7 @@ var Ie = ({ id: e , className: t , style: o , onHeightUpdate: s , children: r  }
 };
 var _e = n;
 
-},{"41e3a708474ea8b4":"21dqq","2ed40fac8714a814":"gILVw"}],"gILVw":[function(require,module,exports) {
+},{"41e3a708474ea8b4":"9sfFD","2ed40fac8714a814":"3qGjY"}],"3qGjY":[function(require,module,exports) {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
 parcelHelpers.export(exports, "css", ()=>u);
@@ -14454,7 +23785,7 @@ function j(e, t) {
     };
 }
 
-},{"@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"9LZd3":[function(require,module,exports) {
+},{"@parcel/transformer-js/src/esmodule-helpers.js":"5oERU"}],"lxQ3X":[function(require,module,exports) {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
 parcelHelpers.export(exports, "broadCastChatEntrance", ()=>broadCastChatEntrance);
@@ -14462,10 +23793,10 @@ function broadCastChatEntrance(name) {
     socket.emit("entered the chat", name);
 }
 
-},{"@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"2Kqui":[function(require,module,exports) {
-module.exports = require("208aea94075cb92e").getBundleURL("eXLhp") + "github-mark.4310cae3.svg" + "?" + Date.now();
+},{"@parcel/transformer-js/src/esmodule-helpers.js":"5oERU"}],"7xIYQ":[function(require,module,exports) {
+module.exports = require("9470336744fcdd1e").getBundleURL("iFRp6") + "github-mark.8928d387.svg" + "?" + Date.now();
 
-},{"208aea94075cb92e":"lgJ39"}],"lgJ39":[function(require,module,exports) {
+},{"9470336744fcdd1e":"jkqJ4"}],"jkqJ4":[function(require,module,exports) {
 "use strict";
 var bundleURL = {};
 function getBundleURLCached(id) {
@@ -14499,11 +23830,11 @@ exports.getBundleURL = getBundleURLCached;
 exports.getBaseURL = getBaseURL;
 exports.getOrigin = getOrigin;
 
-},{}],"bKvwO":[function(require,module,exports) {
-var $parcel$ReactRefreshHelpers$1e33 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
+},{}],"3HXnU":[function(require,module,exports) {
+var $parcel$ReactRefreshHelpers$613f = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
 var prevRefreshReg = window.$RefreshReg$;
 var prevRefreshSig = window.$RefreshSig$;
-$parcel$ReactRefreshHelpers$1e33.prelude(module);
+$parcel$ReactRefreshHelpers$613f.prelude(module);
 
 try {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
@@ -14670,12 +24001,12 @@ exports.default = BgIconsRandom;
 var _c;
 $RefreshReg$(_c, "BgIconsRandom");
 
-  $parcel$ReactRefreshHelpers$1e33.postlude(module);
+  $parcel$ReactRefreshHelpers$613f.postlude(module);
 } finally {
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"lOjBx":[function(require,module,exports) {
+},{"react/jsx-dev-runtime":"eGH5i","react":"9sfFD","@parcel/transformer-js/src/esmodule-helpers.js":"5oERU","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"ftrPk"}],"gtkFg":[function(require,module,exports) {
 "use strict";
 var m = require("46381bd6bc66197b");
 var i = m.__SECRET_INTERNALS_DO_NOT_USE_OR_YOU_WILL_BE_FIRED;
@@ -14696,7 +24027,7 @@ exports.hydrateRoot = function(c, h, o) {
     }
 };
 
-},{"46381bd6bc66197b":"j6uA9"}],"j6uA9":[function(require,module,exports) {
+},{"46381bd6bc66197b":"1byDl"}],"1byDl":[function(require,module,exports) {
 "use strict";
 function checkDCE() {
     /* global __REACT_DEVTOOLS_GLOBAL_HOOK__ */ if (typeof __REACT_DEVTOOLS_GLOBAL_HOOK__ === "undefined" || typeof __REACT_DEVTOOLS_GLOBAL_HOOK__.checkDCE !== "function") return;
@@ -14712,7 +24043,7 @@ function checkDCE() {
 }
 module.exports = require("e3cf0eaa2eae3833");
 
-},{"e3cf0eaa2eae3833":"3iA9v"}],"3iA9v":[function(require,module,exports) {
+},{"e3cf0eaa2eae3833":"kEQtu"}],"kEQtu":[function(require,module,exports) {
 /**
  * @license React
  * react-dom.development.js
@@ -35697,11 +45028,11 @@ module.exports = require("e3cf0eaa2eae3833");
     /* global __REACT_DEVTOOLS_GLOBAL_HOOK__ */ if (typeof __REACT_DEVTOOLS_GLOBAL_HOOK__ !== "undefined" && typeof __REACT_DEVTOOLS_GLOBAL_HOOK__.registerInternalModuleStop === "function") __REACT_DEVTOOLS_GLOBAL_HOOK__.registerInternalModuleStop(new Error());
 })();
 
-},{"f872a5220198df3f":"21dqq","936149f790350b6":"juvHo"}],"juvHo":[function(require,module,exports) {
+},{"f872a5220198df3f":"9sfFD","936149f790350b6":"dTJ7n"}],"dTJ7n":[function(require,module,exports) {
 "use strict";
 module.exports = require("31872ece4c0f67b3");
 
-},{"31872ece4c0f67b3":"RqdIf"}],"RqdIf":[function(require,module,exports) {
+},{"31872ece4c0f67b3":"aUjmi"}],"aUjmi":[function(require,module,exports) {
 /**
  * @license React
  * scheduler.development.js
@@ -36155,6 +45486,6 @@ module.exports = require("31872ece4c0f67b3");
     /* global __REACT_DEVTOOLS_GLOBAL_HOOK__ */ if (typeof __REACT_DEVTOOLS_GLOBAL_HOOK__ !== "undefined" && typeof __REACT_DEVTOOLS_GLOBAL_HOOK__.registerInternalModuleStop === "function") __REACT_DEVTOOLS_GLOBAL_HOOK__.registerInternalModuleStop(new Error());
 })();
 
-},{}]},["1xC6H","e23ce","gp8bJ"], "gp8bJ", "parcelRequire7763")
+},{}]},["fp5lG","gRjRn","34bti"], "34bti", "parcelRequire7763")
 
-//# sourceMappingURL=index.abd9a962.js.map
+//# sourceMappingURL=index.51271794.js.map

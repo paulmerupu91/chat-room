@@ -558,6 +558,7 @@ function hmrAccept(bundle, id) {
 },{}],"78oAI":[function(require,module,exports) {
 var _dbQueries = require("./includes/db_queries");
 var _authentication = require("./includes/authentication");
+var _defaultRooms = require("./../api/defaultRooms");
 var $parcel$__dirname = require("7a2b56c44e27b7bd").resolve(__dirname, "../../api");
 const express = require("818570491c2d1192");
 const app = express();
@@ -581,6 +582,12 @@ app.use(bodyParser.urlencoded({
 ;
 const lastTenMessages = [];
 app.get("/", (req, res)=>{
+    res.sendFile(path.resolve($parcel$__dirname + "/../dist/frontend/index.html"));
+});
+app.get("/rooms/:city", (req, res)=>{
+    // const path = req.path;
+    const city = req.params.city;
+    // res.send( 'In rooms path: ' + city );
     res.sendFile(path.resolve($parcel$__dirname + "/../dist/frontend/index.html"));
 });
 app.get("/api/", (req, res)=>{
@@ -613,7 +620,7 @@ io.on("connection", (socket)=>{
     });
 });
 
-},{"7a2b56c44e27b7bd":"path","818570491c2d1192":"express","7785ffb89647a237":"https","b1ef9fc55475aa0b":"node:fs","5629d851821f53d5":"body-parser","c59a704518e8719a":"socket.io","./includes/db_queries":"Ep6EO","./includes/authentication":"ciHe0"}],"Ep6EO":[function(require,module,exports) {
+},{"7a2b56c44e27b7bd":"path","818570491c2d1192":"express","7785ffb89647a237":"https","b1ef9fc55475aa0b":"node:fs","5629d851821f53d5":"body-parser","c59a704518e8719a":"socket.io","./includes/db_queries":"Ep6EO","./includes/authentication":"ciHe0","./../api/defaultRooms":"dtvbu"}],"Ep6EO":[function(require,module,exports) {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
 // main()
@@ -764,6 +771,31 @@ async function loginCheck(req, res) {
     }
 }
 
-},{"./db_queries":"Ep6EO","jwt-decode":"jwt-decode","32c191d91cf4ea72":"google-auth-library","@parcel/transformer-js/src/esmodule-helpers.js":"i8bdk"}]},["cClcK","78oAI"], "78oAI", "parcelRequire7763")
+},{"./db_queries":"Ep6EO","jwt-decode":"jwt-decode","32c191d91cf4ea72":"google-auth-library","@parcel/transformer-js/src/esmodule-helpers.js":"i8bdk"}],"dtvbu":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "defaultRooms", ()=>defaultRooms);
+const defaultRooms = [
+    {
+        name: "New York"
+    },
+    {
+        name: "San Diego"
+    },
+    {
+        name: "Miami"
+    },
+    {
+        name: "Chicago"
+    },
+    {
+        name: "Austin"
+    },
+    {
+        name: "Boston"
+    }
+];
+
+},{"@parcel/transformer-js/src/esmodule-helpers.js":"i8bdk"}]},["cClcK","78oAI"], "78oAI", "parcelRequire7763")
 
 //# sourceMappingURL=index.js.map

@@ -16,13 +16,21 @@ const io = new Server(server);
 import './includes/db_queries';
 
 import { loginCheck } from './includes/authentication';
+import { defaultRooms } from './../api/defaultRooms';
+
 app.use(bodyParser.json()) // for parsing application/json
 app.use(bodyParser.urlencoded({ extended: true })) // for parsing application/x-www-form-urlencoded
-
 
 const lastTenMessages = [];
 
 app.get( '/', ( req, res ) => {
+    res.sendFile( path.resolve( __dirname + '/../dist/frontend/index.html' ) );
+} );
+
+app.get( '/rooms/:city', ( req, res ) => {
+    // const path = req.path;
+    const city = req.params.city;
+    // res.send( 'In rooms path: ' + city );
     res.sendFile( path.resolve( __dirname + '/../dist/frontend/index.html' ) );
 } );
 
