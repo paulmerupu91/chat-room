@@ -1,13 +1,13 @@
 import React, { useState, useEffect, useContext } from "react";
 import UserContext from "../contexts/UserContext";
 import NavDropdown from "./NavDropdown";
+import { getRoomSlug } from "./../utils/getRoomSlug";
 
 function NavBar() {
 	const { user, setUser, setUserDataInClientChecked } = useContext(UserContext);
     const [ isVisibleDropdown, setIsVisibleDropdown ] = useState();
 
-    const pathSegments = window.location.pathname.split( '/' );
-    const roomName = pathSegments.pop() || pathSegments.pop();
+    const roomName = getRoomSlug();
     console.log( 'roomName', roomName );
 
 	const handleLogout = (e) => {

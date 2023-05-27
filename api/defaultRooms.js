@@ -1,20 +1,30 @@
 export const defaultRooms = [
     {
-        name: 'New York'
+        name: 'New York',
+        slug: 'new-york'
     },
     {
-        name: 'San Diego'
+        name: 'San Diego',
+        slug: 'san-diego'
     },
     {
-        name: 'Miami'
+        name: 'Miami',
+        slug: 'miami'
     },
     {
-        name: 'Chicago'
+        name: 'Chicago',
+        slug: 'chicago'
     },
     {
-        name: 'Austin'
+        name: 'Austin',
+        slug: 'austin'
     },
     {
-        name: 'Boston'
+        name: 'Boston',
+        slug: 'boston'
     },
+    {
+        name: '',
+        slug: ''
+    }
 ]

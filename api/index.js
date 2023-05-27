@@ -1,6 +1,7 @@
 const express = require( 'express' );
 const app = express();
 const https = require( 'https' );
+const http = require( 'http' );
 const path = require( 'path' );
 const fs = require( 'node:fs' );
 var privateKey = fs.readFileSync( __dirname + '/../ssl-files/localhost.key' );
@@ -21,7 +22,10 @@ import { defaultRooms } from './../api/defaultRooms';
 app.use(bodyParser.json()) // for parsing application/json
 app.use(bodyParser.urlencoded({ extended: true })) // for parsing application/x-www-form-urlencoded
 
-const lastTenMessages = [];
+const lastTenMessages = {}
+defaultRooms.forEach( room => {
+    lastTenMessages[room.slug] = [];
+} );
 
 app.get( '/', ( req, res ) => {
     res.sendFile( path.resolve( __dirname + '/../dist/frontend/index.html' ) );
@@ -30,8 +34,12 @@ app.get( '/', ( req, res ) => {
 app.get( '/rooms/:city', ( req, res ) => {
     // const path = req.path;
     const city = req.params.city;
+    if( defaultRooms.map( room => room.slug )?.includes( city ) ){
+        res.sendFile( path.resolve( __dirname + '/../dist/frontend/index.html' ) );
+    } else {
+        res.status(404).send("Sorry can't find that!")
+    }
     // res.send( 'In rooms path: ' + city );
-    res.sendFile( path.resolve( __dirname + '/../dist/frontend/index.html' ) );
 } );
 
 app.get( '/api/', ( req, res ) => {
@@ -51,24 +59,32 @@ server.listen( portNumber, () => {
 
 
 
-io.on('connection', (socket) => {
-    console.log('a user connected');
+defaultRooms.forEach( room => {
+    const nsp = io.of( `/${room.slug}` );
+    nsp.on('connection', (socket) => {
+        console.log('a user connected');
 
-    socket.on('entered the chat', ( name ) => {
-        socket.broadcast.emit('entered the chat', name);
-    } );
-    socket.on('disconnect', ( name ) => {
-        socket.broadcast.emit('left the chat', name);
-        console.log('user disconnected');
-    });
-
-    // New chat message
-    socket.on('chat message', (data) => {
-        if( lastTenMessages.length > 9 ){
-            lastTenMessages.shift();
+        if( lastTenMessages[room.slug] == 'undefined' ){
+            lastTenMessages[room.slug] = [];
         }
-        lastTenMessages.push( data );
-        console.log( 'message data', data );
-        io.emit('chat message', data);
-    });
-});
+    
+        socket.on('entered the chat', ( name ) => {
+            socket.broadcast.emit(`entered the chat`, name);
+        } );
+        socket.on('disconnect', ( name ) => {
+            socket.broadcast.emit('left the chat', name);
+            console.log('user disconnected');
+        });
+    
+        // New chat message
+        socket.on('chat message', (data) => {
+            if( lastTenMessages[room.slug]?.length > 9 ){
+                lastTenMessages[room.slug].shift();
+            }
+            lastTenMessages[room.slug].push( data );
+            console.log( 'message data', data );
+            nsp.emit('chat message', data);
+        });
+    })
+} )
+

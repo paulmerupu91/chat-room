@@ -5675,34 +5675,45 @@ var _githubMarkSvg = require("./images/github-mark.svg");
 var _githubMarkSvgDefault = parcelHelpers.interopDefault(_githubMarkSvg);
 var _bgIconsRandom = require("./components/BgIconsRandom");
 var _bgIconsRandomDefault = parcelHelpers.interopDefault(_bgIconsRandom);
+var _useSocket = require("./utils/useSocket");
+var _getRoomSlug = require("./utils/getRoomSlug");
+var _playAudioNotification = require("./utils/playAudioNotification");
+var _logoutStateComponent = require("./components/LogoutStateComponent");
+var _logoutStateComponentDefault = parcelHelpers.interopDefault(_logoutStateComponent);
 var _s = $RefreshSig$();
+const roomSlug = (0, _getRoomSlug.getRoomSlug)();
 function toastEnteredTheChat(name) {
     (0, _reactHotToastDefault.default).success(`${name} joined.`);
 }
 console.log("setting clone");
-let setMessagesClone = ()=>{};
-const audio = new Audio("assets/notification.mp3");
-socket.on("entered the chat", toastEnteredTheChat);
-socket.on("chat message", function(data) {
-    console.log("Playing alert sound", audio);
-    audio.play();
-    console.log("data", data);
-    setMessagesClone((messages)=>{
-        if (messages && messages.length > 0) return [
-            ...messages,
-            data
-        ];
-        else return [
-            data
-        ];
+let setMessagesGlob = ()=>{};
+let setSocketLoadedGlob = ()=>{};
+(0, _useSocket.useSocket)((socket)=>{
+    console.log("Socket loaded in App.js", typeof setSocketLoadedGlob);
+    socket.on("entered the chat", toastEnteredTheChat);
+    socket.on("chat message", function(data) {
+        (0, _playAudioNotification.playAudioNotification)();
+        console.log("data", data);
+        setMessagesGlob((messages)=>{
+            if (messages && messages.length > 0) return [
+                ...messages,
+                data
+            ];
+            else return [
+                data
+            ];
+        });
     });
+    setSocketLoadedGlob(true);
 });
 function App() {
     _s();
     const [user, setUser] = (0, _react.useState)(null);
     const [userDataInClientChecked, setUserDataInClientChecked] = (0, _react.useState)(false);
     const [messages, setMessages] = (0, _react.useState)([]);
-    setMessagesClone = setMessages;
+    const [socketLoaded, setSocketLoaded] = (0, _react.useState)(false);
+    setMessagesGlob = setMessages;
+    setSocketLoadedGlob = setSocketLoaded;
     (0, _react.useEffect)(()=>{
         // Load user data from localStorage if exists
         const userData = localStorage.getItem("crUserData");
@@ -5717,105 +5728,44 @@ function App() {
         }
         setUserDataInClientChecked(true);
         fetch(`/api`).then((res)=>res.json()).then((res)=>{
-            if (res && res.lastTenMessages && res.lastTenMessages.length > 0) {
+            if (res && res.lastTenMessages && res.lastTenMessages[roomSlug] && res.lastTenMessages[roomSlug].length > 0) {
                 if (messages && messages.length) setMessages([
-                    ...res.lastTenMessages,
+                    ...res.lastTenMessages[roomSlug],
                     ...messages
                 ]);
-                else setMessages(res.lastTenMessages);
+                else setMessages(res.lastTenMessages[roomSlug]);
             }
         });
     }, []);
-    const LogoutStateComponent = ()=>{
-        return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-            className: "py-5 h-100 overflow-hidden ",
-            children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                className: "container h-100",
-                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                    className: "row h-100",
-                    children: [
-                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                            className: "col-md-8 col-12 h-100 d-flex flex-column justify-content-center",
-                            children: [
-                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                    className: "large-cta font-black mb-5",
-                                    children: [
-                                        "Join the ",
-                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
-                                            className: "text-secondary",
-                                            children: "chat"
-                                        }, void 0, false, {
-                                            fileName: "app/App.js",
-                                            lineNumber: 81,
-                                            columnNumber: 42
-                                        }, this),
-                                        "."
-                                    ]
-                                }, void 0, true, {
-                                    fileName: "app/App.js",
-                                    lineNumber: 80,
-                                    columnNumber: 29
-                                }, this),
-                                !user && userDataInClientChecked && /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _loginWithGoogleButtonDefault.default), {
-                                    user: user,
-                                    setUser: setUser
-                                }, void 0, false, {
-                                    fileName: "app/App.js",
-                                    lineNumber: 83,
-                                    columnNumber: 67
-                                }, this)
-                            ]
-                        }, void 0, true, {
-                            fileName: "app/App.js",
-                            lineNumber: 79,
-                            columnNumber: 25
-                        }, this),
-                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                            className: "col-md-4 col-12",
-                            children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _bgIconsRandomDefault.default), {}, void 0, false, {
-                                fileName: "app/App.js",
-                                lineNumber: 86,
-                                columnNumber: 29
-                            }, this)
-                        }, void 0, false, {
-                            fileName: "app/App.js",
-                            lineNumber: 85,
-                            columnNumber: 25
-                        }, this)
-                    ]
-                }, void 0, true, {
-                    fileName: "app/App.js",
-                    lineNumber: 78,
-                    columnNumber: 21
-                }, this)
-            }, void 0, false, {
-                fileName: "app/App.js",
-                lineNumber: 75,
-                columnNumber: 17
-            }, this)
-        }, void 0, false, {
-            fileName: "app/App.js",
-            lineNumber: 74,
-            columnNumber: 13
-        }, this);
-    };
+    const elSiteIcon = document.getElementById("site-icon");
+    const srcIconNotif = document.getElementById("site-icon-notif").src;
+    const srcIconNormal = document.getElementById("site-icon-normal").src;
+    (0, _react.useEffect)(()=>{
+        elSiteIcon.href = srcIconNotif;
+        setTimeout(()=>{
+            elSiteIcon.href = srcIconNormal;
+        }, 4000);
+    }, [
+        messages
+    ]);
     return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _jsxDevRuntime.Fragment), {
         children: [
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _userContextDefault.default).Provider, {
                 value: {
                     user,
                     setUser,
-                    setUserDataInClientChecked
+                    setUserDataInClientChecked,
+                    userDataInClientChecked
                 },
                 children: [
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _navBarDefault.default), {}, void 0, false, {
                         fileName: "app/App.js",
-                        lineNumber: 101,
+                        lineNumber: 107,
                         columnNumber: 13
                     }, this),
-                    !user?.email && /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(LogoutStateComponent, {}, void 0, false, {
+                    !user?.email && /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _logoutStateComponentDefault.default), {}, void 0, false, {
                         fileName: "app/App.js",
-                        lineNumber: 103,
+                        lineNumber: 109,
                         columnNumber: 33
                     }, this),
                     user?.email && /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _chatContainerDefault.default), {
@@ -5823,18 +5773,18 @@ function App() {
                         setMessages: setMessages
                     }, void 0, false, {
                         fileName: "app/App.js",
-                        lineNumber: 104,
+                        lineNumber: 110,
                         columnNumber: 30
                     }, this),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactHotToast.Toaster), {}, void 0, false, {
                         fileName: "app/App.js",
-                        lineNumber: 106,
+                        lineNumber: 112,
                         columnNumber: 13
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "app/App.js",
-                lineNumber: 99,
+                lineNumber: 105,
                 columnNumber: 9
             }, this),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -5851,7 +5801,7 @@ function App() {
                             className: "me-2"
                         }, void 0, false, {
                             fileName: "app/App.js",
-                            lineNumber: 111,
+                            lineNumber: 117,
                             columnNumber: 17
                         }, this),
                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
@@ -5859,24 +5809,24 @@ function App() {
                             children: "Github Repository"
                         }, void 0, false, {
                             fileName: "app/App.js",
-                            lineNumber: 112,
+                            lineNumber: 118,
                             columnNumber: 17
                         }, this)
                     ]
                 }, void 0, true, {
                     fileName: "app/App.js",
-                    lineNumber: 110,
+                    lineNumber: 116,
                     columnNumber: 13
                 }, this)
             }, void 0, false, {
                 fileName: "app/App.js",
-                lineNumber: 109,
+                lineNumber: 115,
                 columnNumber: 9
             }, this)
         ]
     }, void 0, true);
 }
-_s(App, "i1FXMZQcewWGaTFiqZA9oDgK9Nk=");
+_s(App, "iJxmSLSKmKyjlg47Vl3SBgFeErA=");
 _c = App;
 exports.default = App;
 var _c;
@@ -5887,7 +5837,7 @@ $RefreshReg$(_c, "App");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"eGH5i","react":"9sfFD","./components/ChatContainer":"jVj6X","./components/ChatRoomSelect":"ibShd","./components/NavBar":"cGTHU","./contexts/UserContext":"gJPKA","./components/LoginWithGoogleButton":"aun22","react-hot-toast":"6huAF","./images/github-mark.svg":"7xIYQ","./components/BgIconsRandom":"3HXnU","@parcel/transformer-js/src/esmodule-helpers.js":"5oERU","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"ftrPk"}],"jVj6X":[function(require,module,exports) {
+},{"react/jsx-dev-runtime":"eGH5i","react":"9sfFD","./components/ChatContainer":"jVj6X","./components/ChatRoomSelect":"ibShd","./components/NavBar":"cGTHU","./contexts/UserContext":"gJPKA","./components/LoginWithGoogleButton":"aun22","react-hot-toast":"6huAF","./images/github-mark.svg":"7xIYQ","./components/BgIconsRandom":"3HXnU","./utils/useSocket":"1c74S","./utils/getRoomSlug":"gra5i","@parcel/transformer-js/src/esmodule-helpers.js":"5oERU","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"ftrPk","./utils/playAudioNotification":"l7GB5","./components/LogoutStateComponent":"1RaXs"}],"jVj6X":[function(require,module,exports) {
 var $parcel$ReactRefreshHelpers$e9ec = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
 var prevRefreshReg = window.$RefreshReg$;
 var prevRefreshSig = window.$RefreshSig$;
@@ -5905,9 +5855,12 @@ var _userContext = require("../contexts/UserContext");
 var _userContextDefault = parcelHelpers.interopDefault(_userContext);
 var _toggle = require("./Toggle");
 var _toggleDefault = parcelHelpers.interopDefault(_toggle);
+var _useSocket = require("../utils/useSocket");
+var _getRoomSlug = require("../utils/getRoomSlug");
 var _s = $RefreshSig$();
 function ChatContainer({ messages , setMessages  }) {
     _s();
+    var _s1 = $RefreshSig$();
     const refInputField = (0, _react.useRef)();
     const refChatContainer = (0, _react.useRef)();
     const { user: { email , name  }  } = (0, _react.useContext)((0, _userContextDefault.default));
@@ -5924,22 +5877,31 @@ function ChatContainer({ messages , setMessages  }) {
         sendMessage();
     }
     function sendMessage(value) {
+        _s1();
         const inputVal = value || refInputField.current.value;
-        if (inputVal && inputVal.trim().length > 0) socket.emit("chat message", {
-            email: email,
-            name: name,
-            message: inputVal
+        (0, _useSocket.useSocket)((socket)=>{
+            console.log("socket", socket);
+            if (inputVal && inputVal.trim().length > 0) socket.emit("chat message", {
+                email: email,
+                name: name,
+                message: inputVal,
+                roomSlug: (0, _getRoomSlug.getRoomSlug)()
+            });
+            refInputField.current.value = "";
         });
-        refInputField.current.value = "";
-        console.log("refChatContainer.current.scrollHeight", refChatContainer.current.scrollHeight);
     }
+    _s1(sendMessage, "59v6aOh2SRVeR9sPe8btaW86J0Y=", false, function() {
+        return [
+            (0, _useSocket.useSocket)
+        ];
+    });
     const InsertEmoji = ({ value  })=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
             className: "emoji-send border border-light bg-light px-2 py-1 rounded-2 mx-2",
             onClick: ()=>sendMessage(value),
             children: value
         }, void 0, false, {
             fileName: "app/components/ChatContainer.js",
-            lineNumber: 36,
+            lineNumber: 46,
             columnNumber: 38
         }, this);
     function handleKeyDownReturn(e) {
@@ -5956,17 +5918,17 @@ function ChatContainer({ messages , setMessages  }) {
                             messageData: messageData
                         }, `${i}_${email}`, false, {
                             fileName: "app/components/ChatContainer.js",
-                            lineNumber: 53,
+                            lineNumber: 63,
                             columnNumber: 58
                         }, this))
                 }, void 0, false, {
                     fileName: "app/components/ChatContainer.js",
-                    lineNumber: 50,
+                    lineNumber: 60,
                     columnNumber: 4
                 }, this)
             }, void 0, false, {
                 fileName: "app/components/ChatContainer.js",
-                lineNumber: 49,
+                lineNumber: 59,
                 columnNumber: 3
             }, this),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -5983,62 +5945,62 @@ function ChatContainer({ messages , setMessages  }) {
                                         value: "\uD83D\uDC4B"
                                     }, void 0, false, {
                                         fileName: "app/components/ChatContainer.js",
-                                        lineNumber: 67,
+                                        lineNumber: 77,
                                         columnNumber: 25
                                     }, this),
                                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(InsertEmoji, {
                                         value: "\uD83D\uDC4D"
                                     }, void 0, false, {
                                         fileName: "app/components/ChatContainer.js",
-                                        lineNumber: 70,
+                                        lineNumber: 80,
                                         columnNumber: 25
                                     }, this),
                                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(InsertEmoji, {
                                         value: "\uD83D\uDE04"
                                     }, void 0, false, {
                                         fileName: "app/components/ChatContainer.js",
-                                        lineNumber: 73,
+                                        lineNumber: 83,
                                         columnNumber: 25
                                     }, this),
                                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(InsertEmoji, {
                                         value: "\uD83D\uDC4F"
                                     }, void 0, false, {
                                         fileName: "app/components/ChatContainer.js",
-                                        lineNumber: 76,
+                                        lineNumber: 86,
                                         columnNumber: 25
                                     }, this),
                                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(InsertEmoji, {
                                         value: "\uD83D\uDC9B"
                                     }, void 0, false, {
                                         fileName: "app/components/ChatContainer.js",
-                                        lineNumber: 79,
+                                        lineNumber: 89,
                                         columnNumber: 25
                                     }, this),
                                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(InsertEmoji, {
                                         value: "\uD83D\uDCAF"
                                     }, void 0, false, {
                                         fileName: "app/components/ChatContainer.js",
-                                        lineNumber: 82,
+                                        lineNumber: 92,
                                         columnNumber: 25
                                     }, this),
                                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(InsertEmoji, {
                                         value: "\uD83D\uDD25"
                                     }, void 0, false, {
                                         fileName: "app/components/ChatContainer.js",
-                                        lineNumber: 88,
+                                        lineNumber: 98,
                                         columnNumber: 25
                                     }, this),
                                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(InsertEmoji, {
                                         value: "\uD83D\uDE4C"
                                     }, void 0, false, {
                                         fileName: "app/components/ChatContainer.js",
-                                        lineNumber: 91,
+                                        lineNumber: 101,
                                         columnNumber: 25
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "app/components/ChatContainer.js",
-                                lineNumber: 64,
+                                lineNumber: 74,
                                 columnNumber: 21
                             }, this),
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -6052,12 +6014,12 @@ function ChatContainer({ messages , setMessages  }) {
                                             onKeyDown: handleKeyDownReturn
                                         }, void 0, false, {
                                             fileName: "app/components/ChatContainer.js",
-                                            lineNumber: 101,
+                                            lineNumber: 111,
                                             columnNumber: 29
                                         }, this)
                                     }, void 0, false, {
                                         fileName: "app/components/ChatContainer.js",
-                                        lineNumber: 99,
+                                        lineNumber: 109,
                                         columnNumber: 25
                                     }, this),
                                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -6069,18 +6031,18 @@ function ChatContainer({ messages , setMessages  }) {
                                             children: "Send"
                                         }, void 0, false, {
                                             fileName: "app/components/ChatContainer.js",
-                                            lineNumber: 105,
+                                            lineNumber: 115,
                                             columnNumber: 29
                                         }, this)
                                     }, void 0, false, {
                                         fileName: "app/components/ChatContainer.js",
-                                        lineNumber: 104,
+                                        lineNumber: 114,
                                         columnNumber: 25
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "app/components/ChatContainer.js",
-                                lineNumber: 97,
+                                lineNumber: 107,
                                 columnNumber: 21
                             }, this),
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _toggleDefault.default), {
@@ -6102,35 +6064,35 @@ function ChatContainer({ messages , setMessages  }) {
                                             d: "M14.5 1.5a.5.5 0 0 1 .5.5v4.8a2.5 2.5 0 0 1-2.5 2.5H2.707l3.347 3.346a.5.5 0 0 1-.708.708l-4.2-4.2a.5.5 0 0 1 0-.708l4-4a.5.5 0 1 1 .708.708L2.707 8.3H12.5A1.5 1.5 0 0 0 14 6.8V2a.5.5 0 0 1 .5-.5z"
                                         }, void 0, false, {
                                             fileName: "app/components/ChatContainer.js",
-                                            lineNumber: 113,
+                                            lineNumber: 123,
                                             columnNumber: 29
                                         }, this)
                                     }, void 0, false, {
                                         fileName: "app/components/ChatContainer.js",
-                                        lineNumber: 112,
+                                        lineNumber: 122,
                                         columnNumber: 25
                                     }, this),
                                     " to send"
                                 ]
                             }, void 0, true, {
                                 fileName: "app/components/ChatContainer.js",
-                                lineNumber: 110,
+                                lineNumber: 120,
                                 columnNumber: 21
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "app/components/ChatContainer.js",
-                        lineNumber: 62,
+                        lineNumber: 72,
                         columnNumber: 17
                     }, this)
                 }, void 0, false, {
                     fileName: "app/components/ChatContainer.js",
-                    lineNumber: 59,
+                    lineNumber: 69,
                     columnNumber: 13
                 }, this)
             }, void 0, false, {
                 fileName: "app/components/ChatContainer.js",
-                lineNumber: 58,
+                lineNumber: 68,
                 columnNumber: 9
             }, this)
         ]
@@ -6147,7 +6109,7 @@ $RefreshReg$(_c, "ChatContainer");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"eGH5i","react":"9sfFD","./MessageItem":"9Cszd","../contexts/UserContext":"gJPKA","./Toggle":"6q2C4","@parcel/transformer-js/src/esmodule-helpers.js":"5oERU","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"ftrPk"}],"9Cszd":[function(require,module,exports) {
+},{"react/jsx-dev-runtime":"eGH5i","react":"9sfFD","./MessageItem":"9Cszd","../contexts/UserContext":"gJPKA","./Toggle":"6q2C4","../utils/useSocket":"1c74S","../utils/getRoomSlug":"gra5i","@parcel/transformer-js/src/esmodule-helpers.js":"5oERU","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"ftrPk"}],"9Cszd":[function(require,module,exports) {
 var $parcel$ReactRefreshHelpers$ffcd = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
 var prevRefreshReg = window.$RefreshReg$;
 var prevRefreshSig = window.$RefreshSig$;
@@ -13561,7 +13523,38 @@ $RefreshReg$(_c, "Toggle");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"eGH5i","react":"9sfFD","@parcel/transformer-js/src/esmodule-helpers.js":"5oERU","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"ftrPk"}],"ibShd":[function(require,module,exports) {
+},{"react/jsx-dev-runtime":"eGH5i","react":"9sfFD","@parcel/transformer-js/src/esmodule-helpers.js":"5oERU","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"ftrPk"}],"1c74S":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "useSocket", ()=>useSocket);
+function useSocket(cb) {
+    let socket;
+    if (window?.socket) {
+        console.log("From useSocket: socket available globally");
+        socket = window.socket;
+        cb(socket);
+    } else document.addEventListener("socketCreated", (e)=>{
+        console.log("Socket found with listener");
+        socket = e.detail.socket;
+        cb(socket);
+    });
+}
+
+},{"@parcel/transformer-js/src/esmodule-helpers.js":"5oERU"}],"gra5i":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "getRoomSlug", ()=>getRoomSlug);
+function getRoomSlug() {
+    if (window) {
+        if (window.location.pathname === "/") return "";
+        const pathSegments = window.location.pathname.split("/");
+        const roomName = pathSegments.pop() || pathSegments.pop();
+        return roomName;
+    }
+    return null;
+}
+
+},{"@parcel/transformer-js/src/esmodule-helpers.js":"5oERU"}],"ibShd":[function(require,module,exports) {
 var $parcel$ReactRefreshHelpers$7ec9 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
 var prevRefreshReg = window.$RefreshReg$;
 var prevRefreshSig = window.$RefreshSig$;
@@ -13632,13 +13625,13 @@ var _userContext = require("../contexts/UserContext");
 var _userContextDefault = parcelHelpers.interopDefault(_userContext);
 var _navDropdown = require("./NavDropdown");
 var _navDropdownDefault = parcelHelpers.interopDefault(_navDropdown);
+var _getRoomSlug = require("./../utils/getRoomSlug");
 var _s = $RefreshSig$();
 function NavBar() {
     _s();
     const { user , setUser , setUserDataInClientChecked  } = (0, _react.useContext)((0, _userContextDefault.default));
     const [isVisibleDropdown, setIsVisibleDropdown] = (0, _react.useState)();
-    const pathSegments = window.location.pathname.split("/");
-    const roomName = pathSegments.pop() || pathSegments.pop();
+    const roomName = (0, _getRoomSlug.getRoomSlug)();
     console.log("roomName", roomName);
     const handleLogout = (e)=>{
         e.preventDefault();
@@ -13774,7 +13767,7 @@ $RefreshReg$(_c1, "UserIcon");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"eGH5i","react":"9sfFD","@parcel/transformer-js/src/esmodule-helpers.js":"5oERU","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"ftrPk","../contexts/UserContext":"gJPKA","./NavDropdown":"clOI2"}],"clOI2":[function(require,module,exports) {
+},{"react/jsx-dev-runtime":"eGH5i","react":"9sfFD","../contexts/UserContext":"gJPKA","./NavDropdown":"clOI2","./../utils/getRoomSlug":"gra5i","@parcel/transformer-js/src/esmodule-helpers.js":"5oERU","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"ftrPk"}],"clOI2":[function(require,module,exports) {
 var $parcel$ReactRefreshHelpers$4fe0 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
 var prevRefreshReg = window.$RefreshReg$;
 var prevRefreshSig = window.$RefreshSig$;
@@ -24006,7 +23999,236 @@ $RefreshReg$(_c, "BgIconsRandom");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"eGH5i","react":"9sfFD","@parcel/transformer-js/src/esmodule-helpers.js":"5oERU","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"ftrPk"}],"gtkFg":[function(require,module,exports) {
+},{"react/jsx-dev-runtime":"eGH5i","react":"9sfFD","@parcel/transformer-js/src/esmodule-helpers.js":"5oERU","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"ftrPk"}],"l7GB5":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "playAudioNotification", ()=>playAudioNotification);
+var _throttleDebounce = require("throttle-debounce");
+const playAudioNotification = (0, _throttleDebounce.debounce)(300, ()=>{
+    const elAudio = document.getElementById("notification-audio");
+    if (elAudio) elAudio.play();
+});
+
+},{"@parcel/transformer-js/src/esmodule-helpers.js":"5oERU","throttle-debounce":"gXKgS"}],"gXKgS":[function(require,module,exports) {
+/* eslint-disable no-undefined,no-param-reassign,no-shadow */ /**
+ * Throttle execution of a function. Especially useful for rate limiting
+ * execution of handlers on events like resize and scroll.
+ *
+ * @param {number} delay -                  A zero-or-greater delay in milliseconds. For event callbacks, values around 100 or 250 (or even higher)
+ *                                            are most useful.
+ * @param {Function} callback -               A function to be executed after delay milliseconds. The `this` context and all arguments are passed through,
+ *                                            as-is, to `callback` when the throttled-function is executed.
+ * @param {object} [options] -              An object to configure options.
+ * @param {boolean} [options.noTrailing] -   Optional, defaults to false. If noTrailing is true, callback will only execute every `delay` milliseconds
+ *                                            while the throttled-function is being called. If noTrailing is false or unspecified, callback will be executed
+ *                                            one final time after the last throttled-function call. (After the throttled-function has not been called for
+ *                                            `delay` milliseconds, the internal counter is reset).
+ * @param {boolean} [options.noLeading] -   Optional, defaults to false. If noLeading is false, the first throttled-function call will execute callback
+ *                                            immediately. If noLeading is true, the first the callback execution will be skipped. It should be noted that
+ *                                            callback will never executed if both noLeading = true and noTrailing = true.
+ * @param {boolean} [options.debounceMode] - If `debounceMode` is true (at begin), schedule `clear` to execute after `delay` ms. If `debounceMode` is
+ *                                            false (at end), schedule `callback` to execute after `delay` ms.
+ *
+ * @returns {Function} A new, throttled, function.
+ */ var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "debounce", ()=>debounce);
+parcelHelpers.export(exports, "throttle", ()=>throttle);
+function throttle(delay, callback, options) {
+    var _ref = options || {}, _ref$noTrailing = _ref.noTrailing, noTrailing = _ref$noTrailing === void 0 ? false : _ref$noTrailing, _ref$noLeading = _ref.noLeading, noLeading = _ref$noLeading === void 0 ? false : _ref$noLeading, _ref$debounceMode = _ref.debounceMode, debounceMode = _ref$debounceMode === void 0 ? undefined : _ref$debounceMode;
+    /*
+   * After wrapper has stopped being called, this timeout ensures that
+   * `callback` is executed at the proper times in `throttle` and `end`
+   * debounce modes.
+   */ var timeoutID;
+    var cancelled = false; // Keep track of the last time `callback` was executed.
+    var lastExec = 0; // Function to clear existing timeout
+    function clearExistingTimeout() {
+        if (timeoutID) clearTimeout(timeoutID);
+    } // Function to cancel next exec
+    function cancel(options) {
+        var _ref2 = options || {}, _ref2$upcomingOnly = _ref2.upcomingOnly, upcomingOnly = _ref2$upcomingOnly === void 0 ? false : _ref2$upcomingOnly;
+        clearExistingTimeout();
+        cancelled = !upcomingOnly;
+    }
+    /*
+   * The `wrapper` function encapsulates all of the throttling / debouncing
+   * functionality and when executed will limit the rate at which `callback`
+   * is executed.
+   */ function wrapper() {
+        for(var _len = arguments.length, arguments_ = new Array(_len), _key = 0; _key < _len; _key++)arguments_[_key] = arguments[_key];
+        var self = this;
+        var elapsed = Date.now() - lastExec;
+        if (cancelled) return;
+         // Execute `callback` and update the `lastExec` timestamp.
+        function exec() {
+            lastExec = Date.now();
+            callback.apply(self, arguments_);
+        }
+        /*
+     * If `debounceMode` is true (at begin) this is used to clear the flag
+     * to allow future `callback` executions.
+     */ function clear() {
+            timeoutID = undefined;
+        }
+        if (!noLeading && debounceMode && !timeoutID) /*
+       * Since `wrapper` is being called for the first time and
+       * `debounceMode` is true (at begin), execute `callback`
+       * and noLeading != true.
+       */ exec();
+        clearExistingTimeout();
+        if (debounceMode === undefined && elapsed > delay) {
+            if (noLeading) {
+                /*
+         * In throttle mode with noLeading, if `delay` time has
+         * been exceeded, update `lastExec` and schedule `callback`
+         * to execute after `delay` ms.
+         */ lastExec = Date.now();
+                if (!noTrailing) timeoutID = setTimeout(debounceMode ? clear : exec, delay);
+            } else /*
+         * In throttle mode without noLeading, if `delay` time has been exceeded, execute
+         * `callback`.
+         */ exec();
+        } else if (noTrailing !== true) /*
+       * In trailing throttle mode, since `delay` time has not been
+       * exceeded, schedule `callback` to execute `delay` ms after most
+       * recent execution.
+       *
+       * If `debounceMode` is true (at begin), schedule `clear` to execute
+       * after `delay` ms.
+       *
+       * If `debounceMode` is false (at end), schedule `callback` to
+       * execute after `delay` ms.
+       */ timeoutID = setTimeout(debounceMode ? clear : exec, debounceMode === undefined ? delay - elapsed : delay);
+    }
+    wrapper.cancel = cancel; // Return the wrapper function.
+    return wrapper;
+}
+/* eslint-disable no-undefined */ /**
+ * Debounce execution of a function. Debouncing, unlike throttling,
+ * guarantees that a function is only executed a single time, either at the
+ * very beginning of a series of calls, or at the very end.
+ *
+ * @param {number} delay -               A zero-or-greater delay in milliseconds. For event callbacks, values around 100 or 250 (or even higher) are most useful.
+ * @param {Function} callback -          A function to be executed after delay milliseconds. The `this` context and all arguments are passed through, as-is,
+ *                                        to `callback` when the debounced-function is executed.
+ * @param {object} [options] -           An object to configure options.
+ * @param {boolean} [options.atBegin] -  Optional, defaults to false. If atBegin is false or unspecified, callback will only be executed `delay` milliseconds
+ *                                        after the last debounced-function call. If atBegin is true, callback will be executed only at the first debounced-function call.
+ *                                        (After the throttled-function has not been called for `delay` milliseconds, the internal counter is reset).
+ *
+ * @returns {Function} A new, debounced function.
+ */ function debounce(delay, callback, options) {
+    var _ref = options || {}, _ref$atBegin = _ref.atBegin, atBegin = _ref$atBegin === void 0 ? false : _ref$atBegin;
+    return throttle(delay, callback, {
+        debounceMode: atBegin !== false
+    });
+}
+
+},{"@parcel/transformer-js/src/esmodule-helpers.js":"5oERU"}],"1RaXs":[function(require,module,exports) {
+var $parcel$ReactRefreshHelpers$c78e = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
+var prevRefreshReg = window.$RefreshReg$;
+var prevRefreshSig = window.$RefreshSig$;
+$parcel$ReactRefreshHelpers$c78e.prelude(module);
+
+try {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+var _jsxDevRuntime = require("react/jsx-dev-runtime");
+var _react = require("react");
+var _userContext = require("../contexts/UserContext");
+var _userContextDefault = parcelHelpers.interopDefault(_userContext);
+var _bgIconsRandom = require("./BgIconsRandom");
+var _bgIconsRandomDefault = parcelHelpers.interopDefault(_bgIconsRandom);
+var _loginWithGoogleButton = require("./LoginWithGoogleButton");
+var _loginWithGoogleButtonDefault = parcelHelpers.interopDefault(_loginWithGoogleButton);
+var _s = $RefreshSig$();
+function LogoutStateComponent() {
+    _s();
+    const { user , setUser , userDataInClientChecked  } = (0, _react.useContext)((0, _userContextDefault.default));
+    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+        className: "py-5 h-100 overflow-hidden ",
+        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+            className: "container h-100",
+            children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                className: "row h-100",
+                children: [
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                        className: "col-md-8 col-12 h-100 d-flex flex-column justify-content-center",
+                        children: [
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                className: "large-cta font-black mb-5",
+                                children: [
+                                    "Join the ",
+                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                                        className: "text-secondary",
+                                        children: "chat"
+                                    }, void 0, false, {
+                                        fileName: "app/components/LogoutStateComponent.js",
+                                        lineNumber: 19,
+                                        columnNumber: 38
+                                    }, this)
+                                ]
+                            }, void 0, true, {
+                                fileName: "app/components/LogoutStateComponent.js",
+                                lineNumber: 18,
+                                columnNumber: 25
+                            }, this),
+                            !user && userDataInClientChecked && /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _loginWithGoogleButtonDefault.default), {
+                                user: user,
+                                setUser: setUser
+                            }, void 0, false, {
+                                fileName: "app/components/LogoutStateComponent.js",
+                                lineNumber: 24,
+                                columnNumber: 29
+                            }, this)
+                        ]
+                    }, void 0, true, {
+                        fileName: "app/components/LogoutStateComponent.js",
+                        lineNumber: 17,
+                        columnNumber: 21
+                    }, this),
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                        className: "col-md-4 col-12",
+                        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _bgIconsRandomDefault.default), {}, void 0, false, {
+                            fileName: "app/components/LogoutStateComponent.js",
+                            lineNumber: 28,
+                            columnNumber: 25
+                        }, this)
+                    }, void 0, false, {
+                        fileName: "app/components/LogoutStateComponent.js",
+                        lineNumber: 27,
+                        columnNumber: 21
+                    }, this)
+                ]
+            }, void 0, true, {
+                fileName: "app/components/LogoutStateComponent.js",
+                lineNumber: 16,
+                columnNumber: 17
+            }, this)
+        }, void 0, false, {
+            fileName: "app/components/LogoutStateComponent.js",
+            lineNumber: 13,
+            columnNumber: 13
+        }, this)
+    }, void 0, false, {
+        fileName: "app/components/LogoutStateComponent.js",
+        lineNumber: 12,
+        columnNumber: 9
+    }, this);
+}
+exports.default = LogoutStateComponent;
+_s(LogoutStateComponent, "Zy3CeKDzEm6VtoG4HkDR0gGhOk0=");
+_c = LogoutStateComponent;
+var _c;
+$RefreshReg$(_c, "LogoutStateComponent");
+
+  $parcel$ReactRefreshHelpers$c78e.postlude(module);
+} finally {
+  window.$RefreshReg$ = prevRefreshReg;
+  window.$RefreshSig$ = prevRefreshSig;
+}
+},{"react/jsx-dev-runtime":"eGH5i","@parcel/transformer-js/src/esmodule-helpers.js":"5oERU","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"ftrPk","react":"9sfFD","../contexts/UserContext":"gJPKA","./BgIconsRandom":"3HXnU","./LoginWithGoogleButton":"aun22"}],"gtkFg":[function(require,module,exports) {
 "use strict";
 var m = require("46381bd6bc66197b");
 var i = m.__SECRET_INTERNALS_DO_NOT_USE_OR_YOU_WILL_BE_FIRED;

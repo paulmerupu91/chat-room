@@ -5,6 +5,9 @@ import MessageItem from "./MessageItem";
 import UserContext from '../contexts/UserContext';
 import Toggle from './Toggle';
 
+import { useSocket } from '../utils/useSocket';
+import { getRoomSlug } from '../utils/getRoomSlug';
+
 function ChatContainer( {messages, setMessages} ) {
     const refInputField = useRef();
     const refChatContainer = useRef();
@@ -26,11 +29,18 @@ function ChatContainer( {messages, setMessages} ) {
 
     function sendMessage( value ){
         const inputVal = value || refInputField.current.value;
-        if( inputVal && inputVal.trim().length > 0 ){
-            socket.emit('chat message', {email: email, name: name, message: inputVal});
-        }
-        refInputField.current.value = '';
-        console.log( 'refChatContainer.current.scrollHeight', refChatContainer.current.scrollHeight )
+
+        useSocket( socket => {
+
+            console.log( 'socket', socket );
+    
+            if( inputVal && inputVal.trim().length > 0 ){
+                socket.emit('chat message', {email: email, name: name, message: inputVal, roomSlug: getRoomSlug()});
+            }
+            refInputField.current.value = '';
+            
+        } );
+
     }
 
     const InsertEmoji = ({value}) => <span className="emoji-send border border-light bg-light px-2 py-1 rounded-2 mx-2" onClick={() => sendMessage(value)}>{value}</span>

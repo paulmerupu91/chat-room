@@ -563,6 +563,7 @@ var $parcel$__dirname = require("7a2b56c44e27b7bd").resolve(__dirname, "../../ap
 const express = require("818570491c2d1192");
 const app = express();
 const https = require("7785ffb89647a237");
+const http = require("a344ddd9b61e770c");
 const path = require("7a2b56c44e27b7bd");
 const fs = require("b1ef9fc55475aa0b");
 var privateKey = fs.readFileSync($parcel$__dirname + "/../ssl-files/localhost.key");
@@ -580,15 +581,19 @@ app.use(bodyParser.urlencoded({
     extended: true
 })) // for parsing application/x-www-form-urlencoded
 ;
-const lastTenMessages = [];
+const lastTenMessages = {};
+(0, _defaultRooms.defaultRooms).forEach((room)=>{
+    lastTenMessages[room.slug] = [];
+});
 app.get("/", (req, res)=>{
     res.sendFile(path.resolve($parcel$__dirname + "/../dist/frontend/index.html"));
 });
 app.get("/rooms/:city", (req, res)=>{
     // const path = req.path;
     const city = req.params.city;
-    // res.send( 'In rooms path: ' + city );
-    res.sendFile(path.resolve($parcel$__dirname + "/../dist/frontend/index.html"));
+    if ((0, _defaultRooms.defaultRooms).map((room)=>room.slug)?.includes(city)) res.sendFile(path.resolve($parcel$__dirname + "/../dist/frontend/index.html"));
+    else res.status(404).send("Sorry can't find that!");
+// res.send( 'In rooms path: ' + city );
 });
 app.get("/api/", (req, res)=>{
     res.json({
@@ -602,25 +607,29 @@ const portNumber = 3000;
 server.listen(portNumber, ()=>{
     console.log(`Listening on *:${portNumber}`);
 });
-io.on("connection", (socket)=>{
-    console.log("a user connected");
-    socket.on("entered the chat", (name)=>{
-        socket.broadcast.emit("entered the chat", name);
-    });
-    socket.on("disconnect", (name)=>{
-        socket.broadcast.emit("left the chat", name);
-        console.log("user disconnected");
-    });
-    // New chat message
-    socket.on("chat message", (data)=>{
-        if (lastTenMessages.length > 9) lastTenMessages.shift();
-        lastTenMessages.push(data);
-        console.log("message data", data);
-        io.emit("chat message", data);
+(0, _defaultRooms.defaultRooms).forEach((room)=>{
+    const nsp = io.of(`/${room.slug}`);
+    nsp.on("connection", (socket)=>{
+        console.log("a user connected");
+        if (lastTenMessages[room.slug] == "undefined") lastTenMessages[room.slug] = [];
+        socket.on("entered the chat", (name)=>{
+            socket.broadcast.emit(`entered the chat`, name);
+        });
+        socket.on("disconnect", (name)=>{
+            socket.broadcast.emit("left the chat", name);
+            console.log("user disconnected");
+        });
+        // New chat message
+        socket.on("chat message", (data)=>{
+            if (lastTenMessages[room.slug]?.length > 9) lastTenMessages[room.slug].shift();
+            lastTenMessages[room.slug].push(data);
+            console.log("message data", data);
+            nsp.emit("chat message", data);
+        });
     });
 });
 
-},{"7a2b56c44e27b7bd":"path","818570491c2d1192":"express","7785ffb89647a237":"https","b1ef9fc55475aa0b":"node:fs","5629d851821f53d5":"body-parser","c59a704518e8719a":"socket.io","./includes/db_queries":"Ep6EO","./includes/authentication":"ciHe0","./../api/defaultRooms":"dtvbu"}],"Ep6EO":[function(require,module,exports) {
+},{"7a2b56c44e27b7bd":"path","818570491c2d1192":"express","7785ffb89647a237":"https","a344ddd9b61e770c":"http","b1ef9fc55475aa0b":"node:fs","5629d851821f53d5":"body-parser","c59a704518e8719a":"socket.io","./includes/db_queries":"Ep6EO","./includes/authentication":"ciHe0","./../api/defaultRooms":"dtvbu"}],"Ep6EO":[function(require,module,exports) {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
 // main()
@@ -777,22 +786,32 @@ parcelHelpers.defineInteropFlag(exports);
 parcelHelpers.export(exports, "defaultRooms", ()=>defaultRooms);
 const defaultRooms = [
     {
-        name: "New York"
+        name: "New York",
+        slug: "new-york"
     },
     {
-        name: "San Diego"
+        name: "San Diego",
+        slug: "san-diego"
     },
     {
-        name: "Miami"
+        name: "Miami",
+        slug: "miami"
     },
     {
-        name: "Chicago"
+        name: "Chicago",
+        slug: "chicago"
     },
     {
-        name: "Austin"
+        name: "Austin",
+        slug: "austin"
     },
     {
-        name: "Boston"
+        name: "Boston",
+        slug: "boston"
+    },
+    {
+        name: "",
+        slug: ""
     }
 ];
 
