@@ -600,42 +600,7 @@ function initSocket() {
 }
 initSocket();
 
-},{"./utils/getRoomSlug":"gra5i","../api/defaultRooms":"ezO9N","socket.io-client/dist/socket.io":"3hHne"}],"ezO9N":[function(require,module,exports) {
-var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
-parcelHelpers.defineInteropFlag(exports);
-parcelHelpers.export(exports, "defaultRooms", ()=>defaultRooms);
-const defaultRooms = [
-    {
-        name: "New York",
-        slug: "new-york"
-    },
-    {
-        name: "San Diego",
-        slug: "san-diego"
-    },
-    {
-        name: "Miami",
-        slug: "miami"
-    },
-    {
-        name: "Chicago",
-        slug: "chicago"
-    },
-    {
-        name: "Austin",
-        slug: "austin"
-    },
-    {
-        name: "Boston",
-        slug: "boston"
-    },
-    {
-        name: "",
-        slug: ""
-    }
-];
-
-},{"@parcel/transformer-js/src/esmodule-helpers.js":"5oERU"}],"3hHne":[function(require,module,exports) {
+},{"./utils/getRoomSlug":"gra5i","../api/defaultRooms":"ezO9N","socket.io-client/dist/socket.io":"3hHne"}],"3hHne":[function(require,module,exports) {
 /*!
  * Socket.IO v4.6.1
  * (c) 2014-2023 Guillermo Rauch
