@@ -5675,34 +5675,45 @@ var _githubMarkSvg = require("./images/github-mark.svg");
 var _githubMarkSvgDefault = parcelHelpers.interopDefault(_githubMarkSvg);
 var _bgIconsRandom = require("./components/BgIconsRandom");
 var _bgIconsRandomDefault = parcelHelpers.interopDefault(_bgIconsRandom);
+var _useSocket = require("./utils/useSocket");
+var _getRoomSlug = require("./utils/getRoomSlug");
+var _playAudioNotification = require("./utils/playAudioNotification");
+var _logoutStateComponent = require("./components/LogoutStateComponent");
+var _logoutStateComponentDefault = parcelHelpers.interopDefault(_logoutStateComponent);
 var _s = $RefreshSig$();
+const roomSlug = (0, _getRoomSlug.getRoomSlug)();
 function toastEnteredTheChat(name) {
     (0, _reactHotToastDefault.default).success(`${name} joined.`);
 }
 console.log("setting clone");
-let setMessagesClone = ()=>{};
-const audio = new Audio("assets/notification.mp3");
-socket.on("entered the chat", toastEnteredTheChat);
-socket.on("chat message", function(data) {
-    console.log("Playing alert sound", audio);
-    audio.play();
-    console.log("data", data);
-    setMessagesClone((messages)=>{
-        if (messages && messages.length > 0) return [
-            ...messages,
-            data
-        ];
-        else return [
-            data
-        ];
+let setMessagesGlob = ()=>{};
+let setSocketLoadedGlob = ()=>{};
+(0, _useSocket.useSocket)((socket)=>{
+    console.log("Socket loaded in App.js", typeof setSocketLoadedGlob);
+    socket.on("entered the chat", toastEnteredTheChat);
+    socket.on("chat message", function(data) {
+        (0, _playAudioNotification.playAudioNotification)();
+        console.log("data", data);
+        setMessagesGlob((messages)=>{
+            if (messages && messages.length > 0) return [
+                ...messages,
+                data
+            ];
+            else return [
+                data
+            ];
+        });
     });
+    setSocketLoadedGlob(true);
 });
 function App() {
     _s();
     const [user, setUser] = (0, _react.useState)(null);
     const [userDataInClientChecked, setUserDataInClientChecked] = (0, _react.useState)(false);
     const [messages, setMessages] = (0, _react.useState)([]);
-    setMessagesClone = setMessages;
+    const [socketLoaded, setSocketLoaded] = (0, _react.useState)(false);
+    setMessagesGlob = setMessages;
+    setSocketLoadedGlob = setSocketLoaded;
     (0, _react.useEffect)(()=>{
         // Load user data from localStorage if exists
         const userData = localStorage.getItem("crUserData");
@@ -5717,105 +5728,44 @@ function App() {
         }
         setUserDataInClientChecked(true);
         fetch(`/api`).then((res)=>res.json()).then((res)=>{
-            if (res && res.lastTenMessages && res.lastTenMessages.length > 0) {
+            if (res && res.lastTenMessages && res.lastTenMessages[roomSlug] && res.lastTenMessages[roomSlug].length > 0) {
                 if (messages && messages.length) setMessages([
-                    ...res.lastTenMessages,
+                    ...res.lastTenMessages[roomSlug],
                     ...messages
                 ]);
-                else setMessages(res.lastTenMessages);
+                else setMessages(res.lastTenMessages[roomSlug]);
             }
         });
     }, []);
-    const LogoutStateComponent = ()=>{
-        return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-            className: "py-5 h-100 overflow-hidden ",
-            children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                className: "container h-100",
-                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                    className: "row h-100",
-                    children: [
-                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                            className: "col-md-8 col-12 h-100 d-flex flex-column justify-content-center",
-                            children: [
-                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                    className: "large-cta font-black mb-5",
-                                    children: [
-                                        "Join the ",
-                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
-                                            className: "text-secondary",
-                                            children: "chat"
-                                        }, void 0, false, {
-                                            fileName: "app/App.js",
-                                            lineNumber: 81,
-                                            columnNumber: 42
-                                        }, this),
-                                        "."
-                                    ]
-                                }, void 0, true, {
-                                    fileName: "app/App.js",
-                                    lineNumber: 80,
-                                    columnNumber: 29
-                                }, this),
-                                !user && userDataInClientChecked && /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _loginWithGoogleButtonDefault.default), {
-                                    user: user,
-                                    setUser: setUser
-                                }, void 0, false, {
-                                    fileName: "app/App.js",
-                                    lineNumber: 83,
-                                    columnNumber: 67
-                                }, this)
-                            ]
-                        }, void 0, true, {
-                            fileName: "app/App.js",
-                            lineNumber: 79,
-                            columnNumber: 25
-                        }, this),
-                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                            className: "col-md-4 col-12",
-                            children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _bgIconsRandomDefault.default), {}, void 0, false, {
-                                fileName: "app/App.js",
-                                lineNumber: 86,
-                                columnNumber: 29
-                            }, this)
-                        }, void 0, false, {
-                            fileName: "app/App.js",
-                            lineNumber: 85,
-                            columnNumber: 25
-                        }, this)
-                    ]
-                }, void 0, true, {
-                    fileName: "app/App.js",
-                    lineNumber: 78,
-                    columnNumber: 21
-                }, this)
-            }, void 0, false, {
-                fileName: "app/App.js",
-                lineNumber: 75,
-                columnNumber: 17
-            }, this)
-        }, void 0, false, {
-            fileName: "app/App.js",
-            lineNumber: 74,
-            columnNumber: 13
-        }, this);
-    };
+    const elSiteIcon = document.getElementById("site-icon");
+    const srcIconNotif = document.getElementById("site-icon-notif").src;
+    const srcIconNormal = document.getElementById("site-icon-normal").src;
+    (0, _react.useEffect)(()=>{
+        elSiteIcon.href = srcIconNotif;
+        setTimeout(()=>{
+            elSiteIcon.href = srcIconNormal;
+        }, 4000);
+    }, [
+        messages
+    ]);
     return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _jsxDevRuntime.Fragment), {
         children: [
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _userContextDefault.default).Provider, {
                 value: {
                     user,
                     setUser,
-                    setUserDataInClientChecked
+                    setUserDataInClientChecked,
+                    userDataInClientChecked
                 },
                 children: [
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _navBarDefault.default), {}, void 0, false, {
                         fileName: "app/App.js",
-                        lineNumber: 101,
+                        lineNumber: 107,
                         columnNumber: 13
                     }, this),
-                    !user?.email && /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(LogoutStateComponent, {}, void 0, false, {
+                    !user?.email && /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _logoutStateComponentDefault.default), {}, void 0, false, {
                         fileName: "app/App.js",
-                        lineNumber: 103,
+                        lineNumber: 109,
                         columnNumber: 33
                     }, this),
                     user?.email && /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _chatContainerDefault.default), {
@@ -5823,18 +5773,18 @@ function App() {
                         setMessages: setMessages
                     }, void 0, false, {
                         fileName: "app/App.js",
-                        lineNumber: 104,
+                        lineNumber: 110,
                         columnNumber: 30
                     }, this),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactHotToast.Toaster), {}, void 0, false, {
                         fileName: "app/App.js",
-                        lineNumber: 106,
+                        lineNumber: 112,
                         columnNumber: 13
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "app/App.js",
-                lineNumber: 99,
+                lineNumber: 105,
                 columnNumber: 9
             }, this),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -5851,7 +5801,7 @@ function App() {
                             className: "me-2"
                         }, void 0, false, {
                             fileName: "app/App.js",
-                            lineNumber: 111,
+                            lineNumber: 117,
                             columnNumber: 17
                         }, this),
                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
@@ -5859,24 +5809,24 @@ function App() {
                             children: "Github Repository"
                         }, void 0, false, {
                             fileName: "app/App.js",
-                            lineNumber: 112,
+                            lineNumber: 118,
                             columnNumber: 17
                         }, this)
                     ]
                 }, void 0, true, {
                     fileName: "app/App.js",
-                    lineNumber: 110,
+                    lineNumber: 116,
                     columnNumber: 13
                 }, this)
             }, void 0, false, {
                 fileName: "app/App.js",
-                lineNumber: 109,
+                lineNumber: 115,
                 columnNumber: 9
             }, this)
         ]
     }, void 0, true);
 }
-_s(App, "i1FXMZQcewWGaTFiqZA9oDgK9Nk=");
+_s(App, "iJxmSLSKmKyjlg47Vl3SBgFeErA=");
 _c = App;
 exports.default = App;
 var _c;
@@ -5887,7 +5837,7 @@ $RefreshReg$(_c, "App");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"eGH5i","react":"9sfFD","./components/ChatContainer":"jVj6X","./components/ChatRoomSelect":"ibShd","./components/NavBar":"cGTHU","./contexts/UserContext":"gJPKA","./components/LoginWithGoogleButton":"aun22","react-hot-toast":"6huAF","./images/github-mark.svg":"7xIYQ","./components/BgIconsRandom":"3HXnU","@parcel/transformer-js/src/esmodule-helpers.js":"5oERU","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"ftrPk"}],"jVj6X":[function(require,module,exports) {
+},{"react/jsx-dev-runtime":"eGH5i","react":"9sfFD","./components/ChatContainer":"jVj6X","./components/ChatRoomSelect":"ibShd","./components/NavBar":"cGTHU","./contexts/UserContext":"gJPKA","./components/LoginWithGoogleButton":"aun22","react-hot-toast":"6huAF","./images/github-mark.svg":"7xIYQ","./components/BgIconsRandom":"3HXnU","./utils/useSocket":"1c74S","./utils/getRoomSlug":"gra5i","@parcel/transformer-js/src/esmodule-helpers.js":"5oERU","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"ftrPk","./utils/playAudioNotification":"l7GB5","./components/LogoutStateComponent":"1RaXs"}],"jVj6X":[function(require,module,exports) {
 var $parcel$ReactRefreshHelpers$e9ec = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
 var prevRefreshReg = window.$RefreshReg$;
 var prevRefreshSig = window.$RefreshSig$;
@@ -5905,9 +5855,12 @@ var _userContext = require("../contexts/UserContext");
 var _userContextDefault = parcelHelpers.interopDefault(_userContext);
 var _toggle = require("./Toggle");
 var _toggleDefault = parcelHelpers.interopDefault(_toggle);
+var _useSocket = require("../utils/useSocket");
+var _getRoomSlug = require("../utils/getRoomSlug");
 var _s = $RefreshSig$();
 function ChatContainer({ messages , setMessages  }) {
     _s();
+    var _s1 = $RefreshSig$();
     const refInputField = (0, _react.useRef)();
     const refChatContainer = (0, _react.useRef)();
     const { user: { email , name  }  } = (0, _react.useContext)((0, _userContextDefault.default));
@@ -5924,22 +5877,31 @@ function ChatContainer({ messages , setMessages  }) {
         sendMessage();
     }
     function sendMessage(value) {
+        _s1();
         const inputVal = value || refInputField.current.value;
-        if (inputVal && inputVal.trim().length > 0) socket.emit("chat message", {
-            email: email,
-            name: name,
-            message: inputVal
+        (0, _useSocket.useSocket)((socket)=>{
+            console.log("socket", socket);
+            if (inputVal && inputVal.trim().length > 0) socket.emit("chat message", {
+                email: email,
+                name: name,
+                message: inputVal,
+                roomSlug: (0, _getRoomSlug.getRoomSlug)()
+            });
+            refInputField.current.value = "";
         });
-        refInputField.current.value = "";
-        console.log("refChatContainer.current.scrollHeight", refChatContainer.current.scrollHeight);
     }
+    _s1(sendMessage, "59v6aOh2SRVeR9sPe8btaW86J0Y=", false, function() {
+        return [
+            (0, _useSocket.useSocket)
+        ];
+    });
     const InsertEmoji = ({ value  })=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
             className: "emoji-send border border-light bg-light px-2 py-1 rounded-2 mx-2",
             onClick: ()=>sendMessage(value),
             children: value
         }, void 0, false, {
             fileName: "app/components/ChatContainer.js",
-            lineNumber: 36,
+            lineNumber: 46,
             columnNumber: 38
         }, this);
     function handleKeyDownReturn(e) {
@@ -5956,17 +5918,17 @@ function ChatContainer({ messages , setMessages  }) {
                             messageData: messageData
                         }, `${i}_${email}`, false, {
                             fileName: "app/components/ChatContainer.js",
-                            lineNumber: 53,
+                            lineNumber: 63,
                             columnNumber: 58
                         }, this))
                 }, void 0, false, {
                     fileName: "app/components/ChatContainer.js",
-                    lineNumber: 50,
+                    lineNumber: 60,
                     columnNumber: 4
                 }, this)
             }, void 0, false, {
                 fileName: "app/components/ChatContainer.js",
-                lineNumber: 49,
+                lineNumber: 59,
                 columnNumber: 3
             }, this),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -5983,62 +5945,62 @@ function ChatContainer({ messages , setMessages  }) {
                                         value: "\uD83D\uDC4B"
                                     }, void 0, false, {
                                         fileName: "app/components/ChatContainer.js",
-                                        lineNumber: 67,
+                                        lineNumber: 77,
                                         columnNumber: 25
                                     }, this),
                                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(InsertEmoji, {
                                         value: "\uD83D\uDC4D"
                                     }, void 0, false, {
                                         fileName: "app/components/ChatContainer.js",
-                                        lineNumber: 70,
+                                        lineNumber: 80,
                                         columnNumber: 25
                                     }, this),
                                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(InsertEmoji, {
                                         value: "\uD83D\uDE04"
                                     }, void 0, false, {
                                         fileName: "app/components/ChatContainer.js",
-                                        lineNumber: 73,
+                                        lineNumber: 83,
                                         columnNumber: 25
                                     }, this),
                                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(InsertEmoji, {
                                         value: "\uD83D\uDC4F"
                                     }, void 0, false, {
                                         fileName: "app/components/ChatContainer.js",
-                                        lineNumber: 76,
+                                        lineNumber: 86,
                                         columnNumber: 25
                                     }, this),
                                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(InsertEmoji, {
                                         value: "\uD83D\uDC9B"
                                     }, void 0, false, {
                                         fileName: "app/components/ChatContainer.js",
-                                        lineNumber: 79,
+                                        lineNumber: 89,
                                         columnNumber: 25
                                     }, this),
                                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(InsertEmoji, {
                                         value: "\uD83D\uDCAF"
                                     }, void 0, false, {
                                         fileName: "app/components/ChatContainer.js",
-                                        lineNumber: 82,
+                                        lineNumber: 92,
                                         columnNumber: 25
                                     }, this),
                                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(InsertEmoji, {
                                         value: "\uD83D\uDD25"
                                     }, void 0, false, {
                                         fileName: "app/components/ChatContainer.js",
-                                        lineNumber: 88,
+                                        lineNumber: 98,
                                         columnNumber: 25
                                     }, this),
                                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(InsertEmoji, {
                                         value: "\uD83D\uDE4C"
                                     }, void 0, false, {
                                         fileName: "app/components/ChatContainer.js",
-                                        lineNumber: 91,
+                                        lineNumber: 101,
                                         columnNumber: 25
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "app/components/ChatContainer.js",
-                                lineNumber: 64,
+                                lineNumber: 74,
                                 columnNumber: 21
                             }, this),
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -6052,12 +6014,12 @@ function ChatContainer({ messages , setMessages  }) {
                                             onKeyDown: handleKeyDownReturn
                                         }, void 0, false, {
                                             fileName: "app/components/ChatContainer.js",
-                                            lineNumber: 101,
+                                            lineNumber: 111,
                                             columnNumber: 29
                                         }, this)
                                     }, void 0, false, {
                                         fileName: "app/components/ChatContainer.js",
-                                        lineNumber: 99,
+                                        lineNumber: 109,
                                         columnNumber: 25
                                     }, this),
                                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -6069,18 +6031,18 @@ function ChatContainer({ messages , setMessages  }) {
                                             children: "Send"
                                         }, void 0, false, {
                                             fileName: "app/components/ChatContainer.js",
-                                            lineNumber: 105,
+                                            lineNumber: 115,
                                             columnNumber: 29
                                         }, this)
                                     }, void 0, false, {
                                         fileName: "app/components/ChatContainer.js",
-                                        lineNumber: 104,
+                                        lineNumber: 114,
                                         columnNumber: 25
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "app/components/ChatContainer.js",
-                                lineNumber: 97,
+                                lineNumber: 107,
                                 columnNumber: 21
                             }, this),
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _toggleDefault.default), {
@@ -6102,35 +6064,35 @@ function ChatContainer({ messages , setMessages  }) {
                                             d: "M14.5 1.5a.5.5 0 0 1 .5.5v4.8a2.5 2.5 0 0 1-2.5 2.5H2.707l3.347 3.346a.5.5 0 0 1-.708.708l-4.2-4.2a.5.5 0 0 1 0-.708l4-4a.5.5 0 1 1 .708.708L2.707 8.3H12.5A1.5 1.5 0 0 0 14 6.8V2a.5.5 0 0 1 .5-.5z"
                                         }, void 0, false, {
                                             fileName: "app/components/ChatContainer.js",
-                                            lineNumber: 113,
+                                            lineNumber: 123,
                                             columnNumber: 29
                                         }, this)
                                     }, void 0, false, {
                                         fileName: "app/components/ChatContainer.js",
-                                        lineNumber: 112,
+                                        lineNumber: 122,
                                         columnNumber: 25
                                     }, this),
                                     " to send"
                                 ]
                             }, void 0, true, {
                                 fileName: "app/components/ChatContainer.js",
-                                lineNumber: 110,
+                                lineNumber: 120,
                                 columnNumber: 21
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "app/components/ChatContainer.js",
-                        lineNumber: 62,
+                        lineNumber: 72,
                         columnNumber: 17
                     }, this)
                 }, void 0, false, {
                     fileName: "app/components/ChatContainer.js",
-                    lineNumber: 59,
+                    lineNumber: 69,
                     columnNumber: 13
                 }, this)
             }, void 0, false, {
                 fileName: "app/components/ChatContainer.js",
-                lineNumber: 58,
+                lineNumber: 68,
                 columnNumber: 9
             }, this)
         ]
@@ -6147,7 +6109,7 @@ $RefreshReg$(_c, "ChatContainer");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"eGH5i","react":"9sfFD","./MessageItem":"9Cszd","../contexts/UserContext":"gJPKA","./Toggle":"6q2C4","@parcel/transformer-js/src/esmodule-helpers.js":"5oERU","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"ftrPk"}],"9Cszd":[function(require,module,exports) {
+},{"react/jsx-dev-runtime":"eGH5i","react":"9sfFD","./MessageItem":"9Cszd","../contexts/UserContext":"gJPKA","./Toggle":"6q2C4","../utils/useSocket":"1c74S","../utils/getRoomSlug":"gra5i","@parcel/transformer-js/src/esmodule-helpers.js":"5oERU","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"ftrPk"}],"9Cszd":[function(require,module,exports) {
 var $parcel$ReactRefreshHelpers$ffcd = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
 var prevRefreshReg = window.$RefreshReg$;
 var prevRefreshSig = window.$RefreshSig$;
@@ -13561,7 +13523,38 @@ $RefreshReg$(_c, "Toggle");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"eGH5i","react":"9sfFD","@parcel/transformer-js/src/esmodule-helpers.js":"5oERU","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"ftrPk"}],"ibShd":[function(require,module,exports) {
+},{"react/jsx-dev-runtime":"eGH5i","react":"9sfFD","@parcel/transformer-js/src/esmodule-helpers.js":"5oERU","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"ftrPk"}],"1c74S":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "useSocket", ()=>useSocket);
+function useSocket(cb) {
+    let socket;
+    if (window?.socket) {
+        console.log("From useSocket: socket available globally");
+        socket = window.socket;
+        cb(socket);
+    } else document.addEventListener("socketCreated", (e)=>{
+        console.log("Socket found with listener");
+        socket = e.detail.socket;
+        cb(socket);
+    });
+}
+
+},{"@parcel/transformer-js/src/esmodule-helpers.js":"5oERU"}],"gra5i":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "getRoomSlug", ()=>getRoomSlug);
+function getRoomSlug() {
+    if (window) {
+        if (window.location.pathname === "/") return "";
+        const pathSegments = window.location.pathname.split("/");
+        const roomName = pathSegments.pop() || pathSegments.pop();
+        return roomName;
+    }
+    return null;
+}
+
+},{"@parcel/transformer-js/src/esmodule-helpers.js":"5oERU"}],"ibShd":[function(require,module,exports) {
 var $parcel$ReactRefreshHelpers$7ec9 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
 var prevRefreshReg = window.$RefreshReg$;
 var prevRefreshSig = window.$RefreshSig$;
@@ -13632,13 +13625,32 @@ var _userContext = require("../contexts/UserContext");
 var _userContextDefault = parcelHelpers.interopDefault(_userContext);
 var _navDropdown = require("./NavDropdown");
 var _navDropdownDefault = parcelHelpers.interopDefault(_navDropdown);
+var _roomsDropdown = require("./RoomsDropdown");
+var _roomsDropdownDefault = parcelHelpers.interopDefault(_roomsDropdown);
+var _getRoomSlug = require("./../utils/getRoomSlug");
 var _s = $RefreshSig$();
+function handleDropdownMenuClose({ setIsVisibleUserDropdown , setIsVisibleRoomsDropdown  }) {
+    document.addEventListener("click", (e)=>{
+        console.log("e", e.target);
+        if (document.querySelector(".drop-down-triggers").contains(e.target)) return;
+        if (!document.querySelector(".dropdown-nav-menus").contains(e.target)) {
+            setIsVisibleUserDropdown(false);
+            setIsVisibleRoomsDropdown(false);
+        }
+    });
+}
 function NavBar() {
     _s();
     const { user , setUser , setUserDataInClientChecked  } = (0, _react.useContext)((0, _userContextDefault.default));
-    const [isVisibleDropdown, setIsVisibleDropdown] = (0, _react.useState)();
-    const pathSegments = window.location.pathname.split("/");
-    const roomName = pathSegments.pop() || pathSegments.pop();
+    const [isVisibleUserDropdown, setIsVisibleUserDropdown] = (0, _react.useState)();
+    const [isVisibleRoomsDropdown, setIsVisibleRoomsDropdown] = (0, _react.useState)();
+    (0, _react.useEffect)(()=>{
+        handleDropdownMenuClose({
+            setIsVisibleUserDropdown,
+            setIsVisibleRoomsDropdown
+        });
+    }, []);
+    const roomName = (0, _getRoomSlug.getRoomSlug)();
     console.log("roomName", roomName);
     const handleLogout = (e)=>{
         e.preventDefault();
@@ -13667,82 +13679,106 @@ function NavBar() {
                                         children: `${roomName.replace("-", " ")}`
                                     }, void 0, false, {
                                         fileName: "app/components/NavBar.js",
-                                        lineNumber: 29,
+                                        lineNumber: 52,
                                         columnNumber: 43
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "app/components/NavBar.js",
-                                lineNumber: 27,
+                                lineNumber: 50,
                                 columnNumber: 7
                             }, this)
                         }, void 0, false, {
                             fileName: "app/components/NavBar.js",
-                            lineNumber: 26,
+                            lineNumber: 49,
                             columnNumber: 6
                         }, this),
                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                            className: "col-md-4 col-2 d-flex flex-column align-items-end text-right position-relative",
-                            children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
-                                className: "btn btn-sm btn-outline-secondary border-0 rounded-pill",
-                                onClick: ()=>setIsVisibleDropdown(!isVisibleDropdown),
-                                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(UserIcon, {}, void 0, false, {
+                            className: "col-md-4 drop-down-triggers col-2 d-flex justify-content-end text-right position-relative",
+                            children: [
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
+                                    className: "btn btn-sm btn-outline-secondary border-0 rounded-pill",
+                                    onClick: ()=>setIsVisibleRoomsDropdown(!isVisibleRoomsDropdown),
+                                    children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(RoomSvg, {}, void 0, false, {
+                                        fileName: "app/components/NavBar.js",
+                                        lineNumber: 58,
+                                        columnNumber: 29
+                                    }, this)
+                                }, void 0, false, {
                                     fileName: "app/components/NavBar.js",
-                                    lineNumber: 35,
-                                    columnNumber: 29
+                                    lineNumber: 57,
+                                    columnNumber: 25
+                                }, this),
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
+                                    className: "btn btn-sm btn-outline-secondary border-0 rounded-pill",
+                                    onClick: ()=>setIsVisibleUserDropdown(!isVisibleUserDropdown),
+                                    children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(UserIcon, {}, void 0, false, {
+                                        fileName: "app/components/NavBar.js",
+                                        lineNumber: 61,
+                                        columnNumber: 29
+                                    }, this)
+                                }, void 0, false, {
+                                    fileName: "app/components/NavBar.js",
+                                    lineNumber: 60,
+                                    columnNumber: 25
                                 }, this)
-                            }, void 0, false, {
-                                fileName: "app/components/NavBar.js",
-                                lineNumber: 34,
-                                columnNumber: 25
-                            }, this)
-                        }, void 0, false, {
+                            ]
+                        }, void 0, true, {
                             fileName: "app/components/NavBar.js",
-                            lineNumber: 32,
+                            lineNumber: 55,
                             columnNumber: 6
                         }, this)
                     ]
                 }, void 0, true, {
                     fileName: "app/components/NavBar.js",
-                    lineNumber: 25,
+                    lineNumber: 48,
                     columnNumber: 5
                 }, this),
                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
                     className: "row",
                     children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                        className: "col-12 d-flex justify-content-end",
-                        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _navDropdownDefault.default), {
-                            handleLogout: handleLogout,
-                            user: user,
-                            isVisible: isVisibleDropdown
-                        }, void 0, false, {
-                            fileName: "app/components/NavBar.js",
-                            lineNumber: 43,
-                            columnNumber: 25
-                        }, this)
-                    }, void 0, false, {
+                        className: "col-12 d-flex justify-content-end dropdown-nav-menus",
+                        children: [
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _navDropdownDefault.default), {
+                                handleLogout: handleLogout,
+                                user: user,
+                                isVisible: isVisibleUserDropdown
+                            }, void 0, false, {
+                                fileName: "app/components/NavBar.js",
+                                lineNumber: 69,
+                                columnNumber: 25
+                            }, this),
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _roomsDropdownDefault.default), {
+                                isVisible: isVisibleRoomsDropdown
+                            }, void 0, false, {
+                                fileName: "app/components/NavBar.js",
+                                lineNumber: 70,
+                                columnNumber: 25
+                            }, this)
+                        ]
+                    }, void 0, true, {
                         fileName: "app/components/NavBar.js",
-                        lineNumber: 42,
+                        lineNumber: 68,
                         columnNumber: 21
                     }, this)
                 }, void 0, false, {
                     fileName: "app/components/NavBar.js",
-                    lineNumber: 41,
+                    lineNumber: 67,
                     columnNumber: 17
                 }, this)
             ]
         }, void 0, true, {
             fileName: "app/components/NavBar.js",
-            lineNumber: 24,
+            lineNumber: 47,
             columnNumber: 4
         }, this)
     }, void 0, false, {
         fileName: "app/components/NavBar.js",
-        lineNumber: 23,
+        lineNumber: 46,
         columnNumber: 3
     }, this);
 }
-_s(NavBar, "LwkGFRr7/VOJXUWdtlGJGVvgGyQ=");
+_s(NavBar, "zzCwjn//b7oaPF84W2g6gG5xlMs=");
 _c = NavBar;
 exports.default = NavBar;
 const UserIcon = ()=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("svg", {
@@ -13756,25 +13792,46 @@ const UserIcon = ()=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("svg", {
             d: "M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6Zm2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0Zm4 8c0 1-1 1-1 1H3s-1 0-1-1 1-4 6-4 6 3 6 4Zm-1-.004c-.001-.246-.154-.986-.832-1.664C11.516 10.68 10.289 10 8 10c-2.29 0-3.516.68-4.168 1.332-.678.678-.83 1.418-.832 1.664h10Z"
         }, void 0, false, {
             fileName: "app/components/NavBar.js",
-            lineNumber: 54,
+            lineNumber: 81,
             columnNumber: 1
         }, undefined)
     }, void 0, false, {
         fileName: "app/components/NavBar.js",
-        lineNumber: 53,
+        lineNumber: 80,
         columnNumber: 24
     }, undefined);
 _c1 = UserIcon;
-var _c, _c1;
+const RoomSvg = ()=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("svg", {
+        xmlns: "http://www.w3.org/2000/svg",
+        width: "22",
+        height: "22",
+        fill: "currentColor",
+        className: "bi bi-box",
+        viewBox: "0 0 16 16",
+        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("path", {
+            d: "M8.186 1.113a.5.5 0 0 0-.372 0L1.846 3.5 8 5.961 14.154 3.5 8.186 1.113zM15 4.239l-6.5 2.6v7.922l6.5-2.6V4.24zM7.5 14.762V6.838L1 4.239v7.923l6.5 2.6zM7.443.184a1.5 1.5 0 0 1 1.114 0l7.129 2.852A.5.5 0 0 1 16 3.5v8.662a1 1 0 0 1-.629.928l-7.185 2.874a.5.5 0 0 1-.372 0L.63 13.09a1 1 0 0 1-.63-.928V3.5a.5.5 0 0 1 .314-.464L7.443.184z"
+        }, void 0, false, {
+            fileName: "app/components/NavBar.js",
+            lineNumber: 93,
+            columnNumber: 3
+        }, undefined)
+    }, void 0, false, {
+        fileName: "app/components/NavBar.js",
+        lineNumber: 85,
+        columnNumber: 2
+    }, undefined);
+_c2 = RoomSvg;
+var _c, _c1, _c2;
 $RefreshReg$(_c, "NavBar");
 $RefreshReg$(_c1, "UserIcon");
+$RefreshReg$(_c2, "RoomSvg");
 
   $parcel$ReactRefreshHelpers$263c.postlude(module);
 } finally {
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"eGH5i","react":"9sfFD","@parcel/transformer-js/src/esmodule-helpers.js":"5oERU","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"ftrPk","../contexts/UserContext":"gJPKA","./NavDropdown":"clOI2"}],"clOI2":[function(require,module,exports) {
+},{"react/jsx-dev-runtime":"eGH5i","react":"9sfFD","../contexts/UserContext":"gJPKA","./NavDropdown":"clOI2","./../utils/getRoomSlug":"gra5i","@parcel/transformer-js/src/esmodule-helpers.js":"5oERU","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"ftrPk","./RoomsDropdown":"9yewF"}],"clOI2":[function(require,module,exports) {
 var $parcel$ReactRefreshHelpers$4fe0 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
 var prevRefreshReg = window.$RefreshReg$;
 var prevRefreshSig = window.$RefreshSig$;
@@ -13964,7 +14021,7 @@ var _flatTreeJs = require("./render/utils/flat-tree.js");
 var _useAnimatedStateJs = require("./animation/use-animated-state.js");
 var _useInvertedScaleJs = require("./value/use-inverted-scale.js");
 
-},{"./render/dom/motion.js":"b2kDo","./render/dom/motion-minimal.js":false,"./components/AnimatePresence/index.js":"egRLB","./components/AnimateSharedLayout/index.js":false,"./components/MotionConfig/index.js":false,"./components/LazyMotion/index.js":false,"./render/dom/features-animation.js":false,"./render/dom/features-max.js":false,"./value/use-motion-value.js":false,"./value/use-motion-template.js":false,"./value/index.js":"brlv5","./value/utils/resolve-motion-value.js":"tKbTp","./value/use-transform.js":false,"./value/use-spring.js":false,"./value/use-velocity.js":false,"./value/scroll/use-element-scroll.js":false,"./value/scroll/use-viewport-scroll.js":false,"./utils/use-reduced-motion.js":false,"./animation/animation-controls.js":false,"./animation/use-animation.js":false,"./animation/animate.js":false,"./render/utils/animation.js":"jQHlL","./utils/use-cycle.js":false,"./utils/transform.js":false,"./motion/utils/valid-prop.js":"d0QGY","./components/AnimatePresence/use-presence.js":"cZuzC","./gestures/drag/use-drag-controls.js":false,"./events/use-dom-event.js":"kTxxy","./motion/index.js":"ioPYv","./render/dom/projection/scale-correction.js":"ddOEd","./render/dom/projection/utils.js":"i6B7W","./components/AnimateSharedLayout/utils/crossfader.js":false,"./render/index.js":"hsOSl","./render/dom/utils/batch-layout.js":"6IwMV","./context/MotionConfigContext.js":"dwzzE","./context/PresenceContext.js":"iCJR7","./context/LayoutGroupContext.js":"9Gtb0","./components/AnimateSharedLayout/types.js":"4tfpW","./context/SharedLayoutContext.js":"9VpnA","./components/AnimateSharedLayout/utils/batcher.js":"bbm4G","./render/utils/flat-tree.js":"4q3s9","./animation/use-animated-state.js":false,"./value/use-inverted-scale.js":false,"@parcel/transformer-js/src/esmodule-helpers.js":"5oERU"}],"b2kDo":[function(require,module,exports) {
+},{"./render/dom/motion.js":"b2kDo","./render/dom/motion-minimal.js":"9cIK6","./components/AnimatePresence/index.js":"egRLB","./components/AnimateSharedLayout/index.js":"bnPvy","./components/MotionConfig/index.js":"lbMr8","./components/LazyMotion/index.js":"iH9n4","./render/dom/features-animation.js":"iEJPS","./render/dom/features-max.js":"fMony","./value/use-motion-value.js":"gj8Zh","./value/use-motion-template.js":"cQHe0","./value/index.js":"brlv5","./value/utils/resolve-motion-value.js":"tKbTp","./value/use-transform.js":"1mMYA","./value/use-spring.js":"dMxn9","./value/use-velocity.js":"btEp4","./value/scroll/use-element-scroll.js":"el4hR","./value/scroll/use-viewport-scroll.js":"cpzcf","./utils/use-reduced-motion.js":"5u20M","./animation/animation-controls.js":"5z0IS","./animation/use-animation.js":"7oJ8g","./animation/animate.js":"cr9QY","./render/utils/animation.js":"jQHlL","./utils/use-cycle.js":"fs4TB","./utils/transform.js":"fS8nn","./motion/utils/valid-prop.js":"d0QGY","./components/AnimatePresence/use-presence.js":"cZuzC","./gestures/drag/use-drag-controls.js":"k6vVT","./events/use-dom-event.js":"kTxxy","./motion/index.js":"ioPYv","./render/dom/projection/scale-correction.js":"ddOEd","./render/dom/projection/utils.js":"i6B7W","./components/AnimateSharedLayout/utils/crossfader.js":"3GYHy","./render/index.js":"hsOSl","./render/dom/utils/batch-layout.js":"6IwMV","./context/MotionConfigContext.js":"dwzzE","./context/PresenceContext.js":"iCJR7","./context/LayoutGroupContext.js":"9Gtb0","./components/AnimateSharedLayout/types.js":"4tfpW","./context/SharedLayoutContext.js":"9VpnA","./components/AnimateSharedLayout/utils/batcher.js":"bbm4G","./render/utils/flat-tree.js":"4q3s9","./animation/use-animated-state.js":"fBs43","./value/use-inverted-scale.js":"fgcFW","@parcel/transformer-js/src/esmodule-helpers.js":"5oERU"}],"b2kDo":[function(require,module,exports) {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
 parcelHelpers.export(exports, "createDomMotionComponent", ()=>createDomMotionComponent);
@@ -16891,7 +16948,7 @@ var _cubicBezierJs = require("./easing/cubic-bezier.js");
 var _stepsJs = require("./easing/steps.js");
 var _utilsJs = require("./easing/utils.js");
 
-},{"./animations/index.js":"213vg","./animations/inertia.js":"fadhN","./animations/generators/decay.js":"8s46z","./animations/generators/spring.js":"qcgJ0","./animations/generators/keyframes.js":"b10FU","./utils/angle.js":false,"./utils/apply-offset.js":false,"./utils/attract.js":false,"./utils/clamp.js":"48v6h","./utils/degrees-to-radians.js":false,"./utils/distance.js":"eGyTM","./utils/interpolate.js":"3vsWk","./utils/is-point-3d.js":"2RnOp","./utils/is-point.js":"awwdp","./utils/mix-color.js":"ktzu7","./utils/mix-complex.js":"1ydO6","./utils/mix.js":"c2eXc","./utils/pipe.js":"7J27S","./utils/point-from-vector.js":false,"./utils/progress.js":"8ymm6","./utils/radians-to-degrees.js":false,"./utils/smooth-frame.js":false,"./utils/smooth.js":false,"./utils/snap.js":false,"./utils/to-decimal.js":false,"./utils/velocity-per-frame.js":false,"./utils/velocity-per-second.js":"8EzJA","./utils/wrap.js":false,"./easing/index.js":"lGoVg","./easing/cubic-bezier.js":"dSV1w","./easing/steps.js":false,"./easing/utils.js":"dBJ5W","@parcel/transformer-js/src/esmodule-helpers.js":"5oERU"}],"213vg":[function(require,module,exports) {
+},{"./animations/index.js":"213vg","./animations/inertia.js":"fadhN","./animations/generators/decay.js":"8s46z","./animations/generators/spring.js":"qcgJ0","./animations/generators/keyframes.js":"b10FU","./utils/angle.js":false,"./utils/apply-offset.js":false,"./utils/attract.js":false,"./utils/clamp.js":"48v6h","./utils/degrees-to-radians.js":false,"./utils/distance.js":"eGyTM","./utils/interpolate.js":"3vsWk","./utils/is-point-3d.js":"2RnOp","./utils/is-point.js":"awwdp","./utils/mix-color.js":"ktzu7","./utils/mix-complex.js":"1ydO6","./utils/mix.js":"c2eXc","./utils/pipe.js":"7J27S","./utils/point-from-vector.js":false,"./utils/progress.js":"8ymm6","./utils/radians-to-degrees.js":false,"./utils/smooth-frame.js":false,"./utils/smooth.js":false,"./utils/snap.js":false,"./utils/to-decimal.js":false,"./utils/velocity-per-frame.js":false,"./utils/velocity-per-second.js":"8EzJA","./utils/wrap.js":"jN5zh","./easing/index.js":"lGoVg","./easing/cubic-bezier.js":"dSV1w","./easing/steps.js":false,"./easing/utils.js":"dBJ5W","@parcel/transformer-js/src/esmodule-helpers.js":"5oERU"}],"213vg":[function(require,module,exports) {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
 parcelHelpers.export(exports, "animate", ()=>animate);
@@ -17919,7 +17976,16 @@ var isPoint3D = function(point) {
     return (0, _isPointJs.isPoint)(point) && point.hasOwnProperty("z");
 };
 
-},{"./is-point.js":"awwdp","@parcel/transformer-js/src/esmodule-helpers.js":"5oERU"}],"dSV1w":[function(require,module,exports) {
+},{"./is-point.js":"awwdp","@parcel/transformer-js/src/esmodule-helpers.js":"5oERU"}],"jN5zh":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "wrap", ()=>wrap);
+var wrap = function(min, max, v) {
+    var rangeSize = max - min;
+    return ((v - min) % rangeSize + rangeSize) % rangeSize + min;
+};
+
+},{"@parcel/transformer-js/src/esmodule-helpers.js":"5oERU"}],"dSV1w":[function(require,module,exports) {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
 parcelHelpers.export(exports, "cubicBezier", ()=>cubicBezier);
@@ -22744,7 +22810,17 @@ var svgVisualElement = (0, _indexJs.visualElement)((0, _tslib.__assign)((0, _tsl
     render: (0, _renderJs.renderSVG)
 }));
 
-},{"tslib":"edJ4f","../index.js":"hsOSl","./utils/scrape-motion-values.js":"7kpaA","../html/visual-element.js":"6nqVy","./utils/build-attrs.js":"kzWZd","../dom/utils/camel-to-dash.js":"i0CLn","./utils/camel-case-attrs.js":"7KtdX","../html/utils/transform.js":"cTSQv","./utils/render.js":"6lkLm","../dom/value-types/defaults.js":"48tHB","../html/utils/build-projection-transform.js":"19KsI","@parcel/transformer-js/src/esmodule-helpers.js":"5oERU"}],"egRLB":[function(require,module,exports) {
+},{"tslib":"edJ4f","../index.js":"hsOSl","./utils/scrape-motion-values.js":"7kpaA","../html/visual-element.js":"6nqVy","./utils/build-attrs.js":"kzWZd","../dom/utils/camel-to-dash.js":"i0CLn","./utils/camel-case-attrs.js":"7KtdX","../html/utils/transform.js":"cTSQv","./utils/render.js":"6lkLm","../dom/value-types/defaults.js":"48tHB","../html/utils/build-projection-transform.js":"19KsI","@parcel/transformer-js/src/esmodule-helpers.js":"5oERU"}],"9cIK6":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "m", ()=>m);
+var _motionProxyJs = require("./motion-proxy.js");
+var _createConfigJs = require("./utils/create-config.js");
+/**
+ * @public
+ */ var m = (0, _motionProxyJs.createMotionProxy)((0, _createConfigJs.createDomMotionConfig));
+
+},{"./motion-proxy.js":"kbo2m","./utils/create-config.js":"05g8D","@parcel/transformer-js/src/esmodule-helpers.js":"5oERU"}],"egRLB":[function(require,module,exports) {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
 parcelHelpers.export(exports, "AnimatePresence", ()=>AnimatePresence);
@@ -23020,7 +23096,1889 @@ function newChildrenMap() {
     return new Map();
 }
 
-},{"react":"9sfFD","../../context/PresenceContext.js":"iCJR7","../../utils/use-constant.js":"fUKVy","@parcel/transformer-js/src/esmodule-helpers.js":"5oERU"}],"aun22":[function(require,module,exports) {
+},{"react":"9sfFD","../../context/PresenceContext.js":"iCJR7","../../utils/use-constant.js":"fUKVy","@parcel/transformer-js/src/esmodule-helpers.js":"5oERU"}],"bnPvy":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "AnimateSharedLayout", ()=>AnimateSharedLayout);
+var _tslib = require("tslib");
+var _react = require("react");
+var _typesJs = require("./types.js");
+var _stackJs = require("./utils/stack.js");
+var _sharedLayoutContextJs = require("../../context/SharedLayoutContext.js");
+var _indexJs = require("../../context/MotionContext/index.js");
+var _rotateJs = require("./utils/rotate.js");
+var _batcherJs = require("./utils/batcher.js");
+var _utilsJs = require("../../render/dom/projection/utils.js");
+/**
+ * @public
+ */ var AnimateSharedLayout = /** @class */ function(_super) {
+    (0, _tslib.__extends)(AnimateSharedLayout, _super);
+    function AnimateSharedLayout() {
+        var _this = _super !== null && _super.apply(this, arguments) || this;
+        /**
+         * A list of all the children in the shared layout
+         */ _this.children = new Set();
+        /**
+         * As animate components with a defined `layoutId` are added/removed to the tree,
+         * we store them in order. When one is added, it will animate out from the
+         * previous one, and when it's removed, it'll animate to the previous one.
+         */ _this.stacks = new Map();
+        /**
+         * Track whether the component has mounted. If it hasn't, the presence of added children
+         * are set to Present, whereas if it has they're considered Entering
+         */ _this.hasMounted = false;
+        /**
+         * Track whether we already have an update scheduled. If we don't, we'll run snapshots
+         * and schedule one.
+         */ _this.updateScheduled = false;
+        /**
+         * Tracks whether we already have a render scheduled. If we don't, we'll force one with this.forceRender
+         */ _this.renderScheduled = false;
+        /**
+         * The methods provided to all children in the shared layout tree.
+         */ _this.syncContext = (0, _tslib.__assign)((0, _tslib.__assign)({}, (0, _batcherJs.createBatcher)()), {
+            syncUpdate: function(force) {
+                return _this.scheduleUpdate(force);
+            },
+            forceUpdate: function() {
+                // By copying syncContext to itself, when this component re-renders it'll also re-render
+                // all children subscribed to the SharedLayout context.
+                _this.syncContext = (0, _tslib.__assign)({}, _this.syncContext);
+                _this.scheduleUpdate(true);
+            },
+            register: function(child) {
+                return _this.addChild(child);
+            },
+            remove: function(child) {
+                return _this.removeChild(child);
+            }
+        });
+        return _this;
+    }
+    AnimateSharedLayout.prototype.componentDidMount = function() {
+        this.hasMounted = true;
+    };
+    AnimateSharedLayout.prototype.componentDidUpdate = function() {
+        this.startLayoutAnimation();
+    };
+    AnimateSharedLayout.prototype.shouldComponentUpdate = function() {
+        this.renderScheduled = true;
+        return true;
+    };
+    AnimateSharedLayout.prototype.startLayoutAnimation = function() {
+        var _this = this;
+        /**
+         * Reset update and render scheduled status
+         */ this.renderScheduled = this.updateScheduled = false;
+        var type = this.props.type;
+        /**
+         * Update presence metadata based on the latest AnimatePresence status.
+         * This is a kind of goofy way of dealing with this, perhaps there's a better model to find.
+         */ this.children.forEach(function(child) {
+            if (!child.isPresent) child.presence = (0, _typesJs.Presence).Exiting;
+            else if (child.presence !== (0, _typesJs.Presence).Entering) child.presence = child.presence === (0, _typesJs.Presence).Exiting ? (0, _typesJs.Presence).Entering : (0, _typesJs.Presence).Present;
+        });
+        this.updateStacks();
+        /**
+         * Create a handler which we can use to flush the children animations
+         */ var handler = {
+            layoutReady: function(child) {
+                if (child.getLayoutId() !== undefined) {
+                    var stack = _this.getStack(child);
+                    stack.animate(child, type === "crossfade");
+                } else child.notifyLayoutReady();
+            },
+            parent: this.context.visualElement
+        };
+        /**
+         * Shared layout animations can be used without the AnimateSharedLayout wrapping component.
+         * This requires some co-ordination across components to stop layout thrashing
+         * and ensure measurements are taken at the correct time.
+         *
+         * Here we use that same mechanism of schedule/flush.
+         */ this.children.forEach(function(child) {
+            return _this.syncContext.add(child);
+        });
+        this.syncContext.flush(handler);
+        /**
+         * Clear snapshots so subsequent rerenders don't retain memory of outgoing components
+         */ this.stacks.forEach(function(stack) {
+            return stack.clearSnapshot();
+        });
+    };
+    AnimateSharedLayout.prototype.updateStacks = function() {
+        this.stacks.forEach(function(stack) {
+            return stack.updateLeadAndFollow();
+        });
+    };
+    AnimateSharedLayout.prototype.scheduleUpdate = function(force) {
+        if (force === void 0) force = false;
+        if (!(force || !this.updateScheduled)) return;
+        /**
+         * Flag we've scheduled an update
+         */ this.updateScheduled = true;
+        /**
+         * Write: Reset transforms so bounding boxes can be accurately measured.
+         */ this.children.forEach(function(child) {
+            (0, _rotateJs.resetRotate)(child);
+            if (child.shouldResetTransform()) child.resetTransform();
+        });
+        /**
+         * Read: Snapshot children
+         */ this.children.forEach((0, _utilsJs.snapshotViewportBox));
+        /**
+         * Every child keeps a local snapshot, but we also want to record
+         * snapshots of the visible children as, if they're are being removed
+         * in this render, we can still access them.
+         *
+         * TODO: What would be better here is doing a single loop where we
+         * only snapshotViewportBoxes of undefined layoutIds and then one for each stack
+         */ this.stacks.forEach(function(stack) {
+            return stack.updateSnapshot();
+        });
+        /**
+         * Force a rerender by setting state if we aren't already going to render.
+         */ if (force || !this.renderScheduled) {
+            this.renderScheduled = true;
+            this.forceUpdate();
+        }
+    };
+    AnimateSharedLayout.prototype.addChild = function(child) {
+        this.children.add(child);
+        this.addToStack(child);
+        child.presence = this.hasMounted ? (0, _typesJs.Presence).Entering : (0, _typesJs.Presence).Present;
+    };
+    AnimateSharedLayout.prototype.removeChild = function(child) {
+        this.scheduleUpdate();
+        this.children.delete(child);
+        this.removeFromStack(child);
+    };
+    AnimateSharedLayout.prototype.addToStack = function(child) {
+        var stack = this.getStack(child);
+        stack === null || stack === void 0 || stack.add(child);
+    };
+    AnimateSharedLayout.prototype.removeFromStack = function(child) {
+        var stack = this.getStack(child);
+        stack === null || stack === void 0 || stack.remove(child);
+    };
+    /**
+     * Return a stack of animate children based on the provided layoutId.
+     * Will create a stack if none currently exists with that layoutId.
+     */ AnimateSharedLayout.prototype.getStack = function(child) {
+        var id = child.getLayoutId();
+        if (id === undefined) return;
+        // Create stack if it doesn't already exist
+        !this.stacks.has(id) && this.stacks.set(id, (0, _stackJs.layoutStack)());
+        return this.stacks.get(id);
+    };
+    AnimateSharedLayout.prototype.render = function() {
+        return _react.createElement((0, _sharedLayoutContextJs.SharedLayoutContext).Provider, {
+            value: this.syncContext
+        }, this.props.children);
+    };
+    AnimateSharedLayout.contextType = (0, _indexJs.MotionContext);
+    return AnimateSharedLayout;
+}(_react.Component);
+
+},{"tslib":"edJ4f","react":"9sfFD","./types.js":"4tfpW","./utils/stack.js":"aJ1pT","../../context/SharedLayoutContext.js":"9VpnA","../../context/MotionContext/index.js":"1mMVq","./utils/rotate.js":"kAulK","./utils/batcher.js":"bbm4G","../../render/dom/projection/utils.js":"i6B7W","@parcel/transformer-js/src/esmodule-helpers.js":"5oERU"}],"aJ1pT":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "layoutStack", ()=>layoutStack);
+var _tslib = require("tslib");
+var _typesJs = require("../types.js");
+var _visualElementDragControlsJs = require("../../../gestures/drag/VisualElementDragControls.js");
+var _crossfaderJs = require("./crossfader.js");
+function layoutStack() {
+    var stack = new Set();
+    var state = {
+        leadIsExiting: false
+    };
+    var prevState = (0, _tslib.__assign)({}, state);
+    var prevValues;
+    var prevViewportBox;
+    var prevDragCursor;
+    var crossfader = (0, _crossfaderJs.createCrossfader)();
+    var needsCrossfadeAnimation = false;
+    function getFollowViewportBox() {
+        return state.follow ? state.follow.prevViewportBox : prevViewportBox;
+    }
+    function getFollowLayout() {
+        var _a;
+        return (_a = state.follow) === null || _a === void 0 ? void 0 : _a.getLayoutState().layout;
+    }
+    return {
+        add: function(element) {
+            element.setCrossfader(crossfader);
+            stack.add(element);
+            /**
+             * Hydrate new element with previous drag position if we have one
+             */ if (prevDragCursor) element.prevDragCursor = prevDragCursor;
+            if (!state.lead) state.lead = element;
+        },
+        remove: function(element) {
+            stack.delete(element);
+        },
+        getLead: function() {
+            return state.lead;
+        },
+        updateSnapshot: function() {
+            if (!state.lead) return;
+            prevValues = crossfader.isActive() ? crossfader.getLatestValues() : state.lead.getLatestValues();
+            prevViewportBox = state.lead.prevViewportBox;
+            var dragControls = (0, _visualElementDragControlsJs.elementDragControls).get(state.lead);
+            if (dragControls && dragControls.isDragging) prevDragCursor = dragControls.cursorProgress;
+        },
+        clearSnapshot: function() {
+            prevDragCursor = prevViewportBox = undefined;
+        },
+        updateLeadAndFollow: function() {
+            var _a;
+            prevState = (0, _tslib.__assign)({}, state);
+            var lead;
+            var follow;
+            var order = Array.from(stack);
+            for(var i = order.length; i--; i){
+                var element = order[i];
+                if (lead) follow !== null && follow !== void 0 ? follow : follow = element;
+                lead !== null && lead !== void 0 ? lead : lead = element;
+                if (lead && follow) break;
+            }
+            state.lead = lead;
+            state.follow = follow;
+            state.leadIsExiting = ((_a = state.lead) === null || _a === void 0 ? void 0 : _a.presence) === (0, _typesJs.Presence).Exiting;
+            crossfader.setOptions({
+                lead: lead,
+                follow: follow,
+                prevValues: prevValues,
+                crossfadeOpacity: (follow === null || follow === void 0 ? void 0 : follow.isPresenceRoot) || (lead === null || lead === void 0 ? void 0 : lead.isPresenceRoot)
+            });
+            if (// Don't crossfade if we've just animated back from lead and switched the
+            // old follow to the new lead.
+            state.lead !== prevState.follow && (prevState.lead !== state.lead || prevState.leadIsExiting !== state.leadIsExiting)) needsCrossfadeAnimation = true;
+        },
+        animate: function(child, shouldCrossfade) {
+            var _a;
+            if (shouldCrossfade === void 0) shouldCrossfade = false;
+            if (child === state.lead) {
+                if (shouldCrossfade) /**
+                     * Point a lead to itself in case it was previously pointing
+                     * to a different visual element
+                     */ child.pointTo(state.lead);
+                else child.setVisibility(true);
+                var config = {};
+                var prevParent = (_a = state.follow) === null || _a === void 0 ? void 0 : _a.getProjectionParent();
+                if (prevParent) /**
+                     * We'll use this to determine if the element or its layoutId has been reparented.
+                     */ config.prevParent = prevParent;
+                if (child.presence === (0, _typesJs.Presence).Entering) config.originBox = getFollowViewportBox();
+                else if (child.presence === (0, _typesJs.Presence).Exiting) config.targetBox = getFollowLayout();
+                if (needsCrossfadeAnimation) {
+                    needsCrossfadeAnimation = false;
+                    var transition = child.getDefaultTransition();
+                    child.presence === (0, _typesJs.Presence).Entering ? crossfader.toLead(transition) : crossfader.fromLead(transition);
+                }
+                child.notifyLayoutReady(config);
+            } else if (shouldCrossfade) state.lead && child.pointTo(state.lead);
+            else child.setVisibility(false);
+        }
+    };
+}
+
+},{"tslib":"edJ4f","../types.js":"4tfpW","../../../gestures/drag/VisualElementDragControls.js":"7MwwB","./crossfader.js":"3GYHy","@parcel/transformer-js/src/esmodule-helpers.js":"5oERU"}],"3GYHy":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "createCrossfader", ()=>createCrossfader);
+var _tslib = require("tslib");
+var _framesync = require("framesync");
+var _framesyncDefault = parcelHelpers.interopDefault(_framesync);
+var _popmotion = require("popmotion");
+var _animateJs = require("../../../animation/animate.js");
+var _transitionsJs = require("../../../animation/utils/transitions.js");
+var _indexJs = require("../../../value/index.js");
+function createCrossfader() {
+    /**
+     * The current state of the crossfade as a value between 0 and 1
+     */ var progress = (0, _indexJs.motionValue)(1);
+    var options = {
+        lead: undefined,
+        follow: undefined,
+        crossfadeOpacity: false,
+        preserveFollowOpacity: false
+    };
+    var prevOptions = (0, _tslib.__assign)({}, options);
+    var leadState = {};
+    var followState = {};
+    /**
+     *
+     */ var isActive = false;
+    /**
+     *
+     */ var finalCrossfadeFrame = null;
+    /**
+     * Framestamp of the last frame we updated values at.
+     */ var prevUpdate = 0;
+    function startCrossfadeAnimation(target, transition) {
+        var lead = options.lead, follow = options.follow;
+        isActive = true;
+        finalCrossfadeFrame = null;
+        var hasUpdated = false;
+        var onUpdate = function() {
+            hasUpdated = true;
+            lead && lead.scheduleRender();
+            follow && follow.scheduleRender();
+        };
+        var onComplete = function() {
+            isActive = false;
+            /**
+             * If the crossfade animation is no longer active, flag a frame
+             * that we're still allowed to crossfade
+             */ finalCrossfadeFrame = (0, _framesync.getFrameData)().timestamp;
+        };
+        transition = transition && (0, _transitionsJs.getValueTransition)(transition, "crossfade");
+        return (0, _animateJs.animate)(progress, target, (0, _tslib.__assign)((0, _tslib.__assign)({}, transition), {
+            onUpdate: onUpdate,
+            onComplete: function() {
+                if (!hasUpdated) {
+                    progress.set(target);
+                    /**
+                     * If we never ran an update, for instance if this was an instant transition, fire a
+                     * simulated final frame to ensure the crossfade gets applied correctly.
+                     */ (0, _framesyncDefault.default).read(onComplete);
+                } else onComplete();
+                onUpdate();
+            }
+        }));
+    }
+    function updateCrossfade() {
+        var _a, _b;
+        /**
+         * We only want to compute the crossfade once per frame, so we
+         * compare the previous update framestamp with the current frame
+         * and early return if they're the same.
+         */ var timestamp = (0, _framesync.getFrameData)().timestamp;
+        var lead = options.lead, follow = options.follow;
+        if (timestamp === prevUpdate || !lead) return;
+        prevUpdate = timestamp;
+        /**
+         * Merge each component's latest values into our crossfaded state
+         * before crossfading.
+         */ var latestLeadValues = lead.getLatestValues();
+        Object.assign(leadState, latestLeadValues);
+        var latestFollowValues = follow ? follow.getLatestValues() : options.prevValues;
+        Object.assign(followState, latestFollowValues);
+        var p = progress.get();
+        /**
+         * Crossfade the opacity between the two components. This will result
+         * in a different opacity for each component.
+         */ var leadTargetOpacity = (_a = latestLeadValues.opacity) !== null && _a !== void 0 ? _a : 1;
+        var followTargetOpacity = (_b = latestFollowValues === null || latestFollowValues === void 0 ? void 0 : latestFollowValues.opacity) !== null && _b !== void 0 ? _b : 1;
+        if (options.crossfadeOpacity && follow) {
+            leadState.opacity = (0, _popmotion.mix)(/**
+             * If the follow child has been completely hidden we animate
+             * this opacity from its previous opacity, but otherwise from completely transparent.
+             */ follow.isVisible !== false ? 0 : followTargetOpacity, leadTargetOpacity, easeCrossfadeIn(p));
+            followState.opacity = options.preserveFollowOpacity ? followTargetOpacity : (0, _popmotion.mix)(followTargetOpacity, 0, easeCrossfadeOut(p));
+        } else if (!follow) leadState.opacity = (0, _popmotion.mix)(followTargetOpacity, leadTargetOpacity, p);
+        mixValues(leadState, followState, latestLeadValues, latestFollowValues || {}, Boolean(follow), p);
+    }
+    return {
+        isActive: function() {
+            return leadState && (isActive || (0, _framesync.getFrameData)().timestamp === finalCrossfadeFrame);
+        },
+        fromLead: function(transition) {
+            return startCrossfadeAnimation(0, transition);
+        },
+        toLead: function(transition) {
+            var initialProgress = 0;
+            if (!options.prevValues && !options.follow) /**
+                 * If we're not coming from anywhere, start at the end of the animation.
+                 */ initialProgress = 1;
+            else if (prevOptions.lead === options.follow && prevOptions.follow === options.lead) /**
+                 * If we're swapping follow/lead we can reverse the progress
+                 */ initialProgress = 1 - progress.get();
+            progress.set(initialProgress);
+            return startCrossfadeAnimation(1, transition);
+        },
+        reset: function() {
+            return progress.set(1);
+        },
+        stop: function() {
+            return progress.stop();
+        },
+        getCrossfadeState: function(element) {
+            updateCrossfade();
+            if (element === options.lead) return leadState;
+            else if (element === options.follow) return followState;
+        },
+        setOptions: function(newOptions) {
+            prevOptions = options;
+            options = newOptions;
+            leadState = {};
+            followState = {};
+        },
+        getLatestValues: function() {
+            return leadState;
+        }
+    };
+}
+var easeCrossfadeIn = compress(0, 0.5, (0, _popmotion.circOut));
+var easeCrossfadeOut = compress(0.5, 0.95, (0, _popmotion.linear));
+function compress(min, max, easing) {
+    return function(p) {
+        // Could replace ifs with clamp
+        if (p < min) return 0;
+        if (p > max) return 1;
+        return easing((0, _popmotion.progress)(min, max, p));
+    };
+}
+var borders = [
+    "TopLeft",
+    "TopRight",
+    "BottomLeft",
+    "BottomRight"
+];
+var numBorders = borders.length;
+function mixValues(leadState, followState, latestLeadValues, latestFollowValues, hasFollowElement, p) {
+    /**
+     * Mix border radius
+     */ for(var i = 0; i < numBorders; i++){
+        var borderLabel = "border" + borders[i] + "Radius";
+        var followRadius = getRadius(latestFollowValues, borderLabel);
+        var leadRadius = getRadius(latestLeadValues, borderLabel);
+        if (followRadius === undefined && leadRadius === undefined) continue;
+        followRadius || (followRadius = 0);
+        leadRadius || (leadRadius = 0);
+        /**
+         * Currently we're only crossfading between numerical border radius.
+         * It would be possible to crossfade between percentages for a little
+         * extra bundle size.
+         */ if (typeof followRadius === "number" && typeof leadRadius === "number") {
+            var radius = Math.max((0, _popmotion.mix)(followRadius, leadRadius, p), 0);
+            leadState[borderLabel] = followState[borderLabel] = radius;
+        }
+    }
+    /**
+     * Mix rotation
+     */ if (latestFollowValues.rotate || latestLeadValues.rotate) {
+        var rotate = (0, _popmotion.mix)(latestFollowValues.rotate || 0, latestLeadValues.rotate || 0, p);
+        leadState.rotate = followState.rotate = rotate;
+    }
+    /**
+     * We only want to mix the background color if there's a follow element
+     * that we're not crossfading opacity between. For instance with switch
+     * AnimateSharedLayout animations, this helps the illusion of a continuous
+     * element being animated but also cuts down on the number of paints triggered
+     * for elements where opacity is doing that work for us.
+     */ if (!hasFollowElement && latestLeadValues.backgroundColor && latestFollowValues.backgroundColor) /**
+         * This isn't ideal performance-wise as mixColor is creating a new function every frame.
+         * We could probably create a mixer that runs at the start of the animation but
+         * the idea behind the crossfader is that it runs dynamically between two potentially
+         * changing targets (ie opacity or borderRadius may be animating independently via variants)
+         */ leadState.backgroundColor = followState.backgroundColor = (0, _popmotion.mixColor)(latestFollowValues.backgroundColor, latestLeadValues.backgroundColor)(p);
+}
+function getRadius(values, radiusName) {
+    var _a;
+    return (_a = values[radiusName]) !== null && _a !== void 0 ? _a : values.borderRadius;
+}
+
+},{"tslib":"edJ4f","framesync":"geFpv","popmotion":"hu70l","../../../animation/animate.js":"cr9QY","../../../animation/utils/transitions.js":"6JS8P","../../../value/index.js":"brlv5","@parcel/transformer-js/src/esmodule-helpers.js":"5oERU"}],"cr9QY":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "animate", ()=>animate);
+var _indexJs = require("../value/index.js");
+var _isMotionValueJs = require("../value/utils/is-motion-value.js");
+var _transitionsJs = require("./utils/transitions.js");
+/**
+ * Animate a single value or a `MotionValue`.
+ *
+ * The first argument is either a `MotionValue` to animate, or an initial animation value.
+ *
+ * The second is either a value to animate to, or an array of keyframes to animate through.
+ *
+ * The third argument can be either tween or spring options, and optional lifecycle methods: `onUpdate`, `onPlay`, `onComplete`, `onRepeat` and `onStop`.
+ *
+ * Returns `AnimationPlaybackControls`, currently just a `stop` method.
+ *
+ * ```javascript
+ * const x = useMotionValue(0)
+ *
+ * useEffect(() => {
+ *   const controls = animate(x, 100, {
+ *     type: "spring",
+ *     stiffness: 2000,
+ *     onComplete: v => {}
+ *   })
+ *
+ *   return controls.stop
+ * })
+ * ```
+ *
+ * @public
+ */ function animate(from, to, transition) {
+    if (transition === void 0) transition = {};
+    var value = (0, _isMotionValueJs.isMotionValue)(from) ? from : (0, _indexJs.motionValue)(from);
+    (0, _transitionsJs.startAnimation)("", value, to, transition);
+    return {
+        stop: function() {
+            return value.stop();
+        }
+    };
+}
+
+},{"../value/index.js":"brlv5","../value/utils/is-motion-value.js":"bSPO9","./utils/transitions.js":"6JS8P","@parcel/transformer-js/src/esmodule-helpers.js":"5oERU"}],"kAulK":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "resetRotate", ()=>resetRotate);
+var _transformJs = require("../../../render/html/utils/transform.js");
+function resetRotate(child) {
+    // If there's no detected rotation values, we can early return without a forced render.
+    var hasRotate = false;
+    // Keep a record of all the values we've reset
+    var resetValues = {};
+    // Check the rotate value of all axes and reset to 0
+    for(var i = 0; i < (0, _transformJs.transformAxes).length; i++){
+        var axis = (0, _transformJs.transformAxes)[i];
+        var key = "rotate" + axis;
+        // If this rotation doesn't exist as a motion value, then we don't
+        // need to reset it
+        if (!child.hasValue(key) || child.getStaticValue(key) === 0) continue;
+        hasRotate = true;
+        // Record the rotation and then temporarily set it to 0
+        resetValues[key] = child.getStaticValue(key);
+        child.setStaticValue(key, 0);
+    }
+    // If there's no rotation values, we don't need to do any more.
+    if (!hasRotate) return;
+    // Force a render of this element to apply the transform with all rotations
+    // set to 0.
+    child.syncRender();
+    // Put back all the values we reset
+    for(var key in resetValues)child.setStaticValue(key, resetValues[key]);
+    // Schedule a render for the next frame. This ensures we won't visually
+    // see the element with the reset rotate value applied.
+    child.scheduleRender();
+}
+
+},{"../../../render/html/utils/transform.js":"cTSQv","@parcel/transformer-js/src/esmodule-helpers.js":"5oERU"}],"lbMr8":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "MotionConfig", ()=>MotionConfig);
+var _tslib = require("tslib");
+var _react = require("react");
+var _motionConfigContextJs = require("../../context/MotionConfigContext.js");
+var _useConstantJs = require("../../utils/use-constant.js");
+/**
+ * `MotionConfig` is used to set configuration options for all children `motion` components.
+ *
+ * ```jsx
+ * import { motion, MotionConfig } from "framer-motion"
+ *
+ * export function App() {
+ *   return (
+ *     <MotionConfig transition={{ type: "spring" }}>
+ *       <motion.div animate={{ x: 100 }} />
+ *     </MotionConfig>
+ *   )
+ * }
+ * ```
+ *
+ * @public
+ */ function MotionConfig(_a) {
+    var children = _a.children, config = (0, _tslib.__rest)(_a, [
+        "children"
+    ]);
+    /**
+     * Inherit props from any parent MotionConfig components
+     */ config = (0, _tslib.__assign)((0, _tslib.__assign)({}, (0, _react.useContext)((0, _motionConfigContextJs.MotionConfigContext))), config);
+    /**
+     * Don't allow isStatic to change between renders as it affects how many hooks
+     * motion components fire.
+     */ config.isStatic = (0, _useConstantJs.useConstant)(function() {
+        return config.isStatic;
+    });
+    /**
+     * Creating a new config context object will re-render every `motion` component
+     * every time it renders. So we only want to create a new one sparingly.
+     */ var transitionDependency = typeof config.transition === "object" ? config.transition.toString() : "";
+    var context = (0, _react.useMemo)(function() {
+        return config;
+    }, [
+        transitionDependency,
+        config.transformPagePoint
+    ]);
+    return _react.createElement((0, _motionConfigContextJs.MotionConfigContext).Provider, {
+        value: context
+    }, children);
+}
+
+},{"tslib":"edJ4f","react":"9sfFD","../../context/MotionConfigContext.js":"dwzzE","../../utils/use-constant.js":"fUKVy","@parcel/transformer-js/src/esmodule-helpers.js":"5oERU"}],"iH9n4":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "LazyMotion", ()=>LazyMotion);
+var _tslib = require("tslib");
+var _react = require("react");
+var _lazyContextJs = require("../../context/LazyContext.js");
+var _definitionsJs = require("../../motion/features/definitions.js");
+/**
+ * Used in conjunction with the `m` component to reduce bundle size.
+ *
+ * `m` is a version of the `motion` component that only loads functionality
+ * critical for the initial render.
+ *
+ * `LazyMotion` can then be used to either synchronously or asynchronously
+ * load animation and gesture support.
+ *
+ * ```jsx
+ * // Synchronous loading
+ * import { LazyMotion, m, domAnimations } from "framer-motion"
+ *
+ * function App() {
+ *   return (
+ *     <LazyMotion features={domAnimations}>
+ *       <m.div animate={{ scale: 2 }} />
+ *     </LazyMotion>
+ *   )
+ * }
+ *
+ * // Asynchronous loading
+ * import { LazyMotion, m } from "framer-motion"
+ *
+ * function App() {
+ *   return (
+ *     <LazyMotion features={() => import('./path/to/domAnimations')}>
+ *       <m.div animate={{ scale: 2 }} />
+ *     </LazyMotion>
+ *   )
+ * }
+ * ```
+ *
+ * @public
+ */ function LazyMotion(_a) {
+    var children = _a.children, features = _a.features, _b = _a.strict, strict = _b === void 0 ? false : _b;
+    var _c = (0, _tslib.__read)((0, _react.useState)(!isLazyBundle(features)), 2), setIsLoaded = _c[1];
+    var loadedRenderer = (0, _react.useRef)(undefined);
+    /**
+     * If this is a synchronous load, load features immediately
+     */ if (!isLazyBundle(features)) {
+        var renderer = features.renderer, loadedFeatures = (0, _tslib.__rest)(features, [
+            "renderer"
+        ]);
+        loadedRenderer.current = renderer;
+        (0, _definitionsJs.loadFeatures)(loadedFeatures);
+    }
+    (0, _react.useEffect)(function() {
+        if (isLazyBundle(features)) features().then(function(_a) {
+            var renderer = _a.renderer, loadedFeatures = (0, _tslib.__rest)(_a, [
+                "renderer"
+            ]);
+            (0, _definitionsJs.loadFeatures)(loadedFeatures);
+            loadedRenderer.current = renderer;
+            setIsLoaded(true);
+        });
+    }, []);
+    return _react.createElement((0, _lazyContextJs.LazyContext).Provider, {
+        value: {
+            renderer: loadedRenderer.current,
+            strict: strict
+        }
+    }, children);
+}
+function isLazyBundle(features) {
+    return typeof features === "function";
+}
+
+},{"tslib":"edJ4f","react":"9sfFD","../../context/LazyContext.js":"8Pt4K","../../motion/features/definitions.js":"gOqJp","@parcel/transformer-js/src/esmodule-helpers.js":"5oERU"}],"iEJPS":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "domAnimation", ()=>domAnimation);
+var _tslib = require("tslib");
+var _animationsJs = require("../../motion/features/animations.js");
+var _gesturesJs = require("../../motion/features/gestures.js");
+var _createVisualElementJs = require("./create-visual-element.js");
+/**
+ * @public
+ */ var domAnimation = (0, _tslib.__assign)((0, _tslib.__assign)({
+    renderer: (0, _createVisualElementJs.createDomVisualElement)
+}, (0, _animationsJs.animations)), (0, _gesturesJs.gestureAnimations));
+
+},{"tslib":"edJ4f","../../motion/features/animations.js":"5blpz","../../motion/features/gestures.js":"4A032","./create-visual-element.js":"iMB7s","@parcel/transformer-js/src/esmodule-helpers.js":"5oERU"}],"fMony":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "domMax", ()=>domMax);
+var _tslib = require("tslib");
+var _dragJs = require("../../motion/features/drag.js");
+var _indexJs = require("../../motion/features/layout/index.js");
+var _featuresAnimationJs = require("./features-animation.js");
+/**
+ * @public
+ */ var domMax = (0, _tslib.__assign)((0, _tslib.__assign)((0, _tslib.__assign)({}, (0, _featuresAnimationJs.domAnimation)), (0, _dragJs.drag)), (0, _indexJs.layoutAnimations));
+
+},{"tslib":"edJ4f","../../motion/features/drag.js":"53WFv","../../motion/features/layout/index.js":"iRZ09","./features-animation.js":"iEJPS","@parcel/transformer-js/src/esmodule-helpers.js":"5oERU"}],"gj8Zh":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "useMotionValue", ()=>useMotionValue);
+var _tslib = require("tslib");
+var _react = require("react");
+var _indexJs = require("./index.js");
+var _motionConfigContextJs = require("../context/MotionConfigContext.js");
+var _useConstantJs = require("../utils/use-constant.js");
+/**
+ * Creates a `MotionValue` to track the state and velocity of a value.
+ *
+ * Usually, these are created automatically. For advanced use-cases, like use with `useTransform`, you can create `MotionValue`s externally and pass them into the animated component via the `style` prop.
+ *
+ * @library
+ *
+ * ```jsx
+ * export function MyComponent() {
+ *   const scale = useMotionValue(1)
+ *
+ *   return <Frame scale={scale} />
+ * }
+ * ```
+ *
+ * @motion
+ *
+ * ```jsx
+ * export const MyComponent = () => {
+ *   const scale = useMotionValue(1)
+ *
+ *   return <motion.div style={{ scale }} />
+ * }
+ * ```
+ *
+ * @param initial - The initial state.
+ *
+ * @public
+ */ function useMotionValue(initial) {
+    var value = (0, _useConstantJs.useConstant)(function() {
+        return (0, _indexJs.motionValue)(initial);
+    });
+    /**
+     * If this motion value is being used in static mode, like on
+     * the Framer canvas, force components to rerender when the motion
+     * value is updated.
+     */ var isStatic = (0, _react.useContext)((0, _motionConfigContextJs.MotionConfigContext)).isStatic;
+    if (isStatic) {
+        var _a = (0, _tslib.__read)((0, _react.useState)(initial), 2), setLatest_1 = _a[1];
+        (0, _react.useEffect)(function() {
+            return value.onChange(setLatest_1);
+        }, []);
+    }
+    return value;
+}
+
+},{"tslib":"edJ4f","react":"9sfFD","./index.js":"brlv5","../context/MotionConfigContext.js":"dwzzE","../utils/use-constant.js":"fUKVy","@parcel/transformer-js/src/esmodule-helpers.js":"5oERU"}],"cQHe0":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "useMotionTemplate", ()=>useMotionTemplate);
+var _useCombineValuesJs = require("./use-combine-values.js");
+/**
+ * Combine multiple motion values into a new one using a string template literal.
+ *
+ * ```jsx
+ * import {
+ *   motion,
+ *   useSpring,
+ *   useMotionValue,
+ *   useMotionTemplate
+ * } from "framer-motion"
+ *
+ * function Component() {
+ *   const shadowX = useSpring(0)
+ *   const shadowY = useMotionValue(0)
+ *   const shadow = useMotionTemplate`drop-shadow(${shadowX}px ${shadowY}px 20px rgba(0,0,0,0.3))`
+ *
+ *   return <motion.div style={{ filter: shadow }} />
+ * }
+ * ```
+ *
+ * @public
+ */ function useMotionTemplate(fragments) {
+    var values = [];
+    for(var _i = 1; _i < arguments.length; _i++)values[_i - 1] = arguments[_i];
+    /**
+     * Create a function that will build a string from the latest motion values.
+     */ var numFragments = fragments.length;
+    function buildValue() {
+        var output = "";
+        for(var i = 0; i < numFragments; i++){
+            output += fragments[i];
+            var value = values[i];
+            if (value) output += values[i].get();
+        }
+        return output;
+    }
+    return (0, _useCombineValuesJs.useCombineMotionValues)(values, buildValue);
+}
+
+},{"./use-combine-values.js":"7Zj51","@parcel/transformer-js/src/esmodule-helpers.js":"5oERU"}],"7Zj51":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "useCombineMotionValues", ()=>useCombineMotionValues);
+var _useMotionValueJs = require("./use-motion-value.js");
+var _useOnChangeJs = require("./use-on-change.js");
+var _framesync = require("framesync");
+var _framesyncDefault = parcelHelpers.interopDefault(_framesync);
+function useCombineMotionValues(values, combineValues) {
+    /**
+     * Initialise the returned motion value. This remains the same between renders.
+     */ var value = (0, _useMotionValueJs.useMotionValue)(combineValues());
+    /**
+     * Create a function that will update the template motion value with the latest values.
+     * This is pre-bound so whenever a motion value updates it can schedule its
+     * execution in Framesync. If it's already been scheduled it won't be fired twice
+     * in a single frame.
+     */ var updateValue = function() {
+        return value.set(combineValues());
+    };
+    /**
+     * Synchronously update the motion value with the latest values during the render.
+     * This ensures that within a React render, the styles applied to the DOM are up-to-date.
+     */ updateValue();
+    /**
+     * Subscribe to all motion values found within the template. Whenever any of them change,
+     * schedule an update.
+     */ (0, _useOnChangeJs.useMultiOnChange)(values, function() {
+        return (0, _framesyncDefault.default).update(updateValue, false, true);
+    });
+    return value;
+}
+
+},{"./use-motion-value.js":"gj8Zh","./use-on-change.js":"jb05M","framesync":"geFpv","@parcel/transformer-js/src/esmodule-helpers.js":"5oERU"}],"jb05M":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "useMultiOnChange", ()=>useMultiOnChange);
+parcelHelpers.export(exports, "useOnChange", ()=>useOnChange);
+var _react = require("react");
+var _isMotionValueJs = require("./utils/is-motion-value.js");
+function useOnChange(value, callback) {
+    (0, _react.useEffect)(function() {
+        if ((0, _isMotionValueJs.isMotionValue)(value)) return value.onChange(callback);
+    }, [
+        callback
+    ]);
+}
+function useMultiOnChange(values, handler) {
+    (0, _react.useEffect)(function() {
+        var subscriptions = values.map(function(value) {
+            return value.onChange(handler);
+        });
+        return function() {
+            return subscriptions.forEach(function(unsubscribe) {
+                return unsubscribe();
+            });
+        };
+    });
+}
+
+},{"react":"9sfFD","./utils/is-motion-value.js":"bSPO9","@parcel/transformer-js/src/esmodule-helpers.js":"5oERU"}],"1mMYA":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "useTransform", ()=>useTransform);
+var _tslib = require("tslib");
+var _transformJs = require("../utils/transform.js");
+var _useCombineValuesJs = require("./use-combine-values.js");
+var _useConstantJs = require("../utils/use-constant.js");
+function useTransform(input, inputRangeOrTransformer, outputRange, options) {
+    var transformer = typeof inputRangeOrTransformer === "function" ? inputRangeOrTransformer : (0, _transformJs.transform)(inputRangeOrTransformer, outputRange, options);
+    return Array.isArray(input) ? useListTransform(input, transformer) : useListTransform([
+        input
+    ], function(_a) {
+        var _b = (0, _tslib.__read)(_a, 1), latest = _b[0];
+        return transformer(latest);
+    });
+}
+function useListTransform(values, transformer) {
+    var latest = (0, _useConstantJs.useConstant)(function() {
+        return [];
+    });
+    return (0, _useCombineValuesJs.useCombineMotionValues)(values, function() {
+        latest.length = 0;
+        var numValues = values.length;
+        for(var i = 0; i < numValues; i++)latest[i] = values[i].get();
+        return transformer(latest);
+    });
+}
+
+},{"tslib":"edJ4f","../utils/transform.js":"fS8nn","./use-combine-values.js":"7Zj51","../utils/use-constant.js":"fUKVy","@parcel/transformer-js/src/esmodule-helpers.js":"5oERU"}],"fS8nn":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "transform", ()=>transform);
+var _tslib = require("tslib");
+var _popmotion = require("popmotion");
+var isCustomValueType = function(v) {
+    return typeof v === "object" && v.mix;
+};
+var getMixer = function(v) {
+    return isCustomValueType(v) ? v.mix : undefined;
+};
+function transform() {
+    var args = [];
+    for(var _i = 0; _i < arguments.length; _i++)args[_i] = arguments[_i];
+    var useImmediate = !Array.isArray(args[0]);
+    var argOffset = useImmediate ? 0 : -1;
+    var inputValue = args[0 + argOffset];
+    var inputRange = args[1 + argOffset];
+    var outputRange = args[2 + argOffset];
+    var options = args[3 + argOffset];
+    var interpolator = (0, _popmotion.interpolate)(inputRange, outputRange, (0, _tslib.__assign)({
+        mixer: getMixer(outputRange[0])
+    }, options));
+    return useImmediate ? interpolator(inputValue) : interpolator;
+}
+
+},{"tslib":"edJ4f","popmotion":"hu70l","@parcel/transformer-js/src/esmodule-helpers.js":"5oERU"}],"dMxn9":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "useSpring", ()=>useSpring);
+var _tslib = require("tslib");
+var _react = require("react");
+var _popmotion = require("popmotion");
+var _isMotionValueJs = require("./utils/is-motion-value.js");
+var _useMotionValueJs = require("./use-motion-value.js");
+var _useOnChangeJs = require("./use-on-change.js");
+var _motionConfigContextJs = require("../context/MotionConfigContext.js");
+/**
+ * Creates a `MotionValue` that, when `set`, will use a spring animation to animate to its new state.
+ *
+ * It can either work as a stand-alone `MotionValue` by initialising it with a value, or as a subscriber
+ * to another `MotionValue`.
+ *
+ * @remarks
+ *
+ * ```jsx
+ * const x = useSpring(0, { stiffness: 300 })
+ * const y = useSpring(x, { damping: 10 })
+ * ```
+ *
+ * @param inputValue - `MotionValue` or number. If provided a `MotionValue`, when the input `MotionValue` changes, the created `MotionValue` will spring towards that value.
+ * @param springConfig - Configuration options for the spring.
+ * @returns `MotionValue`
+ *
+ * @public
+ */ function useSpring(source, config) {
+    if (config === void 0) config = {};
+    var isStatic = (0, _react.useContext)((0, _motionConfigContextJs.MotionConfigContext)).isStatic;
+    var activeSpringAnimation = (0, _react.useRef)(null);
+    var value = (0, _useMotionValueJs.useMotionValue)((0, _isMotionValueJs.isMotionValue)(source) ? source.get() : source);
+    (0, _react.useMemo)(function() {
+        return value.attach(function(v, set) {
+            /**
+             * A more hollistic approach to this might be to use isStatic to fix VisualElement animations
+             * at that level, but this will work for now
+             */ if (isStatic) return set(v);
+            if (activeSpringAnimation.current) activeSpringAnimation.current.stop();
+            activeSpringAnimation.current = (0, _popmotion.animate)((0, _tslib.__assign)((0, _tslib.__assign)({
+                from: value.get(),
+                to: v,
+                velocity: value.getVelocity()
+            }, config), {
+                onUpdate: set
+            }));
+            return value.get();
+        });
+    }, Object.values(config));
+    (0, _useOnChangeJs.useOnChange)(source, function(v) {
+        return value.set(parseFloat(v));
+    });
+    return value;
+}
+
+},{"tslib":"edJ4f","react":"9sfFD","popmotion":"hu70l","./utils/is-motion-value.js":"bSPO9","./use-motion-value.js":"gj8Zh","./use-on-change.js":"jb05M","../context/MotionConfigContext.js":"dwzzE","@parcel/transformer-js/src/esmodule-helpers.js":"5oERU"}],"btEp4":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "useVelocity", ()=>useVelocity);
+var _react = require("react");
+var _useMotionValueJs = require("./use-motion-value.js");
+/**
+ * Creates a `MotionValue` that updates when the velocity of the provided `MotionValue` changes.
+ *
+ * ```javascript
+ * const x = useMotionValue(0)
+ * const xVelocity = useVelocity(x)
+ * const xAcceleration = useVelocity(xVelocity)
+ * ```
+ *
+ * @public
+ */ function useVelocity(value) {
+    var velocity = (0, _useMotionValueJs.useMotionValue)(value.getVelocity());
+    (0, _react.useEffect)(function() {
+        return value.velocityUpdateSubscribers.add(function(newVelocity) {
+            velocity.set(newVelocity);
+        });
+    }, [
+        value
+    ]);
+    return velocity;
+}
+
+},{"react":"9sfFD","./use-motion-value.js":"gj8Zh","@parcel/transformer-js/src/esmodule-helpers.js":"5oERU"}],"el4hR":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "useElementScroll", ()=>useElementScroll);
+var _useConstantJs = require("../../utils/use-constant.js");
+var _utilsJs = require("./utils.js");
+var _useDomEventJs = require("../../events/use-dom-event.js");
+var _useIsomorphicEffectJs = require("../../utils/use-isomorphic-effect.js");
+var _heyListen = require("hey-listen");
+var getElementScrollOffsets = function(element) {
+    return function() {
+        return {
+            xOffset: element.scrollLeft,
+            yOffset: element.scrollTop,
+            xMaxOffset: element.scrollWidth - element.offsetWidth,
+            yMaxOffset: element.scrollHeight - element.offsetHeight
+        };
+    };
+};
+/**
+ * Returns MotionValues that update when the provided element scrolls:
+ *
+ * - `scrollX` — Horizontal scroll distance in pixels.
+ * - `scrollY` — Vertical scroll distance in pixels.
+ * - `scrollXProgress` — Horizontal scroll progress between `0` and `1`.
+ * - `scrollYProgress` — Vertical scroll progress between `0` and `1`.
+ *
+ * This element must be set to `overflow: scroll` on either or both axes to report scroll offset.
+ *
+ * @library
+ *
+ * ```jsx
+ * import * as React from "react"
+ * import {
+ *   Frame,
+ *   useElementScroll,
+ *   useTransform
+ * } from "framer"
+ *
+ * export function MyComponent() {
+ *   const ref = React.useRef()
+ *   const { scrollYProgress } = useElementScroll(ref)
+ *
+ *   return (
+ *     <Frame ref={ref}>
+ *       <Frame scaleX={scrollYProgress} />
+ *     </Frame>
+ *   )
+ * }
+ * ```
+ *
+ * @motion
+ *
+ * ```jsx
+ * export const MyComponent = () => {
+ *   const ref = useRef()
+ *   const { scrollYProgress } = useElementScroll(ref)
+ *
+ *   return (
+ *     <div ref={ref}>
+ *       <motion.div style={{ scaleX: scrollYProgress }} />
+ *     </div>
+ *   )
+ * }
+ * ```
+ *
+ * @public
+ */ function useElementScroll(ref) {
+    var values = (0, _useConstantJs.useConstant)((0, _utilsJs.createScrollMotionValues));
+    (0, _useIsomorphicEffectJs.useIsomorphicLayoutEffect)(function() {
+        var element = ref.current;
+        (0, _heyListen.invariant)(!!element, "ref provided to useScroll must be passed into a HTML element.");
+        if (!element) return;
+        var updateScrollValues = (0, _utilsJs.createScrollUpdater)(values, getElementScrollOffsets(element));
+        var scrollListener = (0, _useDomEventJs.addDomEvent)(element, "scroll", updateScrollValues, {
+            passive: true
+        });
+        var resizeListener = (0, _useDomEventJs.addDomEvent)(element, "resize", updateScrollValues);
+        return function() {
+            scrollListener && scrollListener();
+            resizeListener && resizeListener();
+        };
+    }, []);
+    return values;
+}
+
+},{"../../utils/use-constant.js":"fUKVy","./utils.js":"dSmgT","../../events/use-dom-event.js":"kTxxy","../../utils/use-isomorphic-effect.js":"fejVC","hey-listen":"fFhg6","@parcel/transformer-js/src/esmodule-helpers.js":"5oERU"}],"dSmgT":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "createScrollMotionValues", ()=>createScrollMotionValues);
+parcelHelpers.export(exports, "createScrollUpdater", ()=>createScrollUpdater);
+var _indexJs = require("../index.js");
+function createScrollMotionValues() {
+    return {
+        scrollX: (0, _indexJs.motionValue)(0),
+        scrollY: (0, _indexJs.motionValue)(0),
+        scrollXProgress: (0, _indexJs.motionValue)(0),
+        scrollYProgress: (0, _indexJs.motionValue)(0)
+    };
+}
+function setProgress(offset, maxOffset, value) {
+    value.set(!offset || !maxOffset ? 0 : offset / maxOffset);
+}
+function createScrollUpdater(values, getOffsets) {
+    var update = function() {
+        var _a = getOffsets(), xOffset = _a.xOffset, yOffset = _a.yOffset, xMaxOffset = _a.xMaxOffset, yMaxOffset = _a.yMaxOffset;
+        // Set absolute positions
+        values.scrollX.set(xOffset);
+        values.scrollY.set(yOffset);
+        // Set 0-1 progress
+        setProgress(xOffset, xMaxOffset, values.scrollXProgress);
+        setProgress(yOffset, yMaxOffset, values.scrollYProgress);
+    };
+    update();
+    return update;
+}
+
+},{"../index.js":"brlv5","@parcel/transformer-js/src/esmodule-helpers.js":"5oERU"}],"cpzcf":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "useViewportScroll", ()=>useViewportScroll);
+var _utilsJs = require("./utils.js");
+var _useDomEventJs = require("../../events/use-dom-event.js");
+var _useIsomorphicEffectJs = require("../../utils/use-isomorphic-effect.js");
+var viewportScrollValues;
+function getViewportScrollOffsets() {
+    return {
+        xOffset: window.pageXOffset,
+        yOffset: window.pageYOffset,
+        xMaxOffset: document.body.clientWidth - window.innerWidth,
+        yMaxOffset: document.body.clientHeight - window.innerHeight
+    };
+}
+var hasListeners = false;
+function addEventListeners() {
+    hasListeners = true;
+    if (typeof window === "undefined") return;
+    var updateScrollValues = (0, _utilsJs.createScrollUpdater)(viewportScrollValues, getViewportScrollOffsets);
+    (0, _useDomEventJs.addDomEvent)(window, "scroll", updateScrollValues, {
+        passive: true
+    });
+    (0, _useDomEventJs.addDomEvent)(window, "resize", updateScrollValues);
+}
+/**
+ * Returns MotionValues that update when the viewport scrolls:
+ *
+ * - `scrollX` — Horizontal scroll distance in pixels.
+ * - `scrollY` — Vertical scroll distance in pixels.
+ * - `scrollXProgress` — Horizontal scroll progress between `0` and `1`.
+ * - `scrollYProgress` — Vertical scroll progress between `0` and `1`.
+ *
+ * **Warning:** Setting `body` or `html` to `height: 100%` or similar will break the `Progress`
+ * values as this breaks the browser's capability to accurately measure the page length.
+ *
+ * @library
+ *
+ * ```jsx
+ * import * as React from "react"
+ * import {
+ *   Frame,
+ *   useViewportScroll,
+ *   useTransform
+ * } from "framer"
+ *
+ * export function MyComponent() {
+ *   const { scrollYProgress } = useViewportScroll()
+ *   return <Frame scaleX={scrollYProgress} />
+ * }
+ * ```
+ *
+ * @motion
+ *
+ * ```jsx
+ * export const MyComponent = () => {
+ *   const { scrollYProgress } = useViewportScroll()
+ *   return <motion.div style={{ scaleX: scrollYProgress }} />
+ * }
+ * ```
+ *
+ * @public
+ */ function useViewportScroll() {
+    /**
+     * Lazy-initialise the viewport scroll values
+     */ if (!viewportScrollValues) viewportScrollValues = (0, _utilsJs.createScrollMotionValues)();
+    (0, _useIsomorphicEffectJs.useIsomorphicLayoutEffect)(function() {
+        !hasListeners && addEventListeners();
+    }, []);
+    return viewportScrollValues;
+}
+
+},{"./utils.js":"dSmgT","../../events/use-dom-event.js":"kTxxy","../../utils/use-isomorphic-effect.js":"fejVC","@parcel/transformer-js/src/esmodule-helpers.js":"5oERU"}],"5u20M":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "useReducedMotion", ()=>useReducedMotion);
+var _tslib = require("tslib");
+var _react = require("react");
+var _indexJs = require("../value/index.js");
+var _useOnChangeJs = require("../value/use-on-change.js");
+// Does this device prefer reduced motion? Returns `null` server-side.
+var prefersReducedMotion;
+function initPrefersReducedMotion() {
+    prefersReducedMotion = (0, _indexJs.motionValue)(null);
+    if (typeof window === "undefined") return;
+    if (window.matchMedia) {
+        var motionMediaQuery_1 = window.matchMedia("(prefers-reduced-motion)");
+        var setReducedMotionPreferences = function() {
+            return prefersReducedMotion.set(motionMediaQuery_1.matches);
+        };
+        motionMediaQuery_1.addListener(setReducedMotionPreferences);
+        setReducedMotionPreferences();
+    } else prefersReducedMotion.set(false);
+}
+/**
+ * A hook that returns `true` if we should be using reduced motion based on the current device's Reduced Motion setting.
+ *
+ * This can be used to implement changes to your UI based on Reduced Motion. For instance, replacing motion-sickness inducing
+ * `x`/`y` animations with `opacity`, disabling the autoplay of background videos, or turning off parallax motion.
+ *
+ * It will actively respond to changes and re-render your components with the latest setting.
+ *
+ * ```jsx
+ * export function Sidebar({ isOpen }) {
+ *   const shouldReduceMotion = useReducedMotion()
+ *   const closedX = shouldReduceMotion ? 0 : "-100%"
+ *
+ *   return (
+ *     <motion.div animate={{
+ *       opacity: isOpen ? 1 : 0,
+ *       x: isOpen ? 0 : closedX
+ *     }} />
+ *   )
+ * }
+ * ```
+ *
+ * @return boolean
+ *
+ * @public
+ */ function useReducedMotion() {
+    /**
+     * Lazy initialisation of prefersReducedMotion
+     */ !prefersReducedMotion && initPrefersReducedMotion();
+    var _a = (0, _tslib.__read)((0, _react.useState)(prefersReducedMotion.get()), 2), shouldReduceMotion = _a[0], setShouldReduceMotion = _a[1];
+    (0, _useOnChangeJs.useOnChange)(prefersReducedMotion, setShouldReduceMotion);
+    return shouldReduceMotion;
+}
+
+},{"tslib":"edJ4f","react":"9sfFD","../value/index.js":"brlv5","../value/use-on-change.js":"jb05M","@parcel/transformer-js/src/esmodule-helpers.js":"5oERU"}],"5z0IS":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "animationControls", ()=>animationControls);
+var _tslib = require("tslib");
+var _heyListen = require("hey-listen");
+var _animationJs = require("../render/utils/animation.js");
+var _settersJs = require("../render/utils/setters.js");
+/**
+ * @public
+ */ function animationControls() {
+    /**
+     * Track whether the host component has mounted.
+     */ var hasMounted = false;
+    /**
+     * Pending animations that are started before a component is mounted.
+     * TODO: Remove this as animations should only run in effects
+     */ var pendingAnimations = [];
+    /**
+     * A collection of linked component animation controls.
+     */ var subscribers = new Set();
+    var controls = {
+        subscribe: function(visualElement) {
+            subscribers.add(visualElement);
+            return function() {
+                return void subscribers.delete(visualElement);
+            };
+        },
+        start: function(definition, transitionOverride) {
+            /**
+             * TODO: We only perform this hasMounted check because in Framer we used to
+             * encourage the ability to start an animation within the render phase. This
+             * isn't behaviour concurrent-safe so when we make Framer concurrent-safe
+             * we can ditch this.
+             */ if (hasMounted) {
+                var animations_1 = [];
+                subscribers.forEach(function(visualElement) {
+                    animations_1.push((0, _animationJs.animateVisualElement)(visualElement, definition, {
+                        transitionOverride: transitionOverride
+                    }));
+                });
+                return Promise.all(animations_1);
+            } else return new Promise(function(resolve) {
+                pendingAnimations.push({
+                    animation: [
+                        definition,
+                        transitionOverride
+                    ],
+                    resolve: resolve
+                });
+            });
+        },
+        set: function(definition) {
+            (0, _heyListen.invariant)(hasMounted, "controls.set() should only be called after a component has mounted. Consider calling within a useEffect hook.");
+            return subscribers.forEach(function(visualElement) {
+                (0, _settersJs.setValues)(visualElement, definition);
+            });
+        },
+        stop: function() {
+            subscribers.forEach(function(visualElement) {
+                (0, _animationJs.stopAnimation)(visualElement);
+            });
+        },
+        mount: function() {
+            hasMounted = true;
+            pendingAnimations.forEach(function(_a) {
+                var animation = _a.animation, resolve = _a.resolve;
+                controls.start.apply(controls, (0, _tslib.__spreadArray)([], (0, _tslib.__read)(animation))).then(resolve);
+            });
+            return function() {
+                hasMounted = false;
+                controls.stop();
+            };
+        }
+    };
+    return controls;
+}
+
+},{"tslib":"edJ4f","hey-listen":"fFhg6","../render/utils/animation.js":"jQHlL","../render/utils/setters.js":"2dj52","@parcel/transformer-js/src/esmodule-helpers.js":"5oERU"}],"7oJ8g":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "useAnimation", ()=>useAnimation);
+var _animationControlsJs = require("./animation-controls.js");
+var _react = require("react");
+var _useConstantJs = require("../utils/use-constant.js");
+/**
+ * Creates `AnimationControls`, which can be used to manually start, stop
+ * and sequence animations on one or more components.
+ *
+ * The returned `AnimationControls` should be passed to the `animate` property
+ * of the components you want to animate.
+ *
+ * These components can then be animated with the `start` method.
+ *
+ * @library
+ *
+ * ```jsx
+ * import * as React from 'react'
+ * import { Frame, useAnimation } from 'framer'
+ *
+ * export function MyComponent(props) {
+ *    const controls = useAnimation()
+ *
+ *    controls.start({
+ *        x: 100,
+ *        transition: { duration: 0.5 },
+ *    })
+ *
+ *    return <Frame animate={controls} />
+ * }
+ * ```
+ *
+ * @motion
+ *
+ * ```jsx
+ * import * as React from 'react'
+ * import { motion, useAnimation } from 'framer-motion'
+ *
+ * export function MyComponent(props) {
+ *    const controls = useAnimation()
+ *
+ *    controls.start({
+ *        x: 100,
+ *        transition: { duration: 0.5 },
+ *    })
+ *
+ *    return <motion.div animate={controls} />
+ * }
+ * ```
+ *
+ * @returns Animation controller with `start` and `stop` methods
+ *
+ * @public
+ */ function useAnimation() {
+    var controls = (0, _useConstantJs.useConstant)((0, _animationControlsJs.animationControls));
+    (0, _react.useEffect)(controls.mount, []);
+    return controls;
+}
+
+},{"./animation-controls.js":"5z0IS","react":"9sfFD","../utils/use-constant.js":"fUKVy","@parcel/transformer-js/src/esmodule-helpers.js":"5oERU"}],"fs4TB":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "useCycle", ()=>useCycle);
+var _tslib = require("tslib");
+var _react = require("react");
+var _popmotion = require("popmotion");
+/**
+ * Cycles through a series of visual properties. Can be used to toggle between or cycle through animations. It works similar to `useState` in React. It is provided an initial array of possible states, and returns an array of two arguments.
+ *
+ * @library
+ *
+ * ```jsx
+ * import * as React from "react"
+ * import { Frame, useCycle } from "framer"
+ *
+ * export function MyComponent() {
+ *   const [x, cycleX] = useCycle(0, 50, 100)
+ *
+ *   return (
+ *     <Frame
+ *       animate={{ x: x }}
+ *       onTap={() => cycleX()}
+ *      />
+ *    )
+ * }
+ * ```
+ *
+ * @motion
+ *
+ * An index value can be passed to the returned `cycle` function to cycle to a specific index.
+ *
+ * ```jsx
+ * import * as React from "react"
+ * import { motion, useCycle } from "framer-motion"
+ *
+ * export const MyComponent = () => {
+ *   const [x, cycleX] = useCycle(0, 50, 100)
+ *
+ *   return (
+ *     <motion.div
+ *       animate={{ x: x }}
+ *       onTap={() => cycleX()}
+ *      />
+ *    )
+ * }
+ * ```
+ *
+ * @param items - items to cycle through
+ * @returns [currentState, cycleState]
+ *
+ * @public
+ */ function useCycle() {
+    var items = [];
+    for(var _i = 0; _i < arguments.length; _i++)items[_i] = arguments[_i];
+    var index = (0, _react.useRef)(0);
+    var _a = (0, _tslib.__read)((0, _react.useState)(items[index.current]), 2), item = _a[0], setItem = _a[1];
+    return [
+        item,
+        function(next) {
+            index.current = typeof next !== "number" ? (0, _popmotion.wrap)(0, items.length, index.current + 1) : next;
+            setItem(items[index.current]);
+        }
+    ];
+}
+
+},{"tslib":"edJ4f","react":"9sfFD","popmotion":"hu70l","@parcel/transformer-js/src/esmodule-helpers.js":"5oERU"}],"k6vVT":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "DragControls", ()=>DragControls);
+parcelHelpers.export(exports, "useDragControls", ()=>useDragControls);
+var _batchLayoutJs = require("../../render/dom/utils/batch-layout.js");
+var _useConstantJs = require("../../utils/use-constant.js");
+/**
+ * Can manually trigger a drag gesture on one or more `drag`-enabled `motion` components.
+ *
+ * @library
+ *
+ * ```jsx
+ * const dragControls = useDragControls()
+ *
+ * function startDrag(event) {
+ *   dragControls.start(event, { snapToCursor: true })
+ * }
+ *
+ * return (
+ *   <>
+ *     <Frame onTapStart={startDrag} />
+ *     <Frame drag="x" dragControls={dragControls} />
+ *   </>
+ * )
+ * ```
+ *
+ * @motion
+ *
+ * ```jsx
+ * const dragControls = useDragControls()
+ *
+ * function startDrag(event) {
+ *   dragControls.start(event, { snapToCursor: true })
+ * }
+ *
+ * return (
+ *   <>
+ *     <div onPointerDown={startDrag} />
+ *     <motion.div drag="x" dragControls={dragControls} />
+ *   </>
+ * )
+ * ```
+ *
+ * @public
+ */ var DragControls = /** @class */ function() {
+    function DragControls() {
+        this.componentControls = new Set();
+    }
+    /**
+     * Subscribe a component's internal `VisualElementDragControls` to the user-facing API.
+     *
+     * @internal
+     */ DragControls.prototype.subscribe = function(controls) {
+        var _this = this;
+        this.componentControls.add(controls);
+        return function() {
+            return _this.componentControls.delete(controls);
+        };
+    };
+    /**
+     * Start a drag gesture on every `motion` component that has this set of drag controls
+     * passed into it via the `dragControls` prop.
+     *
+     * ```jsx
+     * dragControls.start(e, {
+     *   snapToCursor: true
+     * })
+     * ```
+     *
+     * @param event - PointerEvent
+     * @param options - Options
+     *
+     * @public
+     */ DragControls.prototype.start = function(event, options) {
+        this.componentControls.forEach(function(controls) {
+            controls.start(event.nativeEvent || event, options);
+        });
+    };
+    DragControls.prototype.updateConstraints = function(flush) {
+        if (flush === void 0) flush = true;
+        this.componentControls.forEach(function(controls) {
+            controls.updateConstraints();
+        });
+        flush && (0, _batchLayoutJs.flushLayout)();
+    };
+    return DragControls;
+}();
+var createDragControls = function() {
+    return new DragControls();
+};
+/**
+ * Usually, dragging is initiated by pressing down on a `motion` component with a `drag` prop
+ * and moving it. For some use-cases, for instance clicking at an arbitrary point on a video scrubber, we
+ * might want to initiate that dragging from a different component than the draggable one.
+ *
+ * By creating a `dragControls` using the `useDragControls` hook, we can pass this into
+ * the draggable component's `dragControls` prop. It exposes a `start` method
+ * that can start dragging from pointer events on other components.
+ *
+ * @library
+ *
+ * ```jsx
+ * const dragControls = useDragControls()
+ *
+ * function startDrag(event) {
+ *   dragControls.start(event, { snapToCursor: true })
+ * }
+ *
+ * return (
+ *   <>
+ *     <Frame onTapStart={startDrag} />
+ *     <Frame drag="x" dragControls={dragControls} />
+ *   </>
+ * )
+ * ```
+ *
+ * @motion
+ *
+ * ```jsx
+ * const dragControls = useDragControls()
+ *
+ * function startDrag(event) {
+ *   dragControls.start(event, { snapToCursor: true })
+ * }
+ *
+ * return (
+ *   <>
+ *     <div onPointerDown={startDrag} />
+ *     <motion.div drag="x" dragControls={dragControls} />
+ *   </>
+ * )
+ * ```
+ *
+ * @public
+ */ function useDragControls() {
+    return (0, _useConstantJs.useConstant)(createDragControls);
+}
+
+},{"../../render/dom/utils/batch-layout.js":"6IwMV","../../utils/use-constant.js":"fUKVy","@parcel/transformer-js/src/esmodule-helpers.js":"5oERU"}],"fBs43":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "useAnimatedState", ()=>useAnimatedState);
+var _tslib = require("tslib");
+var _react = require("react");
+var _useConstantJs = require("../utils/use-constant.js");
+var _settersJs = require("../render/utils/setters.js");
+var _indexJs = require("../render/index.js");
+var _indexJs1 = require("../utils/geometry/index.js");
+var _animationJs = require("../render/utils/animation.js");
+var _useVisualStateJs = require("../motion/utils/use-visual-state.js");
+var createObject = function() {
+    return {};
+};
+var stateVisualElement = (0, _indexJs.visualElement)({
+    build: function() {},
+    measureViewportBox: (0, _indexJs1.axisBox),
+    resetTransform: function() {},
+    restoreTransform: function() {},
+    removeValueFromRenderState: function() {},
+    render: function() {},
+    scrapeMotionValuesFromProps: createObject,
+    readValueFromInstance: function(_state, key, options) {
+        return options.initialState[key] || 0;
+    },
+    makeTargetAnimatable: function(element, _a) {
+        var transition = _a.transition, transitionEnd = _a.transitionEnd, target = (0, _tslib.__rest)(_a, [
+            "transition",
+            "transitionEnd"
+        ]);
+        var origin = (0, _settersJs.getOrigin)(target, transition || {}, element);
+        (0, _settersJs.checkTargetForNewValues)(element, target, origin);
+        return (0, _tslib.__assign)({
+            transition: transition,
+            transitionEnd: transitionEnd
+        }, target);
+    }
+});
+var useVisualState = (0, _useVisualStateJs.makeUseVisualState)({
+    scrapeMotionValuesFromProps: createObject,
+    createRenderState: createObject
+});
+/**
+ * This is not an officially supported API and may be removed
+ * on any version.
+ * @internal
+ */ function useAnimatedState(initialState) {
+    var _a = (0, _tslib.__read)((0, _react.useState)(initialState), 2), animationState = _a[0], setAnimationState = _a[1];
+    var visualState = useVisualState({}, false);
+    var element = (0, _useConstantJs.useConstant)(function() {
+        return stateVisualElement({
+            props: {},
+            visualState: visualState
+        }, {
+            initialState: initialState
+        });
+    });
+    (0, _react.useEffect)(function() {
+        element.mount({});
+        return element.unmount();
+    }, []);
+    (0, _react.useEffect)(function() {
+        element.setProps({
+            onUpdate: function(v) {
+                return setAnimationState((0, _tslib.__assign)({}, v));
+            }
+        });
+    });
+    var startAnimation = (0, _useConstantJs.useConstant)(function() {
+        return function(animationDefinition) {
+            return (0, _animationJs.animateVisualElement)(element, animationDefinition);
+        };
+    });
+    return [
+        animationState,
+        startAnimation
+    ];
+}
+
+},{"tslib":"edJ4f","react":"9sfFD","../utils/use-constant.js":"fUKVy","../render/utils/setters.js":"2dj52","../render/index.js":"hsOSl","../utils/geometry/index.js":"cOvBE","../render/utils/animation.js":"jQHlL","../motion/utils/use-visual-state.js":"9AGMH","@parcel/transformer-js/src/esmodule-helpers.js":"5oERU"}],"fgcFW":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "invertScale", ()=>invertScale);
+parcelHelpers.export(exports, "useInvertedScale", ()=>useInvertedScale);
+var _useTransformJs = require("./use-transform.js");
+var _heyListen = require("hey-listen");
+var _useMotionValueJs = require("./use-motion-value.js");
+var _indexJs = require("../context/MotionContext/index.js");
+// Keep things reasonable and avoid scale: Infinity. In practise we might need
+// to add another value, opacity, that could interpolate scaleX/Y [0,0.01] => [0,1]
+// to simply hide content at unreasonable scales.
+var maxScale = 100000;
+var invertScale = function(scale) {
+    return scale > 0.001 ? 1 / scale : maxScale;
+};
+var hasWarned = false;
+/**
+ * Returns a `MotionValue` each for `scaleX` and `scaleY` that update with the inverse
+ * of their respective parent scales.
+ *
+ * This is useful for undoing the distortion of content when scaling a parent component.
+ *
+ * By default, `useInvertedScale` will automatically fetch `scaleX` and `scaleY` from the nearest parent.
+ * By passing other `MotionValue`s in as `useInvertedScale({ scaleX, scaleY })`, it will invert the output
+ * of those instead.
+ *
+ * @motion
+ *
+ * ```jsx
+ * const MyComponent = () => {
+ *   const { scaleX, scaleY } = useInvertedScale()
+ *   return <motion.div style={{ scaleX, scaleY }} />
+ * }
+ * ```
+ *
+ * @library
+ *
+ * ```jsx
+ * function MyComponent() {
+ *   const { scaleX, scaleY } = useInvertedScale()
+ *   return <Frame scaleX={scaleX} scaleY={scaleY} />
+ * }
+ * ```
+ *
+ * @deprecated
+ * @internal
+ */ function useInvertedScale(scale) {
+    var parentScaleX = (0, _useMotionValueJs.useMotionValue)(1);
+    var parentScaleY = (0, _useMotionValueJs.useMotionValue)(1);
+    var visualElement = (0, _indexJs.useVisualElementContext)();
+    (0, _heyListen.invariant)(!!(scale || visualElement), "If no scale values are provided, useInvertedScale must be used within a child of another motion component.");
+    (0, _heyListen.warning)(hasWarned, "useInvertedScale is deprecated and will be removed in 3.0. Use the layout prop instead.");
+    hasWarned = true;
+    if (scale) {
+        parentScaleX = scale.scaleX || parentScaleX;
+        parentScaleY = scale.scaleY || parentScaleY;
+    } else if (visualElement) {
+        parentScaleX = visualElement.getValue("scaleX", 1);
+        parentScaleY = visualElement.getValue("scaleY", 1);
+    }
+    var scaleX = (0, _useTransformJs.useTransform)(parentScaleX, invertScale);
+    var scaleY = (0, _useTransformJs.useTransform)(parentScaleY, invertScale);
+    return {
+        scaleX: scaleX,
+        scaleY: scaleY
+    };
+}
+
+},{"./use-transform.js":"1mMYA","hey-listen":"fFhg6","./use-motion-value.js":"gj8Zh","../context/MotionContext/index.js":"1mMVq","@parcel/transformer-js/src/esmodule-helpers.js":"5oERU"}],"9yewF":[function(require,module,exports) {
+var $parcel$ReactRefreshHelpers$a099 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
+var prevRefreshReg = window.$RefreshReg$;
+var prevRefreshSig = window.$RefreshSig$;
+$parcel$ReactRefreshHelpers$a099.prelude(module);
+
+try {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+var _jsxDevRuntime = require("react/jsx-dev-runtime");
+var _react = require("react");
+var _reactDefault = parcelHelpers.interopDefault(_react);
+var _framerMotion = require("framer-motion");
+var _defaultRooms = require("../../api/defaultRooms");
+function RoomsDropdown({ isVisible =false  }) {
+    const generalRoom = {
+        name: "General",
+        href: "/"
+    };
+    const handleRoomClick = (room)=>{
+        if (room.name == "") window.location.href = generalRoom.href;
+        else window.location.href = `/rooms/${room.slug}`;
+    };
+    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _framerMotion.AnimatePresence), {
+        children: isVisible && /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _framerMotion.motion).div, {
+            initial: {
+                opacity: 0
+            },
+            animate: {
+                opacity: 1
+            },
+            exit: {
+                opacity: 0
+            },
+            style: {
+                top: "55px",
+                maxWidth: "240px"
+            },
+            className: "w-100 position-absolute right-0 shadow-sm",
+            children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                className: "position-relative",
+                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("ul", {
+                    className: "list-group",
+                    children: (0, _defaultRooms.defaultRooms).map((room)=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
+                            className: "list-group-item",
+                            children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("a", {
+                                href: "#",
+                                className: "link-secondary link-underline-opacity-0",
+                                onClick: (e)=>handleRoomClick(room),
+                                children: room.name == "" ? generalRoom.name : room.name
+                            }, void 0, false, {
+                                fileName: "app/components/RoomsDropdown.js",
+                                lineNumber: 35,
+                                columnNumber: 9
+                            }, this)
+                        }, `room_${room.name}`, false, {
+                            fileName: "app/components/RoomsDropdown.js",
+                            lineNumber: 34,
+                            columnNumber: 8
+                        }, this))
+                }, void 0, false, {
+                    fileName: "app/components/RoomsDropdown.js",
+                    lineNumber: 32,
+                    columnNumber: 7
+                }, this)
+            }, void 0, false, {
+                fileName: "app/components/RoomsDropdown.js",
+                lineNumber: 31,
+                columnNumber: 6
+            }, this)
+        }, void 0, false, {
+            fileName: "app/components/RoomsDropdown.js",
+            lineNumber: 24,
+            columnNumber: 5
+        }, this)
+    }, void 0, false, {
+        fileName: "app/components/RoomsDropdown.js",
+        lineNumber: 22,
+        columnNumber: 3
+    }, this);
+}
+_c = RoomsDropdown;
+exports.default = RoomsDropdown;
+var _c;
+$RefreshReg$(_c, "RoomsDropdown");
+
+  $parcel$ReactRefreshHelpers$a099.postlude(module);
+} finally {
+  window.$RefreshReg$ = prevRefreshReg;
+  window.$RefreshSig$ = prevRefreshSig;
+}
+},{"react/jsx-dev-runtime":"eGH5i","react":"9sfFD","framer-motion":"b00XP","@parcel/transformer-js/src/esmodule-helpers.js":"5oERU","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"ftrPk","../../api/defaultRooms":"ezO9N"}],"ezO9N":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "defaultRooms", ()=>defaultRooms);
+const defaultRooms = [
+    {
+        name: "New York",
+        slug: "new-york"
+    },
+    {
+        name: "San Diego",
+        slug: "san-diego"
+    },
+    {
+        name: "Miami",
+        slug: "miami"
+    },
+    {
+        name: "Chicago",
+        slug: "chicago"
+    },
+    {
+        name: "Austin",
+        slug: "austin"
+    },
+    {
+        name: "Boston",
+        slug: "boston"
+    },
+    {
+        name: "",
+        slug: ""
+    }
+];
+
+},{"@parcel/transformer-js/src/esmodule-helpers.js":"5oERU"}],"aun22":[function(require,module,exports) {
 var $parcel$ReactRefreshHelpers$f31f = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
 var prevRefreshReg = window.$RefreshReg$;
 var prevRefreshSig = window.$RefreshSig$;
@@ -24006,7 +25964,236 @@ $RefreshReg$(_c, "BgIconsRandom");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"eGH5i","react":"9sfFD","@parcel/transformer-js/src/esmodule-helpers.js":"5oERU","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"ftrPk"}],"gtkFg":[function(require,module,exports) {
+},{"react/jsx-dev-runtime":"eGH5i","react":"9sfFD","@parcel/transformer-js/src/esmodule-helpers.js":"5oERU","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"ftrPk"}],"l7GB5":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "playAudioNotification", ()=>playAudioNotification);
+var _throttleDebounce = require("throttle-debounce");
+const playAudioNotification = (0, _throttleDebounce.debounce)(300, ()=>{
+    const elAudio = document.getElementById("notification-audio");
+    if (elAudio) elAudio.play();
+});
+
+},{"@parcel/transformer-js/src/esmodule-helpers.js":"5oERU","throttle-debounce":"gXKgS"}],"gXKgS":[function(require,module,exports) {
+/* eslint-disable no-undefined,no-param-reassign,no-shadow */ /**
+ * Throttle execution of a function. Especially useful for rate limiting
+ * execution of handlers on events like resize and scroll.
+ *
+ * @param {number} delay -                  A zero-or-greater delay in milliseconds. For event callbacks, values around 100 or 250 (or even higher)
+ *                                            are most useful.
+ * @param {Function} callback -               A function to be executed after delay milliseconds. The `this` context and all arguments are passed through,
+ *                                            as-is, to `callback` when the throttled-function is executed.
+ * @param {object} [options] -              An object to configure options.
+ * @param {boolean} [options.noTrailing] -   Optional, defaults to false. If noTrailing is true, callback will only execute every `delay` milliseconds
+ *                                            while the throttled-function is being called. If noTrailing is false or unspecified, callback will be executed
+ *                                            one final time after the last throttled-function call. (After the throttled-function has not been called for
+ *                                            `delay` milliseconds, the internal counter is reset).
+ * @param {boolean} [options.noLeading] -   Optional, defaults to false. If noLeading is false, the first throttled-function call will execute callback
+ *                                            immediately. If noLeading is true, the first the callback execution will be skipped. It should be noted that
+ *                                            callback will never executed if both noLeading = true and noTrailing = true.
+ * @param {boolean} [options.debounceMode] - If `debounceMode` is true (at begin), schedule `clear` to execute after `delay` ms. If `debounceMode` is
+ *                                            false (at end), schedule `callback` to execute after `delay` ms.
+ *
+ * @returns {Function} A new, throttled, function.
+ */ var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "debounce", ()=>debounce);
+parcelHelpers.export(exports, "throttle", ()=>throttle);
+function throttle(delay, callback, options) {
+    var _ref = options || {}, _ref$noTrailing = _ref.noTrailing, noTrailing = _ref$noTrailing === void 0 ? false : _ref$noTrailing, _ref$noLeading = _ref.noLeading, noLeading = _ref$noLeading === void 0 ? false : _ref$noLeading, _ref$debounceMode = _ref.debounceMode, debounceMode = _ref$debounceMode === void 0 ? undefined : _ref$debounceMode;
+    /*
+   * After wrapper has stopped being called, this timeout ensures that
+   * `callback` is executed at the proper times in `throttle` and `end`
+   * debounce modes.
+   */ var timeoutID;
+    var cancelled = false; // Keep track of the last time `callback` was executed.
+    var lastExec = 0; // Function to clear existing timeout
+    function clearExistingTimeout() {
+        if (timeoutID) clearTimeout(timeoutID);
+    } // Function to cancel next exec
+    function cancel(options) {
+        var _ref2 = options || {}, _ref2$upcomingOnly = _ref2.upcomingOnly, upcomingOnly = _ref2$upcomingOnly === void 0 ? false : _ref2$upcomingOnly;
+        clearExistingTimeout();
+        cancelled = !upcomingOnly;
+    }
+    /*
+   * The `wrapper` function encapsulates all of the throttling / debouncing
+   * functionality and when executed will limit the rate at which `callback`
+   * is executed.
+   */ function wrapper() {
+        for(var _len = arguments.length, arguments_ = new Array(_len), _key = 0; _key < _len; _key++)arguments_[_key] = arguments[_key];
+        var self = this;
+        var elapsed = Date.now() - lastExec;
+        if (cancelled) return;
+         // Execute `callback` and update the `lastExec` timestamp.
+        function exec() {
+            lastExec = Date.now();
+            callback.apply(self, arguments_);
+        }
+        /*
+     * If `debounceMode` is true (at begin) this is used to clear the flag
+     * to allow future `callback` executions.
+     */ function clear() {
+            timeoutID = undefined;
+        }
+        if (!noLeading && debounceMode && !timeoutID) /*
+       * Since `wrapper` is being called for the first time and
+       * `debounceMode` is true (at begin), execute `callback`
+       * and noLeading != true.
+       */ exec();
+        clearExistingTimeout();
+        if (debounceMode === undefined && elapsed > delay) {
+            if (noLeading) {
+                /*
+         * In throttle mode with noLeading, if `delay` time has
+         * been exceeded, update `lastExec` and schedule `callback`
+         * to execute after `delay` ms.
+         */ lastExec = Date.now();
+                if (!noTrailing) timeoutID = setTimeout(debounceMode ? clear : exec, delay);
+            } else /*
+         * In throttle mode without noLeading, if `delay` time has been exceeded, execute
+         * `callback`.
+         */ exec();
+        } else if (noTrailing !== true) /*
+       * In trailing throttle mode, since `delay` time has not been
+       * exceeded, schedule `callback` to execute `delay` ms after most
+       * recent execution.
+       *
+       * If `debounceMode` is true (at begin), schedule `clear` to execute
+       * after `delay` ms.
+       *
+       * If `debounceMode` is false (at end), schedule `callback` to
+       * execute after `delay` ms.
+       */ timeoutID = setTimeout(debounceMode ? clear : exec, debounceMode === undefined ? delay - elapsed : delay);
+    }
+    wrapper.cancel = cancel; // Return the wrapper function.
+    return wrapper;
+}
+/* eslint-disable no-undefined */ /**
+ * Debounce execution of a function. Debouncing, unlike throttling,
+ * guarantees that a function is only executed a single time, either at the
+ * very beginning of a series of calls, or at the very end.
+ *
+ * @param {number} delay -               A zero-or-greater delay in milliseconds. For event callbacks, values around 100 or 250 (or even higher) are most useful.
+ * @param {Function} callback -          A function to be executed after delay milliseconds. The `this` context and all arguments are passed through, as-is,
+ *                                        to `callback` when the debounced-function is executed.
+ * @param {object} [options] -           An object to configure options.
+ * @param {boolean} [options.atBegin] -  Optional, defaults to false. If atBegin is false or unspecified, callback will only be executed `delay` milliseconds
+ *                                        after the last debounced-function call. If atBegin is true, callback will be executed only at the first debounced-function call.
+ *                                        (After the throttled-function has not been called for `delay` milliseconds, the internal counter is reset).
+ *
+ * @returns {Function} A new, debounced function.
+ */ function debounce(delay, callback, options) {
+    var _ref = options || {}, _ref$atBegin = _ref.atBegin, atBegin = _ref$atBegin === void 0 ? false : _ref$atBegin;
+    return throttle(delay, callback, {
+        debounceMode: atBegin !== false
+    });
+}
+
+},{"@parcel/transformer-js/src/esmodule-helpers.js":"5oERU"}],"1RaXs":[function(require,module,exports) {
+var $parcel$ReactRefreshHelpers$c78e = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
+var prevRefreshReg = window.$RefreshReg$;
+var prevRefreshSig = window.$RefreshSig$;
+$parcel$ReactRefreshHelpers$c78e.prelude(module);
+
+try {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+var _jsxDevRuntime = require("react/jsx-dev-runtime");
+var _react = require("react");
+var _userContext = require("../contexts/UserContext");
+var _userContextDefault = parcelHelpers.interopDefault(_userContext);
+var _bgIconsRandom = require("./BgIconsRandom");
+var _bgIconsRandomDefault = parcelHelpers.interopDefault(_bgIconsRandom);
+var _loginWithGoogleButton = require("./LoginWithGoogleButton");
+var _loginWithGoogleButtonDefault = parcelHelpers.interopDefault(_loginWithGoogleButton);
+var _s = $RefreshSig$();
+function LogoutStateComponent() {
+    _s();
+    const { user , setUser , userDataInClientChecked  } = (0, _react.useContext)((0, _userContextDefault.default));
+    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+        className: "py-5 h-100 overflow-hidden ",
+        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+            className: "container h-100",
+            children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                className: "row h-100",
+                children: [
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                        className: "col-md-8 col-12 h-100 d-flex flex-column justify-content-center",
+                        children: [
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                className: "large-cta font-black mb-5",
+                                children: [
+                                    "Join the ",
+                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                                        className: "text-secondary",
+                                        children: "chat"
+                                    }, void 0, false, {
+                                        fileName: "app/components/LogoutStateComponent.js",
+                                        lineNumber: 19,
+                                        columnNumber: 38
+                                    }, this)
+                                ]
+                            }, void 0, true, {
+                                fileName: "app/components/LogoutStateComponent.js",
+                                lineNumber: 18,
+                                columnNumber: 25
+                            }, this),
+                            !user && userDataInClientChecked && /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _loginWithGoogleButtonDefault.default), {
+                                user: user,
+                                setUser: setUser
+                            }, void 0, false, {
+                                fileName: "app/components/LogoutStateComponent.js",
+                                lineNumber: 24,
+                                columnNumber: 29
+                            }, this)
+                        ]
+                    }, void 0, true, {
+                        fileName: "app/components/LogoutStateComponent.js",
+                        lineNumber: 17,
+                        columnNumber: 21
+                    }, this),
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                        className: "col-md-4 col-12",
+                        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _bgIconsRandomDefault.default), {}, void 0, false, {
+                            fileName: "app/components/LogoutStateComponent.js",
+                            lineNumber: 28,
+                            columnNumber: 25
+                        }, this)
+                    }, void 0, false, {
+                        fileName: "app/components/LogoutStateComponent.js",
+                        lineNumber: 27,
+                        columnNumber: 21
+                    }, this)
+                ]
+            }, void 0, true, {
+                fileName: "app/components/LogoutStateComponent.js",
+                lineNumber: 16,
+                columnNumber: 17
+            }, this)
+        }, void 0, false, {
+            fileName: "app/components/LogoutStateComponent.js",
+            lineNumber: 13,
+            columnNumber: 13
+        }, this)
+    }, void 0, false, {
+        fileName: "app/components/LogoutStateComponent.js",
+        lineNumber: 12,
+        columnNumber: 9
+    }, this);
+}
+exports.default = LogoutStateComponent;
+_s(LogoutStateComponent, "Zy3CeKDzEm6VtoG4HkDR0gGhOk0=");
+_c = LogoutStateComponent;
+var _c;
+$RefreshReg$(_c, "LogoutStateComponent");
+
+  $parcel$ReactRefreshHelpers$c78e.postlude(module);
+} finally {
+  window.$RefreshReg$ = prevRefreshReg;
+  window.$RefreshSig$ = prevRefreshSig;
+}
+},{"react/jsx-dev-runtime":"eGH5i","@parcel/transformer-js/src/esmodule-helpers.js":"5oERU","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"ftrPk","react":"9sfFD","../contexts/UserContext":"gJPKA","./BgIconsRandom":"3HXnU","./LoginWithGoogleButton":"aun22"}],"gtkFg":[function(require,module,exports) {
 "use strict";
 var m = require("46381bd6bc66197b");
 var i = m.__SECRET_INTERNALS_DO_NOT_USE_OR_YOU_WILL_BE_FIRED;

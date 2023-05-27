@@ -2,7 +2,6 @@
 	"name": "chat-room",
 	"version": "1.0.0",
 	"description": "A simple chat room app built with socket.io and React",
-	"source": "frontend/main.js",
 	"targets": {
 		"frontend": {
 			"source": "app/index.html",
@@ -11,8 +10,8 @@
 			}
 		},
 		"backend": {
-			"context": "node",
-			"source": "api/index.js"
+			"source": "api/index.js",
+			"context": "node"
 		}
 	},
 	"nodemonConfig": {
@@ -46,7 +45,9 @@
 		"react-avatar": "^5.0.3",
 		"react-dom": "^18.2.0",
 		"react-hot-toast": "^2.4.1",
-		"socket.io": "^4.6.1"
+		"socket.io": "^4.6.1",
+		"socket.io-client": "^4.6.1",
+		"throttle-debounce": "^5.0.0"
 	},
 	"devDependencies": {
 		"@parcel/transformer-sass": "^2.8.3",
