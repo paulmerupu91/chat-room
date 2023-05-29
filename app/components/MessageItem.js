@@ -31,8 +31,8 @@ function MessageItem({ messageData }) {
                     color={"#09cd57"}
 				/>
 			</span>
-			<span className="mx-2 rounded-2 px-2 py-1 border-black-20 border">
-                {html}
+			<span className="mx-2 rounded-2 px-2 py-1 border-black-20 border" dangerouslySetInnerHTML={{__html: html}}>
+                
 			</span>
 		</div>
 	);
