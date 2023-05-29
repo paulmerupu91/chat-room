@@ -43,7 +43,7 @@ function ChatContainer( {messages, setMessages} ) {
 
     }
 
-    const InsertEmoji = ({value}) => <span className="emoji-send border border-light bg-light px-2 py-1 rounded-2 mx-2" onClick={() => sendMessage(value)}>{value}</span>
+    const InsertEmoji = ({value}) => <span className="emoji-send border border-light bg-light px-2 py-1 rounded-2 mx-2 mb-3" onClick={() => sendMessage(value)}>{value}</span>
 
     function handleKeyDownReturn( e ){
 
@@ -69,9 +69,9 @@ function ChatContainer( {messages, setMessages} ) {
             <div className="container">
                 
                 {/* Message Input */}
-                <form className="py-3">
+                <form className="py-3 overflow-hidden">
                     
-                    <div className="d-flex mx-n2 mb-3">
+                    <div className="d-flex mx-n2 mb-3 w-100" style={{overflowX: 'scroll'}}>
                         
                         {/* Wave */}
                         <InsertEmoji value="&#128075;" />
