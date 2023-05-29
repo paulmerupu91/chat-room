@@ -46,18 +46,20 @@ function NavBar() {
 		<div className="container-fluid navbar position-sticky top-0 border-bottom">
 			<div className="container py-3">
 				<div className="row d-flex align-items-center">
-					<div className="col-10 col-md-8">
-						<h1 className=" h3 text-secondary mb-0">
-                            ChatRoom
-                            { roomName && <span className="ms-3 lead text-black text-uppercase">{`${roomName.replace( '-', ' ' )}`}</span> }
+					<div className="col-10 col-md-8 d-flex align-items-baseline">
+						<h1 className="mb-0">
+                            <a href="/" className="text-decoration-none h3 text-secondary">
+                                ChatRoom
+                            </a>
                         </h1>
+                        { roomName && <span className="ms-3 text-black text-uppercase">{`${roomName.replace( '-', ' ' )}`}</span> }
 					</div>
 					<div className="col-md-4 drop-down-triggers col-2 d-flex justify-content-end text-right position-relative">
                     {/* <button onClick={ () => setIsVisibleDropdown( !isVisibleDropdown ) }>Menu</button> */}
                         <button className="btn btn-sm btn-outline-secondary border-0 rounded-pill" onClick={ () => setIsVisibleRoomsDropdown( !isVisibleRoomsDropdown ) }>
                             <RoomSvg  />
                         </button>
-                        <button className="btn btn-sm btn-outline-secondary border-0 rounded-pill" onClick={ () => setIsVisibleUserDropdown( !isVisibleUserDropdown ) }>
+                        <button className="btn btn-sm btn-outline-secondary border-0 rounded-pill ms-2" onClick={ () => setIsVisibleUserDropdown( !isVisibleUserDropdown ) }>
                             <UserIcon  />
                         </button>
 						
