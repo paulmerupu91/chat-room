@@ -88,3 +88,8 @@ body, html{
     background: rgb(9,205,87);
     background: linear-gradient(59deg, rgba(9,205,87,0.49205619747899154) 0%, rgba(9,205,87,0.06908700980392157) 100%);
 }
+
+.text-small{
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
