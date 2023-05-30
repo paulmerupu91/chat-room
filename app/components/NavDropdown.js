@@ -31,7 +31,7 @@ function NavDropdown( {isVisible, user, handleLogout} ) {
                                     </a>
                                 </li>
                                 <li
-                                    className="list-group-item text-small"
+                                    className="list-group-item text-small email-info"
                                 >
                                     {user?.email}
                                 </li>

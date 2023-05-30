@@ -41,10 +41,31 @@ $enable-negative-margins: true;
 @import "../node_modules/bootstrap/scss/forms";
 @import "../node_modules/bootstrap/scss/list-group";
 
+$all-colors: map-merge-multiple($blues, $grays, $theme-colors);
+
+$utilities: map-merge(
+  $utilities,
+  (
+    "color": map-merge(
+      map-get($utilities, "color"),
+      (
+        values: map-merge(
+          map-get(map-get($utilities, "color"), "values"),
+          (
+            $all-colors
+          ),
+        ),
+      ),
+    ),
+  )
+);
+
 // 7. Optionally include utilities API last to generate classes based on the Sass map in `_utilities.scss`
 @import "../node_modules/bootstrap/scss/utilities/api";
 
 // 8. Add additional custom code here
+
+
 
 body, html{
     height: 100%;
@@ -89,7 +110,12 @@ body, html{
     background: linear-gradient(59deg, rgba(9,205,87,0.49205619747899154) 0%, rgba(9,205,87,0.06908700980392157) 100%);
 }
 
-.text-small{
+.email-info{
     text-overflow: ellipsis;
     overflow: hidden;
+}
+
+.text-small{
+    font-size: .7rem;
+    color: $gray-500
 }

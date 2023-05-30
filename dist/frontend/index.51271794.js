@@ -5683,7 +5683,19 @@ var _logoutStateComponentDefault = parcelHelpers.interopDefault(_logoutStateComp
 var _s = $RefreshSig$();
 const roomSlug = (0, _getRoomSlug.getRoomSlug)();
 function toastEnteredTheChat(name) {
-    (0, _reactHotToastDefault.default).success(`${name} joined.`);
+    // toast.success( `${name} joined.` );
+    setMessagesGlob((messages)=>{
+        const data = {};
+        data.type = "notification: user joined";
+        data.name = name;
+        if (messages && messages.length > 0) return [
+            ...messages,
+            data
+        ];
+        else return [
+            data
+        ];
+    });
 }
 console.log("setting clone");
 let setMessagesGlob = ()=>{};
@@ -5695,6 +5707,7 @@ let setSocketLoadedGlob = ()=>{};
         (0, _playAudioNotification.playAudioNotification)();
         console.log("data", data);
         setMessagesGlob((messages)=>{
+            if (data.message) data.timeReceived = new Date();
             if (messages && messages.length > 0) return [
                 ...messages,
                 data
@@ -5760,12 +5773,12 @@ function App() {
                 children: [
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _navBarDefault.default), {}, void 0, false, {
                         fileName: "app/App.js",
-                        lineNumber: 107,
+                        lineNumber: 124,
                         columnNumber: 13
                     }, this),
                     !user?.email && /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _logoutStateComponentDefault.default), {}, void 0, false, {
                         fileName: "app/App.js",
-                        lineNumber: 109,
+                        lineNumber: 126,
                         columnNumber: 33
                     }, this),
                     user?.email && /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _chatContainerDefault.default), {
@@ -5773,18 +5786,18 @@ function App() {
                         setMessages: setMessages
                     }, void 0, false, {
                         fileName: "app/App.js",
-                        lineNumber: 110,
+                        lineNumber: 127,
                         columnNumber: 30
                     }, this),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactHotToast.Toaster), {}, void 0, false, {
                         fileName: "app/App.js",
-                        lineNumber: 112,
+                        lineNumber: 129,
                         columnNumber: 13
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "app/App.js",
-                lineNumber: 105,
+                lineNumber: 122,
                 columnNumber: 9
             }, this),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -5801,26 +5814,26 @@ function App() {
                             className: "me-2"
                         }, void 0, false, {
                             fileName: "app/App.js",
-                            lineNumber: 117,
+                            lineNumber: 134,
                             columnNumber: 17
                         }, this),
-                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
-                            className: "text-small",
+                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("small", {
+                            className: "text-dark",
                             children: "Github Repository"
                         }, void 0, false, {
                             fileName: "app/App.js",
-                            lineNumber: 118,
+                            lineNumber: 135,
                             columnNumber: 17
                         }, this)
                     ]
                 }, void 0, true, {
                     fileName: "app/App.js",
-                    lineNumber: 116,
+                    lineNumber: 133,
                     columnNumber: 13
                 }, this)
             }, void 0, false, {
                 fileName: "app/App.js",
-                lineNumber: 115,
+                lineNumber: 132,
                 columnNumber: 9
             }, this)
         ]
@@ -5913,7 +5926,7 @@ function ChatContainer({ messages , setMessages  }) {
                 className: "container-fluid overflow-scroll flex-grow-1",
                 ref: refChatContainer,
                 children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                    className: "chat-container container ",
+                    className: "chat-container container py-4",
                     children: messages?.map?.((messageData, i)=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _messageItemDefault.default), {
                             messageData: messageData
                         }, `${i}_${email}`, false, {
@@ -5936,72 +5949,79 @@ function ChatContainer({ messages , setMessages  }) {
                 children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
                     className: "container",
                     children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("form", {
-                        className: "py-3 overflow-hidden",
+                        className: "py-3 ",
                         children: [
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                className: "d-flex mx-n2 mb-3 w-100",
-                                style: {
-                                    overflowX: "scroll"
-                                },
-                                children: [
-                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(InsertEmoji, {
-                                        value: "\uD83D\uDC4B"
-                                    }, void 0, false, {
-                                        fileName: "app/components/ChatContainer.js",
-                                        lineNumber: 77,
-                                        columnNumber: 25
-                                    }, this),
-                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(InsertEmoji, {
-                                        value: "\uD83D\uDC4D"
-                                    }, void 0, false, {
-                                        fileName: "app/components/ChatContainer.js",
-                                        lineNumber: 80,
-                                        columnNumber: 25
-                                    }, this),
-                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(InsertEmoji, {
-                                        value: "\uD83D\uDE04"
-                                    }, void 0, false, {
-                                        fileName: "app/components/ChatContainer.js",
-                                        lineNumber: 83,
-                                        columnNumber: 25
-                                    }, this),
-                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(InsertEmoji, {
-                                        value: "\uD83D\uDC4F"
-                                    }, void 0, false, {
-                                        fileName: "app/components/ChatContainer.js",
-                                        lineNumber: 86,
-                                        columnNumber: 25
-                                    }, this),
-                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(InsertEmoji, {
-                                        value: "\uD83D\uDC9B"
-                                    }, void 0, false, {
-                                        fileName: "app/components/ChatContainer.js",
-                                        lineNumber: 89,
-                                        columnNumber: 25
-                                    }, this),
-                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(InsertEmoji, {
-                                        value: "\uD83D\uDCAF"
-                                    }, void 0, false, {
-                                        fileName: "app/components/ChatContainer.js",
-                                        lineNumber: 92,
-                                        columnNumber: 25
-                                    }, this),
-                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(InsertEmoji, {
-                                        value: "\uD83D\uDD25"
-                                    }, void 0, false, {
-                                        fileName: "app/components/ChatContainer.js",
-                                        lineNumber: 98,
-                                        columnNumber: 25
-                                    }, this),
-                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(InsertEmoji, {
-                                        value: "\uD83D\uDE4C"
-                                    }, void 0, false, {
-                                        fileName: "app/components/ChatContainer.js",
-                                        lineNumber: 101,
-                                        columnNumber: 25
-                                    }, this)
-                                ]
-                            }, void 0, true, {
+                                className: "overflow-hidden w-100",
+                                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                    className: "d-flex mx-n2 mb-3 w-100",
+                                    style: {
+                                        overflowX: "scroll"
+                                    },
+                                    children: [
+                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(InsertEmoji, {
+                                            value: "\uD83D\uDC4B"
+                                        }, void 0, false, {
+                                            fileName: "app/components/ChatContainer.js",
+                                            lineNumber: 79,
+                                            columnNumber: 29
+                                        }, this),
+                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(InsertEmoji, {
+                                            value: "\uD83D\uDC4D"
+                                        }, void 0, false, {
+                                            fileName: "app/components/ChatContainer.js",
+                                            lineNumber: 82,
+                                            columnNumber: 29
+                                        }, this),
+                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(InsertEmoji, {
+                                            value: "\uD83D\uDE04"
+                                        }, void 0, false, {
+                                            fileName: "app/components/ChatContainer.js",
+                                            lineNumber: 85,
+                                            columnNumber: 29
+                                        }, this),
+                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(InsertEmoji, {
+                                            value: "\uD83D\uDC4F"
+                                        }, void 0, false, {
+                                            fileName: "app/components/ChatContainer.js",
+                                            lineNumber: 88,
+                                            columnNumber: 29
+                                        }, this),
+                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(InsertEmoji, {
+                                            value: "\uD83D\uDC9B"
+                                        }, void 0, false, {
+                                            fileName: "app/components/ChatContainer.js",
+                                            lineNumber: 91,
+                                            columnNumber: 29
+                                        }, this),
+                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(InsertEmoji, {
+                                            value: "\uD83D\uDCAF"
+                                        }, void 0, false, {
+                                            fileName: "app/components/ChatContainer.js",
+                                            lineNumber: 94,
+                                            columnNumber: 29
+                                        }, this),
+                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(InsertEmoji, {
+                                            value: "\uD83D\uDD25"
+                                        }, void 0, false, {
+                                            fileName: "app/components/ChatContainer.js",
+                                            lineNumber: 100,
+                                            columnNumber: 29
+                                        }, this),
+                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(InsertEmoji, {
+                                            value: "\uD83D\uDE4C"
+                                        }, void 0, false, {
+                                            fileName: "app/components/ChatContainer.js",
+                                            lineNumber: 103,
+                                            columnNumber: 29
+                                        }, this)
+                                    ]
+                                }, void 0, true, {
+                                    fileName: "app/components/ChatContainer.js",
+                                    lineNumber: 76,
+                                    columnNumber: 25
+                                }, this)
+                            }, void 0, false, {
                                 fileName: "app/components/ChatContainer.js",
                                 lineNumber: 74,
                                 columnNumber: 21
@@ -6017,12 +6037,12 @@ function ChatContainer({ messages , setMessages  }) {
                                             onKeyDown: handleKeyDownReturn
                                         }, void 0, false, {
                                             fileName: "app/components/ChatContainer.js",
-                                            lineNumber: 111,
+                                            lineNumber: 116,
                                             columnNumber: 29
                                         }, this)
                                     }, void 0, false, {
                                         fileName: "app/components/ChatContainer.js",
-                                        lineNumber: 109,
+                                        lineNumber: 114,
                                         columnNumber: 25
                                     }, this),
                                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -6034,18 +6054,18 @@ function ChatContainer({ messages , setMessages  }) {
                                             children: "Send"
                                         }, void 0, false, {
                                             fileName: "app/components/ChatContainer.js",
-                                            lineNumber: 115,
+                                            lineNumber: 120,
                                             columnNumber: 29
                                         }, this)
                                     }, void 0, false, {
                                         fileName: "app/components/ChatContainer.js",
-                                        lineNumber: 114,
+                                        lineNumber: 119,
                                         columnNumber: 25
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "app/components/ChatContainer.js",
-                                lineNumber: 107,
+                                lineNumber: 112,
                                 columnNumber: 21
                             }, this),
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _toggleDefault.default), {
@@ -6067,19 +6087,19 @@ function ChatContainer({ messages , setMessages  }) {
                                             d: "M14.5 1.5a.5.5 0 0 1 .5.5v4.8a2.5 2.5 0 0 1-2.5 2.5H2.707l3.347 3.346a.5.5 0 0 1-.708.708l-4.2-4.2a.5.5 0 0 1 0-.708l4-4a.5.5 0 1 1 .708.708L2.707 8.3H12.5A1.5 1.5 0 0 0 14 6.8V2a.5.5 0 0 1 .5-.5z"
                                         }, void 0, false, {
                                             fileName: "app/components/ChatContainer.js",
-                                            lineNumber: 123,
+                                            lineNumber: 128,
                                             columnNumber: 29
                                         }, this)
                                     }, void 0, false, {
                                         fileName: "app/components/ChatContainer.js",
-                                        lineNumber: 122,
+                                        lineNumber: 127,
                                         columnNumber: 25
                                     }, this),
                                     " to send"
                                 ]
                             }, void 0, true, {
                                 fileName: "app/components/ChatContainer.js",
-                                lineNumber: 120,
+                                lineNumber: 125,
                                 columnNumber: 21
                             }, this)
                         ]
@@ -6134,9 +6154,24 @@ var _linkifyStringDefault = parcelHelpers.interopDefault(_linkifyString);
 var _s = $RefreshSig$();
 function MessageItem({ messageData  }) {
     _s();
-    const { message , name , email  } = messageData;
+    const { message =null , name =null , email: senderEmail , timeReceived =null , type =null  } = messageData;
     console.log("message", message);
     console.log("name", name);
+    if (type == "notification: user joined") return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+        className: "d-flex justify-content-center",
+        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("small", {
+            className: "border rounded-pill px-2 py-1 text-secondary text-small text-center d-inline-block",
+            children: `${name} joined the chat`
+        }, void 0, false, {
+            fileName: "app/components/MessageItem.js",
+            lineNumber: 15,
+            columnNumber: 17
+        }, this)
+    }, void 0, false, {
+        fileName: "app/components/MessageItem.js",
+        lineNumber: 14,
+        columnNumber: 13
+    }, this);
     const { user  } = (0, _react.useContext)((0, _userContextDefault.default));
     const userEmail = user.email;
     const initials = name.split(" ")?.map?.((word)=>word.split("").splice(0, 1)).join("");
@@ -6144,8 +6179,9 @@ function MessageItem({ messageData  }) {
         target: "_blank"
     });
     console.log("html", html);
+    const ownMessage = senderEmail === userEmail;
     return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-        className: `d-flex align-items-baseline p-2 ${email === userEmail ? `flex-row-reverse` : ``}`,
+        className: `d-flex align-items-baseline p-2 ${ownMessage ? `flex-row-reverse` : ``}`,
         children: [
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
                 children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactAvatarDefault.default), {
@@ -6158,26 +6194,54 @@ function MessageItem({ messageData  }) {
                     color: "#09cd57"
                 }, void 0, false, {
                     fileName: "app/components/MessageItem.js",
-                    lineNumber: 24,
+                    lineNumber: 40,
                     columnNumber: 5
                 }, this)
             }, void 0, false, {
                 fileName: "app/components/MessageItem.js",
-                lineNumber: 23,
+                lineNumber: 39,
                 columnNumber: 4
             }, this),
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
-                className: "mx-2 rounded-2 px-2 py-1 border-black-20 border",
-                children: html
-            }, void 0, false, {
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                className: `mx-2 d-flex flex-column ${ownMessage ? `align-items-end` : `align-items-start`}`,
+                children: [
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                        className: " rounded-2 px-2 py-1 border-black-200 border",
+                        dangerouslySetInnerHTML: {
+                            __html: html
+                        }
+                    }, void 0, false, {
+                        fileName: "app/components/MessageItem.js",
+                        lineNumber: 52,
+                        columnNumber: 17
+                    }, this),
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                        className: "text-small mt-1",
+                        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("small", {
+                            children: timeReceived && timeReceived.toLocaleTimeString("en-US", {
+                                hour: "2-digit",
+                                minute: "2-digit"
+                            })
+                        }, void 0, false, {
+                            fileName: "app/components/MessageItem.js",
+                            lineNumber: 58,
+                            columnNumber: 21
+                        }, this)
+                    }, void 0, false, {
+                        fileName: "app/components/MessageItem.js",
+                        lineNumber: 57,
+                        columnNumber: 17
+                    }, this)
+                ]
+            }, void 0, true, {
                 fileName: "app/components/MessageItem.js",
-                lineNumber: 34,
-                columnNumber: 4
+                lineNumber: 50,
+                columnNumber: 13
             }, this)
         ]
     }, void 0, true, {
         fileName: "app/components/MessageItem.js",
-        lineNumber: 22,
+        lineNumber: 34,
         columnNumber: 3
     }, this);
 }
@@ -13896,7 +13960,7 @@ function NavDropdown({ isVisible , user , handleLogout  }) {
                                 columnNumber: 33
                             }, this),
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
-                                className: "list-group-item text-small",
+                                className: "list-group-item text-small email-info",
                                 children: user?.email
                             }, void 0, false, {
                                 fileName: "app/components/NavDropdown.js",
