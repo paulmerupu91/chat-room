@@ -56,7 +56,7 @@ function ChatContainer( {messages, setMessages} ) {
         <>
 
         
-		<div className="container-fluid overflow-scroll flex-grow-1" ref={refChatContainer}>
+		<div className="container-fluid overflow-auto flex-grow-1" ref={refChatContainer}>
 			<div  className="chat-container container py-4">
 
                 {
@@ -73,7 +73,7 @@ function ChatContainer( {messages, setMessages} ) {
 
                     <div className='overflow-hidden w-100'>
 
-                        <div className="d-flex mx-n2 mb-3 w-100" style={{overflowX: 'scroll'}}>
+                        <div className="d-flex mx-n2 mb-3 w-100" style={{overflowX: 'auto'}}>
                             
                             {/* Wave */}
                             <InsertEmoji value="&#128075;" />
