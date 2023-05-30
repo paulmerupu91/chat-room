@@ -15,7 +15,19 @@ import LogoutStateComponent from "./components/LogoutStateComponent";
 const roomSlug = getRoomSlug();
 
 function toastEnteredTheChat(name){
-    toast.success( `${name} joined.` );
+    // toast.success( `${name} joined.` );
+    setMessagesGlob( messages => {
+
+        const data = {};
+        data.type = 'notification: user joined'
+        data.name = name;
+
+        if( messages && messages.length > 0 ){
+            return [...messages, data]
+        } else {
+            return [data];
+        }
+    } );
 }
 console.log( 'setting clone' );
 let setMessagesGlob = () => {};
@@ -31,6 +43,11 @@ useSocket( socket => {
         
         console.log( 'data', data );
         setMessagesGlob( messages => {
+
+            if( data.message ){
+                data.timeReceived = new Date();
+            }
+
             if( messages && messages.length > 0 ){
                 return [...messages, data]
             } else {
@@ -115,7 +132,7 @@ function App() {
         <div className="container py-2 footer border-top">
             <a href="https://github.com/paulmerupu91/chat-room" className="link-muted link-reset link-underline link-underline-opacity-0 d-flex justify-content-end align-items-center">
                 <img src={GithubImg} alt="Github logo" width={20} height={20} className="me-2" />
-                <span className="text-small">Github Repository</span>
+                <small className="text-dark">Github Repository</small>
             </a>
         </div>
         </>

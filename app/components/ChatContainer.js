@@ -57,7 +57,7 @@ function ChatContainer( {messages, setMessages} ) {
 
         
 		<div className="container-fluid overflow-scroll flex-grow-1" ref={refChatContainer}>
-			<div  className="chat-container container ">
+			<div  className="chat-container container py-4">
 
                 {
                     messages?.map?.( (messageData, i) => <MessageItem key={`${i}_${email}`} messageData={messageData} /> )
@@ -69,41 +69,46 @@ function ChatContainer( {messages, setMessages} ) {
             <div className="container">
                 
                 {/* Message Input */}
-                <form className="py-3 overflow-hidden">
-                    
-                    <div className="d-flex mx-n2 mb-3 w-100" style={{overflowX: 'scroll'}}>
-                        
-                        {/* Wave */}
-                        <InsertEmoji value="&#128075;" />
+                <form className="py-3 ">
 
-                        {/* Thumbs up */}
-                        <InsertEmoji value="&#128077;" />
+                    <div className='overflow-hidden w-100'>
 
-                        {/* Laugh */}
-                        <InsertEmoji value="&#128516;" />
+                        <div className="d-flex mx-n2 mb-3 w-100" style={{overflowX: 'scroll'}}>
+                            
+                            {/* Wave */}
+                            <InsertEmoji value="&#128075;" />
 
-                        {/* Applause */}
-                        <InsertEmoji value="&#128079;" />
+                            {/* Thumbs up */}
+                            <InsertEmoji value="&#128077;" />
 
-                        {/* Heart */}
-                        <InsertEmoji value="&#128155;" />
+                            {/* Laugh */}
+                            <InsertEmoji value="&#128516;" />
 
-                        {/* 100 */}
-                        <InsertEmoji value="&#128175;" />
+                            {/* Applause */}
+                            <InsertEmoji value="&#128079;" />
 
-                        {/* Sad */}
-                        {/* <InsertEmoji value="&#128542;" /> */}
-                        
-                        {/* Fire */}
-                        <InsertEmoji value="&#128293;" />
+                            {/* Heart */}
+                            <InsertEmoji value="&#128155;" />
 
-                        {/* Hands Raised */}
-                        <InsertEmoji value="&#128588;" />
+                            {/* 100 */}
+                            <InsertEmoji value="&#128175;" />
 
-                        {/* Angry */}
-                        {/* <InsertEmoji value="&#128545;" /> */}
-                        
+                            {/* Sad */}
+                            {/* <InsertEmoji value="&#128542;" /> */}
+                            
+                            {/* Fire */}
+                            <InsertEmoji value="&#128293;" />
+
+                            {/* Hands Raised */}
+                            <InsertEmoji value="&#128588;" />
+
+                            {/* Angry */}
+                            {/* <InsertEmoji value="&#128545;" /> */}
+                            
+                        </div>
+
                     </div>
+                    
                     <div  className="d-flex align-items-start">
 
                         <div className="w-100" >
